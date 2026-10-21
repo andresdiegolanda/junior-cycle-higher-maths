@@ -36,18 +36,20 @@ def para(s,size=12,bold=False,color=INK):
     for ch in str(s):
         if not ch.isspace():assert ord(ch) in pdfmetrics.getFont('Desk').face.charToGlyph,('Missing glyph',ch)
     usebold=bold and all(ch.isspace() or ord(ch) in pdfmetrics.getFont('DeskBold').face.charToGlyph for ch in str(s))
-    return Paragraph(clean(s),ParagraphStyle('card',fontName='DeskBold' if usebold else 'Desk',fontSize=size,leading=size*1.23,textColor=color,spaceAfter=0))
+    return Paragraph(clean(s),ParagraphStyle('card',fontName='DeskBold' if usebold else 'Desk',fontSize=size,leading=size*1.4,textColor=color,spaceAfter=0,splitLongWords=False))
 def layout_card(v,width,height):
     inner=width-24
-    for fs in [14.5,14,13.5,13,12.5,12,11.8]:
-        title=para(v['task'],14 if width>300 else 12.8,True)
-        formula=para(v['formula'],fs,True,TEAL)
-        condition=para(v.get('conditionLabel','Remember')+': '+v['condition'],10.4,False,MUTED)
-        th=title.wrap(inner,999)[1];fh=formula.wrap(inner-16,999)[1];ch=condition.wrap(inner-8,999)[1]
-        available=height-(14+13+th+7+14+fh+10+ch+16)
-        image_height=min(180*inner/480,available)
-        if image_height>=90:return {'title':title,'th':th,'formula':formula,'fh':fh,'condition':condition,'ch':ch,'imageHeight':image_height,'font':fs}
-    raise ValueError(('Card too dense',v['chapter'],v['index'],v['task'],height,available))
+    title=para(v['task'],15.5,True)
+    lines=[]
+    for row in v['formulaRows']:
+        p=para(row['text'],15.5 if row['kind']=='equation' else 13,False,INK)
+        lines.append((p,p.wrap(inner-20,999)[1]))
+    condition=para(v.get('conditionLabel','Remember')+': '+v['condition'],11,False,MUTED)
+    th=title.wrap(inner,999)[1];fh=sum(h for _,h in lines)+6*(len(lines)-1);ch=condition.wrap(inner-8,999)[1]
+    available=height-(14+13+th+7+16+fh+10+ch+16)
+    image_height=min(180*inner/480,available)
+    if image_height<108:raise ValueError(('Card too dense',v['chapter'],v['index'],v['task'],height,available))
+    return {'title':title,'th':th,'formula':lines,'fh':fh,'condition':condition,'ch':ch,'imageHeight':image_height,'font':15.5}
 def draw_card(cv,m,index,x,y,width,height):
     v=m['visual'];p=layout_card(v,width,height);pad=12
     cv.setStrokeColor(LINE);cv.setFillColor(HexColor('#ffffff'));cv.roundRect(x,y-height,width,height,9,fill=1,stroke=1)
@@ -67,8 +69,12 @@ def draw_card(cv,m,index,x,y,width,height):
     drawing.scale(scale,scale);cy-=drawing.height*scale
     renderPDF.draw(drawing,cv,x+(width-drawing.width*scale)/2,cy)
     cy-=9;fh=p['fh']+14
-    cv.setFillColor(HexColor('#edf7f3'));cv.roundRect(x+pad,cy-fh,width-2*pad,fh,6,fill=1,stroke=0)
-    p['formula'].drawOn(cv,x+pad+8,cy-7-p['fh']);cy-=fh+9
+    cv.setFillColor(HexColor('#f1f5f6'));cv.roundRect(x+pad,cy-fh,width-2*pad,fh,6,fill=1,stroke=0)
+    cv.setStrokeColor(TEAL);cv.setLineWidth(2);cv.line(x+pad,cy-3,x+pad,cy-fh+3);cv.setLineWidth(1)
+    row_y=cy-7
+    for row,row_height in p['formula']:
+        row_y-=row_height;row.drawOn(cv,x+pad+10,row_y);row_y-=6
+    cy-=fh+9
     p['condition'].drawOn(cv,x+pad+4,cy-p['ch'])
     assert cy-p['ch']>=y-height+5,(v['chapter'],index,'Overflow')
     return {'index':index,'formulaFont':p['font'],'diagramScale':scale,'bottomClearance':round(cy-p['ch']-(y-height),2)}
@@ -78,9 +84,22 @@ cv.setTitle('Junior Cycle Higher Maths - Visual Chapter Toolkits');cv.setAuthor(
 page_no=0;report=[]
 for c in chapters:
     methods=c['toolkit']['methods'];assert all(m.get('visual') for m in methods),('Visuals missing',c['id'])
-    pages=math.ceil(len(methods)/8);per_page=math.ceil(len(methods)/pages);first=page_no+1;cards_report=[]
-    for part,start in enumerate(range(0,len(methods),per_page)):
-        subset=methods[start:start+per_page];page_no+=1
+    # Give only the crowded pages more room; one dense card must not make
+    # every other page in the chapter unnecessarily sparse.
+    groups=[];start=0
+    while start<len(methods):
+        for count in range(min(6,len(methods)-start),0,-1):
+            subset=methods[start:start+count];cols=2 if count<=4 else 3
+            rows=math.ceil(count/cols);cw=(W-2*M-(cols-1)*GAP)/cols;ch=(TOP-BOTTOM-(rows-1)*GAP)/rows
+            try:
+                for m in subset:layout_card(m['visual'],cw,ch)
+                groups.append((start,subset));start+=count;break
+            except ValueError:
+                if count==1:raise
+    pages=len(groups)
+    first=page_no+1;cards_report=[]
+    for part,(start,subset) in enumerate(groups):
+        page_no+=1
         if part==0:cv.bookmarkPage('chapter-'+str(c['id']));cv.addOutlineEntry(f'{c["id"]}. {c["title"]}','chapter-'+str(c['id']),0)
         cv.setFillColor(HexColor('#f3f7f8'));cv.rect(0,0,W,H,fill=1,stroke=0)
         cv.setFillColor(INK);cv.rect(0,H-77,W,77,fill=1,stroke=0)
@@ -88,7 +107,7 @@ for c in chapters:
         title=para(c['title'],24,True,HexColor('#ffffff'));tw,th=title.wrap(W-200,50);title.drawOn(cv,M,H-30-th)
         cv.setFillColor(HexColor('#ffffff'));cv.setFont('Desk',10);cv.drawRightString(W-M,H-28,f'SHEET {part+1} OF {pages}')
         cv.setFillColor(MUTED);cv.setFont('Desk',9);cv.drawString(M,H-92,'FIND YOUR TASK  →  MATCH THE PICTURE  →  CHECK THE CONDITION  →  USE THE FORMULA')
-        cols=2 if len(subset)<=4 else 4 if len(subset) in [7,8] else 3
+        cols=2 if len(subset)<=4 else 3
         rows=math.ceil(len(subset)/cols);cw=(W-2*M-(cols-1)*GAP)/cols;ch=(TOP-BOTTOM-(rows-1)*GAP)/rows
         for j,m in enumerate(subset):cards_report.append(draw_card(cv,m,start+j,M+(j%cols)*(cw+GAP),TOP-(j//cols)*(ch+GAP),cw,ch))
         cv.setFillColor(MUTED);cv.setFont('Desk',8);cv.drawString(M,15,'Read the labels. Diagrams illustrate relationships and may not be to scale. Full workings and narration are in the interactive guide.')

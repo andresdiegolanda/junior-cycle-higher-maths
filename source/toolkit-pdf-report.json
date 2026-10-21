@@ -7,1519 +7,1519 @@
     "cards": [
       {
         "index": 0,
-        "formulaFont": 14.5,
+        "formulaFont": 15.5,
         "diagramScale": 0.9727325750947798,
-        "bottomClearance": 106.78
+        "bottomClearance": 95.83
       },
       {
         "index": 1,
-        "formulaFont": 14.5,
+        "formulaFont": 15.5,
         "diagramScale": 0.9727325750947798,
-        "bottomClearance": 88.94
+        "bottomClearance": 25.03
       },
       {
         "index": 2,
-        "formulaFont": 14.5,
+        "formulaFont": 15.5,
         "diagramScale": 0.9727325750947798,
-        "bottomClearance": 88.94
+        "bottomClearance": 53.43
       },
       {
         "index": 3,
-        "formulaFont": 14.5,
+        "formulaFont": 15.5,
         "diagramScale": 0.9727325750947798,
-        "bottomClearance": 88.94
+        "bottomClearance": 50.93
       },
       {
         "index": 4,
-        "formulaFont": 14.5,
+        "formulaFont": 15.5,
         "diagramScale": 0.9727325750947798,
-        "bottomClearance": 88.94
+        "bottomClearance": 71.63
       },
       {
         "index": 5,
-        "formulaFont": 14.5,
+        "formulaFont": 15.5,
         "diagramScale": 0.9727325750947798,
-        "bottomClearance": 93.99
+        "bottomClearance": 83.93
       },
       {
         "index": 6,
-        "formulaFont": 14.5,
-        "diagramScale": 0.9727325750947798,
-        "bottomClearance": 106.78
+        "formulaFont": 15.5,
+        "diagramScale": 1.3662583843686211,
+        "bottomClearance": 15.0
       },
       {
         "index": 7,
-        "formulaFont": 14.5,
-        "diagramScale": 0.9727325750947798,
-        "bottomClearance": 106.78
+        "formulaFont": 15.5,
+        "diagramScale": 1.50909886264217,
+        "bottomClearance": 26.92
       },
       {
         "index": 8,
-        "formulaFont": 14.5,
-        "diagramScale": 0.9727325750947798,
-        "bottomClearance": 88.94
+        "formulaFont": 15.5,
+        "diagramScale": 1.392184310294547,
+        "bottomClearance": 15.0
       },
       {
         "index": 9,
-        "formulaFont": 14.5,
-        "diagramScale": 0.9727325750947798,
-        "bottomClearance": 76.15
+        "formulaFont": 15.5,
+        "diagramScale": 1.50909886264217,
+        "bottomClearance": 26.92
       }
     ]
   },
   {
     "chapter": 2,
     "firstPage": 3,
-    "lastPage": 3,
-    "pages": 1,
+    "lastPage": 4,
+    "pages": 2,
     "cards": [
       {
         "index": 0,
-        "formulaFont": 14.5,
-        "diagramScale": 0.7045494313210849,
-        "bottomClearance": 113.83
+        "formulaFont": 15.5,
+        "diagramScale": 0.9727325750947798,
+        "bottomClearance": 81.13
       },
       {
         "index": 1,
-        "formulaFont": 14.5,
-        "diagramScale": 0.7045494313210849,
-        "bottomClearance": 131.67
+        "formulaFont": 15.5,
+        "diagramScale": 0.9727325750947798,
+        "bottomClearance": 80.43
       },
       {
         "index": 2,
-        "formulaFont": 14.5,
-        "diagramScale": 0.7045494313210849,
-        "bottomClearance": 131.67
+        "formulaFont": 15.5,
+        "diagramScale": 0.9727325750947798,
+        "bottomClearance": 80.43
       },
       {
         "index": 3,
-        "formulaFont": 14.5,
-        "diagramScale": 0.7045494313210849,
-        "bottomClearance": 113.83
+        "formulaFont": 15.5,
+        "diagramScale": 0.9727325750947798,
+        "bottomClearance": 40.43
       },
       {
         "index": 4,
-        "formulaFont": 14.5,
-        "diagramScale": 0.7045494313210849,
-        "bottomClearance": 113.83
+        "formulaFont": 15.5,
+        "diagramScale": 0.9727325750947798,
+        "bottomClearance": 71.63
       },
       {
         "index": 5,
-        "formulaFont": 14.5,
-        "diagramScale": 0.7045494313210849,
-        "bottomClearance": 113.83
+        "formulaFont": 15.5,
+        "diagramScale": 0.9727325750947798,
+        "bottomClearance": 65.73
       },
       {
         "index": 6,
-        "formulaFont": 14.5,
-        "diagramScale": 0.7045494313210849,
-        "bottomClearance": 96.0
+        "formulaFont": 15.5,
+        "diagramScale": 1.50909886264217,
+        "bottomClearance": 385.86
       }
     ]
   },
   {
     "chapter": 3,
-    "firstPage": 4,
-    "lastPage": 4,
-    "pages": 1,
+    "firstPage": 5,
+    "lastPage": 7,
+    "pages": 3,
     "cards": [
       {
         "index": 0,
-        "formulaFont": 14.5,
-        "diagramScale": 0.7045494313210849,
-        "bottomClearance": 108.79
+        "formulaFont": 15.5,
+        "diagramScale": 1.2129250510352876,
+        "bottomClearance": 15.0
       },
       {
         "index": 1,
-        "formulaFont": 14.5,
-        "diagramScale": 0.7045494313210849,
-        "bottomClearance": 113.83
+        "formulaFont": 15.5,
+        "diagramScale": 1.392184310294547,
+        "bottomClearance": 15.0
       },
       {
         "index": 2,
-        "formulaFont": 14.5,
-        "diagramScale": 0.7045494313210849,
-        "bottomClearance": 80.25
+        "formulaFont": 15.5,
+        "diagramScale": 0.9818139399241766,
+        "bottomClearance": 15.0
       },
       {
         "index": 3,
-        "formulaFont": 14.5,
-        "diagramScale": 0.7045494313210849,
-        "bottomClearance": 131.67
+        "formulaFont": 15.5,
+        "diagramScale": 1.50909886264217,
+        "bottomClearance": 23.42
       },
       {
         "index": 4,
-        "formulaFont": 14.5,
-        "diagramScale": 0.7045494313210849,
-        "bottomClearance": 96.0
+        "formulaFont": 15.5,
+        "diagramScale": 1.50909886264217,
+        "bottomClearance": 271.56
       },
       {
         "index": 5,
-        "formulaFont": 14.5,
-        "diagramScale": 0.7045494313210849,
-        "bottomClearance": 113.83
+        "formulaFont": 15.5,
+        "diagramScale": 1.50909886264217,
+        "bottomClearance": 358.16
       },
       {
         "index": 6,
-        "formulaFont": 14.5,
-        "diagramScale": 0.7045494313210849,
-        "bottomClearance": 113.83
+        "formulaFont": 15.5,
+        "diagramScale": 1.50909886264217,
+        "bottomClearance": 354.66
       },
       {
         "index": 7,
-        "formulaFont": 14.5,
-        "diagramScale": 0.7045494313210849,
-        "bottomClearance": 113.83
+        "formulaFont": 15.5,
+        "diagramScale": 1.50909886264217,
+        "bottomClearance": 354.66
       }
     ]
   },
   {
     "chapter": 4,
-    "firstPage": 5,
-    "lastPage": 6,
-    "pages": 2,
-    "cards": [
-      {
-        "index": 0,
-        "formulaFont": 14.5,
-        "diagramScale": 0.9727325750947798,
-        "bottomClearance": 106.78
-      },
-      {
-        "index": 1,
-        "formulaFont": 14.5,
-        "diagramScale": 0.9727325750947798,
-        "bottomClearance": 76.15
-      },
-      {
-        "index": 2,
-        "formulaFont": 14.5,
-        "diagramScale": 0.9727325750947798,
-        "bottomClearance": 88.94
-      },
-      {
-        "index": 3,
-        "formulaFont": 14.5,
-        "diagramScale": 0.9727325750947798,
-        "bottomClearance": 76.15
-      },
-      {
-        "index": 4,
-        "formulaFont": 14.5,
-        "diagramScale": 0.9727325750947798,
-        "bottomClearance": 58.32
-      },
-      {
-        "index": 5,
-        "formulaFont": 14.5,
-        "diagramScale": 0.9727325750947798,
-        "bottomClearance": 58.32
-      },
-      {
-        "index": 6,
-        "formulaFont": 14.5,
-        "diagramScale": 0.9727325750947798,
-        "bottomClearance": 76.15
-      },
-      {
-        "index": 7,
-        "formulaFont": 14.5,
-        "diagramScale": 0.9727325750947798,
-        "bottomClearance": 93.99
-      },
-      {
-        "index": 8,
-        "formulaFont": 14.5,
-        "diagramScale": 0.9727325750947798,
-        "bottomClearance": 93.99
-      },
-      {
-        "index": 9,
-        "formulaFont": 14.5,
-        "diagramScale": 0.9727325750947798,
-        "bottomClearance": 58.32
-      },
-      {
-        "index": 10,
-        "formulaFont": 14.5,
-        "diagramScale": 0.9727325750947798,
-        "bottomClearance": 76.15
-      }
-    ]
-  },
-  {
-    "chapter": 5,
-    "firstPage": 7,
-    "lastPage": 7,
-    "pages": 1,
-    "cards": [
-      {
-        "index": 0,
-        "formulaFont": 14.5,
-        "diagramScale": 0.9727325750947798,
-        "bottomClearance": 58.32
-      },
-      {
-        "index": 1,
-        "formulaFont": 14.5,
-        "diagramScale": 0.9727325750947798,
-        "bottomClearance": 76.15
-      },
-      {
-        "index": 2,
-        "formulaFont": 14.5,
-        "diagramScale": 0.9727325750947798,
-        "bottomClearance": 76.15
-      },
-      {
-        "index": 3,
-        "formulaFont": 14.5,
-        "diagramScale": 0.9727325750947798,
-        "bottomClearance": 106.78
-      },
-      {
-        "index": 4,
-        "formulaFont": 14.5,
-        "diagramScale": 0.9727325750947798,
-        "bottomClearance": 58.32
-      },
-      {
-        "index": 5,
-        "formulaFont": 14.5,
-        "diagramScale": 0.9727325750947798,
-        "bottomClearance": 76.15
-      }
-    ]
-  },
-  {
-    "chapter": 6,
     "firstPage": 8,
     "lastPage": 9,
     "pages": 2,
     "cards": [
       {
         "index": 0,
-        "formulaFont": 14.5,
+        "formulaFont": 15.5,
         "diagramScale": 0.9727325750947798,
-        "bottomClearance": 58.32
+        "bottomClearance": 46.43
       },
       {
         "index": 1,
-        "formulaFont": 14.5,
-        "diagramScale": 0.9727325750947798,
-        "bottomClearance": 93.99
+        "formulaFont": 15.5,
+        "diagramScale": 0.8418139399241765,
+        "bottomClearance": 15.0
       },
       {
         "index": 2,
-        "formulaFont": 14.5,
+        "formulaFont": 15.5,
         "diagramScale": 0.9727325750947798,
-        "bottomClearance": 58.32
+        "bottomClearance": 65.73
       },
       {
         "index": 3,
-        "formulaFont": 14.5,
+        "formulaFont": 15.5,
         "diagramScale": 0.9727325750947798,
-        "bottomClearance": 88.94
+        "bottomClearance": 65.73
       },
       {
         "index": 4,
-        "formulaFont": 14.5,
+        "formulaFont": 15.5,
         "diagramScale": 0.9727325750947798,
-        "bottomClearance": 88.94
+        "bottomClearance": 35.53
       },
       {
         "index": 5,
-        "formulaFont": 14.5,
-        "diagramScale": 1.50909886264217,
-        "bottomClearance": 34.37
+        "formulaFont": 15.5,
+        "diagramScale": 0.9727325750947798,
+        "bottomClearance": 59.73
       },
       {
         "index": 6,
-        "formulaFont": 14.5,
-        "diagramScale": 1.50909886264217,
-        "bottomClearance": 34.37
+        "formulaFont": 15.5,
+        "diagramScale": 0.9727325750947798,
+        "bottomClearance": 52.73
       },
       {
         "index": 7,
-        "formulaFont": 14.5,
-        "diagramScale": 1.50909886264217,
-        "bottomClearance": 34.37
+        "formulaFont": 15.5,
+        "diagramScale": 0.9727325750947798,
+        "bottomClearance": 52.73
       },
       {
         "index": 8,
-        "formulaFont": 14.5,
+        "formulaFont": 15.5,
+        "diagramScale": 0.9727325750947798,
+        "bottomClearance": 80.43
+      },
+      {
+        "index": 9,
+        "formulaFont": 15.5,
+        "diagramScale": 0.8418139399241765,
+        "bottomClearance": 15.0
+      },
+      {
+        "index": 10,
+        "formulaFont": 15.5,
+        "diagramScale": 0.9727325750947798,
+        "bottomClearance": 65.73
+      }
+    ]
+  },
+  {
+    "chapter": 5,
+    "firstPage": 10,
+    "lastPage": 11,
+    "pages": 2,
+    "cards": [
+      {
+        "index": 0,
+        "formulaFont": 15.5,
+        "diagramScale": 0.8025546806649174,
+        "bottomClearance": 15.0
+      },
+      {
+        "index": 1,
+        "formulaFont": 15.5,
         "diagramScale": 1.50909886264217,
-        "bottomClearance": 34.37
+        "bottomClearance": 26.92
+      },
+      {
+        "index": 2,
+        "formulaFont": 15.5,
+        "diagramScale": 1.50909886264217,
+        "bottomClearance": 26.92
+      },
+      {
+        "index": 3,
+        "formulaFont": 15.5,
+        "diagramScale": 1.3662583843686211,
+        "bottomClearance": 15.0
+      },
+      {
+        "index": 4,
+        "formulaFont": 15.5,
+        "diagramScale": 1.50909886264217,
+        "bottomClearance": 337.46
+      },
+      {
+        "index": 5,
+        "formulaFont": 15.5,
+        "diagramScale": 1.50909886264217,
+        "bottomClearance": 385.86
+      }
+    ]
+  },
+  {
+    "chapter": 6,
+    "firstPage": 12,
+    "lastPage": 14,
+    "pages": 3,
+    "cards": [
+      {
+        "index": 0,
+        "formulaFont": 15.5,
+        "diagramScale": 1.50909886264217,
+        "bottomClearance": 324.56
+      },
+      {
+        "index": 1,
+        "formulaFont": 15.5,
+        "diagramScale": 1.50909886264217,
+        "bottomClearance": 354.66
+      },
+      {
+        "index": 2,
+        "formulaFont": 15.5,
+        "diagramScale": 1.50909886264217,
+        "bottomClearance": 243.86
+      },
+      {
+        "index": 3,
+        "formulaFont": 15.5,
+        "diagramScale": 1.50909886264217,
+        "bottomClearance": 326.96
+      },
+      {
+        "index": 4,
+        "formulaFont": 15.5,
+        "diagramScale": 0.9727325750947798,
+        "bottomClearance": 71.63
+      },
+      {
+        "index": 5,
+        "formulaFont": 15.5,
+        "diagramScale": 0.9727325750947798,
+        "bottomClearance": 52.73
+      },
+      {
+        "index": 6,
+        "formulaFont": 15.5,
+        "diagramScale": 0.9727325750947798,
+        "bottomClearance": 80.43
+      },
+      {
+        "index": 7,
+        "formulaFont": 15.5,
+        "diagramScale": 0.9727325750947798,
+        "bottomClearance": 52.73
+      },
+      {
+        "index": 8,
+        "formulaFont": 15.5,
+        "diagramScale": 0.9727325750947798,
+        "bottomClearance": 59.73
       }
     ]
   },
   {
     "chapter": 7,
-    "firstPage": 10,
-    "lastPage": 10,
-    "pages": 1,
+    "firstPage": 15,
+    "lastPage": 16,
+    "pages": 2,
     "cards": [
       {
         "index": 0,
-        "formulaFont": 14.5,
-        "diagramScale": 0.7045494313210849,
-        "bottomClearance": 96.0
+        "formulaFont": 15.5,
+        "diagramScale": 0.9727325750947798,
+        "bottomClearance": 38.03
       },
       {
         "index": 1,
-        "formulaFont": 14.5,
-        "diagramScale": 0.7045494313210849,
-        "bottomClearance": 96.0
+        "formulaFont": 15.5,
+        "diagramScale": 0.9727325750947798,
+        "bottomClearance": 43.93
       },
       {
         "index": 2,
-        "formulaFont": 14.5,
-        "diagramScale": 0.7045494313210849,
-        "bottomClearance": 113.83
+        "formulaFont": 15.5,
+        "diagramScale": 0.9727325750947798,
+        "bottomClearance": 99.33
       },
       {
         "index": 3,
-        "formulaFont": 14.5,
-        "diagramScale": 0.7045494313210849,
-        "bottomClearance": 80.25
+        "formulaFont": 15.5,
+        "diagramScale": 0.9640361621463988,
+        "bottomClearance": 15.0
       },
       {
         "index": 4,
-        "formulaFont": 14.5,
-        "diagramScale": 0.7045494313210849,
-        "bottomClearance": 131.67
+        "formulaFont": 15.5,
+        "diagramScale": 0.9727325750947798,
+        "bottomClearance": 80.43
       },
       {
         "index": 5,
-        "formulaFont": 14.5,
-        "diagramScale": 0.7045494313210849,
-        "bottomClearance": 113.83
+        "formulaFont": 15.5,
+        "diagramScale": 0.9727325750947798,
+        "bottomClearance": 52.73
       },
       {
         "index": 6,
-        "formulaFont": 14.5,
-        "diagramScale": 0.7045494313210849,
-        "bottomClearance": 113.83
+        "formulaFont": 15.5,
+        "diagramScale": 1.50909886264217,
+        "bottomClearance": 326.96
       },
       {
         "index": 7,
-        "formulaFont": 14.5,
-        "diagramScale": 0.7045494313210849,
-        "bottomClearance": 78.16
+        "formulaFont": 15.5,
+        "diagramScale": 1.50909886264217,
+        "bottomClearance": 361.66
       }
     ]
   },
   {
     "chapter": 8,
-    "firstPage": 11,
-    "lastPage": 12,
-    "pages": 2,
+    "firstPage": 17,
+    "lastPage": 20,
+    "pages": 4,
     "cards": [
       {
         "index": 0,
-        "formulaFont": 14.5,
-        "diagramScale": 0.9727325750947798,
-        "bottomClearance": 58.32
+        "formulaFont": 15.5,
+        "diagramScale": 0.8284806065908433,
+        "bottomClearance": 15.0
       },
       {
         "index": 1,
-        "formulaFont": 14.5,
-        "diagramScale": 0.9727325750947798,
-        "bottomClearance": 76.15
+        "formulaFont": 15.5,
+        "diagramScale": 1.392184310294547,
+        "bottomClearance": 15.0
       },
       {
         "index": 2,
-        "formulaFont": 14.5,
-        "diagramScale": 0.9727325750947798,
-        "bottomClearance": 58.32
+        "formulaFont": 15.5,
+        "diagramScale": 1.2388509769612135,
+        "bottomClearance": 15.0
       },
       {
         "index": 3,
-        "formulaFont": 14.5,
-        "diagramScale": 0.9727325750947798,
-        "bottomClearance": 76.15
+        "formulaFont": 15.5,
+        "diagramScale": 1.0595917177019545,
+        "bottomClearance": 15.0
       },
       {
         "index": 4,
-        "formulaFont": 14.5,
-        "diagramScale": 0.9727325750947798,
-        "bottomClearance": 93.99
+        "formulaFont": 15.5,
+        "diagramScale": 1.50909886264217,
+        "bottomClearance": 326.96
       },
       {
         "index": 5,
-        "formulaFont": 14.5,
-        "diagramScale": 0.9727325750947798,
-        "bottomClearance": 93.99
+        "formulaFont": 15.5,
+        "diagramScale": 1.50909886264217,
+        "bottomClearance": 354.66
       },
       {
         "index": 6,
-        "formulaFont": 14.5,
-        "diagramScale": 0.9727325750947798,
-        "bottomClearance": 58.32
+        "formulaFont": 15.5,
+        "diagramScale": 1.50909886264217,
+        "bottomClearance": 271.56
       },
       {
         "index": 7,
-        "formulaFont": 14.5,
-        "diagramScale": 0.9727325750947798,
-        "bottomClearance": 93.99
+        "formulaFont": 15.5,
+        "diagramScale": 1.50909886264217,
+        "bottomClearance": 385.86
       },
       {
         "index": 8,
-        "formulaFont": 14.5,
-        "diagramScale": 0.9727325750947798,
-        "bottomClearance": 76.15
+        "formulaFont": 15.5,
+        "diagramScale": 1.418110236220473,
+        "bottomClearance": 15.0
       },
       {
         "index": 9,
-        "formulaFont": 14.5,
-        "diagramScale": 0.9727325750947798,
-        "bottomClearance": 76.15
+        "formulaFont": 15.5,
+        "diagramScale": 1.50909886264217,
+        "bottomClearance": 26.92
       },
       {
         "index": 10,
-        "formulaFont": 14.5,
-        "diagramScale": 0.9727325750947798,
-        "bottomClearance": 93.99
+        "formulaFont": 15.5,
+        "diagramScale": 1.3662583843686211,
+        "bottomClearance": 15.0
       },
       {
         "index": 11,
-        "formulaFont": 14.5,
-        "diagramScale": 0.9727325750947798,
-        "bottomClearance": 76.15
+        "formulaFont": 15.5,
+        "diagramScale": 1.50909886264217,
+        "bottomClearance": 26.92
       }
     ]
   },
   {
     "chapter": 9,
-    "firstPage": 13,
-    "lastPage": 14,
-    "pages": 2,
+    "firstPage": 21,
+    "lastPage": 23,
+    "pages": 3,
     "cards": [
       {
         "index": 0,
-        "formulaFont": 14.5,
+        "formulaFont": 15.5,
         "diagramScale": 0.9727325750947798,
-        "bottomClearance": 93.99
+        "bottomClearance": 80.43
       },
       {
         "index": 1,
-        "formulaFont": 14.5,
+        "formulaFont": 15.5,
         "diagramScale": 0.9727325750947798,
-        "bottomClearance": 106.78
+        "bottomClearance": 68.13
       },
       {
         "index": 2,
-        "formulaFont": 14.5,
+        "formulaFont": 15.5,
         "diagramScale": 0.9727325750947798,
-        "bottomClearance": 93.99
+        "bottomClearance": 83.93
       },
       {
         "index": 3,
-        "formulaFont": 14.5,
+        "formulaFont": 15.5,
         "diagramScale": 0.9727325750947798,
-        "bottomClearance": 88.94
+        "bottomClearance": 56.23
       },
       {
         "index": 4,
-        "formulaFont": 14.5,
+        "formulaFont": 15.5,
         "diagramScale": 0.9727325750947798,
-        "bottomClearance": 76.15
+        "bottomClearance": 56.23
       },
       {
         "index": 5,
-        "formulaFont": 14.5,
+        "formulaFont": 15.5,
         "diagramScale": 0.9727325750947798,
-        "bottomClearance": 88.94
+        "bottomClearance": 99.33
       },
       {
         "index": 6,
-        "formulaFont": 14.5,
-        "diagramScale": 0.9727325750947798,
-        "bottomClearance": 76.15
+        "formulaFont": 15.5,
+        "diagramScale": 1.50909886264217,
+        "bottomClearance": 354.66
       },
       {
         "index": 7,
-        "formulaFont": 14.5,
-        "diagramScale": 0.9727325750947798,
-        "bottomClearance": 71.11
+        "formulaFont": 15.5,
+        "diagramScale": 1.50909886264217,
+        "bottomClearance": 271.56
       },
       {
         "index": 8,
-        "formulaFont": 14.5,
-        "diagramScale": 0.9727325750947798,
-        "bottomClearance": 76.15
+        "formulaFont": 15.5,
+        "diagramScale": 1.50909886264217,
+        "bottomClearance": 330.46
       },
       {
         "index": 9,
-        "formulaFont": 14.5,
-        "diagramScale": 0.9727325750947798,
-        "bottomClearance": 93.99
+        "formulaFont": 15.5,
+        "diagramScale": 1.50909886264217,
+        "bottomClearance": 382.36
       }
     ]
   },
   {
     "chapter": 10,
-    "firstPage": 15,
-    "lastPage": 15,
-    "pages": 1,
+    "firstPage": 24,
+    "lastPage": 25,
+    "pages": 2,
     "cards": [
       {
         "index": 0,
-        "formulaFont": 14.5,
-        "diagramScale": 0.7045494313210849,
-        "bottomClearance": 113.83
+        "formulaFont": 15.5,
+        "diagramScale": 0.9727325750947798,
+        "bottomClearance": 65.73
       },
       {
         "index": 1,
-        "formulaFont": 14.5,
-        "diagramScale": 0.7045494313210849,
-        "bottomClearance": 83.21
+        "formulaFont": 15.5,
+        "diagramScale": 0.9727325750947798,
+        "bottomClearance": 59.73
       },
       {
         "index": 2,
-        "formulaFont": 14.5,
-        "diagramScale": 0.7045494313210849,
-        "bottomClearance": 113.83
+        "formulaFont": 15.5,
+        "diagramScale": 0.9727325750947798,
+        "bottomClearance": 83.93
       },
       {
         "index": 3,
-        "formulaFont": 14.5,
-        "diagramScale": 0.7045494313210849,
-        "bottomClearance": 113.83
+        "formulaFont": 15.5,
+        "diagramScale": 0.9727325750947798,
+        "bottomClearance": 71.63
       },
       {
         "index": 4,
-        "formulaFont": 14.5,
-        "diagramScale": 0.7045494313210849,
-        "bottomClearance": 113.83
+        "formulaFont": 15.5,
+        "diagramScale": 0.9727325750947798,
+        "bottomClearance": 75.13
       },
       {
         "index": 5,
-        "formulaFont": 14.5,
-        "diagramScale": 0.7045494313210849,
-        "bottomClearance": 113.83
+        "formulaFont": 15.5,
+        "diagramScale": 0.9727325750947798,
+        "bottomClearance": 52.73
       },
       {
         "index": 6,
-        "formulaFont": 14.5,
-        "diagramScale": 0.7045494313210849,
-        "bottomClearance": 96.0
+        "formulaFont": 15.5,
+        "diagramScale": 1.50909886264217,
+        "bottomClearance": 337.46
       }
     ]
   },
   {
     "chapter": 11,
-    "firstPage": 16,
-    "lastPage": 17,
+    "firstPage": 26,
+    "lastPage": 27,
     "pages": 2,
     "cards": [
       {
         "index": 0,
-        "formulaFont": 14.5,
+        "formulaFont": 15.5,
         "diagramScale": 0.9727325750947798,
-        "bottomClearance": 93.99
+        "bottomClearance": 56.23
       },
       {
         "index": 1,
-        "formulaFont": 14.5,
+        "formulaFont": 15.5,
         "diagramScale": 0.9727325750947798,
-        "bottomClearance": 93.99
+        "bottomClearance": 28.53
       },
       {
         "index": 2,
-        "formulaFont": 14.5,
+        "formulaFont": 15.5,
         "diagramScale": 0.9727325750947798,
-        "bottomClearance": 76.15
+        "bottomClearance": 28.53
       },
       {
         "index": 3,
-        "formulaFont": 14.5,
+        "formulaFont": 15.5,
         "diagramScale": 0.9727325750947798,
-        "bottomClearance": 93.99
+        "bottomClearance": 80.43
       },
       {
         "index": 4,
-        "formulaFont": 14.5,
+        "formulaFont": 15.5,
         "diagramScale": 0.9727325750947798,
-        "bottomClearance": 93.99
+        "bottomClearance": 52.73
       },
       {
         "index": 5,
-        "formulaFont": 14.5,
-        "diagramScale": 1.50909886264217,
-        "bottomClearance": 16.53
+        "formulaFont": 15.5,
+        "diagramScale": 0.9381102362204728,
+        "bottomClearance": 15.0
       },
       {
         "index": 6,
-        "formulaFont": 14.5,
-        "diagramScale": 1.50909886264217,
-        "bottomClearance": 34.37
+        "formulaFont": 15.5,
+        "diagramScale": 1.3662583843686211,
+        "bottomClearance": 15.0
       },
       {
         "index": 7,
-        "formulaFont": 14.5,
+        "formulaFont": 15.5,
         "diagramScale": 1.50909886264217,
-        "bottomClearance": 34.37
+        "bottomClearance": 26.92
       },
       {
         "index": 8,
-        "formulaFont": 14.5,
-        "diagramScale": 1.50909886264217,
-        "bottomClearance": 34.37
+        "formulaFont": 15.5,
+        "diagramScale": 1.1610731991834358,
+        "bottomClearance": 15.0
       }
     ]
   },
   {
     "chapter": 12,
-    "firstPage": 18,
-    "lastPage": 18,
-    "pages": 1,
+    "firstPage": 28,
+    "lastPage": 29,
+    "pages": 2,
     "cards": [
       {
         "index": 0,
-        "formulaFont": 14.5,
-        "diagramScale": 0.7045494313210849,
-        "bottomClearance": 96.0
+        "formulaFont": 15.5,
+        "diagramScale": 0.9558880139982507,
+        "bottomClearance": 15.0
       },
       {
         "index": 1,
-        "formulaFont": 14.5,
-        "diagramScale": 0.7045494313210849,
-        "bottomClearance": 113.83
+        "formulaFont": 15.5,
+        "diagramScale": 0.9727325750947798,
+        "bottomClearance": 65.73
       },
       {
         "index": 2,
-        "formulaFont": 14.5,
-        "diagramScale": 0.7045494313210849,
-        "bottomClearance": 113.83
+        "formulaFont": 15.5,
+        "diagramScale": 0.9727325750947798,
+        "bottomClearance": 28.53
       },
       {
         "index": 3,
-        "formulaFont": 14.5,
-        "diagramScale": 0.7045494313210849,
-        "bottomClearance": 96.0
+        "formulaFont": 15.5,
+        "diagramScale": 0.9727325750947798,
+        "bottomClearance": 65.73
       },
       {
         "index": 4,
-        "formulaFont": 14.5,
-        "diagramScale": 0.7045494313210849,
-        "bottomClearance": 96.0
+        "formulaFont": 15.5,
+        "diagramScale": 0.9727325750947798,
+        "bottomClearance": 25.73
       },
       {
         "index": 5,
-        "formulaFont": 14.5,
-        "diagramScale": 0.7045494313210849,
-        "bottomClearance": 115.92
+        "formulaFont": 15.5,
+        "diagramScale": 0.9558880139982507,
+        "bottomClearance": 15.0
       },
       {
         "index": 6,
-        "formulaFont": 14.5,
-        "diagramScale": 0.7045494313210849,
-        "bottomClearance": 113.83
+        "formulaFont": 15.5,
+        "diagramScale": 1.50909886264217,
+        "bottomClearance": 385.86
       }
     ]
   },
   {
     "chapter": 13,
-    "firstPage": 19,
-    "lastPage": 19,
-    "pages": 1,
+    "firstPage": 30,
+    "lastPage": 31,
+    "pages": 2,
     "cards": [
       {
         "index": 0,
-        "formulaFont": 14.5,
-        "diagramScale": 0.7045494313210849,
-        "bottomClearance": 96.0
+        "formulaFont": 15.5,
+        "diagramScale": 0.9727325750947798,
+        "bottomClearance": 59.73
       },
       {
         "index": 1,
-        "formulaFont": 14.5,
-        "diagramScale": 0.7045494313210849,
-        "bottomClearance": 113.83
+        "formulaFont": 15.5,
+        "diagramScale": 0.9727325750947798,
+        "bottomClearance": 28.53
       },
       {
         "index": 2,
-        "formulaFont": 14.5,
-        "diagramScale": 0.7045494313210849,
-        "bottomClearance": 131.67
+        "formulaFont": 15.5,
+        "diagramScale": 0.9727325750947798,
+        "bottomClearance": 40.43
       },
       {
         "index": 3,
-        "formulaFont": 14.5,
-        "diagramScale": 0.7045494313210849,
-        "bottomClearance": 113.83
+        "formulaFont": 15.5,
+        "diagramScale": 0.9727325750947798,
+        "bottomClearance": 56.23
       },
       {
         "index": 4,
-        "formulaFont": 14.5,
-        "diagramScale": 0.7045494313210849,
-        "bottomClearance": 78.16
+        "formulaFont": 15.5,
+        "diagramScale": 0.9727325750947798,
+        "bottomClearance": 19.73
       },
       {
         "index": 5,
-        "formulaFont": 14.5,
-        "diagramScale": 0.7045494313210849,
-        "bottomClearance": 96.0
+        "formulaFont": 15.5,
+        "diagramScale": 0.9727325750947798,
+        "bottomClearance": 59.73
       },
       {
         "index": 6,
-        "formulaFont": 14.5,
-        "diagramScale": 0.7045494313210849,
-        "bottomClearance": 96.0
+        "formulaFont": 15.5,
+        "diagramScale": 1.50909886264217,
+        "bottomClearance": 361.66
       }
     ]
   },
   {
     "chapter": 14,
-    "firstPage": 20,
-    "lastPage": 21,
-    "pages": 2,
+    "firstPage": 32,
+    "lastPage": 34,
+    "pages": 3,
     "cards": [
       {
         "index": 0,
-        "formulaFont": 14.5,
-        "diagramScale": 0.9727325750947798,
-        "bottomClearance": 76.15
+        "formulaFont": 15.5,
+        "diagramScale": 1.50909886264217,
+        "bottomClearance": 271.56
       },
       {
         "index": 1,
-        "formulaFont": 14.5,
-        "diagramScale": 0.9727325750947798,
-        "bottomClearance": 93.99
+        "formulaFont": 15.5,
+        "diagramScale": 1.50909886264217,
+        "bottomClearance": 311.56
       },
       {
         "index": 2,
-        "formulaFont": 14.5,
+        "formulaFont": 15.5,
         "diagramScale": 0.9727325750947798,
-        "bottomClearance": 93.99
+        "bottomClearance": 80.43
       },
       {
         "index": 3,
-        "formulaFont": 14.5,
+        "formulaFont": 15.5,
         "diagramScale": 0.9727325750947798,
-        "bottomClearance": 93.99
+        "bottomClearance": 52.73
       },
       {
         "index": 4,
-        "formulaFont": 14.5,
-        "diagramScale": 0.9727325750947798,
-        "bottomClearance": 76.15
+        "formulaFont": 15.5,
+        "diagramScale": 0.8418139399241765,
+        "bottomClearance": 15.0
       },
       {
         "index": 5,
-        "formulaFont": 14.5,
-        "diagramScale": 1.50909886264217,
-        "bottomClearance": 34.37
+        "formulaFont": 15.5,
+        "diagramScale": 0.9727325750947798,
+        "bottomClearance": 52.73
       },
       {
         "index": 6,
-        "formulaFont": 14.5,
-        "diagramScale": 1.50909886264217,
-        "bottomClearance": 34.37
+        "formulaFont": 15.5,
+        "diagramScale": 0.9727325750947798,
+        "bottomClearance": 59.73
       },
       {
         "index": 7,
-        "formulaFont": 14.5,
-        "diagramScale": 1.50909886264217,
-        "bottomClearance": 16.53
+        "formulaFont": 15.5,
+        "diagramScale": 0.9727325750947798,
+        "bottomClearance": 59.73
       },
       {
         "index": 8,
-        "formulaFont": 14.5,
+        "formulaFont": 15.5,
         "diagramScale": 1.50909886264217,
-        "bottomClearance": 16.53
+        "bottomClearance": 361.66
       }
     ]
   },
   {
     "chapter": 15,
-    "firstPage": 22,
-    "lastPage": 22,
-    "pages": 1,
+    "firstPage": 35,
+    "lastPage": 36,
+    "pages": 2,
     "cards": [
       {
         "index": 0,
-        "formulaFont": 14.5,
-        "diagramScale": 0.7045494313210849,
-        "bottomClearance": 131.67
+        "formulaFont": 15.5,
+        "diagramScale": 0.9727325750947798,
+        "bottomClearance": 80.43
       },
       {
         "index": 1,
-        "formulaFont": 14.5,
-        "diagramScale": 0.7045494313210849,
-        "bottomClearance": 131.67
+        "formulaFont": 15.5,
+        "diagramScale": 0.9727325750947798,
+        "bottomClearance": 80.43
       },
       {
         "index": 2,
-        "formulaFont": 14.5,
-        "diagramScale": 0.7045494313210849,
-        "bottomClearance": 113.83
+        "formulaFont": 15.5,
+        "diagramScale": 0.9727325750947798,
+        "bottomClearance": 28.53
       },
       {
         "index": 3,
-        "formulaFont": 14.5,
-        "diagramScale": 0.7045494313210849,
-        "bottomClearance": 113.83
+        "formulaFont": 15.5,
+        "diagramScale": 0.9727325750947798,
+        "bottomClearance": 56.23
       },
       {
         "index": 4,
-        "formulaFont": 14.5,
-        "diagramScale": 0.7045494313210849,
-        "bottomClearance": 113.83
+        "formulaFont": 15.5,
+        "diagramScale": 0.9727325750947798,
+        "bottomClearance": 65.73
       },
       {
         "index": 5,
-        "formulaFont": 14.5,
-        "diagramScale": 0.7045494313210849,
-        "bottomClearance": 113.83
+        "formulaFont": 15.5,
+        "diagramScale": 0.9727325750947798,
+        "bottomClearance": 65.73
       },
       {
         "index": 6,
-        "formulaFont": 14.5,
-        "diagramScale": 0.7045494313210849,
-        "bottomClearance": 113.83
+        "formulaFont": 15.5,
+        "diagramScale": 1.50909886264217,
+        "bottomClearance": 354.66
       }
     ]
   },
   {
     "chapter": 16,
-    "firstPage": 23,
-    "lastPage": 24,
+    "firstPage": 37,
+    "lastPage": 38,
     "pages": 2,
     "cards": [
       {
         "index": 0,
-        "formulaFont": 14.5,
+        "formulaFont": 15.5,
         "diagramScale": 0.9727325750947798,
-        "bottomClearance": 76.15
+        "bottomClearance": 65.73
       },
       {
         "index": 1,
-        "formulaFont": 14.5,
+        "formulaFont": 15.5,
         "diagramScale": 0.9727325750947798,
-        "bottomClearance": 76.15
+        "bottomClearance": 52.73
       },
       {
         "index": 2,
-        "formulaFont": 14.5,
+        "formulaFont": 15.5,
         "diagramScale": 0.9727325750947798,
-        "bottomClearance": 76.15
+        "bottomClearance": 65.73
       },
       {
         "index": 3,
-        "formulaFont": 14.5,
-        "diagramScale": 0.9727325750947798,
-        "bottomClearance": 76.15
+        "formulaFont": 15.5,
+        "diagramScale": 0.8418139399241765,
+        "bottomClearance": 15.0
       },
       {
         "index": 4,
-        "formulaFont": 14.5,
-        "diagramScale": 0.9727325750947798,
-        "bottomClearance": 58.32
+        "formulaFont": 15.5,
+        "diagramScale": 0.9195917177019544,
+        "bottomClearance": 15.0
       },
       {
         "index": 5,
-        "formulaFont": 14.5,
+        "formulaFont": 15.5,
         "diagramScale": 0.9727325750947798,
-        "bottomClearance": 93.99
+        "bottomClearance": 80.43
       },
       {
         "index": 6,
-        "formulaFont": 14.5,
+        "formulaFont": 15.5,
         "diagramScale": 0.9727325750947798,
-        "bottomClearance": 76.15
+        "bottomClearance": 65.73
       },
       {
         "index": 7,
-        "formulaFont": 14.5,
+        "formulaFont": 15.5,
         "diagramScale": 0.9727325750947798,
-        "bottomClearance": 76.15
+        "bottomClearance": 59.73
       },
       {
         "index": 8,
-        "formulaFont": 14.5,
+        "formulaFont": 15.5,
         "diagramScale": 0.9727325750947798,
-        "bottomClearance": 93.99
+        "bottomClearance": 56.23
       },
       {
         "index": 9,
-        "formulaFont": 14.5,
+        "formulaFont": 15.5,
         "diagramScale": 0.9727325750947798,
-        "bottomClearance": 93.99
+        "bottomClearance": 83.93
       },
       {
         "index": 10,
-        "formulaFont": 14.5,
+        "formulaFont": 15.5,
         "diagramScale": 0.9727325750947798,
-        "bottomClearance": 40.48
+        "bottomClearance": 17.33
       }
     ]
   },
   {
     "chapter": 17,
-    "firstPage": 25,
-    "lastPage": 26,
-    "pages": 2,
+    "firstPage": 39,
+    "lastPage": 42,
+    "pages": 4,
     "cards": [
       {
         "index": 0,
-        "formulaFont": 14.5,
-        "diagramScale": 0.9727325750947798,
-        "bottomClearance": 93.99
+        "formulaFont": 15.5,
+        "diagramScale": 1.1610731991834358,
+        "bottomClearance": 15.0
       },
       {
         "index": 1,
-        "formulaFont": 14.5,
-        "diagramScale": 0.9727325750947798,
-        "bottomClearance": 76.15
+        "formulaFont": 15.5,
+        "diagramScale": 1.1869991251093617,
+        "bottomClearance": 15.0
       },
       {
         "index": 2,
-        "formulaFont": 14.5,
-        "diagramScale": 0.9727325750947798,
-        "bottomClearance": 76.15
+        "formulaFont": 15.5,
+        "diagramScale": 1.1610731991834358,
+        "bottomClearance": 15.0
       },
       {
         "index": 3,
-        "formulaFont": 14.5,
-        "diagramScale": 0.9727325750947798,
-        "bottomClearance": 88.94
+        "formulaFont": 15.5,
+        "diagramScale": 1.50909886264217,
+        "bottomClearance": 271.56
       },
       {
         "index": 4,
-        "formulaFont": 14.5,
-        "diagramScale": 0.9727325750947798,
-        "bottomClearance": 71.11
+        "formulaFont": 15.5,
+        "diagramScale": 1.50909886264217,
+        "bottomClearance": 330.46
       },
       {
         "index": 5,
-        "formulaFont": 14.5,
-        "diagramScale": 1.50909886264217,
-        "bottomClearance": 16.53
+        "formulaFont": 15.5,
+        "diagramScale": 1.2129250510352876,
+        "bottomClearance": 15.0
       },
       {
         "index": 6,
-        "formulaFont": 14.5,
-        "diagramScale": 1.50909886264217,
-        "bottomClearance": 16.53
+        "formulaFont": 15.5,
+        "diagramScale": 1.2388509769612135,
+        "bottomClearance": 15.0
       },
       {
         "index": 7,
-        "formulaFont": 14.5,
-        "diagramScale": 1.50909886264217,
-        "bottomClearance": 34.37
+        "formulaFont": 15.5,
+        "diagramScale": 1.418110236220473,
+        "bottomClearance": 15.0
       },
       {
         "index": 8,
-        "formulaFont": 14.5,
+        "formulaFont": 15.5,
         "diagramScale": 1.50909886264217,
-        "bottomClearance": 16.53
+        "bottomClearance": 250.86
       }
     ]
   },
   {
     "chapter": 18,
-    "firstPage": 27,
-    "lastPage": 28,
+    "firstPage": 43,
+    "lastPage": 44,
     "pages": 2,
     "cards": [
       {
         "index": 0,
-        "formulaFont": 14.5,
+        "formulaFont": 15.5,
         "diagramScale": 0.9727325750947798,
-        "bottomClearance": 88.94
+        "bottomClearance": 75.13
       },
       {
         "index": 1,
-        "formulaFont": 14.5,
+        "formulaFont": 15.5,
         "diagramScale": 0.9727325750947798,
-        "bottomClearance": 88.94
+        "bottomClearance": 71.63
       },
       {
         "index": 2,
-        "formulaFont": 14.5,
+        "formulaFont": 15.5,
         "diagramScale": 0.9727325750947798,
-        "bottomClearance": 88.94
+        "bottomClearance": 53.43
       },
       {
         "index": 3,
-        "formulaFont": 14.5,
+        "formulaFont": 15.5,
         "diagramScale": 0.9727325750947798,
-        "bottomClearance": 93.99
+        "bottomClearance": 52.73
       },
       {
         "index": 4,
-        "formulaFont": 14.5,
+        "formulaFont": 15.5,
         "diagramScale": 0.9727325750947798,
-        "bottomClearance": 76.15
+        "bottomClearance": 59.73
       },
       {
         "index": 5,
-        "formulaFont": 14.5,
-        "diagramScale": 1.50909886264217,
-        "bottomClearance": 34.37
+        "formulaFont": 15.5,
+        "diagramScale": 0.9727325750947798,
+        "bottomClearance": 71.63
       },
       {
         "index": 6,
-        "formulaFont": 14.5,
-        "diagramScale": 1.50909886264217,
-        "bottomClearance": 16.53
+        "formulaFont": 15.5,
+        "diagramScale": 1.418110236220473,
+        "bottomClearance": 15.0
       },
       {
         "index": 7,
-        "formulaFont": 14.5,
-        "diagramScale": 1.50909886264217,
-        "bottomClearance": 16.53
+        "formulaFont": 15.5,
+        "diagramScale": 1.1610731991834358,
+        "bottomClearance": 15.0
       },
       {
         "index": 8,
-        "formulaFont": 14.5,
-        "diagramScale": 1.50909886264217,
-        "bottomClearance": 16.53
+        "formulaFont": 15.5,
+        "diagramScale": 1.418110236220473,
+        "bottomClearance": 15.0
       }
     ]
   },
   {
     "chapter": 19,
-    "firstPage": 29,
-    "lastPage": 30,
+    "firstPage": 45,
+    "lastPage": 46,
     "pages": 2,
     "cards": [
       {
         "index": 0,
-        "formulaFont": 14.5,
+        "formulaFont": 15.5,
         "diagramScale": 0.9727325750947798,
-        "bottomClearance": 106.78
+        "bottomClearance": 74.13
       },
       {
         "index": 1,
-        "formulaFont": 14.5,
+        "formulaFont": 15.5,
         "diagramScale": 0.9727325750947798,
-        "bottomClearance": 76.15
+        "bottomClearance": 65.73
       },
       {
         "index": 2,
-        "formulaFont": 14.5,
+        "formulaFont": 15.5,
         "diagramScale": 0.9727325750947798,
-        "bottomClearance": 88.94
+        "bottomClearance": 75.13
       },
       {
         "index": 3,
-        "formulaFont": 14.5,
+        "formulaFont": 15.5,
         "diagramScale": 0.9727325750947798,
-        "bottomClearance": 76.15
+        "bottomClearance": 56.23
       },
       {
         "index": 4,
-        "formulaFont": 14.5,
+        "formulaFont": 15.5,
         "diagramScale": 0.9727325750947798,
-        "bottomClearance": 76.15
+        "bottomClearance": 41.53
       },
       {
         "index": 5,
-        "formulaFont": 14.5,
-        "diagramScale": 1.50909886264217,
-        "bottomClearance": 34.37
+        "formulaFont": 15.5,
+        "diagramScale": 0.9727325750947798,
+        "bottomClearance": 75.13
       },
       {
         "index": 6,
-        "formulaFont": 14.5,
-        "diagramScale": 1.50909886264217,
-        "bottomClearance": 34.37
+        "formulaFont": 15.5,
+        "diagramScale": 1.392184310294547,
+        "bottomClearance": 15.0
       },
       {
         "index": 7,
-        "formulaFont": 14.5,
-        "diagramScale": 1.50909886264217,
-        "bottomClearance": 34.37
+        "formulaFont": 15.5,
+        "diagramScale": 1.3662583843686211,
+        "bottomClearance": 15.0
       },
       {
         "index": 8,
-        "formulaFont": 14.5,
-        "diagramScale": 1.50909886264217,
-        "bottomClearance": 16.53
+        "formulaFont": 15.5,
+        "diagramScale": 1.257369495479732,
+        "bottomClearance": 15.0
       }
     ]
   },
   {
     "chapter": 20,
-    "firstPage": 31,
-    "lastPage": 31,
-    "pages": 1,
+    "firstPage": 47,
+    "lastPage": 48,
+    "pages": 2,
     "cards": [
       {
         "index": 0,
-        "formulaFont": 14.5,
-        "diagramScale": 0.7045494313210849,
-        "bottomClearance": 80.25
+        "formulaFont": 15.5,
+        "diagramScale": 0.9727325750947798,
+        "bottomClearance": 56.23
       },
       {
         "index": 1,
-        "formulaFont": 14.5,
-        "diagramScale": 0.7045494313210849,
-        "bottomClearance": 96.0
+        "formulaFont": 15.5,
+        "diagramScale": 0.9727325750947798,
+        "bottomClearance": 75.13
       },
       {
         "index": 2,
-        "formulaFont": 14.5,
-        "diagramScale": 0.7045494313210849,
-        "bottomClearance": 113.83
+        "formulaFont": 15.5,
+        "diagramScale": 0.9727325750947798,
+        "bottomClearance": 71.63
       },
       {
         "index": 3,
-        "formulaFont": 14.5,
-        "diagramScale": 0.7045494313210849,
-        "bottomClearance": 113.83
+        "formulaFont": 15.5,
+        "diagramScale": 0.9727325750947798,
+        "bottomClearance": 74.13
       },
       {
         "index": 4,
-        "formulaFont": 14.5,
-        "diagramScale": 0.7045494313210849,
-        "bottomClearance": 113.83
+        "formulaFont": 15.5,
+        "diagramScale": 0.9727325750947798,
+        "bottomClearance": 28.53
       },
       {
         "index": 5,
-        "formulaFont": 14.5,
-        "diagramScale": 0.7045494313210849,
-        "bottomClearance": 113.83
+        "formulaFont": 15.5,
+        "diagramScale": 0.9727325750947798,
+        "bottomClearance": 71.63
       },
       {
         "index": 6,
-        "formulaFont": 14.5,
-        "diagramScale": 0.7045494313210849,
-        "bottomClearance": 96.0
+        "formulaFont": 15.5,
+        "diagramScale": 1.50909886264217,
+        "bottomClearance": 361.66
       },
       {
         "index": 7,
-        "formulaFont": 14.5,
-        "diagramScale": 0.7045494313210849,
-        "bottomClearance": 96.0
+        "formulaFont": 15.5,
+        "diagramScale": 1.50909886264217,
+        "bottomClearance": 361.66
       }
     ]
   },
   {
     "chapter": 21,
-    "firstPage": 32,
-    "lastPage": 33,
+    "firstPage": 49,
+    "lastPage": 50,
     "pages": 2,
     "cards": [
       {
         "index": 0,
-        "formulaFont": 14.5,
+        "formulaFont": 15.5,
         "diagramScale": 0.9727325750947798,
-        "bottomClearance": 76.15
+        "bottomClearance": 38.03
       },
       {
         "index": 1,
-        "formulaFont": 14.5,
+        "formulaFont": 15.5,
         "diagramScale": 0.9727325750947798,
-        "bottomClearance": 88.94
+        "bottomClearance": 71.63
       },
       {
         "index": 2,
-        "formulaFont": 14.5,
+        "formulaFont": 15.5,
         "diagramScale": 0.9727325750947798,
-        "bottomClearance": 93.99
+        "bottomClearance": 58.73
       },
       {
         "index": 3,
-        "formulaFont": 14.5,
+        "formulaFont": 15.5,
         "diagramScale": 0.9727325750947798,
-        "bottomClearance": 88.94
+        "bottomClearance": 75.13
       },
       {
         "index": 4,
-        "formulaFont": 14.5,
+        "formulaFont": 15.5,
         "diagramScale": 0.9727325750947798,
-        "bottomClearance": 71.11
+        "bottomClearance": 56.93
       },
       {
         "index": 5,
-        "formulaFont": 14.5,
+        "formulaFont": 15.5,
         "diagramScale": 0.9727325750947798,
-        "bottomClearance": 76.15
+        "bottomClearance": 59.73
       },
       {
         "index": 6,
-        "formulaFont": 14.5,
+        "formulaFont": 15.5,
         "diagramScale": 0.9727325750947798,
-        "bottomClearance": 76.15
+        "bottomClearance": 41.53
       },
       {
         "index": 7,
-        "formulaFont": 14.5,
+        "formulaFont": 15.5,
         "diagramScale": 0.9727325750947798,
-        "bottomClearance": 58.32
+        "bottomClearance": 41.53
       },
       {
         "index": 8,
-        "formulaFont": 14.5,
+        "formulaFont": 15.5,
         "diagramScale": 0.9727325750947798,
-        "bottomClearance": 88.94
+        "bottomClearance": 53.43
       },
       {
         "index": 9,
-        "formulaFont": 14.5,
+        "formulaFont": 15.5,
         "diagramScale": 0.9727325750947798,
-        "bottomClearance": 58.32
+        "bottomClearance": 41.53
       },
       {
         "index": 10,
-        "formulaFont": 14.5,
+        "formulaFont": 15.5,
         "diagramScale": 0.9727325750947798,
-        "bottomClearance": 58.32
+        "bottomClearance": 17.33
       },
       {
         "index": 11,
-        "formulaFont": 14.5,
+        "formulaFont": 15.5,
         "diagramScale": 0.9727325750947798,
-        "bottomClearance": 58.32
+        "bottomClearance": 17.33
       }
     ]
   },
   {
     "chapter": 22,
-    "firstPage": 34,
-    "lastPage": 35,
-    "pages": 2,
+    "firstPage": 51,
+    "lastPage": 54,
+    "pages": 4,
     "cards": [
       {
         "index": 0,
-        "formulaFont": 14.5,
-        "diagramScale": 0.9727325750947798,
-        "bottomClearance": 93.99
+        "formulaFont": 15.5,
+        "diagramScale": 1.1610731991834358,
+        "bottomClearance": 15.0
       },
       {
         "index": 1,
-        "formulaFont": 14.5,
-        "diagramScale": 0.9727325750947798,
-        "bottomClearance": 76.15
+        "formulaFont": 15.5,
+        "diagramScale": 0.8418139399241765,
+        "bottomClearance": 15.0
       },
       {
         "index": 2,
-        "formulaFont": 14.5,
-        "diagramScale": 0.9727325750947798,
-        "bottomClearance": 76.15
+        "formulaFont": 15.5,
+        "diagramScale": 0.8025546806649174,
+        "bottomClearance": 15.0
       },
       {
         "index": 3,
-        "formulaFont": 14.5,
-        "diagramScale": 0.9727325750947798,
-        "bottomClearance": 88.94
+        "formulaFont": 15.5,
+        "diagramScale": 1.50909886264217,
+        "bottomClearance": 26.92
       },
       {
         "index": 4,
-        "formulaFont": 14.5,
-        "diagramScale": 0.9727325750947798,
-        "bottomClearance": 71.11
+        "formulaFont": 15.5,
+        "diagramScale": 1.50909886264217,
+        "bottomClearance": 188.46
       },
       {
         "index": 5,
-        "formulaFont": 14.5,
-        "diagramScale": 0.9727325750947798,
-        "bottomClearance": 76.15
+        "formulaFont": 15.5,
+        "diagramScale": 1.50909886264217,
+        "bottomClearance": 358.16
       },
       {
         "index": 6,
-        "formulaFont": 14.5,
-        "diagramScale": 0.9727325750947798,
-        "bottomClearance": 76.15
+        "formulaFont": 15.5,
+        "diagramScale": 1.3662583843686211,
+        "bottomClearance": 15.0
       },
       {
         "index": 7,
-        "formulaFont": 14.5,
-        "diagramScale": 0.9727325750947798,
-        "bottomClearance": 58.32
+        "formulaFont": 15.5,
+        "diagramScale": 1.1869991251093617,
+        "bottomClearance": 15.0
       },
       {
         "index": 8,
-        "formulaFont": 14.5,
-        "diagramScale": 0.9727325750947798,
-        "bottomClearance": 58.32
+        "formulaFont": 15.5,
+        "diagramScale": 1.418110236220473,
+        "bottomClearance": 15.0
       },
       {
         "index": 9,
-        "formulaFont": 14.5,
-        "diagramScale": 0.9727325750947798,
-        "bottomClearance": 71.11
+        "formulaFont": 15.5,
+        "diagramScale": 1.2129250510352876,
+        "bottomClearance": 15.0
       },
       {
         "index": 10,
-        "formulaFont": 14.5,
-        "diagramScale": 0.9727325750947798,
-        "bottomClearance": 58.32
+        "formulaFont": 15.5,
+        "diagramScale": 1.50909886264217,
+        "bottomClearance": 367.66
       }
     ]
   },
   {
     "chapter": 23,
-    "firstPage": 36,
-    "lastPage": 37,
-    "pages": 2,
+    "firstPage": 55,
+    "lastPage": 57,
+    "pages": 3,
     "cards": [
       {
         "index": 0,
-        "formulaFont": 14.5,
+        "formulaFont": 15.5,
         "diagramScale": 0.9727325750947798,
-        "bottomClearance": 106.78
+        "bottomClearance": 40.43
       },
       {
         "index": 1,
-        "formulaFont": 14.5,
+        "formulaFont": 15.5,
         "diagramScale": 0.9727325750947798,
-        "bottomClearance": 88.94
+        "bottomClearance": 56.23
       },
       {
         "index": 2,
-        "formulaFont": 14.5,
-        "diagramScale": 0.9727325750947798,
-        "bottomClearance": 88.94
+        "formulaFont": 15.5,
+        "diagramScale": 0.8418139399241765,
+        "bottomClearance": 15.0
       },
       {
         "index": 3,
-        "formulaFont": 14.5,
+        "formulaFont": 15.5,
         "diagramScale": 0.9727325750947798,
-        "bottomClearance": 71.11
+        "bottomClearance": 53.43
       },
       {
         "index": 4,
-        "formulaFont": 14.5,
+        "formulaFont": 15.5,
         "diagramScale": 0.9727325750947798,
-        "bottomClearance": 88.94
+        "bottomClearance": 75.13
       },
       {
         "index": 5,
-        "formulaFont": 14.5,
+        "formulaFont": 15.5,
         "diagramScale": 0.9727325750947798,
-        "bottomClearance": 76.15
+        "bottomClearance": 56.23
       },
       {
         "index": 6,
-        "formulaFont": 14.5,
-        "diagramScale": 0.9727325750947798,
-        "bottomClearance": 76.15
+        "formulaFont": 15.5,
+        "diagramScale": 1.50909886264217,
+        "bottomClearance": 358.16
       },
       {
         "index": 7,
-        "formulaFont": 14.5,
-        "diagramScale": 0.9727325750947798,
-        "bottomClearance": 58.32
+        "formulaFont": 15.5,
+        "diagramScale": 1.50909886264217,
+        "bottomClearance": 333.96
       },
       {
         "index": 8,
-        "formulaFont": 14.5,
-        "diagramScale": 0.9727325750947798,
-        "bottomClearance": 58.32
+        "formulaFont": 15.5,
+        "diagramScale": 1.50909886264217,
+        "bottomClearance": 250.86
       },
       {
         "index": 9,
-        "formulaFont": 14.5,
-        "diagramScale": 0.9727325750947798,
-        "bottomClearance": 71.11
+        "formulaFont": 15.5,
+        "diagramScale": 1.50909886264217,
+        "bottomClearance": 282.06
       }
     ]
   },
   {
     "chapter": 24,
-    "firstPage": 38,
-    "lastPage": 39,
-    "pages": 2,
+    "firstPage": 58,
+    "lastPage": 60,
+    "pages": 3,
     "cards": [
       {
         "index": 0,
-        "formulaFont": 14.5,
-        "diagramScale": 0.7045494313210849,
-        "bottomClearance": 80.25
+        "formulaFont": 15.5,
+        "diagramScale": 0.9727325750947798,
+        "bottomClearance": 59.73
       },
       {
         "index": 1,
-        "formulaFont": 14.5,
-        "diagramScale": 0.7045494313210849,
-        "bottomClearance": 96.0
+        "formulaFont": 15.5,
+        "diagramScale": 0.8418139399241765,
+        "bottomClearance": 15.0
       },
       {
         "index": 2,
-        "formulaFont": 14.5,
-        "diagramScale": 0.7045494313210849,
-        "bottomClearance": 47.54
+        "formulaFont": 15.5,
+        "diagramScale": 0.9727325750947798,
+        "bottomClearance": 23.33
       },
       {
         "index": 3,
-        "formulaFont": 14.5,
-        "diagramScale": 0.7045494313210849,
-        "bottomClearance": 60.33
+        "formulaFont": 15.5,
+        "diagramScale": 0.9727325750947798,
+        "bottomClearance": 23.33
       },
       {
         "index": 4,
-        "formulaFont": 14.5,
-        "diagramScale": 0.7045494313210849,
-        "bottomClearance": 60.33
+        "formulaFont": 15.5,
+        "diagramScale": 0.8107028288130655,
+        "bottomClearance": 15.0
       },
       {
         "index": 5,
-        "formulaFont": 14.5,
-        "diagramScale": 0.7045494313210849,
-        "bottomClearance": 78.16
+        "formulaFont": 15.5,
+        "diagramScale": 0.9727325750947798,
+        "bottomClearance": 56.93
       },
       {
         "index": 6,
-        "formulaFont": 14.5,
-        "diagramScale": 0.7045494313210849,
-        "bottomClearance": 108.79
+        "formulaFont": 15.5,
+        "diagramScale": 0.9727325750947798,
+        "bottomClearance": 47.43
       },
       {
         "index": 7,
-        "formulaFont": 14.5,
-        "diagramScale": 0.7045494313210849,
-        "bottomClearance": 96.0
+        "formulaFont": 15.5,
+        "diagramScale": 0.9727325750947798,
+        "bottomClearance": 53.43
       },
       {
         "index": 8,
-        "formulaFont": 14.5,
-        "diagramScale": 0.7045494313210849,
-        "bottomClearance": 78.16
+        "formulaFont": 15.5,
+        "diagramScale": 0.9727325750947798,
+        "bottomClearance": 23.33
       },
       {
         "index": 9,
-        "formulaFont": 14.5,
-        "diagramScale": 0.7045494313210849,
-        "bottomClearance": 96.0
+        "formulaFont": 15.5,
+        "diagramScale": 0.9727325750947798,
+        "bottomClearance": 65.73
       },
       {
         "index": 10,
-        "formulaFont": 14.5,
-        "diagramScale": 0.7045494313210849,
-        "bottomClearance": 78.16
+        "formulaFont": 15.5,
+        "diagramScale": 0.9727325750947798,
+        "bottomClearance": 56.93
       },
       {
         "index": 11,
-        "formulaFont": 14.5,
-        "diagramScale": 0.7045494313210849,
-        "bottomClearance": 96.0
+        "formulaFont": 15.5,
+        "diagramScale": 0.9727325750947798,
+        "bottomClearance": 41.53
       },
       {
         "index": 12,
-        "formulaFont": 14.5,
-        "diagramScale": 0.7045494313210849,
-        "bottomClearance": 96.0
+        "formulaFont": 15.5,
+        "diagramScale": 1.418110236220473,
+        "bottomClearance": 15.0
       },
       {
         "index": 13,
-        "formulaFont": 14.5,
-        "diagramScale": 0.7045494313210849,
-        "bottomClearance": 80.25
+        "formulaFont": 15.5,
+        "diagramScale": 1.418110236220473,
+        "bottomClearance": 15.0
       },
       {
         "index": 14,
-        "formulaFont": 14.5,
-        "diagramScale": 0.7045494313210849,
-        "bottomClearance": 96.0
+        "formulaFont": 15.5,
+        "diagramScale": 1.392184310294547,
+        "bottomClearance": 15.0
       },
       {
         "index": 15,
-        "formulaFont": 14.5,
-        "diagramScale": 0.7045494313210849,
-        "bottomClearance": 96.0
+        "formulaFont": 15.5,
+        "diagramScale": 1.2129250510352876,
+        "bottomClearance": 15.0
       }
     ]
   }

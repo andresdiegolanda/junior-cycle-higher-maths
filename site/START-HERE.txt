@@ -18,8 +18,9 @@ Glossary: searchable definitions, examples and diagrams.
 Search by term: matching chapters with direct lesson and toolkit links.
 Display: Classic, Warm paper, High contrast or Projector.
 Chapter Toolkit: 222 visual cards with diagrams, formulas and short conditions.
-Open a card's working for the full method and example. The A3 PDF contains 39
-sheets across 24 chapters; each chapter links to its own page range.
+Open a card's working for the full method and example. Enlarge any card's diagram
+to inspect its labels. The A3 PDF covers all 24 chapters; each chapter links to
+its own page range. Equations and instructions appear on separate readable lines.
 Exam practice: original written problems with hints and staged worked solutions.
 
 Progress, working notes and preferences stay in this browser where storage is

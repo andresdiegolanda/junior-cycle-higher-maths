@@ -13,12 +13,14 @@ HTML files can also be opened individually. Keep the `toolkits` folder beside th
 
 The guide contains 158 lessons, 646 teaching steps, 316 skill checks, 96 written
 problems, 222 visual reference cards and a glossary of 140 terms. The printable
-PDF has 39 A3 landscape sheets across the 24 chapters.
+PDF has 60 A3 landscape sheets across the 24 chapters, with extra room for dense cards.
 
 Use a box's **Listen** button for its explanation, or **Play whole lesson** to
 follow the complete sequence. The current box is marked; diagrams advance after
 speech finishes. Pause retains your place. **Follow narration** controls scrolling.
 Full workings are expandable below each visual reference card.
+Equations and instructions have separate, clearly spaced lines. Use **Enlarge
+diagram** for a closer look at any card's illustration.
 
 Browser voices vary by device. Local voices may work offline; online voices need
 a connection and may send narration text to their provider. No microphone,
@@ -91,6 +93,7 @@ included in the print requirements above.
 node source/test-speech.cjs
 node source/test-guided-reading.cjs
 node source/test-search.cjs
+python source/test-toolkit-typography.py
 python source/validate.py
 python source/package.py
 ```

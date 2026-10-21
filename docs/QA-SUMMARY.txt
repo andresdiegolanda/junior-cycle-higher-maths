@@ -1,4 +1,4 @@
-JUNIOR CYCLE HIGHER MATHS — VISUAL LEARNING UPDATE
+JUNIOR CYCLE HIGHER MATHS — VISUAL LEARNING AND READABILITY UPDATE
 21 October 2026
 
 Scope
@@ -12,9 +12,11 @@ Automated checks
   96 written problems; 140 glossary terms and 86 glossary diagrams.
 - All visual card mappings and lesson links; 971 SVGs parsed; 25 HTML files;
   internal file links resolved; no external script dependencies.
-- All 222 card titles found in the 39-page A3 PDF. Page dimensions, chapter
+- All 222 card titles found in the 60-page A3 PDF. Page dimensions, chapter
   ranges, embedded diagram font, glyph availability and card fit checked.
-  Formula text is at least 14.5 pt.
+  Equations use 15.5 pt type; instructions use 13 pt, with separate rows.
+- All 222 formula cards and full methods retain their mathematical content.
+  All 1,090 diagram labels retain their original text after layout corrections.
 - Speech controller: cancellation races, pause/continue, repeat, rate and voice
   changes, end events, unavailable speech and failure fallback.
 - Guided reader: box order, completion-driven step changes, stale events,
@@ -39,16 +41,21 @@ Browser review in the desktop in-app browser on Windows
 - Reviewed Classic, High contrast and Projector layouts; restored Classic.
 - Rechecked glossary search and chapter search. Quadratic formula finds the
   lesson, method and written problem in chapter 15.
-- Measured 1,090 SVG labels in 222 cards. Corrected five cards during review;
-  final label bounds and overlap checks passed.
+- Readability review: all 222 cards and expanded methods checked together in
+  Classic at 390, 768 and 1440 px, and Paper, High contrast and Projector at
+  390 and 1440 px. No overflowing formula rows, clipped SVG text or overlapping
+  SVG text bounds remained. Individually corrected labels touching lines and
+  box edges. Added and checked Enlarge diagram, using the existing zoom dialog.
 - No new console errors after the initial development fix. Temporary viewport
   overrides were reset after responsive checks.
 
 Print review
-Rendered all 39 A3 landscape pages and reviewed contact sheets. Inspected
+Rendered all 60 A3 landscape pages and reviewed contact sheets. Inspected
 representative dense pages at full size. Corrected a font mapping issue
 affecting mathematical symbols, embedded the correct font, and checked every
-diagram text object. Label bounds, overlap and card fit checks passed.
+diagram text object. Rebuilt and rechecked affected pages after final label
+adjustments. Adaptive pagination gives dense cards more room without shrinking
+formula type. Label bounds, overlap and card fit checks passed.
 
 Limits
 Browser voices vary by browser, operating system and installed voice. Controls

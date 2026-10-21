@@ -2,6 +2,7 @@ from pathlib import Path
 import json,re,html
 import xml.etree.ElementTree as ET
 from spoken import spoken
+from toolkit_typography import reference_rows, readable_diagram
 ROOT=Path(__file__).resolve().parent
 OUT=ROOT.parent/'site'
 OUT.mkdir(parents=True,exist_ok=True)
@@ -15,8 +16,11 @@ for file in sorted((ROOT/'data').glob('visual-cards-*.json')):
 for c in chapters:
     for q in c['challenges']:q['speechResult']=spoken('Final result. '+q['answer']+'. Check it independently. '+q['check'])
     for i,m in enumerate(c['toolkit']['methods']):
+        m['ruleRows']=reference_rows(m['rule'])
         if (c['id'],i) in visuals:
             v=visuals[c['id'],i]
+            v['formulaRows']=reference_rows(v['formula'],(c['id'],i+1))
+            v['svg']=readable_diagram(v['svg'],(c['id'],i+1))
             v['conditionLabel']='Watch for' if v['condition'].strip()==m['trap'].strip() else 'Remember'
             cue='Watch for this mistake' if v['conditionLabel']=='Watch for' else 'Remember'
             v['speech']=spoken(v['task']+'. '+v['narration']+' Formula or method. '+v['formula']+'. '+cue+'. '+v['condition'])
@@ -83,8 +87,9 @@ Glossary: searchable definitions, examples and diagrams.
 Search by term: matching chapters with direct lesson and toolkit links.
 Display: Classic, Warm paper, High contrast or Projector.
 Chapter Toolkit: 222 visual cards with diagrams, formulas and short conditions.
-Open a card's working for the full method and example. The A3 PDF contains 39
-sheets across 24 chapters; each chapter links to its own page range.
+Open a card's working for the full method and example. Enlarge any card's diagram
+to inspect its labels. The A3 PDF covers all 24 chapters; each chapter links to
+its own page range. Equations and instructions appear on separate readable lines.
 Exam practice: original written problems with hints and staged worked solutions.
 
 Progress, working notes and preferences stay in this browser where storage is

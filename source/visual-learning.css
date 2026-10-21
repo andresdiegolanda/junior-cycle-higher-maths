@@ -102,3 +102,29 @@ button.box-audio{display:inline-flex;align-items:center;justify-content:center;g
 @media print{body{padding:0}.lesson-player,.box-audio,.box-reading-status,.audio-dock{display:none!important}.print-method{break-inside:avoid;margin:0 0 14px;padding:12px;border:1px solid #aaa;border-radius:8px}.print-method svg{width:100%;max-height:155px}.print-method .visual-formula{font-size:18px;color:#000;background:white;border-color:#555}.print-method .visual-condition{font-size:11px;color:#222}.print-visual-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.print-method h3{margin-bottom:5px;font-size:15px}.print-method .method-picture{border:0;margin-bottom:5px}}
 
 .home-contact{margin:16px 0 0;font-size:14px}.home-contact a{display:inline-block;color:var(--teal);text-underline-offset:3px;overflow-wrap:anywhere}.home-contact span{margin-left:5px}
+
+/* Toolkit reading: give equations room, and keep sentences in the reading font. */
+.visual-method-grid{grid-template-columns:repeat(auto-fit,minmax(min(100%,400px),1fr));gap:22px}
+.visual-method{padding:22px}
+.visual-method h3{min-height:0;font-size:23px;line-height:1.3;margin-bottom:18px}
+.visual-method .method-number{color:var(--ink);font-size:12px;letter-spacing:.03em}
+.method-picture{margin-bottom:0}
+.method-picture svg text{font-family:Arial,"Segoe UI Symbol",sans-serif}
+button.method-enlarge{display:block;margin:7px 0 18px auto;padding:5px 8px;font-size:12px;min-height:32px;color:var(--link)}
+.visual-method .formula-caption{font-size:11px;letter-spacing:.07em;color:var(--ink);margin-bottom:8px}
+.visual-method .visual-formula,.visual-method .method-rule,.print-method .visual-formula{background:var(--surface-alt);color:var(--ink);padding:15px 17px;border-left:3px solid var(--teal);white-space:normal;overflow-wrap:normal;text-align:left}
+.reference-line{margin:0;white-space:normal;overflow-wrap:normal;word-break:normal}
+.reference-line+.reference-line{margin-top:11px}
+.reference-equation{font:400 23px/1.5 "Cambria Math",Cambria,"Segoe UI",sans-serif;font-variant-numeric:lining-nums}
+.reference-instruction{font:400 17px/1.6 "Segoe UI",Arial,sans-serif}
+.visual-condition{font-size:14px;line-height:1.6;margin:16px 0;color:var(--ink)}
+.method-more>summary{font-size:14px;line-height:1.5;color:var(--link);padding:8px 0}
+.visual-method .method-body,.visual-method .method-steps,.visual-method .method-example,.visual-method .method-check,.visual-method .method-trap{font-size:15px;line-height:1.6}
+.visual-method .method-rule{margin:15px 0}
+:root[data-theme=contrast] .visual-method :is(.visual-formula,.method-rule){background:#101010!important;color:#fff!important;border-color:#fff06a!important}
+:root[data-theme=projector] .visual-method-grid{grid-template-columns:repeat(auto-fit,minmax(min(100%,540px),1fr))}
+:root[data-theme=projector] .reference-equation{font-size:30px}
+:root[data-theme=projector] .reference-instruction{font-size:23px}
+:root[data-theme=projector] .visual-method :is(.visual-condition,.method-more>summary,.method-body,.method-steps,.method-example,.method-check,.method-trap){font-size:20px}
+@media(max-width:600px){.visual-method{padding:15px}.visual-method h3{font-size:22px}.reference-equation{font-size:21px}.reference-instruction{font-size:16px}.visual-method .visual-formula,.visual-method .method-rule{padding:13px 12px}.visual-condition{font-size:14px}}
+@media print{.method-enlarge{display:none!important}.print-method .reference-equation{font-size:16pt;line-height:1.4}.print-method .reference-instruction{font-size:12pt;line-height:1.5}.print-method .reference-line+.reference-line{margin-top:6pt}.print-method .visual-formula{padding:10pt;color:#111;background:#fff}.print-method .visual-condition{font-size:10pt}}

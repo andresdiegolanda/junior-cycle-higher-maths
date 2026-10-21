@@ -1,0 +1,30 @@
+JUNIOR CYCLE HIGHER MATHS — PREPARATION GUIDE
+
+Open index.html for all 24 chapters, or open an individual chapter page.
+Each HTML page contains its own styles, diagrams, scripts and glossary.
+Keep the toolkits folder beside the HTML pages for the A3 printable cards.
+
+Use Next step to reveal a method. Each teaching box has its own Listen button.
+Play whole lesson reads the boxes in order and advances the diagrams when each
+part ends. The current box has a reading marker. Pause keeps your place;
+Continue repeats the current short part. Turn off Follow narration to prevent
+automatic scrolling. Choosing a different step or lesson stops the narration.
+Choose an available English voice and speaking speed with Voice.
+Local voices can work offline; online voices need an internet connection and may
+send the narration text to the voice provider. No microphone or account is needed.
+If speech is unavailable, use the written explanations and transcripts.
+
+Glossary: searchable definitions, examples and diagrams.
+Search by term: matching chapters with direct lesson and toolkit links.
+Display: Classic, Warm paper, High contrast or Projector.
+Chapter Toolkit: 222 visual cards with diagrams, formulas and short conditions.
+Open a card's working for the full method and example. The A3 PDF contains 39
+sheets across 24 chapters; each chapter links to its own page range.
+Exam practice: original written problems with hints and staged worked solutions.
+
+Progress, working notes and preferences stay in this browser where storage is
+available. They do not sync between devices or different site addresses.
+Use the main index to keep one progress record across all chapters.
+
+This is an independent study resource. Check each formula's conditions, show your
+reasoning, keep units consistent and use other practice materials as needed.

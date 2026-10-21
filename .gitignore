@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+.venv/
+_deps/
+node_modules/
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db
+source/compiled-data.json
+source/validation-report.json
+source/package-report.json
+source/package-inventory.json
+site/_*

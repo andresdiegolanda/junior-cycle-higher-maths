@@ -1,0 +1,58 @@
+JUNIOR CYCLE HIGHER MATHS — VISUAL LEARNING UPDATE
+21 October 2026
+
+Scope
+Per-box narration; whole-lesson sequence with a current-box marker, pause and
+optional following; visual Chapter Toolkits and A3 printing. The original 222
+full methods remain in expandable detail. Existing lessons, problems, glossary,
+search and skins remain. This is not a fresh independent audit of every exercise.
+
+Automated checks
+- 24 chapters, 158 lessons, 646 steps, 316 skill checks, 222 visual methods,
+  96 written problems; 140 glossary terms and 86 glossary diagrams.
+- All visual card mappings and lesson links; 971 SVGs parsed; 25 HTML files;
+  internal file links resolved; no external script dependencies.
+- All 222 card titles found in the 39-page A3 PDF. Page dimensions, chapter
+  ranges, embedded diagram font, glyph availability and card fit checked.
+  Formula text is at least 14.5 pt.
+- Speech controller: cancellation races, pause/continue, repeat, rate and voice
+  changes, end events, unavailable speech and failure fallback.
+- Guided reader: box order, completion-driven step changes, stale events,
+  pause/resume, follow toggle, individual selection, completion, restart,
+  manual navigation and voice failure.
+- Search: synonyms, ambiguous terms, multiword matching, all-chapter indexing
+  and exact written-problem destinations.
+- No personal branding or source-publication references, and no recorded audio
+  files in the distributed HTML, instructions or PDF.
+- ZIP integrity, contents and installed file hashes verified.
+
+Browser review in the desktop in-app browser on Windows
+- Completed a whole lesson using browser speech completion events.
+- Checked pause retains the current box, continuation resumes the sequence,
+  manual step selection stops playback, and only the current box is marked.
+- On a phone viewport, observed progression to later steps. With Follow
+  narration off, the scroll position stayed fixed while the lesson continued.
+- Checked card search, expanded methods, written hints and solution controls,
+  individual narration and the multiplication lab.
+- All 24 toolkits opened at 390 px and 1440 px: correct card counts and PDF
+  destinations, with no document-level horizontal overflow.
+- Reviewed Classic, High contrast and Projector layouts; restored Classic.
+- Rechecked glossary search and chapter search. Quadratic formula finds the
+  lesson, method and written problem in chapter 15.
+- Measured 1,090 SVG labels in 222 cards. Corrected five cards during review;
+  final label bounds and overlap checks passed.
+- No new console errors after the initial development fix. Temporary viewport
+  overrides were reset after responsive checks.
+
+Print review
+Rendered all 39 A3 landscape pages and reviewed contact sheets. Inspected
+representative dense pages at full size. Corrected a font mapping issue
+affecting mathematical symbols, embedded the correct font, and checked every
+diagram text object. Label bounds, overlap and card fit checks passed.
+
+Limits
+Browser voices vary by browser, operating system and installed voice. Controls
+and speech events were checked; this is not an auditory pronunciation audit.
+No iOS or Android hardware was tested. Responsive checks used desktop viewport
+sizes. No public deployment or cross-browser certification is included.
+

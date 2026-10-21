@@ -1,0 +1,2271 @@
+[
+  {
+    "id": "variable",
+    "term": "Variable",
+    "aliases": [
+      "unknown",
+      "letter"
+    ],
+    "definition": "A symbol that represents a number whose value can change or is not yet known.",
+    "example": "In 3x + 2, x is the variable. If x = 4, the value is 14.",
+    "watch": "A letter represents a number; 3x means 3 × x.",
+    "chapters": [
+      1,
+      10,
+      19,
+      21
+    ],
+    "svg": ""
+  },
+  {
+    "id": "term",
+    "term": "Term",
+    "aliases": [
+      "algebraic term"
+    ],
+    "definition": "One part of an expression separated from the next by addition or subtraction. Keep its sign with it.",
+    "example": "The terms of 4x² − 3x + 7 are 4x², −3x and 7.",
+    "watch": "Multiplication inside a term does not split it into separate terms.",
+    "chapters": [
+      1,
+      2,
+      21
+    ],
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 480 200\" role=\"img\" aria-label=\"4x²  − 3x  + 7. Three terms: 4x², −3x, +7. Keep the sign attached to the term.\"><rect width=\"480\" height=\"200\" rx=\"12\" fill=\"#ffffff\"/><rect x=\"25\" y=\"22\" width=\"430\" height=\"65\" rx=\"8\" fill=\"#e8f5f1\"/><text x=\"240\" y=\"64\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"27\" fill=\"#087f75\">4x²  − 3x  + 7</text><text x=\"240\" y=\"122\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"21\" fill=\"#173349\">Three terms: 4x², −3x, +7</text><text x=\"240\" y=\"174\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"16\" fill=\"#173349\">Keep the sign attached to the term.</text></svg>"
+  },
+  {
+    "id": "coefficient",
+    "term": "Coefficient",
+    "aliases": [
+      "numerical coefficient"
+    ],
+    "definition": "The numerical multiplier of a variable or variable part in a term.",
+    "example": "The coefficient of x in −5x is −5. In x, it is 1.",
+    "watch": "The coefficient of x in −x is −1, not zero.",
+    "chapters": [
+      1,
+      2,
+      15,
+      19,
+      23
+    ],
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 480 200\" role=\"img\" aria-label=\"−5 × x. coefficient = −5. The sign belongs to the coefficient.\"><rect width=\"480\" height=\"200\" rx=\"12\" fill=\"#ffffff\"/><rect x=\"25\" y=\"22\" width=\"430\" height=\"65\" rx=\"8\" fill=\"#e8f5f1\"/><text x=\"240\" y=\"64\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"27\" fill=\"#087f75\">−5 × x</text><text x=\"240\" y=\"122\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"21\" fill=\"#173349\">coefficient = −5</text><text x=\"240\" y=\"174\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"16\" fill=\"#173349\">The sign belongs to the coefficient.</text></svg>"
+  },
+  {
+    "id": "constant",
+    "term": "Constant",
+    "aliases": [
+      "constant term"
+    ],
+    "definition": "A fixed number, or a term with no variable in the expression being studied.",
+    "example": "In 2x² − 3x + 8, the constant term is 8.",
+    "watch": "The constant is not the same as the coefficient of x.",
+    "chapters": [
+      1,
+      15,
+      19,
+      21,
+      23
+    ],
+    "svg": ""
+  },
+  {
+    "id": "like-terms",
+    "term": "Like terms",
+    "aliases": [
+      "collect like terms",
+      "simplify"
+    ],
+    "definition": "Terms with exactly the same variable part, including the same powers. Add or subtract their coefficients.",
+    "example": "3x² + 5x² = 8x², but 3x² + 5x cannot be combined into one term.",
+    "watch": "x and x² are different variable parts.",
+    "chapters": [
+      1,
+      2,
+      14,
+      21
+    ],
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 480 200\" role=\"img\" aria-label=\"3x² + 5x² = 8x². Same variable part: x². Add the coefficients. Keep the power.\"><rect width=\"480\" height=\"200\" rx=\"12\" fill=\"#ffffff\"/><rect x=\"25\" y=\"22\" width=\"430\" height=\"65\" rx=\"8\" fill=\"#e8f5f1\"/><text x=\"240\" y=\"64\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"27\" fill=\"#087f75\">3x² + 5x² = 8x²</text><text x=\"240\" y=\"122\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"21\" fill=\"#173349\">Same variable part: x²</text><text x=\"240\" y=\"174\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"16\" fill=\"#173349\">Add the coefficients. Keep the power.</text></svg>"
+  },
+  {
+    "id": "expression",
+    "term": "Expression",
+    "aliases": [
+      "algebraic expression"
+    ],
+    "definition": "A combination of numbers, variables and operations that represents a value. It has no equality statement.",
+    "example": "2x + 7 is an expression. It is 13 when x = 3.",
+    "watch": "An expression can be simplified or evaluated; an equation can be solved.",
+    "chapters": [
+      1,
+      2,
+      19,
+      21
+    ],
+    "svg": ""
+  },
+  {
+    "id": "equation",
+    "term": "Equation",
+    "aliases": [
+      "equality",
+      "solve"
+    ],
+    "definition": "A statement that two expressions have equal values. Solving finds values that make the statement true.",
+    "example": "3x + 2 = 11 has solution x = 3.",
+    "watch": "Whatever operation you use to preserve equality must be applied to both sides.",
+    "chapters": [
+      1,
+      10,
+      15,
+      19,
+      21
+    ],
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 480 200\" role=\"img\" aria-label=\"3x + 2 = 11. 3x = 9  →  x = 3. Subtract 2 from BOTH sides; divide BOTH by 3.\"><rect width=\"480\" height=\"200\" rx=\"12\" fill=\"#ffffff\"/><rect x=\"25\" y=\"22\" width=\"430\" height=\"65\" rx=\"8\" fill=\"#e8f5f1\"/><text x=\"240\" y=\"64\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"27\" fill=\"#087f75\">3x + 2 = 11</text><text x=\"240\" y=\"122\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"21\" fill=\"#173349\">3x = 9  →  x = 3</text><text x=\"240\" y=\"174\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"16\" fill=\"#173349\">Subtract 2 from BOTH sides; divide BOTH by 3.</text></svg>"
+  },
+  {
+    "id": "identity",
+    "term": "Identity",
+    "aliases": [
+      "identically equal"
+    ],
+    "definition": "An equality true for every allowed value of its variable.",
+    "example": "2(x + 3) = 2x + 6 is true for every real x.",
+    "watch": "Checking one value can expose an error, but cannot prove an identity.",
+    "chapters": [
+      1,
+      2,
+      21
+    ],
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 480 200\" role=\"img\" aria-label=\"2(x + 3) = 2x + 6. True for every real x. Each term inside the brackets is multiplied by 2.\"><rect width=\"480\" height=\"200\" rx=\"12\" fill=\"#ffffff\"/><rect x=\"25\" y=\"22\" width=\"430\" height=\"65\" rx=\"8\" fill=\"#e8f5f1\"/><text x=\"240\" y=\"64\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"27\" fill=\"#087f75\">2(x + 3) = 2x + 6</text><text x=\"240\" y=\"122\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"21\" fill=\"#173349\">True for every real x</text><text x=\"240\" y=\"174\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"16\" fill=\"#173349\">Each term inside the brackets is multiplied by 2.</text></svg>"
+  },
+  {
+    "id": "substitution",
+    "term": "Substitution",
+    "aliases": [
+      "substitute",
+      "evaluate"
+    ],
+    "definition": "Replacing each occurrence of a variable with a specified value or expression.",
+    "example": "If x = −2, then x² = (−2)² = 4.",
+    "watch": "Use brackets around a substituted negative number or expression.",
+    "chapters": [
+      1,
+      10,
+      15,
+      19,
+      21
+    ],
+    "svg": ""
+  },
+  {
+    "id": "expansion",
+    "term": "Expansion",
+    "aliases": [
+      "expand",
+      "distributive law",
+      "multiply brackets"
+    ],
+    "definition": "Multiplying through brackets so that every required pair of terms is included.",
+    "example": "(x + 2)(x + 3) = x² + 3x + 2x + 6 = x² + 5x + 6.",
+    "watch": "Two brackets with two terms each create four products before collecting.",
+    "chapters": [
+      1,
+      2,
+      15,
+      21
+    ],
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 480 200\" role=\"img\" aria-label=\"(x + 2)(x + 3). x² + 3x + 2x + 6. Every term in the first bracket meets every term in the second.\"><rect width=\"480\" height=\"200\" rx=\"12\" fill=\"#ffffff\"/><rect x=\"25\" y=\"22\" width=\"430\" height=\"65\" rx=\"8\" fill=\"#e8f5f1\"/><text x=\"240\" y=\"64\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"27\" fill=\"#087f75\">(x + 2)(x + 3)</text><text x=\"240\" y=\"122\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"21\" fill=\"#173349\">x² + 3x + 2x + 6</text><text x=\"240\" y=\"174\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"16\" fill=\"#173349\">Every term in the first bracket meets every term in the second.</text></svg>"
+  },
+  {
+    "id": "factor",
+    "term": "Factor",
+    "aliases": [
+      "product",
+      "divisor"
+    ],
+    "definition": "A number or expression that is multiplied by another to make a product.",
+    "example": "In (x − 2)(x + 5), the two brackets are factors.",
+    "watch": "Terms are added; factors are multiplied.",
+    "chapters": [
+      1,
+      2,
+      14,
+      15,
+      21
+    ],
+    "svg": ""
+  },
+  {
+    "id": "factorisation",
+    "term": "Factorisation",
+    "aliases": [
+      "factorise",
+      "factorize"
+    ],
+    "definition": "Rewriting an expression as a product of factors. It reverses expansion.",
+    "example": "x² + 5x + 6 = (x + 2)(x + 3).",
+    "watch": "Expand your answer to check it gives the original expression.",
+    "chapters": [
+      2,
+      15,
+      21
+    ],
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 480 200\" role=\"img\" aria-label=\"x² + 5x + 6. (x + 2)(x + 3). 2 + 3 = 5 and 2 × 3 = 6.\"><rect width=\"480\" height=\"200\" rx=\"12\" fill=\"#ffffff\"/><rect x=\"25\" y=\"22\" width=\"430\" height=\"65\" rx=\"8\" fill=\"#e8f5f1\"/><text x=\"240\" y=\"64\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"27\" fill=\"#087f75\">x² + 5x + 6</text><text x=\"240\" y=\"122\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"21\" fill=\"#173349\">(x + 2)(x + 3)</text><text x=\"240\" y=\"174\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"16\" fill=\"#173349\">2 + 3 = 5 and 2 × 3 = 6.</text></svg>"
+  },
+  {
+    "id": "highest-common-factor",
+    "term": "Highest common factor",
+    "aliases": [
+      "HCF",
+      "greatest common divisor",
+      "common factor"
+    ],
+    "definition": "The greatest shared numerical factor, together with each shared variable to its smallest power.",
+    "example": "The HCF of 6x² and 9x is 3x, so 6x² + 9x = 3x(2x + 3).",
+    "watch": "A factor taken outside must divide every term inside.",
+    "chapters": [
+      2,
+      21
+    ],
+    "svg": ""
+  },
+  {
+    "id": "difference-of-two-squares",
+    "term": "Difference of two squares",
+    "aliases": [
+      "difference of squares"
+    ],
+    "definition": "An expression a² − b², which factorises as (a − b)(a + b).",
+    "example": "x² − 25 = (x − 5)(x + 5).",
+    "watch": "The identity uses subtraction. a² + b² does not follow this rule over the reals.",
+    "chapters": [
+      2,
+      15,
+      21
+    ],
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 480 200\" role=\"img\" aria-label=\"a² − b² = (a − b)(a + b). x² − 25 = (x − 5)(x + 5). Check that both terms are squares.\"><rect width=\"480\" height=\"200\" rx=\"12\" fill=\"#ffffff\"/><rect x=\"25\" y=\"22\" width=\"430\" height=\"65\" rx=\"8\" fill=\"#e8f5f1\"/><text x=\"240\" y=\"64\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"27\" fill=\"#087f75\">a² − b² = (a − b)(a + b)</text><text x=\"240\" y=\"122\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"21\" fill=\"#173349\">x² − 25 = (x − 5)(x + 5)</text><text x=\"240\" y=\"174\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"16\" fill=\"#173349\">Check that both terms are squares.</text></svg>"
+  },
+  {
+    "id": "inequality",
+    "term": "Inequality",
+    "aliases": [
+      "less than",
+      "greater than",
+      "inequality sign"
+    ],
+    "definition": "A comparison using <, >, ≤ or ≥ instead of equality.",
+    "example": "−2x < 6 gives x > −3 after dividing by −2.",
+    "watch": "Multiplying or dividing both sides by a negative number reverses the sign.",
+    "chapters": [
+      1
+    ],
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 480 200\" role=\"img\" aria-label=\"x is greater than minus one. An open circle excludes minus one; the arrow goes right.\"><rect width=\"480\" height=\"200\" rx=\"12\" fill=\"#ffffff\"/><line x1=\"45\" y1=\"100\" x2=\"435\" y2=\"100\" stroke=\"#173349\" stroke-width=\"2\"/><line x1=\"75\" y1=\"94\" x2=\"75\" y2=\"106\" stroke=\"#173349\" stroke-width=\"2\"/><text x=\"75\" y=\"130\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"17\" fill=\"#173349\">-3</text><line x1=\"130\" y1=\"94\" x2=\"130\" y2=\"106\" stroke=\"#173349\" stroke-width=\"2\"/><text x=\"130\" y=\"130\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"17\" fill=\"#173349\">-2</text><line x1=\"185\" y1=\"94\" x2=\"185\" y2=\"106\" stroke=\"#173349\" stroke-width=\"2\"/><text x=\"185\" y=\"130\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"17\" fill=\"#173349\">-1</text><line x1=\"240\" y1=\"94\" x2=\"240\" y2=\"106\" stroke=\"#173349\" stroke-width=\"2\"/><text x=\"240\" y=\"130\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"17\" fill=\"#173349\">0</text><line x1=\"295\" y1=\"94\" x2=\"295\" y2=\"106\" stroke=\"#173349\" stroke-width=\"2\"/><text x=\"295\" y=\"130\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"17\" fill=\"#173349\">1</text><line x1=\"350\" y1=\"94\" x2=\"350\" y2=\"106\" stroke=\"#173349\" stroke-width=\"2\"/><text x=\"350\" y=\"130\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"17\" fill=\"#173349\">2</text><line x1=\"405\" y1=\"94\" x2=\"405\" y2=\"106\" stroke=\"#173349\" stroke-width=\"2\"/><text x=\"405\" y=\"130\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"17\" fill=\"#173349\">3</text><line x1=\"185\" y1=\"100\" x2=\"425\" y2=\"100\" stroke=\"#087f75\" stroke-width=\"5\"/><polygon points=\"435,100 419,92 419,108\" fill=\"#087f75\" stroke=\"#087f75\" stroke-width=\"2.5\"/><circle cx=\"185\" cy=\"100\" r=\"7\" fill=\"#ffffff\" stroke=\"#087f75\" stroke-width=\"2.5\"/><text x=\"240\" y=\"176\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"17\" fill=\"#173349\">x &gt; −1: values to the right; −1 is excluded.</text></svg>"
+  },
+  {
+    "id": "quadratic-equation",
+    "term": "Quadratic equation",
+    "aliases": [
+      "quadratic",
+      "second degree equation"
+    ],
+    "definition": "An equation that can be written ax² + bx + c = 0, with a ≠ 0.",
+    "example": "x² − 5x + 6 = 0 gives x = 2 or x = 3.",
+    "watch": "Put the equation equal to zero before applying the zero-product rule.",
+    "chapters": [
+      2,
+      15,
+      19,
+      23
+    ],
+    "svg": ""
+  },
+  {
+    "id": "root",
+    "term": "Root",
+    "aliases": [
+      "solution",
+      "zero of a function"
+    ],
+    "definition": "A value of x that makes an expression or function equal to zero.",
+    "example": "For f(x) = (x − 2)(x + 3), the roots are 2 and −3.",
+    "watch": "The roots are x-values. The intercept points are (2, 0) and (−3, 0).",
+    "chapters": [
+      15,
+      19,
+      23
+    ],
+    "svg": ""
+  },
+  {
+    "id": "subject-of-a-formula",
+    "term": "Subject of a formula",
+    "aliases": [
+      "rearrange",
+      "change the subject"
+    ],
+    "definition": "The variable written alone on one side of a formula.",
+    "example": "From v = u + at, making t the subject gives t = (v − u)/a, with a ≠ 0.",
+    "watch": "Undo operations in the correct order; keep restrictions on division.",
+    "chapters": [
+      21
+    ],
+    "svg": ""
+  },
+  {
+    "id": "set",
+    "term": "Set",
+    "aliases": [
+      "collection",
+      "set notation"
+    ],
+    "definition": "A collection of distinct objects, called elements. Curly brackets list the elements.",
+    "example": "{2, 4, 6} contains three elements. Repeating 2 does not add a new element.",
+    "watch": "Order and repetition do not change a set.",
+    "chapters": [
+      3,
+      9,
+      19
+    ],
+    "svg": ""
+  },
+  {
+    "id": "element-and-membership",
+    "term": "Element and membership",
+    "aliases": [
+      "member",
+      "belongs to",
+      "∈",
+      "∉"
+    ],
+    "definition": "An element is one object in a set. The symbol ∈ means belongs to; ∉ means does not belong to.",
+    "example": "If A = {2, 4, 6}, then 4 ∈ A and 5 ∉ A.",
+    "watch": "Use ∈ for an element and ⊆ for a subset.",
+    "chapters": [
+      3,
+      9,
+      19
+    ],
+    "svg": ""
+  },
+  {
+    "id": "subset",
+    "term": "Subset",
+    "aliases": [
+      "⊆",
+      "proper subset"
+    ],
+    "definition": "A set whose every element also belongs to another set. A proper subset does not equal that other set.",
+    "example": "{2, 4} ⊆ {2, 4, 6}. Every set is a subset of itself.",
+    "watch": "Being a subset does not mean having just one common element.",
+    "chapters": [
+      3
+    ],
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 480 200\" role=\"img\" aria-label=\"B is entirely contained in A.\"><rect width=\"480\" height=\"200\" rx=\"12\" fill=\"#ffffff\"/><rect x=\"30\" y=\"20\" width=\"420\" height=\"160\" rx=\"8\" fill=\"#e8f5f1\"/><circle cx=\"240\" cy=\"100\" r=\"65\" fill=\"#edf4fc\" stroke=\"#3175ba\" stroke-width=\"2.5\"/><text x=\"75\" y=\"51\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"22\" fill=\"#173349\">A</text><text x=\"240\" y=\"73\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"22\" fill=\"#3175ba\">B</text><text x=\"240\" y=\"115\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"25\" fill=\"#173349\">2, 4</text><text x=\"370\" y=\"113\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"25\" fill=\"#173349\">6</text><text x=\"240\" y=\"188\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"18\" fill=\"#173349\">B ⊆ A</text></svg>"
+  },
+  {
+    "id": "universal-set",
+    "term": "Universal set",
+    "aliases": [
+      "universe",
+      "U"
+    ],
+    "definition": "The set of all objects under consideration in the question. Complements are measured within it.",
+    "example": "If U = {1, 2, 3, 4} and A = {1, 2}, then A′ = {3, 4}.",
+    "watch": "Changing the universal set can change a complement.",
+    "chapters": [
+      3,
+      9
+    ],
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 480 200\" role=\"img\" aria-label=\"Universal set has 1, 2, 3, 4. A has 1 and 2; B has 2 and 3.\"><rect width=\"480\" height=\"200\" rx=\"12\" fill=\"#ffffff\"/><rect x=\"15\" y=\"12\" width=\"450\" height=\"174\" rx=\"8\" fill=\"#f5f8fa\"/><circle cx=\"193\" cy=\"96\" r=\"63\" fill=\"#e8f5f1\" stroke=\"#087f75\" stroke-width=\"2.5\"/><circle cx=\"277\" cy=\"96\" r=\"63\" fill=\"none\" stroke=\"#3175ba\" stroke-width=\"2.5\"/><text x=\"162\" y=\"58\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"19\" fill=\"#087f75\">A</text><text x=\"311\" y=\"58\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"19\" fill=\"#3175ba\">B</text><text x=\"168\" y=\"105\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"25\" fill=\"#173349\">1</text><text x=\"235\" y=\"105\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"25\" fill=\"#173349\">2</text><text x=\"301\" y=\"105\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"25\" fill=\"#173349\">3</text><text x=\"420\" y=\"105\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"25\" fill=\"#173349\">4</text><text x=\"240\" y=\"176\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"18\" fill=\"#173349\">U = {1, 2, 3, 4}</text></svg>"
+  },
+  {
+    "id": "union",
+    "term": "Union",
+    "aliases": [
+      "∪",
+      "or"
+    ],
+    "definition": "The set of elements in A or B or both.",
+    "example": "If A = {1, 2} and B = {2, 3}, then A ∪ B = {1, 2, 3}.",
+    "watch": "Count an element in both sets only once in their union.",
+    "chapters": [
+      3,
+      9
+    ],
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 480 200\" role=\"img\" aria-label=\"Universal set has 1, 2, 3, 4. A has 1 and 2; B has 2 and 3.\"><rect width=\"480\" height=\"200\" rx=\"12\" fill=\"#ffffff\"/><rect x=\"15\" y=\"12\" width=\"450\" height=\"174\" rx=\"8\" fill=\"#f5f8fa\"/><circle cx=\"193\" cy=\"96\" r=\"63\" fill=\"#e8f5f1\" stroke=\"#087f75\" stroke-width=\"2.5\"/><circle cx=\"277\" cy=\"96\" r=\"63\" fill=\"none\" stroke=\"#3175ba\" stroke-width=\"2.5\"/><text x=\"162\" y=\"58\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"19\" fill=\"#087f75\">A</text><text x=\"311\" y=\"58\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"19\" fill=\"#3175ba\">B</text><text x=\"168\" y=\"105\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"25\" fill=\"#173349\">1</text><text x=\"235\" y=\"105\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"25\" fill=\"#173349\">2</text><text x=\"301\" y=\"105\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"25\" fill=\"#173349\">3</text><text x=\"420\" y=\"105\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"25\" fill=\"#173349\">4</text><text x=\"240\" y=\"176\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"18\" fill=\"#173349\">A ∪ B = {1, 2, 3}</text></svg>"
+  },
+  {
+    "id": "intersection",
+    "term": "Intersection",
+    "aliases": [
+      "∩",
+      "and"
+    ],
+    "definition": "The set of elements common to both sets.",
+    "example": "If A = {1, 2} and B = {2, 3}, then A ∩ B = {2}.",
+    "watch": "Intersection means both conditions hold, not either condition.",
+    "chapters": [
+      3,
+      9
+    ],
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 480 200\" role=\"img\" aria-label=\"Universal set has 1, 2, 3, 4. A has 1 and 2; B has 2 and 3.\"><rect width=\"480\" height=\"200\" rx=\"12\" fill=\"#ffffff\"/><rect x=\"15\" y=\"12\" width=\"450\" height=\"174\" rx=\"8\" fill=\"#f5f8fa\"/><circle cx=\"193\" cy=\"96\" r=\"63\" fill=\"#e8f5f1\" stroke=\"#087f75\" stroke-width=\"2.5\"/><circle cx=\"277\" cy=\"96\" r=\"63\" fill=\"none\" stroke=\"#3175ba\" stroke-width=\"2.5\"/><text x=\"162\" y=\"58\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"19\" fill=\"#087f75\">A</text><text x=\"311\" y=\"58\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"19\" fill=\"#3175ba\">B</text><text x=\"168\" y=\"105\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"25\" fill=\"#173349\">1</text><text x=\"235\" y=\"105\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"25\" fill=\"#173349\">2</text><text x=\"301\" y=\"105\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"25\" fill=\"#173349\">3</text><text x=\"420\" y=\"105\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"25\" fill=\"#173349\">4</text><text x=\"240\" y=\"176\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"18\" fill=\"#173349\">A ∩ B = {2}</text></svg>"
+  },
+  {
+    "id": "complement",
+    "term": "Complement",
+    "aliases": [
+      "complement of a set",
+      "A prime",
+      "A′"
+    ],
+    "definition": "Everything in the universal set that is not in the stated set.",
+    "example": "For U = {1, 2, 3, 4} and A = {1, 2}, A′ = {3, 4}.",
+    "watch": "A complement depends on the chosen universal set.",
+    "chapters": [
+      3,
+      9
+    ],
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 480 200\" role=\"img\" aria-label=\"Universal set has 1, 2, 3, 4. A has 1 and 2; B has 2 and 3.\"><rect width=\"480\" height=\"200\" rx=\"12\" fill=\"#ffffff\"/><rect x=\"15\" y=\"12\" width=\"450\" height=\"174\" rx=\"8\" fill=\"#f5f8fa\"/><circle cx=\"193\" cy=\"96\" r=\"63\" fill=\"#e8f5f1\" stroke=\"#087f75\" stroke-width=\"2.5\"/><circle cx=\"277\" cy=\"96\" r=\"63\" fill=\"none\" stroke=\"#3175ba\" stroke-width=\"2.5\"/><text x=\"162\" y=\"58\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"19\" fill=\"#087f75\">A</text><text x=\"311\" y=\"58\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"19\" fill=\"#3175ba\">B</text><text x=\"168\" y=\"105\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"25\" fill=\"#173349\">1</text><text x=\"235\" y=\"105\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"25\" fill=\"#173349\">2</text><text x=\"301\" y=\"105\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"25\" fill=\"#173349\">3</text><text x=\"420\" y=\"105\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"25\" fill=\"#173349\">4</text><text x=\"240\" y=\"176\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"18\" fill=\"#173349\">A′ = {3, 4}</text></svg>"
+  },
+  {
+    "id": "set-difference",
+    "term": "Set difference",
+    "aliases": [
+      "A minus B",
+      "A\\B"
+    ],
+    "definition": "Elements in the first set that are not in the second.",
+    "example": "If A = {1, 2} and B = {2, 3}, then A \\ B = {1}.",
+    "watch": "Direction matters: B \\ A = {3}, a different set.",
+    "chapters": [
+      3,
+      9
+    ],
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 480 200\" role=\"img\" aria-label=\"Universal set has 1, 2, 3, 4. A has 1 and 2; B has 2 and 3.\"><rect width=\"480\" height=\"200\" rx=\"12\" fill=\"#ffffff\"/><rect x=\"15\" y=\"12\" width=\"450\" height=\"174\" rx=\"8\" fill=\"#f5f8fa\"/><circle cx=\"193\" cy=\"96\" r=\"63\" fill=\"#e8f5f1\" stroke=\"#087f75\" stroke-width=\"2.5\"/><circle cx=\"277\" cy=\"96\" r=\"63\" fill=\"none\" stroke=\"#3175ba\" stroke-width=\"2.5\"/><text x=\"162\" y=\"58\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"19\" fill=\"#087f75\">A</text><text x=\"311\" y=\"58\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"19\" fill=\"#3175ba\">B</text><text x=\"168\" y=\"105\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"25\" fill=\"#173349\">1</text><text x=\"235\" y=\"105\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"25\" fill=\"#173349\">2</text><text x=\"301\" y=\"105\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"25\" fill=\"#173349\">3</text><text x=\"420\" y=\"105\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"25\" fill=\"#173349\">4</text><text x=\"240\" y=\"176\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"18\" fill=\"#173349\">A \\ B = {1}</text></svg>"
+  },
+  {
+    "id": "integer",
+    "term": "Integer",
+    "aliases": [
+      "whole number",
+      "ℤ",
+      "integers"
+    ],
+    "definition": "A number with no fractional part, including negative numbers, zero and positive whole numbers.",
+    "example": "−3, 0 and 7 are integers; 1.5 is not.",
+    "watch": "Negative whole numbers are integers too.",
+    "chapters": [
+      1,
+      3,
+      14
+    ],
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 480 200\" role=\"img\" aria-label=\"Integers are whole steps along the number line.\"><rect width=\"480\" height=\"200\" rx=\"12\" fill=\"#ffffff\"/><line x1=\"45\" y1=\"100\" x2=\"435\" y2=\"100\" stroke=\"#173349\" stroke-width=\"2\"/><line x1=\"75\" y1=\"94\" x2=\"75\" y2=\"106\" stroke=\"#173349\" stroke-width=\"2\"/><text x=\"75\" y=\"130\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"17\" fill=\"#173349\">-3</text><line x1=\"130\" y1=\"94\" x2=\"130\" y2=\"106\" stroke=\"#173349\" stroke-width=\"2\"/><text x=\"130\" y=\"130\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"17\" fill=\"#173349\">-2</text><line x1=\"185\" y1=\"94\" x2=\"185\" y2=\"106\" stroke=\"#173349\" stroke-width=\"2\"/><text x=\"185\" y=\"130\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"17\" fill=\"#173349\">-1</text><line x1=\"240\" y1=\"94\" x2=\"240\" y2=\"106\" stroke=\"#173349\" stroke-width=\"2\"/><text x=\"240\" y=\"130\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"17\" fill=\"#173349\">0</text><line x1=\"295\" y1=\"94\" x2=\"295\" y2=\"106\" stroke=\"#173349\" stroke-width=\"2\"/><text x=\"295\" y=\"130\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"17\" fill=\"#173349\">1</text><line x1=\"350\" y1=\"94\" x2=\"350\" y2=\"106\" stroke=\"#173349\" stroke-width=\"2\"/><text x=\"350\" y=\"130\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"17\" fill=\"#173349\">2</text><line x1=\"405\" y1=\"94\" x2=\"405\" y2=\"106\" stroke=\"#173349\" stroke-width=\"2\"/><text x=\"405\" y=\"130\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"17\" fill=\"#173349\">3</text><circle cx=\"130\" cy=\"100\" r=\"4\" fill=\"#087f75\"/><text x=\"130\" y=\"70\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"18\" fill=\"#087f75\">−2</text><circle cx=\"240\" cy=\"100\" r=\"4\" fill=\"#087f75\"/><text x=\"240\" y=\"70\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"18\" fill=\"#087f75\">0</text><circle cx=\"405\" cy=\"100\" r=\"4\" fill=\"#087f75\"/><text x=\"405\" y=\"70\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"18\" fill=\"#087f75\">3</text><text x=\"240\" y=\"176\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"17\" fill=\"#173349\">Integers: …, −2, −1, 0, 1, 2, …</text></svg>"
+  },
+  {
+    "id": "rational-number",
+    "term": "Rational number",
+    "aliases": [
+      "fraction",
+      "ℚ",
+      "rational"
+    ],
+    "definition": "A number expressible as a/b where a and b are integers and b ≠ 0.",
+    "example": "0.75 = 3/4 and 0.333… = 1/3 are rational.",
+    "watch": "A recurring decimal is rational even though it never ends.",
+    "chapters": [
+      1,
+      3,
+      14
+    ],
+    "svg": ""
+  },
+  {
+    "id": "irrational-number",
+    "term": "Irrational number",
+    "aliases": [
+      "irrational"
+    ],
+    "definition": "A real number that cannot be written as a ratio of two integers. Its decimal neither terminates nor repeats.",
+    "example": "√2 and π are irrational.",
+    "watch": "Not every square root is irrational: √9 = 3.",
+    "chapters": [
+      1,
+      3,
+      14
+    ],
+    "svg": ""
+  },
+  {
+    "id": "index",
+    "term": "Index",
+    "aliases": [
+      "power",
+      "exponent",
+      "indices"
+    ],
+    "definition": "The exponent tells you the power of a base. For a positive integer exponent, it counts repeated factors.",
+    "example": "2⁴ = 2 × 2 × 2 × 2 = 16.",
+    "watch": "2⁴ is not 2 × 4. Add exponents only when multiplying powers with the same base.",
+    "chapters": [
+      1,
+      14,
+      18,
+      23
+    ],
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 480 200\" role=\"img\" aria-label=\"2⁴ = 2 × 2 × 2 × 2. base = 2; index = 4. For the same base: aᵐ × aⁿ = aᵐ⁺ⁿ.\"><rect width=\"480\" height=\"200\" rx=\"12\" fill=\"#ffffff\"/><rect x=\"25\" y=\"22\" width=\"430\" height=\"65\" rx=\"8\" fill=\"#e8f5f1\"/><text x=\"240\" y=\"64\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"27\" fill=\"#087f75\">2⁴ = 2 × 2 × 2 × 2</text><text x=\"240\" y=\"122\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"21\" fill=\"#173349\">base = 2; index = 4</text><text x=\"240\" y=\"174\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"16\" fill=\"#173349\">For the same base: aᵐ × aⁿ = aᵐ⁺ⁿ.</text></svg>"
+  },
+  {
+    "id": "negative-index",
+    "term": "Negative index",
+    "aliases": [
+      "negative power",
+      "reciprocal power"
+    ],
+    "definition": "A negative exponent gives the reciprocal of the corresponding positive power, for a non-zero base.",
+    "example": "2⁻³ = 1/2³ = 1/8.",
+    "watch": "A negative exponent does not make a positive base give a negative answer.",
+    "chapters": [
+      14,
+      23
+    ],
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 480 200\" role=\"img\" aria-label=\"a⁻ⁿ = 1/aⁿ   (a ≠ 0). 2⁻³ = 1/8. The reciprocal changes position, not sign.\"><rect width=\"480\" height=\"200\" rx=\"12\" fill=\"#ffffff\"/><rect x=\"25\" y=\"22\" width=\"430\" height=\"65\" rx=\"8\" fill=\"#e8f5f1\"/><text x=\"240\" y=\"64\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"27\" fill=\"#087f75\">a⁻ⁿ = 1/aⁿ   (a ≠ 0)</text><text x=\"240\" y=\"122\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"21\" fill=\"#173349\">2⁻³ = 1/8</text><text x=\"240\" y=\"174\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"16\" fill=\"#173349\">The reciprocal changes position, not sign.</text></svg>"
+  },
+  {
+    "id": "fractional-index",
+    "term": "Fractional index",
+    "aliases": [
+      "fractional power",
+      "nth root"
+    ],
+    "definition": "For a positive base, a¹⁄ⁿ is its positive nth root, and aᵐ⁄ⁿ = (ⁿ√a)ᵐ.",
+    "example": "27²⁄³ = (∛27)² = 9.",
+    "watch": "The denominator gives the root; the numerator gives the power.",
+    "chapters": [
+      14
+    ],
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 480 200\" role=\"img\" aria-label=\"27²⁄³ = (∛27)². 3² = 9. Root first can make the calculation smaller.\"><rect width=\"480\" height=\"200\" rx=\"12\" fill=\"#ffffff\"/><rect x=\"25\" y=\"22\" width=\"430\" height=\"65\" rx=\"8\" fill=\"#e8f5f1\"/><text x=\"240\" y=\"64\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"27\" fill=\"#087f75\">27²⁄³ = (∛27)²</text><text x=\"240\" y=\"122\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"21\" fill=\"#173349\">3² = 9</text><text x=\"240\" y=\"174\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"16\" fill=\"#173349\">Root first can make the calculation smaller.</text></svg>"
+  },
+  {
+    "id": "surd",
+    "term": "Surd",
+    "aliases": [
+      "radical",
+      "square root"
+    ],
+    "definition": "An exact irrational root, often left in radical form instead of rounded to a decimal.",
+    "example": "√12 = √(4 × 3) = 2√3.",
+    "watch": "√(a + b) is not generally √a + √b.",
+    "chapters": [
+      14,
+      15,
+      22
+    ],
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 480 200\" role=\"img\" aria-label=\"√12 = √(4 × 3) = 2√3. Extract a square factor. 2√3 + 5√3 = 7√3, but √2 + √3 stays separate.\"><rect width=\"480\" height=\"200\" rx=\"12\" fill=\"#ffffff\"/><rect x=\"25\" y=\"22\" width=\"430\" height=\"65\" rx=\"8\" fill=\"#e8f5f1\"/><text x=\"240\" y=\"64\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"27\" fill=\"#087f75\">√12 = √(4 × 3) = 2√3</text><text x=\"240\" y=\"122\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"21\" fill=\"#173349\">Extract a square factor</text><text x=\"240\" y=\"174\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"16\" fill=\"#173349\">2√3 + 5√3 = 7√3, but √2 + √3 stays separate.</text></svg>"
+  },
+  {
+    "id": "standard-form",
+    "term": "Standard form",
+    "aliases": [
+      "scientific notation"
+    ],
+    "definition": "Writing a non-zero number as a × 10ⁿ, where 1 ≤ |a| < 10 and n is an integer.",
+    "example": "52,000 = 5.2 × 10⁴; 0.0031 = 3.1 × 10⁻³.",
+    "watch": "The leading number must have exactly one non-zero digit before its decimal point.",
+    "chapters": [
+      14
+    ],
+    "svg": ""
+  },
+  {
+    "id": "percentage",
+    "term": "Percentage",
+    "aliases": [
+      "percent",
+      "per cent"
+    ],
+    "definition": "An amount out of one hundred. Divide by 100 to convert a percentage to a decimal.",
+    "example": "18% of 250 is 0.18 × 250 = 45.",
+    "watch": "State what the percentage is OF: the base matters.",
+    "chapters": [
+      4,
+      7,
+      9,
+      13
+    ],
+    "svg": ""
+  },
+  {
+    "id": "percentage-multiplier",
+    "term": "Percentage multiplier",
+    "aliases": [
+      "percentage increase",
+      "percentage decrease",
+      "reverse percentage"
+    ],
+    "definition": "The factor that turns an original amount into its new amount after a percentage change.",
+    "example": "Increase by 12%: multiply by 1.12. Reverse it: divide the new amount by 1.12.",
+    "watch": "An increase of 20% followed by a decrease of 20% does not restore the original.",
+    "chapters": [
+      4,
+      23
+    ],
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 480 200\" role=\"img\" aria-label=\"original × 1.12 = new amount. new amount ÷ 1.12 = original. For a decrease of 12%, use 0.88.\"><rect width=\"480\" height=\"200\" rx=\"12\" fill=\"#ffffff\"/><rect x=\"25\" y=\"22\" width=\"430\" height=\"65\" rx=\"8\" fill=\"#e8f5f1\"/><text x=\"240\" y=\"64\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"27\" fill=\"#087f75\">original × 1.12 = new amount</text><text x=\"240\" y=\"122\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"21\" fill=\"#173349\">new amount ÷ 1.12 = original</text><text x=\"240\" y=\"174\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"16\" fill=\"#173349\">For a decrease of 12%, use 0.88.</text></svg>"
+  },
+  {
+    "id": "compound-interest",
+    "term": "Compound interest",
+    "aliases": [
+      "compound growth"
+    ],
+    "definition": "Growth calculated on the updated amount each period, so earlier growth also earns growth.",
+    "example": "At 5% per year, 200 grows to 200(1.05)³ after three years.",
+    "watch": "Use the rate and number of periods in matching units.",
+    "chapters": [
+      4,
+      18,
+      23
+    ],
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 480 200\" role=\"img\" aria-label=\"200 → 210 → 220.50. Multiply by 1.05 each year. The increase gets bigger because the base grows.\"><rect width=\"480\" height=\"200\" rx=\"12\" fill=\"#ffffff\"/><rect x=\"25\" y=\"22\" width=\"430\" height=\"65\" rx=\"8\" fill=\"#e8f5f1\"/><text x=\"240\" y=\"64\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"27\" fill=\"#087f75\">200 → 210 → 220.50</text><text x=\"240\" y=\"122\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"21\" fill=\"#173349\">Multiply by 1.05 each year</text><text x=\"240\" y=\"174\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"16\" fill=\"#173349\">The increase gets bigger because the base grows.</text></svg>"
+  },
+  {
+    "id": "depreciation",
+    "term": "Depreciation",
+    "aliases": [
+      "compound decay"
+    ],
+    "definition": "A reduction in value over time, often modelled by repeated percentage decreases.",
+    "example": "A value of 1,000 falling 10% yearly becomes 1,000(0.9)² = 810 after two years.",
+    "watch": "Repeated decreases multiply; do not subtract the percentages from the original each time.",
+    "chapters": [
+      4,
+      23
+    ],
+    "svg": ""
+  },
+  {
+    "id": "markup",
+    "term": "Markup",
+    "aliases": [
+      "mark-up",
+      "profit on cost"
+    ],
+    "definition": "Profit expressed as a percentage of cost price.",
+    "example": "Cost 80, selling price 100: profit 20, so markup = 20/80 × 100% = 25%.",
+    "watch": "Markup uses cost as its denominator; profit margin uses selling price.",
+    "chapters": [
+      4
+    ],
+    "svg": ""
+  },
+  {
+    "id": "profit-margin",
+    "term": "Profit margin",
+    "aliases": [
+      "margin",
+      "profit on sales"
+    ],
+    "definition": "Profit expressed as a percentage of selling price.",
+    "example": "Cost 80, selling price 100: margin = 20/100 × 100% = 20%.",
+    "watch": "A 20% margin is not the same as a 20% markup.",
+    "chapters": [
+      4
+    ],
+    "svg": ""
+  },
+  {
+    "id": "gross-and-net-pay",
+    "term": "Gross and net pay",
+    "aliases": [
+      "gross pay",
+      "net pay",
+      "deductions",
+      "take-home pay"
+    ],
+    "definition": "Gross pay is pay before deductions. Net pay is the amount left after deductions.",
+    "example": "Gross 600 less deductions 95 gives net pay 505.",
+    "watch": "For banded deductions, apply each rate only to the part within its band.",
+    "chapters": [
+      4
+    ],
+    "svg": ""
+  },
+  {
+    "id": "exchange-rate",
+    "term": "Exchange rate",
+    "aliases": [
+      "currency conversion",
+      "conversion rate"
+    ],
+    "definition": "A ratio stating how much one currency is worth in another.",
+    "example": "At €1 = £0.85, €40 = £34. To turn £34 into euros, divide by 0.85.",
+    "watch": "Write the units beside the rate so you choose multiplication or division correctly.",
+    "chapters": [
+      4,
+      12
+    ],
+    "svg": ""
+  },
+  {
+    "id": "population",
+    "term": "Population",
+    "aliases": [
+      "target population"
+    ],
+    "definition": "The whole group about which a statistical question is being asked.",
+    "example": "To study all students in a school, the population is every student in that school.",
+    "watch": "Your population must match the question you want to answer.",
+    "chapters": [
+      5
+    ],
+    "svg": ""
+  },
+  {
+    "id": "sample",
+    "term": "Sample",
+    "aliases": [
+      "sampling",
+      "sample size"
+    ],
+    "definition": "The subset of a population from which data is actually collected. Sample size is the number of observations.",
+    "example": "Surveying 60 students from a school of 800 gives a sample of 60.",
+    "watch": "A large sample can still be biased if selected unfairly.",
+    "chapters": [
+      5,
+      7,
+      9
+    ],
+    "svg": ""
+  },
+  {
+    "id": "bias",
+    "term": "Bias",
+    "aliases": [
+      "biased sample",
+      "leading question",
+      "representative"
+    ],
+    "definition": "A systematic tendency in collection or measurement that favours some answers or groups over others.",
+    "example": "Asking only rugby players about favourite sports can bias a school-wide survey.",
+    "watch": "Random selection reduces selection bias; it does not fix a leading question.",
+    "chapters": [
+      5,
+      13
+    ],
+    "svg": ""
+  },
+  {
+    "id": "qualitative-data",
+    "term": "Qualitative data",
+    "aliases": [
+      "categorical data",
+      "category"
+    ],
+    "definition": "Data describing categories or qualities rather than numerical measurements.",
+    "example": "Favourite colour and type of transport are qualitative.",
+    "watch": "Using number codes for categories does not make their average meaningful.",
+    "chapters": [
+      5,
+      13
+    ],
+    "svg": ""
+  },
+  {
+    "id": "discrete-and-continuous-data",
+    "term": "Discrete and continuous data",
+    "aliases": [
+      "discrete data",
+      "continuous data",
+      "quantitative data"
+    ],
+    "definition": "Discrete data comes in separate countable values. Continuous data is measured and can take values throughout an interval.",
+    "example": "Number of siblings is discrete; height is continuous.",
+    "watch": "Rounding a measurement to whole units does not make the underlying variable discrete.",
+    "chapters": [
+      5,
+      7,
+      13
+    ],
+    "svg": ""
+  },
+  {
+    "id": "frequency",
+    "term": "Frequency",
+    "aliases": [
+      "frequency table",
+      "count"
+    ],
+    "definition": "How many times a value or category occurs in the data.",
+    "example": "If the value 4 occurs six times, its frequency is 6.",
+    "watch": "Do not confuse a data value with how often it occurs.",
+    "chapters": [
+      7,
+      13
+    ],
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 480 200\" role=\"img\" aria-label=\"Frequency counts how often a value occurs.\"><rect width=\"480\" height=\"200\" rx=\"12\" fill=\"#ffffff\"/><line x1=\"70\" y1=\"150\" x2=\"425\" y2=\"150\" stroke=\"#173349\" stroke-width=\"2\"/><line x1=\"70\" y1=\"150\" x2=\"70\" y2=\"20\" stroke=\"#173349\" stroke-width=\"2\"/><rect x=\"110\" y=\"90\" width=\"55\" height=\"60\" rx=\"8\" fill=\"#e8f5f1\"/><text x=\"137\" y=\"174\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"18\" fill=\"#173349\">A</text><rect x=\"220\" y=\"40\" width=\"55\" height=\"110\" rx=\"8\" fill=\"#e8f5f1\"/><text x=\"247\" y=\"174\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"18\" fill=\"#173349\">B</text><rect x=\"330\" y=\"70\" width=\"55\" height=\"80\" rx=\"8\" fill=\"#e8f5f1\"/><text x=\"357\" y=\"174\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"18\" fill=\"#173349\">C</text><text x=\"240\" y=\"196\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"16\" fill=\"#173349\">Separate categories → separate bars</text></svg>"
+  },
+  {
+    "id": "mean",
+    "term": "Mean",
+    "aliases": [
+      "arithmetic mean",
+      "average"
+    ],
+    "definition": "The total of all values divided by the number of values. It represents fair sharing of the total.",
+    "example": "For 2, 4 and 9, mean = (2 + 4 + 9)/3 = 5.",
+    "watch": "An unusually large or small value can strongly affect the mean.",
+    "chapters": [
+      7
+    ],
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 480 200\" role=\"img\" aria-label=\"2 + 4 + 9 = 15. 15 ÷ 3 = 5. Fair share: 5, 5, 5 has the same total.\"><rect width=\"480\" height=\"200\" rx=\"12\" fill=\"#ffffff\"/><rect x=\"25\" y=\"22\" width=\"430\" height=\"65\" rx=\"8\" fill=\"#e8f5f1\"/><text x=\"240\" y=\"64\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"27\" fill=\"#087f75\">2 + 4 + 9 = 15</text><text x=\"240\" y=\"122\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"21\" fill=\"#173349\">15 ÷ 3 = 5</text><text x=\"240\" y=\"174\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"16\" fill=\"#173349\">Fair share: 5, 5, 5 has the same total.</text></svg>"
+  },
+  {
+    "id": "median",
+    "term": "Median",
+    "aliases": [
+      "middle value",
+      "average"
+    ],
+    "definition": "The middle value in ordered data. With an even number of values, average the middle two.",
+    "example": "For 2, 5, 6, 9, the median is (5 + 6)/2 = 5.5.",
+    "watch": "Order the data first; the middle position is not automatically the median value.",
+    "chapters": [
+      7,
+      13
+    ],
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 480 200\" role=\"img\" aria-label=\"2,  5,  6,  9. median = (5 + 6) ÷ 2 = 5.5. An even-sized list has two middle values.\"><rect width=\"480\" height=\"200\" rx=\"12\" fill=\"#ffffff\"/><rect x=\"25\" y=\"22\" width=\"430\" height=\"65\" rx=\"8\" fill=\"#e8f5f1\"/><text x=\"240\" y=\"64\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"27\" fill=\"#087f75\">2,  5,  6,  9</text><text x=\"240\" y=\"122\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"21\" fill=\"#173349\">median = (5 + 6) ÷ 2 = 5.5</text><text x=\"240\" y=\"174\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"16\" fill=\"#173349\">An even-sized list has two middle values.</text></svg>"
+  },
+  {
+    "id": "mode",
+    "term": "Mode",
+    "aliases": [
+      "modal value",
+      "modal class",
+      "average"
+    ],
+    "definition": "The value or category occurring most often. There may be more than one mode or no unique mode.",
+    "example": "For 1, 2, 2, 3, 4, the mode is 2.",
+    "watch": "The mode is the value, not its frequency.",
+    "chapters": [
+      7,
+      13
+    ],
+    "svg": ""
+  },
+  {
+    "id": "range-of-data",
+    "term": "Range of data",
+    "aliases": [
+      "statistical range",
+      "spread",
+      "variability"
+    ],
+    "definition": "The largest data value minus the smallest. It is a simple measure of spread.",
+    "example": "For 3, 4, 8, 11, the range is 11 − 3 = 8.",
+    "watch": "This statistical range is a number; the range of a function is a set of outputs.",
+    "chapters": [
+      7,
+      13
+    ],
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 480 200\" role=\"img\" aria-label=\"3, 4, 8, 11. range = 11 − 3 = 8. Use the largest and smallest VALUES.\"><rect width=\"480\" height=\"200\" rx=\"12\" fill=\"#ffffff\"/><rect x=\"25\" y=\"22\" width=\"430\" height=\"65\" rx=\"8\" fill=\"#e8f5f1\"/><text x=\"240\" y=\"64\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"27\" fill=\"#087f75\">3, 4, 8, 11</text><text x=\"240\" y=\"122\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"21\" fill=\"#173349\">range = 11 − 3 = 8</text><text x=\"240\" y=\"174\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"16\" fill=\"#173349\">Use the largest and smallest VALUES.</text></svg>"
+  },
+  {
+    "id": "weighted-mean",
+    "term": "Weighted mean",
+    "aliases": [
+      "frequency mean",
+      "mean from a table"
+    ],
+    "definition": "A mean where each value contributes according to its weight or frequency: Σfx / Σf.",
+    "example": "Two scores of 4 and three scores of 6 give mean (2×4 + 3×6)/5 = 5.2.",
+    "watch": "Divide by total frequency, not the number of distinct values.",
+    "chapters": [
+      7,
+      13
+    ],
+    "svg": ""
+  },
+  {
+    "id": "bar-chart",
+    "term": "Bar chart",
+    "aliases": [
+      "bar graph"
+    ],
+    "definition": "A display using separate bars whose heights represent values or frequencies for categories.",
+    "example": "A bar of height 12 may represent 12 students choosing cycling.",
+    "watch": "Read the scale; decorative bar width should not change the meaning.",
+    "chapters": [
+      13
+    ],
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 480 200\" role=\"img\" aria-label=\"A bar chart uses separate bars for separate categories.\"><rect width=\"480\" height=\"200\" rx=\"12\" fill=\"#ffffff\"/><line x1=\"70\" y1=\"150\" x2=\"425\" y2=\"150\" stroke=\"#173349\" stroke-width=\"2\"/><line x1=\"70\" y1=\"150\" x2=\"70\" y2=\"20\" stroke=\"#173349\" stroke-width=\"2\"/><rect x=\"110\" y=\"90\" width=\"55\" height=\"60\" rx=\"8\" fill=\"#e8f5f1\"/><text x=\"137\" y=\"174\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"18\" fill=\"#173349\">A</text><rect x=\"220\" y=\"40\" width=\"55\" height=\"110\" rx=\"8\" fill=\"#e8f5f1\"/><text x=\"247\" y=\"174\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"18\" fill=\"#173349\">B</text><rect x=\"330\" y=\"70\" width=\"55\" height=\"80\" rx=\"8\" fill=\"#e8f5f1\"/><text x=\"357\" y=\"174\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"18\" fill=\"#173349\">C</text><text x=\"240\" y=\"196\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"16\" fill=\"#173349\">Separate categories → separate bars</text></svg>"
+  },
+  {
+    "id": "pie-chart",
+    "term": "Pie chart",
+    "aliases": [
+      "sector diagram"
+    ],
+    "definition": "A circle divided into sectors in proportion to category frequencies. The whole circle represents the total.",
+    "example": "A category with 15 out of 60 values gets (15/60) × 360° = 90°.",
+    "watch": "Percentages describe shares of the same total.",
+    "chapters": [
+      13
+    ],
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 480 200\" role=\"img\" aria-label=\"Sector of a circle.\"><rect width=\"480\" height=\"200\" rx=\"12\" fill=\"#ffffff\"/><circle cx=\"220\" cy=\"95\" r=\"68\" fill=\"none\" stroke=\"#087f75\" stroke-width=\"2.5\"/><circle cx=\"220\" cy=\"95\" r=\"4\" fill=\"#087f75\"/><text x=\"235\" y=\"117\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"17\" fill=\"#173349\">O</text><path d=\"M220 95 L288 95 A68 68 0 0 0 220 27 Z\" fill=\"#e8f5f1\" stroke=\"#087f75\" stroke-width=\"2.5\"/><text x=\"246\" y=\"76\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"18\" fill=\"#173349\">90°</text><text x=\"359\" y=\"106\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"17\" fill=\"#173349\">¼ of the circle</text><text x=\"220\" y=\"188\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"18\" fill=\"#173349\">Sector</text></svg>"
+  },
+  {
+    "id": "histogram",
+    "term": "Histogram",
+    "aliases": [
+      "class interval",
+      "grouped continuous data"
+    ],
+    "definition": "A display of numerical intervals using adjoining bars. Bar AREA represents frequency.",
+    "example": "For unequal class widths, use frequency density = frequency ÷ class width as the height.",
+    "watch": "Equal heights need not mean equal frequencies when widths differ.",
+    "chapters": [
+      13
+    ],
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 480 200\" role=\"img\" aria-label=\"Two histogram bars have equal area and therefore equal frequency, although their heights differ.\"><rect width=\"480\" height=\"200\" rx=\"12\" fill=\"#ffffff\"/><line x1=\"60\" y1=\"155\" x2=\"430\" y2=\"155\" stroke=\"#173349\" stroke-width=\"2\"/><line x1=\"60\" y1=\"155\" x2=\"60\" y2=\"20\" stroke=\"#173349\" stroke-width=\"2\"/><rect x=\"90\" y=\"55\" width=\"100\" height=\"100\" fill=\"#e8f5f1\" stroke=\"#087f75\" stroke-width=\"2\"/><rect x=\"190\" y=\"105\" width=\"200\" height=\"50\" fill=\"#edf4fc\" stroke=\"#3175ba\" stroke-width=\"2\"/><text x=\"140\" y=\"91\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"18\" fill=\"#173349\">area</text><text x=\"290\" y=\"134\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"18\" fill=\"#173349\">same area</text><text x=\"240\" y=\"190\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"18\" fill=\"#173349\">Frequency is proportional to area.</text></svg>"
+  },
+  {
+    "id": "stem-and-leaf-plot",
+    "term": "Stem-and-leaf plot",
+    "aliases": [
+      "stem and leaf",
+      "ordered data"
+    ],
+    "definition": "A display splitting each value into a stem and a leaf, while retaining the original values.",
+    "example": "With key 2 | 7 = 27, the row 2 | 1 4 7 means 21, 24, 27.",
+    "watch": "Always read the key; it determines place value and units.",
+    "chapters": [
+      13
+    ],
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 480 200\" role=\"img\" aria-label=\"2 | 1 4 7. 21, 24, 27. Key: 2 | 7 means 27.\"><rect width=\"480\" height=\"200\" rx=\"12\" fill=\"#ffffff\"/><rect x=\"25\" y=\"22\" width=\"430\" height=\"65\" rx=\"8\" fill=\"#e8f5f1\"/><text x=\"240\" y=\"64\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"27\" fill=\"#087f75\">2 | 1 4 7</text><text x=\"240\" y=\"122\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"21\" fill=\"#173349\">21, 24, 27</text><text x=\"240\" y=\"174\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"16\" fill=\"#173349\">Key: 2 | 7 means 27.</text></svg>"
+  },
+  {
+    "id": "parallel-lines",
+    "term": "Parallel lines",
+    "aliases": [
+      "parallel",
+      "∥"
+    ],
+    "definition": "Lines in a plane that never meet and remain the same perpendicular distance apart.",
+    "example": "Distinct lines y = 2x + 1 and y = 2x − 3 are parallel.",
+    "watch": "Equal gradients give parallel lines only if the lines are distinct.",
+    "chapters": [
+      8,
+      11,
+      16,
+      24
+    ],
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 480 200\" role=\"img\" aria-label=\"Two parallel lines never meet.\"><rect width=\"480\" height=\"200\" rx=\"12\" fill=\"#ffffff\"/><line x1=\"55\" y1=\"70\" x2=\"425\" y2=\"70\" stroke=\"#087f75\" stroke-width=\"3\"/><line x1=\"55\" y1=\"130\" x2=\"425\" y2=\"130\" stroke=\"#3175ba\" stroke-width=\"3\"/><text x=\"240\" y=\"187\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"18\" fill=\"#173349\">Same direction; constant separation.</text></svg>"
+  },
+  {
+    "id": "perpendicular-lines",
+    "term": "Perpendicular lines",
+    "aliases": [
+      "perpendicular",
+      "right angle",
+      "⊥"
+    ],
+    "definition": "Lines meeting at a right angle of 90°.",
+    "example": "A horizontal line and a vertical line are perpendicular.",
+    "watch": "For two finite, non-zero gradients, perpendicular gradients multiply to −1.",
+    "chapters": [
+      8,
+      11,
+      22,
+      24
+    ],
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 480 200\" role=\"img\" aria-label=\"Perpendicular lines meet at a right angle.\"><rect width=\"480\" height=\"200\" rx=\"12\" fill=\"#ffffff\"/><line x1=\"65\" y1=\"130\" x2=\"410\" y2=\"130\" stroke=\"#087f75\" stroke-width=\"3\"/><line x1=\"235\" y1=\"20\" x2=\"235\" y2=\"175\" stroke=\"#3175ba\" stroke-width=\"3\"/><line x1=\"235\" y1=\"110\" x2=\"255\" y2=\"110\" stroke=\"#173349\" stroke-width=\"2\"/><line x1=\"255\" y1=\"110\" x2=\"255\" y2=\"130\" stroke=\"#173349\" stroke-width=\"2\"/><text x=\"307\" y=\"105\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"24\" fill=\"#173349\">90°</text></svg>"
+  },
+  {
+    "id": "vertically-opposite-angles",
+    "term": "Vertically opposite angles",
+    "aliases": [
+      "opposite angles at an intersection"
+    ],
+    "definition": "The opposite angles made when two straight lines cross. They are equal.",
+    "example": "If one angle is 68°, the vertically opposite angle is also 68°.",
+    "watch": "Adjacent angles at the crossing usually differ; those on a straight line sum to 180°.",
+    "chapters": [
+      8
+    ],
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 480 200\" role=\"img\" aria-label=\"Opposite angles at a crossing are equal.\"><rect width=\"480\" height=\"200\" rx=\"12\" fill=\"#ffffff\"/><line x1=\"75\" y1=\"40\" x2=\"405\" y2=\"160\" stroke=\"#173349\" stroke-width=\"2\"/><line x1=\"75\" y1=\"160\" x2=\"405\" y2=\"40\" stroke=\"#173349\" stroke-width=\"2\"/><text x=\"240\" y=\"70\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"25\" fill=\"#087f75\">68°</text><text x=\"240\" y=\"147\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"25\" fill=\"#087f75\">68°</text><text x=\"240\" y=\"190\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"18\" fill=\"#173349\">Opposite, not next to each other.</text></svg>"
+  },
+  {
+    "id": "corresponding-angles",
+    "term": "Corresponding angles",
+    "aliases": [
+      "F angles"
+    ],
+    "definition": "Angles occupying matching positions where a transversal crosses two lines. They are equal when those lines are parallel.",
+    "example": "Matching upper-right angles are equal on two parallel lines.",
+    "watch": "State the parallel-line condition; the angle positions alone do not guarantee equality.",
+    "chapters": [
+      8,
+      16,
+      24
+    ],
+    "svg": ""
+  },
+  {
+    "id": "alternate-angles",
+    "term": "Alternate angles",
+    "aliases": [
+      "Z angles"
+    ],
+    "definition": "Angles on opposite sides of a transversal, between two lines. They are equal when those lines are parallel.",
+    "example": "Equal alternate interior angles can also be used to establish parallel lines.",
+    "watch": "Identify the two lines and the transversal before choosing the angles.",
+    "chapters": [
+      8,
+      16,
+      24
+    ],
+    "svg": ""
+  },
+  {
+    "id": "exterior-angle-of-a-triangle",
+    "term": "Exterior angle of a triangle",
+    "aliases": [
+      "exterior angle"
+    ],
+    "definition": "An angle between one triangle side and the extension of an adjacent side. It equals the sum of the two non-adjacent interior angles.",
+    "example": "If the remote interior angles are 45° and 65°, the exterior angle is 110°.",
+    "watch": "Do not include the interior angle next to the exterior angle in that sum.",
+    "chapters": [
+      8,
+      16
+    ],
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 480 200\" role=\"img\" aria-label=\"An exterior triangle angle equals the two remote interior angles.\"><rect width=\"480\" height=\"200\" rx=\"12\" fill=\"#ffffff\"/><polygon points=\"70,150 175,35 300,150\" fill=\"#e8f5f1\" stroke=\"#087f75\" stroke-width=\"2.5\"/><line x1=\"300\" y1=\"150\" x2=\"435\" y2=\"150\" stroke=\"#173349\" stroke-width=\"2\"/><text x=\"106\" y=\"137\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"18\" fill=\"#173349\">45°</text><text x=\"181\" y=\"73\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"18\" fill=\"#173349\">65°</text><text x=\"350\" y=\"135\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"20\" fill=\"#3175ba\">110°</text></svg>"
+  },
+  {
+    "id": "isosceles-triangle",
+    "term": "Isosceles triangle",
+    "aliases": [
+      "equal sides",
+      "base angles"
+    ],
+    "definition": "A triangle with at least two equal sides. The angles opposite those equal sides are equal.",
+    "example": "If the vertex angle is 40°, each base angle is (180° − 40°)/2 = 70°.",
+    "watch": "Match an angle to the side opposite it, not the side next to it.",
+    "chapters": [
+      8,
+      16
+    ],
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 480 200\" role=\"img\" aria-label=\"An isosceles triangle has equal sloping sides and equal base angles.\"><rect width=\"480\" height=\"200\" rx=\"12\" fill=\"#ffffff\"/><polygon points=\"100,160 240,30 380,160\" fill=\"#e8f5f1\" stroke=\"#087f75\" stroke-width=\"2.5\"/><text x=\"240\" y=\"71\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"20\" fill=\"#173349\">40°</text><text x=\"149\" y=\"148\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"20\" fill=\"#087f75\">70°</text><text x=\"331\" y=\"148\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"20\" fill=\"#087f75\">70°</text><text x=\"240\" y=\"190\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"18\" fill=\"#173349\">Equal sides face equal angles.</text></svg>"
+  },
+  {
+    "id": "parallelogram",
+    "term": "Parallelogram",
+    "aliases": [
+      "opposite sides parallel"
+    ],
+    "definition": "A quadrilateral with both pairs of opposite sides parallel. Opposite sides and angles are equal; its diagonals bisect each other.",
+    "example": "A rectangle is a special parallelogram with four right angles.",
+    "watch": "A general parallelogram need not have equal diagonals or right angles.",
+    "chapters": [
+      6,
+      8,
+      16
+    ],
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 480 200\" role=\"img\" aria-label=\"Opposite sides of a parallelogram are parallel and equal.\"><rect width=\"480\" height=\"200\" rx=\"12\" fill=\"#ffffff\"/><polygon points=\"70,145 140,45 390,45 320,145\" fill=\"#e8f5f1\" stroke=\"#087f75\" stroke-width=\"2.5\"/><line x1=\"70\" y1=\"145\" x2=\"390\" y2=\"45\" stroke=\"#3175ba\" stroke-width=\"2\"/><line x1=\"140\" y1=\"45\" x2=\"320\" y2=\"145\" stroke=\"#3175ba\" stroke-width=\"2\"/><circle cx=\"230\" cy=\"95\" r=\"4\" fill=\"#087f75\"/><text x=\"240\" y=\"185\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"18\" fill=\"#173349\">Diagonals cut each other in half.</text></svg>"
+  },
+  {
+    "id": "congruent-figures",
+    "term": "Congruent figures",
+    "aliases": [
+      "congruence",
+      "SSS",
+      "SAS",
+      "ASA",
+      "RHS"
+    ],
+    "definition": "Figures with the same shape and size. Matching lengths and angles are equal. Triangle tests include SSS, SAS, ASA and right-angle–hypotenuse–side.",
+    "example": "Two triangles with matching sides 3, 4 and 5 are congruent by SSS.",
+    "watch": "AAA proves similarity, not congruence; SSA is not a general congruence test.",
+    "chapters": [
+      8,
+      24
+    ],
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 480 200\" role=\"img\" aria-label=\"Two congruent triangles have the same shape and size.\"><rect width=\"480\" height=\"200\" rx=\"12\" fill=\"#ffffff\"/><polygon points=\"65,145 65,55 170,145\" fill=\"#e8f5f1\" stroke=\"#087f75\" stroke-width=\"2.5\"/><polygon points=\"300,145 300,55 405,145\" fill=\"#edf4fc\" stroke=\"#3175ba\" stroke-width=\"2.5\"/><text x=\"240\" y=\"188\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"18\" fill=\"#173349\">Matching lengths AND matching angles.</text></svg>"
+  },
+  {
+    "id": "similar-figures",
+    "term": "Similar figures",
+    "aliases": [
+      "similarity",
+      "similar triangles"
+    ],
+    "definition": "Figures with equal corresponding angles and a common scale factor between corresponding lengths.",
+    "example": "Sides 3, 4, 5 and 6, 8, 10 form similar triangles with scale factor 2.",
+    "watch": "Match corresponding sides before forming ratios.",
+    "chapters": [
+      8,
+      16,
+      17
+    ],
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 480 200\" role=\"img\" aria-label=\"Similar triangles have equal angles and proportional lengths.\"><rect width=\"480\" height=\"200\" rx=\"12\" fill=\"#ffffff\"/><polygon points=\"40,145 40,95 100,145\" fill=\"#e8f5f1\" stroke=\"#087f75\" stroke-width=\"2.5\"/><polygon points=\"230,145 230,45 350,145\" fill=\"#edf4fc\" stroke=\"#3175ba\" stroke-width=\"2.5\"/><text x=\"73\" y=\"174\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"18\" fill=\"#173349\">small</text><text x=\"294\" y=\"174\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"18\" fill=\"#173349\">twice the lengths</text><text x=\"180\" y=\"83\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"27\" fill=\"#087f75\">×2</text></svg>"
+  },
+  {
+    "id": "scale-factor",
+    "term": "Scale factor",
+    "aliases": [
+      "enlargement",
+      "linear scale factor"
+    ],
+    "definition": "The multiplier taking an original length to a corresponding new length. Areas scale by k² and volumes by k³.",
+    "example": "If lengths double, areas multiply by 4 and volumes by 8.",
+    "watch": "Use the direction requested: new length ÷ original length.",
+    "chapters": [
+      6,
+      16,
+      17
+    ],
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 480 200\" role=\"img\" aria-label=\"length × k. area × k²; volume × k³. For k = 2: lengths ×2, areas ×4, volumes ×8.\"><rect width=\"480\" height=\"200\" rx=\"12\" fill=\"#ffffff\"/><rect x=\"25\" y=\"22\" width=\"430\" height=\"65\" rx=\"8\" fill=\"#e8f5f1\"/><text x=\"240\" y=\"64\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"27\" fill=\"#087f75\">length × k</text><text x=\"240\" y=\"122\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"21\" fill=\"#173349\">area × k²; volume × k³</text><text x=\"240\" y=\"174\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"16\" fill=\"#173349\">For k = 2: lengths ×2, areas ×4, volumes ×8.</text></svg>"
+  },
+  {
+    "id": "proof",
+    "term": "Proof",
+    "aliases": [
+      "theorem",
+      "deduction"
+    ],
+    "definition": "A chain of valid reasons establishing that a statement must be true under its stated assumptions.",
+    "example": "Using parallel-angle facts and the straight-angle sum can prove a triangle’s angles sum to 180°.",
+    "watch": "A diagram that looks right or several numerical examples do not by themselves prove a general theorem.",
+    "chapters": [
+      8,
+      16
+    ],
+    "svg": ""
+  },
+  {
+    "id": "converse",
+    "term": "Converse",
+    "aliases": [
+      "reverse implication"
+    ],
+    "definition": "The statement formed by swapping the condition and conclusion of an implication. It needs its own justification.",
+    "example": "Pythagoras: right triangle implies a² + b² = c². Its converse uses that equality to prove a triangle is right-angled.",
+    "watch": "The converse of a true statement is not automatically true.",
+    "chapters": [
+      8,
+      16
+    ],
+    "svg": ""
+  },
+  {
+    "id": "pythagoras-theorem",
+    "term": "Pythagoras’ theorem",
+    "aliases": [
+      "Pythagoras",
+      "Pythagorean theorem"
+    ],
+    "definition": "In a right triangle, the square of the hypotenuse equals the sum of the squares of the other two sides: c² = a² + b².",
+    "example": "A triangle with perpendicular sides 3 and 4 has hypotenuse √(9 + 16) = 5.",
+    "watch": "This formula needs a right angle. The hypotenuse must be the longest side.",
+    "chapters": [
+      8,
+      11,
+      16,
+      22
+    ],
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 480 200\" role=\"img\" aria-label=\"A right triangle. The hypotenuse is opposite the right angle.\"><rect width=\"480\" height=\"200\" rx=\"12\" fill=\"#ffffff\"/><polygon points=\"70,155 70,35 330,155\" fill=\"#e8f5f1\" stroke=\"#087f75\" stroke-width=\"2.5\"/><line x1=\"70\" y1=\"139\" x2=\"86\" y2=\"139\" stroke=\"#173349\" stroke-width=\"2\"/><line x1=\"86\" y1=\"139\" x2=\"86\" y2=\"155\" stroke=\"#173349\" stroke-width=\"2\"/><text x=\"45\" y=\"100\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"23\" fill=\"#087f75\">3</text><text x=\"200\" y=\"180\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"23\" fill=\"#087f75\">4</text><text x=\"220\" y=\"84\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"23\" fill=\"#3175ba\">5</text><text x=\"379\" y=\"61\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"21\" fill=\"#173349\">3² + 4²</text><text x=\"379\" y=\"93\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"21\" fill=\"#173349\">= 5²</text></svg>"
+  },
+  {
+    "id": "perpendicular-height",
+    "term": "Perpendicular height",
+    "aliases": [
+      "altitude",
+      "vertical height"
+    ],
+    "definition": "A distance measured at right angles to the chosen base or parallel faces.",
+    "example": "A parallelogram has area base × perpendicular height.",
+    "watch": "A sloping side is usually not the height.",
+    "chapters": [
+      6,
+      8,
+      17
+    ],
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 480 200\" role=\"img\" aria-label=\"Height is perpendicular to the base, not the sloping side.\"><rect width=\"480\" height=\"200\" rx=\"12\" fill=\"#ffffff\"/><polygon points=\"80,145 140,45 400,45 340,145\" fill=\"#e8f5f1\" stroke=\"#087f75\" stroke-width=\"2.5\"/><line x1=\"140\" y1=\"45\" x2=\"140\" y2=\"145\" stroke=\"#3175ba\" stroke-width=\"3\" stroke-dasharray=\"5 4\"/><line x1=\"140\" y1=\"130\" x2=\"155\" y2=\"130\" stroke=\"#173349\" stroke-width=\"2\"/><line x1=\"155\" y1=\"130\" x2=\"155\" y2=\"145\" stroke=\"#173349\" stroke-width=\"2\"/><text x=\"167\" y=\"101\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"24\" fill=\"#3175ba\">h</text><text x=\"237\" y=\"175\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"20\" fill=\"#173349\">base</text></svg>"
+  },
+  {
+    "id": "radius",
+    "term": "Radius",
+    "aliases": [
+      "radii"
+    ],
+    "definition": "A line segment from the centre of a circle or sphere to its boundary, or the length of that segment.",
+    "example": "A circle of diameter 10 cm has radius 5 cm.",
+    "watch": "Radius is half the diameter.",
+    "chapters": [
+      6,
+      16,
+      17
+    ],
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 480 200\" role=\"img\" aria-label=\"Radius of a circle.\"><rect width=\"480\" height=\"200\" rx=\"12\" fill=\"#ffffff\"/><circle cx=\"220\" cy=\"95\" r=\"68\" fill=\"none\" stroke=\"#087f75\" stroke-width=\"2.5\"/><circle cx=\"220\" cy=\"95\" r=\"4\" fill=\"#087f75\"/><text x=\"235\" y=\"117\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"17\" fill=\"#173349\">O</text><line x1=\"220\" y1=\"95\" x2=\"288\" y2=\"95\" stroke=\"#3175ba\" stroke-width=\"4\"/><text x=\"255\" y=\"82\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"23\" fill=\"#3175ba\">r</text><text x=\"220\" y=\"188\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"18\" fill=\"#173349\">Radius</text></svg>"
+  },
+  {
+    "id": "diameter",
+    "term": "Diameter",
+    "aliases": [
+      "diameters"
+    ],
+    "definition": "A chord through a circle’s centre. Its length is twice the radius.",
+    "example": "If r = 7, then d = 14.",
+    "watch": "Using a diameter in a radius formula creates a large error.",
+    "chapters": [
+      6,
+      16,
+      17
+    ],
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 480 200\" role=\"img\" aria-label=\"Diameter of a circle.\"><rect width=\"480\" height=\"200\" rx=\"12\" fill=\"#ffffff\"/><circle cx=\"220\" cy=\"95\" r=\"68\" fill=\"none\" stroke=\"#087f75\" stroke-width=\"2.5\"/><circle cx=\"220\" cy=\"95\" r=\"4\" fill=\"#087f75\"/><text x=\"235\" y=\"117\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"17\" fill=\"#173349\">O</text><line x1=\"152\" y1=\"95\" x2=\"288\" y2=\"95\" stroke=\"#3175ba\" stroke-width=\"4\"/><text x=\"220\" y=\"77\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"21\" fill=\"#3175ba\">d = 2r</text><text x=\"220\" y=\"188\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"18\" fill=\"#173349\">Diameter</text></svg>"
+  },
+  {
+    "id": "circumference",
+    "term": "Circumference",
+    "aliases": [
+      "circle perimeter"
+    ],
+    "definition": "The distance around a circle: C = 2πr = πd.",
+    "example": "For radius 3 cm, circumference = 6π cm.",
+    "watch": "Circumference is a length, so its unit is not cm².",
+    "chapters": [
+      6,
+      17
+    ],
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 480 200\" role=\"img\" aria-label=\"Circumference of a circle.\"><rect width=\"480\" height=\"200\" rx=\"12\" fill=\"#ffffff\"/><circle cx=\"220\" cy=\"95\" r=\"68\" fill=\"none\" stroke=\"#087f75\" stroke-width=\"2.5\"/><circle cx=\"220\" cy=\"95\" r=\"4\" fill=\"#087f75\"/><text x=\"235\" y=\"117\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"17\" fill=\"#173349\">O</text><circle cx=\"220\" cy=\"95\" r=\"68\" fill=\"none\" stroke=\"#3175ba\" stroke-width=\"2.5\"/><text x=\"369\" y=\"103\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"22\" fill=\"#173349\">C = 2πr</text><text x=\"220\" y=\"188\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"18\" fill=\"#173349\">Circumference</text></svg>"
+  },
+  {
+    "id": "chord",
+    "term": "Chord",
+    "aliases": [
+      "circle chord"
+    ],
+    "definition": "A straight line segment joining two points on a circle. A diameter is the longest chord.",
+    "example": "A chord need not pass through the centre.",
+    "watch": "A chord is straight; an arc follows the curved boundary.",
+    "chapters": [
+      16
+    ],
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 480 200\" role=\"img\" aria-label=\"Chord of a circle.\"><rect width=\"480\" height=\"200\" rx=\"12\" fill=\"#ffffff\"/><circle cx=\"220\" cy=\"95\" r=\"68\" fill=\"none\" stroke=\"#087f75\" stroke-width=\"2.5\"/><circle cx=\"220\" cy=\"95\" r=\"4\" fill=\"#087f75\"/><text x=\"235\" y=\"117\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"17\" fill=\"#173349\">O</text><line x1=\"165\" y1=\"135\" x2=\"275\" y2=\"135\" stroke=\"#3175ba\" stroke-width=\"4\"/><text x=\"220\" y=\"124\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"19\" fill=\"#3175ba\">chord</text><text x=\"220\" y=\"188\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"18\" fill=\"#173349\">Chord</text></svg>"
+  },
+  {
+    "id": "arc-and-sector",
+    "term": "Arc and sector",
+    "aliases": [
+      "arc",
+      "sector",
+      "central angle"
+    ],
+    "definition": "An arc is part of a circle’s boundary. A sector is the region between two radii and their connecting arc.",
+    "example": "A 90° sector is one quarter of its circle, so its arc is one quarter of the circumference.",
+    "watch": "Sector perimeter includes the arc AND the two radii.",
+    "chapters": [
+      6,
+      16
+    ],
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 480 200\" role=\"img\" aria-label=\"Sector of a circle.\"><rect width=\"480\" height=\"200\" rx=\"12\" fill=\"#ffffff\"/><circle cx=\"220\" cy=\"95\" r=\"68\" fill=\"none\" stroke=\"#087f75\" stroke-width=\"2.5\"/><circle cx=\"220\" cy=\"95\" r=\"4\" fill=\"#087f75\"/><text x=\"235\" y=\"117\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"17\" fill=\"#173349\">O</text><path d=\"M220 95 L288 95 A68 68 0 0 0 220 27 Z\" fill=\"#e8f5f1\" stroke=\"#087f75\" stroke-width=\"2.5\"/><text x=\"246\" y=\"76\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"18\" fill=\"#173349\">90°</text><text x=\"359\" y=\"106\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"17\" fill=\"#173349\">¼ of the circle</text><text x=\"220\" y=\"188\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"18\" fill=\"#173349\">Sector</text></svg>"
+  },
+  {
+    "id": "tangent",
+    "term": "Tangent",
+    "aliases": [
+      "tangent to a circle"
+    ],
+    "definition": "A line touching a circle at exactly one point. It is perpendicular to the radius drawn to the touching point.",
+    "example": "A radius to a tangent point makes a 90° angle with the tangent.",
+    "watch": "A line cutting the circle at two points is not a tangent.",
+    "chapters": [
+      16
+    ],
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 480 200\" role=\"img\" aria-label=\"Tangent of a circle.\"><rect width=\"480\" height=\"200\" rx=\"12\" fill=\"#ffffff\"/><circle cx=\"220\" cy=\"95\" r=\"68\" fill=\"none\" stroke=\"#087f75\" stroke-width=\"2.5\"/><circle cx=\"220\" cy=\"95\" r=\"4\" fill=\"#087f75\"/><text x=\"235\" y=\"117\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"17\" fill=\"#173349\">O</text><line x1=\"288\" y1=\"15\" x2=\"288\" y2=\"176\" stroke=\"#3175ba\" stroke-width=\"3\"/><line x1=\"220\" y1=\"95\" x2=\"288\" y2=\"95\" stroke=\"#087f75\" stroke-width=\"2\"/><line x1=\"276\" y1=\"95\" x2=\"276\" y2=\"107\" stroke=\"#173349\" stroke-width=\"2\"/><line x1=\"276\" y1=\"107\" x2=\"288\" y2=\"107\" stroke=\"#173349\" stroke-width=\"2\"/><text x=\"361\" y=\"105\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"24\" fill=\"#173349\">90°</text><text x=\"220\" y=\"188\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"18\" fill=\"#173349\">Tangent</text></svg>"
+  },
+  {
+    "id": "cyclic-quadrilateral",
+    "term": "Cyclic quadrilateral",
+    "aliases": [
+      "opposite circle angles"
+    ],
+    "definition": "A quadrilateral whose four vertices lie on one circle. Opposite interior angles sum to 180°.",
+    "example": "If one angle is 108°, the opposite angle is 72°.",
+    "watch": "The four vertices must lie on the same circle.",
+    "chapters": [
+      16
+    ],
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 480 200\" role=\"img\" aria-label=\"All four vertices of a cyclic quadrilateral lie on one circle.\"><rect width=\"480\" height=\"200\" rx=\"12\" fill=\"#ffffff\"/><circle cx=\"230\" cy=\"95\" r=\"72\" fill=\"none\" stroke=\"#087f75\" stroke-width=\"2.5\"/><polygon points=\"158,95 230,23 302,95 230,167\" fill=\"none\" stroke=\"#3175ba\" stroke-width=\"2.5\"/><text x=\"191\" y=\"101\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"21\" fill=\"#173349\">A</text><text x=\"272\" y=\"101\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"21\" fill=\"#173349\">C</text><text x=\"385\" y=\"99\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"20\" fill=\"#173349\">A + C</text><text x=\"385\" y=\"127\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"20\" fill=\"#173349\">= 180°</text></svg>"
+  },
+  {
+    "id": "perimeter",
+    "term": "Perimeter",
+    "aliases": [
+      "boundary length"
+    ],
+    "definition": "The total distance around a flat shape. Add the lengths of its exposed boundary edges.",
+    "example": "A 7 cm by 4 cm rectangle has perimeter 2(7 + 4) = 22 cm.",
+    "watch": "Internal dividing lines do not count towards the outer perimeter.",
+    "chapters": [
+      6
+    ],
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 480 200\" role=\"img\" aria-label=\"Perimeter follows all four outside edges of a rectangle.\"><rect width=\"480\" height=\"200\" rx=\"12\" fill=\"#ffffff\"/><rect x=\"90\" y=\"50\" width=\"300\" height=\"100\" fill=\"#e8f5f1\" stroke=\"#3175ba\" stroke-width=\"5\"/><text x=\"240\" y=\"40\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"22\" fill=\"#173349\">7 cm</text><text x=\"439\" y=\"108\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"20\" fill=\"#173349\">4 cm</text><text x=\"240\" y=\"188\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"19\" fill=\"#173349\">P = 7 + 4 + 7 + 4 = 22 cm</text></svg>"
+  },
+  {
+    "id": "area",
+    "term": "Area",
+    "aliases": [
+      "square units"
+    ],
+    "definition": "The amount of flat surface covered, measured in square units.",
+    "example": "A rectangle 7 cm long and 4 cm wide has area 28 cm².",
+    "watch": "Area and perimeter answer different questions.",
+    "chapters": [
+      6,
+      16,
+      17
+    ],
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 480 200\" role=\"img\" aria-label=\"Area counts square units covering a rectangle.\"><rect width=\"480\" height=\"200\" rx=\"12\" fill=\"#ffffff\"/><rect x=\"120\" y=\"40\" width=\"240\" height=\"120\" rx=\"8\" fill=\"#e8f5f1\"/><line x1=\"120\" y1=\"40\" x2=\"120\" y2=\"160\" stroke=\"#8bb8ae\" stroke-width=\"2\"/><line x1=\"150\" y1=\"40\" x2=\"150\" y2=\"160\" stroke=\"#8bb8ae\" stroke-width=\"2\"/><line x1=\"180\" y1=\"40\" x2=\"180\" y2=\"160\" stroke=\"#8bb8ae\" stroke-width=\"2\"/><line x1=\"210\" y1=\"40\" x2=\"210\" y2=\"160\" stroke=\"#8bb8ae\" stroke-width=\"2\"/><line x1=\"240\" y1=\"40\" x2=\"240\" y2=\"160\" stroke=\"#8bb8ae\" stroke-width=\"2\"/><line x1=\"270\" y1=\"40\" x2=\"270\" y2=\"160\" stroke=\"#8bb8ae\" stroke-width=\"2\"/><line x1=\"300\" y1=\"40\" x2=\"300\" y2=\"160\" stroke=\"#8bb8ae\" stroke-width=\"2\"/><line x1=\"330\" y1=\"40\" x2=\"330\" y2=\"160\" stroke=\"#8bb8ae\" stroke-width=\"2\"/><line x1=\"360\" y1=\"40\" x2=\"360\" y2=\"160\" stroke=\"#8bb8ae\" stroke-width=\"2\"/><line x1=\"120\" y1=\"40\" x2=\"360\" y2=\"40\" stroke=\"#8bb8ae\" stroke-width=\"2\"/><line x1=\"120\" y1=\"70\" x2=\"360\" y2=\"70\" stroke=\"#8bb8ae\" stroke-width=\"2\"/><line x1=\"120\" y1=\"100\" x2=\"360\" y2=\"100\" stroke=\"#8bb8ae\" stroke-width=\"2\"/><line x1=\"120\" y1=\"130\" x2=\"360\" y2=\"130\" stroke=\"#8bb8ae\" stroke-width=\"2\"/><line x1=\"120\" y1=\"160\" x2=\"360\" y2=\"160\" stroke=\"#8bb8ae\" stroke-width=\"2\"/><text x=\"240\" y=\"189\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"19\" fill=\"#173349\">8 × 4 = 32 square units</text></svg>"
+  },
+  {
+    "id": "cross-section",
+    "term": "Cross-section",
+    "aliases": [
+      "section of a solid"
+    ],
+    "definition": "The flat shape revealed by cutting through a solid. A prism has a constant cross-section along its length.",
+    "example": "Cutting a cylinder perpendicular to its axis gives a circular cross-section.",
+    "watch": "Volume = cross-sectional area × length requires that area to stay constant.",
+    "chapters": [
+      6,
+      17,
+      20
+    ],
+    "svg": ""
+  },
+  {
+    "id": "prism",
+    "term": "Prism",
+    "aliases": [
+      "constant cross-section solid"
+    ],
+    "definition": "A solid with the same polygonal cross-section throughout its length, with matching parallel end faces.",
+    "example": "A triangular prism has volume = area of triangular end × length.",
+    "watch": "Find the area of one end, not its perimeter.",
+    "chapters": [
+      6
+    ],
+    "svg": ""
+  },
+  {
+    "id": "cylinder",
+    "term": "Cylinder",
+    "aliases": [
+      "circular cylinder"
+    ],
+    "definition": "A solid with two matching parallel circular ends and a constant circular cross-section.",
+    "example": "A right cylinder has volume πr²h and curved surface area 2πrh.",
+    "watch": "Total surface area also includes whichever circular ends are present.",
+    "chapters": [
+      17
+    ],
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 480 200\" role=\"img\" aria-label=\"A right cylinder has circular ends of radius r and height h.\"><rect width=\"480\" height=\"200\" rx=\"12\" fill=\"#ffffff\"/><path d=\"M140 55 L140 145 A90 25 0 0 0 320 145 L320 55\" fill=\"#e8f5f1\" stroke=\"#087f75\" stroke-width=\"2.5\"/><ellipse cx=\"230\" cy=\"55\" rx=\"90\" ry=\"25\" fill=\"#edf4fc\" stroke=\"#087f75\" stroke-width=\"2.5\"/><line x1=\"230\" y1=\"55\" x2=\"320\" y2=\"55\" stroke=\"#3175ba\" stroke-width=\"2\"/><text x=\"275\" y=\"47\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"19\" fill=\"#3175ba\">r</text><line x1=\"350\" y1=\"55\" x2=\"350\" y2=\"145\" stroke=\"#3175ba\" stroke-width=\"2\"/><text x=\"370\" y=\"105\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"23\" fill=\"#3175ba\">h</text><text x=\"230\" y=\"193\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"22\" fill=\"#173349\">V = πr²h</text></svg>"
+  },
+  {
+    "id": "volume",
+    "term": "Volume",
+    "aliases": [
+      "cubic units",
+      "capacity"
+    ],
+    "definition": "The amount of three-dimensional space a solid occupies, measured in cubic units. Capacity describes how much a container can hold.",
+    "example": "1 litre = 1,000 cm³. A 2 cm by 3 cm by 4 cm box has volume 24 cm³.",
+    "watch": "Convert dimensions before multiplying, or use cubic conversion factors.",
+    "chapters": [
+      6,
+      17
+    ],
+    "svg": ""
+  },
+  {
+    "id": "surface-area",
+    "term": "Surface area",
+    "aliases": [
+      "curved surface area",
+      "total surface area",
+      "net"
+    ],
+    "definition": "The total area of the relevant outside faces or curved surfaces of a solid.",
+    "example": "A closed cylinder has total surface area 2πrh + 2πr².",
+    "watch": "An open container may omit a face; read which surfaces are required.",
+    "chapters": [
+      6,
+      17
+    ],
+    "svg": ""
+  },
+  {
+    "id": "sphere-and-hemisphere",
+    "term": "Sphere and hemisphere",
+    "aliases": [
+      "sphere",
+      "hemisphere"
+    ],
+    "definition": "A sphere is perfectly round in three dimensions. A hemisphere is half a sphere.",
+    "example": "Sphere volume = 4πr³/3. Hemisphere volume = 2πr³/3.",
+    "watch": "A hemisphere’s total area includes its base: 3πr²; its curved area alone is 2πr².",
+    "chapters": [
+      17
+    ],
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 480 200\" role=\"img\" aria-label=\"A hemisphere is half a sphere and includes a circular base when total area is requested.\"><rect width=\"480\" height=\"200\" rx=\"12\" fill=\"#ffffff\"/><path d=\"M100 140 A130 115 0 0 1 360 140 Z\" fill=\"#e8f5f1\" stroke=\"#087f75\" stroke-width=\"2.5\"/><ellipse cx=\"230\" cy=\"140\" rx=\"130\" ry=\"25\" fill=\"#edf4fc\" stroke=\"#3175ba\" stroke-width=\"2.5\"/><line x1=\"230\" y1=\"140\" x2=\"360\" y2=\"140\" stroke=\"#3175ba\" stroke-width=\"2\"/><text x=\"294\" y=\"132\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"22\" fill=\"#3175ba\">r</text><text x=\"230\" y=\"194\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"17\" fill=\"#173349\">Curved part + circular base = total area</text></svg>"
+  },
+  {
+    "id": "probability",
+    "term": "Probability",
+    "aliases": [
+      "chance",
+      "P"
+    ],
+    "definition": "A number from 0 to 1 measuring how likely an event is. Zero means impossible; one means certain.",
+    "example": "For a fair die, P(rolling 6) = 1/6.",
+    "watch": "Probability cannot be negative or exceed 1.",
+    "chapters": [
+      9
+    ],
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 480 200\" role=\"img\" aria-label=\"Probability scale runs from impossible at zero to certain at one.\"><rect width=\"480\" height=\"200\" rx=\"12\" fill=\"#ffffff\"/><line x1=\"50\" y1=\"95\" x2=\"430\" y2=\"95\" stroke=\"#087f75\" stroke-width=\"4\"/><circle cx=\"50\" cy=\"95\" r=\"4\" fill=\"#087f75\"/><circle cx=\"240\" cy=\"95\" r=\"4\" fill=\"#087f75\"/><circle cx=\"430\" cy=\"95\" r=\"4\" fill=\"#087f75\"/><text x=\"50\" y=\"67\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"22\" fill=\"#173349\">0</text><text x=\"240\" y=\"67\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"22\" fill=\"#173349\">½</text><text x=\"430\" y=\"67\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"22\" fill=\"#173349\">1</text><text x=\"65\" y=\"137\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"17\" fill=\"#173349\">impossible</text><text x=\"240\" y=\"137\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"17\" fill=\"#173349\">even chance</text><text x=\"417\" y=\"137\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"17\" fill=\"#173349\">certain</text></svg>"
+  },
+  {
+    "id": "outcome-and-event",
+    "term": "Outcome and event",
+    "aliases": [
+      "outcome",
+      "event"
+    ],
+    "definition": "An outcome is one possible result. An event is a set of outcomes meeting a condition.",
+    "example": "On a die, 4 is an outcome; “even” is the event {2, 4, 6}.",
+    "watch": "An event may contain several outcomes.",
+    "chapters": [
+      9
+    ],
+    "svg": ""
+  },
+  {
+    "id": "sample-space",
+    "term": "Sample space",
+    "aliases": [
+      "all possible outcomes"
+    ],
+    "definition": "The set of all possible outcomes of an experiment.",
+    "example": "Two coin tosses have sample space {HH, HT, TH, TT}.",
+    "watch": "HT and TH are different ordered outcomes.",
+    "chapters": [
+      9
+    ],
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 480 200\" role=\"img\" aria-label=\"HH   HT   TH   TT. Four ordered outcomes for two tosses. “One head” includes HT and TH.\"><rect width=\"480\" height=\"200\" rx=\"12\" fill=\"#ffffff\"/><rect x=\"25\" y=\"22\" width=\"430\" height=\"65\" rx=\"8\" fill=\"#e8f5f1\"/><text x=\"240\" y=\"64\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"27\" fill=\"#087f75\">HH   HT   TH   TT</text><text x=\"240\" y=\"122\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"21\" fill=\"#173349\">Four ordered outcomes for two tosses</text><text x=\"240\" y=\"174\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"16\" fill=\"#173349\">“One head” includes HT and TH.</text></svg>"
+  },
+  {
+    "id": "equally-likely-outcomes",
+    "term": "Equally likely outcomes",
+    "aliases": [
+      "fair die",
+      "fair coin"
+    ],
+    "definition": "Outcomes each having the same probability. Only then can simple counting give probability directly.",
+    "example": "For a fair die, P(even) = 3 favourable outcomes / 6 total outcomes = 1/2.",
+    "watch": "Do not assume categories such as “win” and “lose” are equally likely.",
+    "chapters": [
+      9
+    ],
+    "svg": ""
+  },
+  {
+    "id": "complementary-events",
+    "term": "Complementary events",
+    "aliases": [
+      "not A",
+      "event complement"
+    ],
+    "definition": "An event and the event that it does not occur. Their probabilities add to 1.",
+    "example": "If P(rain) = 0.3, then P(no rain) = 0.7 in the stated model.",
+    "watch": "The complement covers every outcome outside the event.",
+    "chapters": [
+      3,
+      9
+    ],
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 480 200\" role=\"img\" aria-label=\"P(not A) = 1 − P(A). 0.7 + 0.3 = 1. Together, the event and its complement cover all outcomes.\"><rect width=\"480\" height=\"200\" rx=\"12\" fill=\"#ffffff\"/><rect x=\"25\" y=\"22\" width=\"430\" height=\"65\" rx=\"8\" fill=\"#e8f5f1\"/><text x=\"240\" y=\"64\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"27\" fill=\"#087f75\">P(not A) = 1 − P(A)</text><text x=\"240\" y=\"122\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"21\" fill=\"#173349\">0.7 + 0.3 = 1</text><text x=\"240\" y=\"174\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"16\" fill=\"#173349\">Together, the event and its complement cover all outcomes.</text></svg>"
+  },
+  {
+    "id": "independent-events",
+    "term": "Independent events",
+    "aliases": [
+      "independence"
+    ],
+    "definition": "Events for which knowing that one happened does not change the probability of the other.",
+    "example": "Two tosses of a fair coin are independent: P(H then H) = 1/2 × 1/2.",
+    "watch": "Drawing without replacement usually changes the next probability.",
+    "chapters": [
+      9
+    ],
+    "svg": ""
+  },
+  {
+    "id": "tree-diagram",
+    "term": "Tree diagram",
+    "aliases": [
+      "probability tree",
+      "without replacement",
+      "with replacement"
+    ],
+    "definition": "A branching diagram listing successive outcomes. Multiply along a path; add probabilities of distinct paths forming the event.",
+    "example": "With 3 red and 2 blue balls, P(two red without replacement) = 3/5 × 2/4.",
+    "watch": "Update the remaining counts after a draw without replacement.",
+    "chapters": [
+      9
+    ],
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 480 200\" role=\"img\" aria-label=\"A first split has red probability three fifths and blue probability two fifths.\"><rect width=\"480\" height=\"200\" rx=\"12\" fill=\"#ffffff\"/><circle cx=\"60\" cy=\"100\" r=\"4\" fill=\"#087f75\"/><line x1=\"60\" y1=\"100\" x2=\"240\" y2=\"45\" stroke=\"#087f75\" stroke-width=\"2\"/><line x1=\"60\" y1=\"100\" x2=\"240\" y2=\"155\" stroke=\"#3175ba\" stroke-width=\"2\"/><text x=\"150\" y=\"53\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"22\" fill=\"#087f75\">3/5</text><text x=\"150\" y=\"154\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"22\" fill=\"#3175ba\">2/5</text><text x=\"289\" y=\"51\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"22\" fill=\"#087f75\">Red</text><text x=\"289\" y=\"162\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"22\" fill=\"#3175ba\">Blue</text><text x=\"240\" y=\"194\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"17\" fill=\"#173349\">Probabilities leaving one point sum to 1.</text></svg>"
+  },
+  {
+    "id": "relative-frequency",
+    "term": "Relative frequency",
+    "aliases": [
+      "experimental probability"
+    ],
+    "definition": "The number of times an event occurs divided by the total number of trials. It estimates probability.",
+    "example": "If a result occurs 18 times in 50 trials, its relative frequency is 18/50 = 0.36.",
+    "watch": "An experimental estimate need not equal the theoretical probability exactly.",
+    "chapters": [
+      7,
+      9,
+      13
+    ],
+    "svg": ""
+  },
+  {
+    "id": "coordinates",
+    "term": "Coordinates",
+    "aliases": [
+      "ordered pair",
+      "(x,y)"
+    ],
+    "definition": "An ordered pair locating a point: x gives its horizontal position, y its vertical position.",
+    "example": "(3, −2) means 3 units right and 2 units down from the origin.",
+    "watch": "(3, −2) and (−2, 3) usually name different points.",
+    "chapters": [
+      11,
+      19,
+      20,
+      23,
+      24
+    ],
+    "svg": ""
+  },
+  {
+    "id": "midpoint",
+    "term": "Midpoint",
+    "aliases": [
+      "middle of a segment"
+    ],
+    "definition": "The point halfway along a segment. Average the x-coordinates and the y-coordinates separately.",
+    "example": "The midpoint of (2, 1) and (8, 5) is (5, 3).",
+    "watch": "Midpoint coordinates are averages, not coordinate differences.",
+    "chapters": [
+      11,
+      24
+    ],
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 480 200\" role=\"img\" aria-label=\"The midpoint is halfway between two endpoints.\"><rect width=\"480\" height=\"200\" rx=\"12\" fill=\"#ffffff\"/><line x1=\"60\" y1=\"100\" x2=\"420\" y2=\"100\" stroke=\"#3175ba\" stroke-width=\"3\"/><circle cx=\"60\" cy=\"100\" r=\"4\" fill=\"#087f75\"/><circle cx=\"240\" cy=\"100\" r=\"6\" fill=\"#946011\"/><circle cx=\"420\" cy=\"100\" r=\"4\" fill=\"#087f75\"/><text x=\"60\" y=\"72\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"20\" fill=\"#173349\">(2, 1)</text><text x=\"240\" y=\"72\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"20\" fill=\"#946011\">(5, 3)</text><text x=\"420\" y=\"72\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"20\" fill=\"#173349\">(8, 5)</text><text x=\"240\" y=\"151\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"19\" fill=\"#173349\">M = ((2 + 8)/2, (1 + 5)/2)</text></svg>"
+  },
+  {
+    "id": "gradient",
+    "term": "Gradient",
+    "aliases": [
+      "slope",
+      "rise over run",
+      "rate of change"
+    ],
+    "definition": "The change in y divided by the corresponding change in x: m = (y₂ − y₁)/(x₂ − x₁).",
+    "example": "A rise of 2 over a run of 5 gives gradient 2/5.",
+    "watch": "Vertical lines have undefined gradient because the horizontal change is zero.",
+    "chapters": [
+      11,
+      20,
+      23
+    ],
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 480 200\" role=\"img\" aria-label=\"Coordinate graph illustrating slope.\"><rect width=\"480\" height=\"200\" rx=\"12\" fill=\"#ffffff\"/><line x1=\"55\" y1=\"150\" x2=\"430\" y2=\"150\" stroke=\"#173349\" stroke-width=\"2\"/><line x1=\"115\" y1=\"174\" x2=\"115\" y2=\"15\" stroke=\"#173349\" stroke-width=\"2\"/><text x=\"440\" y=\"155\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"18\" fill=\"#173349\">x</text><text x=\"101\" y=\"28\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"18\" fill=\"#173349\">y</text><line x1=\"90\" y1=\"153\" x2=\"350\" y2=\"49\" stroke=\"#087f75\" stroke-width=\"3\"/><line x1=\"150\" y1=\"129\" x2=\"300\" y2=\"129\" stroke=\"#3175ba\" stroke-width=\"2\"/><line x1=\"300\" y1=\"129\" x2=\"300\" y2=\"69\" stroke=\"#3175ba\" stroke-width=\"2\"/><text x=\"222\" y=\"150\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"18\" fill=\"#3175ba\">run = 5</text><text x=\"358\" y=\"105\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"18\" fill=\"#3175ba\">rise = 2</text><text x=\"254\" y=\"188\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"19\" fill=\"#173349\">gradient = 2 ÷ 5</text></svg>"
+  },
+  {
+    "id": "intercept",
+    "term": "Intercept",
+    "aliases": [
+      "x-intercept",
+      "y-intercept"
+    ],
+    "definition": "A point where a graph meets an axis. At the x-axis y = 0; at the y-axis x = 0.",
+    "example": "For y = 2x + 6, the intercepts are (−3, 0) and (0, 6).",
+    "watch": "An intercept point has two coordinates; an intercept value is just one number.",
+    "chapters": [
+      11,
+      19,
+      23
+    ],
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 480 200\" role=\"img\" aria-label=\"Coordinate graph illustrating intercept.\"><rect width=\"480\" height=\"200\" rx=\"12\" fill=\"#ffffff\"/><line x1=\"55\" y1=\"150\" x2=\"430\" y2=\"150\" stroke=\"#173349\" stroke-width=\"2\"/><line x1=\"115\" y1=\"174\" x2=\"115\" y2=\"15\" stroke=\"#173349\" stroke-width=\"2\"/><text x=\"440\" y=\"155\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"18\" fill=\"#173349\">x</text><text x=\"101\" y=\"28\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"18\" fill=\"#173349\">y</text><line x1=\"60\" y1=\"142\" x2=\"380\" y2=\"46\" stroke=\"#087f75\" stroke-width=\"3\"/><circle cx=\"115\" cy=\"126\" r=\"4\" fill=\"#087f75\"/><text x=\"189\" y=\"111\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"20\" fill=\"#087f75\">(0, c)</text><text x=\"260\" y=\"186\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"19\" fill=\"#173349\">At the y-axis, x = 0</text></svg>"
+  },
+  {
+    "id": "simultaneous-equations",
+    "term": "Simultaneous equations",
+    "aliases": [
+      "simultaneous",
+      "elimination",
+      "substitution method"
+    ],
+    "definition": "Equations that must hold for the same values of the unknowns. Their shared solution satisfies every equation.",
+    "example": "x + y = 7 and x − y = 1 give x = 4 and y = 3.",
+    "watch": "Check both values in both original equations.",
+    "chapters": [
+      10,
+      11,
+      19
+    ],
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 480 200\" role=\"img\" aria-label=\"Coordinate graph illustrating intersection.\"><rect width=\"480\" height=\"200\" rx=\"12\" fill=\"#ffffff\"/><line x1=\"55\" y1=\"150\" x2=\"430\" y2=\"150\" stroke=\"#173349\" stroke-width=\"2\"/><line x1=\"115\" y1=\"174\" x2=\"115\" y2=\"15\" stroke=\"#173349\" stroke-width=\"2\"/><text x=\"440\" y=\"155\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"18\" fill=\"#173349\">x</text><text x=\"101\" y=\"28\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"18\" fill=\"#173349\">y</text><line x1=\"85\" y1=\"160\" x2=\"370\" y2=\"46\" stroke=\"#087f75\" stroke-width=\"3\"/><line x1=\"85\" y1=\"40\" x2=\"370\" y2=\"154\" stroke=\"#3175ba\" stroke-width=\"3\"/><circle cx=\"235\" cy=\"100\" r=\"6\" fill=\"#946011\"/><text x=\"339\" y=\"188\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"19\" fill=\"#173349\">Same x AND y</text></svg>"
+  },
+  {
+    "id": "distance-between-points",
+    "term": "Distance between points",
+    "aliases": [
+      "length of a segment",
+      "distance formula"
+    ],
+    "definition": "The straight-line distance between (x₁, y₁) and (x₂, y₂): √((x₂ − x₁)² + (y₂ − y₁)²).",
+    "example": "From (1, 2) to (4, 6), the horizontal and vertical changes are 3 and 4, so distance is 5.",
+    "watch": "Do not add the horizontal and vertical changes unless the route actually follows those two segments.",
+    "chapters": [
+      11,
+      22
+    ],
+    "svg": ""
+  },
+  {
+    "id": "ratio",
+    "term": "Ratio",
+    "aliases": [
+      "proportion of a total",
+      "share in a ratio"
+    ],
+    "definition": "A comparison of quantities using the same units. A ratio a:b describes relative parts.",
+    "example": "Sharing 60 in the ratio 2:3 gives 5 parts, 12 per part, so shares 24 and 36.",
+    "watch": "The first share is 2/5 of the total, not 2/3.",
+    "chapters": [
+      4,
+      12,
+      16
+    ],
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 480 200\" role=\"img\" aria-label=\"2 : 3  →  5 parts in total. 60 ÷ 5 = 12 per part. Shares: 2 × 12 = 24 and 3 × 12 = 36.\"><rect width=\"480\" height=\"200\" rx=\"12\" fill=\"#ffffff\"/><rect x=\"25\" y=\"22\" width=\"430\" height=\"65\" rx=\"8\" fill=\"#e8f5f1\"/><text x=\"240\" y=\"64\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"27\" fill=\"#087f75\">2 : 3  →  5 parts in total</text><text x=\"240\" y=\"122\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"21\" fill=\"#173349\">60 ÷ 5 = 12 per part</text><text x=\"240\" y=\"174\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"16\" fill=\"#173349\">Shares: 2 × 12 = 24 and 3 × 12 = 36.</text></svg>"
+  },
+  {
+    "id": "speed",
+    "term": "Speed",
+    "aliases": [
+      "average speed",
+      "distance time"
+    ],
+    "definition": "Distance travelled per unit time. Average speed equals total distance divided by total elapsed time.",
+    "example": "90 km in 1.5 hours gives average speed 60 km/h.",
+    "watch": "For a whole journey, include stops in elapsed time if the question includes them.",
+    "chapters": [
+      12,
+      20
+    ],
+    "svg": ""
+  },
+  {
+    "id": "direct-proportion",
+    "term": "Direct proportion",
+    "aliases": [
+      "directly proportional",
+      "y=kx"
+    ],
+    "definition": "A relationship y = kx with a constant ratio y/x for non-zero x. Its graph is a straight line through the origin.",
+    "example": "At a fixed €3 per item with no fixed fee, cost C = 3n.",
+    "watch": "A straight line with a non-zero intercept does not show direct proportion.",
+    "chapters": [
+      12,
+      20,
+      23
+    ],
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 480 200\" role=\"img\" aria-label=\"Coordinate graph illustrating proportion.\"><rect width=\"480\" height=\"200\" rx=\"12\" fill=\"#ffffff\"/><line x1=\"55\" y1=\"150\" x2=\"430\" y2=\"150\" stroke=\"#173349\" stroke-width=\"2\"/><line x1=\"115\" y1=\"174\" x2=\"115\" y2=\"15\" stroke=\"#173349\" stroke-width=\"2\"/><text x=\"440\" y=\"155\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"18\" fill=\"#173349\">x</text><text x=\"101\" y=\"28\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"18\" fill=\"#173349\">y</text><line x1=\"115\" y1=\"150\" x2=\"385\" y2=\"40\" stroke=\"#087f75\" stroke-width=\"3\"/><circle cx=\"115\" cy=\"150\" r=\"4\" fill=\"#087f75\"/><text x=\"305\" y=\"105\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"25\" fill=\"#087f75\">y = kx</text><text x=\"265\" y=\"189\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"17\" fill=\"#173349\">Straight line through (0, 0)</text></svg>"
+  },
+  {
+    "id": "sequence",
+    "term": "Sequence",
+    "aliases": [
+      "ordered sequence",
+      "pattern"
+    ],
+    "definition": "An ordered list of terms following a stated or inferred rule.",
+    "example": "4, 7, 10, 13, … is a sequence with an increase of 3 each step.",
+    "watch": "A few starting values alone may fit more than one possible rule.",
+    "chapters": [
+      18
+    ],
+    "svg": ""
+  },
+  {
+    "id": "nth-term",
+    "term": "Nth term",
+    "aliases": [
+      "general term",
+      "term number",
+      "position"
+    ],
+    "definition": "A formula giving a sequence’s value from its position n. The position is the input, not the term value.",
+    "example": "For Tₙ = 3n + 1, the tenth term is T₁₀ = 31.",
+    "watch": "Check whether the sequence starts at n = 0 or n = 1.",
+    "chapters": [
+      18
+    ],
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 480 200\" role=\"img\" aria-label=\"position n:  1   2   3   4. term Tₙ:       4   7  10  13. Tₙ = 3n + 1. Position and value are different.\"><rect width=\"480\" height=\"200\" rx=\"12\" fill=\"#ffffff\"/><rect x=\"25\" y=\"22\" width=\"430\" height=\"65\" rx=\"8\" fill=\"#e8f5f1\"/><text x=\"240\" y=\"64\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"27\" fill=\"#087f75\">position n:  1   2   3   4</text><text x=\"240\" y=\"122\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"21\" fill=\"#173349\">term Tₙ:       4   7  10  13</text><text x=\"240\" y=\"174\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"16\" fill=\"#173349\">Tₙ = 3n + 1. Position and value are different.</text></svg>"
+  },
+  {
+    "id": "arithmetic-sequence",
+    "term": "Arithmetic sequence",
+    "aliases": [
+      "linear sequence",
+      "common difference"
+    ],
+    "definition": "A sequence with a constant difference between consecutive terms. For first position 1, Tₙ = a + (n − 1)d.",
+    "example": "5, 9, 13, 17 has first term 5 and difference 4, so Tₙ = 4n + 1.",
+    "watch": "There are n − 1 jumps from the first term to the nth term.",
+    "chapters": [
+      18
+    ],
+    "svg": ""
+  },
+  {
+    "id": "quadratic-sequence",
+    "term": "Quadratic sequence",
+    "aliases": [
+      "second differences"
+    ],
+    "definition": "A sequence described by Tₙ = an² + bn + c with a ≠ 0. Its second differences are constant and equal to 2a.",
+    "example": "1, 4, 9, 16 has first differences 3, 5, 7 and second differences 2, 2.",
+    "watch": "Constant first differences indicate a linear rule, not a quadratic one.",
+    "chapters": [
+      18
+    ],
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 480 200\" role=\"img\" aria-label=\"1     4     9     16. first differences: 3, 5, 7. second differences: 2, 2 → coefficient of n² is 1.\"><rect width=\"480\" height=\"200\" rx=\"12\" fill=\"#ffffff\"/><rect x=\"25\" y=\"22\" width=\"430\" height=\"65\" rx=\"8\" fill=\"#e8f5f1\"/><text x=\"240\" y=\"64\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"27\" fill=\"#087f75\">1     4     9     16</text><text x=\"240\" y=\"122\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"21\" fill=\"#173349\">first differences: 3, 5, 7</text><text x=\"240\" y=\"174\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"16\" fill=\"#173349\">second differences: 2, 2 → coefficient of n² is 1.</text></svg>"
+  },
+  {
+    "id": "function",
+    "term": "Function",
+    "aliases": [
+      "function machine",
+      "f(x)",
+      "mapping"
+    ],
+    "definition": "A rule assigning exactly one output to every allowed input. Different inputs may share an output.",
+    "example": "For f(x) = x², both −2 and 2 give output 4; this is still a function.",
+    "watch": "One input giving two different outputs fails the function rule.",
+    "chapters": [
+      19,
+      23
+    ],
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 480 200\" role=\"img\" aria-label=\"For x squared: minus one and one map to one; zero maps to zero. Four is in the target set but is not reached.\"><rect width=\"480\" height=\"200\" rx=\"12\" fill=\"#ffffff\"/><rect x=\"20\" y=\"15\" width=\"150\" height=\"165\" rx=\"8\" fill=\"#edf4fc\"/><rect x=\"300\" y=\"15\" width=\"155\" height=\"165\" rx=\"8\" fill=\"#f1f6ef\"/><text x=\"95\" y=\"42\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"17\" fill=\"#173349\">Inputs</text><text x=\"377\" y=\"42\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"17\" fill=\"#173349\">Target set</text><text x=\"85\" y=\"81\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"23\" fill=\"#3175ba\">-1</text><line x1=\"112\" y1=\"75\" x2=\"332\" y2=\"75\" stroke=\"#087f75\" stroke-width=\"2\"/><polygon points=\"332,75 321,71 321,79\" fill=\"#087f75\" stroke=\"#087f75\" stroke-width=\"2.5\"/><text x=\"85\" y=\"118\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"23\" fill=\"#3175ba\">0</text><line x1=\"112\" y1=\"112\" x2=\"332\" y2=\"112\" stroke=\"#087f75\" stroke-width=\"2\"/><polygon points=\"332,112 321,108 321,116\" fill=\"#087f75\" stroke=\"#087f75\" stroke-width=\"2.5\"/><text x=\"85\" y=\"155\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"23\" fill=\"#3175ba\">1</text><line x1=\"112\" y1=\"149\" x2=\"332\" y2=\"75\" stroke=\"#087f75\" stroke-width=\"2\"/><polygon points=\"332,75 321,71 321,79\" fill=\"#087f75\" stroke=\"#087f75\" stroke-width=\"2.5\"/><text x=\"370\" y=\"81\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"23\" fill=\"#087f75\">1</text><text x=\"370\" y=\"118\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"23\" fill=\"#087f75\">0</text><text x=\"370\" y=\"155\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"23\" fill=\"#946011\">4</text><text x=\"240\" y=\"193\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"16\" fill=\"#173349\">One output per input; sharing is allowed.</text></svg>"
+  },
+  {
+    "id": "domain",
+    "term": "Domain",
+    "aliases": [
+      "input set",
+      "allowed inputs"
+    ],
+    "definition": "The set of inputs for which a function is defined in the stated problem.",
+    "example": "For f(x) = 1/x over the reals, x = 0 must be excluded from the domain.",
+    "watch": "A formula alone may not specify the whole domain; also read the stated restrictions.",
+    "chapters": [
+      19,
+      21,
+      23
+    ],
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 480 200\" role=\"img\" aria-label=\"For x squared: minus one and one map to one; zero maps to zero. Four is in the target set but is not reached.\"><rect width=\"480\" height=\"200\" rx=\"12\" fill=\"#ffffff\"/><rect x=\"20\" y=\"15\" width=\"150\" height=\"165\" rx=\"8\" fill=\"#edf4fc\"/><rect x=\"300\" y=\"15\" width=\"155\" height=\"165\" rx=\"8\" fill=\"#f1f6ef\"/><text x=\"95\" y=\"42\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"17\" fill=\"#173349\">Inputs</text><text x=\"377\" y=\"42\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"17\" fill=\"#173349\">Target set</text><text x=\"85\" y=\"81\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"23\" fill=\"#3175ba\">-1</text><line x1=\"112\" y1=\"75\" x2=\"332\" y2=\"75\" stroke=\"#087f75\" stroke-width=\"2\"/><polygon points=\"332,75 321,71 321,79\" fill=\"#087f75\" stroke=\"#087f75\" stroke-width=\"2.5\"/><text x=\"85\" y=\"118\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"23\" fill=\"#3175ba\">0</text><line x1=\"112\" y1=\"112\" x2=\"332\" y2=\"112\" stroke=\"#087f75\" stroke-width=\"2\"/><polygon points=\"332,112 321,108 321,116\" fill=\"#087f75\" stroke=\"#087f75\" stroke-width=\"2.5\"/><text x=\"85\" y=\"155\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"23\" fill=\"#3175ba\">1</text><line x1=\"112\" y1=\"149\" x2=\"332\" y2=\"75\" stroke=\"#087f75\" stroke-width=\"2\"/><polygon points=\"332,75 321,71 321,79\" fill=\"#087f75\" stroke=\"#087f75\" stroke-width=\"2.5\"/><text x=\"370\" y=\"81\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"23\" fill=\"#087f75\">1</text><text x=\"370\" y=\"118\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"23\" fill=\"#087f75\">0</text><text x=\"370\" y=\"155\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"23\" fill=\"#946011\">4</text><text x=\"240\" y=\"193\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"16\" fill=\"#173349\">Domain = {−1, 0, 1}</text></svg>"
+  },
+  {
+    "id": "codomain",
+    "term": "Codomain",
+    "aliases": [
+      "target set"
+    ],
+    "definition": "The stated target set containing all outputs a function is allowed to have. Some members may not actually be reached.",
+    "example": "For x² with domain {−1, 0, 1} and codomain {0, 1, 4}, the value 4 is allowed but not reached.",
+    "watch": "Codomain and range need not be equal.",
+    "chapters": [
+      19
+    ],
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 480 200\" role=\"img\" aria-label=\"For x squared: minus one and one map to one; zero maps to zero. Four is in the target set but is not reached.\"><rect width=\"480\" height=\"200\" rx=\"12\" fill=\"#ffffff\"/><rect x=\"20\" y=\"15\" width=\"150\" height=\"165\" rx=\"8\" fill=\"#edf4fc\"/><rect x=\"300\" y=\"15\" width=\"155\" height=\"165\" rx=\"8\" fill=\"#f1f6ef\"/><text x=\"95\" y=\"42\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"17\" fill=\"#173349\">Inputs</text><text x=\"377\" y=\"42\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"17\" fill=\"#173349\">Target set</text><text x=\"85\" y=\"81\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"23\" fill=\"#3175ba\">-1</text><line x1=\"112\" y1=\"75\" x2=\"332\" y2=\"75\" stroke=\"#087f75\" stroke-width=\"2\"/><polygon points=\"332,75 321,71 321,79\" fill=\"#087f75\" stroke=\"#087f75\" stroke-width=\"2.5\"/><text x=\"85\" y=\"118\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"23\" fill=\"#3175ba\">0</text><line x1=\"112\" y1=\"112\" x2=\"332\" y2=\"112\" stroke=\"#087f75\" stroke-width=\"2\"/><polygon points=\"332,112 321,108 321,116\" fill=\"#087f75\" stroke=\"#087f75\" stroke-width=\"2.5\"/><text x=\"85\" y=\"155\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"23\" fill=\"#3175ba\">1</text><line x1=\"112\" y1=\"149\" x2=\"332\" y2=\"75\" stroke=\"#087f75\" stroke-width=\"2\"/><polygon points=\"332,75 321,71 321,79\" fill=\"#087f75\" stroke=\"#087f75\" stroke-width=\"2.5\"/><text x=\"370\" y=\"81\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"23\" fill=\"#087f75\">1</text><text x=\"370\" y=\"118\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"23\" fill=\"#087f75\">0</text><text x=\"370\" y=\"155\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"23\" fill=\"#946011\">4</text><text x=\"240\" y=\"193\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"16\" fill=\"#173349\">Codomain = {0, 1, 4}</text></svg>"
+  },
+  {
+    "id": "range-of-a-function",
+    "term": "Range of a function",
+    "aliases": [
+      "output set",
+      "actual outputs"
+    ],
+    "definition": "The set of outputs actually produced by inputs in the domain.",
+    "example": "For x² on {−1, 0, 1}, the range is {0, 1}.",
+    "watch": "This is a set of outputs, not largest minus smallest.",
+    "chapters": [
+      19,
+      23
+    ],
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 480 200\" role=\"img\" aria-label=\"For x squared: minus one and one map to one; zero maps to zero. Four is in the target set but is not reached.\"><rect width=\"480\" height=\"200\" rx=\"12\" fill=\"#ffffff\"/><rect x=\"20\" y=\"15\" width=\"150\" height=\"165\" rx=\"8\" fill=\"#edf4fc\"/><rect x=\"300\" y=\"15\" width=\"155\" height=\"165\" rx=\"8\" fill=\"#f1f6ef\"/><text x=\"95\" y=\"42\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"17\" fill=\"#173349\">Inputs</text><text x=\"377\" y=\"42\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"17\" fill=\"#173349\">Target set</text><text x=\"85\" y=\"81\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"23\" fill=\"#3175ba\">-1</text><line x1=\"112\" y1=\"75\" x2=\"332\" y2=\"75\" stroke=\"#087f75\" stroke-width=\"2\"/><polygon points=\"332,75 321,71 321,79\" fill=\"#087f75\" stroke=\"#087f75\" stroke-width=\"2.5\"/><text x=\"85\" y=\"118\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"23\" fill=\"#3175ba\">0</text><line x1=\"112\" y1=\"112\" x2=\"332\" y2=\"112\" stroke=\"#087f75\" stroke-width=\"2\"/><polygon points=\"332,112 321,108 321,116\" fill=\"#087f75\" stroke=\"#087f75\" stroke-width=\"2.5\"/><text x=\"85\" y=\"155\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"23\" fill=\"#3175ba\">1</text><line x1=\"112\" y1=\"149\" x2=\"332\" y2=\"75\" stroke=\"#087f75\" stroke-width=\"2\"/><polygon points=\"332,75 321,71 321,79\" fill=\"#087f75\" stroke=\"#087f75\" stroke-width=\"2.5\"/><text x=\"370\" y=\"81\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"23\" fill=\"#087f75\">1</text><text x=\"370\" y=\"118\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"23\" fill=\"#087f75\">0</text><text x=\"370\" y=\"155\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"23\" fill=\"#946011\">4</text><text x=\"240\" y=\"193\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"16\" fill=\"#173349\">Range = {0, 1}; 4 is not reached.</text></svg>"
+  },
+  {
+    "id": "inverse-function",
+    "term": "Inverse function",
+    "aliases": [
+      "inverse",
+      "reverse function",
+      "f inverse"
+    ],
+    "definition": "A function that reverses the input–output mapping. It exists on the reached outputs when each output identifies exactly one original input.",
+    "example": "If f(x) = 3x + 2 on the reals, f⁻¹(y) = (y − 2)/3.",
+    "watch": "x² on all real numbers has no inverse function unless its domain is restricted.",
+    "chapters": [
+      19
+    ],
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 480 200\" role=\"img\" aria-label=\"x → ×3 → +2 → y. y → −2 → ÷3 → x. Undo the operations in reverse order.\"><rect width=\"480\" height=\"200\" rx=\"12\" fill=\"#ffffff\"/><rect x=\"25\" y=\"22\" width=\"430\" height=\"65\" rx=\"8\" fill=\"#e8f5f1\"/><text x=\"240\" y=\"64\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"27\" fill=\"#087f75\">x → ×3 → +2 → y</text><text x=\"240\" y=\"122\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"21\" fill=\"#173349\">y → −2 → ÷3 → x</text><text x=\"240\" y=\"174\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"16\" fill=\"#173349\">Undo the operations in reverse order.</text></svg>"
+  },
+  {
+    "id": "hypotenuse",
+    "term": "Hypotenuse",
+    "aliases": [
+      "longest side"
+    ],
+    "definition": "The side opposite the right angle in a right triangle. It is the longest side.",
+    "example": "In a 3–4–5 right triangle, the hypotenuse is 5.",
+    "watch": "Its identity does not depend on which acute angle you choose.",
+    "chapters": [
+      8,
+      22
+    ],
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 480 200\" role=\"img\" aria-label=\"A right triangle. The hypotenuse is opposite the right angle.\"><rect width=\"480\" height=\"200\" rx=\"12\" fill=\"#ffffff\"/><polygon points=\"70,155 70,35 330,155\" fill=\"#e8f5f1\" stroke=\"#087f75\" stroke-width=\"2.5\"/><line x1=\"70\" y1=\"139\" x2=\"86\" y2=\"139\" stroke=\"#173349\" stroke-width=\"2\"/><line x1=\"86\" y1=\"139\" x2=\"86\" y2=\"155\" stroke=\"#173349\" stroke-width=\"2\"/><text x=\"45\" y=\"100\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"23\" fill=\"#087f75\">3</text><text x=\"200\" y=\"180\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"23\" fill=\"#087f75\">4</text><text x=\"220\" y=\"84\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"23\" fill=\"#3175ba\">5</text><text x=\"379\" y=\"61\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"21\" fill=\"#173349\">3² + 4²</text><text x=\"379\" y=\"93\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"21\" fill=\"#173349\">= 5²</text></svg>"
+  },
+  {
+    "id": "opposite-and-adjacent",
+    "term": "Opposite and adjacent",
+    "aliases": [
+      "opposite side",
+      "adjacent side",
+      "reference angle"
+    ],
+    "definition": "For a chosen acute angle in a right triangle, the opposite side faces it; the adjacent side touches it and is not the hypotenuse.",
+    "example": "Changing the chosen acute angle swaps the opposite and adjacent legs.",
+    "watch": "Label the right angle, hypotenuse and reference angle before choosing a ratio.",
+    "chapters": [
+      22
+    ],
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 480 200\" role=\"img\" aria-label=\"A right triangle. The hypotenuse is opposite the right angle.\"><rect width=\"480\" height=\"200\" rx=\"12\" fill=\"#ffffff\"/><polygon points=\"70,155 70,35 330,155\" fill=\"#e8f5f1\" stroke=\"#087f75\" stroke-width=\"2.5\"/><line x1=\"70\" y1=\"139\" x2=\"86\" y2=\"139\" stroke=\"#173349\" stroke-width=\"2\"/><line x1=\"86\" y1=\"139\" x2=\"86\" y2=\"155\" stroke=\"#173349\" stroke-width=\"2\"/><text x=\"42\" y=\"96\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"23\" fill=\"#087f75\">o</text><text x=\"200\" y=\"183\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"23\" fill=\"#087f75\">a</text><text x=\"220\" y=\"82\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"23\" fill=\"#3175ba\">h</text><text x=\"283\" y=\"146\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"22\" fill=\"#946011\">θ</text><text x=\"388\" y=\"72\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"16\" fill=\"#173349\">o: opposite</text><text x=\"388\" y=\"104\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"16\" fill=\"#173349\">a: adjacent</text><text x=\"388\" y=\"136\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"16\" fill=\"#173349\">h: hypotenuse</text></svg>"
+  },
+  {
+    "id": "sine-cosine-and-tangent",
+    "term": "Sine, cosine and tangent",
+    "aliases": [
+      "sin",
+      "cos",
+      "tan",
+      "SOHCAHTOA",
+      "trigonometric ratios"
+    ],
+    "definition": "In a right triangle: sin θ = opposite/hypotenuse, cos θ = adjacent/hypotenuse, tan θ = opposite/adjacent.",
+    "example": "If opposite = 3 and hypotenuse = 5, then sin θ = 3/5.",
+    "watch": "These side ratios apply to right triangles; match the ratio to the sides you know.",
+    "chapters": [
+      22
+    ],
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 480 200\" role=\"img\" aria-label=\"A right triangle. The hypotenuse is opposite the right angle.\"><rect width=\"480\" height=\"200\" rx=\"12\" fill=\"#ffffff\"/><polygon points=\"70,155 70,35 330,155\" fill=\"#e8f5f1\" stroke=\"#087f75\" stroke-width=\"2.5\"/><line x1=\"70\" y1=\"139\" x2=\"86\" y2=\"139\" stroke=\"#173349\" stroke-width=\"2\"/><line x1=\"86\" y1=\"139\" x2=\"86\" y2=\"155\" stroke=\"#173349\" stroke-width=\"2\"/><text x=\"42\" y=\"96\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"23\" fill=\"#087f75\">o</text><text x=\"200\" y=\"183\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"23\" fill=\"#087f75\">a</text><text x=\"220\" y=\"82\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"23\" fill=\"#3175ba\">h</text><text x=\"283\" y=\"146\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"22\" fill=\"#946011\">θ</text><text x=\"388\" y=\"72\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"16\" fill=\"#173349\">o: opposite</text><text x=\"388\" y=\"104\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"16\" fill=\"#173349\">a: adjacent</text><text x=\"388\" y=\"136\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"16\" fill=\"#173349\">h: hypotenuse</text></svg>"
+  },
+  {
+    "id": "inverse-trigonometric-function",
+    "term": "Inverse trigonometric function",
+    "aliases": [
+      "arcsin",
+      "arccos",
+      "arctan",
+      "inverse sine",
+      "inverse cosine",
+      "inverse tangent"
+    ],
+    "definition": "A calculator operation used to find an angle from a trigonometric ratio.",
+    "example": "If sin θ = 0.6 for an acute angle, θ = sin⁻¹(0.6) ≈ 36.9°.",
+    "watch": "sin⁻¹ is not 1/sin. Use degree mode when the required answer is in degrees.",
+    "chapters": [
+      22
+    ],
+    "svg": ""
+  },
+  {
+    "id": "angle-of-elevation-or-depression",
+    "term": "Angle of elevation or depression",
+    "aliases": [
+      "angle of elevation",
+      "angle of depression",
+      "horizontal"
+    ],
+    "definition": "An angle of elevation is measured upward from a horizontal line; an angle of depression is measured downward from it.",
+    "example": "For an observer looking up, tan θ = vertical rise / horizontal distance.",
+    "watch": "Add the observer’s eye height if the question asks for total object height.",
+    "chapters": [
+      22
+    ],
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 480 200\" role=\"img\" aria-label=\"An angle of elevation is measured upward from the observer’s horizontal line.\"><rect width=\"480\" height=\"200\" rx=\"12\" fill=\"#ffffff\"/><line x1=\"70\" y1=\"150\" x2=\"400\" y2=\"150\" stroke=\"#173349\" stroke-width=\"2\" stroke-dasharray=\"5 4\"/><line x1=\"70\" y1=\"150\" x2=\"360\" y2=\"45\" stroke=\"#087f75\" stroke-width=\"3\"/><line x1=\"360\" y1=\"45\" x2=\"360\" y2=\"150\" stroke=\"#3175ba\" stroke-width=\"2\"/><text x=\"130\" y=\"141\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"25\" fill=\"#946011\">θ</text><text x=\"253\" y=\"181\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"19\" fill=\"#173349\">horizontal</text><text x=\"402\" y=\"101\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"19\" fill=\"#3175ba\">rise</text></svg>"
+  },
+  {
+    "id": "linear-function",
+    "term": "Linear function",
+    "aliases": [
+      "straight-line graph",
+      "y=mx+c"
+    ],
+    "definition": "A function of the form y = mx + c. The gradient m is constant and c is the y-intercept.",
+    "example": "For y = 2x − 3, each increase of 1 in x raises y by 2.",
+    "watch": "A linear function can decrease if its gradient is negative.",
+    "chapters": [
+      10,
+      11,
+      19,
+      20,
+      23
+    ],
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 480 200\" role=\"img\" aria-label=\"Coordinate graph illustrating line.\"><rect width=\"480\" height=\"200\" rx=\"12\" fill=\"#ffffff\"/><line x1=\"55\" y1=\"150\" x2=\"430\" y2=\"150\" stroke=\"#173349\" stroke-width=\"2\"/><line x1=\"115\" y1=\"174\" x2=\"115\" y2=\"15\" stroke=\"#173349\" stroke-width=\"2\"/><text x=\"440\" y=\"155\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"18\" fill=\"#173349\">x</text><text x=\"101\" y=\"28\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"18\" fill=\"#173349\">y</text><line x1=\"55\" y1=\"163\" x2=\"385\" y2=\"42\" stroke=\"#087f75\" stroke-width=\"3\"/><circle cx=\"115\" cy=\"141\" r=\"4\" fill=\"#087f75\"/><text x=\"315\" y=\"89\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"22\" fill=\"#087f75\">y = mx + c</text></svg>"
+  },
+  {
+    "id": "parabola",
+    "term": "Parabola",
+    "aliases": [
+      "quadratic graph"
+    ],
+    "definition": "The curved graph of a quadratic function y = ax² + bx + c, with a ≠ 0.",
+    "example": "If a > 0 it opens upward; if a < 0 it opens downward.",
+    "watch": "A parabola need not cross the x-axis twice; it can touch once or not meet it.",
+    "chapters": [
+      15,
+      19,
+      23
+    ],
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 480 200\" role=\"img\" aria-label=\"Coordinate graph illustrating parabola.\"><rect width=\"480\" height=\"200\" rx=\"12\" fill=\"#ffffff\"/><line x1=\"55\" y1=\"150\" x2=\"430\" y2=\"150\" stroke=\"#173349\" stroke-width=\"2\"/><line x1=\"115\" y1=\"174\" x2=\"115\" y2=\"15\" stroke=\"#173349\" stroke-width=\"2\"/><text x=\"440\" y=\"155\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"18\" fill=\"#173349\">x</text><text x=\"101\" y=\"28\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"18\" fill=\"#173349\">y</text><path d=\"M150 30 Q250 230 350 30\" fill=\"none\" stroke=\"#087f75\" stroke-width=\"3\"/><circle cx=\"250\" cy=\"130\" r=\"4\" fill=\"#087f75\"/><text x=\"330\" y=\"183\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"18\" fill=\"#173349\">turning point</text></svg>"
+  },
+  {
+    "id": "turning-point",
+    "term": "Turning point",
+    "aliases": [
+      "vertex",
+      "maximum",
+      "minimum"
+    ],
+    "definition": "A point where a graph changes from decreasing to increasing or vice versa. A quadratic has one turning point.",
+    "example": "For y = (x − 2)² + 3, the turning point is (2, 3), a minimum.",
+    "watch": "A turning point is a coordinate pair, not just a maximum or minimum value.",
+    "chapters": [
+      23
+    ],
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 480 200\" role=\"img\" aria-label=\"Coordinate graph illustrating parabola.\"><rect width=\"480\" height=\"200\" rx=\"12\" fill=\"#ffffff\"/><line x1=\"55\" y1=\"150\" x2=\"430\" y2=\"150\" stroke=\"#173349\" stroke-width=\"2\"/><line x1=\"115\" y1=\"174\" x2=\"115\" y2=\"15\" stroke=\"#173349\" stroke-width=\"2\"/><text x=\"440\" y=\"155\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"18\" fill=\"#173349\">x</text><text x=\"101\" y=\"28\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"18\" fill=\"#173349\">y</text><path d=\"M150 30 Q250 230 350 30\" fill=\"none\" stroke=\"#087f75\" stroke-width=\"3\"/><circle cx=\"250\" cy=\"130\" r=\"4\" fill=\"#087f75\"/><text x=\"330\" y=\"183\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"18\" fill=\"#173349\">turning point</text></svg>"
+  },
+  {
+    "id": "exponential-function",
+    "term": "Exponential function",
+    "aliases": [
+      "exponential growth",
+      "exponential decay",
+      "geometric growth"
+    ],
+    "definition": "A function with the variable in the exponent, such as y = aˣ where a > 0 and a ≠ 1.",
+    "example": "For y = 2ˣ, increasing x by 1 doubles y. For y = (1/2)ˣ, it halves y.",
+    "watch": "Equal input steps give equal multiplying factors, not equal additions.",
+    "chapters": [
+      4,
+      18,
+      23
+    ],
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 480 200\" role=\"img\" aria-label=\"x:  0   1   2   3. 2ˣ:  1   2   4   8. Same input step → same output multiplier.\"><rect width=\"480\" height=\"200\" rx=\"12\" fill=\"#ffffff\"/><rect x=\"25\" y=\"22\" width=\"430\" height=\"65\" rx=\"8\" fill=\"#e8f5f1\"/><text x=\"240\" y=\"64\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"27\" fill=\"#087f75\">x:  0   1   2   3</text><text x=\"240\" y=\"122\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"21\" fill=\"#173349\">2ˣ:  1   2   4   8</text><text x=\"240\" y=\"174\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"16\" fill=\"#173349\">Same input step → same output multiplier.</text></svg>"
+  },
+  {
+    "id": "journey-graph",
+    "term": "Journey graph",
+    "aliases": [
+      "distance-time graph",
+      "stationary",
+      "journey"
+    ],
+    "definition": "A graph showing a distance or position against time. On a distance-travelled graph, gradient represents speed.",
+    "example": "A horizontal section means the plotted distance is not changing during that time.",
+    "watch": "Read the vertical-axis wording: distance from home can decrease, but cumulative distance travelled cannot.",
+    "chapters": [
+      12,
+      20
+    ],
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 480 200\" role=\"img\" aria-label=\"A distance-time journey with movement, a stop, then movement.\"><rect width=\"480\" height=\"200\" rx=\"12\" fill=\"#ffffff\"/><line x1=\"55\" y1=\"160\" x2=\"435\" y2=\"160\" stroke=\"#173349\" stroke-width=\"2\"/><line x1=\"55\" y1=\"160\" x2=\"55\" y2=\"20\" stroke=\"#173349\" stroke-width=\"2\"/><polyline points=\"55,160 170,80 280,80 410,35\" fill=\"none\" stroke=\"#087f75\" stroke-width=\"3\"/><text x=\"225\" y=\"65\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"20\" fill=\"#173349\">stop</text><text x=\"390\" y=\"190\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"18\" fill=\"#173349\">time</text><text x=\"133\" y=\"25\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"16\" fill=\"#173349\">distance travelled</text></svg>"
+  },
+  {
+    "id": "translation",
+    "term": "Translation",
+    "aliases": [
+      "translate",
+      "vector movement"
+    ],
+    "definition": "Moving every point by the same directed distance, without turning or reflecting the figure.",
+    "example": "The move (3, −2) takes (1, 5) to (4, 3).",
+    "watch": "State both direction and distance, or give the movement vector.",
+    "chapters": [
+      24
+    ],
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 480 200\" role=\"img\" aria-label=\"Translation preserves lengths and angles.\"><rect width=\"480\" height=\"200\" rx=\"12\" fill=\"#ffffff\"/><polygon points=\"55,150 55,85 120,150\" fill=\"#e8f5f1\" stroke=\"#087f75\" stroke-width=\"2.5\"/><polygon points=\"305,100 305,35 370,100\" fill=\"#edf4fc\" stroke=\"#3175ba\" stroke-width=\"2.5\"/><line x1=\"135\" y1=\"116\" x2=\"290\" y2=\"65\" stroke=\"#946011\" stroke-width=\"3\"/><text x=\"239\" y=\"155\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"17\" fill=\"#173349\">same move for every point</text></svg>"
+  },
+  {
+    "id": "reflection",
+    "term": "Reflection",
+    "aliases": [
+      "reflect",
+      "mirror image",
+      "mirror line"
+    ],
+    "definition": "Mapping a point across a mirror line so that the line perpendicularly bisects the segment joining the point and its image.",
+    "example": "Reflection in the y-axis takes (3, 2) to (−3, 2).",
+    "watch": "Points on the mirror line stay fixed.",
+    "chapters": [
+      24
+    ],
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 480 200\" role=\"img\" aria-label=\"Reflection preserves lengths and angles.\"><rect width=\"480\" height=\"200\" rx=\"12\" fill=\"#ffffff\"/><line x1=\"240\" y1=\"15\" x2=\"240\" y2=\"173\" stroke=\"#946011\" stroke-width=\"2\" stroke-dasharray=\"5 4\"/><polygon points=\"90,140 160,40 185,140\" fill=\"#e8f5f1\" stroke=\"#087f75\" stroke-width=\"2.5\"/><polygon points=\"390,140 320,40 295,140\" fill=\"#edf4fc\" stroke=\"#3175ba\" stroke-width=\"2.5\"/><line x1=\"160\" y1=\"40\" x2=\"320\" y2=\"40\" stroke=\"#173349\" stroke-width=\"2\" stroke-dasharray=\"5 4\"/><text x=\"240\" y=\"195\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"17\" fill=\"#173349\">equal perpendicular distances</text></svg>"
+  },
+  {
+    "id": "rotation",
+    "term": "Rotation",
+    "aliases": [
+      "rotate",
+      "centre of rotation",
+      "clockwise",
+      "anticlockwise"
+    ],
+    "definition": "Turning a figure through an angle about a fixed centre. Specify the centre, angle and direction.",
+    "example": "A 90° anticlockwise rotation about the origin takes (2, 1) to (−1, 2).",
+    "watch": "Rotating about a different centre usually gives a different image.",
+    "chapters": [
+      24
+    ],
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 480 200\" role=\"img\" aria-label=\"Rotation preserves lengths and angles.\"><rect width=\"480\" height=\"200\" rx=\"12\" fill=\"#ffffff\"/><circle cx=\"240\" cy=\"120\" r=\"5\" fill=\"#946011\"/><polygon points=\"270,120 330,120 330,90\" fill=\"#e8f5f1\" stroke=\"#087f75\" stroke-width=\"2.5\"/><polygon points=\"240,90 240,30 210,30\" fill=\"#edf4fc\" stroke=\"#3175ba\" stroke-width=\"2.5\"/><path d=\"M295 116 A55 55 0 0 0 244 65\" fill=\"none\" stroke=\"#946011\" stroke-width=\"2\"/><text x=\"344\" y=\"62\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"21\" fill=\"#946011\">90°</text><text x=\"240\" y=\"184\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"18\" fill=\"#173349\">centre stays fixed</text></svg>"
+  },
+  {
+    "id": "axial-symmetry",
+    "term": "Axial symmetry",
+    "aliases": [
+      "line symmetry",
+      "axis of symmetry"
+    ],
+    "definition": "A figure has axial symmetry if reflection in a line maps it onto itself. That line is an axis of symmetry.",
+    "example": "A non-square rectangle has two axes of symmetry.",
+    "watch": "A diagonal of a non-square rectangle is not an axis of symmetry.",
+    "chapters": [
+      8,
+      23,
+      24
+    ],
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 480 200\" role=\"img\" aria-label=\"A rectangle has horizontal and vertical axes of symmetry.\"><rect width=\"480\" height=\"200\" rx=\"12\" fill=\"#ffffff\"/><rect x=\"80\" y=\"45\" width=\"320\" height=\"115\" fill=\"#e8f5f1\" stroke=\"#087f75\" stroke-width=\"2.5\"/><line x1=\"240\" y1=\"20\" x2=\"240\" y2=\"180\" stroke=\"#3175ba\" stroke-width=\"2\" stroke-dasharray=\"5 4\"/><line x1=\"50\" y1=\"102.5\" x2=\"430\" y2=\"102.5\" stroke=\"#3175ba\" stroke-width=\"2\" stroke-dasharray=\"5 4\"/><text x=\"240\" y=\"195\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"16\" fill=\"#173349\">Two mirror lines for a non-square rectangle.</text></svg>"
+  },
+  {
+    "id": "central-symmetry",
+    "term": "Central symmetry",
+    "aliases": [
+      "point symmetry",
+      "half turn"
+    ],
+    "definition": "A figure has central symmetry about a point when a 180° rotation about that point maps it onto itself.",
+    "example": "A parallelogram has central symmetry about the intersection of its diagonals.",
+    "watch": "Central symmetry need not imply any line of symmetry.",
+    "chapters": [
+      24
+    ],
+    "svg": ""
+  },
+  {
+    "id": "perpendicular-bisector",
+    "term": "Perpendicular bisector",
+    "aliases": [
+      "bisect a segment",
+      "equidistant"
+    ],
+    "definition": "A line passing through the midpoint of a segment at 90°. Every point on it is equally distant from the segment’s endpoints.",
+    "example": "Intersect equal-radius arcs from A and B, then join the two arc intersections.",
+    "watch": "The arc radius must be greater than half AB so the arcs cross twice.",
+    "chapters": [
+      24
+    ],
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 480 200\" role=\"img\" aria-label=\"Perpendicular bisector\"><rect width=\"480\" height=\"200\" rx=\"12\" fill=\"#ffffff\"/><line x1=\"70\" y1=\"110\" x2=\"410\" y2=\"110\" stroke=\"#3175ba\" stroke-width=\"3\"/><line x1=\"240\" y1=\"20\" x2=\"240\" y2=\"176\" stroke=\"#087f75\" stroke-width=\"3\"/><line x1=\"225\" y1=\"110\" x2=\"225\" y2=\"95\" stroke=\"#173349\" stroke-width=\"2\"/><line x1=\"225\" y1=\"95\" x2=\"240\" y2=\"95\" stroke=\"#173349\" stroke-width=\"2\"/><text x=\"70\" y=\"137\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"18\" fill=\"#173349\">A</text><text x=\"410\" y=\"137\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"18\" fill=\"#173349\">B</text><text x=\"155\" y=\"99\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"18\" fill=\"#173349\">equal</text><text x=\"327\" y=\"99\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"18\" fill=\"#173349\">equal</text><text x=\"240\" y=\"195\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"18\" fill=\"#173349\">90° through the midpoint</text></svg>"
+  },
+  {
+    "id": "angle-bisector",
+    "term": "Angle bisector",
+    "aliases": [
+      "bisect an angle"
+    ],
+    "definition": "A ray or line dividing an angle into two equal angles.",
+    "example": "Bisecting a 70° angle creates two 35° angles.",
+    "watch": "Do not split a measured side in half and assume the angle is bisected.",
+    "chapters": [
+      24
+    ],
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 480 200\" role=\"img\" aria-label=\"Angle bisector\"><rect width=\"480\" height=\"200\" rx=\"12\" fill=\"#ffffff\"/><line x1=\"90\" y1=\"150\" x2=\"390\" y2=\"150\" stroke=\"#173349\" stroke-width=\"2\"/><line x1=\"90\" y1=\"150\" x2=\"300\" y2=\"30\" stroke=\"#173349\" stroke-width=\"2\"/><line x1=\"90\" y1=\"150\" x2=\"360\" y2=\"78\" stroke=\"#087f75\" stroke-width=\"3\" stroke-dasharray=\"5 4\"/><text x=\"214\" y=\"143\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"23\" fill=\"#087f75\">θ</text><text x=\"202\" y=\"103\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"23\" fill=\"#087f75\">θ</text><text x=\"260\" y=\"188\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"19\" fill=\"#173349\">Two equal angles</text></svg>"
+  },
+  {
+    "id": "construction",
+    "term": "Construction",
+    "aliases": [
+      "ruler and compass",
+      "geometric construction"
+    ],
+    "definition": "A drawing made using specified geometric tools and justified steps, usually a straightedge and compass.",
+    "example": "To construct a triangle from three side lengths, draw one side and intersect arcs for the other two lengths.",
+    "watch": "Keep construction arcs visible when they show the required method.",
+    "chapters": [
+      24
+    ],
+    "svg": ""
+  },
+  {
+    "id": "included-angle",
+    "term": "Included angle",
+    "aliases": [
+      "SAS construction",
+      "included side"
+    ],
+    "definition": "The included angle is the angle between two stated sides. An included side lies between two stated angles.",
+    "example": "In a SAS triangle construction, draw the given angle, then mark the two side lengths along its arms.",
+    "watch": "An angle elsewhere in the triangle is not the included angle.",
+    "chapters": [
+      8,
+      24
+    ],
+    "svg": ""
+  },
+  {
+    "id": "cardinality",
+    "term": "Cardinality",
+    "aliases": [
+      "number of elements",
+      "n(A)",
+      "#A"
+    ],
+    "definition": "The number of distinct elements in a finite set.",
+    "example": "If A = {2, 4, 6}, then n(A) = 3.",
+    "watch": "A set containing zero has one element: n({0}) = 1, while n(∅) = 0.",
+    "chapters": [
+      3,
+      9
+    ],
+    "svg": ""
+  },
+  {
+    "id": "significant-figures",
+    "term": "Significant figures",
+    "aliases": [
+      "rounding",
+      "significant digits"
+    ],
+    "definition": "Digits counted from the first non-zero digit when expressing a value to a chosen precision.",
+    "example": "0.004786 to three significant figures is 0.00479.",
+    "watch": "Leading zeros set place value but do not count as significant figures.",
+    "chapters": [
+      14
+    ],
+    "svg": ""
+  },
+  {
+    "id": "zero-index",
+    "term": "Zero index",
+    "aliases": [
+      "power zero"
+    ],
+    "definition": "For any non-zero base a, a⁰ = 1.",
+    "example": "7⁰ = 1 and (−3)⁰ = 1.",
+    "watch": "The rule requires a ≠ 0; do not use it to decide 0⁰.",
+    "chapters": [
+      14
+    ],
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 480 200\" role=\"img\" aria-label=\"a³ ÷ a³ = 1. a³⁻³ = a⁰ = 1. The base must be non-zero.\"><rect width=\"480\" height=\"200\" rx=\"12\" fill=\"#ffffff\"/><rect x=\"25\" y=\"22\" width=\"430\" height=\"65\" rx=\"8\" fill=\"#e8f5f1\"/><text x=\"240\" y=\"64\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"27\" fill=\"#087f75\">a³ ÷ a³ = 1</text><text x=\"240\" y=\"122\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"21\" fill=\"#173349\">a³⁻³ = a⁰ = 1</text><text x=\"240\" y=\"174\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"16\" fill=\"#173349\">The base must be non-zero.</text></svg>"
+  },
+  {
+    "id": "algebraic-fraction",
+    "term": "Algebraic fraction",
+    "aliases": [
+      "rational expression",
+      "denominator restriction"
+    ],
+    "definition": "A fraction whose numerator or denominator contains an algebraic expression. Denominators must not be zero.",
+    "example": "(x² − 4)/(x − 2) = x + 2 only for x ≠ 2.",
+    "watch": "Cancel common factors, not individual terms, and retain original restrictions.",
+    "chapters": [
+      2,
+      21
+    ],
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 480 200\" role=\"img\" aria-label=\"(x² − 4)/(x − 2). = (x − 2)(x + 2)/(x − 2) = x + 2. Keep x ≠ 2, even after cancelling.\"><rect width=\"480\" height=\"200\" rx=\"12\" fill=\"#ffffff\"/><rect x=\"25\" y=\"22\" width=\"430\" height=\"65\" rx=\"8\" fill=\"#e8f5f1\"/><text x=\"240\" y=\"64\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"27\" fill=\"#087f75\">(x² − 4)/(x − 2)</text><text x=\"240\" y=\"122\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"21\" fill=\"#173349\">= (x − 2)(x + 2)/(x − 2) = x + 2</text><text x=\"240\" y=\"174\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"16\" fill=\"#173349\">Keep x ≠ 2, even after cancelling.</text></svg>"
+  },
+  {
+    "id": "frequency-density",
+    "term": "Frequency density",
+    "aliases": [
+      "unequal class widths"
+    ],
+    "definition": "Frequency divided by class width. It is the histogram height when bar area must represent frequency.",
+    "example": "A class of width 5 containing 20 values has density 20/5 = 4.",
+    "watch": "Read whether the vertical axis shows frequency or frequency density.",
+    "chapters": [
+      13
+    ],
+    "svg": ""
+  },
+  {
+    "id": "estimated-grouped-mean",
+    "term": "Estimated grouped mean",
+    "aliases": [
+      "class midpoint",
+      "grouped mean"
+    ],
+    "definition": "A mean estimated by treating every value in a class as equal to that class’s midpoint: Σ(f × midpoint)/Σf.",
+    "example": "For a class from 10 to 20, use midpoint 15 in the weighted calculation.",
+    "watch": "The result is an estimate because the exact values within each class are unknown.",
+    "chapters": [
+      7,
+      13
+    ],
+    "svg": ""
+  },
+  {
+    "id": "geometric-sequence",
+    "term": "Geometric sequence",
+    "aliases": [
+      "common ratio"
+    ],
+    "definition": "A sequence formed by multiplying each term by the same constant ratio. For first position 1, Tₙ = arⁿ⁻¹.",
+    "example": "3, 6, 12, 24 has first term 3 and ratio 2, so Tₙ = 3 × 2ⁿ⁻¹.",
+    "watch": "A common ratio is a multiplier; a common difference is an addition.",
+    "chapters": [
+      4,
+      18,
+      23
+    ],
+    "svg": ""
+  },
+  {
+    "id": "circle-centre-angle-theorem",
+    "term": "Circle centre-angle theorem",
+    "aliases": [
+      "angle at centre",
+      "angle at circumference",
+      "same arc"
+    ],
+    "definition": "For the same arc, the angle at the centre is twice an angle at the circumference standing on that arc.",
+    "example": "A circumference angle of 35° corresponds to a centre angle of 70° on the same arc.",
+    "watch": "Check which arc is used; the relevant centre angle may be reflex.",
+    "chapters": [
+      16
+    ],
+    "svg": ""
+  }
+]

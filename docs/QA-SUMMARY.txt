@@ -1,4 +1,4 @@
-JUNIOR CYCLE HIGHER MATHS — VISUAL LEARNING AND READABILITY UPDATE
+JUNIOR CYCLE HIGHER MATHS — VISUAL LEARNING, READABILITY AND DIAGRAM MARKS
 21 October 2026
 
 Scope
@@ -16,7 +16,8 @@ Automated checks
   ranges, embedded diagram font, glyph availability and card fit checked.
   Equations use 15.5 pt type; instructions use 13 pt, with separate rows.
 - All 222 formula cards and full methods retain their mathematical content.
-  All 1,090 diagram labels retain their original text after layout corrections.
+  All 1,093 diagram text elements retain their mathematical content after layout
+  corrections; separate factor elements allow precise cancellation marks.
 - Speech controller: cancellation races, pause/continue, repeat, rate and voice
   changes, end events, unavailable speech and failure fallback.
 - Guided reader: box order, completion-driven step changes, stale events,
@@ -62,4 +63,31 @@ Browser voices vary by browser, operating system and installed voice. Controls
 and speech events were checked; this is not an auditory pronunciation audit.
 No iOS or Android hardware was tested. Responsive checks used desktop viewport
 sizes. No public deployment or cross-browser certification is included.
+
+Diagram-mark review — 21 October 2026
+- Scanned all 971 SVG diagrams. Reviewed a browser gallery of 332 distinct
+  coloured diagrams plus the homepage. Checked 203 brown line/path elements
+  against rendered label bounds, excluding intentional cancellation strokes.
+- Replaced floating multiplication pointers on the homepage and 15 teaching
+  steps with matching highlights on both inputs and their product. The live
+  multiplication lab uses the same labels and highlights. Verified positive
+  and negative products during interaction; all 15 lesson pairings also passed
+  a numerical regression check at three values of x.
+- Rebuilt cancellation examples as individual factors with eight short strokes
+  in three SVGs. Each stroke names its exact factor; browser font metrics locate
+  it after rendering, font loading, resizing and opening an enlarged diagram.
+  No cancelled factor or fraction bar is identified by a free-floating line.
+  Original non-zero restrictions are preserved.
+- Corrected nearby label/line collisions in cuboid, circle, statistics,
+  trigonometry and reflection diagrams. No unintended brown-line/label
+  intersections remained at 390 px or 1440 px, including a serif fallback-font
+  check. All 32 lesson/home input highlights contained their intended labels;
+  all eight cancellation strokes crossed only their intended factors.
+- Opened actual lesson cancellation diagrams in the enlarged view and checked
+  the live multiplication lab. No browser console errors were recorded.
+- Rebuilt the 60-page A3 PDF using embedded-font measurements for strokes.
+  Rendered all pages and visually rechecked affected pages 3, 18, 30, 38, 53,
+  54 and 58. Page 3 was also inspected at full size for cancellation alignment.
+- Structural checks, typography preservation, speech, guided reading, search
+  and complete distribution validation passed after the changes.
 

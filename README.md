@@ -21,6 +21,9 @@ speech finishes. Pause retains your place. **Follow narration** controls scrolli
 Full workings are expandable below each visual reference card.
 Equations and instructions have separate, clearly spaced lines. Use **Enlarge
 diagram** for a closer look at any card's illustration.
+Multiplication grids highlight the two inputs and their product together.
+Cancellation strokes stay attached to the exact factors when diagrams resize
+or open in the enlarged view; the printable sheets use the same approach.
 
 Browser voices vary by device. Local voices may work offline; online voices need
 a connection and may send narration text to their provider. No microphone,
@@ -94,6 +97,7 @@ node source/test-speech.cjs
 node source/test-guided-reading.cjs
 node source/test-search.cjs
 python source/test-toolkit-typography.py
+python source/test-diagram-marks.py
 python source/validate.py
 python source/package.py
 ```

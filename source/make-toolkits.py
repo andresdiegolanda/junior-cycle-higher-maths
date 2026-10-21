@@ -14,6 +14,7 @@ from reportlab.graphics import renderPDF
 from svglib.svglib import svg2rlg
 from svglib.fonts import register_font
 from pypdf import PdfReader
+from diagram_marks import pdf_marks
 
 OUT=ROOT.parent/'site/toolkits';OUT.mkdir(parents=True,exist_ok=True)
 chapters=json.loads((ROOT/'compiled-data.json').read_text(encoding='utf-8'))
@@ -57,6 +58,7 @@ def draw_card(cv,m,index,x,y,width,height):
     cy-=9+p['th'];p['title'].drawOn(cv,x+pad,cy);cy-=7
     source=re.sub(r'font-family="[^"]*"','font-family="Desk"',v['svg'])
     source=re.sub(r"font-family='[^']*'",'font-family="Desk"',source)
+    source=pdf_marks(source,pdfmetrics)
     for el in re.findall(r'<text[^>]*>(.*?)</text>',source,re.S):
         for ch in html.unescape(re.sub('<[^>]*>','',el)):
             if not ch.isspace():assert ord(ch) in pdfmetrics.getFont('Desk').face.charToGlyph,('Missing diagram glyph',ch)

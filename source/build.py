@@ -3,6 +3,7 @@ import json,re,html
 import xml.etree.ElementTree as ET
 from spoken import spoken
 from toolkit_typography import reference_rows, readable_diagram
+from diagram_marks import prepare_grid, prepare_marks
 ROOT=Path(__file__).resolve().parent
 OUT=ROOT.parent/'site'
 OUT.mkdir(parents=True,exist_ok=True)
@@ -20,7 +21,7 @@ for c in chapters:
         if (c['id'],i) in visuals:
             v=visuals[c['id'],i]
             v['formulaRows']=reference_rows(v['formula'],(c['id'],i+1))
-            v['svg']=readable_diagram(v['svg'],(c['id'],i+1))
+            v['svg']=prepare_marks(readable_diagram(v['svg'],(c['id'],i+1)))
             v['conditionLabel']='Watch for' if v['condition'].strip()==m['trap'].strip() else 'Remember'
             cue='Watch for this mistake' if v['conditionLabel']=='Watch for' else 'Remember'
             v['speech']=spoken(v['task']+'. '+v['narration']+' Formula or method. '+v['formula']+'. '+cue+'. '+v['condition'])
@@ -28,6 +29,7 @@ for c in chapters:
     for l in c['lessons']:
         l['boxSpeech']={key:spoken(label+'. '+l[field]) for key,field,label in [('goal','goal','Your goal'),('takeaway','takeaway','Keep this idea'),('mistake','mistake','Watch out for')]}
         for s in l['steps']:
+            s['svg']=prepare_marks(prepare_grid(s['svg']))
             root=ET.fromstring(s['svg']);title=root.find('{http://www.w3.org/2000/svg}title')
             desc=root.attrib.get('aria-label') or (''.join(title.itertext()) if title is not None else s['title'])
             s['boxSpeech']={'explanation':spoken(s['title']+'. '+s['text']),'diagram':spoken('Read the diagram. '+desc+'. '+s['math']),'why':spoken('Why it works. '+s['why'])}
@@ -55,7 +57,7 @@ for c in chapters:
 stats={'chapters':len(chapters),'lessons':sum(len(c['lessons']) for c in chapters),'steps':sum(len(l['steps']) for c in chapters for l in c['lessons']),'skillChecks':sum(len(l['quiz']) for c in chapters for l in c['lessons']),'toolkitMethods':sum(len(c['toolkit']['methods']) for c in chapters),'writtenChallenges':sum(len(c['challenges']) for c in chapters),'glossaryTerms':len(glossary),'glossaryDiagrams':sum(bool(g['svg']) for g in glossary),'narration':'Browser speech'}
 stats['visualCards']=len(visuals)
 css='\n'.join((ROOT/f).read_text(encoding='utf-8') for f in ['guide.css','enhancements.css','display.css','visual-learning.css'])
-js='\n'.join((ROOT/f).read_text(encoding='utf-8') for f in ['speech.js','guide.js','reading.js','lesson-view.js','enhancements.js','toolkit-view.js','discovery.js'])
+js='\n'.join((ROOT/f).read_text(encoding='utf-8') for f in ['speech.js','guide.js','reading.js','lesson-view.js','enhancements.js','toolkit-view.js','discovery.js','diagram-marks.js'])
 def page(items,initial=0,standalone=False):
     data={'chapters':items,'initialChapter':initial,'standalone':standalone,'stats':stats,'glossary':glossary,'searchIndex':search,'labNarration':labs}
     payload=json.dumps(data,ensure_ascii=False,separators=(',',':')).replace('</',r'<\/')

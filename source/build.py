@@ -1,6 +1,7 @@
 from pathlib import Path
 import json,re,html
 import xml.etree.ElementTree as ET
+from urllib.parse import quote
 from spoken import spoken
 from toolkit_typography import reference_rows, readable_diagram
 from diagram_marks import prepare_grid, prepare_marks
@@ -58,11 +59,12 @@ stats={'chapters':len(chapters),'lessons':sum(len(c['lessons']) for c in chapter
 stats['visualCards']=len(visuals)
 css='\n'.join((ROOT/f).read_text(encoding='utf-8') for f in ['guide.css','enhancements.css','display.css','visual-learning.css'])
 js='\n'.join((ROOT/f).read_text(encoding='utf-8') for f in ['speech.js','guide.js','reading.js','lesson-view.js','enhancements.js','toolkit-view.js','discovery.js','diagram-marks.js'])
+favicon='data:image/svg+xml,'+quote('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="#173349"/><rect x="2" y="2" width="60" height="60" rx="14" fill="none" stroke="#6bb5ab" stroke-width="2"/><text x="32" y="45" text-anchor="middle" font-family="Georgia,serif" font-size="52" font-weight="700" fill="#85dfcc">x</text></svg>',safe='')
 def page(items,initial=0,standalone=False):
     data={'chapters':items,'initialChapter':initial,'standalone':standalone,'stats':stats,'glossary':glossary,'searchIndex':search,'labNarration':labs}
     payload=json.dumps(data,ensure_ascii=False,separators=(',',':')).replace('</',r'<\/')
     home='index.html#home' if standalone else '#home'
-    return f'''<!doctype html><html lang="en-IE"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Junior Cycle Higher Level Mathematics preparation: visual lessons, browser narration, written practice, a visual glossary and chapter toolkits."><meta name="color-scheme" content="light dark"><title>Junior Cycle Higher Maths — Preparation Guide</title><style>{css}</style></head><body><a class="skip" href="#app">Skip to the guide</a><header class="topbar"><a class="brand" href="{home}"><span class="brand-mark" aria-hidden="true">x</span><span><strong>Junior Cycle Higher Maths</strong><small>PREPARATION GUIDE · SEE · UNDERSTAND · PRACTISE</small></span></a><nav class="toplinks" aria-label="Guide tools"><button id="glossary-button">Glossary</button><button id="term-search-button">Search by term</button><button id="display-button">Display</button><button data-voice-settings>Voice</button><button id="about-button">How to use</button></nav></header><div class="container" id="app" tabindex="-1"></div><div class="print-sheet" id="print-sheet"></div><div class="screen-reader" id="status-live" aria-live="polite" aria-atomic="true"></div><script>const DATA={payload};</script><script>{js}</script></body></html>'''
+    return f'''<!doctype html><html lang="en-IE"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Junior Cycle Higher Level Mathematics preparation: visual lessons, browser narration, written practice, a visual glossary and chapter toolkits."><meta name="color-scheme" content="light dark"><title>Junior Cycle Higher Maths — Preparation Guide</title><link rel="icon" type="image/svg+xml" sizes="any" href="{favicon}"><style>{css}</style></head><body><a class="skip" href="#app">Skip to the guide</a><header class="topbar"><a class="brand" href="{home}"><span class="brand-mark" aria-hidden="true">x</span><span><strong>Junior Cycle Higher Maths</strong><small>PREPARATION GUIDE · SEE · UNDERSTAND · PRACTISE</small></span></a><nav class="toplinks" aria-label="Guide tools"><button id="glossary-button">Glossary</button><button id="term-search-button">Search by term</button><button id="display-button">Display</button><button data-voice-settings>Voice</button><button id="about-button">How to use</button></nav></header><div class="container" id="app" tabindex="-1"></div><div class="print-sheet" id="print-sheet"></div><div class="screen-reader" id="status-live" aria-live="polite" aria-atomic="true"></div><script>const DATA={payload};</script><script>{js}</script></body></html>'''
 (OUT/'index.html').write_text(page(chapters),encoding='utf-8')
 for c in chapters:
     slug=re.sub('[^a-z0-9]+','-',c['title'].lower()).strip('-')

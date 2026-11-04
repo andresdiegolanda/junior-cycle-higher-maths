@@ -22,6 +22,12 @@ Topic practice mixes two quick checks and four written exercises, ordered by dif
 exercise has two progressive clues, staged working, an answer and a checking
 method. Notes, selected exercise and self-reviews are saved locally. Written
 reviews are self-assessments, not automatic marks.
+Use **Rule applied** beside a worked step to see its formula, reason and conditions.
+**Method reminder** opens the relevant method when a step needs broader guidance.
+Hover to preview, click or tap to keep the card open, or use Enter and Escape.
+Square expansions match the values to the identity's letters and illustrate the
+two cross-products. Each card links directly to its expanded Toolkit explanation.
+Practice help appears with the revealed working and is covered with the solution.
 Full workings are expandable below each visual reference card.
 Equations and instructions have separate, clearly spaced lines. Use **Enlarge
 diagram** for a closer look at any card's illustration.
@@ -81,6 +87,15 @@ Lessons pass their context to their steps, practice and associated toolkit cards
 Individual exercise settings override the lesson setting. Mark new clock-time
 content there so its questions, clues and answers use the same spoken format.
 
+Step explanations use the shared rules in `source/data/step-rules.json` and
+the existing Toolkit methods. `source/data/challenge-rule-map.json` assigns a
+rule or method to every step of each chapter challenge. Numeric entries are
+zero-based method indexes in that chapter; strings name shared rules. Teaching
+and topic-practice steps inherit a lesson method unless a narrow operation cue
+identifies a specific rule. `source/rule_help.py` keeps this distinction explicit
+in the interface and attaches only the current step's reasoning. Update the
+mapping when changing a challenge's steps; the build checks its coverage.
+
 The supplied PDF only needs rebuilding when its content or layout changes.
 Install its dependencies with `python -m pip install -r source/requirements-print.txt`.
 Set `MATHS_FONT_DIR` to a folder containing `DejaVuSans.ttf` and, preferably,
@@ -111,6 +126,8 @@ node source/test-speech.cjs
 node source/test-guided-reading.cjs
 node source/test-search.cjs
 node source/test-practice.cjs
+node source/test-rule-help.cjs
+python source/test-rule-help.py
 python source/test-spoken.py
 python source/test-narration-content.py
 python source/test-practice.py

@@ -17,6 +17,11 @@ function renderReference(){
  $('#collapse-methods').onclick=()=>{stopAudio();document.querySelectorAll('.method-more').forEach(d=>d.open=false)};
  $('#method-search').oninput=e=>{stopAudio();const q=e.target.value.toLowerCase().trim();let n=0;document.querySelectorAll('[data-method-card]').forEach(d=>{const m=c.toolkit.methods[Number(d.dataset.methodCard)];d.hidden=!!q&&!JSON.stringify(m,(key,value)=>['svg','speech'].includes(key)?undefined:value).toLowerCase().includes(q);if(!d.hidden)n++});$('#method-count').textContent=n+' matching cards';};
  $('#method-count').textContent=c.toolkit.methods.length+' visual cards · every method retained';bindBoxAudio();
+ const methodParam=new URLSearchParams(location.hash.slice(1)).get('method');
+ if(methodParam!==null&&/^\d+$/.test(methodParam)&&Number(methodParam)<c.toolkit.methods.length){
+  const card=document.querySelector('[data-method-card="'+Number(methodParam)+'"]');
+  requestAnimationFrame(()=>{if(!card?.isConnected)return;card.classList.add('method-rule-target');card.setAttribute('tabindex','-1');card.querySelector('.method-more').open=true;card.scrollIntoView({block:'start',behavior:reducedMotion()?'instant':'smooth'});card.focus({preventScroll:true})});
+ }
 }
 function renderPrint(){
  const c=currentChapter;if(!c)return;$('#print-sheet').innerHTML=`<p class="small">Junior Cycle Higher Maths · Chapter ${c.id}</p><h1>${E(c.title)}</h1><p>Match your question to a picture. Read the condition before using the formula.</p><div class="print-visual-grid">${chapterMethods(c).map((m,i)=>methodMarkup(m,i,true)).join('')}</div><p class="small">Open the interactive guide for full workings, spoken explanations and practice. Read labels; diagrams illustrate relationships and may not be drawn to scale.</p>`;

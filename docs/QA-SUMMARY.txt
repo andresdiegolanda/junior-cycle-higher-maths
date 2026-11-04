@@ -225,3 +225,34 @@ Exam guidance and narration corrections — 4 November 2026
   were rebuilt and the distribution ZIP refreshed. The printable PDF content
   and layout were unaffected. This was a targeted correction, not a new full
   curriculum review or an audible cross-device voice audit.
+
+Step-level formula and method help — 4 November 2026
+- Added 2,367 contextual helpers: 646 teaching steps, 316 quick-check
+  explanations, 960 written-practice steps and 445 chapter-challenge steps.
+  The shared library contains 43 rules/properties and 222 Toolkit methods.
+- Every chapter-challenge step has an explicit rule/method assignment. Teaching
+  and topic-practice steps use narrow operation cues and otherwise show a
+  clearly labelled Method reminder from their lesson. A reminder is broader
+  guidance, not a claim that every displayed formula was used on that line.
+- Square identities show matching a/b values and the substitution. The square
+  of a sum also shows the four products. The recogniser handles simple positive
+  numeric/one-variable terms, including 2k, and can use the preceding revealed
+  line for an expansion. It is not a general symbolic algebra parser.
+- Cards support hover previews, click/tap pinning, keyboard activation, Escape,
+  focus restoration, outside-click dismissal and cleanup when a solution is
+  covered or navigation removes its step. Toolkit links open, highlight and
+  focus the associated card, including links from standalone chapter files.
+- Content checks validate all 2,367 associations, the full and 24 standalone
+  pages, rule conditions, Toolkit targets and square-identity regressions.
+  Controller checks cover pointer handoff, touch-style input, focus, dismissal,
+  viewport clamping, stale-content cleanup and escaping. Practice UI checks
+  cover hidden/revealed/covered rule help across all 948 topic exercises.
+- Browser checks covered lesson and written-practice square expansions,
+  chapter-challenge properties, covering a solution, Enter/Escape, Toolkit
+  navigation, a 390 px viewport, high contrast and projector presentation.
+  No browser console errors were observed. Preview: step-rule-preview.jpg.
+  Physical touchscreen and screen-reader announcement testing were not done.
+- Existing narration, guided reading, search, maths answer checks, typography,
+  diagram marks and distribution validation passed. Rebuilt 25 HTML pages,
+  updated usage instructions and refreshed the complete distribution ZIP.
+  Printable PDF content is unaffected by these interactive controls.

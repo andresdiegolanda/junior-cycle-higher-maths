@@ -18,7 +18,8 @@ c.save=()=>c.saves++;c.announce=s=>c.messages.push(s);c.stopAudio=()=>c.stops++;
 c.reducedMotion=()=>true;
 c.boxAttributes=(key,text)=>'data-narration-box="'+c.E(key)+'" data-narration-text="'+c.E(text)+'"';
 c.boxStatus=()=>'';c.boxAudio=()=>'';c.bindBoxAudio=()=>{};
-vm.createContext(c);vm.runInContext(fs.readFileSync(__dirname+'/practice.js','utf8'),c);
+c.DATA=JSON.parse(fs.readFileSync(__dirname+'/../site/index.html','utf8').match(/<script>const DATA=(.*?);<\/script>/s)[1]);
+vm.createContext(c);vm.runInContext(fs.readFileSync(__dirname+'/rule-help-view.js','utf8'),c);vm.runInContext(fs.readFileSync(__dirname+'/practice.js','utf8'),c);
 // Render every content path; written results must stay hidden until requested.
 for(const chapter of chapters)for(const lesson of chapter.lessons){
  c.currentLesson=lesson;
@@ -26,13 +27,16 @@ for(const chapter of chapters)for(const lesson of chapter.lessons){
   c.movePractice(i);const q=lesson.exercises[i];
   if(q.type==='written'){
    assert.doesNotMatch(c.html,/class="practice-result"/,q.id);
+   assert.doesNotMatch(c.html,/data-step-rule=/,q.id+' must not expose a rule before the solution');
    c.nodes['practice-hint'].onclick();c.nodes['practice-hint'].onclick();
    assert.ok(c.nodes['practice-hint'].disabled);
    c.nodes['practice-notes'].oninput({target:{value:'Paper notes for '+q.id}});
    c.nodes['practice-all'].onclick();
+   assert.equal((c.html.match(/data-step-rule=/g)||[]).length,q.solution.length,q.id);
    assert.match(c.html,/class="practice-result"/,q.id);
    c.nodes['practice-review-supported'].onclick();c.nodes['practice-cover'].onclick();
    assert.doesNotMatch(c.html,/class="practice-result"/,q.id);
+   assert.doesNotMatch(c.html,/data-step-rule=/,q.id+' must cover rule help with the solution');
    assert.equal(c.practiceSaved(q).notes,'Paper notes for '+q.id);
    assert.equal(c.practiceSaved(q).review,'supported');
   }else{

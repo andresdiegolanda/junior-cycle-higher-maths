@@ -29,6 +29,13 @@ There are 948 topic exercises plus the separate 96 chapter challenges.
 Written reviews are self-reports, not automatically marked answers. Notes and
 question position are saved locally; covering a solution retains these records.
 
+Rule applied: the formula, reason and conditions for a worked step.
+Method reminder: the relevant method when broader guidance is useful.
+Hover to preview; click or tap to keep open. Enter opens the card for keyboard
+use; Escape closes it. Square expansions match the values to the formula's
+letters. The Toolkit link opens the full method. Practice help is revealed
+and covered with its solution step.
+
 Progress, working notes and preferences stay in this browser where storage is
 available. They do not sync between devices or different site addresses.
 Use the main index to keep one progress record across all chapters.

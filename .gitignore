@@ -3,6 +3,11 @@ __pycache__/
 .venv/
 _deps/
 node_modules/
+.wrangler/
+.dev.vars
+.dev.vars.*
+dev/*.sqlite*
+dev/.local-state/
 .env
 .env.*
 !.env.example

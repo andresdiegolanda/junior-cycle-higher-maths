@@ -11,7 +11,7 @@ Continue repeats the current short part. Turn off Follow narration to prevent
 automatic scrolling. Choosing a different step or lesson stops the narration.
 Choose an available English voice and speaking speed with Voice.
 Local voices can work offline; online voices need an internet connection and may
-send the narration text to the voice provider. No microphone or account is needed.
+send the narration text to the voice provider. No microphone is needed.
 If speech is unavailable, use the written explanations and transcripts.
 
 Formulas: search by name or expression, such as quadratic or ax2+bx+c.
@@ -39,9 +39,14 @@ use; Escape closes it. Square expansions match the values to the formula's
 letters. The Toolkit link opens the full method. Practice help is revealed
 and covered with its solution step.
 
-Progress, working notes and preferences stay in this browser where storage is
-available. They do not sync between devices or different site addresses.
-Use the main index to keep one progress record across all chapters.
+The hosted guide requires an invited account. Progress and activity sync with
+that account; the administrator can review activity. Activity and progress older
+than six calendar months are removed daily. Written notes and preferences remain
+on the device. My activity provides a personal record and a data download.
+
+Downloaded file:// copies work offline without login. Their progress stays in
+this browser and does not sync. Use the main index across all chapters. Old
+anonymous progress is only imported after you explicitly confirm it is yours.
 
 This is an independent study resource. Check each formula's conditions, show your
 reasoning, keep units consistent and use other practice materials as needed.

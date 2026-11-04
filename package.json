@@ -1,0 +1,14 @@
+{
+  "name": "junior-cycle-higher-maths",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "python source/build.py",
+    "dev": "node dev/server.mjs",
+    "test:accounts": "node --test tests/*.test.mjs",
+    "check:deploy": "node scripts/check-deployment.mjs",
+    "deploy": "npm run check:deploy && wrangler deploy"
+  },
+  "dependencies": { "jose": "^6.1.0" },
+  "devDependencies": { "wrangler": "^4.0.0" }
+}

@@ -57,4 +57,4 @@ player.addEventListener('voices',populateVoices);
 ['play','pause','ended','error'].forEach(type=>player.addEventListener(type,()=>{const gs=$('#glossary-speech-status');if(gs&&$('#glossary-dialog').open)gs.textContent=player.error||(!player.paused?player.position:player.ended?'Ready to listen.':'Paused; continue repeats the current sentence.');if($('#voice-dialog').open)$('#voice-status').textContent=player.error||(!player.paused?(player.waiting?'Starting voice…':'Speaking · '+player.position):player.ended?'Ready to preview.':'Paused.')}));
 function bindSpeechButtons(){document.querySelectorAll('[data-repeat-speech]').forEach(b=>b.onclick=()=>player.repeat());document.querySelectorAll('[data-voice-settings]').forEach(b=>b.onclick=openVoiceSettings)}
 bindSpeechButtons();populateVoices();
-$('#about-button').onclick=()=>{location.hash='about'};route();
+$('#about-button').onclick=()=>{location.hash='about'};

@@ -32,7 +32,7 @@ function renderPractice(focusId) {
  const reviewed=qs.filter(t=>t.type==='choice'?progress.answers[t.id]===t.answer:!!practiceSaved(t).review).length;
  $('#lesson-content').innerHTML=`<header class="practice-intro"><p class="eyebrow">Six steps to stronger problem solving</p><h2>Make the method yours</h2><p>${E(l.title)}</p><p class="small-note">Work from easier to harder. Try on paper, take a clue if needed, then compare your reasoning. Written answers are self-checked.</p></header>
  <nav class="exercise-path" aria-label="Exercises, easier to harder">${qs.map((item,i)=>`<button data-exercise="${i}" ${index===i?'aria-current="step"':''} class="${index===i?'active':''}" aria-label="Exercise ${i+1}: ${practiceLevels[i]}. ${exerciseStatus(item)}"><span class="exercise-number">${i+1}</span><strong>${practiceLevels[i]}</strong><small>${E(exerciseStatus(item))}</small></button>`).join('')}</nav>
- <p class="practice-progress" role="status">${reviewed} of ${qs.length} checked or reviewed <span>· Written reviews are your own assessment.</span></p>
+ <button id="practice-new-attempt" class="practice-new-attempt">Start a new attempt</button><p class="practice-progress" role="status">${reviewed} of ${qs.length} checked or reviewed <span>· Written reviews are your own assessment.</span></p>
  <article class="quiz-card exercise-card" id="exercise-${E(q.id)}">
  <div class="exercise-meta"><span>EXERCISE ${index+1} OF ${qs.length} · ${practiceLevels[index]}</span><span>${choice?'Choose an answer':'Work it out on paper'}</span></div>
  <section class="question-box audio-box" ${boxAttributes('practice-question',q.speechQuestion,'Exercise '+(index+1))}><div class="box-heading"><h3 id="practice-title" tabindex="-1">${choice?'Check your understanding':'Your turn'}</h3>${boxStatus()}${boxAudio('practice-question','Exercise '+(index+1))}</div><p class="quiz-question">${E(q.question)}</p>
@@ -48,11 +48,11 @@ function renderPractice(focusId) {
  </article><div class="practice-navigation"><button id="practice-previous" ${index===0?'disabled':''}>← Previous exercise</button><button id="practice-next" class="primary">${index===qs.length-1?'Back to the method':'Next exercise →'}</button></div>`;
  document.querySelectorAll('[data-exercise]').forEach(b=>b.onclick=()=>movePractice(Number(b.dataset.exercise)));
  document.querySelectorAll('[data-practice-answer]').forEach(b=>b.onclick=()=>{
-  stopAudio();const answer=Number(b.dataset.practiceAnswer);progress.answers[q.id]=answer;save();
+  stopAudio();const answer=Number(b.dataset.practiceAnswer);progress.answers[q.id]=answer;save();if(typeof MathsAccount!=='undefined')MathsAccount.exercise(q,'choice_submitted',{option:answer});
   renderPractice(b.id);announce((answer===q.answer?'Correct. ':'Not yet. ')+q.explanation);
  });
  $('#practice-hint').onclick=()=>{
-  stopAudio();state.hints=Math.min(state.hints+1,q.hints.length);savePractice(q,{usedClue:true});
+  stopAudio();state.hints=Math.min(state.hints+1,q.hints.length);savePractice(q,{usedClue:true});if(typeof MathsAccount!=='undefined')MathsAccount.exercise(q,'clue_revealed',{index:state.hints-1});
   renderPractice(state.hints<q.hints.length?'practice-hint':'practice-method');
   announce('Clue '+state.hints+'. '+q.hints[state.hints-1]);
  };
@@ -62,15 +62,16 @@ function renderPractice(focusId) {
   $('#practice-notes').oninput=e=>savePractice(q,{notes:e.target.value});
   const reveal=(all=false)=>{
    stopAudio();state.steps=all?q.solution.length:Math.min(state.steps+1,q.solution.length);
-   savePractice(q,{viewedSolution:true});renderPractice(state.steps===q.solution.length?'practice-review-independent':'practice-next-step');
+   savePractice(q,{viewedSolution:true});if(typeof MathsAccount!=='undefined')MathsAccount.exercise(q,'solution_step_revealed',{index:state.steps-1});renderPractice(state.steps===q.solution.length?'practice-review-independent':'practice-next-step');
    announce(all?'Full worked solution revealed.':'Step '+state.steps+'. '+q.solution[state.steps-1]);
   };
   $('#practice-next-step').onclick=()=>reveal();$('#practice-all').onclick=()=>reveal(true);
   $('#practice-cover').onclick=()=>{stopAudio();state.hints=0;state.steps=0;renderPractice('practice-title');announce('Clues and solution covered. Your notes and review are retained.');};
-  document.querySelectorAll('[data-practice-review]').forEach(b=>b.onclick=()=>{savePractice(q,{review:b.dataset.practiceReview});renderPractice(b.id);announce(exerciseStatus(q)+'. Your self-assessment has been saved.');});
+  document.querySelectorAll('[data-practice-review]').forEach(b=>b.onclick=()=>{savePractice(q,{review:b.dataset.practiceReview});if(typeof MathsAccount!=='undefined')MathsAccount.exercise(q,'self_assessment_changed',{review:b.dataset.practiceReview});renderPractice(b.id);announce(exerciseStatus(q)+'. Your self-assessment has been saved.');});
  }
  $('#practice-previous').onclick=()=>movePractice(index-1);
  $('#practice-next').onclick=()=>index===qs.length-1?$('#mode-learn').click():movePractice(index+1);
+ $('#practice-new-attempt').onclick=()=>{state.hints=0;state.steps=0;if(typeof MathsAccount!=='undefined')MathsAccount.retry(q);renderPractice('practice-new-attempt')};
  bindBoxAudio();
  if(typeof focusId==='string')document.getElementById(focusId)?.focus({preventScroll:true});
 }

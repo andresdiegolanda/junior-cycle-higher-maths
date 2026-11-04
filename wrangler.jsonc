@@ -1,0 +1,28 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "junior-cycle-higher-maths",
+  "account_id": "cf55d6902d2f52c76ed5d15768434a61",
+  "main": "worker/index.mjs",
+  "compatibility_date": "2026-11-04",
+  "workers_dev": true,
+  "preview_urls": false,
+  "assets": {
+    "directory": "./site",
+    "binding": "ASSETS",
+    "run_worker_first": true
+  },
+  "vars": {
+    "APP_ORIGIN": "https://junior-cycle-higher-maths.andresdiegolanda.workers.dev",
+    "ACCESS_TEAM_URL": "https://young-wood-9dd6.cloudflareaccess.com",
+    "ACCESS_AUD": "bc5a03271acc9f13e0e153cf07b01e93c85bd6a9a78816b187d94b2d97a337f1"
+  },
+  "d1_databases": [{
+    "binding": "DB",
+    "database_name": "junior-maths-activity",
+    "database_id": "b83a391f-e80d-4749-ac31-7e44dfc2972d",
+    "migrations_dir": "migrations"
+  }],
+  "triggers": {"crons": ["15 3 * * *"]},
+  "observability": {"enabled": false}
+}
+

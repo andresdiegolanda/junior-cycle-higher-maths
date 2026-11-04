@@ -19,6 +19,6 @@ function renderLesson(old=null){
  $('#next-step').onclick=()=>{if(currentStep<l.steps.length-1)setStep(currentStep+1);else{$('#mode-practice').click();$('#lesson-main').scrollIntoView({block:'start',behavior:reducedMotion()?'instant':'smooth'})}};
  $('#play-lesson').onclick=playLesson;$('#lesson-stop').onclick=stopAudio;
  $('#follow-narration').onchange=e=>setFollowNarration(e.target.checked);bindSpeechButtons();bindBoxAudio();
- $('#mark-done').onclick=()=>{ls.done=!ls.done;save();$('#mark-done').textContent=ls.done?'✓ Marked confident':'I can explain this method';$('#mark-done').classList.toggle('primary',ls.done);$('.lesson-list').innerHTML=sidebarLinks();bindChapterControls()};
- updateAudio();updateChapterProgress();if($('#polynomial-lab'))renderPolynomialLab();
+ $('#mark-done').onclick=()=>{ls.done=!ls.done;save();if(typeof MathsAccount!=='undefined')MathsAccount.emit('confidence_changed',{confident:ls.done},{lessonId:l.id});$('#mark-done').textContent=ls.done?'✓ Marked confident':'I can explain this method';$('#mark-done').classList.toggle('primary',ls.done);$('.lesson-list').innerHTML=sidebarLinks();bindChapterControls()};
+ updateAudio();updateChapterProgress();if($('#polynomial-lab'))renderPolynomialLab();if(typeof MathsAccount!=='undefined')MathsAccount.viewed();
 }

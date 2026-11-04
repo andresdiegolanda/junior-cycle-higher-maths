@@ -27,7 +27,7 @@ follow the complete sequence. The current box is marked; diagrams advance after
 speech finishes. Pause retains your place. **Follow narration** controls scrolling.
 Topic practice mixes two quick checks and four written exercises, ordered by difficulty. Each written
 exercise has two progressive clues, staged working, an answer and a checking
-method. Notes, selected exercise and self-reviews are saved locally. Written
+method. In the hosted account version, progress and activity sync between devices; written notes stay local. Written
 reviews are self-assessments, not automatic marks.
 Use **Rule applied** beside a worked step to see its formula, reason and conditions.
 **Method reminder** opens the relevant method when a step needs broader guidance.
@@ -44,34 +44,73 @@ or open in the enlarged view; the printable sheets use the same approach.
 
 Browser voices vary by device. Local voices may work offline; online voices need
 a connection and may send narration text to their provider. No microphone,
-account, API key or recorded audio is required. Written explanations remain available.
-Progress stays in local browser storage where supported and does not sync between devices.
+API key or recorded audio is required for speech. Written explanations remain available.
+The hosted account version requires an invitation and login. Downloaded offline copies
+keep progress locally and cannot provide authenticated activity tracking.
 
 ## Repository layout
 
 - `site/` — complete prebuilt website, including the printable PDF.
 - `source/` — editable content, diagrams, interface, build scripts and checks.
 - `downloads/` — the complete ready-to-use guide ZIP.
-- `docs/` — verification notes and a preview.
+- `docs/` — implementation instructions, verification notes and a preview.
+- `worker/`, `migrations/` — authenticated API and Cloudflare D1 schema.
+- `dev/`, `tests/` — local-only account harness and automated account tests.
 
 Every distributed HTML file embeds its CSS, JavaScript, content and diagrams.
-There are no third-party script dependencies or application server requirements.
+Browser code has no external script dependencies. The hosted account version uses a
+Cloudflare Worker, D1 and Access. The downloadable copies still run locally.
 
-## Cloudflare Pages
+## Student accounts pilot
 
-Connect this repository to Cloudflare Pages with these settings:
+Account access is configured for the production pilot. See the validation record for live verification status.
+
+- Maximum ten accounts, including the administrator and reserved invitations.
+- Administrator: `andresdiegolanda@gmail.com`; students only see their own records.
+- Cloudflare Access email PIN login; server-side JWT and invitation validation.
+- Lesson visits, steps, attempts, answers, clues, revealed solutions, self-reviews
+  and estimated active time. Written notes are never uploaded.
+- Progress sync, an activity dashboard, data exports and administrator controls.
+- Six calendar months of activity/progress, with a daily cleanup schedule.
+- Invitations reserve a place for 30 days. For this small pilot, add the email to
+  the Access policy and send the prepared message from your email app. Automatic
+  invitation delivery is not configured; Cloudflare sends the login PIN itself.
+
+See [the implementation and activation guide](docs/USER-ACTIVITY-IMPLEMENTATION.md).
+The EU database is initialized and Access protects all Worker traffic using the
+invited-accounts policy. The production configuration includes the real application AUD.
+
+## Cloudflare Workers deployment
+
+The account version must deploy the Worker in `wrangler.jsonc`, with `site/` as
+its protected assets binding. Static-only Pages publishing cannot enforce this login.
 
 | Setting | Value |
 | --- | --- |
 | Production branch | `main` |
-| Framework preset | None |
-| Build command | `exit 0` |
-| Build output directory | `site` |
+| Build command | `npm ci && npm run build && npm run test:accounts` |
+| Deploy command | `npm run deploy` |
 | Root directory | Repository root |
+| Preview builds | Off for the initial pilot |
 
-The checked-in site is already built. Publish `site/`, keeping the source and
-download archive outside the deployed site root. These settings follow
-[Cloudflare's static HTML instructions](https://developers.cloudflare.com/pages/framework-guides/deploy-anything/).
+`npm run deploy` refuses to publish while `ACCESS_AUD` is unconfigured. Activation
+must pair the real Access application AUD, the D1 binding and the Worker release.
+Do not use the previous `--assets site` static-only deployment as a substitute.
+
+## Test accounts locally
+
+Requires Node 24+ and Python 3. Install with `npm ci`, then:
+
+```sh
+npm run build
+npm run test:accounts
+npm run dev
+```
+
+Open `http://127.0.0.1:8787/dev/login`. It offers the administrator and two synthetic
+student identities. It binds to localhost only, sends no email and stores test data
+under the ignored `dev/.local-state/`. None of its login code is imported by the
+production Worker. The original static preview on port 8767 also remains available.
 
 ## Edit and rebuild
 

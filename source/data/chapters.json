@@ -3337,7 +3337,7 @@
               "Primary",
               "Secondary",
               "Always biased",
-              "Not data"
+              "Primary, because you are the one analysing it"
             ],
             "answer": 1,
             "hint": "You did not collect the original observations.",
@@ -3410,10 +3410,10 @@
           {
             "question": "Why might 5,000 votes on a fan-page poll still be misleading?",
             "options": [
-              "Large samples are always bad",
+              "Only 5,000 votes is too small a sample",
               "Respondents may be self-selected fans",
-              "Percentages cannot be calculated",
-              "All polls are random"
+              "Online votes cannot be turned into percentages",
+              "The poll should have been repeated on another day"
             ],
             "answer": 1,
             "hint": "A large number does not repair who was selected.",
@@ -4633,11 +4633,11 @@
         ],
         "quiz": [
           {
-            "question": "Which average is usually less affected by one extreme numerical value?",
+            "question": "Which summary is usually least affected by one extreme numerical value?",
             "options": [
               "Mean",
               "Median",
-              "Total",
+              "Range",
               "Maximum"
             ],
             "answer": 1,
@@ -4778,7 +4778,7 @@
               "Their total scores",
               "Their score ranges",
               "Their highest scores only",
-              "The order in which they played"
+              "The number of games each played"
             ],
             "answer": 1,
             "hint": "Consistency concerns variation.",
@@ -5371,7 +5371,7 @@
               "AAA",
               "RHS",
               "SSA in all triangles",
-              "No test"
+              "ASA, because the right angle counts as an angle"
             ],
             "answer": 1,
             "hint": "The right angle is already known.",
@@ -5484,10 +5484,10 @@
           {
             "question": "What is a converse?",
             "options": [
-              "A diagram drawn backwards",
+              "The statement with “not” added to its conclusion",
               "The statement with condition and conclusion swapped",
               "An unproved example",
-              "A numerical estimate"
+              "A theorem that has already been proved"
             ],
             "answer": 1,
             "hint": "Think “if P then Q” changed to “if Q then P”.",
@@ -5497,9 +5497,9 @@
             "question": "Which is a valid proof reason?",
             "options": [
               "The angle looks equal",
-              "My ruler suggests it",
+              "The protractor reads 40° on the sketch",
               "Vertically opposite angles are equal",
-              "The answer seems neat"
+              "It worked in the previous question"
             ],
             "answer": 2,
             "hint": "Use an established geometric fact.",
@@ -5560,10 +5560,10 @@
           {
             "question": "Which fact starts a proof that vertically opposite angles are equal?",
             "options": [
-              "All angles are right angles",
+              "Opposite angles are equal by definition",
               "Straight-line angles total 180°",
-              "All intersecting lines are parallel",
-              "A triangle has equal sides"
+              "The two angles look the same size",
+              "Adjacent angles at the crossing are equal"
             ],
             "answer": 1,
             "hint": "The proof compares two adjacent pairs.",
@@ -5754,7 +5754,7 @@
             "options": [
               "Yes, always",
               "No; bisection does not imply equal total lengths",
-              "Only when drawn horizontally",
+              "Yes, because the diagonals bisect each other",
               "Yes, because its opposite sides are parallel"
             ],
             "answer": 1,
@@ -5816,7 +5816,7 @@
           {
             "question": "Why must corresponding sides be matched in the same order?",
             "options": [
-              "The letters must be alphabetic",
+              "The larger triangle must always be on top of the ratio",
               "Every ratio must compare matching sides in the same direction",
               "All sides are equal",
               "Ratios only work for right-angled triangles"

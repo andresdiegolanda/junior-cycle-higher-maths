@@ -3,14 +3,27 @@ const E=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt
 const $=s=>document.querySelector(s);
 const storeKey='junior-cycle-higher-maths-v1';
 let progress={lessons:{},answers:{},last:null};
-try{let saved=JSON.parse(localStorage.getItem(storeKey)||'null');if(!saved){const legacy=Object.keys(localStorage).find(k=>k!==storeKey&&/-maths-.*-v1$/.test(k));if(legacy){const candidate=JSON.parse(localStorage.getItem(legacy)||'null');if(candidate?.lessons&&candidate?.answers){saved=candidate;localStorage.setItem(storeKey,JSON.stringify(saved))}}}if(saved&&saved.lessons&&saved.answers)progress=saved}catch(e){}
+/* Saved progress is untrusted input: a damaged or hand-edited record must never stop the guide from opening. */
+function cleanProgress(saved){
+ const record=x=>x&&typeof x==='object'&&!Array.isArray(x)?x:null;
+ const base=record(saved);if(!base||!record(base.lessons)||!record(base.answers))return null;
+ const out={lessons:{},answers:{},last:null};
+ for(const [id,state] of Object.entries(base.lessons)){const s=record(state);if(!s)continue;out.lessons[id]={seen:Array.isArray(s.seen)?s.seen.filter(Number.isInteger):[],done:s.done===true}}
+ for(const [id,answer] of Object.entries(base.answers))if(Number.isInteger(answer))out.answers[id]=answer;
+ const last=record(base.last);if(last&&Number.isInteger(last.chapter))out.last={chapter:last.chapter,lesson:typeof last.lesson==='string'?last.lesson:null};
+ for(const key of ['challenges','practice'])if(record(base[key])){out[key]={};for(const [id,v] of Object.entries(base[key]))if(record(v))out[key][id]=v}
+ if(record(base.practicePosition)){out.practicePosition={};for(const [id,v] of Object.entries(base.practicePosition))if(Number.isInteger(v))out.practicePosition[id]=v}
+ return out;
+}
+try{let saved=cleanProgress(JSON.parse(localStorage.getItem(storeKey)||'null'));if(!saved){const legacy=Object.keys(localStorage).find(k=>k!==storeKey&&/-maths-.*-v1$/.test(k));if(legacy){saved=cleanProgress(JSON.parse(localStorage.getItem(legacy)||'null'));if(saved)localStorage.setItem(storeKey,JSON.stringify(saved))}}if(saved)progress=saved}catch(e){}
 let currentChapter=null,currentLesson=null,currentStep=0,currentMode='learn',filter='All',search='',autoLesson=false,autoTimer=null,clipContext=null,rate=1;
 const player=new BrowserNarrator();rate=player.playbackRate;
 const reducedMotion=()=>window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 const groups={1:'Algebra',2:'Algebra',3:'Number',4:'Number',5:'Data & chance',6:'Shape & space',7:'Data & chance',8:'Shape & space',9:'Data & chance',10:'Algebra',11:'Graphs',12:'Number',13:'Data & chance',14:'Number',15:'Algebra',16:'Shape & space',17:'Shape & space',18:'Algebra',19:'Graphs',20:'Graphs',21:'Algebra',22:'Shape & space',23:'Graphs',24:'Shape & space'};
-const groupColours={'Algebra':['#087f75','#e8f5f1'],'Number':['#b96a12','#fff3dd'],'Data & chance':['#7650a0','#f1edf8'],'Shape & space':['#3175ba','#edf4fc'],'Graphs':['#087f75','#e8f5f1']};
+/* Badge text sits on its pale tint; each accent gives at least 5:1 there (WCAG AA for 13px text). */
+const groupColours={'Algebra':['#06695f','#e8f5f1'],'Number':['#8f5008','#fff3dd'],'Data & chance':['#7650a0','#f1edf8'],'Shape & space':['#245b89','#edf4fc'],'Graphs':['#06695f','#e8f5f1']};
 function save(){try{localStorage.setItem(storeKey,JSON.stringify(progress))}catch(e){}}
-function lessonState(l){return progress.lessons[l.id]||(progress.lessons[l.id]={seen:[],done:false})}
+function lessonState(l){const s=progress.lessons[l.id];if(s&&Array.isArray(s.seen))return s;return progress.lessons[l.id]={seen:[],done:s?.done===true}}
 function announce(s){$('#status-live').textContent=s}
 function goChapter(id,lesson){location.hash='chapter='+id+(lesson?'&lesson='+encodeURIComponent(lesson):'')}
 function homeLink(){return DATA.standalone?'index.html#home':'#home'}

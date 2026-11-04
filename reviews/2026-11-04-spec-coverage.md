@@ -173,7 +173,7 @@ notation on pages 15 to 20 and Appendix B.
 - Statistics: "mid-interval value" for grouped means (07-04) is the SEC wording.
   UNVERIFIED against a marking scheme.
 - Narration: the build-time narration reads every one of these notations in words
-  (test-spoken.py, 62 cases), including the general form, segment brackets,
+  (test-spoken.py, 92 cases), including the general form, segment brackets,
   set sizes and ↦.
 
 ## Missing or partly covered outcomes, ranked by exam importance

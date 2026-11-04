@@ -77,6 +77,7 @@ function setStep(n,continueAudio=false){
  const old=sceneSnapshot(),focusId=document.activeElement?.id;
  if(!continueAudio)stopAudio();
  currentStep=n;renderLesson(old);
+ if(typeof refreshOpenDiagram==='function')refreshOpenDiagram();
  if(!continueAudio&&focusId&&document.getElementById(focusId))document.getElementById(focusId).focus({preventScroll:true});
  if(!continueAudio)announce('Step '+(n+1)+': '+currentLesson.steps[n].title);
 }

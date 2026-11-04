@@ -5618,7 +5618,7 @@
               "140°"
             ],
             "answer": 1,
-            "hint": "The two base angles share the remaining 140 degrees.",
+            "hint": "Subtract the vertex angle from 180 degrees, then share what is left equally between the two base angles.",
             "explanation": "(180 − 40)/2 = 70 degrees."
           },
           {

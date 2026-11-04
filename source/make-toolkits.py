@@ -40,7 +40,12 @@ def para(s,size=12,bold=False,color=INK):
     return Paragraph(clean(s),ParagraphStyle('card',fontName='DeskBold' if usebold else 'Desk',fontSize=size,leading=size*1.4,textColor=color,spaceAfter=0,splitLongWords=False))
 def layout_card(v,width,height):
     inner=width-24
+    # A bold title is wider than the regular face. When a title would wrap onto a
+    # second line only because of the bold metrics, set it one size smaller rather
+    # than letting the font file present on the build machine change the pagination.
     title=para(v['task'],15.5,True)
+    if title.wrap(inner,999)[1]>para(v['task'],15.5,False).wrap(inner,999)[1]:
+        title=para(v['task'],14.5,True)
     lines=[]
     for row in v['formulaRows']:
         p=para(row['text'],15.5 if row['kind']=='equation' else 13,False,INK)

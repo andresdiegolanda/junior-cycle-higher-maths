@@ -5,10 +5,30 @@ from urllib.parse import quote
 from spoken import spoken
 from toolkit_typography import reference_rows, readable_diagram
 from diagram_marks import prepare_grid, prepare_marks
+from practice_bank import load_practice
 ROOT=Path(__file__).resolve().parent
 OUT=ROOT.parent/'site'
 OUT.mkdir(parents=True,exist_ok=True)
 chapters=json.loads((ROOT/'data/chapters.json').read_text(encoding='utf-8'))
+practice=load_practice()
+practice_order=json.loads((ROOT/'data/practice-order.json').read_text(encoding='utf-8'))
+assert set(practice)=={l['id'] for c in chapters for l in c['lessons']}, 'Practice must cover every lesson exactly'
+assert set(practice_order)<=set(practice), 'Unknown practice ordering key'
+for c in chapters:
+    for l in c['lessons']:
+        checks=[dict(q,id=f'{l["id"]}-q{i}',type='choice',difficulty=i+1,
+                     hints=[q['hint']],speechHints=[q['speechHint']]) for i,q in enumerate(l['quiz'])]
+        written=[]
+        for q in practice[l['id']]:
+            written.append(dict(q,type='written',speechQuestion=spoken(q['question']),
+                speechHints=[spoken(h) for h in q['hints']],
+                speechSolution=[spoken(s) for s in q['solution']],
+                speechResult=spoken('Answer. '+q['answer']+'. Check it. '+q['check'])))
+        candidates=dict(zip('abcdef',checks+written))
+        order=practice_order.get(l['id'],'abcdef').replace(' ','')
+        assert sorted(order)==list('abcdef'), (l['id'],order)
+        l['exercises']=[dict(candidates[key],difficulty=i+1) for i,key in enumerate(order)]
+        assert len(l['exercises'])==6, l['id']
 visuals={}
 for file in sorted((ROOT/'data').glob('visual-cards-*.json')):
     for card in json.loads(file.read_text(encoding='utf-8')):
@@ -57,8 +77,10 @@ for c in chapters:
     search.append({'id':c['id'],'title':c['title'],'items':items})
 stats={'chapters':len(chapters),'lessons':sum(len(c['lessons']) for c in chapters),'steps':sum(len(l['steps']) for c in chapters for l in c['lessons']),'skillChecks':sum(len(l['quiz']) for c in chapters for l in c['lessons']),'toolkitMethods':sum(len(c['toolkit']['methods']) for c in chapters),'writtenChallenges':sum(len(c['challenges']) for c in chapters),'glossaryTerms':len(glossary),'glossaryDiagrams':sum(bool(g['svg']) for g in glossary),'narration':'Browser speech'}
 stats['visualCards']=len(visuals)
-css='\n'.join((ROOT/f).read_text(encoding='utf-8') for f in ['guide.css','enhancements.css','display.css','visual-learning.css'])
-js='\n'.join((ROOT/f).read_text(encoding='utf-8') for f in ['speech.js','guide.js','reading.js','lesson-view.js','enhancements.js','toolkit-view.js','discovery.js','diagram-marks.js'])
+stats['lessonExercises']=sum(len(l['exercises']) for c in chapters for l in c['lessons'])
+stats['writtenLessonExercises']=sum(len(practice[l['id']]) for c in chapters for l in c['lessons'])
+css='\n'.join((ROOT/f).read_text(encoding='utf-8') for f in ['guide.css','enhancements.css','display.css','visual-learning.css','practice.css'])
+js='\n'.join((ROOT/f).read_text(encoding='utf-8') for f in ['speech.js','guide.js','reading.js','lesson-view.js','practice.js','enhancements.js','toolkit-view.js','discovery.js','diagram-marks.js'])
 favicon='data:image/svg+xml,'+quote('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="#173349"/><rect x="2" y="2" width="60" height="60" rx="14" fill="none" stroke="#6bb5ab" stroke-width="2"/><text x="32" y="45" text-anchor="middle" font-family="Georgia,serif" font-size="52" font-weight="700" fill="#85dfcc">x</text></svg>',safe='')
 def page(items,initial=0,standalone=False):
     data={'chapters':items,'initialChapter':initial,'standalone':standalone,'stats':stats,'glossary':glossary,'searchIndex':search,'labNarration':labs}
@@ -95,6 +117,12 @@ Open a card's working for the full method and example. Enlarge any card's diagra
 to inspect its labels. The A3 PDF covers all 24 chapters; each chapter links to
 its own page range. Equations and instructions appear on separate readable lines.
 Exam practice: original written problems with hints and staged worked solutions.
+Topic practice: six exercises for every lesson, from easier to harder, combining
+two quick checks and four written tasks. Reveal clues and worked steps only when
+needed, listen to any question or explanation, and record your own assessment.
+There are 948 topic exercises plus the separate 96 chapter challenges.
+Written reviews are self-reports, not automatically marked answers. Notes and
+question position are saved locally; covering a solution retains these records.
 
 Progress, working notes and preferences stay in this browser where storage is
 available. They do not sync between devices or different site addresses.

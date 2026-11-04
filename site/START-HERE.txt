@@ -22,6 +22,12 @@ Open a card's working for the full method and example. Enlarge any card's diagra
 to inspect its labels. The A3 PDF covers all 24 chapters; each chapter links to
 its own page range. Equations and instructions appear on separate readable lines.
 Exam practice: original written problems with hints and staged worked solutions.
+Topic practice: six exercises for every lesson, from easier to harder, combining
+two quick checks and four written tasks. Reveal clues and worked steps only when
+needed, listen to any question or explanation, and record your own assessment.
+There are 948 topic exercises plus the separate 96 chapter challenges.
+Written reviews are self-reports, not automatically marked answers. Notes and
+question position are saved locally; covering a solution retains these records.
 
 Progress, working notes and preferences stay in this browser where storage is
 available. They do not sync between devices or different site addresses.

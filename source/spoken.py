@@ -1,6 +1,7 @@
 import re
 
 def spoken(t):
+    t=t.replace('∖',' set difference ')
     for symbol,name in [('α',' alpha '),('β',' beta '),('γ',' gamma '),('△',' triangle '),('≅',' is congruent to '),('↔',' corresponds to '),('↦',' maps to '),('⊂',' is a subset of '),('⊆',' is a subset of or equal to '),('∠',' angle '),('∝',' is proportional to '),('½',' one half '),('′',' prime ')]:
         t=t.replace(symbol,name)
     for short,long in [('sin','sine'),('cos','cosine'),('tan','tangent')]:

@@ -91,3 +91,43 @@ Diagram-mark review — 21 October 2026
 - Structural checks, typography preservation, speech, guided reading, search
   and complete distribution validation passed after the changes.
 
+Topic-practice expansion — 4 November 2026
+- Every one of the 158 topics now has six exercises, ordered from easier to
+  harder: 948 in total. The 316 existing checks retain their original questions,
+  options, answers and stable storage keys. Added 632 original written problems.
+  The separate 96 chapter challenges and 222 visual toolkit cards remain available.
+- New problems have two progressive clues, staged working, a final answer and a
+  checking method. Question, clues, steps and result all have browser narration.
+  The six-item navigator shows current position and each question's review state.
+  Notes, question position and self-assessment persist in local browser storage.
+  Written reviews are explicitly self-assessments, not automatically scored work,
+  and do not mark the lesson confident. Answers remain covered until requested.
+- Editorial progression includes sign handling, domain exclusions, reverse
+  percentages, changing rates, weighted summaries, probability paths, multi-step
+  geometry, function equations, proofs and construction conditions. Replaced
+  repeated starter examples and reordered existing checks where their conceptual
+  or algebraic demands were higher than the new written starters.
+- Calibration used the saved representative chapter-demand review dated
+  21 October. A fresh live-reader check was blocked by a browser certificate
+  error. This update is not a new page-by-page exercise audit or classroom trial.
+- test-practice.py checks all topics, question IDs, ordering, uniqueness, legacy
+  content preservation, clues and narration coverage. It independently verifies
+  99 symbolic/numerical answers, plus domain restrictions and threshold cases.
+  These targeted mathematical checks complement editorial review; they do not
+  mechanically prove every prose or construction answer.
+- test-practice.cjs renders and exercises all 948 questions in a controlled DOM
+  harness: hidden answers, clue limits, full reveal, covering, navigation, saved
+  notes, self-review, legacy answers, focus retention and HTML escaping.
+- Browser verification covered wrong/correct choices, clues surviving re-render,
+  staged solutions, persistent notes and review after reload, keeping the working
+  panel open, narration controls, and an individual chapter's construction tasks.
+  Classic, high-contrast (390 px) and projector (1440 px) views were inspected.
+  No horizontal overflow or browser console errors were observed in those checks.
+  Viewport overrides and the Classic display setting were restored afterwards.
+- Speech, guided reading, search, toolkit typography, anchored diagram marks,
+  distribution links/references and the unchanged 60-page PDF passed their checks.
+  Rebuilt all 25 self-contained HTML files and the complete distribution ZIP.
+- Limits: no physical phone, cross-browser certification, full audible reading
+  audit, student pilot or new live-reader comparison. Diagram/PDF content did not
+  change. The preview is docs/topic-practice-preview.jpg.
+

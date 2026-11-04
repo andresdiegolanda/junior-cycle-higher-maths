@@ -32,6 +32,9 @@ for c in cs:
         svg=ET.fromstring(v['svg']);assert svg.attrib['viewBox']=='0 0 480 180'
         assert all(float(t.attrib.get('font-size',20))>=20 for t in svg.iter() if t.tag.endswith('text'))
     for l in c['lessons']:
+        assert len(l['exercises'])==6
+        assert [q['difficulty'] for q in l['exercises']]==list(range(1,7))
+        assert len({q['id'] for q in l['exercises']})==6
         assert all(l['boxSpeech'].get(k) for k in ['goal','takeaway','mistake'])
         assert all(all(s['boxSpeech'].get(k) for k in ['diagram','explanation','why']) for s in l['steps'])
 assert sum(len(c['toolkit']['methods']) for c in cs)==222
@@ -62,4 +65,5 @@ for p in OUT.rglob('*'):
         Links().feed(text)
 assert len([p for p in OUT.glob('*.html') if not p.name.startswith('_')])==25
 report={'chapters':len(cs),'visualReferenceCards':222,'glossaryTerms':len(gs),'glossaryDiagrams':sum(bool(g['svg']) for g in gs),'narratedItems':spoken,'validatedSVGs':svgs,'htmlFiles':25,'pdfPages':pdf_pages,'recordedAudioFiles':0,'forbiddenReferences':0}
+report['lessonExercises']=sum(len(l['exercises']) for c in cs for l in c['lessons'])
 (ROOT/'validation-report.json').write_text(json.dumps(report,indent=2),encoding='utf-8');print(json.dumps(report,indent=2))

@@ -11,13 +11,17 @@ Download and extract [the complete guide ZIP](downloads/Junior-Cycle-Higher-Math
 then open `Junior-Cycle-Higher-Maths/index.html` in a browser. The 24 chapter
 HTML files can also be opened individually. Keep the `toolkits` folder beside them.
 
-The guide contains 158 lessons, 646 teaching steps, 316 skill checks, 96 written
-problems, 222 visual reference cards and a glossary of 140 terms. The printable
+The guide contains 158 lessons, 646 teaching steps, 948 graded topic exercises (six per lesson), 96 chapter
+challenges, 222 visual reference cards and a glossary of 140 terms. The printable
 PDF has 60 A3 landscape sheets across the 24 chapters, with extra room for dense cards.
 
 Use a box's **Listen** button for its explanation, or **Play whole lesson** to
 follow the complete sequence. The current box is marked; diagrams advance after
 speech finishes. Pause retains your place. **Follow narration** controls scrolling.
+Topic practice mixes two quick checks and four written exercises, ordered by difficulty. Each written
+exercise has two progressive clues, staged working, an answer and a checking
+method. Notes, selected exercise and self-reviews are saved locally. Written
+reviews are self-assessments, not automatic marks.
 Full workings are expandable below each visual reference card.
 Equations and instructions have separate, clearly spaced lines. Use **Enlarge
 diagram** for a closer look at any card's illustration.
@@ -65,7 +69,7 @@ python source/build.py
 ```
 
 Content lives in `source/data/chapters.json`, `source/data/visual-cards-*.json`,
-`source/data/glossary.json` and `source/data/lab-narration.json`. Interface and
+`source/data/glossary.json`, `source/data/practice-*.txt` and `source/data/lab-narration.json`. Interface and
 speech files live directly in `source/`.
 
 The supplied PDF only needs rebuilding when its content or layout changes.
@@ -90,12 +94,15 @@ Open `http://127.0.0.1:8767/`.
 ## Verify and package
 
 Node.js runs the browser-controller checks. Python validation uses `pypdf`,
-included in the print requirements above.
+and the independent algebra checks use `sympy`. Install test dependencies with
+`python -m pip install -r source/requirements-test.txt`.
 
 ```sh
 node source/test-speech.cjs
 node source/test-guided-reading.cjs
 node source/test-search.cjs
+node source/test-practice.cjs
+python source/test-practice.py
 python source/test-toolkit-typography.py
 python source/test-diagram-marks.py
 python source/validate.py
@@ -104,3 +111,10 @@ python source/package.py
 
 Packaging updates `downloads/Junior-Cycle-Higher-Maths.zip`. See
 [the review notes](docs/QA-SUMMARY.txt) for verification scope and limits.
+
+Written practice is authored in `source/data/practice-*.txt`. Each `@lesson-id`
+block has four rows with six fields separated by `|`: question, first clue,
+second clue, worked steps (separated by `~`), answer and checking method.
+`source/data/practice-order.json` sets the progression: `a,b` are the original
+two checks and `c,d,e,f` the four written tasks. IDs stay stable when reordered.
+Every lesson must have exactly six questions; the build fails on missing coverage.

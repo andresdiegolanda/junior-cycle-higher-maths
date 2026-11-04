@@ -225,3 +225,59 @@ Exam guidance and narration corrections — 4 November 2026
   were rebuilt and the distribution ZIP refreshed. The printable PDF content
   and layout were unaffected. This was a targeted correction, not a new full
   curriculum review or an audible cross-device voice audit.
+
+Independent review, 4 November 2026
+Scope: four parallel reviews of chapters 1 to 8, 9 to 16 and 17 to 24 (lessons,
+skill checks, toolkit methods, challenges, visual cards and practice rows) and of
+the interface, narration, toolkit PDF, glossary and specification coverage, all
+starting from the two corrections above. Every number in scope was recomputed
+symbolically and every graph, construction and trigonometry diagram was checked
+against its text. No arithmetic error was found. Curriculum judgements were checked
+against the NCCA specification PDF (learning outcomes with Higher Level material in
+bold, and Appendix B). Detailed findings are in reviews/.
+- Specification: 23-04 now teaches reading f(x) < g(x) from intersecting graphs
+  (AF.7(c)) with a skill check, a method and a card; 24-13 covers construction 14
+  (right-angled triangle from a side and an acute angle); the chapter 8 proof
+  route for Theorem 13 follows the official sequence; chapter 16 names Corollaries
+  3, 4 and 5 and states Theorem 11; chapter 11 gives the general form
+  ax + by + c = 0; 01-09 shows an integer solution set (AF.4(d)); 06-05 names the
+  net of a triangular prism; practice 16-03-w4 no longer relies on a senior-cycle
+  theorem.
+- Diagrams: three chapter 6 and 8 diagrams redrawn to scale; 10-02 plots the
+  points its text names; card 11/6 intercept labels sit beside the intercepts;
+  toolkit method 23/1 uses the same example as its card.
+- Skill checks: 42 throwaway distractors replaced with answers that reflect real
+  misconceptions.
+- Narration: compound rates (L/min, cm/s, cm³/s), bare litre units, grouped
+  powers such as 16^(1/2), n(A) and #A, segments [AB], |a|, A′ as a complement in
+  set work, arrows between words, units after π and brackets, multi-letter
+  monomials, euro amounts followed by a comma, singular units after 1 and surd
+  side ratios such as 1:√3:2 are spoken correctly; h as a variable stays algebra.
+  Text that misled the narration (underscore subscripts, square brackets,
+  frequency lists written as ratios) was reworded. test-spoken.py covers 93 cases.
+- Interface: a damaged saved-progress record no longer blanks a chapter
+  (test-progress.cjs); dark-mode and high-contrast rendering corrected; Escape
+  closes the search and glossary dialogs when the field has text; the enlarged
+  diagram and transcript stay in step during whole-lesson playback; step buttons
+  keep keyboard focus.
+- Glossary: descriptive diagram labels, two diagram layouts and clearer wording.
+- Toolkit PDF: a title that wraps only because of the bold font metrics is set one
+  size smaller, so chapters 4 and 16 no longer end on a sheet holding a single
+  card. The PDF has 60 sheets.
+- Verification passed: build, speech, guided reading, search, saved progress,
+  practice UI for 948 exercises, 99 independent answer checks, 93 spoken-form
+  cases, 44 checks against the generated pages, typography, diagram marks,
+  toolkit PDF fit and distribution validation. Changed lessons were rendered at
+  390 px and 1440 px with no clipped labels or horizontal overflow.
+
+Limits and recommendations
+The SEC Formulae and Tables booklet and exam archive could not be fetched, so
+claims about the booklet remain unverified. No audible reading audit or student
+pilot was done. Specification areas still taught only partly or not at all:
+prime factorisation, HCF and LCM of numbers (N.1(d)); conversion between
+fractions, decimals and percentages (N.2(a)); value for money (N.2(c)); absolute
+and relative comparison (N.3(a)); commutativity and associativity of set
+operations (N.5(e)); drawing nets of prisms and cylinders (GT.2(b)); axes of
+symmetry (GT.6(b)); axioms 1 to 5 listed by name; trial and improvement as a
+named strategy. Unequal-width histograms in 13-03 go beyond SP.3(d) and are best
+marked as extension material.

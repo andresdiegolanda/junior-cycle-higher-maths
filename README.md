@@ -13,7 +13,7 @@ HTML files can also be opened individually. Keep the `toolkits` folder beside th
 
 The guide contains 158 lessons, 646 teaching steps, 948 graded topic exercises (six per lesson), 96 chapter
 challenges, 222 visual reference cards and a glossary of 140 terms. The printable
-PDF has 62 A3 landscape sheets across the 24 chapters, with extra room for dense cards.
+PDF has 60 A3 landscape sheets across the 24 chapters, with extra room for dense cards.
 
 Use a box's **Listen** button for its explanation, or **Play whole lesson** to
 follow the complete sequence. The current box is marked; diagrams advance after
@@ -111,6 +111,7 @@ node source/test-speech.cjs
 node source/test-guided-reading.cjs
 node source/test-search.cjs
 node source/test-practice.cjs
+node source/test-progress.cjs
 python source/test-spoken.py
 python source/test-narration-content.py
 python source/test-practice.py
@@ -122,7 +123,9 @@ python source/package.py
 
 Packaging updates `downloads/Junior-Cycle-Higher-Maths.zip`. See
 [the review notes](docs/QA-SUMMARY.txt) for verification scope and limits, including
-the November 2026 chapter-by-chapter content review.
+the November 2026 chapter-by-chapter content review. Detailed findings of the
+independent review of 4 November 2026, with the specification coverage map, are in
+`reviews/`.
 
 Written practice is authored in `source/data/practice-*.txt`. Each `@lesson-id`
 block has four rows with six fields separated by `|`: question, first clue,

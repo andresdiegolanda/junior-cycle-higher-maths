@@ -12061,7 +12061,7 @@
             "title": "Use the sphere formulas",
             "text": "For volume, cube the radius; for area, square it. With r = 3 both come to 36π, so only the units — cm³ for volume, cm² for area — tell the two answers apart.",
             "why": "Volume is measured in cubic units; surface area in square units.",
-            "math": "V = 4π(3³)/3 = 36π; A = 4π(3²) = 36π",
+            "math": "V = 4π(3³)/3 = 36π cm³; A = 4π(3²) = 36π cm²",
             "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 400\" role=\"img\"><rect x=\"0\" y=\"0\" width=\"760\" height=\"400\" rx=\"0\" fill=\"#ffffff\" stroke=\"#ffffff\" stroke-width=\"2\"/><circle id=\"sphere\" cx=\"250\" cy=\"200\" r=\"125\" fill=\"#edf4fc\" stroke=\"#3175ba\" stroke-width=\"2\"/><ellipse id=\"equator\" cx=\"250\" cy=\"200\" rx=\"125\" ry=\"30\" fill=\"none\" stroke=\"#3175ba\" stroke-width=\"2\" stroke-dasharray=\"6 5\"/><line id=\"radius\" x1=\"250\" y1=\"200\" x2=\"375\" y2=\"200\" stroke=\"#087f75\" stroke-width=\"3\"/><text x=\"308\" y=\"185\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"23\" fill=\"#087f75\">r = 3</text><text x=\"560\" y=\"120\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"26\" fill=\"#3175ba\">Sphere</text><text x=\"560\" y=\"161\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"27\" fill=\"#3175ba\">V = 4πr³/3</text><text x=\"560\" y=\"202\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"27\" fill=\"#3175ba\">A = 4πr²</text></svg>"
           },
           {
@@ -12145,7 +12145,7 @@
         ],
         "quiz": [
           {
-            "question": "A 150 L tank receives water at 5 L/min from empty. Filling time?",
+            "question": "A 150 L tank receives water at 5 L/min from empty. How long does it take to fill?",
             "options": [
               "15 min",
               "25 min",
@@ -12288,7 +12288,7 @@
             "Subtract occupied volume without rounding either part early.",
             "Convert to litres if needed, then distinguish approximation from the number of complete litres."
           ],
-          "example": "A 2200 cm³ box holding a 600π cm³ solid has empty space 2200 − 600π ≈ 315.0 cm³.",
+          "example": "A 2200 cm³ box holding a 600π cm³ solid has empty space 2200 − 600π ≈ 315.0 cm³, correct to one decimal place.",
           "check": "Occupied plus empty volume must recover the container volume.",
           "trap": "Rounding 3.9 litres up to four complete litres.",
           "lessonId": "17-03"
@@ -12480,7 +12480,7 @@
           },
           {
             "title": "Find spare capacity",
-            "math": "Vspare = π(3²)(15−12) = 27π cm³ = 0.027π L",
+            "math": "Vspare = π(3²)(15−12) = 27π cm³ = 0.027π L ≈ 0.0848 L",
             "reason": "The remaining 3 cm of jar height has the same circular cross-section."
           },
           {
@@ -12611,11 +12611,11 @@
               "A",
               "B",
               "C",
-              "Cannot tell"
+              "A, because 20 ÷ 3 rounds to 7"
             ],
             "answer": 1,
             "hint": "Divide 20 by 3 and inspect the remainder.",
-            "explanation": "20 = 6 × 3 + 2, so item 20 is the second cycle item, B."
+            "explanation": "20 = 6 × 3 + 2, so item 20 is the second cycle item, B. Rounding 20 ÷ 3 to 7 throws away the remainder, and the remainder is what tells you the item."
           },
           {
             "question": "Red, blue, green, yellow repeats. Item 32 is…",
@@ -12675,11 +12675,11 @@
               "2, 4, 8, 16",
               "1, 4, 9, 16",
               "12, 9, 6, 3",
-              "3, 3, 6, 9"
+              "16, 8, 4, 2"
             ],
             "answer": 2,
             "hint": "Subtract neighbouring terms.",
-            "explanation": "12, 9, 6, 3 has difference −3 throughout. The others fail: 2, 4, 8, 16 doubles, 1, 4, 9, 16 has gaps 3, 5, 7 and 3, 3, 6, 9 has gaps 0, 3, 3."
+            "explanation": "12, 9, 6, 3 has difference −3 throughout. The others fail: 2, 4, 8, 16 doubles, 1, 4, 9, 16 has gaps 3, 5, 7 and 16, 8, 4, 2 halves each time, with gaps −8, −4, −2."
           },
           {
             "question": "For 7, 12, 17, 22, the common difference is…",
@@ -12930,7 +12930,7 @@
             "options": [
               "Only a smooth filled region",
               "Separate plotted points",
-              "A pie chart",
+              "Points joined by a smooth curve",
               "A vertical line"
             ],
             "answer": 1,
@@ -13422,21 +13422,21 @@
             "text": "Squaring negative two gives four; squaring zero gives zero. Each input must have one arrow leaving it.",
             "why": "A function assigns exactly one output to each allowed input.",
             "math": "−2 ↦ 4; 0 ↦ 0",
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 400\" role=\"img\"><rect x=\"0\" y=\"0\" width=\"760\" height=\"400\" rx=\"0\" fill=\"#ffffff\" stroke=\"#ffffff\" stroke-width=\"2\"/><text x=\"180\" y=\"55\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"26\" fill=\"#3175ba\">Domain</text><text x=\"580\" y=\"55\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"26\" fill=\"#087f75\">Codomain</text><circle id=\"in-0\" cx=\"180\" cy=\"120\" r=\"28\" fill=\"#edf4fc\" stroke=\"#3175ba\" stroke-width=\"2\"/><text x=\"180\" y=\"129\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"27\" fill=\"#3175ba\">-2</text><circle id=\"out-0\" cx=\"580\" cy=\"120\" r=\"28\" fill=\"#e8f5f1\" stroke=\"#087f75\" stroke-width=\"2\"/><text x=\"580\" y=\"129\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"27\" fill=\"#087f75\">0</text><circle id=\"in-1\" cx=\"180\" cy=\"210\" r=\"28\" fill=\"#edf4fc\" stroke=\"#3175ba\" stroke-width=\"2\"/><text x=\"180\" y=\"219\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"27\" fill=\"#3175ba\">0</text><circle id=\"out-1\" cx=\"580\" cy=\"210\" r=\"28\" fill=\"#e8f5f1\" stroke=\"#087f75\" stroke-width=\"2\"/><text x=\"580\" y=\"219\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"27\" fill=\"#087f75\">4</text><circle id=\"in-2\" cx=\"180\" cy=\"300\" r=\"28\" fill=\"#edf4fc\" stroke=\"#3175ba\" stroke-width=\"2\"/><text x=\"180\" y=\"309\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"27\" fill=\"#3175ba\">2</text><circle id=\"out-2\" cx=\"580\" cy=\"300\" r=\"28\" fill=\"#e8f5f1\" stroke=\"#087f75\" stroke-width=\"2\"/><text x=\"580\" y=\"309\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"27\" fill=\"#087f75\">9</text><path id=\"map-0\" d=\"M 212 120 L 546 210 l -12 -5 m 12 5 l -12 5\" fill=\"none\" stroke=\"#087f75\" stroke-width=\"3\"/><path id=\"map-1\" d=\"M 212 210 L 546 120 l -12 -5 m 12 5 l -12 5\" fill=\"none\" stroke=\"#087f75\" stroke-width=\"3\"/><text x=\"380\" y=\"75\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"23\" fill=\"#173349\">square the input</text></svg>"
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 400\" role=\"img\"><rect x=\"0\" y=\"0\" width=\"760\" height=\"400\" rx=\"0\" fill=\"#ffffff\" stroke=\"#ffffff\" stroke-width=\"2\"/><text x=\"180\" y=\"55\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"26\" fill=\"#3175ba\">Domain</text><text x=\"580\" y=\"55\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"26\" fill=\"#087f75\">Codomain</text><circle id=\"in-0\" cx=\"180\" cy=\"120\" r=\"28\" fill=\"#edf4fc\" stroke=\"#3175ba\" stroke-width=\"2\"/><text x=\"180\" y=\"129\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"27\" fill=\"#3175ba\">−2</text><circle id=\"out-0\" cx=\"580\" cy=\"120\" r=\"28\" fill=\"#e8f5f1\" stroke=\"#087f75\" stroke-width=\"2\"/><text x=\"580\" y=\"129\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"27\" fill=\"#087f75\">0</text><circle id=\"in-1\" cx=\"180\" cy=\"210\" r=\"28\" fill=\"#edf4fc\" stroke=\"#3175ba\" stroke-width=\"2\"/><text x=\"180\" y=\"219\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"27\" fill=\"#3175ba\">0</text><circle id=\"out-1\" cx=\"580\" cy=\"210\" r=\"28\" fill=\"#e8f5f1\" stroke=\"#087f75\" stroke-width=\"2\"/><text x=\"580\" y=\"219\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"27\" fill=\"#087f75\">4</text><circle id=\"in-2\" cx=\"180\" cy=\"300\" r=\"28\" fill=\"#edf4fc\" stroke=\"#3175ba\" stroke-width=\"2\"/><text x=\"180\" y=\"309\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"27\" fill=\"#3175ba\">2</text><circle id=\"out-2\" cx=\"580\" cy=\"300\" r=\"28\" fill=\"#e8f5f1\" stroke=\"#087f75\" stroke-width=\"2\"/><text x=\"580\" y=\"309\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"27\" fill=\"#087f75\">9</text><path id=\"map-0\" d=\"M 212 120 L 546 210 l -12 -5 m 12 5 l -12 5\" fill=\"none\" stroke=\"#087f75\" stroke-width=\"3\"/><path id=\"map-1\" d=\"M 212 210 L 546 120 l -12 -5 m 12 5 l -12 5\" fill=\"none\" stroke=\"#087f75\" stroke-width=\"3\"/><text x=\"380\" y=\"75\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"23\" fill=\"#173349\">square the input</text></svg>"
           },
           {
             "title": "Allow shared outputs",
             "text": "Positive two also maps to four. This is still a function: different inputs are allowed to share an output.",
             "why": "The restriction is on outputs per input, not inputs per output.",
             "math": "2 ↦ 4",
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 400\" role=\"img\"><rect x=\"0\" y=\"0\" width=\"760\" height=\"400\" rx=\"0\" fill=\"#ffffff\" stroke=\"#ffffff\" stroke-width=\"2\"/><text x=\"180\" y=\"55\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"26\" fill=\"#3175ba\">Domain</text><text x=\"580\" y=\"55\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"26\" fill=\"#087f75\">Codomain</text><circle id=\"in-0\" cx=\"180\" cy=\"120\" r=\"28\" fill=\"#edf4fc\" stroke=\"#3175ba\" stroke-width=\"2\"/><text x=\"180\" y=\"129\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"27\" fill=\"#3175ba\">-2</text><circle id=\"out-0\" cx=\"580\" cy=\"120\" r=\"28\" fill=\"#e8f5f1\" stroke=\"#087f75\" stroke-width=\"2\"/><text x=\"580\" y=\"129\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"27\" fill=\"#087f75\">0</text><circle id=\"in-1\" cx=\"180\" cy=\"210\" r=\"28\" fill=\"#edf4fc\" stroke=\"#3175ba\" stroke-width=\"2\"/><text x=\"180\" y=\"219\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"27\" fill=\"#3175ba\">0</text><circle id=\"out-1\" cx=\"580\" cy=\"210\" r=\"28\" fill=\"#e8f5f1\" stroke=\"#087f75\" stroke-width=\"2\"/><text x=\"580\" y=\"219\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"27\" fill=\"#087f75\">4</text><circle id=\"in-2\" cx=\"180\" cy=\"300\" r=\"28\" fill=\"#edf4fc\" stroke=\"#3175ba\" stroke-width=\"2\"/><text x=\"180\" y=\"309\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"27\" fill=\"#3175ba\">2</text><circle id=\"out-2\" cx=\"580\" cy=\"300\" r=\"28\" fill=\"#e8f5f1\" stroke=\"#087f75\" stroke-width=\"2\"/><text x=\"580\" y=\"309\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"27\" fill=\"#087f75\">9</text><path id=\"map-0\" d=\"M 212 120 L 546 210 l -12 -5 m 12 5 l -12 5\" fill=\"none\" stroke=\"#087f75\" stroke-width=\"3\"/><path id=\"map-1\" d=\"M 212 210 L 546 120 l -12 -5 m 12 5 l -12 5\" fill=\"none\" stroke=\"#087f75\" stroke-width=\"3\"/><path id=\"map-2\" d=\"M 212 300 L 546 210 l -12 -5 m 12 5 l -12 5\" fill=\"none\" stroke=\"#087f75\" stroke-width=\"3\"/><text x=\"380\" y=\"75\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"23\" fill=\"#173349\">square the input</text></svg>"
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 400\" role=\"img\"><rect x=\"0\" y=\"0\" width=\"760\" height=\"400\" rx=\"0\" fill=\"#ffffff\" stroke=\"#ffffff\" stroke-width=\"2\"/><text x=\"180\" y=\"55\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"26\" fill=\"#3175ba\">Domain</text><text x=\"580\" y=\"55\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"26\" fill=\"#087f75\">Codomain</text><circle id=\"in-0\" cx=\"180\" cy=\"120\" r=\"28\" fill=\"#edf4fc\" stroke=\"#3175ba\" stroke-width=\"2\"/><text x=\"180\" y=\"129\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"27\" fill=\"#3175ba\">−2</text><circle id=\"out-0\" cx=\"580\" cy=\"120\" r=\"28\" fill=\"#e8f5f1\" stroke=\"#087f75\" stroke-width=\"2\"/><text x=\"580\" y=\"129\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"27\" fill=\"#087f75\">0</text><circle id=\"in-1\" cx=\"180\" cy=\"210\" r=\"28\" fill=\"#edf4fc\" stroke=\"#3175ba\" stroke-width=\"2\"/><text x=\"180\" y=\"219\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"27\" fill=\"#3175ba\">0</text><circle id=\"out-1\" cx=\"580\" cy=\"210\" r=\"28\" fill=\"#e8f5f1\" stroke=\"#087f75\" stroke-width=\"2\"/><text x=\"580\" y=\"219\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"27\" fill=\"#087f75\">4</text><circle id=\"in-2\" cx=\"180\" cy=\"300\" r=\"28\" fill=\"#edf4fc\" stroke=\"#3175ba\" stroke-width=\"2\"/><text x=\"180\" y=\"309\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"27\" fill=\"#3175ba\">2</text><circle id=\"out-2\" cx=\"580\" cy=\"300\" r=\"28\" fill=\"#e8f5f1\" stroke=\"#087f75\" stroke-width=\"2\"/><text x=\"580\" y=\"309\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"27\" fill=\"#087f75\">9</text><path id=\"map-0\" d=\"M 212 120 L 546 210 l -12 -5 m 12 5 l -12 5\" fill=\"none\" stroke=\"#087f75\" stroke-width=\"3\"/><path id=\"map-1\" d=\"M 212 210 L 546 120 l -12 -5 m 12 5 l -12 5\" fill=\"none\" stroke=\"#087f75\" stroke-width=\"3\"/><path id=\"map-2\" d=\"M 212 300 L 546 210 l -12 -5 m 12 5 l -12 5\" fill=\"none\" stroke=\"#087f75\" stroke-width=\"3\"/><text x=\"380\" y=\"75\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"23\" fill=\"#173349\">square the input</text></svg>"
           },
           {
             "title": "Separate targets from reached values",
             "text": "The codomain here is zero, four and nine, but nine is never reached. The range contains only zero and four.",
             "why": "The range is the part of the declared target set actually used.",
             "math": "codomain = {0,4,9}; range = {0,4}",
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 400\" role=\"img\"><rect x=\"0\" y=\"0\" width=\"760\" height=\"400\" rx=\"0\" fill=\"#ffffff\" stroke=\"#ffffff\" stroke-width=\"2\"/><text x=\"180\" y=\"55\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"26\" fill=\"#3175ba\">Domain</text><text x=\"580\" y=\"55\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"26\" fill=\"#087f75\">Codomain</text><circle id=\"in-0\" cx=\"180\" cy=\"120\" r=\"28\" fill=\"#edf4fc\" stroke=\"#3175ba\" stroke-width=\"2\"/><text x=\"180\" y=\"129\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"27\" fill=\"#3175ba\">-2</text><circle id=\"out-0\" cx=\"580\" cy=\"120\" r=\"28\" fill=\"#e8f5f1\" stroke=\"#087f75\" stroke-width=\"2\"/><text x=\"580\" y=\"129\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"27\" fill=\"#087f75\">0</text><circle id=\"in-1\" cx=\"180\" cy=\"210\" r=\"28\" fill=\"#edf4fc\" stroke=\"#3175ba\" stroke-width=\"2\"/><text x=\"180\" y=\"219\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"27\" fill=\"#3175ba\">0</text><circle id=\"out-1\" cx=\"580\" cy=\"210\" r=\"28\" fill=\"#e8f5f1\" stroke=\"#087f75\" stroke-width=\"2\"/><text x=\"580\" y=\"219\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"27\" fill=\"#087f75\">4</text><circle id=\"in-2\" cx=\"180\" cy=\"300\" r=\"28\" fill=\"#edf4fc\" stroke=\"#3175ba\" stroke-width=\"2\"/><text x=\"180\" y=\"309\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"27\" fill=\"#3175ba\">2</text><circle id=\"out-2\" cx=\"580\" cy=\"300\" r=\"28\" fill=\"#e8f5f1\" stroke=\"#087f75\" stroke-width=\"2\"/><text x=\"580\" y=\"309\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"27\" fill=\"#087f75\">9</text><path id=\"map-0\" d=\"M 212 120 L 546 210 l -12 -5 m 12 5 l -12 5\" fill=\"none\" stroke=\"#087f75\" stroke-width=\"3\"/><path id=\"map-1\" d=\"M 212 210 L 546 120 l -12 -5 m 12 5 l -12 5\" fill=\"none\" stroke=\"#087f75\" stroke-width=\"3\"/><path id=\"map-2\" d=\"M 212 300 L 546 210 l -12 -5 m 12 5 l -12 5\" fill=\"none\" stroke=\"#087f75\" stroke-width=\"3\"/><text x=\"380\" y=\"75\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"23\" fill=\"#173349\">square the input</text><text x=\"380\" y=\"365\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"26\" fill=\"#087f75\">Range = {0, 4}; 9 is not reached.</text></svg>"
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 400\" role=\"img\"><rect x=\"0\" y=\"0\" width=\"760\" height=\"400\" rx=\"0\" fill=\"#ffffff\" stroke=\"#ffffff\" stroke-width=\"2\"/><text x=\"180\" y=\"55\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"26\" fill=\"#3175ba\">Domain</text><text x=\"580\" y=\"55\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"26\" fill=\"#087f75\">Codomain</text><circle id=\"in-0\" cx=\"180\" cy=\"120\" r=\"28\" fill=\"#edf4fc\" stroke=\"#3175ba\" stroke-width=\"2\"/><text x=\"180\" y=\"129\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"27\" fill=\"#3175ba\">−2</text><circle id=\"out-0\" cx=\"580\" cy=\"120\" r=\"28\" fill=\"#e8f5f1\" stroke=\"#087f75\" stroke-width=\"2\"/><text x=\"580\" y=\"129\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"27\" fill=\"#087f75\">0</text><circle id=\"in-1\" cx=\"180\" cy=\"210\" r=\"28\" fill=\"#edf4fc\" stroke=\"#3175ba\" stroke-width=\"2\"/><text x=\"180\" y=\"219\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"27\" fill=\"#3175ba\">0</text><circle id=\"out-1\" cx=\"580\" cy=\"210\" r=\"28\" fill=\"#e8f5f1\" stroke=\"#087f75\" stroke-width=\"2\"/><text x=\"580\" y=\"219\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"27\" fill=\"#087f75\">4</text><circle id=\"in-2\" cx=\"180\" cy=\"300\" r=\"28\" fill=\"#edf4fc\" stroke=\"#3175ba\" stroke-width=\"2\"/><text x=\"180\" y=\"309\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"27\" fill=\"#3175ba\">2</text><circle id=\"out-2\" cx=\"580\" cy=\"300\" r=\"28\" fill=\"#e8f5f1\" stroke=\"#087f75\" stroke-width=\"2\"/><text x=\"580\" y=\"309\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"27\" fill=\"#087f75\">9</text><path id=\"map-0\" d=\"M 212 120 L 546 210 l -12 -5 m 12 5 l -12 5\" fill=\"none\" stroke=\"#087f75\" stroke-width=\"3\"/><path id=\"map-1\" d=\"M 212 210 L 546 120 l -12 -5 m 12 5 l -12 5\" fill=\"none\" stroke=\"#087f75\" stroke-width=\"3\"/><path id=\"map-2\" d=\"M 212 300 L 546 210 l -12 -5 m 12 5 l -12 5\" fill=\"none\" stroke=\"#087f75\" stroke-width=\"3\"/><text x=\"380\" y=\"75\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"23\" fill=\"#173349\">square the input</text><text x=\"380\" y=\"365\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"26\" fill=\"#087f75\">Range = {0, 4}; 9 is not reached.</text></svg>"
           }
         ],
         "quiz": [
@@ -14034,7 +14034,7 @@
         "An outside multiplier acts on the output; it does not automatically move inside the input.",
         "A function allows shared outputs but exactly one output for each allowed input.",
         "Check every recovered coefficient against all supplied points.",
-        "Name the starting index and thickness units in exponential models."
+        "In a layering model, say which stage counts as n = 0 and keep the thickness in one unit, millimetres or centimetres."
       ]
     },
     "challenges": [
@@ -14373,11 +14373,11 @@
               "Constant cross-sectional area at constant inflow",
               "A falling water level",
               "No inflow",
-              "Necessarily a sphere"
+              "A container that narrows towards the top"
             ],
             "answer": 0,
             "hint": "Equal times produce equal height increases.",
-            "explanation": "At constant inflow, a constant cross-sectional area gives a constant rise in water level."
+            "explanation": "At constant inflow, a constant cross-sectional area gives a constant rise in water level; a container that narrows towards the top would give a graph that gets steeper."
           }
         ],
         "takeaway": "Explain slope using the physical quantities, not just the appearance of the line.",
@@ -15717,7 +15717,7 @@
             "reason": "Ava’s share is measured against the unchanged combined total."
           }
         ],
-        "answer": "(a) Balances above. (b) x=84. (c) Ava €75, Ben €57. (d) Ava holds 25/44 of the combined amount.",
+        "answer": "(a) Balances above. (b) x=84. (c) Ava has €75 and Ben has €57. (d) Ava holds 25/44 of the combined amount.",
         "check": "75+57=132=84+48 and 75−57=18, checking conservation and the final condition."
       }
     ],
@@ -15839,11 +15839,11 @@
               "Sine",
               "Cosine",
               "Tangent",
-              "Pythagoras only"
+              "Sine and cosine together"
             ],
             "answer": 2,
             "hint": "SOH, CAH, TOA.",
-            "explanation": "TOA means tan θ = opposite/adjacent."
+            "explanation": "TOA means tan θ = opposite/adjacent. Sine and cosine each involve the hypotenuse, so neither uses only these two sides."
           },
           {
             "question": "The hypotenuse is…",
@@ -15913,13 +15913,13 @@
             "question": "In a triangle question, sin⁻¹(0.5) in degree mode is…",
             "options": [
               "0.5°",
-              "2°",
+              "0.52°",
               "30°",
               "60°"
             ],
             "answer": 2,
             "hint": "Which acute angle has sine one half?",
-            "explanation": "sin 30° = 0.5, so inverse sine of 0.5 is 30°."
+            "explanation": "sin 30° = 0.5, so inverse sine of 0.5 is 30°. A calculator left in radian mode shows 0.5236, which is the same angle measured in radians, not 0.52 degrees."
           }
         ],
         "takeaway": "Ratio known → inverse trig; angle known → ordinary trig. Check DEG mode.",
@@ -16680,7 +16680,7 @@
         "id": "23-04",
         "section": "23.3",
         "title": "Compare two function graphs",
-        "goal": "Use intersections to solve f(x) = g(x).",
+        "goal": "Use intersections to solve f(x) = g(x) and to read where f(x) < g(x).",
         "steps": [
           {
             "title": "Write both rules",
@@ -16704,25 +16704,25 @@
             "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 400\" role=\"img\"><rect x=\"0\" y=\"0\" width=\"760\" height=\"400\" rx=\"0\" fill=\"#ffffff\" stroke=\"#ffffff\" stroke-width=\"2\"/><line x1=\"85.0\" y1=\"60\" x2=\"85.0\" y2=\"325\" stroke=\"#e5edf2\" stroke-width=\"1\"/><text x=\"85.0\" y=\"350\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"17\" fill=\"#8ca1af\">-2</text><line x1=\"203.0\" y1=\"60\" x2=\"203.0\" y2=\"325\" stroke=\"#e5edf2\" stroke-width=\"1\"/><text x=\"203.0\" y=\"350\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"17\" fill=\"#8ca1af\">-1</text><line x1=\"321.0\" y1=\"60\" x2=\"321.0\" y2=\"325\" stroke=\"#e5edf2\" stroke-width=\"1\"/><text x=\"321.0\" y=\"350\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"17\" fill=\"#8ca1af\">0</text><line x1=\"439.0\" y1=\"60\" x2=\"439.0\" y2=\"325\" stroke=\"#e5edf2\" stroke-width=\"1\"/><text x=\"439.0\" y=\"350\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"17\" fill=\"#8ca1af\">1</text><line x1=\"557.0\" y1=\"60\" x2=\"557.0\" y2=\"325\" stroke=\"#e5edf2\" stroke-width=\"1\"/><text x=\"557.0\" y=\"350\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"17\" fill=\"#8ca1af\">2</text><line x1=\"675.0\" y1=\"60\" x2=\"675.0\" y2=\"325\" stroke=\"#e5edf2\" stroke-width=\"1\"/><text x=\"675.0\" y=\"350\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"17\" fill=\"#8ca1af\">3</text><line x1=\"85\" y1=\"325.0\" x2=\"675\" y2=\"325.0\" stroke=\"#e5edf2\" stroke-width=\"1\"/><text x=\"70\" y=\"331.0\" text-anchor=\"end\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"17\" fill=\"#8ca1af\">-1</text><line x1=\"85\" y1=\"298.5\" x2=\"675\" y2=\"298.5\" stroke=\"#e5edf2\" stroke-width=\"1\"/><text x=\"70\" y=\"304.5\" text-anchor=\"end\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"17\" fill=\"#8ca1af\">0</text><line x1=\"85\" y1=\"272.0\" x2=\"675\" y2=\"272.0\" stroke=\"#e5edf2\" stroke-width=\"1\"/><text x=\"70\" y=\"278.0\" text-anchor=\"end\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"17\" fill=\"#8ca1af\">1</text><line x1=\"85\" y1=\"245.5\" x2=\"675\" y2=\"245.5\" stroke=\"#e5edf2\" stroke-width=\"1\"/><text x=\"70\" y=\"251.5\" text-anchor=\"end\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"17\" fill=\"#8ca1af\">2</text><line x1=\"85\" y1=\"219.0\" x2=\"675\" y2=\"219.0\" stroke=\"#e5edf2\" stroke-width=\"1\"/><text x=\"70\" y=\"225.0\" text-anchor=\"end\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"17\" fill=\"#8ca1af\">3</text><line x1=\"85\" y1=\"192.5\" x2=\"675\" y2=\"192.5\" stroke=\"#e5edf2\" stroke-width=\"1\"/><text x=\"70\" y=\"198.5\" text-anchor=\"end\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"17\" fill=\"#8ca1af\">4</text><line x1=\"85\" y1=\"166.0\" x2=\"675\" y2=\"166.0\" stroke=\"#e5edf2\" stroke-width=\"1\"/><text x=\"70\" y=\"172.0\" text-anchor=\"end\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"17\" fill=\"#8ca1af\">5</text><line x1=\"85\" y1=\"139.5\" x2=\"675\" y2=\"139.5\" stroke=\"#e5edf2\" stroke-width=\"1\"/><text x=\"70\" y=\"145.5\" text-anchor=\"end\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"17\" fill=\"#8ca1af\">6</text><line x1=\"85\" y1=\"113.0\" x2=\"675\" y2=\"113.0\" stroke=\"#e5edf2\" stroke-width=\"1\"/><text x=\"70\" y=\"119.0\" text-anchor=\"end\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"17\" fill=\"#8ca1af\">7</text><line x1=\"85\" y1=\"86.5\" x2=\"675\" y2=\"86.5\" stroke=\"#e5edf2\" stroke-width=\"1\"/><text x=\"70\" y=\"92.5\" text-anchor=\"end\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"17\" fill=\"#8ca1af\">8</text><line x1=\"85\" y1=\"60.0\" x2=\"675\" y2=\"60.0\" stroke=\"#e5edf2\" stroke-width=\"1\"/><text x=\"70\" y=\"66.0\" text-anchor=\"end\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"17\" fill=\"#8ca1af\">9</text><line id=\"x-axis\" x1=\"85\" y1=\"298.5\" x2=\"690\" y2=\"298.5\" stroke=\"#173349\" stroke-width=\"2\"/><line id=\"y-axis\" x1=\"321.0\" y1=\"335\" x2=\"321.0\" y2=\"45\" stroke=\"#173349\" stroke-width=\"2\"/><text x=\"711\" y=\"305.5\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"19\" fill=\"#173349\">x</text><text x=\"321.0\" y=\"31\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"19\" fill=\"#173349\">y</text><path id=\"curve\" d=\"M 85.0 192.5 L 86.96666666666665 194.25930555555556 L 88.93333333333335 196.0038888888889 L 90.9 197.73375 L 92.86666666666666 199.44888888888892 L 94.83333333333333 201.14930555555554 L 96.80000000000001 202.835 L 98.76666666666667 204.50597222222223 L 100.73333333333333 206.16222222222223 L 102.69999999999999 207.80374999999998 L 104.66666666666667 209.43055555555557 L 106.63333333333333 211.0426388888889 L 108.6 212.64 L 110.56666666666668 214.2226388888889 L 112.53333333333333 215.79055555555556 L 114.5 217.34375 L 116.46666666666667 218.8822222222222 L 118.43333333333332 220.4059722222222 L 120.4 221.91500000000002 L 122.36666666666666 223.40930555555553 L 124.33333333333331 224.88888888888886 L 126.30000000000001 226.35375 L 128.26666666666665 227.80388888888888 L 130.23333333333332 229.23930555555555 L 132.2 230.66 L 134.16666666666669 232.06597222222223 L 136.13333333333333 233.45722222222224 L 138.1 234.83374999999998 L 140.06666666666666 236.19555555555556 L 142.03333333333333 237.54263888888892 L 144.0 238.875 L 145.96666666666667 240.1926388888889 L 147.93333333333334 241.49555555555554 L 149.9 242.78375 L 151.86666666666667 244.0572222222222 L 153.83333333333337 245.31597222222223 L 155.8 246.56 L 157.76666666666665 247.7893055555556 L 159.73333333333332 249.0038888888889 L 161.7 250.20375 L 163.66666666666663 251.38888888888889 L 165.63333333333333 252.55930555555557 L 167.6 253.71499999999997 L 169.5666666666667 254.85597222222222 L 171.53333333333333 255.98222222222222 L 173.5 257.09375 L 175.46666666666664 258.19055555555553 L 177.43333333333334 259.2726388888889 L 179.4 260.34000000000003 L 181.36666666666667 261.3926388888889 L 183.33333333333334 262.43055555555554 L 185.3 263.45375 L 187.26666666666665 264.46222222222224 L 189.23333333333335 265.4559722222222 L 191.2 266.435 L 193.16666666666663 267.39930555555554 L 195.13333333333333 268.3488888888889 L 197.1 269.28375 L 199.06666666666666 270.2038888888889 L 201.03333333333336 271.1093055555556 L 203.0 272.0 L 204.96666666666664 272.87597222222223 L 206.93333333333334 273.7372222222222 L 208.9 274.58375 L 210.86666666666667 275.41555555555556 L 212.83333333333331 276.2326388888889 L 214.8 277.035 L 216.76666666666665 277.8226388888889 L 218.73333333333332 278.59555555555556 L 220.7 279.35375 L 222.66666666666666 280.09722222222223 L 224.63333333333333 280.8259722222222 L 226.6 281.54 L 228.56666666666666 282.2393055555556 L 230.53333333333333 282.9238888888889 L 232.5 283.59375 L 234.46666666666664 284.24888888888887 L 236.43333333333337 284.88930555555555 L 238.4 285.515 L 240.36666666666665 286.12597222222223 L 242.33333333333334 286.72222222222223 L 244.3 287.30375 L 246.26666666666665 287.87055555555554 L 248.23333333333335 288.4226388888889 L 250.2 288.96 L 252.16666666666666 289.4826388888889 L 254.13333333333335 289.99055555555555 L 256.1 290.48375 L 258.06666666666666 290.96222222222224 L 260.03333333333336 291.42597222222224 L 262.0 291.875 L 263.9666666666667 292.30930555555557 L 265.9333333333334 292.7288888888889 L 267.9 293.13375 L 269.8666666666667 293.5238888888889 L 271.8333333333333 293.89930555555554 L 273.8 294.26 L 275.76666666666665 294.60597222222225 L 277.73333333333335 294.9372222222222 L 279.7 295.25375 L 281.6666666666667 295.55555555555554 L 283.6333333333333 295.84263888888887 L 285.6 296.115 L 287.56666666666666 296.3726388888889 L 289.5333333333333 296.61555555555555 L 291.5 296.84375 L 293.4666666666667 297.0572222222222 L 295.43333333333334 297.2559722222222 L 297.4 297.44 L 299.3666666666667 297.6093055555556 L 301.3333333333333 297.7638888888889 L 303.3 297.90375 L 305.26666666666665 298.0288888888889 L 307.23333333333335 298.13930555555555 L 309.2 298.235 L 311.1666666666667 298.31597222222223 L 313.1333333333333 298.3822222222222 L 315.1 298.43375000000003 L 317.06666666666666 298.47055555555556 L 319.0333333333333 298.4926388888889 L 321.0 298.5 L 322.9666666666667 298.4926388888889 L 324.9333333333333 298.47055555555556 L 326.9 298.43375000000003 L 328.8666666666667 298.3822222222222 L 330.83333333333337 298.31597222222223 L 332.8 298.235 L 334.76666666666665 298.13930555555555 L 336.73333333333335 298.0288888888889 L 338.7 297.90375 L 340.66666666666663 297.7638888888889 L 342.6333333333333 297.6093055555556 L 344.6 297.44 L 346.56666666666666 297.2559722222222 L 348.5333333333333 297.0572222222222 L 350.5 296.84375 L 352.46666666666664 296.61555555555555 L 354.43333333333334 296.3726388888889 L 356.4 296.115 L 358.3666666666667 295.84263888888887 L 360.3333333333333 295.55555555555554 L 362.3 295.25375 L 364.26666666666665 294.9372222222222 L 366.23333333333335 294.60597222222225 L 368.2 294.26 L 370.16666666666663 293.89930555555554 L 372.1333333333333 293.5238888888889 L 374.1 293.13375 L 376.06666666666666 292.7288888888889 L 378.03333333333336 292.30930555555557 L 380.0 291.875 L 381.96666666666664 291.42597222222224 L 383.9333333333333 290.96222222222224 L 385.9 290.48375 L 387.86666666666673 289.99055555555555 L 389.83333333333337 289.4826388888889 L 391.8 288.96 L 393.76666666666665 288.4226388888889 L 395.7333333333333 287.87055555555554 L 397.7 287.30375 L 399.6666666666667 286.72222222222223 L 401.6333333333333 286.12597222222223 L 403.6 285.515 L 405.56666666666666 284.88930555555555 L 407.5333333333333 284.24888888888887 L 409.5 283.59375 L 411.4666666666667 282.9238888888889 L 413.43333333333334 282.2393055555556 L 415.4 281.54 L 417.3666666666667 280.8259722222222 L 419.3333333333333 280.09722222222223 L 421.3 279.35375 L 423.2666666666667 278.59555555555556 L 425.23333333333335 277.8226388888889 L 427.2 277.035 L 429.16666666666663 276.2326388888889 L 431.1333333333333 275.41555555555556 L 433.1 274.58375 L 435.0666666666667 273.7372222222222 L 437.03333333333336 272.87597222222223 L 439.0 272.0 L 440.96666666666664 271.1093055555556 L 442.93333333333334 270.2038888888889 L 444.9 269.28375 L 446.86666666666673 268.3488888888889 L 448.83333333333337 267.39930555555554 L 450.8 266.435 L 452.76666666666665 265.4559722222222 L 454.73333333333335 264.46222222222224 L 456.7 263.45375 L 458.66666666666663 262.43055555555554 L 460.63333333333327 261.3926388888889 L 462.6 260.34 L 464.56666666666666 259.2726388888889 L 466.53333333333336 258.19055555555553 L 468.5 257.09375 L 470.46666666666664 255.98222222222222 L 472.4333333333333 254.85597222222222 L 474.4 253.715 L 476.3666666666667 252.55930555555554 L 478.33333333333337 251.38888888888889 L 480.3 250.20375 L 482.26666666666665 249.0038888888889 L 484.2333333333333 247.7893055555556 L 486.2 246.56 L 488.1666666666667 245.31597222222223 L 490.1333333333333 244.05722222222226 L 492.1 242.78375 L 494.06666666666666 241.49555555555554 L 496.0333333333333 240.1926388888889 L 498.0 238.875 L 499.9666666666667 237.54263888888892 L 501.93333333333334 236.19555555555556 L 503.9 234.83375 L 505.8666666666667 233.4572222222222 L 507.8333333333333 232.0659722222222 L 509.8 230.66 L 511.7666666666667 229.23930555555555 L 513.7333333333333 227.80388888888888 L 515.7 226.35375 L 517.6666666666666 224.8888888888889 L 519.6333333333332 223.4093055555556 L 521.6 221.91499999999996 L 523.5666666666667 220.4059722222222 L 525.5333333333333 218.8822222222222 L 527.5 217.34375 L 529.4666666666667 215.79055555555556 L 531.4333333333333 214.2226388888889 L 533.4 212.64000000000001 L 535.3666666666668 211.04263888888886 L 537.3333333333334 209.43055555555554 L 539.3 207.80374999999998 L 541.2666666666667 206.16222222222223 L 543.2333333333333 204.50597222222223 L 545.2 202.835 L 547.1666666666667 201.14930555555557 L 549.1333333333333 199.44888888888892 L 551.1 197.73375 L 553.0666666666666 196.00388888888887 L 555.0333333333333 194.25930555555556 L 557.0 192.5 L 558.9666666666667 190.72597222222223 L 560.9333333333334 188.93722222222223 L 562.9 187.13375 L 564.8666666666666 185.3155555555556 L 566.8333333333333 183.4826388888889 L 568.8 181.63500000000005 L 570.7666666666667 179.77263888888893 L 572.7333333333333 177.8955555555555 L 574.7 176.00374999999997 L 576.6666666666667 174.0972222222222 L 578.6333333333333 172.1759722222222 L 580.6 170.23999999999998 L 582.5666666666667 168.28930555555553 L 584.5333333333333 166.3238888888889 L 586.5 164.34375 L 588.4666666666667 162.3488888888889 L 590.4333333333334 160.33930555555557 L 592.4 158.31500000000003 L 594.3666666666666 156.27597222222224 L 596.3333333333333 154.22222222222226 L 598.3 152.15375000000006 L 600.2666666666667 150.07055555555561 L 602.2333333333333 147.97263888888887 L 604.2 145.85999999999996 L 606.1666666666667 143.73263888888886 L 608.1333333333333 141.5905555555555 L 610.1 139.43374999999995 L 612.0666666666666 137.2622222222222 L 614.0333333333334 135.0759722222222 L 616.0 132.875 L 617.9666666666667 130.65930555555556 L 619.9333333333333 128.4288888888889 L 621.9 126.18375 L 623.8666666666667 123.92388888888891 L 625.8333333333333 121.6493055555556 L 627.8 119.36000000000004 L 629.7666666666667 117.0559722222223 L 631.7333333333333 114.73722222222219 L 633.7 112.40374999999997 L 635.6666666666666 110.05555555555551 L 637.6333333333334 107.6926388888889 L 639.6 105.31499999999997 L 641.5666666666667 102.92263888888888 L 643.5333333333333 100.51555555555558 L 645.5 98.09375 L 647.4666666666667 95.65722222222226 L 649.4333333333333 93.20597222222221 L 651.4 90.74000000000001 L 653.3666666666667 88.25930555555564 L 655.3333333333333 85.76388888888891 L 657.3 83.25375000000003 L 659.2666666666667 80.72888888888897 L 661.2333333333335 78.1893055555555 L 663.2 75.63499999999996 L 665.1666666666667 73.06597222222217 L 667.1333333333333 70.48222222222216 L 669.1 67.88374999999996 L 671.0666666666667 65.27055555555552 L 673.0333333333333 62.64263888888888 L 675.0 60.0\" fill=\"none\" stroke=\"#087f75\" stroke-width=\"3\"/><circle id=\"point-0\" cx=\"203.0\" cy=\"272.0\" r=\"5\" fill=\"#087f75\" stroke=\"#087f75\" stroke-width=\"2\"/><circle id=\"point-1\" cx=\"321.0\" cy=\"298.5\" r=\"5\" fill=\"#087f75\" stroke=\"#087f75\" stroke-width=\"2\"/><circle id=\"point-2\" cx=\"439.0\" cy=\"272.0\" r=\"5\" fill=\"#087f75\" stroke=\"#087f75\" stroke-width=\"2\"/><circle id=\"point-3\" cx=\"557.0\" cy=\"192.5\" r=\"5\" fill=\"#087f75\" stroke=\"#087f75\" stroke-width=\"2\"/><path id=\"second-rule\" d=\"M 85 298.5 L 675 166\" fill=\"none\" stroke=\"#b96a12\" stroke-width=\"3\"/><text x=\"610\" y=\"152\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"22\" fill=\"#b96a12\">y = x + 2</text></svg>"
           },
           {
-            "title": "Confirm exactly",
-            "text": "Bring all terms to one side and factorise. The two factors give exactly the values read from the graph.",
-            "why": "An exact algebraic check refines a visual estimate.",
-            "math": "x² − x − 2 = (x − 2)(x + 1) = 0",
+            "title": "Confirm exactly, then read an inequality",
+            "text": "Bring all terms to one side and factorise. The two factors give exactly the values read from the graph. The same picture answers an inequality: the parabola is below the line only between the crossings, so x² < x + 2 exactly when −1 < x < 2.",
+            "why": "An exact algebraic check refines a visual estimate, and the crossings are the endpoints of the inequality’s solution set.",
+            "math": "x² − x − 2 = (x − 2)(x + 1) = 0; x² < x + 2 for −1 < x < 2",
             "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 400\" role=\"img\"><rect x=\"0\" y=\"0\" width=\"760\" height=\"400\" rx=\"0\" fill=\"#ffffff\" stroke=\"#ffffff\" stroke-width=\"2\"/><line x1=\"85.0\" y1=\"60\" x2=\"85.0\" y2=\"325\" stroke=\"#e5edf2\" stroke-width=\"1\"/><text x=\"85.0\" y=\"350\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"17\" fill=\"#8ca1af\">-2</text><line x1=\"203.0\" y1=\"60\" x2=\"203.0\" y2=\"325\" stroke=\"#e5edf2\" stroke-width=\"1\"/><text x=\"203.0\" y=\"350\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"17\" fill=\"#8ca1af\">-1</text><line x1=\"321.0\" y1=\"60\" x2=\"321.0\" y2=\"325\" stroke=\"#e5edf2\" stroke-width=\"1\"/><text x=\"321.0\" y=\"350\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"17\" fill=\"#8ca1af\">0</text><line x1=\"439.0\" y1=\"60\" x2=\"439.0\" y2=\"325\" stroke=\"#e5edf2\" stroke-width=\"1\"/><text x=\"439.0\" y=\"350\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"17\" fill=\"#8ca1af\">1</text><line x1=\"557.0\" y1=\"60\" x2=\"557.0\" y2=\"325\" stroke=\"#e5edf2\" stroke-width=\"1\"/><text x=\"557.0\" y=\"350\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"17\" fill=\"#8ca1af\">2</text><line x1=\"675.0\" y1=\"60\" x2=\"675.0\" y2=\"325\" stroke=\"#e5edf2\" stroke-width=\"1\"/><text x=\"675.0\" y=\"350\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"17\" fill=\"#8ca1af\">3</text><line x1=\"85\" y1=\"325.0\" x2=\"675\" y2=\"325.0\" stroke=\"#e5edf2\" stroke-width=\"1\"/><text x=\"70\" y=\"331.0\" text-anchor=\"end\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"17\" fill=\"#8ca1af\">-1</text><line x1=\"85\" y1=\"298.5\" x2=\"675\" y2=\"298.5\" stroke=\"#e5edf2\" stroke-width=\"1\"/><text x=\"70\" y=\"304.5\" text-anchor=\"end\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"17\" fill=\"#8ca1af\">0</text><line x1=\"85\" y1=\"272.0\" x2=\"675\" y2=\"272.0\" stroke=\"#e5edf2\" stroke-width=\"1\"/><text x=\"70\" y=\"278.0\" text-anchor=\"end\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"17\" fill=\"#8ca1af\">1</text><line x1=\"85\" y1=\"245.5\" x2=\"675\" y2=\"245.5\" stroke=\"#e5edf2\" stroke-width=\"1\"/><text x=\"70\" y=\"251.5\" text-anchor=\"end\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"17\" fill=\"#8ca1af\">2</text><line x1=\"85\" y1=\"219.0\" x2=\"675\" y2=\"219.0\" stroke=\"#e5edf2\" stroke-width=\"1\"/><text x=\"70\" y=\"225.0\" text-anchor=\"end\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"17\" fill=\"#8ca1af\">3</text><line x1=\"85\" y1=\"192.5\" x2=\"675\" y2=\"192.5\" stroke=\"#e5edf2\" stroke-width=\"1\"/><text x=\"70\" y=\"198.5\" text-anchor=\"end\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"17\" fill=\"#8ca1af\">4</text><line x1=\"85\" y1=\"166.0\" x2=\"675\" y2=\"166.0\" stroke=\"#e5edf2\" stroke-width=\"1\"/><text x=\"70\" y=\"172.0\" text-anchor=\"end\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"17\" fill=\"#8ca1af\">5</text><line x1=\"85\" y1=\"139.5\" x2=\"675\" y2=\"139.5\" stroke=\"#e5edf2\" stroke-width=\"1\"/><text x=\"70\" y=\"145.5\" text-anchor=\"end\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"17\" fill=\"#8ca1af\">6</text><line x1=\"85\" y1=\"113.0\" x2=\"675\" y2=\"113.0\" stroke=\"#e5edf2\" stroke-width=\"1\"/><text x=\"70\" y=\"119.0\" text-anchor=\"end\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"17\" fill=\"#8ca1af\">7</text><line x1=\"85\" y1=\"86.5\" x2=\"675\" y2=\"86.5\" stroke=\"#e5edf2\" stroke-width=\"1\"/><text x=\"70\" y=\"92.5\" text-anchor=\"end\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"17\" fill=\"#8ca1af\">8</text><line x1=\"85\" y1=\"60.0\" x2=\"675\" y2=\"60.0\" stroke=\"#e5edf2\" stroke-width=\"1\"/><text x=\"70\" y=\"66.0\" text-anchor=\"end\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"17\" fill=\"#8ca1af\">9</text><line id=\"x-axis\" x1=\"85\" y1=\"298.5\" x2=\"690\" y2=\"298.5\" stroke=\"#173349\" stroke-width=\"2\"/><line id=\"y-axis\" x1=\"321.0\" y1=\"335\" x2=\"321.0\" y2=\"45\" stroke=\"#173349\" stroke-width=\"2\"/><text x=\"711\" y=\"305.5\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"19\" fill=\"#173349\">x</text><text x=\"321.0\" y=\"31\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"19\" fill=\"#173349\">y</text><path id=\"curve\" d=\"M 85.0 192.5 L 86.96666666666665 194.25930555555556 L 88.93333333333335 196.0038888888889 L 90.9 197.73375 L 92.86666666666666 199.44888888888892 L 94.83333333333333 201.14930555555554 L 96.80000000000001 202.835 L 98.76666666666667 204.50597222222223 L 100.73333333333333 206.16222222222223 L 102.69999999999999 207.80374999999998 L 104.66666666666667 209.43055555555557 L 106.63333333333333 211.0426388888889 L 108.6 212.64 L 110.56666666666668 214.2226388888889 L 112.53333333333333 215.79055555555556 L 114.5 217.34375 L 116.46666666666667 218.8822222222222 L 118.43333333333332 220.4059722222222 L 120.4 221.91500000000002 L 122.36666666666666 223.40930555555553 L 124.33333333333331 224.88888888888886 L 126.30000000000001 226.35375 L 128.26666666666665 227.80388888888888 L 130.23333333333332 229.23930555555555 L 132.2 230.66 L 134.16666666666669 232.06597222222223 L 136.13333333333333 233.45722222222224 L 138.1 234.83374999999998 L 140.06666666666666 236.19555555555556 L 142.03333333333333 237.54263888888892 L 144.0 238.875 L 145.96666666666667 240.1926388888889 L 147.93333333333334 241.49555555555554 L 149.9 242.78375 L 151.86666666666667 244.0572222222222 L 153.83333333333337 245.31597222222223 L 155.8 246.56 L 157.76666666666665 247.7893055555556 L 159.73333333333332 249.0038888888889 L 161.7 250.20375 L 163.66666666666663 251.38888888888889 L 165.63333333333333 252.55930555555557 L 167.6 253.71499999999997 L 169.5666666666667 254.85597222222222 L 171.53333333333333 255.98222222222222 L 173.5 257.09375 L 175.46666666666664 258.19055555555553 L 177.43333333333334 259.2726388888889 L 179.4 260.34000000000003 L 181.36666666666667 261.3926388888889 L 183.33333333333334 262.43055555555554 L 185.3 263.45375 L 187.26666666666665 264.46222222222224 L 189.23333333333335 265.4559722222222 L 191.2 266.435 L 193.16666666666663 267.39930555555554 L 195.13333333333333 268.3488888888889 L 197.1 269.28375 L 199.06666666666666 270.2038888888889 L 201.03333333333336 271.1093055555556 L 203.0 272.0 L 204.96666666666664 272.87597222222223 L 206.93333333333334 273.7372222222222 L 208.9 274.58375 L 210.86666666666667 275.41555555555556 L 212.83333333333331 276.2326388888889 L 214.8 277.035 L 216.76666666666665 277.8226388888889 L 218.73333333333332 278.59555555555556 L 220.7 279.35375 L 222.66666666666666 280.09722222222223 L 224.63333333333333 280.8259722222222 L 226.6 281.54 L 228.56666666666666 282.2393055555556 L 230.53333333333333 282.9238888888889 L 232.5 283.59375 L 234.46666666666664 284.24888888888887 L 236.43333333333337 284.88930555555555 L 238.4 285.515 L 240.36666666666665 286.12597222222223 L 242.33333333333334 286.72222222222223 L 244.3 287.30375 L 246.26666666666665 287.87055555555554 L 248.23333333333335 288.4226388888889 L 250.2 288.96 L 252.16666666666666 289.4826388888889 L 254.13333333333335 289.99055555555555 L 256.1 290.48375 L 258.06666666666666 290.96222222222224 L 260.03333333333336 291.42597222222224 L 262.0 291.875 L 263.9666666666667 292.30930555555557 L 265.9333333333334 292.7288888888889 L 267.9 293.13375 L 269.8666666666667 293.5238888888889 L 271.8333333333333 293.89930555555554 L 273.8 294.26 L 275.76666666666665 294.60597222222225 L 277.73333333333335 294.9372222222222 L 279.7 295.25375 L 281.6666666666667 295.55555555555554 L 283.6333333333333 295.84263888888887 L 285.6 296.115 L 287.56666666666666 296.3726388888889 L 289.5333333333333 296.61555555555555 L 291.5 296.84375 L 293.4666666666667 297.0572222222222 L 295.43333333333334 297.2559722222222 L 297.4 297.44 L 299.3666666666667 297.6093055555556 L 301.3333333333333 297.7638888888889 L 303.3 297.90375 L 305.26666666666665 298.0288888888889 L 307.23333333333335 298.13930555555555 L 309.2 298.235 L 311.1666666666667 298.31597222222223 L 313.1333333333333 298.3822222222222 L 315.1 298.43375000000003 L 317.06666666666666 298.47055555555556 L 319.0333333333333 298.4926388888889 L 321.0 298.5 L 322.9666666666667 298.4926388888889 L 324.9333333333333 298.47055555555556 L 326.9 298.43375000000003 L 328.8666666666667 298.3822222222222 L 330.83333333333337 298.31597222222223 L 332.8 298.235 L 334.76666666666665 298.13930555555555 L 336.73333333333335 298.0288888888889 L 338.7 297.90375 L 340.66666666666663 297.7638888888889 L 342.6333333333333 297.6093055555556 L 344.6 297.44 L 346.56666666666666 297.2559722222222 L 348.5333333333333 297.0572222222222 L 350.5 296.84375 L 352.46666666666664 296.61555555555555 L 354.43333333333334 296.3726388888889 L 356.4 296.115 L 358.3666666666667 295.84263888888887 L 360.3333333333333 295.55555555555554 L 362.3 295.25375 L 364.26666666666665 294.9372222222222 L 366.23333333333335 294.60597222222225 L 368.2 294.26 L 370.16666666666663 293.89930555555554 L 372.1333333333333 293.5238888888889 L 374.1 293.13375 L 376.06666666666666 292.7288888888889 L 378.03333333333336 292.30930555555557 L 380.0 291.875 L 381.96666666666664 291.42597222222224 L 383.9333333333333 290.96222222222224 L 385.9 290.48375 L 387.86666666666673 289.99055555555555 L 389.83333333333337 289.4826388888889 L 391.8 288.96 L 393.76666666666665 288.4226388888889 L 395.7333333333333 287.87055555555554 L 397.7 287.30375 L 399.6666666666667 286.72222222222223 L 401.6333333333333 286.12597222222223 L 403.6 285.515 L 405.56666666666666 284.88930555555555 L 407.5333333333333 284.24888888888887 L 409.5 283.59375 L 411.4666666666667 282.9238888888889 L 413.43333333333334 282.2393055555556 L 415.4 281.54 L 417.3666666666667 280.8259722222222 L 419.3333333333333 280.09722222222223 L 421.3 279.35375 L 423.2666666666667 278.59555555555556 L 425.23333333333335 277.8226388888889 L 427.2 277.035 L 429.16666666666663 276.2326388888889 L 431.1333333333333 275.41555555555556 L 433.1 274.58375 L 435.0666666666667 273.7372222222222 L 437.03333333333336 272.87597222222223 L 439.0 272.0 L 440.96666666666664 271.1093055555556 L 442.93333333333334 270.2038888888889 L 444.9 269.28375 L 446.86666666666673 268.3488888888889 L 448.83333333333337 267.39930555555554 L 450.8 266.435 L 452.76666666666665 265.4559722222222 L 454.73333333333335 264.46222222222224 L 456.7 263.45375 L 458.66666666666663 262.43055555555554 L 460.63333333333327 261.3926388888889 L 462.6 260.34 L 464.56666666666666 259.2726388888889 L 466.53333333333336 258.19055555555553 L 468.5 257.09375 L 470.46666666666664 255.98222222222222 L 472.4333333333333 254.85597222222222 L 474.4 253.715 L 476.3666666666667 252.55930555555554 L 478.33333333333337 251.38888888888889 L 480.3 250.20375 L 482.26666666666665 249.0038888888889 L 484.2333333333333 247.7893055555556 L 486.2 246.56 L 488.1666666666667 245.31597222222223 L 490.1333333333333 244.05722222222226 L 492.1 242.78375 L 494.06666666666666 241.49555555555554 L 496.0333333333333 240.1926388888889 L 498.0 238.875 L 499.9666666666667 237.54263888888892 L 501.93333333333334 236.19555555555556 L 503.9 234.83375 L 505.8666666666667 233.4572222222222 L 507.8333333333333 232.0659722222222 L 509.8 230.66 L 511.7666666666667 229.23930555555555 L 513.7333333333333 227.80388888888888 L 515.7 226.35375 L 517.6666666666666 224.8888888888889 L 519.6333333333332 223.4093055555556 L 521.6 221.91499999999996 L 523.5666666666667 220.4059722222222 L 525.5333333333333 218.8822222222222 L 527.5 217.34375 L 529.4666666666667 215.79055555555556 L 531.4333333333333 214.2226388888889 L 533.4 212.64000000000001 L 535.3666666666668 211.04263888888886 L 537.3333333333334 209.43055555555554 L 539.3 207.80374999999998 L 541.2666666666667 206.16222222222223 L 543.2333333333333 204.50597222222223 L 545.2 202.835 L 547.1666666666667 201.14930555555557 L 549.1333333333333 199.44888888888892 L 551.1 197.73375 L 553.0666666666666 196.00388888888887 L 555.0333333333333 194.25930555555556 L 557.0 192.5 L 558.9666666666667 190.72597222222223 L 560.9333333333334 188.93722222222223 L 562.9 187.13375 L 564.8666666666666 185.3155555555556 L 566.8333333333333 183.4826388888889 L 568.8 181.63500000000005 L 570.7666666666667 179.77263888888893 L 572.7333333333333 177.8955555555555 L 574.7 176.00374999999997 L 576.6666666666667 174.0972222222222 L 578.6333333333333 172.1759722222222 L 580.6 170.23999999999998 L 582.5666666666667 168.28930555555553 L 584.5333333333333 166.3238888888889 L 586.5 164.34375 L 588.4666666666667 162.3488888888889 L 590.4333333333334 160.33930555555557 L 592.4 158.31500000000003 L 594.3666666666666 156.27597222222224 L 596.3333333333333 154.22222222222226 L 598.3 152.15375000000006 L 600.2666666666667 150.07055555555561 L 602.2333333333333 147.97263888888887 L 604.2 145.85999999999996 L 606.1666666666667 143.73263888888886 L 608.1333333333333 141.5905555555555 L 610.1 139.43374999999995 L 612.0666666666666 137.2622222222222 L 614.0333333333334 135.0759722222222 L 616.0 132.875 L 617.9666666666667 130.65930555555556 L 619.9333333333333 128.4288888888889 L 621.9 126.18375 L 623.8666666666667 123.92388888888891 L 625.8333333333333 121.6493055555556 L 627.8 119.36000000000004 L 629.7666666666667 117.0559722222223 L 631.7333333333333 114.73722222222219 L 633.7 112.40374999999997 L 635.6666666666666 110.05555555555551 L 637.6333333333334 107.6926388888889 L 639.6 105.31499999999997 L 641.5666666666667 102.92263888888888 L 643.5333333333333 100.51555555555558 L 645.5 98.09375 L 647.4666666666667 95.65722222222226 L 649.4333333333333 93.20597222222221 L 651.4 90.74000000000001 L 653.3666666666667 88.25930555555564 L 655.3333333333333 85.76388888888891 L 657.3 83.25375000000003 L 659.2666666666667 80.72888888888897 L 661.2333333333335 78.1893055555555 L 663.2 75.63499999999996 L 665.1666666666667 73.06597222222217 L 667.1333333333333 70.48222222222216 L 669.1 67.88374999999996 L 671.0666666666667 65.27055555555552 L 673.0333333333333 62.64263888888888 L 675.0 60.0\" fill=\"none\" stroke=\"#087f75\" stroke-width=\"3\"/><circle id=\"point-0\" cx=\"203.0\" cy=\"272.0\" r=\"5\" fill=\"#087f75\" stroke=\"#087f75\" stroke-width=\"2\"/><circle id=\"point-1\" cx=\"321.0\" cy=\"298.5\" r=\"5\" fill=\"#087f75\" stroke=\"#087f75\" stroke-width=\"2\"/><circle id=\"point-2\" cx=\"439.0\" cy=\"272.0\" r=\"5\" fill=\"#087f75\" stroke=\"#087f75\" stroke-width=\"2\"/><circle id=\"point-3\" cx=\"557.0\" cy=\"192.5\" r=\"5\" fill=\"#087f75\" stroke=\"#087f75\" stroke-width=\"2\"/><path id=\"second-rule\" d=\"M 85 298.5 L 675 166\" fill=\"none\" stroke=\"#b96a12\" stroke-width=\"3\"/><text x=\"610\" y=\"152\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"22\" fill=\"#b96a12\">y = x + 2</text></svg>"
           }
         ],
         "quiz": [
           {
-            "question": "At an intersection of f and g, which is true?",
+            "question": "On the same graph, y = x² is below y = x + 2 for which inputs?",
             "options": [
-              "f(x) = 0 always",
-              "g(x) = 0 always",
-              "f(x) = g(x)",
-              "x = 0 always"
+              "−1 < x < 2",
+              "x < −1 or x > 2",
+              "x > 0 only",
+              "All real x"
             ],
-            "answer": 2,
-            "hint": "Both rules give the same point.",
-            "explanation": "The x input is shared, and the two y outputs are equal."
+            "answer": 0,
+            "hint": "The graphs cross at x = −1 and x = 2; test one input between them, such as x = 0.",
+            "explanation": "At x = 0 the parabola gives 0 and the line gives 2, so the parabola is lower there. It is lower only between the crossings: −1 < x < 2."
           },
           {
             "question": "Solve x² = 4x graphically or algebraically.",
@@ -16737,7 +16737,7 @@
             "explanation": "x²−4x = x(x−4) = 0 gives x = 0 or 4."
           }
         ],
-        "takeaway": "Intersections solve equal-output equations; include all intersections.",
+        "takeaway": "Intersections solve equal-output equations; between or beyond them, read which graph is higher to solve an inequality.",
         "mistake": "Stopping after the first crossing: two graphs can meet more than once."
       },
       {
@@ -16957,7 +16957,7 @@
       {
         "name": "Two functions",
         "formula": "f(x) = g(x): their intersections",
-        "note": "Each intersection satisfies both rules."
+        "note": "Each intersection satisfies both rules. Between or beyond the intersections, the higher graph has the larger output, which answers f(x) < g(x) or f(x) > g(x)."
       },
       {
         "name": "Vertical translation",
@@ -17003,8 +17003,8 @@
             "Find the fixed amount with one row.",
             "Check unused rows and any practical domain."
           ],
-          "example": "€19 at 2 h and €31 at 5 h give C=4h+11.",
-          "check": "C(5)=31 and the starting charge is €11.",
+          "example": "€11 at 2 h and €20 at 5 h give m=9/3=3 and C=3h+5.",
+          "check": "C(5)=20 and the starting charge is €5.",
           "trap": "Dividing total cost by hours when there is a fixed fee.",
           "lessonId": "23-01"
         },
@@ -17056,16 +17056,16 @@
         {
           "title": "Solve equality of two functions",
           "section": "23.3",
-          "when": "Two graphs or rules must have equal outputs.",
-          "rule": "f(x)=g(x) at their intersections; equal coordinates use the same x and y.",
+          "when": "Two graphs or rules must be compared: equal outputs, or one output below the other.",
+          "rule": "f(x)=g(x) at their intersections; f(x)<g(x) where the graph of f is below the graph of g.",
           "steps": [
             "Plot on the same axes and scale.",
             "Locate all crossings in the stated domain.",
-            "Give x-values for an equation, or full points for intersections.",
+            "Give x-values for an equation, or full points for intersections; for an inequality, give the interval of x where the required graph is lower.",
             "Check exact candidate inputs in both rules."
           ],
-          "example": "x²=2x+3 gives x=−1 or 3, at (−1,1),(3,9).",
-          "check": "Both rules give 1 and 9 at those inputs.",
+          "example": "x²=2x+3 gives x=−1 or 3, at (−1,1),(3,9); x²<2x+3 for −1<x<3.",
+          "check": "Both rules give 1 and 9 at those inputs; at x=0, 0<3 confirms the inequality side.",
           "trap": "Confusing an intersection of two functions with an x-axis root.",
           "lessonId": "23-04"
         },
@@ -17244,7 +17244,7 @@
           },
           {
             "title": "Refine an inverse estimate",
-            "math": "2³·⁵≈11.314; 2³·⁶≈12.126; target input≈3.585, so x≈3.6",
+            "math": "2^3.5≈11.314; 2^3.6≈12.126; target input≈3.585, so x≈3.6",
             "reason": "The output target lies between the trial outputs; the input is rounded only at the end."
           }
         ],
@@ -17485,8 +17485,8 @@
               "4"
             ],
             "answer": 2,
-            "hint": "Test the two midlines and the diagonals.",
-            "explanation": "Its horizontal and vertical midlines are axes; its diagonals are not, unless it is a square."
+            "hint": "Test the two lines joining midpoints of opposite sides, and the diagonals.",
+            "explanation": "The two lines through the midpoints of opposite sides are axes; its diagonals are not, unless it is a square."
           }
         ],
         "takeaway": "An axis gives a reflection; a centre gives a half-turn.",
@@ -17544,13 +17544,13 @@
             "question": "Which information fully defines a rotation?",
             "options": [
               "Angle only",
-              "Centre and colour",
+              "Centre and angle only",
               "Centre, angle and direction",
-              "Side length and area"
+              "Angle and direction only"
             ],
             "answer": 2,
             "hint": "The image depends on where and which way you turn.",
-            "explanation": "You need the centre, the turn angle and clockwise or anticlockwise direction."
+            "explanation": "You need the centre, the turn angle and clockwise or anticlockwise direction; leaving out any one of them allows more than one image."
           }
         ],
         "takeaway": "Keep the centre fixed and preserve each point’s distance from it.",
@@ -17587,7 +17587,7 @@
             "title": "Join the intersections",
             "text": "Draw the straight line through P and Q. It meets AB at its midpoint M and at a right angle; leave the arcs visible.",
             "why": "Points equidistant from A and B lie on the perpendicular bisector of AB.",
-            "math": "PQ ⟂ AB; AM = MB",
+            "math": "PQ ⊥ AB; AM = MB",
             "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 400\" role=\"img\"><rect x=\"0\" y=\"0\" width=\"760\" height=\"400\" rx=\"0\" fill=\"#ffffff\" stroke=\"#ffffff\" stroke-width=\"2\"/><line id=\"segment\" x1=\"250\" y1=\"210\" x2=\"510\" y2=\"210\" stroke=\"#173349\" stroke-width=\"3\"/><text x=\"250\" y=\"243\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"24\" fill=\"#173349\">A</text><text x=\"510\" y=\"243\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"24\" fill=\"#173349\">B</text><circle id=\"arc-a\" cx=\"250\" cy=\"210\" r=\"170\" fill=\"none\" stroke=\"#3175ba\" stroke-width=\"2\"/><circle id=\"arc-b\" cx=\"510\" cy=\"210\" r=\"170\" fill=\"none\" stroke=\"#087f75\" stroke-width=\"2\"/><circle id=\"p\" cx=\"380\" cy=\"100.45548849896677\" r=\"5\" fill=\"#b96a12\" stroke=\"#b96a12\" stroke-width=\"2\"/><circle id=\"q\" cx=\"380\" cy=\"319.54451150103324\" r=\"5\" fill=\"#b96a12\" stroke=\"#b96a12\" stroke-width=\"2\"/><text x=\"402\" y=\"106.45548849896677\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"22\" fill=\"#b96a12\">P</text><text x=\"402\" y=\"325.54451150103324\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"22\" fill=\"#b96a12\">Q</text><line id=\"bisector\" x1=\"380\" y1=\"48\" x2=\"380\" y2=\"363\" stroke=\"#7650a0\" stroke-width=\"4\"/><path id=\"right-mark\" d=\"M 380 210 L 395 210 L 395 195 L 380 195\" fill=\"none\" stroke=\"#7650a0\" stroke-width=\"2\"/><text x=\"380\" y=\"30\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"24\" fill=\"#7650a0\">Equal distance from A and B</text><text id=\"caption\" x=\"380\" y=\"383\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"19\" fill=\"#8ca1af\">Leave construction arcs visible: they show how the result was obtained.</text></svg>"
           }
         ],
@@ -17595,10 +17595,10 @@
           {
             "question": "Why must the compass opening stay the same for the two sets of arcs?",
             "options": [
-              "To make a colourful diagram",
+              "To make the arcs meet exactly on AB",
               "To make the intersections equidistant from A and B",
               "To make AB longer",
-              "To avoid using a ruler"
+              "Because the arcs must each have radius exactly AB"
             ],
             "answer": 1,
             "hint": "The proof depends on equal distances.",
@@ -17649,7 +17649,7 @@
           },
           {
             "title": "Join vertex to intersection",
-            "text": "Draw ray VP. Triangles VAP and VBP have three equal corresponding sides, so their angles at V are equal.",
+            "text": "Draw ray VP. Triangles VAP and VBP share side VP and have VA = VB and AP = BP, so SSS makes their angles at V equal.",
             "why": "SSS congruence proves that VP bisects the angle.",
             "math": "∠AVP = ∠PVB",
             "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 400\" role=\"img\"><rect x=\"0\" y=\"0\" width=\"760\" height=\"400\" rx=\"0\" fill=\"#ffffff\" stroke=\"#ffffff\" stroke-width=\"2\"/><line id=\"ray-a\" x1=\"170\" y1=\"310\" x2=\"650\" y2=\"310\" stroke=\"#173349\" stroke-width=\"3\"/><line id=\"ray-b\" x1=\"170\" y1=\"310\" x2=\"455\" y2=\"25\" stroke=\"#173349\" stroke-width=\"3\"/><text x=\"145\" y=\"333\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"25\" fill=\"#173349\">V</text><path id=\"first-arc\" d=\"M 283.1370849898476 196.8629150101524 A 160 160 0 0 1 330.0 310.0\" fill=\"none\" stroke=\"#3175ba\" stroke-width=\"2\"/><circle id=\"a\" cx=\"330\" cy=\"310\" r=\"4\" fill=\"#3175ba\" stroke=\"#3175ba\" stroke-width=\"2\"/><circle id=\"b\" cx=\"283.1370849898476\" cy=\"196.8629150101524\" r=\"4\" fill=\"#3175ba\" stroke=\"#3175ba\" stroke-width=\"2\"/><text x=\"350\" y=\"333\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"23\" fill=\"#3175ba\">A</text><text x=\"264.1370849898476\" y=\"184.8629150101524\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"23\" fill=\"#3175ba\">B</text><path id=\"second-a\" d=\"M 252.86548683761526 218.07466682572266 A 120 120 0 0 1 442.763114494309 268.95758280091974\" fill=\"none\" stroke=\"#087f75\" stroke-width=\"2\"/><path id=\"second-b\" d=\"M 381.43533030452664 128.03374264802687 A 120 120 0 0 1 333.85127639873156 305.6198494545504\" fill=\"none\" stroke=\"#087f75\" stroke-width=\"2\"/><circle id=\"p\" cx=\"401.91616346442225\" cy=\"213.93717975950062\" r=\"5\" fill=\"#b96a12\" stroke=\"#b96a12\" stroke-width=\"2\"/><text x=\"421.91616346442225\" y=\"205.93717975950062\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"23\" fill=\"#b96a12\">P</text><line id=\"bisector\" x1=\"170\" y1=\"310\" x2=\"640\" y2=\"115.31962568464533\" stroke=\"#7650a0\" stroke-width=\"4\"/><text x=\"500\" y=\"355\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"26\" fill=\"#7650a0\">∠AVP = ∠PVB</text><text id=\"caption\" x=\"380\" y=\"383\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"19\" fill=\"#8ca1af\">Leave construction arcs visible: they show how the result was obtained.</text></svg>"
@@ -17661,8 +17661,8 @@
             "options": [
               "Any midpoint",
               "The angle’s vertex",
-              "The page centre",
-              "The longest side"
+              "The midpoint of the arc joining the two side marks",
+              "The point where the two side marks are joined"
             ],
             "answer": 1,
             "hint": "The two new angles share the original corner.",
@@ -17715,7 +17715,7 @@
             "title": "Join the point to the intersection",
             "text": "Draw PQ and extend it as required. Since P is the midpoint of AB, this is the perpendicular bisector and so makes a right angle.",
             "why": "A line through two points on the perpendicular bisector is that bisector.",
-            "math": "PQ ⟂ AB",
+            "math": "PQ ⊥ AB",
             "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 400\" role=\"img\"><rect x=\"0\" y=\"0\" width=\"760\" height=\"400\" rx=\"0\" fill=\"#ffffff\" stroke=\"#ffffff\" stroke-width=\"2\"/><line id=\"line\" x1=\"90\" y1=\"220\" x2=\"680\" y2=\"220\" stroke=\"#173349\" stroke-width=\"3\"/><circle id=\"point\" cx=\"380\" cy=\"220\" r=\"5\" fill=\"#b96a12\" stroke=\"#b96a12\" stroke-width=\"2\"/><text x=\"380\" y=\"254\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"24\" fill=\"#b96a12\">P</text><circle id=\"a\" cx=\"280\" cy=\"220\" r=\"5\" fill=\"#3175ba\" stroke=\"#3175ba\" stroke-width=\"2\"/><circle id=\"b\" cx=\"480\" cy=\"220\" r=\"5\" fill=\"#3175ba\" stroke=\"#3175ba\" stroke-width=\"2\"/><text x=\"280\" y=\"254\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"23\" fill=\"#3175ba\">A</text><text x=\"480\" y=\"254\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"23\" fill=\"#3175ba\">B</text><path id=\"equal-distance\" d=\"M 281.5192246987792 202.63518223330695 A 100 100 0 0 1 478.4807753012208 202.63518223330695\" fill=\"none\" stroke=\"#3175ba\" stroke-width=\"2\"/><path id=\"arc-a\" d=\"M 305.1789857617049 77.20287581322984 A 145 145 0 0 1 422.79712418677013 194.8210142382951\" fill=\"none\" stroke=\"#087f75\" stroke-width=\"2\"/><path id=\"arc-b\" d=\"M 337.20287581322987 194.8210142382951 A 145 145 0 0 1 454.8210142382951 77.20287581322984\" fill=\"none\" stroke=\"#087f75\" stroke-width=\"2\"/><circle id=\"q\" cx=\"380\" cy=\"115.0\" r=\"5\" fill=\"#087f75\" stroke=\"#087f75\" stroke-width=\"2\"/><text x=\"403\" y=\"115.0\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"24\" fill=\"#087f75\">Q</text><line id=\"perpendicular\" x1=\"380\" y1=\"70\" x2=\"380\" y2=\"345\" stroke=\"#7650a0\" stroke-width=\"4\"/><path id=\"right\" d=\"M 380 220 L 398 220 L 398 202 L 380 202\" fill=\"none\" stroke=\"#7650a0\" stroke-width=\"2\"/><text id=\"caption\" x=\"380\" y=\"383\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"19\" fill=\"#8ca1af\">Leave construction arcs visible: they show how the result was obtained.</text></svg>"
           }
         ],
@@ -17726,14 +17726,14 @@
               "Parallel to AB",
               "Perpendicular to AB",
               "Always equal to AB",
-              "A circle"
+              "Half the length of AB"
             ],
             "answer": 1,
             "hint": "Both P and Q lie on the perpendicular bisector.",
             "explanation": "The line through them is the perpendicular bisector of AB."
           },
           {
-            "question": "A constructed perpendicular makes an angle of…",
+            "question": "With PA = PB and QA = QB, the angle between PQ and AB is…",
             "options": [
               "45°",
               "60°",
@@ -17741,8 +17741,8 @@
               "180°"
             ],
             "answer": 2,
-            "hint": "Perpendicular means a right angle.",
-            "explanation": "A right angle measures 90°."
+            "hint": "PQ is the perpendicular bisector of AB.",
+            "explanation": "Both P and Q are equidistant from A and B, so PQ is the perpendicular bisector of AB and meets it at 90°."
           }
         ],
         "takeaway": "Create equal marks around the point, then use equal arcs to locate the perpendicular.",
@@ -17779,7 +17779,7 @@
             "title": "Join the two equidistant points",
             "text": "Draw PQ. It is the perpendicular bisector of AB, so it meets the original line at a right angle while passing through P.",
             "why": "The perpendicular bisector is the line of points equally distant from the endpoints.",
-            "math": "PQ ⟂ AB, with P on PQ",
+            "math": "PQ ⊥ AB, with P on PQ",
             "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 400\" role=\"img\"><rect x=\"0\" y=\"0\" width=\"760\" height=\"400\" rx=\"0\" fill=\"#ffffff\" stroke=\"#ffffff\" stroke-width=\"2\"/><line id=\"base\" x1=\"80\" y1=\"270\" x2=\"680\" y2=\"270\" stroke=\"#173349\" stroke-width=\"3\"/><circle id=\"given\" cx=\"380\" cy=\"90\" r=\"5\" fill=\"#b96a12\" stroke=\"#b96a12\" stroke-width=\"2\"/><text x=\"380\" y=\"64\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"25\" fill=\"#b96a12\">P</text><path id=\"cutting-arc\" d=\"M 546.7743035282931 245.51955402023484 A 228.0350850198276 228.0350850198276 0 0 1 213.22569647170684 245.51955402023484\" fill=\"none\" stroke=\"#3175ba\" stroke-width=\"2\"/><circle id=\"a\" cx=\"240\" cy=\"270\" r=\"5\" fill=\"#3175ba\" stroke=\"#3175ba\" stroke-width=\"2\"/><circle id=\"b\" cx=\"520\" cy=\"270\" r=\"5\" fill=\"#3175ba\" stroke=\"#3175ba\" stroke-width=\"2\"/><text x=\"220\" y=\"294\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"23\" fill=\"#3175ba\">A</text><text x=\"540\" y=\"294\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"23\" fill=\"#3175ba\">B</text><path id=\"arc-a\" d=\"M 393.10431690883786 302.54332717898 A 156.52475842498527 156.52475842498527 0 0 1 366.6311896062463 362.0029446208484\" fill=\"none\" stroke=\"#087f75\" stroke-width=\"2\"/><path id=\"arc-b\" d=\"M 393.36881039375373 362.0029446208484 A 156.52475842498527 156.52475842498527 0 0 1 366.89568309116214 302.54332717898\" fill=\"none\" stroke=\"#087f75\" stroke-width=\"2\"/><circle id=\"q\" cx=\"380\" cy=\"340\" r=\"5\" fill=\"#087f75\" stroke=\"#087f75\" stroke-width=\"2\"/><text x=\"402\" y=\"349\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"23\" fill=\"#087f75\">Q</text><line id=\"perpendicular\" x1=\"380\" y1=\"90\" x2=\"380\" y2=\"340\" stroke=\"#7650a0\" stroke-width=\"4\"/><path id=\"right\" d=\"M 380 270 L 398 270 L 398 252 L 380 252\" fill=\"none\" stroke=\"#7650a0\" stroke-width=\"2\"/><text id=\"caption\" x=\"380\" y=\"383\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"19\" fill=\"#8ca1af\">Equal distances from A and B locate their perpendicular bisector.</text></svg>"
           }
         ],
@@ -17789,8 +17789,8 @@
             "options": [
               "To locate A and B equally far from P",
               "To change the compass radius",
-              "To measure the line length",
-              "To avoid a right angle"
+              "To fix the compass at the distance from P to the line",
+              "To find the midpoint of the line by eye"
             ],
             "answer": 0,
             "hint": "Both crossings belong to the same circle centred at P.",
@@ -17829,14 +17829,14 @@
             "title": "Construct a perpendicular connection",
             "text": "Construct a line through P perpendicular to the given line, using equal-distance compass arcs. This is a helper line.",
             "why": "A perpendicular gives a precise reference direction.",
-            "math": "m ⟂ l; P lies on m",
+            "math": "m ⊥ l; P lies on m",
             "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 400\" role=\"img\"><rect x=\"0\" y=\"0\" width=\"760\" height=\"400\" rx=\"0\" fill=\"#ffffff\" stroke=\"#ffffff\" stroke-width=\"2\"/><line id=\"base\" x1=\"90\" y1=\"300\" x2=\"680\" y2=\"300\" stroke=\"#173349\" stroke-width=\"3\"/><circle id=\"p\" cx=\"380\" cy=\"170\" r=\"5\" fill=\"#b96a12\" stroke=\"#b96a12\" stroke-width=\"2\"/><text x=\"402\" y=\"164\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"25\" fill=\"#b96a12\">P</text><line id=\"perpendicular\" x1=\"380\" y1=\"45\" x2=\"380\" y2=\"335\" stroke=\"#3175ba\" stroke-width=\"3\"/><path id=\"right1\" d=\"M 380 300 L 397 300 L 397 283 L 380 283\" fill=\"none\" stroke=\"#3175ba\" stroke-width=\"2\"/><text id=\"caption\" x=\"380\" y=\"383\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"19\" fill=\"#8ca1af\">Leave construction arcs visible: they show how the result was obtained.</text></svg>"
           },
           {
             "title": "Construct another perpendicular at P",
             "text": "On the helper line, mark equal distances above and below P. Crossing arcs from those marks locate a perpendicular to the helper.",
             "why": "The point-on-line perpendicular construction can be used a second time.",
-            "math": "n ⟂ m at P",
+            "math": "n ⊥ m at P",
             "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 400\" role=\"img\"><rect x=\"0\" y=\"0\" width=\"760\" height=\"400\" rx=\"0\" fill=\"#ffffff\" stroke=\"#ffffff\" stroke-width=\"2\"/><line id=\"base\" x1=\"90\" y1=\"300\" x2=\"680\" y2=\"300\" stroke=\"#173349\" stroke-width=\"3\"/><circle id=\"p\" cx=\"380\" cy=\"170\" r=\"5\" fill=\"#b96a12\" stroke=\"#b96a12\" stroke-width=\"2\"/><text x=\"402\" y=\"164\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"25\" fill=\"#b96a12\">P</text><line id=\"perpendicular\" x1=\"380\" y1=\"45\" x2=\"380\" y2=\"335\" stroke=\"#3175ba\" stroke-width=\"3\"/><path id=\"right1\" d=\"M 380 300 L 397 300 L 397 283 L 380 283\" fill=\"none\" stroke=\"#3175ba\" stroke-width=\"2\"/><circle id=\"a\" cx=\"380\" cy=\"100\" r=\"5\" fill=\"#087f75\" stroke=\"#087f75\" stroke-width=\"2\"/><circle id=\"b\" cx=\"380\" cy=\"240\" r=\"5\" fill=\"#087f75\" stroke=\"#087f75\" stroke-width=\"2\"/><path id=\"arc1\" d=\"M 473.9692620785909 134.20201433256688 A 100 100 0 0 1 286.0307379214092 134.20201433256688\" fill=\"none\" stroke=\"#087f75\" stroke-width=\"2\"/><path id=\"arc2\" d=\"M 286.0307379214091 205.79798566743312 A 100 100 0 0 1 473.9692620785909 205.79798566743312\" fill=\"none\" stroke=\"#087f75\" stroke-width=\"2\"/><text id=\"caption\" x=\"380\" y=\"383\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"19\" fill=\"#8ca1af\">Leave construction arcs visible: they show how the result was obtained.</text></svg>"
           },
           {
@@ -17854,19 +17854,19 @@
               "Parallel",
               "Perpendicular to each other",
               "Always the same line",
-              "Curves"
+              "Parallel only when the common line is horizontal"
             ],
             "answer": 0,
             "hint": "Both make the same right-angle direction.",
-            "explanation": "Distinct lines perpendicular to the same line in a plane are parallel."
+            "explanation": "Distinct lines perpendicular to the same line in a plane are parallel, whatever direction that common line has."
           },
           {
             "question": "What must be checked after constructing a parallel through P?",
             "options": [
               "It passes through P and has the correct direction",
-              "It passes through the origin",
-              "It has a chosen length",
-              "It has a 60° angle"
+              "It is the same distance from l everywhere, even if it misses P",
+              "It meets l at a right angle",
+              "It passes through the foot of the helper perpendicular"
             ],
             "answer": 0,
             "hint": "Both the position and direction are part of the instruction.",
@@ -17929,8 +17929,8 @@
             "options": [
               "To preserve the proportional division",
               "To make every angle 90°",
-              "To shorten AB",
-              "To make a circle"
+              "To make AB equal to the auxiliary ray",
+              "So that the marks can be any distance apart"
             ],
             "answer": 0,
             "hint": "The similar-triangle relationship depends on parallelism.",
@@ -17981,8 +17981,8 @@
             "options": [
               "Yes, always",
               "No, because 2 + 3 < 6",
-              "Only a right-angled triangle",
-              "Only if drawn upside down"
+              "Yes, because 2 + 3 + 6 is more than 6",
+              "Yes, if the 6 cm side is drawn first"
             ],
             "answer": 1,
             "hint": "The two shorter sides must reach past the longest.",
@@ -17991,10 +17991,10 @@
           {
             "question": "In an SSS construction, the third vertex is located by…",
             "options": [
-              "Guessing its height",
+              "An arc from the midpoint of the base",
               "The intersection of two compass arcs",
               "Drawing a vertical line from the midpoint only",
-              "Choosing any point"
+              "A protractor reading at each base endpoint"
             ],
             "answer": 1,
             "hint": "It must satisfy two given distances simultaneously.",
@@ -18056,9 +18056,9 @@
             "question": "After drawing a given side and the included-angle ray, how is the third vertex fixed?",
             "options": [
               "By the second given side length",
-              "By guessing the midpoint",
+              "By an arc from the far endpoint of the base",
               "By drawing a parallel line",
-              "By changing the given angle"
+              "By the triangle angle sum"
             ],
             "answer": 0,
             "hint": "The vertex lies on the ray at a specified distance.",
@@ -18121,7 +18121,7 @@
             "options": [
               "The continuation away from A",
               "The ray BA pointing towards A",
-              "The page edge",
+              "A horizontal line through B",
               "The angle at A"
             ],
             "answer": 1,
@@ -18136,7 +18136,7 @@
         "id": "24-13",
         "section": "24.5",
         "title": "Construct a right-angled triangle from RHS",
-        "goal": "Use the right angle, hypotenuse and one shorter side.",
+        "goal": "Use the right angle with the hypotenuse and one side, or with one side and an acute angle.",
         "steps": [
           {
             "title": "Separate the hypotenuse from the given perpendicular side",
@@ -18149,7 +18149,7 @@
             "title": "Construct the right-angle ray",
             "text": "Draw AB and construct a perpendicular through A. The third vertex C must lie on that perpendicular.",
             "why": "The perpendicular guarantees the required right angle.",
-            "math": "AC ⟂ AB",
+            "math": "AC ⊥ AB",
             "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 400\" role=\"img\"><rect x=\"0\" y=\"0\" width=\"760\" height=\"400\" rx=\"0\" fill=\"#ffffff\" stroke=\"#ffffff\" stroke-width=\"2\"/><line id=\"base\" x1=\"180\" y1=\"300\" x2=\"500\" y2=\"300\" stroke=\"#173349\" stroke-width=\"3\"/><text x=\"340\" y=\"337\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"25\" fill=\"#173349\">AB = 8 cm</text><line id=\"perpendicular\" x1=\"180\" y1=\"300\" x2=\"180\" y2=\"35\" stroke=\"#3175ba\" stroke-width=\"3\"/><path id=\"right\" d=\"M 180 278 L 202 278 L 202 300\" fill=\"none\" stroke=\"#3175ba\" stroke-width=\"2\"/><text id=\"caption\" x=\"380\" y=\"383\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"19\" fill=\"#8ca1af\">Leave construction arcs visible: they show how the result was obtained.</text></svg>"
           },
           {
@@ -18161,9 +18161,9 @@
           },
           {
             "title": "Join and check with Pythagoras",
-            "text": "Join B to C. The remaining side is six centimetres, since ten squared minus eight squared is thirty-six.",
+            "text": "Join B to C. The remaining side is six centimetres, since ten squared minus eight squared is thirty-six. If an acute angle at B were given instead of the hypotenuse, draw the perpendicular at A as before, then a ray from B at that angle to AB; C is where the ray meets the perpendicular. If the given side is the hypotenuse BC, draw the ray from B first and drop the perpendicular from C onto it.",
             "why": "Pythagoras checks a construction whose defining data were RHS.",
-            "math": "AC = √(10² − 8²) = 6 cm",
+            "math": "AC = √(10² − 8²) = 6 cm; or C = ray from B ∩ perpendicular",
             "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 400\" role=\"img\"><rect x=\"0\" y=\"0\" width=\"760\" height=\"400\" rx=\"0\" fill=\"#ffffff\" stroke=\"#ffffff\" stroke-width=\"2\"/><line id=\"base\" x1=\"180\" y1=\"300\" x2=\"500\" y2=\"300\" stroke=\"#173349\" stroke-width=\"3\"/><text x=\"340\" y=\"337\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"25\" fill=\"#173349\">AB = 8 cm</text><line id=\"perpendicular\" x1=\"180\" y1=\"300\" x2=\"180\" y2=\"35\" stroke=\"#3175ba\" stroke-width=\"3\"/><path id=\"right\" d=\"M 180 278 L 202 278 L 202 300\" fill=\"none\" stroke=\"#3175ba\" stroke-width=\"2\"/><path id=\"hyp-arc\" d=\"M 140.48238148033317 124.65154128436907 A 400 400 0 0 1 202.74206980904233 32.347757456456634\" fill=\"none\" stroke=\"#087f75\" stroke-width=\"2\"/><text x=\"480\" y=\"148\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"24\" fill=\"#087f75\">BC = 10 cm</text><circle id=\"c\" cx=\"180\" cy=\"60\" r=\"5\" fill=\"#087f75\" stroke=\"#087f75\" stroke-width=\"2\"/><line id=\"hypotenuse\" x1=\"500\" y1=\"300\" x2=\"180\" y2=\"60\" stroke=\"#7650a0\" stroke-width=\"3\"/><text x=\"154\" y=\"60\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"24\" fill=\"#7650a0\">C</text><text x=\"125\" y=\"185\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"23\" fill=\"#3175ba\">6 cm</text><text id=\"caption\" x=\"380\" y=\"383\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"19\" fill=\"#8ca1af\">Leave construction arcs visible: they show how the result was obtained.</text></svg>"
           }
         ],
@@ -18181,19 +18181,19 @@
             "explanation": "The arc centred at that endpoint uses the known hypotenuse length."
           },
           {
-            "question": "Can a right-angled triangle have hypotenuse 5 cm and another side 7 cm?",
+            "question": "A right-angled triangle has its right angle at A, AB = 6 cm and ∠B = 40°. After drawing AB and the perpendicular at A, how is C found?",
             "options": [
-              "Yes",
-              "No, the hypotenuse must be longest",
-              "Only if reflected",
-              "Only if rotated"
+              "An arc of radius 6 cm centred at B",
+              "A ray from B at 40° to AB, meeting the perpendicular",
+              "An arc of radius 6 cm centred at A",
+              "A ray from A at 40° to AB"
             ],
             "answer": 1,
-            "hint": "Check the longest side before constructing.",
-            "explanation": "A hypotenuse of 5 cm cannot be shorter than a perpendicular side of 7 cm."
+            "hint": "The given angle is at B, so the ray starts at B.",
+            "explanation": "The angle condition is a ray from B making 40° with AB; the right angle is the perpendicular at A. C must lie on both, so it is their intersection."
           }
         ],
-        "takeaway": "Known perpendicular side → perpendicular → hypotenuse arc → connect.",
+        "takeaway": "Known perpendicular side → perpendicular → hypotenuse arc (or angle ray) → connect.",
         "mistake": "Using a shorter side as the hypotenuse arc radius."
       },
       {
@@ -18213,7 +18213,7 @@
             "title": "Construct perpendiculars at both ends",
             "text": "Through A and B, construct perpendicular rays on the same side of AB.",
             "why": "The two perpendiculars will be parallel to each other.",
-            "math": "AD ⟂ AB; BC ⟂ AB",
+            "math": "AD ⊥ AB; BC ⊥ AB",
             "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 400\" role=\"img\"><rect x=\"0\" y=\"0\" width=\"760\" height=\"400\" rx=\"0\" fill=\"#ffffff\" stroke=\"#ffffff\" stroke-width=\"2\"/><line id=\"base\" x1=\"190\" y1=\"300\" x2=\"570\" y2=\"300\" stroke=\"#173349\" stroke-width=\"3\"/><text x=\"380\" y=\"337\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"25\" fill=\"#173349\">8 cm</text><line id=\"left-ray\" x1=\"190\" y1=\"300\" x2=\"190\" y2=\"65\" stroke=\"#3175ba\" stroke-width=\"3\"/><line id=\"right-ray\" x1=\"570\" y1=\"300\" x2=\"570\" y2=\"65\" stroke=\"#3175ba\" stroke-width=\"3\"/><path id=\"rights\" d=\"M 190 280 L 210 280 L 210 300 M 550 300 L 550 280 L 570 280\" fill=\"none\" stroke=\"#3175ba\" stroke-width=\"2\"/><text id=\"caption\" x=\"380\" y=\"383\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"19\" fill=\"#8ca1af\">Leave construction arcs visible: they show how the result was obtained.</text></svg>"
           },
           {
@@ -18290,7 +18290,7 @@
       {
         "name": "Triangle data",
         "formula": "SSS; SAS; ASA; RHS",
-        "note": "RHS uses a right angle, hypotenuse and one other side."
+        "note": "RHS uses a right angle, hypotenuse and one other side; a right-angled triangle can also be built from one side and one acute angle."
       }
     ],
     "toolkit": {
@@ -18519,13 +18519,13 @@
         {
           "title": "Construct a right-angled triangle from RHS",
           "section": "24.5",
-          "when": "A right angle, hypotenuse and one perpendicular side are given.",
+          "when": "A right angle with the hypotenuse and one perpendicular side, or with one side and an acute angle, is given.",
           "rule": "Hypotenuse h must exceed the given perpendicular side a>0; the other perpendicular side is √(h²−a²).",
           "steps": [
             "Draw the given perpendicular side AB.",
             "Construct the required perpendicular at the right-angle endpoint A.",
-            "Centre the compass at B with radius equal to the hypotenuse.",
-            "Where that arc meets the perpendicular is C; join BC."
+            "Centre the compass at B with radius equal to the hypotenuse, or, if an acute angle at B is given instead, draw a ray from B at that angle to AB.",
+            "Where that arc or ray meets the perpendicular is C; join BC."
           ],
           "example": "AB=5, BC=13 cm and right angle at A give AC=12 cm.",
           "check": "5²+12²=13² checks the finished triangle.",

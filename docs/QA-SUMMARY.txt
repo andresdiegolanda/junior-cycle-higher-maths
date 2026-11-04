@@ -168,7 +168,8 @@ Results
   place", euro and litres wording, "at random" instead of "uniformly".
   Theorem numbers (3, 4, 5, 6, 9, 12, 13, 14, 19) and corollaries are now named
   where the Junior Cycle course uses them, and chapter 8 points Higher Level
-  students to the examinable proofs in chapter 16.
+  students to the proof explanations in chapter 16. The initial claim that these
+  full formal proofs were examinable was corrected in the follow-up below.
 - Clarity: undefined jargon replaced (confounders, census, coverage bias,
   modulo, one-to-one, Euclidean, polynomial, radians, Δ, Σ and |…| notation in
   toolkit formulas, floor, ∝); "why" lines that restated the step or used
@@ -202,3 +203,25 @@ chapter 4, an equal-width histogram example with modal class in chapter 13
 construction 14 (right-angled triangle from a side and an acute angle). Inverse
 functions, the discriminant and some algebraic-fraction work exceed the Junior
 Cycle course and are best presented as extension material.
+
+
+Exam guidance and narration corrections — 4 November 2026
+- Corrected the chapter 8 introduction: students need to understand proofs and
+  geometric reasoning, but full formal proofs are not examinable at Junior
+  Cycle. Chapter 16 remains a reference for step-by-step proof explanations.
+  Verified against the official specification, GT.3(e):
+  https://www.curriculumonline.ie/junior-cycle/junior-cycle-subjects/mathematics/expectations-for-students/
+- Added explicit clock-time contexts for the time lesson, two journey challenges
+  and the hourly-temperature exercise. Context follows questions, hints, worked
+  solutions, answers, reading boxes and associated toolkit cards. Clock times
+  use spoken 24-hour readings; ratios such as 12:23 remain ratios elsewhere.
+- Hour units require a space (2 h); products such as 6h and 0.006h keep their
+  algebraic meaning. Division by h, including trigonometric hypotenuse formulas,
+  is read as "over h"; currency rates and speed units still read "per hour".
+- Verification passed: 58 maths/unit cases, 11 clock-context cases, 44 checks
+  against the generated full guide and standalone pages, all existing speech,
+  guided-reading, search and practice UI checks, 99 independent answer checks,
+  typography, diagram marks and distribution validation. All 25 HTML files
+  were rebuilt and the distribution ZIP refreshed. The printable PDF content
+  and layout were unaffected. This was a targeted correction, not a new full
+  curriculum review or an audible cross-device voice audit.

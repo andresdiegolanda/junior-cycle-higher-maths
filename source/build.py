@@ -1,4 +1,5 @@
 from pathlib import Path
+from functools import partial
 import json,re,html
 import xml.etree.ElementTree as ET
 from urllib.parse import quote
@@ -12,32 +13,45 @@ OUT.mkdir(parents=True,exist_ok=True)
 chapters=json.loads((ROOT/'data/chapters.json').read_text(encoding='utf-8'))
 practice=load_practice()
 practice_order=json.loads((ROOT/'data/practice-order.json').read_text(encoding='utf-8'))
+narration_context=json.loads((ROOT/'data/narration-context.json').read_text(encoding='utf-8'))
 assert set(practice)=={l['id'] for c in chapters for l in c['lessons']}, 'Practice must cover every lesson exactly'
 assert set(practice_order)<=set(practice), 'Unknown practice ordering key'
+context_ids=set(practice)|{q['id'] for rows in practice.values() for q in rows}|{q['id'] for c in chapters for q in c['challenges']}
+assert set(narration_context)<=context_ids, 'Unknown narration context ID'
+assert all(set(v)=={'clock_times'} and isinstance(v['clock_times'],bool) for v in narration_context.values()), 'Invalid narration context'
+
+def narrator(*ids):
+    options={}
+    for key in ids:options.update(narration_context.get(key,{}))
+    return partial(spoken,**options)
+
 # Every narration is derived here from the written content, so editing a
 # question, step or method in the data files never leaves stale speech behind.
 for c in chapters:
     for l in c['lessons']:
+        say=narrator(l['id'])
         for q in l['quiz']:
-            q['speechQuestion']=spoken(q['question']+' '+' '.join(f'Option {"ABCD"[i]}. {o}.' for i,o in enumerate(q['options'])))
-            q['speechHint']=spoken(q['hint']);q['speechExplanation']=spoken(q['explanation'])
+            q['speechQuestion']=say(q['question']+' '+' '.join(f'Option {"ABCD"[i]}. {o}.' for i,o in enumerate(q['options'])))
+            q['speechHint']=say(q['hint']);q['speechExplanation']=say(q['explanation'])
         for s in l['steps']:
-            s['say']=s['speech']=spoken(s['title']+'. '+s['text']+' '+s['math']+'. '+s['why'])
+            s['say']=s['speech']=say(s['title']+'. '+s['text']+' '+s['math']+'. '+s['why'])
     for q in c['challenges']:
-        q['speechQuestion']=spoken(q['question']);q['speechHints']=[spoken(h) for h in q['hints']]
-        for st in q['solution']:st['speech']=spoken(st['title']+'. '+st['math']+'. '+st['reason'])
+        say=narrator(q['id'])
+        q['speechQuestion']=say(q['question']);q['speechHints']=[say(h) for h in q['hints']]
+        for st in q['solution']:st['speech']=say(st['title']+'. '+st['math']+'. '+st['reason'])
     for m in c['toolkit']['methods']:
-        m['speech']=spoken(m['title']+'. '+m['when']+' '+m['rule']+' '+' '.join(m['steps'])+' Example. '+m['example']+' Check. '+m['check']+' Watch out. '+m['trap'])
+        m['speech']=narrator(m['lessonId'])(m['title']+'. '+m['when']+' '+m['rule']+' '+' '.join(m['steps'])+' Example. '+m['example']+' Check. '+m['check']+' Watch out. '+m['trap'])
 for c in chapters:
     for l in c['lessons']:
         checks=[dict(q,id=f'{l["id"]}-q{i}',type='choice',difficulty=i+1,
                      hints=[q['hint']],speechHints=[q['speechHint']]) for i,q in enumerate(l['quiz'])]
         written=[]
         for q in practice[l['id']]:
-            written.append(dict(q,type='written',speechQuestion=spoken(q['question']),
-                speechHints=[spoken(h) for h in q['hints']],
-                speechSolution=[spoken(s) for s in q['solution']],
-                speechResult=spoken('Answer. '+q['answer']+'. Check it. '+q['check'])))
+            say=narrator(l['id'],q['id'])
+            written.append(dict(q,type='written',speechQuestion=say(q['question']),
+                speechHints=[say(h) for h in q['hints']],
+                speechSolution=[say(s) for s in q['solution']],
+                speechResult=say('Answer. '+q['answer']+'. Check it. '+q['check'])))
         candidates=dict(zip('abcdef',checks+written))
         order=practice_order.get(l['id'],'abcdef').replace(' ','')
         assert sorted(order)==list('abcdef'), (l['id'],order)
@@ -50,7 +64,7 @@ for file in sorted((ROOT/'data').glob('visual-cards-*.json')):
         assert key not in visuals,('Duplicate visual card',key)
         visuals[key]=card
 for c in chapters:
-    for q in c['challenges']:q['speechResult']=spoken('Final result. '+q['answer']+'. Check it independently. '+q['check'])
+    for q in c['challenges']:q['speechResult']=narrator(q['id'])('Final result. '+q['answer']+'. Check it independently. '+q['check'])
     for i,m in enumerate(c['toolkit']['methods']):
         m['ruleRows']=reference_rows(m['rule'])
         if (c['id'],i) in visuals:
@@ -59,15 +73,16 @@ for c in chapters:
             v['svg']=prepare_marks(readable_diagram(v['svg'],(c['id'],i+1)))
             v['conditionLabel']='Watch for' if v['condition'].strip()==m['trap'].strip() else 'Remember'
             cue='Watch for this mistake' if v['conditionLabel']=='Watch for' else 'Remember'
-            v['speech']=spoken(v['task']+'. '+v['narration']+' Formula or method. '+v['formula']+'. '+cue+'. '+v['condition'])
+            v['speech']=narrator(m['lessonId'])(v['task']+'. '+v['narration']+' Formula or method. '+v['formula']+'. '+cue+'. '+v['condition'])
             m['visual']=v
     for l in c['lessons']:
-        l['boxSpeech']={key:spoken(label+'. '+l[field]) for key,field,label in [('goal','goal','Your goal'),('takeaway','takeaway','Keep this idea'),('mistake','mistake','Watch out for')]}
+        say=narrator(l['id'])
+        l['boxSpeech']={key:say(label+'. '+l[field]) for key,field,label in [('goal','goal','Your goal'),('takeaway','takeaway','Keep this idea'),('mistake','mistake','Watch out for')]}
         for s in l['steps']:
             s['svg']=prepare_marks(prepare_grid(s['svg']))
             root=ET.fromstring(s['svg']);title=root.find('{http://www.w3.org/2000/svg}title')
             desc=root.attrib.get('aria-label') or (''.join(title.itertext()) if title is not None else s['title'])
-            s['boxSpeech']={'explanation':spoken(s['title']+'. '+s['text']),'diagram':spoken('Read the diagram. '+desc+'. '+s['math']),'why':spoken('Why it works. '+s['why'])}
+            s['boxSpeech']={'explanation':say(s['title']+'. '+s['text']),'diagram':say('Read the diagram. '+desc+'. '+s['math']),'why':say('Why it works. '+s['why'])}
 pdf_report=ROOT/'toolkit-pdf-report.json'
 if pdf_report.exists():
     for row in json.loads(pdf_report.read_text(encoding='utf-8')):

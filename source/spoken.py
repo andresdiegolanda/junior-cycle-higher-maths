@@ -12,14 +12,14 @@ SUB_PLAIN = '0123456789nk+-'
 _super = str.maketrans(SUPER, SUPER_PLAIN)
 _sub = str.maketrans(SUB, SUB_PLAIN)
 
-# Units are only read as units directly after a number; "2m + 1" stays algebra.
+# Single-letter units require a space: "2 h" is a duration, "2h" is algebra.
 UNITS = [
     ('km/h', 'kilometres per hour'), ('m/s', 'metres per second'), ('L/s', 'litres per second'),
     ('km²', 'square kilometres'), ('m²', 'square metres'), ('cm²', 'square centimetres'),
     ('mm²', 'square millimetres'), ('m³', 'cubic metres'), ('cm³', 'cubic centimetres'),
     ('mm³', 'cubic millimetres'), ('km', 'kilometres'), ('cm', 'centimetres'), ('mm', 'millimetres'),
     ('kg', 'kilograms'), ('mL', 'millilitres'), ('ml', 'millilitres'), ('mins', 'minutes'),
-    ('min', 'minutes'), ('hrs', 'hours'), ('hr', 'hours'), ('h', 'hours'),
+    ('min', 'minutes'), ('hrs', 'hours'), ('hr', 'hours'),
 ]
 SYMBOLS = [
     ('∖', ' set difference '), ('α', ' alpha '), ('β', ' beta '), ('γ', ' gamma '), ('φ', ' phi '),
@@ -65,7 +65,28 @@ def _named_call(m):
         return 'probability of ' + arg
     return m.group(0)
 
-def spoken(t):
+def _clock_time(m):
+    """Read a marked clock time in 24-hour form, without ratio ambiguity."""
+    hour, minute = map(int, m.groups())
+    words = ('zero one two three four five six seven eight nine ten eleven '
+             'twelve thirteen fourteen fifteen sixteen seventeen eighteen nineteen').split()
+    def number(n):
+        if n < 20:
+            return words[n]
+        tens = {2: 'twenty', 3: 'thirty', 4: 'forty', 5: 'fifty'}
+        return tens[n // 10] + ('-' + words[n % 10] if n % 10 else '')
+    if hour == minute == 0:
+        return 'midnight'
+    hours = ('zero ' if hour < 10 else '') + number(hour)
+    minutes = 'hundred hours' if minute == 0 else ('oh ' if minute < 10 else '') + number(minute)
+    return hours + ' ' + minutes
+
+
+def spoken(t, *, clock_times=False):
+    # The author supplies context: 12:23 can be a clock time OR a valid ratio.
+    # Protect times before the general colon-to-ratio conversion below.
+    if clock_times:
+        t = re.sub(r'(?<![\w:])([01]?\d|2[0-3]):([0-5]\d)(?!\d|,\d)', _clock_time, t)
     t = t.replace('e.g.', 'for example').replace('i.e.', 'that is')
     for short, long in [('sin', 'sine'), ('cos', 'cosine'), ('tan', 'tan')]:
         t = t.replace(short + '⁻¹', 'inverse ' + long)
@@ -79,9 +100,11 @@ def spoken(t):
     t = re.sub(r'\b([PQ])\(([^()]+)\)', _named_call, t)
     for unit, name in UNITS:
         t = re.sub(r'(?<=\d)\s*' + re.escape(unit) + r'(?![\w²³/])', ' ' + name, t)
+    t = re.sub(r'(?<=\d)\s+h(?![\w²³/])', ' hours', t)
     t = re.sub(r'(?<=\d)\s+m(?![\w²³/])', ' metres', t)
     t = re.sub(r'(?<=\d)\s+s(?![\w])', ' seconds', t)
-    t = re.sub(r'/\s*h\b', ' per hour ', t)
+    # A currency rate is per hour; a denominator such as 8/h is algebra.
+    t = re.sub(r'([€£$]\s*[\d,]+(?:\.\d+)?)\s*/\s*h\b', r'\1 per hour ', t)
     t = re.sub(r'€\s*([\d,]+(?:\.\d+)?)', r'\1 euros', t)
     t = re.sub(r'£\s*([\d,]+(?:\.\d+)?)', r'\1 pounds', t)
     t = re.sub(r'\$\s*([\d,]+(?:\.\d+)?)', r'\1 dollars', t)

@@ -74,6 +74,13 @@ speech files live directly in `source/`. Every narration is derived from the wri
 content at build time by `source/spoken.py`, so editing a question, step, method or
 glossary entry needs no separate speech text.
 
+Use a space for hour units (`2 h`) and no space for algebraic products (`2h`).
+Clock-time content is marked by lesson, exercise or challenge ID in
+`source/data/narration-context.json`; this keeps `12:23` distinct from a ratio.
+Lessons pass their context to their steps, practice and associated toolkit cards.
+Individual exercise settings override the lesson setting. Mark new clock-time
+content there so its questions, clues and answers use the same spoken format.
+
 The supplied PDF only needs rebuilding when its content or layout changes.
 Install its dependencies with `python -m pip install -r source/requirements-print.txt`.
 Set `MATHS_FONT_DIR` to a folder containing `DejaVuSans.ttf` and, preferably,
@@ -105,6 +112,7 @@ node source/test-guided-reading.cjs
 node source/test-search.cjs
 node source/test-practice.cjs
 python source/test-spoken.py
+python source/test-narration-content.py
 python source/test-practice.py
 python source/test-toolkit-typography.py
 python source/test-diagram-marks.py

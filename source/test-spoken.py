@@ -50,6 +50,16 @@ cases = {
     '{1, 2, 3}': 'the set containing 1, 2, 3 end of set',
     'The vertex (0,0) moves to (3,1).': 'The vertex 0 comma 0 moves to 3 comma 1.',
     'A point (2,3) moves to (−2,−3).': 'A point 2 comma 3 moves to minus 2 comma minus 3.',
+    'T = 18 − 0.006h with h in metres.': 'T equals 18 minus 0.006 times h with h in metres.',
+    'C=15+6h': 'C equals 15 plus 6 times h',
+    '2h² + 3h': '2 times h squared plus 3 times h',
+    'sin 30° = 8/h': 'sine 30 degrees equals 8 over h',
+    'V/h': 'V over h',
+    'At €12/h for 2 h, pay is €24.': 'At 12 euros per hour for 2 hours, pay is 24 euros.',
+    'Rates £15/h and $20/h': 'Rates 15 pounds per hour and 20 dollars per hour',
+    '2 h 35 min; 31/12 h': '2 hours 35 minutes; 31 over 12 hours',
+    'Mixed ratio 12:23; 27:45=3:5.': 'Mixed ratio 12 to 23; 27 to 45 equals 3 to 5.',
+    'On a 1:25,000 map': 'On a 1 to 25,000 map',
 }
 failed = 0
 for source, expected in cases.items():
@@ -58,4 +68,22 @@ for source, expected in cases.items():
         failed += 1
         print(f'FAIL {source!r}\n  expected {expected!r}\n  actual   {actual!r}')
 assert not failed, f'{failed} spoken-form checks failed'
-print(f'Spoken-form checks passed: {len(cases)} notations, units and symbols.')
+
+clock_cases = {
+    'A coach leaves at 22:45 and arrives at 01:20 next day.':
+        'A coach leaves at twenty-two forty-five and arrives at zero one twenty next day.',
+    '14:47 → 15:00: 13 min': 'fourteen forty-seven gives fifteen hundred hours: 13 minutes',
+    '23:40 to 00:15': 'twenty-three forty to zero zero fifteen',
+    '00:00': 'midnight',
+    '09:05': 'zero nine oh five',
+    '12:00': 'twelve hundred hours',
+    'At 09:00, then 10:00.': 'At zero nine hundred hours, then ten hundred hours.',
+    '05:30 the next day': 'zero five thirty the next day',
+    '12:23': 'twelve twenty-three',
+    'A 1:25,000 map at 09:00': 'A 1 to 25,000 map at zero nine hundred hours',
+    'Ratio 2:3:4': 'Ratio 2 to 3 to 4',
+}
+for source, expected in clock_cases.items():
+    actual = spoken(source, clock_times=True)
+    assert actual == expected, (source, expected, actual)
+print(f'Spoken-form checks passed: {len(cases)} maths/unit cases and {len(clock_cases)} clock-context cases.')

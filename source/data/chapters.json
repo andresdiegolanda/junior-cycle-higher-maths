@@ -55,7 +55,7 @@
             ],
             "answer": 0,
             "hint": "Group the a terms; keep the constant.",
-            "explanation": "7a − 2a = 5a, so the expression is 5a + 4."
+            "explanation": "7a + 4 − 2a = 7a − 2a + 4 = 5a + 4. Keep the constant while collecting the a terms."
           },
           {
             "question": "Which term is like 3x²?",
@@ -140,7 +140,7 @@
             ],
             "answer": 1,
             "hint": "There are four products; combine the two middle terms.",
-            "explanation": "The products are x², 2x, 3x and 6, giving x² + 5x + 6."
+            "explanation": "(x + 3)(x + 2) = x² + 2x + 3x + 6 = x² + 5x + 6."
           },
           {
             "question": "What is the constant term in (2x − 5)(x − 3)?",
@@ -367,7 +367,7 @@
             ],
             "answer": 1,
             "hint": "Add 7 to both sides first.",
-            "explanation": "4x = 16, so x = 4."
+            "explanation": "4x − 7 = 9 → 4x = 16 → x = 4. Add 7 to both sides, then divide both sides by 4."
           },
           {
             "question": "What should you do to both sides of x/5 = 3?",
@@ -379,7 +379,7 @@
             ],
             "answer": 2,
             "hint": "Undo dividing x by 5.",
-            "explanation": "Multiply both sides by 5 to obtain x = 15."
+            "explanation": "x/5 = 3 → 5(x/5) = 5(3) → x = 15."
           }
         ],
         "takeaway": "Undo operations on both sides and substitute back.",
@@ -502,7 +502,7 @@
             ],
             "answer": 0,
             "hint": "Which bracket multiplies x + 5 to give the constant 10 and the middle term 7x?",
-            "explanation": "(x + 5)(x + 2) = x² + 7x + 10, so the quotient is x + 2 for x ≠ −5."
+            "explanation": "(x² + 7x + 10)/(x + 5) = [(x + 5)(x + 2)]/(x + 5) = x + 2, with x ≠ −5 throughout."
           },
           {
             "question": "Which input is excluded from (x² − 9)/(x − 3)?",
@@ -630,7 +630,7 @@
             ],
             "answer": 1,
             "hint": "Division by a negative reverses the sign.",
-            "explanation": "Divide by −2: x ≥ −4."
+            "explanation": "−2x ≤ 8 → x ≥ −4. Dividing both sides by −2 reverses the inequality."
           },
           {
             "question": "How should x < 2 be shown?",
@@ -858,7 +858,7 @@
         "solution": [
           {
             "title": "Fill all six cells",
-            "math": "2 x³ + 6 x² − 4 x − x² − 3 x + 2",
+            "math": "P(x) = (2x − 1)(x² + 3x − 2) = 2x³ + 6x² − 4x − x² − 3x + 2",
             "reason": "Each term in the first bracket multiplies every term in the second."
           },
           {
@@ -868,7 +868,7 @@
           },
           {
             "title": "Substitute the signed input",
-            "math": "P(−2)=−16+20+14+2=20",
+            "math": "P(−2) = 2(−2)³ + 5(−2)² − 7(−2) + 2 = −16 + 20 + 14 + 2 = 20",
             "reason": "The brackets around −2 determine the signs of its powers."
           },
           {
@@ -893,17 +893,17 @@
         "solution": [
           {
             "title": "Find the leading term",
-            "math": "2 x³/x=2 x²; (x+3)2 x²=2 x³+6 x²",
+            "math": "Q(x) = (2x³ + 5x² − 4x − 3)/(x + 3) = 2x² + (−x² − 4x − 3)/(x + 3), x ≠ −3",
             "reason": "The leading product fixes the first quotient term."
           },
           {
             "title": "Continue with the remaining polynomial",
-            "math": "(2 x³+5 x²−4 x−3)−(2 x³+6 x²)=−x²−4 x−3",
+            "math": "Q(x) = 2x² + [−x(x + 3) − x − 3]/(x + 3) = 2x² − x + (−x − 3)/(x + 3), x ≠ −3",
             "reason": "Subtract the entire product."
           },
           {
             "title": "Complete the quotient",
-            "math": "(x+3)(−x)=−x²−3 x; the remainder −x−3=(x+3)(−1)",
+            "math": "Q(x) = 2x² − x − (x + 3)/(x + 3) = 2x² − x − 1, x ≠ −3",
             "reason": "The quotient is 2 x²−x−1 and the final remainder is zero."
           },
           {
@@ -913,7 +913,7 @@
           },
           {
             "title": "Evaluate and keep the restriction",
-            "math": "Q(2)=8−2−1=5; original form:25/5=5; x≠−3",
+            "math": "Q(2) = 2(2²) − 2 − 1 = 5; original form: Q(2) = [2(2³) + 5(2²) − 4(2) − 3]/(2 + 3) = 25/5 = 5",
             "reason": "The original divisor still controls the domain."
           }
         ],
@@ -1060,7 +1060,7 @@
             ],
             "answer": 0,
             "hint": "Include the shared x as well as the number HCF.",
-            "explanation": "The HCF is 4x. Divide both terms by it to obtain 4x(2x + 3)."
+            "explanation": "8x² + 12x = 4x(2x + 3). The whole expression is rewritten using its highest common factor 4x."
           },
           {
             "question": "Factorise 5x + 15.",
@@ -1072,7 +1072,7 @@
             ],
             "answer": 0,
             "hint": "The terms share the number 5 but not the letter x.",
-            "explanation": "5x/5 = x and 15/5 = 3, giving 5(x + 3)."
+            "explanation": "5x + 15 = 5(x + 3). Both terms share the factor 5."
           }
         ],
         "takeaway": "Take out the shared number and the lowest shared powers.",
@@ -1124,7 +1124,7 @@
             ],
             "answer": 0,
             "hint": "Take a common take out of each pair and look for a repeated bracket.",
-            "explanation": "b(x + y) + 2(x + y) = (b + 2)(x + y)."
+            "explanation": "bx + by + 2x + 2y = b(x + y) + 2(x + y) = (b + 2)(x + y)."
           },
           {
             "question": "Factorise ax − ay + 4x − 4y.",
@@ -1136,7 +1136,7 @@
             ],
             "answer": 1,
             "hint": "Both groups contain x − y.",
-            "explanation": "a(x − y) + 4(x − y) = (a + 4)(x − y)."
+            "explanation": "ax − ay + 4x − 4y = a(x − y) + 4(x − y) = (a + 4)(x − y)."
           }
         ],
         "takeaway": "Make brackets match exactly, then take out the repeated bracket.",
@@ -1188,7 +1188,7 @@
             ],
             "answer": 1,
             "hint": "49 is 7 squared.",
-            "explanation": "Use the difference of squares to get (x − 7)(x + 7)."
+            "explanation": "x² − 49 = x² − 7² = (x − 7)(x + 7)."
           },
           {
             "question": "Which expression is a difference of two squares?",
@@ -1252,7 +1252,7 @@
             ],
             "answer": 0,
             "hint": "Find product 12 and sum 7.",
-            "explanation": "3 and 4 satisfy both conditions."
+            "explanation": "x² + 7x + 12 = x² + 3x + 4x + 12 = x(x + 3) + 4(x + 3) = (x + 3)(x + 4)."
           },
           {
             "question": "Factorise x² − 2x − 15.",
@@ -1264,7 +1264,7 @@
             ],
             "answer": 0,
             "hint": "Opposite signs are needed.",
-            "explanation": "−5 and +3 multiply to −15 and add to −2."
+            "explanation": "x² − 2x − 15 = x² − 5x + 3x − 15 = x(x − 5) + 3(x − 5) = (x − 5)(x + 3)."
           }
         ],
         "takeaway": "Product gives the constant; sum gives the middle coefficient.",
@@ -1316,7 +1316,7 @@
             ],
             "answer": 0,
             "hint": "Split 7x using numbers with product 6.",
-            "explanation": "3x² + 6x + x + 2 = 3x(x + 2) + (x + 2) = (3x + 1)(x + 2)."
+            "explanation": "3x² + 7x + 2 = 3x² + 6x + x + 2 = 3x(x + 2) + (x + 2) = (3x + 1)(x + 2)."
           },
           {
             "question": "For 2x² + 9x + 4, which split is useful?",
@@ -1328,7 +1328,7 @@
             ],
             "answer": 1,
             "hint": "The split numbers multiply to 8 and add to 9.",
-            "explanation": "8 and 1 satisfy both conditions and lead to (2x + 1)(x + 4)."
+            "explanation": "2x² + 9x + 4 = 2x² + 8x + x + 4 = 2x(x + 4) + (x + 4) = (2x + 1)(x + 4)."
           }
         ],
         "takeaway": "Multiply a×c, split bx, group, then verify.",
@@ -1380,7 +1380,7 @@
             ],
             "answer": 0,
             "hint": "Factorise and inspect the original denominator.",
-            "explanation": "Cancel x + 3 to get x − 3, retaining x ≠ −3."
+            "explanation": "(x² − 9)/(x + 3) = [(x − 3)(x + 3)]/(x + 3) = x − 3, with x ≠ −3 throughout."
           },
           {
             "question": "Which cancellation is valid?",
@@ -1570,7 +1570,7 @@
           },
           {
             "title": "Split the middle term when a ≠ 1",
-            "math": "3 x²+6 x+2 x+4=3 x(x+2)+2(x+2)",
+            "math": "3x² + 8x + 4 = 3x² + 6x + 2x + 4 = 3x(x + 2) + 2(x + 2)",
             "reason": "The split numbers 6 and 2 multiply to 12 and add to 8."
           },
           {
@@ -1600,7 +1600,7 @@
         "solution": [
           {
             "title": "Factorise the original denominator",
-            "math": "x³+4 x²+3 x=x(x+1)(x+3)",
+            "math": "F(x) = (2x² + 7x + 3)/[x(x² + 4x + 3)] = (2x² + 7x + 3)/[x(x + 1)(x + 3)]",
             "reason": "The HCF x exposes a monic quadratic."
           },
           {
@@ -1610,7 +1610,7 @@
           },
           {
             "title": "Factorise the numerator and cancel",
-            "math": "F(x)=(2 x+1)(x+3)/(x(x+1)(x+3))=(2 x+1)/(x(x+1))",
+            "math": "F(x) = [(2x + 1)(x + 3)]/[x(x + 1)(x + 3)] = (2x + 1)/[x(x + 1)], x ≠ 0, −1, −3",
             "reason": "The cancellation is valid only for the allowed inputs."
           },
           {
@@ -1640,12 +1640,12 @@
         "solution": [
           {
             "title": "Expose the repeated bracket",
-            "math": "x³−2 x²−9 x+18=(x−2)(x²−9)=(x−2)(x−3)(x+3)",
+            "math": "G(x) = (x³ − 2x² − 9x + 18)/(x² − 5x + 6) = [(x − 2)(x² − 9)]/(x² − 5x + 6)",
             "reason": "Grouping is followed by difference of squares."
           },
           {
             "title": "Factorise the denominator",
-            "math": "x²−5 x+6=(x−2)(x−3); x≠2,3",
+            "math": "G(x) = [(x − 2)(x − 3)(x + 3)]/[(x − 2)(x − 3)], x ≠ 2, 3",
             "reason": "The denominator controls the exclusions."
           },
           {
@@ -2347,17 +2347,17 @@
         "solution": [
           {
             "title": "Count distinct people",
-            "math": "Union=90; E₂+E₃=90−46=44",
+            "math": "Union = 100 − 10 = 90; E₂ + E₃ = 90 − 46 = 44",
             "reason": "Everyone in the union joins one, two or three clubs."
           },
           {
             "title": "Count memberships",
-            "math": "46+2 E₂+3 E₃=142",
+            "math": "E₂ + E₃ = 44 and 46 + 2E₂ + 3E₃ = 142",
             "reason": "Exactly-two people contribute two memberships each."
           },
           {
             "title": "Eliminate the double count",
-            "math": "2 E₂+2 E₃=88; subtract to get E₃=8, then E₂=36",
+            "math": "2E₂ + 2E₃ = 88 and 2E₂ + 3E₃ = 96 → E₃ = 8 and E₂ = 36",
             "reason": "The two counting equations use the same underlying regions."
           },
           {
@@ -2497,7 +2497,7 @@
             ],
             "answer": 1,
             "hint": "Use profit divided by cost.",
-            "explanation": "Profit is €15; 15/60 × 100% = 25%."
+            "explanation": "Markup = (75 − 60)/60 × 100% = 15/60 × 100% = 25%."
           },
           {
             "question": "An item costs €60 and sells for €75. What is the profit margin?",
@@ -2509,7 +2509,7 @@
             ],
             "answer": 1,
             "hint": "Use profit divided by selling price.",
-            "explanation": "15/75 × 100% = 20%."
+            "explanation": "Profit margin = (75 − 60)/75 × 100% = 15/75 × 100% = 20%."
           }
         ],
         "takeaway": "Markup uses cost; margin uses selling price.",
@@ -2561,7 +2561,7 @@
             ],
             "answer": 0,
             "hint": "Calculate usage, then add the fixed charge.",
-            "explanation": "50 × 0.30 = €15; €15 + €12 = €27."
+            "explanation": "Subtotal = 12 + 50 × 0.30 = 12 + 15 = €27."
           },
           {
             "question": "A rate is 18 cents per unit. What is its euro value?",
@@ -3071,17 +3071,17 @@
         "solution": [
           {
             "title": "Apply the first rate",
-            "math": "1500×1.04=€1,560",
+            "math": "After year 1: B₁ = 1500 × 1.04 = €1560",
             "reason": "The first year earns €60 interest."
           },
           {
             "title": "Make the transaction at the stated time",
-            "math": "1560−200=€1,360",
+            "math": "After withdrawal: B = 1500 × 1.04 − 200 = €1360",
             "reason": "Only the remaining balance earns year-2 interest."
           },
           {
             "title": "Apply the second rate",
-            "math": "1360×1.05=€1,428",
+            "math": "After year 2: B₂ = (1500 × 1.04 − 200) × 1.05 = €1428",
             "reason": "The second year earns €68."
           },
           {
@@ -3111,7 +3111,7 @@
         "solution": [
           {
             "title": "Form the full retained multiplier",
-            "math": "0.80×0.85=0.68",
+            "math": "Final-value equation: P × 0.80 × 0.85 = 1360 → 0.68P = 1360",
             "reason": "The second rate applies to the reduced value."
           },
           {
@@ -3617,12 +3617,12 @@
           },
           {
             "title": "Convert to percentages",
-            "math": "Percentages:25%,25%,33⅓%,8⅓%,8⅓%",
+            "math": "Percentages: (3/12)×100% = 25%, (3/12)×100% = 25%, (4/12)×100% = 33⅓%, (1/12)×100% = 8⅓%, (1/12)×100% = 8⅓%",
             "reason": "Divide each frequency by 12 and multiply by 100."
           },
           {
             "title": "Combine the requested categories",
-            "math": "At least two:4+1+1=6; 6/12=50%",
+            "math": "P(at least two) = (4 + 1 + 1)/12 = 1/2, or 50%",
             "reason": "The event includes all counts of 2 or more."
           },
           {
@@ -4578,7 +4578,7 @@
             ],
             "answer": 0,
             "hint": "Add all values and divide by four.",
-            "explanation": "The sum is 32; 32/4 = 8."
+            "explanation": "Mean = (4 + 8 + 9 + 11)/4 = 32/4 = 8."
           },
           {
             "question": "Four values have mean 7. Three values are 4, 6 and 8. Find the fourth.",
@@ -4590,7 +4590,7 @@
             ],
             "answer": 1,
             "hint": "Find the required total first.",
-            "explanation": "The total is 4 × 7 = 28. Known total is 18, leaving 10."
+            "explanation": "Missing value = 4 × 7 − (4 + 6 + 8) = 28 − 18 = 10."
           }
         ],
         "takeaway": "Mean × number of observations = total.",
@@ -4975,7 +4975,7 @@
         "solution": [
           {
             "title": "Recover the group totals",
-            "math": "A total=12×14=168; B total=8×19=152",
+            "math": "Combined mean = (12 × 14 + 8 × 19)/(12 + 8)",
             "reason": "A mean multiplied by its count gives its total."
           },
           {
@@ -5010,7 +5010,7 @@
         "solution": [
           {
             "title": "Calculate midpoint contributions",
-            "math": "4×5=20; 8×15=120; 6×25=150",
+            "math": "Estimated mean = (4 × 5 + 8 × 15 + 6 × 25)/(4 + 8 + 6)",
             "reason": "Each midpoint represents the unknown observations inside its group."
           },
           {
@@ -5050,12 +5050,12 @@
         "solution": [
           {
             "title": "Translate mean and range",
-            "math": "a+b=40−20=20; b−a=12",
+            "math": "(a + 4 + 7 + 9 + b)/5 = 8 and b − a = 12 → a + b = 20 and b − a = 12",
             "reason": "The mean gives a total, while range links the two extremes."
           },
           {
             "title": "Solve both conditions",
-            "math": "2b=32 → b=16; a=4",
+            "math": "2b = 32 and a + b = 20 → b = 16 and a = 4",
             "reason": "Adding the equations eliminates a."
           },
           {
@@ -5090,7 +5090,7 @@
         "solution": [
           {
             "title": "Calculate the original summaries",
-            "math": "Total=112; mean=16; median=7; mode=7; range=65",
+            "math": "Mean = (5 + 6 + 7 + 7 + 8 + 9 + 70)/7 = 16; median = 7; mode = 7; range = 70 − 5 = 65",
             "reason": "Mean uses the total, median the fourth position, mode frequency and range the extremes."
           },
           {
@@ -5100,7 +5100,7 @@
           },
           {
             "title": "Replace the extreme value",
-            "math": "New total=182; mean=26; median=7; mode=7; range=135",
+            "math": "New mean = (5 + 6 + 7 + 7 + 8 + 9 + 140)/7 = 26; median = 7; mode = 7; range = 140 − 5 = 135",
             "reason": "The extreme replacement changes the total and maximum but not the centre position or repeated value."
           },
           {
@@ -6957,12 +6957,12 @@
         "solution": [
           {
             "title": "Separate the pairs",
-            "math": "RM only = 8; RC only = 4; MC only = 3; triple = 4",
+            "math": "RM only = 12 − 4 = 8; RC only = 8 − 4 = 4; MC only = 7 − 4 = 3; triple = 4",
             "reason": "Inclusive pair counts contain the triple."
           },
           {
             "title": "Find single activities",
-            "math": "R only = 14; M only = 10; C only = 9",
+            "math": "R only = 30 − 8 − 4 − 4 = 14; M only = 25 − 8 − 3 − 4 = 10; C only = 20 − 4 − 3 − 4 = 9",
             "reason": "Subtract all the disjoint overlap regions from each set total."
           },
           {
@@ -7037,12 +7037,12 @@
         "solution": [
           {
             "title": "Use the updated branches",
-            "math": "P(RB)=(4/7)(3/6)=2/7; P(BR)=(3/7)(4/6)=2/7",
+            "math": "P(one of each) = (4/7)(3/6) + (3/7)(4/6) = 2/7 + 2/7",
             "reason": "The first counter changes the second draw."
           },
           {
             "title": "Add and complement",
-            "math": "P(one of each)=4/7; P(matching)=3/7",
+            "math": "P(one of each) = 4/7; P(matching) = 1 − 4/7 = 3/7",
             "reason": "The two events exhaust all outcomes."
           },
           {
@@ -7176,7 +7176,7 @@
             ],
             "answer": 1,
             "hint": "Add the equations to eliminate y.",
-            "explanation": "2x = 12 gives x = 6; then y = 3. Both equations check."
+            "explanation": "x + y = 9 and x − y = 3 → 2x = 12 and x − y = 3 → x = 6 and y = 3. Both original equations check."
           },
           {
             "question": "Multiply 2x − 3y = 7 by 4. Which equation results?",
@@ -7411,22 +7411,22 @@
         "solution": [
           {
             "title": "Clear the first equation",
-            "math": "6(x/2+y/3)=6(5) ⇒ 3x+2y=30",
+            "math": "6(x/2 + y/3) = 6(5) and x/4 − y/6 = 3/2 → 3x + 2y = 30 and x/4 − y/6 = 3/2",
             "reason": "The multiplier applies to every term."
           },
           {
             "title": "Clear the second",
-            "math": "12(x/4−y/6)=12(3/2) ⇒ 3x−2y=18",
+            "math": "3x + 2y = 30 and 12(x/4 − y/6) = 12(3/2) → 3x + 2y = 30 and 3x − 2y = 18",
             "reason": "The constant is multiplied too."
           },
           {
             "title": "Eliminate",
-            "math": "6x=48 ⇒ x=8",
+            "math": "6x = 48 and 3x + 2y = 30 → x = 8 and 3x + 2y = 30",
             "reason": "Adding cancels y."
           },
           {
             "title": "Back-substitute",
-            "math": "24+2y=30 ⇒ y=3",
+            "math": "x = 8 and 24 + 2y = 30 → x = 8 and y = 3",
             "reason": "Use either equivalent equation."
           },
           {
@@ -7461,12 +7461,12 @@
           },
           {
             "title": "Subtract",
-            "math": "22r=264 ⇒ r=12",
+            "math": "22r = 264 and 6r + 2s = 108 → r = 12 and 6r + 2s = 108",
             "reason": "The overtime terms cancel."
           },
           {
             "title": "Find overtime",
-            "math": "72+2s=108 ⇒ s=18",
+            "math": "r = 12 and 72 + 2s = 108 → r = €12/hour and s = €18/hour",
             "reason": "Substitute into an original shift."
           },
           {
@@ -7496,12 +7496,12 @@
           },
           {
             "title": "Find the repeating fee",
-            "math": "4d=72 ⇒ d=18",
+            "math": "4d = 72 and F + 3d = 86 → d = 18 and F + 54 = 86",
             "reason": "Subtracting removes F."
           },
           {
             "title": "Find the fixed fee",
-            "math": "F=86−54=32",
+            "math": "d = €18/day and F = 86 − 54 = €32",
             "reason": "Use a supplied quote."
           },
           {
@@ -7511,7 +7511,7 @@
           },
           {
             "title": "Use the budget",
-            "math": "n≤(250−32)/18=109/9; greatest integer n=12",
+            "math": "32 + 18n ≤ 250 → n ≤ (250 − 32)/18 = 109/9; greatest integer n = 12",
             "reason": "Only complete days are allowed."
           },
           {
@@ -7546,7 +7546,7 @@
           },
           {
             "title": "Eliminate d",
-            "math": "2n+4=3n−4 ⇒ n=8",
+            "math": "2n + 4 = 3n − 4 and d = 2n + 4 → n = 8 and d = 20",
             "reason": "Both expressions describe the same denominator."
           },
           {
@@ -7750,7 +7750,7 @@
             ],
             "answer": 0,
             "hint": "Use y − 4 = 2(x − 1).",
-            "explanation": "y − 4 = 2x − 2, so y = 2x + 2."
+            "explanation": "y − 4 = 2(x − 1) → y − 4 = 2x − 2 → y = 2x + 2."
           },
           {
             "question": "Which substitution uses slope −1 and point (−3, 2)?",
@@ -7826,7 +7826,7 @@
             ],
             "answer": 2,
             "hint": "Isolate y first.",
-            "explanation": "y = −(3/2)x + 4, so the slope is −3/2."
+            "explanation": "3x + 2y = 8 → 2y = −3x + 8 → y = −(3/2)x + 4. The slope is −3/2."
           }
         ],
         "takeaway": "Isolate y, then read its x-coefficient and constant.",
@@ -7942,7 +7942,7 @@
             ],
             "answer": 1,
             "hint": "Set y = 0.",
-            "explanation": "3x = 12 gives x = 4, so the intercept is (4, 0)."
+            "explanation": "At y = 0: 3x + 2(0) = 12 → 3x = 12 → x = 4. The intercept is (4, 0)."
           },
           {
             "question": "Which point is on y = −3?",
@@ -8006,7 +8006,7 @@
             ],
             "answer": 0,
             "hint": "Set 2x = x + 3.",
-            "explanation": "x = 3; then y = 6."
+            "explanation": "y = 2x and y = x + 3 → 2x = x + 3 and y = 2x → x = 3 and y = 6. Intersection: (3, 6)."
           },
           {
             "question": "Why is finding only x insufficient?",
@@ -8340,7 +8340,7 @@
           },
           {
             "title": "Solve the intersection",
-            "math": "−2x+3=x/2+3 ⇒ x=0, y=3",
+            "math": "−2x + 3 = x/2 + 3 and y = x/2 + 3 → x = 0 and y = 3",
             "reason": "Both equations must hold at I."
           },
           {
@@ -8365,7 +8365,7 @@
         "solution": [
           {
             "title": "Find midpoints",
-            "math": "M=(3,0), N=(1,2)",
+            "math": "M = ((0 + 6)/2, (0 + 0)/2) = (3, 0); N = ((0 + 2)/2, (0 + 4)/2) = (1, 2)",
             "reason": "Average the endpoint coordinates."
           },
           {
@@ -8375,7 +8375,7 @@
           },
           {
             "title": "Calculate lengths",
-            "math": "MN=√8=2√2; BC=√32=4√2",
+            "math": "MN = √[(1 − 3)² + (2 − 0)²] = 2√2; BC = √[(2 − 6)² + (4 − 0)²] = 4√2",
             "reason": "Use the distance formula separately."
           },
           {
@@ -8415,7 +8415,7 @@
           },
           {
             "title": "Find the foot",
-            "math": "−x+3=x+1 ⇒ I=(1,2)",
+            "math": "−x + 3 = x + 1 and y = x + 1 → x = 1 and y = 2 → I = (1, 2)",
             "reason": "Solve the two lines simultaneously."
           },
           {
@@ -8495,7 +8495,7 @@
             ],
             "answer": 2,
             "hint": "There are seven parts.",
-            "explanation": "€84/7 = €12; three parts give €36."
+            "explanation": "Smaller share = 84 × 3/(3 + 4) = 84 × 3/7 = €36."
           },
           {
             "question": "For a fixed distance, speed doubles. What happens to time?",
@@ -9705,7 +9705,7 @@
             ],
             "answer": 0,
             "hint": "Which positive number has fourth power 81?",
-            "explanation": "3⁴ = 81, so the fourth root is 3."
+            "explanation": "81^(1/4) = ⁴√81 = 3, since 3⁴ = 81."
           },
           {
             "question": "Evaluate 8^(2/3).",
@@ -9717,7 +9717,7 @@
             ],
             "answer": 1,
             "hint": "Take the cube root first, then square.",
-            "explanation": "∛8 = 2 and 2² = 4."
+            "explanation": "8^(2/3) = (∛8)² = 2² = 4."
           }
         ],
         "takeaway": "Denominator: root. Numerator: power. Negative exponent: reciprocal.",
@@ -9769,7 +9769,7 @@
             ],
             "answer": 1,
             "hint": "Rewrite 81 as a power of 3.",
-            "explanation": "81 = 3⁴, so x = 4."
+            "explanation": "3ˣ = 81 → 3ˣ = 3⁴ → x = 4."
           },
           {
             "question": "Solve 5^(2x) = 125.",
@@ -9781,7 +9781,7 @@
             ],
             "answer": 2,
             "hint": "125 = 5³.",
-            "explanation": "2x = 3, so x = 3/2."
+            "explanation": "5^(2x) = 125 → 5^(2x) = 5³ → 2x = 3 → x = 3/2."
           }
         ],
         "takeaway": "Common base first; equal exponents second; check last.",
@@ -9852,7 +9852,7 @@
             ],
             "answer": 0,
             "hint": "The root-three parts match.",
-            "explanation": "Add the coefficients: 2 + 5 = 7, giving 7√3."
+            "explanation": "2√3 + 5√3 = (2 + 5)√3 = 7√3."
           }
         ],
         "takeaway": "Extract perfect squares first; then combine only matching surd parts.",
@@ -9923,7 +9923,7 @@
             ],
             "answer": 0,
             "hint": "Multiply coefficients and add indices.",
-            "explanation": "2 × 4 = 8; 4 + (−2) = 2. The result is 8 × 10²."
+            "explanation": "(2 × 10⁴)(4 × 10⁻²) = (2 × 4) × 10^(4 − 2) = 8 × 10²."
           }
         ],
         "takeaway": "Keep track of both the coefficient and the power of ten.",
@@ -10258,7 +10258,7 @@
         "solution": [
           {
             "title": "Evaluate each factor",
-            "math": "16^(−3/4)=1/8; 27^(2/3)=9; 9^(−1/2)=1/3",
+            "math": "[16^(−3/4) × 27^(2/3)] ÷ 9^(−1/2) = [(1/(⁴√16)³) × (∛27)²] ÷ (1/√9)",
             "reason": "Roots come from the fractional denominator and negative indices take reciprocals."
           },
           {
@@ -10298,12 +10298,12 @@
         "solution": [
           {
             "title": "Extract square factors",
-            "math": "√72=6√2; 2√8=4√2; √18=3√2",
+            "math": "√72 − 2√8 + √18 = 6√2 − 4√2 + 3√2",
             "reason": "All three simplify to like surds."
           },
           {
             "title": "Collect coefficients",
-            "math": "(6−4+3)√2=5√2",
+            "math": "6√2 − 4√2 + 3√2 = (6 − 4 + 3)√2 = 5√2",
             "reason": "Only the coefficients of identical radicals combine."
           },
           {
@@ -10338,7 +10338,7 @@
         "solution": [
           {
             "title": "Find free capacity",
-            "math": "(6.4−0.75)×10⁹=5.65×10⁹ bytes",
+            "math": "Free capacity = 6.4×10⁹ − 7.5×10⁸ = (6.4 − 0.75)×10⁹ = 5.65×10⁹ bytes",
             "reason": "Subtraction requires matching powers."
           },
           {
@@ -10464,7 +10464,7 @@
             ],
             "answer": 0,
             "hint": "Set each factor to zero.",
-            "explanation": "x − 5 = 0 gives 5; x + 2 = 0 gives −2."
+            "explanation": "(x − 5)(x + 2) = 0 → x − 5 = 0 or x + 2 = 0 → x = 5 or x = −2."
           },
           {
             "question": "Why can you not set each factor to zero in (x − 1)(x + 2) = 6?",
@@ -10656,7 +10656,7 @@
             ],
             "answer": 0,
             "hint": "Build (x − 3)(x + 4).",
-            "explanation": "(x − 3)(x + 4) expands to x² + x − 12."
+            "explanation": "(x − 3)(x + 4) = 0 → x² + 4x − 3x − 12 = 0 → x² + x − 12 = 0."
           },
           {
             "question": "Which factor corresponds to root x = −7?",
@@ -10889,7 +10889,7 @@
           },
           {
             "title": "Evaluate both branches",
-            "math": "x=(5±7)/6 ⇒ x=2 or −1/3",
+            "math": "x = [−(−5) ± √((−5)² − 4(3)(−2))]/[2(3)] = (5 ± 7)/6 → x = 2 or x = −1/3",
             "reason": "The plus/minus produces two roots."
           },
           {
@@ -12750,7 +12750,7 @@
             ],
             "answer": 2,
             "hint": "Solve 4n + 3 = 50.",
-            "explanation": "4n = 47, so n = 11.75. A fractional position is not a term of this sequence."
+            "explanation": "4n + 3 = 50 → 4n = 47 → n = 11.75. A fractional position is not a term of this sequence."
           }
         ],
         "takeaway": "Start plus number of jumps times jump size.",
@@ -13136,7 +13136,7 @@
           },
           {
             "title": "Remove the quadratic part",
-            "math": "a = 2; Tₙ−2n² = 4,5,6,7,8 → n+3",
+            "math": "Tₙ = 2n² + (n + 3) = 2n² + n + 3",
             "reason": "The remainder is linear, so Tₙ = 2n²+n+3."
           },
           {
@@ -13146,7 +13146,7 @@
           },
           {
             "title": "Reverse the target",
-            "math": "2n²+n−78 = (n−6)(2n+13) = 0",
+            "math": "2n² + n + 3 = 81 → 2n² + n − 78 = 0 → (n − 6)(2n + 13) = 0 → n = 6 or n = −13/2; only position 6 is a positive integer",
             "reason": "The algebraic roots are 6 and −13/2; only 6 is a positive integer position."
           }
         ],
@@ -13206,12 +13206,12 @@
           },
           {
             "title": "Calculate the requested stages",
-            "math": "T₄ = 135; T₇ = 3645",
+            "math": "T₄ = 5 × 3³ = 135; T₇ = 5 × 3⁶ = 3645",
             "reason": "The relevant exponents are 3 and 6."
           },
           {
             "title": "Find the target position",
-            "math": "1215/5 = 243 = 3⁵ → n−1 = 5 → n = 6",
+            "math": "5 × 3^(n − 1) = 1215 → 3^(n − 1) = 243 = 3⁵ → n − 1 = 5 → n = 6",
             "reason": "Reverse the multiplier after removing the initial factor."
           },
           {
@@ -13329,7 +13329,7 @@
             ],
             "answer": 1,
             "hint": "Undo subtraction first.",
-            "explanation": "5x = 20, so x = 4. Check: 5 × 4 − 6 = 14."
+            "explanation": "5x − 6 = 14 → 5x = 20 → x = 4. Check: 5(4) − 6 = 14."
           }
         ],
         "takeaway": "A function rule turns each allowed input into one output.",
@@ -13381,7 +13381,7 @@
             ],
             "answer": 0,
             "hint": "Undo addition of seven, then multiplication by four.",
-            "explanation": "From y = 4x+7, subtract 7 and divide by 4. The inverse rule is (x−7)/4."
+            "explanation": "y = 4x + 7 → y − 7 = 4x → x = (y − 7)/4. Rename the input to write the inverse rule f⁻¹(x) = (x − 7)/4."
           },
           {
             "question": "Why does squaring on all real numbers fail to have an inverse function?",
@@ -13521,7 +13521,7 @@
             ],
             "answer": 2,
             "hint": "Multiply (a + 2)(a + 2).",
-            "explanation": "The four products are a², 2a, 2a and 4. Adding gives a² + 4a + 4."
+            "explanation": "g(a + 2) = (a + 2)² = a² + 2a + 2a + 4 = a² + 4a + 4."
           }
         ],
         "takeaway": "Replace every variable with the whole input, inside brackets.",
@@ -13573,7 +13573,7 @@
             ],
             "answer": 1,
             "hint": "Write 3x + 4 = 19, then undo the two operations.",
-            "explanation": "3x = 15 gives x = 5; checking, 3(5)+4 = 19."
+            "explanation": "3x + 4 = 19 → 3x = 15 → x = 5. Check: f(5) = 3(5) + 4 = 19."
           },
           {
             "question": "For f(x) = 2x − 1, what does f(x) = 7 ask for?",
@@ -13637,7 +13637,7 @@
             ],
             "answer": 1,
             "hint": "Set 3x + 1 equal to x + 7.",
-            "explanation": "2x = 6 gives x = 3. Both functions then output 10."
+            "explanation": "3x + 1 = x + 7 → 2x = 6 → x = 3. Common output: f(3) = 3(3) + 1 = 10 = g(3)."
           },
           {
             "question": "For f(x) = 2x and g(x) = x + 5, f(x) = g(x) is equivalent to…",
@@ -13701,7 +13701,7 @@
             ],
             "answer": 1,
             "hint": "Evaluate f(2) and f(7) before solving for k.",
-            "explanation": "f(2) = 5 and f(7) = 15, so 5k = 15 and k = 3."
+            "explanation": "k[2(2) + 1] = 2(7) + 1 → 5k = 15 → k = 3."
           },
           {
             "question": "For f(x) = 2x + 1, f(3k) equals…",
@@ -13777,7 +13777,7 @@
             ],
             "answer": 1,
             "hint": "Its output rises 6 when input rises 2.",
-            "explanation": "The slope is 6/2 = 3. Then 4 = 3(1) + b gives b = 1."
+            "explanation": "Slope = (10 − 4)/(3 − 1) = 3. Using (1, 4): 4 = 3(1) + b → b = 1. Therefore f(x) = 3x + 1."
           }
         ],
         "takeaway": "Each known couple supplies an equation for the unknown coefficients.",
@@ -14046,7 +14046,7 @@
         "solution": [
           {
             "title": "Evaluate the fixed inputs",
-            "math": "f(−2)=−8; f(3)=7",
+            "math": "f(−2) = 3(−2) − 2 = −8; f(3) = 3(3) − 2 = 7",
             "reason": "Apply the whole signed input to the linear rule."
           },
           {
@@ -14116,17 +14116,17 @@
         "solution": [
           {
             "title": "Recover the coefficients",
-            "math": "c=8; 5=−9+3b+8 → b=2",
+            "math": "c = 8 and −3² + 3b + c = 5 → c = 8 and −9 + 3b + 8 = 5 → c = 8 and b = 2",
             "reason": "Every supplied couple must satisfy the same rule."
           },
           {
             "title": "Find the intercepts",
-            "math": "f(x)=−(x−4)(x+2); x-intercepts (−2,0),(4,0); y-intercept (0,8)",
+            "math": "f(x) = −x² + 2x + 8 = −(x − 4)(x + 2); f(x) = 0 → x = −2 or x = 4; intercepts (−2, 0), (4, 0), (0, 8)",
             "reason": "x-axis points have output zero; y-axis points have input zero."
           },
           {
             "title": "Expose the maximum",
-            "math": "f(x)=9−(x−1)² ≤ 9; maximum at x=1",
+            "math": "f(x) = −x² + 2x + 8 = −(x² − 2x + 1) + 9 = 9 − (x − 1)² ≤ 9; maximum 9 at x = 1",
             "reason": "A real square is non-negative, so subtracting it cannot increase 9."
           },
           {
@@ -14735,7 +14735,7 @@
             ],
             "answer": 1,
             "hint": "The common denominator is six.",
-            "explanation": "x/2 = 3x/6 and x/3 = 2x/6; adding gives 5x/6."
+            "explanation": "x/2 + x/3 = 3x/6 + 2x/6 = (3x + 2x)/6 = 5x/6."
           },
           {
             "question": "Which equals (x + 2)/3 − (x − 1)/2?",
@@ -14747,7 +14747,7 @@
             ],
             "answer": 0,
             "hint": "Subtract the entire second numerator after scaling.",
-            "explanation": "[2(x+2) − 3(x−1)]/6 = [2x+4−3x+3]/6 = (−x+7)/6."
+            "explanation": "(x + 2)/3 − (x − 1)/2 = [2(x + 2) − 3(x − 1)]/6 = (2x + 4 − 3x + 3)/6 = (−x + 7)/6."
           }
         ],
         "takeaway": "Use common-sized parts, keep whole numerators in brackets, then combine.",
@@ -14799,7 +14799,7 @@
             ],
             "answer": 0,
             "hint": "Factorise the difference of squares and keep the original restriction.",
-            "explanation": "(x²−4) = (x−2)(x+2), so the result is x+2 with x ≠ 2."
+            "explanation": "(x² − 4)/(x − 2) = [(x − 2)(x + 2)]/(x − 2) = x + 2, with x ≠ 2 throughout."
           },
           {
             "question": "Can x be cancelled from (x + 5)/x?",
@@ -14863,7 +14863,7 @@
             ],
             "answer": 0,
             "hint": "Multiply the numerators and denominators, then cancel x.",
-            "explanation": "24x/(4x) = 6 when x is non-zero."
+            "explanation": "(3x/4) × (8/x) = 24x/(4x) = 6, with x ≠ 0 throughout."
           },
           {
             "question": "Which restriction is needed before simplifying (x²−1)/(x+1)?",
@@ -14927,7 +14927,7 @@
             ],
             "answer": 1,
             "hint": "Keep x/3 and multiply by 5/2.",
-            "explanation": "(x/3)(5/2) = 5x/6."
+            "explanation": "(x/3) ÷ (2/5) = (x/3) × (5/2) = 5x/6."
           },
           {
             "question": "When dividing by (x−1)/4, which extra value is forbidden because the divisor would be zero?",
@@ -14991,7 +14991,7 @@
             ],
             "answer": 1,
             "hint": "Use the product x(x+2) as a common denominator.",
-            "explanation": "The new numerator is (x+2)+x = 2x+2. The denominator stays x(x+2)."
+            "explanation": "1/x + 1/(x + 2) = [(x + 2) + x]/[x(x + 2)] = (2x + 2)/[x(x + 2)], with x ≠ 0, −2 throughout."
           },
           {
             "question": "Which is the smallest common denominator for 1/x and 1/x², with x ≠ 0?",
@@ -15055,7 +15055,7 @@
             ],
             "answer": 2,
             "hint": "Subtract 2 before multiplying by 3.",
-            "explanation": "x/3 = 3, so x = 9."
+            "explanation": "x/3 + 2 = 5 → x/3 = 3 → x = 9."
           },
           {
             "question": "Multiplying x/2 + 3 = 7 by 2 gives…",
@@ -15183,7 +15183,7 @@
             ],
             "answer": 1,
             "hint": "Multiply by 2, then divide by b.",
-            "explanation": "2A = bh, so h = 2A/b."
+            "explanation": "A = bh/2 → 2A = bh → h = 2A/b, with b ≠ 0."
           },
           {
             "question": "From v = u + at, with a ≠ 0, t equals…",
@@ -15195,7 +15195,7 @@
             ],
             "answer": 0,
             "hint": "Undo addition of u, then multiplication by a.",
-            "explanation": "v − u = at, so t = (v − u)/a. The brackets include the whole numerator."
+            "explanation": "v = u + at → v − u = at → t = (v − u)/a, with a ≠ 0. The numerator brackets retain the entire difference."
           }
         ],
         "takeaway": "Undo operations from the outside in, keeping grouped expressions intact.",
@@ -15247,7 +15247,7 @@
             ],
             "answer": 0,
             "hint": "Take x out as a common factor before dividing.",
-            "explanation": "P = x(2+k), so x = P/(2+k)."
+            "explanation": "P = 2x + kx → P = x(2 + k) → x = P/(2 + k), with k ≠ −2."
           },
           {
             "question": "Which restriction is needed to divide by a − b?",
@@ -15323,7 +15323,7 @@
             ],
             "answer": 1,
             "hint": "Remove the fixed €12 first.",
-            "explanation": "n = (44−12)/4 = 32/4 = 8 players."
+            "explanation": "12 + 4n = 44 → 4n = 32 → n = 8 players."
           }
         ],
         "takeaway": "Define variables and units, separate fixed and variable parts, then test the rule.",
@@ -15582,7 +15582,7 @@
           },
           {
             "title": "Collect the subject",
-            "math": "2xy−5y=3x+4 → x(2y−3)=5y+4",
+            "math": "y = (3x + 4)/(2x − 5) → y(2x − 5) = 3x + 4 → 2xy − 5y = 3x + 4 → x(2y − 3) = 5y + 4, with x ≠ 5/2",
             "reason": "All x terms are gathered before factorising."
           },
           {
@@ -15617,7 +15617,7 @@
           },
           {
             "title": "Invert the divisor and factor",
-            "math": "E=[(x−4)(x+4)/((x+3)(x+4))]×[2x/(x−4)]",
+            "math": "E = [(x − 4)(x + 4)/((x + 3)(x + 4))] × [2x/(x − 4)], with x ≠ −3, −4, 0, 4",
             "reason": "Division changes to multiplication by the divisor’s reciprocal."
           },
           {
@@ -16665,7 +16665,7 @@
             ],
             "answer": 2,
             "hint": "The square graph reaches height 9 on both sides.",
-            "explanation": "Both (−3)² and 3² equal 9."
+            "explanation": "x² = 9 → x = −3 or x = 3. Both (−3)² and 3² equal 9."
           }
         ],
         "takeaway": "A target output is a horizontal line; read every matching input.",
@@ -16729,7 +16729,7 @@
             ],
             "answer": 1,
             "hint": "Bring all terms to one side and take out the common factor x.",
-            "explanation": "x²−4x = x(x−4) = 0 gives x = 0 or 4."
+            "explanation": "x² = 4x → x² − 4x = 0 → x(x − 4) = 0 → x = 0 or x = 4."
           }
         ],
         "takeaway": "Intersections solve equal-output equations; include all intersections.",
@@ -16781,7 +16781,7 @@
             ],
             "answer": 2,
             "hint": "Set H equal to zero and choose the positive later root.",
-            "explanation": "5t(4−t) = 0 gives t = 0 and t = 4; landing is at 4 seconds."
+            "explanation": "20t − 5t² = 0 → 5t(4 − t) = 0 → t = 0 or t = 4. The landing after launch is at 4 seconds."
           },
           {
             "question": "Why can H(t) = 15 have two solutions?",
@@ -17265,12 +17265,12 @@
           },
           {
             "title": "Find intercepts",
-            "math": "g(x)=0 → (x−2)²=9 → x=−1,5; g(0)=5",
+            "math": "−(x − 2)² + 9 = 0 → (x − 2)² = 9 → x = −1 or x = 5; g(0) = −(0 − 2)² + 9 = 5",
             "reason": "Both square roots matter when solving a squared equation."
           },
           {
             "title": "Solve the target output",
-            "math": "g(x)=5 → (x−2)²=4 → x=0 or 4",
+            "math": "−(x − 2)² + 9 = 5 → (x − 2)² = 4 → x = 0 or x = 4",
             "reason": "The graph reaches that height on both sides of its vertex."
           },
           {

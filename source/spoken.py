@@ -110,6 +110,7 @@ def spoken(t, *, clock_times=False):
     t = re.sub(r'\$\s*([\d,]+(?:\.\d+)?)', r'\1 dollars', t)
     t = t.replace('€x', 'x euros').replace('€', ' euros ')
     t = re.sub(r'ⁿ√', ' nth root of ', t)
+    t = t.replace('⁴√', ' fourth root of ')
     t = re.sub(f'([{SUPER}]+)⁄([{SUPER}]+)', _fraction_power, t)
     t = re.sub(f'[{SUPER}]+', _power, t)
     t = re.sub(f'[{SUB}]+', _subscript, t)
@@ -126,9 +127,12 @@ def spoken(t, *, clock_times=False):
     t = re.sub(r'(?<![A-Za-z])([a-z])\(', r'\1 times (', t)
     t = t.replace('+', ' plus ').replace('<', ' is less than ').replace('>', ' is greater than ')
     t = re.sub(r'(?<=\w)\s*/\s*(?=[\w(])', ' over ', t)
-    t = re.sub(r'\^\s*\(?([^ )]+)\)?', r' to the power \1 ', t)
+    # Preserve the complete exponent and its brackets after fractions/signs
+    # have become words. Consuming one token left orphan closing brackets.
+    t = re.sub(r'\^\s*', ' to the power ', t)
     t = re.sub(r'(?<!\w)-(?=\d)', 'minus ', t)
     t = t.replace('(', ' open bracket ').replace(')', ' close bracket ')
+    t = t.replace('[', ' open bracket ').replace(']', ' close bracket ')
     t = t.replace('/', ' divided by ')
     t = re.sub(r'\|([A-Z])([A-Z])\|', r'length \1 \2', t)
     t = re.sub(r'#\s*([A-Z])', r'number of elements in \1', t)

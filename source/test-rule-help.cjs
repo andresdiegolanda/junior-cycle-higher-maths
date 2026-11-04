@@ -61,6 +61,9 @@ const escaped=context.ruleHelpMarkup({id:'square-sum',note:'<img src=x onerror=b
 assert.doesNotMatch(escaped,/<img|<b>value/);assert.match(escaped,/&lt;img/);assert.match(escaped,/&lt;b&gt;value/);
 assert.match(context.ruleHelpButton({id:'square-sum'}),/aria-haspopup="dialog"/);
 assert.match(context.ruleHelpButton({id:'method-19-3'}),/Method reminder/);
+assert.match(context.ruleHelpButton({id:'fraction-add',reminder:true}),/Method reminder/);
+assert.match(context.ruleHelpMarkup({id:'fraction-add',reminder:true}),/METHOD REMINDER/);
+assert.match(context.ruleHelpButton({id:'fraction-add'}),/Rule applied/);
 // Cross-chapter links in standalone files go through the complete guide.
 context.DATA={...DATA,standalone:true,chapters:[DATA.chapters[18]]};
 assert.match(context.ruleHelpMarkup({id:'square-sum'}),/href="index.html#chapter=1&lesson=01-03&mode=reference&method=1"/);

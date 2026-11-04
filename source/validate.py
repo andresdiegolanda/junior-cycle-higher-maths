@@ -13,7 +13,11 @@ def check(v):
         for k,x in v.items():
             if k.startswith('speech'):
                 vals=x if isinstance(x,list) else [x]
-                assert all(isinstance(t,str) and len(t)>3 and '.mp3' not in t for t in vals);spoken+=len(vals)
+                # A complete calculation may end with a short numeric line,
+                # e.g. "16". It is valid speech, not missing narration.
+                assert all(isinstance(t,str) and '.mp3' not in t and
+                    (len(t.strip())>3 or (k=='speechSolution' and re.fullmatch(r'\d+(?:\.\d+)?',t)))
+                    for t in vals);spoken+=len(vals)
             if k in ['svg','diagram'] and x and str(x).lstrip().startswith('<'):
                 el=ET.fromstring(x);assert el.tag.endswith('svg');assert not re.search(r'<script|\son\w+=|javascript:',x,re.I);svgs+=1
             check(x)

@@ -159,3 +159,13 @@ second clue, worked steps (separated by `~`), answer and checking method.
 `source/data/practice-order.json` sets the progression: `a,b` are the original
 two checks and `c,d,e,f` the four written tasks. IDs stay stable when reordered.
 Every lesson must have exactly six questions; the build fails on missing coverage.
+
+Write calculation steps as complete equivalent expressions or equations. For
+example, keep `8x + 3 − 5x + 6`, then `8x − 5x + 3 + 6`, then `3x + 9`.
+Keep denominators, unchanged terms, domain restrictions and both sides visible.
+For simultaneous equations, retain the system while eliminating a variable.
+Use `=` for equal quantities, arrows between equivalent equations, and `≈` for
+rounding. Label separate quantities or subparts; proofs and constructions should
+retain their logical sequence rather than being forced into equality chains.
+Run `python source/test-working-lines.py` to check the actual intermediate lines,
+as well as the existing answer and interface tests.

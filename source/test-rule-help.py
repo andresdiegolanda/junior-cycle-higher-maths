@@ -52,8 +52,17 @@ for c in chapters.values():
             check_help(step['stepHelp'], 'challenge')
             assert step['stepHelp']['note'] == step['reason']
 
-assert counts == {'teaching': 646, 'choice': 316, 'written': 960, 'challenge': 445}, counts
-assert sum(counts.values()) == 2367
+from practice_bank import load_practice
+authored = json.loads((ROOT / 'source/data/chapters.json').read_text(encoding='utf-8'))
+expected = {
+    'teaching': sum(len(l['steps']) for c in authored for l in c['lessons']),
+    'choice': sum(len(l['quiz']) for c in authored for l in c['lessons']),
+    'written': sum(len(q['solution']) for rows in load_practice().values() for q in rows),
+    'challenge': sum(len(q['solution']) for c in authored for q in c['challenges']),
+}
+assert counts == expected, (counts, expected)
+report = json.loads((ROOT / 'source/build-report.json').read_text(encoding='utf-8'))
+assert sum(counts.values()) == report['stepRuleHelpers']
 # Standalone pages must retain the complete rule library (cross-chapter links)
 # and exactly the same step associations as the full guide.
 for path in sorted((ROOT / 'site').glob('[0-9]*.html')):
@@ -64,6 +73,8 @@ for path in sorted((ROOT / 'site').glob('[0-9]*.html')):
 # Regression: a shifted parabola is not automatically an expansion step.
 assert square_application('y = (x − 2)²; vertex (2, 0)', title='Move the vertex') is None
 assert square_application('x = 2', question='Expand (x + 3)²') is None
+assert square_application('(2k − 1)² − 3(2k − 1) + 2 − (k² − 3k + 2)') is None
+assert square_application('(x + 2)² = x² + 4x + 4')['id'] == 'square-sum'
 assert specific_rule('Domain = {1, 2}; range = {3, 5}', title='Read the domain') is None
 assert specific_rule('The denominator must be non-zero.', title='Apply domain restrictions')['id'] == 'domain'
 for expression, a, b, key in [

@@ -287,3 +287,32 @@ Searchable formula library — 4 November 2026
   The printable PDF is unchanged. Preview: formula-library-preview.jpg.
   No physical touchscreen, screen-reader announcement or cross-device audible
   voice-quality audit was performed. Native MathML needs a modern browser.
+
+Complete working lines — 4 November 2026
+- Reviewed all 948 topic exercises and 96 chapter challenges across 24 chapters.
+  Relative to the preceding commit, rewrote 476 written solutions, 57 quick-check
+  explanations and 61 steps across 33 chapter challenges. Suitable complete
+  calculations, verbal reasoning, proofs and construction sequences remain.
+- Simplification lines retain the entire expression, including unchanged terms,
+  denominators and signs. Equation lines retain both sides; simultaneous-equation
+  elimination retains the system. Original exclusions survive cancellation.
+  Separate quantities, substitutions and subparts are labelled explicitly.
+- Questions, exercise IDs, ordering, answers and independent checks are unchanged.
+  The initial collecting-like-terms example also has clearer clues. A comparison
+  against the preceding commit verified this content boundary.
+- Added 320 symbolic checks of actual intermediate expressions, equation solution
+  sets and simultaneous systems, plus domain and formula-placement regressions.
+  Existing 99 independent answer checks also pass. These checks complement the
+  editorial review and do not constitute a proof of every prose explanation.
+- Formula reminders no longer misidentify an unexpanded binomial merely because
+  another squared term is present. Lesson-wide fallback guidance is labelled as
+  a reminder, rather than claiming that its rule is applied in every line.
+- Speech preserves fractional-exponent brackets and reads fourth roots correctly.
+  Short numeric result lines are accepted as valid narration. Speech, narration,
+  practice, rule help, search, guided reading and formula-library checks passed.
+- Browser verification covered the requested like-term sequence, a negative-term
+  expansion, a multi-fraction calculation and a polynomial-division challenge.
+  The fraction working had no horizontal overflow at the current desktop width;
+  no browser console errors were observed. No new device or audible-voice audit.
+- Rebuilt all 25 HTML files and the distribution ZIP; the printable reference PDF
+  is unchanged. Changes are local until a subsequent commit and push.

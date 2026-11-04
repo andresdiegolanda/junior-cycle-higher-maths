@@ -2,6 +2,10 @@
 from spoken import spoken
 
 cases = {
+    '81^(1/4) = ⁴√81': '81 to the power open bracket 1 over 4 close bracket equals fourth root of 81',
+    '16^(−3/4)': '16 to the power open bracket minus 3 over 4 close bracket',
+    '3^(2x − 2)': '3 to the power open bracket 2 times x minus 2 close bracket',
+    '[2(x + 1) − 3]/6': 'open bracket 2 times open bracket x plus 1 close bracket minus 3 close bracket divided by 6',
     'P(x)=(2x−1)(x²+3x−2)': 'P of x equals open bracket 2 times x minus 1 close bracket times open bracket x squared plus 3 times x minus 2 close bracket',
     'Find P(−2).': 'Find P of minus 2.',
     'Find Q(2) from both forms.': 'Find Q of 2 from both forms.',

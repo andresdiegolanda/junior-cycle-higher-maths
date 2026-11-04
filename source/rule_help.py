@@ -25,7 +25,15 @@ def square_application(text, question='', title=''):
         if not match:
             continue
         a, sign, b = match.groups()
-        outside = text[:match.start()] + text[match.end():] if source == text else text
+        # A different square elsewhere in the SAME expression is not evidence
+        # that this binomial was expanded. Look after the next equality/arrow,
+        # or compare against the immediately preceding revealed line.
+        if source == text:
+            transition = re.search(r'=|→|⇒', text[match.end():])
+            outside = (text[match.end() + transition.end():]
+                       if transition else '')
+        else:
+            outside = text if not BINOMIAL.search(text) else ''
         expands = re.search(r'expand|cross.product|middle term|false expansion', title + ' ' + text, re.I)
         has_expanded_square = re.search(r'[a-z]²|[a-z]\^2', outside)
         if not (expands or has_expanded_square):
@@ -88,7 +96,12 @@ def attach_rule_help(chapters):
         nonlocal count
         key = f'method-{chapter:02}-{default}' if isinstance(default, int) else default
         assert key in library, ('Unknown rule', key)
-        help_item = {'id': key} if explicit else (specific_rule(text, title, question) or {'id': key})
+        recognised = None if explicit else specific_rule(text, title, question)
+        help_item = recognised or {'id': key}
+        if not explicit and not recognised and library[key]['kind'] == 'rule':
+            # A lesson-wide fallback is useful context, not evidence that the
+            # same operation was performed on every newly expanded working line.
+            help_item['reminder'] = True
         if key in ('square-sum', 'square-difference'):
             help_item = square_application(text, question, title) or help_item
         # A supplied reason explains this particular step. Never copy the
@@ -114,7 +127,7 @@ def attach_rule_help(chapters):
                     # the square that the CURRENT line expands, without being
                     # repeated in that line or in the question itself.
                     q['solutionHelp'] = [help_for(c['id'], default, s,
-                        question=q['question'] + ('\n' + q['solution'][i-1] if i else ''))
+                        question=q['solution'][i-1] if i else q['question'])
                         for i, s in enumerate(q['solution'])]
         for q in c['challenges']:
             rules = challenge_map[q['id']]

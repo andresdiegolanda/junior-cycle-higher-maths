@@ -48,6 +48,8 @@ cases = {
     'Several terms occur.. ax + b': 'Several terms occur. ax plus b',
     'm = (y₂ − y₁)/(x₂ − x₁)': 'm equals open bracket y subscript 2 minus y subscript 1 close bracket divided by open bracket x subscript 2 minus x subscript 1 close bracket',
     '{1, 2, 3}': 'the set containing 1, 2, 3 end of set',
+    'The vertex (0,0) moves to (3,1).': 'The vertex 0 comma 0 moves to 3 comma 1.',
+    'A point (2,3) moves to (−2,−3).': 'A point 2 comma 3 moves to minus 2 comma minus 3.',
 }
 failed = 0
 for source, expected in cases.items():

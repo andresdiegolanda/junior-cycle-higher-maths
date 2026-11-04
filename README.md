@@ -13,7 +13,7 @@ HTML files can also be opened individually. Keep the `toolkits` folder beside th
 
 The guide contains 158 lessons, 646 teaching steps, 948 graded topic exercises (six per lesson), 96 chapter
 challenges, 222 visual reference cards and a glossary of 140 terms. The printable
-PDF has 60 A3 landscape sheets across the 24 chapters, with extra room for dense cards.
+PDF has 62 A3 landscape sheets across the 24 chapters, with extra room for dense cards.
 
 Use a box's **Listen** button for its explanation, or **Play whole lesson** to
 follow the complete sequence. The current box is marked; diagrams advance after
@@ -70,7 +70,9 @@ python source/build.py
 
 Content lives in `source/data/chapters.json`, `source/data/visual-cards-*.json`,
 `source/data/glossary.json`, `source/data/practice-*.txt` and `source/data/lab-narration.json`. Interface and
-speech files live directly in `source/`.
+speech files live directly in `source/`. Every narration is derived from the written
+content at build time by `source/spoken.py`, so editing a question, step, method or
+glossary entry needs no separate speech text.
 
 The supplied PDF only needs rebuilding when its content or layout changes.
 Install its dependencies with `python -m pip install -r source/requirements-print.txt`.
@@ -102,6 +104,7 @@ node source/test-speech.cjs
 node source/test-guided-reading.cjs
 node source/test-search.cjs
 node source/test-practice.cjs
+python source/test-spoken.py
 python source/test-practice.py
 python source/test-toolkit-typography.py
 python source/test-diagram-marks.py
@@ -110,7 +113,8 @@ python source/package.py
 ```
 
 Packaging updates `downloads/Junior-Cycle-Higher-Maths.zip`. See
-[the review notes](docs/QA-SUMMARY.txt) for verification scope and limits.
+[the review notes](docs/QA-SUMMARY.txt) for verification scope and limits, including
+the November 2026 chapter-by-chapter content review.
 
 Written practice is authored in `source/data/practice-*.txt`. Each `@lesson-id`
 block has four rows with six fields separated by `|`: question, first clue,

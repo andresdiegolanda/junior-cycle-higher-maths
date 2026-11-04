@@ -340,7 +340,7 @@
     ],
     "definition": "An element is one object in a set. The symbol ∈ means belongs to; ∉ means does not belong to.",
     "example": "If A = {2, 4, 6}, then 4 ∈ A and 5 ∉ A.",
-    "watch": "Use ∈ for an element and ⊆ for a subset.",
+    "watch": "Use ∈ for an element and ⊂ for a subset.",
     "chapters": [
       3,
       9,
@@ -356,12 +356,12 @@
       "proper subset"
     ],
     "definition": "A set whose every element also belongs to another set. A proper subset does not equal that other set.",
-    "example": "{2, 4} ⊆ {2, 4, 6}. Every set is a subset of itself.",
+    "example": "{2, 4} ⊂ {2, 4, 6}. Every set is a subset of itself.",
     "watch": "Being a subset does not mean having just one common element.",
     "chapters": [
       3
     ],
-    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 480 200\" role=\"img\" aria-label=\"B is entirely contained in A.\"><rect width=\"480\" height=\"200\" rx=\"12\" fill=\"#ffffff\"/><rect x=\"30\" y=\"20\" width=\"420\" height=\"160\" rx=\"8\" fill=\"#e8f5f1\"/><circle cx=\"240\" cy=\"100\" r=\"65\" fill=\"#edf4fc\" stroke=\"#3175ba\" stroke-width=\"2.5\"/><text x=\"75\" y=\"51\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"22\" fill=\"#173349\">A</text><text x=\"240\" y=\"73\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"22\" fill=\"#3175ba\">B</text><text x=\"240\" y=\"115\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"25\" fill=\"#173349\">2, 4</text><text x=\"370\" y=\"113\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"25\" fill=\"#173349\">6</text><text x=\"240\" y=\"188\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"18\" fill=\"#173349\">B ⊆ A</text></svg>"
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 480 200\" role=\"img\" aria-label=\"B is entirely contained in A.\"><rect width=\"480\" height=\"200\" rx=\"12\" fill=\"#ffffff\"/><rect x=\"30\" y=\"20\" width=\"420\" height=\"160\" rx=\"8\" fill=\"#e8f5f1\"/><circle cx=\"240\" cy=\"100\" r=\"65\" fill=\"#edf4fc\" stroke=\"#3175ba\" stroke-width=\"2.5\"/><text x=\"75\" y=\"51\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"22\" fill=\"#173349\">A</text><text x=\"240\" y=\"73\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"22\" fill=\"#3175ba\">B</text><text x=\"240\" y=\"115\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"25\" fill=\"#173349\">2, 4</text><text x=\"370\" y=\"113\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"25\" fill=\"#173349\">6</text><text x=\"240\" y=\"188\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"18\" fill=\"#173349\">B ⊂ A</text></svg>"
   },
   {
     "id": "universal-set",
@@ -504,7 +504,7 @@
       "exponent",
       "indices"
     ],
-    "definition": "The exponent tells you the power of a base. For a positive integer exponent, it counts repeated factors.",
+    "definition": "The small raised number written after a base, showing its power. For a positive integer index, it counts how many times the base is used as a factor.",
     "example": "2⁴ = 2 × 2 × 2 × 2 = 16.",
     "watch": "2⁴ is not 2 × 4. Add exponents only when multiplying powers with the same base.",
     "chapters": [
@@ -684,7 +684,7 @@
     ],
     "definition": "Gross pay is pay before deductions. Net pay is the amount left after deductions.",
     "example": "Gross 600 less deductions 95 gives net pay 505.",
-    "watch": "For banded deductions, apply each rate only to the part within its band.",
+    "watch": "Apply the standard rate up to the cut-off point and the higher rate only to income above it; subtract tax credits from the tax, not from income.",
     "chapters": [
       4
     ],
@@ -698,7 +698,7 @@
       "conversion rate"
     ],
     "definition": "A ratio stating how much one currency is worth in another.",
-    "example": "At €1 = £0.85, €40 = £34. To turn £34 into euros, divide by 0.85.",
+    "example": "At €1 = £0.85, €40 = £34. To turn £34 into euro, divide by 0.85.",
     "watch": "Write the units beside the rate so you choose multiplication or division correctly.",
     "chapters": [
       4,
@@ -952,7 +952,7 @@
     ],
     "definition": "Lines in a plane that never meet and remain the same perpendicular distance apart.",
     "example": "Distinct lines y = 2x + 1 and y = 2x − 3 are parallel.",
-    "watch": "Equal gradients give parallel lines only if the lines are distinct.",
+    "watch": "Equal slopes give parallel lines only if the lines are distinct.",
     "chapters": [
       8,
       11,
@@ -971,7 +971,7 @@
     ],
     "definition": "Lines meeting at a right angle of 90°.",
     "example": "A horizontal line and a vertical line are perpendicular.",
-    "watch": "For two finite, non-zero gradients, perpendicular gradients multiply to −1.",
+    "watch": "For two finite, non-zero slopes, perpendicular slopes multiply to −1.",
     "chapters": [
       8,
       11,
@@ -1017,7 +1017,7 @@
       "Z angles"
     ],
     "definition": "Angles on opposite sides of a transversal, between two lines. They are equal when those lines are parallel.",
-    "example": "Equal alternate interior angles can also be used to establish parallel lines.",
+    "example": "If a transversal makes a 70° angle with one of two parallel lines, the alternate angle at the other line is also 70°.",
     "watch": "Identify the two lines and the transversal before choosing the angles.",
     "chapters": [
       8,
@@ -1032,14 +1032,14 @@
     "aliases": [
       "exterior angle"
     ],
-    "definition": "An angle between one triangle side and the extension of an adjacent side. It equals the sum of the two non-adjacent interior angles.",
-    "example": "If the remote interior angles are 45° and 65°, the exterior angle is 110°.",
+    "definition": "An angle between one triangle side and the extension of an adjacent side. It equals the sum of the two interior opposite angles (the two not adjacent to it).",
+    "example": "If the interior opposite angles are 45° and 65°, the exterior angle is 110°.",
     "watch": "Do not include the interior angle next to the exterior angle in that sum.",
     "chapters": [
       8,
       16
     ],
-    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 480 200\" role=\"img\" aria-label=\"An exterior triangle angle equals the two remote interior angles.\"><rect width=\"480\" height=\"200\" rx=\"12\" fill=\"#ffffff\"/><polygon points=\"70,150 175,35 300,150\" fill=\"#e8f5f1\" stroke=\"#087f75\" stroke-width=\"2.5\"/><line x1=\"300\" y1=\"150\" x2=\"435\" y2=\"150\" stroke=\"#173349\" stroke-width=\"2\"/><text x=\"106\" y=\"137\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"18\" fill=\"#173349\">45°</text><text x=\"181\" y=\"73\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"18\" fill=\"#173349\">65°</text><text x=\"350\" y=\"135\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"20\" fill=\"#3175ba\">110°</text></svg>"
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 480 200\" role=\"img\" aria-label=\"An exterior triangle angle equals the two interior opposite angles.\"><rect width=\"480\" height=\"200\" rx=\"12\" fill=\"#ffffff\"/><polygon points=\"70,150 175,35 300,150\" fill=\"#e8f5f1\" stroke=\"#087f75\" stroke-width=\"2.5\"/><line x1=\"300\" y1=\"150\" x2=\"435\" y2=\"150\" stroke=\"#173349\" stroke-width=\"2\"/><text x=\"106\" y=\"137\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"18\" fill=\"#173349\">45°</text><text x=\"181\" y=\"73\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"18\" fill=\"#173349\">65°</text><text x=\"350\" y=\"135\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"20\" fill=\"#3175ba\">110°</text></svg>"
   },
   {
     "id": "isosceles-triangle",
@@ -1149,7 +1149,7 @@
       "reverse implication"
     ],
     "definition": "The statement formed by swapping the condition and conclusion of an implication. It needs its own justification.",
-    "example": "Pythagoras: right triangle implies a² + b² = c². Its converse uses that equality to prove a triangle is right-angled.",
+    "example": "Pythagoras: a right-angled triangle has a² + b² = c². Its converse uses that equality to prove a triangle is right-angled.",
     "watch": "The converse of a true statement is not automatically true.",
     "chapters": [
       8,
@@ -1164,7 +1164,7 @@
       "Pythagoras",
       "Pythagorean theorem"
     ],
-    "definition": "In a right triangle, the square of the hypotenuse equals the sum of the squares of the other two sides: c² = a² + b².",
+    "definition": "In a right-angled triangle, the square of the hypotenuse equals the sum of the squares of the other two sides: c² = a² + b².",
     "example": "A triangle with perpendicular sides 3 and 4 has hypotenuse √(9 + 16) = 5.",
     "watch": "This formula needs a right angle. The hypotenuse must be the longest side.",
     "chapters": [
@@ -1173,7 +1173,7 @@
       16,
       22
     ],
-    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 480 200\" role=\"img\" aria-label=\"A right triangle. The hypotenuse is opposite the right angle.\"><rect width=\"480\" height=\"200\" rx=\"12\" fill=\"#ffffff\"/><polygon points=\"70,155 70,35 330,155\" fill=\"#e8f5f1\" stroke=\"#087f75\" stroke-width=\"2.5\"/><line x1=\"70\" y1=\"139\" x2=\"86\" y2=\"139\" stroke=\"#173349\" stroke-width=\"2\"/><line x1=\"86\" y1=\"139\" x2=\"86\" y2=\"155\" stroke=\"#173349\" stroke-width=\"2\"/><text x=\"45\" y=\"100\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"23\" fill=\"#087f75\">3</text><text x=\"200\" y=\"180\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"23\" fill=\"#087f75\">4</text><text x=\"220\" y=\"84\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"23\" fill=\"#3175ba\">5</text><text x=\"379\" y=\"61\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"21\" fill=\"#173349\">3² + 4²</text><text x=\"379\" y=\"93\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"21\" fill=\"#173349\">= 5²</text></svg>"
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 480 200\" role=\"img\" aria-label=\"A right-angled triangle. The hypotenuse is opposite the right angle.\"><rect width=\"480\" height=\"200\" rx=\"12\" fill=\"#ffffff\"/><polygon points=\"70,155 70,35 330,155\" fill=\"#e8f5f1\" stroke=\"#087f75\" stroke-width=\"2.5\"/><line x1=\"70\" y1=\"139\" x2=\"86\" y2=\"139\" stroke=\"#173349\" stroke-width=\"2\"/><line x1=\"86\" y1=\"139\" x2=\"86\" y2=\"155\" stroke=\"#173349\" stroke-width=\"2\"/><text x=\"45\" y=\"100\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"23\" fill=\"#087f75\">3</text><text x=\"200\" y=\"180\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"23\" fill=\"#087f75\">4</text><text x=\"220\" y=\"84\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"23\" fill=\"#3175ba\">5</text><text x=\"379\" y=\"61\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"21\" fill=\"#173349\">3² + 4²</text><text x=\"379\" y=\"93\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"21\" fill=\"#173349\">= 5²</text></svg>"
   },
   {
     "id": "perpendicular-height",
@@ -1319,7 +1319,7 @@
       "square units"
     ],
     "definition": "The amount of flat surface covered, measured in square units.",
-    "example": "A rectangle 7 cm long and 4 cm wide has area 28 cm².",
+    "example": "A rectangle 8 cm long and 4 cm wide has area 8 × 4 = 32 cm².",
     "watch": "Area and perimeter answer different questions.",
     "chapters": [
       6,
@@ -1550,7 +1550,7 @@
     ],
     "definition": "An ordered pair locating a point: x gives its horizontal position, y its vertical position.",
     "example": "(3, −2) means 3 units right and 2 units down from the origin.",
-    "watch": "(3, −2) and (−2, 3) usually name different points.",
+    "watch": "(3, −2) and (−2, 3) are different points: the order of the coordinates matters.",
     "chapters": [
       11,
       19,
@@ -1577,21 +1577,23 @@
   },
   {
     "id": "gradient",
-    "term": "Gradient",
+    "term": "Slope (gradient)",
     "aliases": [
       "slope",
       "rise over run",
-      "rate of change"
+      "rate of change",
+      "gradient",
+      "steepness"
     ],
-    "definition": "The change in y divided by the corresponding change in x: m = (y₂ − y₁)/(x₂ − x₁).",
-    "example": "A rise of 2 over a run of 5 gives gradient 2/5.",
-    "watch": "Vertical lines have undefined gradient because the horizontal change is zero.",
+    "definition": "The slope (also called gradient) is the change in y divided by the corresponding change in x: m = (y₂ − y₁)/(x₂ − x₁).",
+    "example": "A rise of 2 over a run of 5 gives slope 2/5.",
+    "watch": "Vertical lines have undefined slope because the horizontal change is zero.",
     "chapters": [
       11,
       20,
       23
     ],
-    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 480 200\" role=\"img\" aria-label=\"Coordinate graph illustrating slope.\"><rect width=\"480\" height=\"200\" rx=\"12\" fill=\"#ffffff\"/><line x1=\"55\" y1=\"150\" x2=\"430\" y2=\"150\" stroke=\"#173349\" stroke-width=\"2\"/><line x1=\"115\" y1=\"174\" x2=\"115\" y2=\"15\" stroke=\"#173349\" stroke-width=\"2\"/><text x=\"440\" y=\"155\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"18\" fill=\"#173349\">x</text><text x=\"101\" y=\"28\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"18\" fill=\"#173349\">y</text><line x1=\"90\" y1=\"153\" x2=\"350\" y2=\"49\" stroke=\"#087f75\" stroke-width=\"3\"/><line x1=\"150\" y1=\"129\" x2=\"300\" y2=\"129\" stroke=\"#3175ba\" stroke-width=\"2\"/><line x1=\"300\" y1=\"129\" x2=\"300\" y2=\"69\" stroke=\"#3175ba\" stroke-width=\"2\"/><text x=\"222\" y=\"150\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"18\" fill=\"#3175ba\">run = 5</text><text x=\"358\" y=\"105\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"18\" fill=\"#3175ba\">rise = 2</text><text x=\"254\" y=\"188\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"19\" fill=\"#173349\">gradient = 2 ÷ 5</text></svg>"
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 480 200\" role=\"img\" aria-label=\"Coordinate graph illustrating slope.\"><rect width=\"480\" height=\"200\" rx=\"12\" fill=\"#ffffff\"/><line x1=\"55\" y1=\"150\" x2=\"430\" y2=\"150\" stroke=\"#173349\" stroke-width=\"2\"/><line x1=\"115\" y1=\"174\" x2=\"115\" y2=\"15\" stroke=\"#173349\" stroke-width=\"2\"/><text x=\"440\" y=\"155\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"18\" fill=\"#173349\">x</text><text x=\"101\" y=\"28\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"18\" fill=\"#173349\">y</text><line x1=\"90\" y1=\"153\" x2=\"350\" y2=\"49\" stroke=\"#087f75\" stroke-width=\"3\"/><line x1=\"150\" y1=\"129\" x2=\"300\" y2=\"129\" stroke=\"#3175ba\" stroke-width=\"2\"/><line x1=\"300\" y1=\"129\" x2=\"300\" y2=\"69\" stroke=\"#3175ba\" stroke-width=\"2\"/><text x=\"222\" y=\"150\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"18\" fill=\"#3175ba\">run = 5</text><text x=\"358\" y=\"105\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"18\" fill=\"#3175ba\">rise = 2</text><text x=\"254\" y=\"188\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"19\" fill=\"#173349\">slope = 2 ÷ 5</text></svg>"
   },
   {
     "id": "intercept",
@@ -1794,7 +1796,7 @@
     "aliases": [
       "target set"
     ],
-    "definition": "The stated target set containing all outputs a function is allowed to have. Some members may not actually be reached.",
+    "definition": "The stated target set containing all outputs a function is allowed to have; also written co-domain. Some members may not actually be reached.",
     "example": "For x² with domain {−1, 0, 1} and codomain {0, 1, 4}, the value 4 is allowed but not reached.",
     "watch": "Codomain and range need not be equal.",
     "chapters": [
@@ -1840,14 +1842,14 @@
     "aliases": [
       "longest side"
     ],
-    "definition": "The side opposite the right angle in a right triangle. It is the longest side.",
-    "example": "In a 3–4–5 right triangle, the hypotenuse is 5.",
+    "definition": "The side opposite the right angle in a right-angled triangle. It is the longest side.",
+    "example": "In a 3–4–5 right-angled triangle, the hypotenuse is 5.",
     "watch": "Its identity does not depend on which acute angle you choose.",
     "chapters": [
       8,
       22
     ],
-    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 480 200\" role=\"img\" aria-label=\"A right triangle. The hypotenuse is opposite the right angle.\"><rect width=\"480\" height=\"200\" rx=\"12\" fill=\"#ffffff\"/><polygon points=\"70,155 70,35 330,155\" fill=\"#e8f5f1\" stroke=\"#087f75\" stroke-width=\"2.5\"/><line x1=\"70\" y1=\"139\" x2=\"86\" y2=\"139\" stroke=\"#173349\" stroke-width=\"2\"/><line x1=\"86\" y1=\"139\" x2=\"86\" y2=\"155\" stroke=\"#173349\" stroke-width=\"2\"/><text x=\"45\" y=\"100\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"23\" fill=\"#087f75\">3</text><text x=\"200\" y=\"180\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"23\" fill=\"#087f75\">4</text><text x=\"220\" y=\"84\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"23\" fill=\"#3175ba\">5</text><text x=\"379\" y=\"61\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"21\" fill=\"#173349\">3² + 4²</text><text x=\"379\" y=\"93\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"21\" fill=\"#173349\">= 5²</text></svg>"
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 480 200\" role=\"img\" aria-label=\"A right-angled triangle. The hypotenuse is opposite the right angle.\"><rect width=\"480\" height=\"200\" rx=\"12\" fill=\"#ffffff\"/><polygon points=\"70,155 70,35 330,155\" fill=\"#e8f5f1\" stroke=\"#087f75\" stroke-width=\"2.5\"/><line x1=\"70\" y1=\"139\" x2=\"86\" y2=\"139\" stroke=\"#173349\" stroke-width=\"2\"/><line x1=\"86\" y1=\"139\" x2=\"86\" y2=\"155\" stroke=\"#173349\" stroke-width=\"2\"/><text x=\"45\" y=\"100\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"23\" fill=\"#087f75\">3</text><text x=\"200\" y=\"180\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"23\" fill=\"#087f75\">4</text><text x=\"220\" y=\"84\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"23\" fill=\"#3175ba\">5</text><text x=\"379\" y=\"61\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"21\" fill=\"#173349\">3² + 4²</text><text x=\"379\" y=\"93\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"21\" fill=\"#173349\">= 5²</text></svg>"
   },
   {
     "id": "opposite-and-adjacent",
@@ -1857,13 +1859,13 @@
       "adjacent side",
       "reference angle"
     ],
-    "definition": "For a chosen acute angle in a right triangle, the opposite side faces it; the adjacent side touches it and is not the hypotenuse.",
-    "example": "Changing the chosen acute angle swaps the opposite and adjacent legs.",
+    "definition": "For a chosen acute angle in a right-angled triangle, the opposite side faces it; the adjacent side touches it and is not the hypotenuse.",
+    "example": "Changing the chosen acute angle swaps the opposite and adjacent sides.",
     "watch": "Label the right angle, hypotenuse and reference angle before choosing a ratio.",
     "chapters": [
       22
     ],
-    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 480 200\" role=\"img\" aria-label=\"A right triangle. The hypotenuse is opposite the right angle.\"><rect width=\"480\" height=\"200\" rx=\"12\" fill=\"#ffffff\"/><polygon points=\"70,155 70,35 330,155\" fill=\"#e8f5f1\" stroke=\"#087f75\" stroke-width=\"2.5\"/><line x1=\"70\" y1=\"139\" x2=\"86\" y2=\"139\" stroke=\"#173349\" stroke-width=\"2\"/><line x1=\"86\" y1=\"139\" x2=\"86\" y2=\"155\" stroke=\"#173349\" stroke-width=\"2\"/><text x=\"42\" y=\"96\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"23\" fill=\"#087f75\">o</text><text x=\"200\" y=\"183\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"23\" fill=\"#087f75\">a</text><text x=\"220\" y=\"82\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"23\" fill=\"#3175ba\">h</text><text x=\"283\" y=\"146\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"22\" fill=\"#946011\">θ</text><text x=\"388\" y=\"72\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"16\" fill=\"#173349\">o: opposite</text><text x=\"388\" y=\"104\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"16\" fill=\"#173349\">a: adjacent</text><text x=\"388\" y=\"136\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"16\" fill=\"#173349\">h: hypotenuse</text></svg>"
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 480 200\" role=\"img\" aria-label=\"A right-angled triangle. The hypotenuse is opposite the right angle.\"><rect width=\"480\" height=\"200\" rx=\"12\" fill=\"#ffffff\"/><polygon points=\"70,155 70,35 330,155\" fill=\"#e8f5f1\" stroke=\"#087f75\" stroke-width=\"2.5\"/><line x1=\"70\" y1=\"139\" x2=\"86\" y2=\"139\" stroke=\"#173349\" stroke-width=\"2\"/><line x1=\"86\" y1=\"139\" x2=\"86\" y2=\"155\" stroke=\"#173349\" stroke-width=\"2\"/><text x=\"42\" y=\"96\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"23\" fill=\"#087f75\">o</text><text x=\"200\" y=\"183\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"23\" fill=\"#087f75\">a</text><text x=\"220\" y=\"82\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"23\" fill=\"#3175ba\">h</text><text x=\"283\" y=\"146\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"22\" fill=\"#946011\">θ</text><text x=\"388\" y=\"72\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"16\" fill=\"#173349\">o: opposite</text><text x=\"388\" y=\"104\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"16\" fill=\"#173349\">a: adjacent</text><text x=\"388\" y=\"136\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"16\" fill=\"#173349\">h: hypotenuse</text></svg>"
   },
   {
     "id": "sine-cosine-and-tangent",
@@ -1875,13 +1877,13 @@
       "SOHCAHTOA",
       "trigonometric ratios"
     ],
-    "definition": "In a right triangle: sin θ = opposite/hypotenuse, cos θ = adjacent/hypotenuse, tan θ = opposite/adjacent.",
+    "definition": "In a right-angled triangle: sin θ = opposite/hypotenuse, cos θ = adjacent/hypotenuse, tan θ = opposite/adjacent.",
     "example": "If opposite = 3 and hypotenuse = 5, then sin θ = 3/5.",
-    "watch": "These side ratios apply to right triangles; match the ratio to the sides you know.",
+    "watch": "These side ratios apply to right-angled triangles; match the ratio to the sides you know.",
     "chapters": [
       22
     ],
-    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 480 200\" role=\"img\" aria-label=\"A right triangle. The hypotenuse is opposite the right angle.\"><rect width=\"480\" height=\"200\" rx=\"12\" fill=\"#ffffff\"/><polygon points=\"70,155 70,35 330,155\" fill=\"#e8f5f1\" stroke=\"#087f75\" stroke-width=\"2.5\"/><line x1=\"70\" y1=\"139\" x2=\"86\" y2=\"139\" stroke=\"#173349\" stroke-width=\"2\"/><line x1=\"86\" y1=\"139\" x2=\"86\" y2=\"155\" stroke=\"#173349\" stroke-width=\"2\"/><text x=\"42\" y=\"96\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"23\" fill=\"#087f75\">o</text><text x=\"200\" y=\"183\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"23\" fill=\"#087f75\">a</text><text x=\"220\" y=\"82\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"23\" fill=\"#3175ba\">h</text><text x=\"283\" y=\"146\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"22\" fill=\"#946011\">θ</text><text x=\"388\" y=\"72\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"16\" fill=\"#173349\">o: opposite</text><text x=\"388\" y=\"104\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"16\" fill=\"#173349\">a: adjacent</text><text x=\"388\" y=\"136\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"16\" fill=\"#173349\">h: hypotenuse</text></svg>"
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 480 200\" role=\"img\" aria-label=\"A right-angled triangle. The hypotenuse is opposite the right angle.\"><rect width=\"480\" height=\"200\" rx=\"12\" fill=\"#ffffff\"/><polygon points=\"70,155 70,35 330,155\" fill=\"#e8f5f1\" stroke=\"#087f75\" stroke-width=\"2.5\"/><line x1=\"70\" y1=\"139\" x2=\"86\" y2=\"139\" stroke=\"#173349\" stroke-width=\"2\"/><line x1=\"86\" y1=\"139\" x2=\"86\" y2=\"155\" stroke=\"#173349\" stroke-width=\"2\"/><text x=\"42\" y=\"96\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"23\" fill=\"#087f75\">o</text><text x=\"200\" y=\"183\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"23\" fill=\"#087f75\">a</text><text x=\"220\" y=\"82\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"23\" fill=\"#3175ba\">h</text><text x=\"283\" y=\"146\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"22\" fill=\"#946011\">θ</text><text x=\"388\" y=\"72\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"16\" fill=\"#173349\">o: opposite</text><text x=\"388\" y=\"104\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"16\" fill=\"#173349\">a: adjacent</text><text x=\"388\" y=\"136\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"16\" fill=\"#173349\">h: hypotenuse</text></svg>"
   },
   {
     "id": "inverse-trigonometric-function",
@@ -1925,9 +1927,9 @@
       "straight-line graph",
       "y=mx+c"
     ],
-    "definition": "A function of the form y = mx + c. The gradient m is constant and c is the y-intercept.",
+    "definition": "A function of the form y = mx + c. The slope m is constant and c is the y-intercept.",
     "example": "For y = 2x − 3, each increase of 1 in x raises y by 2.",
-    "watch": "A linear function can decrease if its gradient is negative.",
+    "watch": "A linear function can decrease if its slope is negative.",
     "chapters": [
       10,
       11,
@@ -1995,7 +1997,7 @@
       "stationary",
       "journey"
     ],
-    "definition": "A graph showing a distance or position against time. On a distance-travelled graph, gradient represents speed.",
+    "definition": "A graph showing a distance or position against time. On a distance-travelled graph, slope represents speed.",
     "example": "A horizontal section means the plotted distance is not changing during that time.",
     "watch": "Read the vertical-axis wording: distance from home can decrease, but cumulative distance travelled cannot.",
     "chapters": [
@@ -2027,7 +2029,7 @@
       "mirror image",
       "mirror line"
     ],
-    "definition": "Mapping a point across a mirror line so that the line perpendicularly bisects the segment joining the point and its image.",
+    "definition": "Mapping a point across a mirror line so that the line perpendicularly bisects the segment joining the point and its image. Irish exam papers call this axial symmetry in the line.",
     "example": "Reflection in the y-axis takes (3, 2) to (−3, 2).",
     "watch": "Points on the mirror line stay fixed.",
     "chapters": [
@@ -2152,7 +2154,7 @@
       "n(A)",
       "#A"
     ],
-    "definition": "The number of distinct elements in a finite set.",
+    "definition": "The number of distinct elements in a finite set, written n(A) here and #A on Irish exam papers.",
     "example": "If A = {2, 4, 6}, then n(A) = 3.",
     "watch": "A set containing zero has one element: n({0}) = 1, while n(∅) = 0.",
     "chapters": [
@@ -2227,7 +2229,7 @@
       "class midpoint",
       "grouped mean"
     ],
-    "definition": "A mean estimated by treating every value in a class as equal to that class’s midpoint: Σ(f × midpoint)/Σf.",
+    "definition": "A mean estimated by treating every value in a class as equal to that class’s mid-interval value (midpoint): Σ(f × midpoint)/Σf.",
     "example": "For a class from 10 to 20, use midpoint 15 in the weighted calculation.",
     "watch": "The result is an estimate because the exact values within each class are unknown.",
     "chapters": [

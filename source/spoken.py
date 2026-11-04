@@ -90,6 +90,7 @@ def spoken(t):
     t = re.sub(f'([{SUPER}]+)⁄([{SUPER}]+)', _fraction_power, t)
     t = re.sub(f'[{SUPER}]+', _power, t)
     t = re.sub(f'[{SUB}]+', _subscript, t)
+    t = re.sub(r'\((−?\d+(?:\.\d+)?),\s*(−?\d+(?:\.\d+)?)\)', r' \1 comma \2 ', t)   # the point (3,1)
     t = re.sub(r'(?<=\d):(?=\d)', ' to ', t)          # 2:3
     t = re.sub(r'(?<=\d) : (?=\d)', ' to ', t)        # 2 : 3, but not "x = 2: 25"
     for a, b in SYMBOLS:

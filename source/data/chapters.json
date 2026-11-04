@@ -10928,7 +10928,7 @@
             "reason": "The desired profit is not zero."
           },
           {
-            "title": "Rearrange and factor",
+            "title": "Rearrange and factorise",
             "math": "n²−18n+72=(n−6)(n−12)=0",
             "reason": "Moving the target and dividing by −2 gives an equivalent equation."
           },
@@ -11445,7 +11445,7 @@
             "explanation": "The perpendicular creates right angles, and each small triangle shares an acute angle with the original."
           },
           {
-            "question": "Which equality finishes the proof after factoring out BC?",
+            "question": "Which equality finishes the proof after taking BC out as a common factor?",
             "options": [
               "BD = DC",
               "BD + DC = BC",
@@ -15210,7 +15210,7 @@
         "id": "21-06",
         "section": "21.4",
         "title": "When the subject appears twice",
-        "goal": "Collect and factor the target variable before dividing.",
+        "goal": "Collect the target variable and take it out as a common factor before dividing.",
         "steps": [
           {
             "title": "Spot the repeated subject",
@@ -15520,7 +15520,7 @@
           "steps": [
             "Record the original forbidden x.",
             "Multiply by the whole denominator.",
-            "Collect every x term on one side and factor x.",
+            "Collect every x term on one side and take x out as a common factor.",
             "Divide by its coefficient and examine any excluded y separately."
           ],
           "example": "y=(2x+1)/(x−3) gives x=(3y+1)/(y−2), with x≠3 and y≠2.",
@@ -17661,8 +17661,8 @@
             "options": [
               "Any midpoint",
               "The angle’s vertex",
-              "The midpoint of the arc joining the two side marks",
-              "The point where the two side marks are joined"
+              "Either of the two marks on the arms",
+              "A point on one arm, away from the vertex"
             ],
             "answer": 1,
             "hint": "The two new angles share the original corner.",
@@ -18135,7 +18135,7 @@
       {
         "id": "24-13",
         "section": "24.5",
-        "title": "Construct a right-angled triangle from RHS",
+        "title": "Construct a right-angled triangle",
         "goal": "Use the right angle with the hypotenuse and one side, or with one side and an acute angle.",
         "steps": [
           {
@@ -18161,9 +18161,9 @@
           },
           {
             "title": "Join and check with Pythagoras",
-            "text": "Join B to C. The remaining side is six centimetres, since ten squared minus eight squared is thirty-six. If an acute angle at B were given instead of the hypotenuse, draw the perpendicular at A as before, then a ray from B at that angle to AB; C is where the ray meets the perpendicular. If the given side is the hypotenuse BC, draw the ray from B first and drop the perpendicular from C onto it.",
+            "text": "Join B to C. The remaining side is six centimetres, since ten squared minus eight squared is thirty-six. If an acute angle at B were given instead of the hypotenuse, draw the perpendicular at A as before, then a ray from B at that angle to AB; C is where the ray meets the perpendicular. If the given side is the hypotenuse BC, draw BC, then the ray from B at the given angle, and drop the perpendicular from C onto the ray; its foot is A.",
             "why": "Pythagoras checks a construction whose defining data were RHS.",
-            "math": "AC = √(10² − 8²) = 6 cm; or C = ray from B ∩ perpendicular",
+            "math": "AC = √(10² − 8²) = 6 cm",
             "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 400\" role=\"img\"><rect x=\"0\" y=\"0\" width=\"760\" height=\"400\" rx=\"0\" fill=\"#ffffff\" stroke=\"#ffffff\" stroke-width=\"2\"/><line id=\"base\" x1=\"180\" y1=\"300\" x2=\"500\" y2=\"300\" stroke=\"#173349\" stroke-width=\"3\"/><text x=\"340\" y=\"337\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"25\" fill=\"#173349\">AB = 8 cm</text><line id=\"perpendicular\" x1=\"180\" y1=\"300\" x2=\"180\" y2=\"35\" stroke=\"#3175ba\" stroke-width=\"3\"/><path id=\"right\" d=\"M 180 278 L 202 278 L 202 300\" fill=\"none\" stroke=\"#3175ba\" stroke-width=\"2\"/><path id=\"hyp-arc\" d=\"M 140.48238148033317 124.65154128436907 A 400 400 0 0 1 202.74206980904233 32.347757456456634\" fill=\"none\" stroke=\"#087f75\" stroke-width=\"2\"/><text x=\"480\" y=\"148\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"24\" fill=\"#087f75\">BC = 10 cm</text><circle id=\"c\" cx=\"180\" cy=\"60\" r=\"5\" fill=\"#087f75\" stroke=\"#087f75\" stroke-width=\"2\"/><line id=\"hypotenuse\" x1=\"500\" y1=\"300\" x2=\"180\" y2=\"60\" stroke=\"#7650a0\" stroke-width=\"3\"/><text x=\"154\" y=\"60\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"24\" fill=\"#7650a0\">C</text><text x=\"125\" y=\"185\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"23\" fill=\"#3175ba\">6 cm</text><text id=\"caption\" x=\"380\" y=\"383\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"19\" fill=\"#8ca1af\">Leave construction arcs visible: they show how the result was obtained.</text></svg>"
           }
         ],
@@ -18517,7 +18517,7 @@
           "lessonId": "24-12"
         },
         {
-          "title": "Construct a right-angled triangle from RHS",
+          "title": "Construct a right-angled triangle",
           "section": "24.5",
           "when": "A right angle with the hypotenuse and one perpendicular side, or with one side and an acute angle, is given.",
           "rule": "Hypotenuse h must exceed the given perpendicular side a>0; the other perpendicular side is √(h²−a²).",

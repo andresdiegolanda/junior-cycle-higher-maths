@@ -14,7 +14,7 @@ Actualizado: 4 de noviembre de 2026.
 
 ## 2. Estado actual
 
-Código implementado y probado localmente. Activación coordinada autorizada el 4 de noviembre de 2026; publicación en curso. Ver `ACCOUNTS-VALIDATION.md` para las comprobaciones finales.
+Versión publicada desde `main` el 4 de noviembre de 2026: commit `bf164eb`, versión Cloudflare `b760e1c9`. Activación coordinada autorizada por el propietario. Access, base D1 y cron diario confirmados en producción. Se verificó el ingreso del administrador y la persistencia de una lección, un intento, una pista y una respuesta correcta tras recargar. Ver `ACCOUNTS-VALIDATION.md` para la evidencia.
 
 Ya se preparó en Cloudflare:
 

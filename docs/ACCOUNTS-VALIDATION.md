@@ -1,6 +1,6 @@
 # Account pilot validation — 2026-11-04
 
-Built and tested locally. Production activation explicitly authorized on 2026-11-04; deployment in progress.
+Built and tested locally, then published to production on 2026-11-04 with explicit authorization.
 
 ## Passed
 
@@ -58,6 +58,29 @@ Local development site: `http://127.0.0.1:8787/dev/login`.
 - Git production build configured for Node 24, build plus account tests, then `npm run deploy`.
 - Preview branch builds are disabled.
 
-Live login, PIN delivery, Worker/D1 writes and the deployed retention schedule
-still need verification after the release. Invitations are sent manually using
-the prepared email; automated invitation delivery is not configured.
+- Commit `bf164ebe715777643730761e0c14c097b6a1ef9e` pushed to `main`.
+- Cloudflare build `3ad1856f-2b89-4ffa-9b42-fdf78cc9a3c3` completed successfully
+  with build and account tests; version `b760e1c9` receives 100% of traffic.
+- Production bindings show `DB` linked to `junior-maths-activity` and the correct
+  application origin, issuer and audience.
+- Production cron confirmed: daily at 03:15 UTC.
+- Anonymous browser visit redirected to Cloudflare Access email login.
+
+- Administrator completed email verification; the guide shows `Andrés · Administrator`.
+- Live smoke test: opened lesson 01-02, started an exercise, revealed its clue,
+  and submitted option B (15). The server accepted the correct answer.
+- Reloaded the live activity page: all four events persisted in time order;
+  metrics showed one attempt and one clue. A second tab showed the same history.
+- Students panel showed exactly one active admin account and nine remaining places.
+- No browser console errors during the live account/activity flows.
+- The original Access verification tab remained on its spinner after authentication;
+  navigating directly to the app resolved it without another code.
+
+![Production activity after reload](accounts-production.png)
+
+No real student accounts or invitation messages were created during verification.
+Production suspension/deletion and retention of aged records were not exercised
+on real data; their behavior is covered by the local tests. The deployed daily
+cron is confirmed, but its first scheduled execution has not yet occurred.
+Invitations are sent manually using the prepared email; automated invitation
+delivery is not configured.

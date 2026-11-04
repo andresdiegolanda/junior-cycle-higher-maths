@@ -63,7 +63,7 @@ Cloudflare Worker, D1 and Access. The downloadable copies still run locally.
 
 ## Student accounts pilot
 
-Account access is configured for the production pilot. See the validation record for live verification status.
+Published and verified in production on 2026-11-04. Administrator login and persisted exercise activity passed the live smoke test. See [the validation record](docs/ACCOUNTS-VALIDATION.md).
 
 - Maximum ten accounts, including the administrator and reserved invitations.
 - Administrator: `andresdiegolanda@gmail.com`; students only see their own records.

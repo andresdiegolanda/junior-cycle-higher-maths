@@ -8011,7 +8011,7 @@
           {
             "question": "Why is finding only x insufficient?",
             "options": [
-              "x is always wrong.",
+              "The y-value is always equal to the x-value.",
               "A point requires both coordinates.",
               "y must be zero.",
               "Every line has two intersections."
@@ -8309,7 +8309,7 @@
           },
           {
             "title": "Convert distance to time",
-            "math": "Direct: (1/5)h=12 min; via C: (1.4/5)h=16.8 min",
+            "math": "Direct: 1 ÷ 5 = 0.2 h = 12 min; via C: 1.4 ÷ 5 = 0.28 h = 16.8 min",
             "reason": "Use kilometres with km/h, then multiply hours by 60."
           }
         ],
@@ -9168,14 +9168,14 @@
             "title": "Choose place values",
             "text": "For 12, 17, 21, 23, 23, 29, 34, use tens as stems and units as leaves. The key must explain the value.",
             "why": "A stem and leaf together reconstruct a measurement.",
-            "math": "2 | 3 means 23",
+            "math": "Key: stem 2, leaf 3 means 23",
             "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 400\" role=\"img\" aria-label=\"Keep every original value\"><rect id=\"rect-auto-1\" x=\"0\" y=\"0\" width=\"760\" height=\"400\" rx=\"18\" fill=\"#f8fbfc\" stroke=\"none\" stroke-width=\"2\" /><text id=\"diagram-title\" x=\"28\" y=\"38\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"24\" fill=\"#173349\" text-anchor=\"start\" font-weight=\"700\">Keep every original value</text><rect id=\"tile-0\" x=\"35.0\" y=\"88\" width=\"105.0\" height=\"60\" rx=\"12\" fill=\"#e8f5f1\" stroke=\"#087f75\" stroke-width=\"2\" /><text id=\"label-0\" x=\"87.5\" y=\"127\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"24\" fill=\"#087f75\" text-anchor=\"middle\" font-weight=\"700\">12</text><rect id=\"tile-1\" x=\"150.0\" y=\"88\" width=\"105.0\" height=\"60\" rx=\"12\" fill=\"#e8f5f1\" stroke=\"#087f75\" stroke-width=\"2\" /><text id=\"label-1\" x=\"202.5\" y=\"127\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"24\" fill=\"#087f75\" text-anchor=\"middle\" font-weight=\"700\">17</text><rect id=\"tile-2\" x=\"265.0\" y=\"88\" width=\"105.0\" height=\"60\" rx=\"12\" fill=\"#e8f5f1\" stroke=\"#087f75\" stroke-width=\"2\" /><text id=\"label-2\" x=\"317.5\" y=\"127\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"24\" fill=\"#087f75\" text-anchor=\"middle\" font-weight=\"700\">21</text><rect id=\"tile-3\" x=\"380.0\" y=\"88\" width=\"105.0\" height=\"60\" rx=\"12\" fill=\"#e8f5f1\" stroke=\"#087f75\" stroke-width=\"2\" /><text id=\"label-3\" x=\"432.5\" y=\"127\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"24\" fill=\"#087f75\" text-anchor=\"middle\" font-weight=\"700\">23</text><rect id=\"tile-4\" x=\"495.0\" y=\"88\" width=\"105.0\" height=\"60\" rx=\"12\" fill=\"#e8f5f1\" stroke=\"#087f75\" stroke-width=\"2\" /><text id=\"label-4\" x=\"547.5\" y=\"127\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"24\" fill=\"#087f75\" text-anchor=\"middle\" font-weight=\"700\">23</text><rect id=\"tile-5\" x=\"610.0\" y=\"88\" width=\"105.0\" height=\"60\" rx=\"12\" fill=\"#e8f5f1\" stroke=\"#087f75\" stroke-width=\"2\" /><text id=\"label-5\" x=\"662.5\" y=\"127\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"24\" fill=\"#087f75\" text-anchor=\"middle\" font-weight=\"700\">29</text><rect id=\"tile-6\" x=\"35.0\" y=\"164\" width=\"105.0\" height=\"60\" rx=\"12\" fill=\"#e8f5f1\" stroke=\"#087f75\" stroke-width=\"2\" /><text id=\"label-6\" x=\"87.5\" y=\"203\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"24\" fill=\"#087f75\" text-anchor=\"middle\" font-weight=\"700\">34</text><text id=\"diagram-footer\" x=\"380\" y=\"378\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"18\" fill=\"#6d8190\" text-anchor=\"middle\" font-weight=\"400\">Choose tens as stems and units as leaves.</text></svg>"
           },
           {
             "title": "Order the leaves",
             "text": "The stem 2 has leaves 1, 3, 3, 9. Keep both 3s because the value 23 occurred twice.",
             "why": "Frequency is preserved by retaining repeats.",
-            "math": "2 | 1 3 3 9",
+            "math": "Stem 2: leaves 1, 3, 3, 9",
             "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 400\" role=\"img\" aria-label=\"Split tens and units\"><rect id=\"rect-auto-1\" x=\"0\" y=\"0\" width=\"760\" height=\"400\" rx=\"18\" fill=\"#f8fbfc\" stroke=\"none\" stroke-width=\"2\" /><text id=\"diagram-title\" x=\"28\" y=\"38\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"24\" fill=\"#173349\" text-anchor=\"start\" font-weight=\"700\">Split tens and units</text><rect id=\"rect-auto-2\" x=\"36.0\" y=\"76\" width=\"341.0\" height=\"49\" rx=\"4\" fill=\"#173349\" stroke=\"none\" stroke-width=\"2\" /><text id=\"head0\" x=\"208.0\" y=\"109.32\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"21\" fill=\"white\" text-anchor=\"middle\" font-weight=\"700\">Stem</text><rect id=\"rect-auto-3\" x=\"380.0\" y=\"76\" width=\"341.0\" height=\"49\" rx=\"4\" fill=\"#173349\" stroke=\"none\" stroke-width=\"2\" /><text id=\"head1\" x=\"552.0\" y=\"109.32\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"21\" fill=\"white\" text-anchor=\"middle\" font-weight=\"700\">Leaves</text><rect id=\"cell0-0\" x=\"36.0\" y=\"125\" width=\"341.0\" height=\"46\" rx=\"3\" fill=\"#edf4fc\" stroke=\"none\" stroke-width=\"2\" /><text id=\"v0-0\" x=\"208.0\" y=\"158.32\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"21\" fill=\"#173349\" text-anchor=\"middle\" font-weight=\"400\">1</text><rect id=\"cell0-1\" x=\"380.0\" y=\"125\" width=\"341.0\" height=\"46\" rx=\"3\" fill=\"#edf4fc\" stroke=\"none\" stroke-width=\"2\" /><text id=\"v0-1\" x=\"552.0\" y=\"158.32\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"21\" fill=\"#173349\" text-anchor=\"middle\" font-weight=\"400\">2  7</text><rect id=\"cell1-0\" x=\"36.0\" y=\"174\" width=\"341.0\" height=\"46\" rx=\"3\" fill=\"#edf4fc\" stroke=\"none\" stroke-width=\"2\" /><text id=\"v1-0\" x=\"208.0\" y=\"207.32\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"21\" fill=\"#173349\" text-anchor=\"middle\" font-weight=\"400\">2</text><rect id=\"cell1-1\" x=\"380.0\" y=\"174\" width=\"341.0\" height=\"46\" rx=\"3\" fill=\"#edf4fc\" stroke=\"none\" stroke-width=\"2\" /><text id=\"v1-1\" x=\"552.0\" y=\"207.32\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"21\" fill=\"#173349\" text-anchor=\"middle\" font-weight=\"400\">1  3  3  9</text><rect id=\"cell2-0\" x=\"36.0\" y=\"223\" width=\"341.0\" height=\"46\" rx=\"3\" fill=\"#edf4fc\" stroke=\"none\" stroke-width=\"2\" /><text id=\"v2-0\" x=\"208.0\" y=\"256.32\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"21\" fill=\"#173349\" text-anchor=\"middle\" font-weight=\"400\">3</text><rect id=\"cell2-1\" x=\"380.0\" y=\"223\" width=\"341.0\" height=\"46\" rx=\"3\" fill=\"#edf4fc\" stroke=\"none\" stroke-width=\"2\" /><text id=\"v2-1\" x=\"552.0\" y=\"256.32\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"21\" fill=\"#173349\" text-anchor=\"middle\" font-weight=\"400\">4</text><text id=\"diagram-footer\" x=\"380\" y=\"378\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"18\" fill=\"#6d8190\" text-anchor=\"middle\" font-weight=\"400\">Key: 2 | 3 means 23. Repeated leaves must remain.</text></svg>"
           },
           {
@@ -9195,7 +9195,7 @@
         ],
         "quiz": [
           {
-            "question": "The key says 4 | 6 means 4.6 kg. What does 5 | 2 mean?",
+            "question": "The key says stem 4, leaf 6 means 4.6 kg. What does stem 5, leaf 2 mean?",
             "options": [
               "52 kg",
               "5.2 kg",
@@ -9207,7 +9207,7 @@
             "explanation": "The stem is whole kilograms and the leaf tenths, so it means 5.2 kg."
           },
           {
-            "question": "A stem row is 3 | 1 1 5 8. How many observations are in that row?",
+            "question": "A stem row has stem 3 and leaves 1, 1, 5, 8. How many observations are in that row?",
             "options": [
               "3",
               "4",
@@ -9385,7 +9385,7 @@
             "Sort each row and keep repeats.",
             "Read data in order for median, mode and range."
           ],
-          "example": "For 12,18,18,23,25,25: stems 1|2 8 8 and 2|3 5 5; median=(18+23)/2=20.5.",
+          "example": "For 12,18,18,23,25,25: stem 1 with leaves 2, 8, 8 and stem 2 with leaves 3, 5, 5; median=(18+23)/2=20.5.",
           "check": "Six leaves reconstruct the six original values.",
           "trap": "For an even count, the median is the mean of the two middle values, not one middle leaf.",
           "lessonId": "13-04"
@@ -9445,7 +9445,7 @@
         "solution": [
           {
             "title": "Arrange the display",
-            "math": "1|2 8 8; 2|3 5 5 5; 3|1 3; 4|0. Key: 2|5 means 25.",
+            "math": "Stem 1: 2 8 8; stem 2: 3 5 5 5; stem 3: 1 3; stem 4: 0. Key: stem 2, leaf 5 means 25.",
             "reason": "The plot preserves every original observation."
           },
           {
@@ -10895,7 +10895,7 @@
           {
             "title": "Evaluate both branches",
             "math": "x=(5±7)/6 ⇒ x=2 or −1/3",
-            "reason": "The plus/minus produces two roots."
+            "reason": "The plus or minus sign produces two roots."
           },
           {
             "title": "Build the factors",

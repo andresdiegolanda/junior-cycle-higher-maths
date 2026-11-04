@@ -22,7 +22,7 @@ Simplify √50 + √8 − √18 and determine whether the result lies between 5 
 Write 450 000 in standard form.|The leading number must be at least 1 and below 10.|Move the decimal five places.|450000 = 4.5 × 10⁵.|4.5 × 10⁵|Multiplying 4.5 by 100 000 recovers the original.
 Write 0.000072 in standard form.|A small positive number uses a negative exponent.|Move the decimal five places to get 7.2.|0.000072 = 7.2 × 10⁻⁵.|7.2 × 10⁻⁵|10⁻⁵ = 0.00001.
 Calculate (3 × 10⁵)(4 × 10⁻³), giving standard form.|Multiply coefficients and combine powers.|12 × 10² needs normalising.|3 × 4 = 12; 5 + (−3) = 2.~12 × 10² = 1.2 × 10³.|1.2 × 10³|The ordinary-number answer is 1200.
-Light travels at 3 × 10⁸ m/s in a model. How long to travel 4.5 × 10¹¹ m? Give seconds and minutes.|Time = distance/speed.|Divide coefficients and subtract exponents.|Time = 1.5 × 10³ s = 1500 s.~1500/60 = 25.|1500 seconds; 25 minutes|3 × 10⁸ × 1500 = 4.5 × 10¹¹ m.
+Light travels at 3 × 10⁸ metres per second in a model. How long does it take to travel 4.5 × 10¹¹ metres? Give seconds and minutes.|Time = distance/speed.|Divide coefficients and subtract exponents.|Time = 1.5 × 10³ s = 1500 s.~1500/60 = 25.|1500 seconds; 25 minutes|3 × 10⁸ × 1500 = 4.5 × 10¹¹ metres.
 @14-06
 Round 7.386 to two decimal places.|Keep two digits after the decimal.|Inspect the third decimal digit.|The third digit is 6, so increase the hundredths digit.|7.39|The original lies closer to 7.39 than to 7.38.
 Round 0.004786 to three significant figures.|Leading zeros are not significant.|Keep 4,7,8 and inspect 6.|Increase the retained 8 to 9.|0.00479|0.00479 has the three significant figures 4, 7, 9 and differs from 0.004786 by less than 0.000005.

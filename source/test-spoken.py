@@ -104,6 +104,7 @@ clock_cases = {
     '12:23': 'twelve twenty-three',
     'A 1:25,000 map at 09:00': 'A 1 to 25,000 map at zero nine hundred hours',
     'Ratio 2:3:4': 'Ratio 2 to 3 to 4',
+    'Recognise the 1:√3:2 or 1:1:√2 side ratio': 'Recognise the 1 to square root of 3 to 2 or 1 to 1 to square root of 2 side ratio',
     'Leaves 23:42 and arrives 01:17 next day.': 'Leaves twenty-three forty-two and arrives zero one seventeen next day.',
 }
 for source, expected in clock_cases.items():

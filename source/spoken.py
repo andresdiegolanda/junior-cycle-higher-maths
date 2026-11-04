@@ -183,6 +183,7 @@ def spoken(t, *, clock_times=False):
     t = re.sub(r'\((−?\d+(?:\.\d+)?),\s*(−?\d+(?:\.\d+)?)\)', r' \1 comma \2 ', t)   # the point (3,1)
     t = re.sub(r'(?<=\d):(?=\d)', ' to ', t)          # 2:3
     t = re.sub(r'(?<=\d) : (?=\d)', ' to ', t)        # 2 : 3, but not "x = 2: 25"
+    t = re.sub(r'(?<=\d)\s?:\s?(?=√)', ' to ', t)      # 1:√3:2 side ratios
     for a, b in SYMBOLS:
         t = t.replace(a, b)
     t = re.sub(r'(\d)([A-Za-rt-z])\b', r'\1 times \2', t)

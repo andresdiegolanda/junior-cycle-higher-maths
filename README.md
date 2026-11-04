@@ -76,6 +76,18 @@ Published and verified in production on 2026-11-04. Administrator login and pers
   the Access policy and send the prepared message from your email app. Automatic
   invitation delivery is not configured; Cloudflare sends the login PIN itself.
 
+Open **My activity** for the study dashboard, or **Students → Activity** to review
+a student's record. Compare daily questions and sections over seven days, 30 days
+or the retained six months. Select a day in the chart to see its activity, or expand
+the daily table for exact counts, clues and active minutes. Days follow the
+browser's time zone, including daylight-saving changes.
+
+A question counts once per day when an answer or written self-review is recorded;
+opening it or viewing help alone does not count as an attempt. A section is a
+distinct lesson/topic with a recorded study action that day. Revisiting either on
+another day counts again. Totals add those daily counts; they are activity measures,
+not completion or accuracy scores. Browsing older records does not change them.
+
 See [the implementation and activation guide](docs/USER-ACTIVITY-IMPLEMENTATION.md).
 The EU database is initialized and Access protects all Worker traffic using the
 invited-accounts policy. The production configuration includes the real application AUD.

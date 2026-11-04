@@ -109,3 +109,18 @@ test('new attempts reset answer state, retain past events and malformed JSON is 
  assert.equal((await f.call('a','/api/events',null)).status,400);
  assert.equal((await f.call('a','/api/events',{events:[],notes:'x'.repeat(66000)})).status,413);
 });
+
+test('day drill-down and timeline pagination do not change daily totals or leak student records',async t=>{
+ const f=fixture(t);await f.invite('a@example.test');await f.invite('b@example.test');await f.session('a');await f.session('b');
+ const a=(await f.call('a','/api/me')).data.user,b=(await f.call('b','/api/me')).data.user;
+ const insert=f.db.sqlite.prepare('INSERT INTO events(user_id,id,session_id,kind,lesson_id,exercise_id,occurred_at,received_at,content_version,payload) VALUES(?,?,?,?,?,?,?,?,?,?)');
+ const add=(user,id,date,kind='choice_submitted')=>insert.run(user,id,'session1',kind,'01-01','01-01-q1',date,date,catalog.version,'{}');
+ add(a.id,'old','2026-11-03T10:00:00.000Z');for(let i=0;i<120;i++)add(a.id,'new'+i,'2026-11-04T11:00:00.000Z','lesson_opened');
+ add(b.id,'private','2026-11-04T12:00:00.000Z');
+ const all=(await f.call('a','/api/my-activity?days=7&timeZone=Europe/Dublin')).data;assert.equal(all.more,true);assert.equal(all.daily.at(-2).questions,1);assert.equal(all.daily.at(-1).questions,0);
+ const selected=(await f.call('a','/api/my-activity?days=7&day=2026-11-03')).data;assert.equal(selected.events.length,1);assert.equal(selected.selectedDay,'2026-11-03');assert.deepEqual(selected.daily,all.daily);
+ const last=all.events.at(-1),older=(await f.call('a',`/api/my-activity?days=7&before=${last.occurred_at}&cursor=${last.cursor}`)).data;assert.deepEqual(older.daily,all.daily);assert.equal(older.events.length,21);
+ const admin=(await f.call('admin',`/api/admin/users/${a.id}/activity?days=7`)).data;assert.deepEqual(admin.daily,all.daily);
+ assert.equal((await f.call('b',`/api/admin/users/${a.id}/activity?days=7`)).status,403);
+ assert.equal((await f.call('a','/api/my-activity?days=7&day=2026-01-01')).status,400);
+});

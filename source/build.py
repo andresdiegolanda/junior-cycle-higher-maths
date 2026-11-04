@@ -127,7 +127,7 @@ stats['writtenLessonExercises']=sum(len(practice[l['id']]) for c in chapters for
 stats['stepRuleHelpers']=rule_help_count
 stats['formulaCards']=len(formulas)
 css='\n'.join((ROOT/f).read_text(encoding='utf-8') for f in ['guide.css','enhancements.css','display.css','visual-learning.css','practice.css','rule-help.css','formulas.css','accounts.css'])
-js='\n'.join((ROOT/f).read_text(encoding='utf-8') for f in ['speech.js','accounts.js','guide.js','reading.js','rule-help-view.js','rule-help.js','lesson-view.js','practice.js','enhancements.js','toolkit-view.js','discovery.js','diagram-marks.js','formula-view.js','formula-library.js','account-view.js'])
+js='\n'.join((ROOT/f).read_text(encoding='utf-8') for f in ['speech.js','accounts.js','guide.js','reading.js','rule-help-view.js','rule-help.js','lesson-view.js','practice.js','enhancements.js','toolkit-view.js','discovery.js','diagram-marks.js','formula-view.js','formula-library.js','activity-view.js','account-view.js'])
 favicon='data:image/svg+xml,'+quote('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="#173349"/><rect x="2" y="2" width="60" height="60" rx="14" fill="none" stroke="#6bb5ab" stroke-width="2"/><text x="32" y="45" text-anchor="middle" font-family="Georgia,serif" font-size="52" font-weight="700" fill="#85dfcc">x</text></svg>',safe='')
 def page(items,initial=0,standalone=False):
     data={'chapters':items,'initialChapter':initial,'standalone':standalone,'stats':stats,'glossary':glossary,'searchIndex':search,'labNarration':labs,'ruleLibrary':rule_library,'formulas':formulas,'contentVersion':content_version}

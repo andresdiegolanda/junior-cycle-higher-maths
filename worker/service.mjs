@@ -1,4 +1,5 @@
-import {HttpError,fail,identifier,emailAddress,monthsAgo,unionSeconds,validateEvent,project} from './domain.mjs';
+import {HttpError,fail,identifier,emailAddress,monthsAgo,validateEvent,project} from './domain.mjs';
+import {activityWindow,dailyActivity} from './activity.mjs';
 const json=(data,status=200)=>new Response(JSON.stringify(data),{status,headers:{'Content-Type':'application/json; charset=utf-8','Cache-Control':'private, no-store','X-Content-Type-Options':'nosniff','Referrer-Policy':'same-origin'}});
 const stmt=(db,sql,...v)=>db.prepare(sql).bind(...v);
 const first=(db,sql,...v)=>stmt(db,sql,...v).first();
@@ -81,15 +82,16 @@ async function acceptEvent(db,u,e,now){
  return {id:e.id,applied:(await first(db,'SELECT applied FROM events WHERE user_id=? AND id=?',u.id,e.id)).applied===1};
 }
 async function activity(db,id,url,now){
- const since=url.searchParams.get('since')||monthsAgo(now),before=url.searchParams.get('before')||now;
- if(!Number.isFinite(Date.parse(since))||!Number.isFinite(Date.parse(before)))fail(400,'Invalid date filter.');
- const lower=new Date(Math.max(Date.parse(since),Date.parse(monthsAgo(now)))).toISOString(),upper=new Date(Date.parse(before)).toISOString();
+ const window=activityWindow(url,now),before=url.searchParams.get('before')||now;
+ if(!Number.isFinite(Date.parse(before)))fail(400,'Invalid date filter.');
+ const day=window.days.find(d=>d.date===window.selectedDay),lower=window.start,upper=new Date(Math.min(Date.parse(before),Date.parse(now))).toISOString();
+ const detailStart=day?.start||lower,detailEnd=day?.end||window.days.at(-1).end;
  const cursor=Number(url.searchParams.get('cursor')||Number.MAX_SAFE_INTEGER);
  if(!Number.isSafeInteger(cursor)||cursor<1)fail(400,'Invalid activity cursor.');
- const items=await rows(db,"SELECT rowid AS cursor,* FROM events WHERE user_id=? AND occurred_at>=? AND (occurred_at<? OR (occurred_at=? AND rowid<?)) AND kind!='active_interval' ORDER BY occurred_at DESC,rowid DESC LIMIT 101",id,lower,upper,upper,cursor);
- const intervals=await rows(db,'SELECT MAX(start_ms,?) start_ms,MIN(end_ms,?) end_ms FROM active_intervals WHERE user_id=? AND end_ms>=? AND start_ms<=?',Date.parse(lower),Date.parse(now),id,Date.parse(lower),Date.parse(now));
+ const items=await rows(db,"SELECT rowid AS cursor,* FROM events WHERE user_id=? AND occurred_at>=? AND occurred_at<? AND (occurred_at<? OR (occurred_at=? AND rowid<?)) AND kind!='active_interval' ORDER BY occurred_at DESC,rowid DESC LIMIT 101",id,detailStart,detailEnd,upper,upper,cursor);
  const totals=await first(db,"SELECT COALESCE(SUM(kind='exercise_started'),0) attempts,COALESCE(SUM(kind='clue_revealed'),0) clues FROM events WHERE user_id=? AND occurred_at>=? AND occurred_at<=?",id,lower,now);
- return {events:items.slice(0,100).map(e=>({...e,payload:JSON.parse(e.payload)})),more:items.length>100,activeSeconds:unionSeconds(intervals),...totals,sessions:await rows(db,'SELECT * FROM sessions WHERE user_id=? AND last_at>=? ORDER BY started_at DESC LIMIT 100',id,lower)};
+ const daily=await dailyActivity(db,id,window,now);
+ return {events:items.slice(0,100).map(e=>({...e,payload:JSON.parse(e.payload)})),more:items.length>100,activeSeconds:Math.round(daily.reduce((total,day)=>total+day.activeSeconds,0)),...totals,daily,timeZone:window.timeZone,range:{from:window.from,to:window.to},selectedDay:window.selectedDay,sessions:await rows(db,'SELECT * FROM sessions WHERE user_id=? AND last_at>=? ORDER BY started_at DESC LIMIT 100',id,lower)};
 }
 export async function retainSixMonths(db,now=new Date().toISOString()){
  const cutoff=monthsAgo(now);

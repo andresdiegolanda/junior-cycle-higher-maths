@@ -14,6 +14,20 @@ practice=load_practice()
 practice_order=json.loads((ROOT/'data/practice-order.json').read_text(encoding='utf-8'))
 assert set(practice)=={l['id'] for c in chapters for l in c['lessons']}, 'Practice must cover every lesson exactly'
 assert set(practice_order)<=set(practice), 'Unknown practice ordering key'
+# Every narration is derived here from the written content, so editing a
+# question, step or method in the data files never leaves stale speech behind.
+for c in chapters:
+    for l in c['lessons']:
+        for q in l['quiz']:
+            q['speechQuestion']=spoken(q['question']+' '+' '.join(f'Option {"ABCD"[i]}. {o}.' for i,o in enumerate(q['options'])))
+            q['speechHint']=spoken(q['hint']);q['speechExplanation']=spoken(q['explanation'])
+        for s in l['steps']:
+            s['say']=s['speech']=spoken(s['title']+'. '+s['text']+' '+s['math']+'. '+s['why'])
+    for q in c['challenges']:
+        q['speechQuestion']=spoken(q['question']);q['speechHints']=[spoken(h) for h in q['hints']]
+        for st in q['solution']:st['speech']=spoken(st['title']+'. '+st['math']+'. '+st['reason'])
+    for m in c['toolkit']['methods']:
+        m['speech']=spoken(m['title']+'. '+m['when']+' '+m['rule']+' '+' '.join(m['steps'])+' Example. '+m['example']+' Check. '+m['check']+' Watch out. '+m['trap'])
 for c in chapters:
     for l in c['lessons']:
         checks=[dict(q,id=f'{l["id"]}-q{i}',type='choice',difficulty=i+1,

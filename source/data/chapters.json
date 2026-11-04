@@ -11534,7 +11534,7 @@
       {
         "name": "Parallel cut in a triangle",
         "formula": "AD/AB = AE/AC = DE/BC when DE ∥ BC",
-        "note": "D lies on AB and E on AC."
+        "note": "D lies on AB and E on AC (Theorems 12 and 13). Theorem 11: three parallel lines cutting equal segments on one transversal cut equal segments on every transversal."
       },
       {
         "name": "Circle angles",
@@ -11580,7 +11580,7 @@
           "title": "Use a parallel cut through a triangle",
           "section": "16.2",
           "when": "D lies on AB, E on AC and DE is parallel to BC.",
-          "rule": "AD/AB=AE/AC=DE/BC (Theorem 13, similar triangles); also AD/DB=AE/EC (Theorem 12) when all denominators are non-zero.",
+          "rule": "AD/AB=AE/AC=DE/BC (Theorem 13, similar triangles); also AD/DB=AE/EC (Theorem 12) when all denominators are non-zero. Theorem 11: three parallel lines that cut equal segments on one transversal cut equal segments on every transversal.",
           "steps": [
             "Prove the small and whole triangles similar using parallel-line angles.",
             "Choose either small/whole or part/part consistently.",

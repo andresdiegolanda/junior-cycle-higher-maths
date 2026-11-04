@@ -11149,20 +11149,20 @@
           {
             "title": "Use the factor of two",
             "text": "If angle AOB is 120°, angle ACB is 60°. The angle at the centre is twice the angle at the circumference on that same arc.",
-            "why": "The centre/circumference theorem gives a 2:1 ratio.",
+            "why": "Theorem 19 gives the ratio 2:1 between the angle at the centre and the angle at the circumference.",
             "math": "120° = 2 × 60°",
             "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 400\" role=\"img\" aria-label=\"Check the arc or diameter before using a rule\"><rect id=\"rect-auto-1\" x=\"0\" y=\"0\" width=\"760\" height=\"400\" rx=\"18\" fill=\"#f8fbfc\" stroke=\"none\" stroke-width=\"2\" /><text id=\"diagram-title\" x=\"28\" y=\"38\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"24\" fill=\"#173349\" text-anchor=\"start\" font-weight=\"700\">Check the arc or diameter before using a rule</text><circle id=\"circle\" cx=\"250\" cy=\"220\" r=\"120\" fill=\"#fff\" stroke=\"#3175ba\" stroke-width=\"3\" /><line id=\"line-auto-1\" x1=\"146.07695154586736\" y1=\"280.0\" x2=\"250\" y2=\"220\" stroke=\"#087f75\" stroke-width=\"3\" /><line id=\"line-auto-2\" x1=\"353.92304845413264\" y1=\"280.00000000000006\" x2=\"250\" y2=\"220\" stroke=\"#087f75\" stroke-width=\"3\" /><line id=\"line-auto-3\" x1=\"146.07695154586736\" y1=\"280.0\" x2=\"250.0\" y2=\"100.0\" stroke=\"#7650a0\" stroke-width=\"3\" /><line id=\"line-auto-4\" x1=\"353.92304845413264\" y1=\"280.00000000000006\" x2=\"250.0\" y2=\"100.0\" stroke=\"#7650a0\" stroke-width=\"3\" /><text id=\"text-auto-1\" x=\"126.07695154586736\" y=\"300.0\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"23\" fill=\"#173349\" text-anchor=\"start\" font-weight=\"400\">A</text><text id=\"text-auto-2\" x=\"361.92304845413264\" y=\"300.00000000000006\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"23\" fill=\"#173349\" text-anchor=\"start\" font-weight=\"400\">B</text><text id=\"text-auto-3\" x=\"242.0\" y=\"86.0\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"23\" fill=\"#173349\" text-anchor=\"start\" font-weight=\"400\">C</text><text id=\"text-auto-4\" x=\"242\" y=\"210\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"23\" fill=\"#173349\" text-anchor=\"start\" font-weight=\"400\">O</text><text id=\"text-auto-5\" x=\"250\" y=\"265\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"25\" fill=\"#087f75\" text-anchor=\"middle\" font-weight=\"400\">120°</text><text id=\"text-auto-6\" x=\"250\" y=\"152\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"25\" fill=\"#7650a0\" text-anchor=\"middle\" font-weight=\"400\">60°</text><text id=\"text-auto-7\" x=\"535\" y=\"195\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"28\" fill=\"#173349\" text-anchor=\"middle\" font-weight=\"400\">Same arc AB</text><text id=\"text-auto-8\" x=\"535\" y=\"245\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"25\" fill=\"#087f75\" text-anchor=\"middle\" font-weight=\"400\">Centre = 2 × circumference</text></svg>"
           },
           {
             "title": "Recognise a semicircle",
-            "text": "If AB is a diameter, the central angle is 180°. The circumference angle standing on the diameter is 90°.",
+            "text": "If AB is a diameter, the central angle is 180°. The circumference angle standing on the diameter is 90° (Corollary 3). Conversely, if the angle standing on a chord is 90°, that chord must be a diameter (Corollary 4).",
             "why": "A diameter makes a central straight angle.",
             "math": "180°/2 = 90°",
             "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 400\" role=\"img\" aria-label=\"Check the arc or diameter before using a rule\"><rect id=\"rect-auto-1\" x=\"0\" y=\"0\" width=\"760\" height=\"400\" rx=\"18\" fill=\"#f8fbfc\" stroke=\"none\" stroke-width=\"2\" /><text id=\"diagram-title\" x=\"28\" y=\"38\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"24\" fill=\"#173349\" text-anchor=\"start\" font-weight=\"700\">Check the arc or diameter before using a rule</text><circle id=\"circle\" cx=\"250\" cy=\"220\" r=\"120\" fill=\"#fff\" stroke=\"#3175ba\" stroke-width=\"3\" /><polygon id=\"polygon-auto-1\" points=\"130,220 370,220 250,100\" fill=\"none\" stroke=\"#087f75\" stroke-width=\"3\" /><line id=\"line-auto-1\" x1=\"130\" y1=\"220\" x2=\"370\" y2=\"220\" stroke=\"#3175ba\" stroke-width=\"3\" /><polygon id=\"right\" points=\"237,113 250,126 263,113\" fill=\"none\" stroke=\"#b96a12\" stroke-width=\"2\" /><text id=\"text-auto-1\" x=\"250\" y=\"275\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"24\" fill=\"#3175ba\" text-anchor=\"middle\" font-weight=\"400\">Diameter AB</text><text id=\"text-auto-2\" x=\"535\" y=\"220\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"25\" fill=\"#087f75\" text-anchor=\"middle\" font-weight=\"400\">Angle ACB = 90°</text></svg>"
           },
           {
             "title": "Use cyclic opposite angles",
-            "text": "All four vertices of a cyclic quadrilateral lie on a circle. Opposite angles add to 180°; if one is 85°, its opposite is 95°.",
+            "text": "All four vertices of a cyclic quadrilateral lie on a circle. Opposite angles add to 180° (Corollary 5); if one is 85°, its opposite is 95°.",
             "why": "Opposite cyclic angles subtend arcs that sum to a full circle.",
             "math": "85° + 95° = 180°",
             "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 400\" role=\"img\" aria-label=\"Check the arc or diameter before using a rule\"><rect id=\"rect-auto-1\" x=\"0\" y=\"0\" width=\"760\" height=\"400\" rx=\"18\" fill=\"#f8fbfc\" stroke=\"none\" stroke-width=\"2\" /><text id=\"diagram-title\" x=\"28\" y=\"38\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"24\" fill=\"#173349\" text-anchor=\"start\" font-weight=\"700\">Check the arc or diameter before using a rule</text><circle id=\"circle\" cx=\"250\" cy=\"220\" r=\"120\" fill=\"#fff\" stroke=\"#3175ba\" stroke-width=\"3\" /><polygon id=\"polygon-auto-1\" points=\"146.07695154586736,280.0 353.92304845413264,280.00000000000006 291.04241719908026,107.236885505691 158.07466682572266,142.86548683761526\" fill=\"none\" stroke=\"#087f75\" stroke-width=\"3\" /><text id=\"text-auto-1\" x=\"171.07695154586736\" y=\"260.0\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"24\" fill=\"#087f75\" text-anchor=\"start\" font-weight=\"400\">85°</text><text id=\"text-auto-2\" x=\"266.04241719908026\" y=\"149.23688550569102\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"24\" fill=\"#7650a0\" text-anchor=\"start\" font-weight=\"400\">95°</text><text id=\"text-auto-3\" x=\"540\" y=\"220\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"25\" fill=\"#173349\" text-anchor=\"middle\" font-weight=\"400\">85° + 95° = 180°</text></svg>"
@@ -11544,7 +11544,7 @@
       {
         "name": "Semicircle and cyclic quadrilateral",
         "formula": "Angle in semicircle = 90°; opposite cyclic angles sum to 180°",
-        "note": "Corollaries 3 and 5: the vertices lie on the circle; the semicircle angle stands on a diameter."
+        "note": "Corollaries 3, 4 and 5: the vertices lie on the circle; the semicircle angle stands on a diameter, and a right angle on a chord means the chord is a diameter."
       },
       {
         "name": "Parallelogram",
@@ -11628,7 +11628,7 @@
           "title": "Choose the circle-angle fact with its conditions",
           "section": "16.3",
           "when": "Angles lie on a circle, perhaps with a diameter or cyclic quadrilateral.",
-          "rule": "Same arc: centre angle=2×circumference angle (Theorem 19). Same segment: circumference angles equal (Corollary 2). Diameter: circumference angle=90° (Corollary 3). Cyclic opposite angles sum to 180° (Corollary 5).",
+          "rule": "Same arc: centre angle=2×circumference angle (Theorem 19). Same segment: circumference angles equal (Corollary 2). Diameter: circumference angle=90° (Corollary 3), and a 90° angle on a chord means that chord is a diameter (Corollary 4). Cyclic opposite angles sum to 180° (Corollary 5).",
           "steps": [
             "Identify the shared endpoints and the arc that the angle subtends.",
             "Check that a stated diameter passes through the centre.",

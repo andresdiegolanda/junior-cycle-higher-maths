@@ -54,7 +54,13 @@ RATE_DENOMINATORS = {
 SINGULAR = {'metres': 'metre', 'hours': 'hour', 'minutes': 'minute', 'seconds': 'second', 'litres': 'litre',
             'kilometres': 'kilometre', 'centimetres': 'centimetre', 'millimetres': 'millimetre',
             'kilograms': 'kilogram', 'grams': 'gram', 'euros': 'euro', 'pounds': 'pound', 'dollars': 'dollar',
-            'millilitres': 'millilitre', 'days': 'day', 'weeks': 'week', 'months': 'month', 'years': 'year'}
+            'millilitres': 'millilitre', 'days': 'day', 'weeks': 'week', 'months': 'month', 'years': 'year',
+            'kilowatt hours': 'kilowatt hour'}
+for _length in ('metres', 'kilometres', 'centimetres', 'millimetres'):
+    for _power in ('square', 'cubic'):
+        SINGULAR[f'{_power} {_length}'] = f'{_power} {SINGULAR[_length]}'
+# Longest names first, so "1 square metres" is matched as one unit.
+_SINGULAR_PATTERN = '|'.join(sorted(map(re.escape, SINGULAR), key=len, reverse=True))
 SYMBOLS = [
     ('∖', ' set difference '), ('α', ' alpha '), ('β', ' beta '), ('γ', ' gamma '), ('φ', ' phi '),
     ('θ', ' theta '), ('π', ' pi '), ('△', ' triangle '), ('≅', ' is congruent to '), ('∼', ' is similar to '),
@@ -130,6 +136,10 @@ def _product(m):
 def spoken(t, *, clock_times=False):
     # An arrow between words is an implication; between quantities it is "gives".
     t = re.sub(r'\b([fgh])\s*:\s*x\s*→', r'\1: x maps to', t)
+    # A chain of two or more word arrows is a sequence of steps: Table → pairs → plot.
+    word_arrow = r'(?:(?<=[A-Za-z]{2})|(?<=\)))\s*→\s*(?=[A-Za-z]{2}|\()'
+    t = ''.join(re.sub(word_arrow, ', then ', part) if len(re.findall(word_arrow, part)) > 1 else part
+                for part in re.split(r'([.;])', t))
     t = re.sub(r'(?<=[A-Za-z]{2})\s*→\s*(?=[A-Za-z]{2})', ' so ', t)   # Parallel lines → equal angles
     # The author supplies context: 12:23 can be a clock time OR a valid ratio.
     # Protect times before the general colon-to-ratio conversion below.
@@ -146,7 +156,7 @@ def spoken(t, *, clock_times=False):
     t = re.sub(r'Δ(?=[A-Z]{3})', ' triangle ', t)
     t = re.sub(r'Δ(?=[a-z])', ' change in ', t).replace('Δ', ' delta ')
     t = re.sub(r'(?<![\w])\(([a-e])\)(?=\s)', r'Part \1.', t)  # (a) Expand … → Part a. Expand …
-    if re.search(r'[∩∪∖{}]|\\|\bsets?\b|complement|universal|Venn|elements?\b', t):
+    if re.search(r'[∩∪∖{}]|\\|\bsets?\b|\bcomplement\b|universal|Venn|elements?\b', t):
         t = re.sub(r'([A-Z])′', r'\1 complement', t)   # A′ in set work; P′ stays an image point in geometry
     t = re.sub(r'\b([fgh])\(([^()]+)\)', r'\1 of \2', t)
     t = re.sub(r'\b([PQ])\(([^()]+)\)', _named_call, t)
@@ -175,7 +185,8 @@ def spoken(t, *, clock_times=False):
     t = re.sub(r'\$\s*' + money, r'\1 dollars', t)
     t = t.replace('€x', 'x euros').replace('€', ' euros ')
     t = re.sub(r'\b(' + UNIT_WORDS + r')\s*/\s*(' + '|'.join(sorted(map(re.escape, RATE_DENOMINATORS), key=len, reverse=True)) + r')(?![\w²³/])', _rate, t)
-    t = re.sub(r'(?<![\d.])1 (' + '|'.join(SINGULAR) + r')\b', lambda m: '1 ' + SINGULAR[m.group(1)], t)
+    # 1 euro, per kilometre, to the nearest centimetre: a single unit is singular.
+    t = re.sub(r'((?<![\d.])1|\bper|\bnearest) (' + _SINGULAR_PATTERN + r')\b', lambda m: m.group(1) + ' ' + SINGULAR[m.group(2)], t)
     t = re.sub(r'ⁿ√', ' nth root of ', t)
     t = re.sub(f'([{SUPER}]+)⁄([{SUPER}]+)', _fraction_power, t)
     t = re.sub(f'[{SUPER}]+', _power, t)

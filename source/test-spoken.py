@@ -76,12 +76,18 @@ cases = {
     'C=3h+5 and T = 18 − 0.006h; (x,y)↦(2h−x,2k−y)': 'C equals 3 times h plus 5 and T equals 18 minus 0.006 times h; open bracket x,y close bracket maps to open bracket 2 times h minus x,2 times k minus y close bracket',
     'sin 30° = 6/h, so h = 12 cm; r = €12/h': 'sine 30 degrees equals 6 over h, so h equals 12 centimetres; r equals 12 euros per hour',
     '240 L at 12 L/min; 0.09π L/s; 16π cm³/min; 2L + 2W = 50': '240 litres at 12 litres per minute; 0.09 pi litres per second; 16 pi cubic centimetres per minute; 2 times L plus 2 times W equals 50',
-    '4x m², x² cm², 1 m³ = 10⁶ cm³, V = 160π cm³, (80 + 20π) m': '4 times x square metres, x squared square centimetres, 1 cubic metres equals 10 to the power 6 cubic centimetres, V equals 160 pi cubic centimetres, open bracket 80 plus 20 pi close bracket metres',
+    '4x m², x² cm², 1 m³ = 10⁶ cm³, V = 160π cm³, (80 + 20π) m': '4 times x square metres, x squared square centimetres, 1 cubic metre equals 10 to the power 6 cubic centimetres, V equals 160 pi cubic centimetres, open bracket 80 plus 20 pi close bracket metres',
     '2s² = 100 and 6r + 2s = 108 in 15 s': '2 times s squared equals 100 and 6 times r plus 2 times s equals 108 in 15 seconds',
     'Spending €6, €18 remains; €80, so €1 and $1.08': 'Spending 6 euros, 18 euros remains; 80 euros, so 1 euro and 1.08 dollars',
     'U \\ A = A′ and n(B′) = 2': 'U set difference A equals A complement and number of elements in B complement equals 2',
     'Reflect P(3,−2); the image is P′(3,2)': 'Reflect P 3 comma minus 2; the image is P prime 3 comma 2',
     'Parallel lines → equal corresponding angles; f: x → 2x; 3 → 7': 'Parallel lines so equal corresponding angles; f: x maps to 2 times x; 3 gives 7',
+    'Table → ordered pairs → plot': 'Table, then ordered pairs, then plot',
+    'Parallel lines → equal corresponding angles; 3 → 6': 'Parallel lines so equal corresponding angles; 3 gives 6',
+    '€2.50/km and €0.30 per kWh, to the nearest cm': '2.50 euros per kilometre and 0.30 euros per kilowatt hour, to the nearest centimetre',
+    'Rectangle P=2L+2W': 'Rectangle P equals 2 times L plus 2 times W',
+    'P′ and complementary angles': 'P prime and complementary angles',
+    'Recognise the 1:√3:2 or 1:1:√2 side ratio': 'Recognise the 1 to square root of 3 to 2 or 1 to 1 to square root of 2 side ratio',
 }
 failed = 0
 for source, expected in cases.items():
@@ -104,7 +110,6 @@ clock_cases = {
     '12:23': 'twelve twenty-three',
     'A 1:25,000 map at 09:00': 'A 1 to 25,000 map at zero nine hundred hours',
     'Ratio 2:3:4': 'Ratio 2 to 3 to 4',
-    'Recognise the 1:√3:2 or 1:1:√2 side ratio': 'Recognise the 1 to square root of 3 to 2 or 1 to 1 to square root of 2 side ratio',
     'Leaves 23:42 and arrives 01:17 next day.': 'Leaves twenty-three forty-two and arrives zero one seventeen next day.',
 }
 for source, expected in clock_cases.items():

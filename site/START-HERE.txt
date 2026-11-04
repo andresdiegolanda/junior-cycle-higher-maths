@@ -14,6 +14,9 @@ Local voices can work offline; online voices need an internet connection and may
 send the narration text to the voice provider. No microphone or account is needed.
 If speech is unavailable, use the written explanations and transcripts.
 
+Formulas: search by name or expression, such as quadratic or ax2+bx+c.
+Browse subjects for clearly typeset rules, symbol meanings, diagrams and worked
+examples. Each formula links to its Toolkit method. Close to return to your place.
 Glossary: searchable definitions, examples and diagrams.
 Search by term: matching chapters with direct lesson and toolkit links.
 Display: Classic, Warm paper, High contrast or Projector.

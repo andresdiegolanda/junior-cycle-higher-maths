@@ -15,6 +15,13 @@ The guide contains 158 lessons, 646 teaching steps, 948 graded topic exercises (
 challenges, 222 visual reference cards and a glossary of 140 terms. The printable
 PDF has 62 A3 landscape sheets across the 24 chapters, with extra room for dense cards.
 
+Open **Formulas** from any page for 64 essential formula cards. Search by name,
+subject or typed expression (for example `ax2+bx+c` or `(a+b)^2`). Each card explains
+when to use the rule, its symbols and conditions, and a worked example; many include
+a labelled diagram. Fractions and square roots are typeset with native MathML.
+Listen to a card or follow its link to the complete Toolkit method. Closing the
+library returns to the current lesson. Every chapter file includes the full library.
+
 Use a box's **Listen** button for its explanation, or **Play whole lesson** to
 follow the complete sequence. The current box is marked; diagrams advance after
 speech finishes. Pause retains your place. **Follow narration** controls scrolling.
@@ -79,6 +86,11 @@ Content lives in `source/data/chapters.json`, `source/data/visual-cards-*.json`,
 speech files live directly in `source/`. Every narration is derived from the written
 content at build time by `source/spoken.py`, so editing a question, step, method or
 glossary entry needs no separate speech text.
+
+Formula cards live in `source/formula_catalog.py`; their safe formula trees are
+rendered by `source/formula-view.js`. `source/formula-library.js` and `source/formulas.css`
+provide the searchable dialog. Run `node source/test-formulas.cjs` and
+`python source/test-formulas.py` after rebuilding when changing these cards.
 
 Use a space for hour units (`2 h`) and no space for algebraic products (`2h`).
 Clock-time content is marked by lesson, exercise or challenge ID in

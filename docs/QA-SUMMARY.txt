@@ -256,3 +256,34 @@ Step-level formula and method help — 4 November 2026
   diagram marks and distribution validation passed. Rebuilt 25 HTML pages,
   updated usage instructions and refreshed the complete distribution ZIP.
   Printable PDF content is unaffected by these interactive controls.
+
+Searchable formula library — 4 November 2026
+- Added a Formulas button on the full guide and every standalone chapter.
+  The 64 essential cards cover five subject groups, with uses, symbol meanings,
+  worked examples, conditions and direct links to the relevant Toolkit method.
+  This is a curated formula reference; the complete Toolkit retains 222 methods.
+- Search accepts names, aliases and typed expressions, including ax2+bx+c and
+  (a+b)^2. Positive and negative binomial identities remain distinct. Search
+  and subject filters combine; empty results offer reset and chapter search.
+- Native MathML displays stacked fractions and roots. Long formulas use short,
+  readable lines. Diagrams are labelled SVGs; coefficients use letters as well
+  as colour. Text, styles, scripts and diagrams stay embedded in all 25 files.
+- Formula speech reuses browser narration, with play, pause/continue and stop.
+  Scoped speech handling distinguishes set cardinality n(A), probability P(E),
+  frequency sums and algebraic products. No recordings or external libraries.
+- Browser verification covered all 64 cards at 390 px, with zero remaining
+  formula overflow after the long-rule corrections. Checked desktop, mobile,
+  all four themes, empty search, filters/reset, typed expressions, keyboard
+  Escape/focus return, mobile search/close controls and narration states.
+  Opening/closing preserves the chapter, lesson and practice mode. Cross-chapter
+  links from a standalone page opened and focused the exact Toolkit method.
+  Search-all-content carried the query into the chapter-search dialog.
+- Automated checks cover the 64 card renderings, safe text, mathematical tree
+  structure, search variants, chapter targets, identical embedded catalogues,
+  narration semantics and independent numeric spot checks. Existing practice,
+  step-help, search, speech, guided-reading, typography, diagram and distribution
+  checks passed. No browser console errors were observed.
+- Refreshed all HTML pages, START-HERE instructions and the complete guide ZIP.
+  The printable PDF is unchanged. Preview: formula-library-preview.jpg.
+  No physical touchscreen, screen-reader announcement or cross-device audible
+  voice-quality audit was performed. Native MathML needs a modern browser.

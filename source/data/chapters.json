@@ -12925,7 +12925,7 @@
             "options": [
               "Only a smooth filled region",
               "Separate plotted points",
-              "A pie chart",
+              "Points joined by a smooth curve",
               "A vertical line"
             ],
             "answer": 1,
@@ -17721,7 +17721,7 @@
               "Parallel to AB",
               "Perpendicular to AB",
               "Always equal to AB",
-              "A circle"
+              "Half the length of AB"
             ],
             "answer": 1,
             "hint": "Both P and Q lie on the perpendicular bisector.",
@@ -17849,11 +17849,11 @@
               "Parallel",
               "Perpendicular to each other",
               "Always the same line",
-              "Curves"
+              "Parallel only when the common line is horizontal"
             ],
             "answer": 0,
             "hint": "Both make the same right-angle direction.",
-            "explanation": "Distinct lines perpendicular to the same line in a plane are parallel."
+            "explanation": "Distinct lines perpendicular to the same line in a plane are parallel, whatever direction that common line has."
           },
           {
             "question": "What must be checked after constructing a parallel through P?",
@@ -18116,7 +18116,7 @@
             "options": [
               "The continuation away from A",
               "The ray BA pointing towards A",
-              "The page edge",
+              "A horizontal line through B",
               "The angle at A"
             ],
             "answer": 1,
@@ -18158,7 +18158,7 @@
             "title": "Join and check with Pythagoras",
             "text": "Join B to C. The remaining side is six centimetres, since ten squared minus eight squared is thirty-six. If an acute angle at B were given instead of the hypotenuse, draw the perpendicular at A as before, then a ray from B at that angle to AB; C is where the ray meets the perpendicular. If the given side is the hypotenuse BC, draw the ray from B first and drop the perpendicular from C onto it.",
             "why": "Pythagoras checks a construction whose defining data were RHS.",
-            "math": "AC = √(10² − 8²) = 6 cm; with ∠B given, C = ray from B ∩ perpendicular at A",
+            "math": "AC = √(10² − 8²) = 6 cm; or C = ray from B ∩ perpendicular",
             "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 400\" role=\"img\"><rect x=\"0\" y=\"0\" width=\"760\" height=\"400\" rx=\"0\" fill=\"#ffffff\" stroke=\"#ffffff\" stroke-width=\"2\"/><line id=\"base\" x1=\"180\" y1=\"300\" x2=\"500\" y2=\"300\" stroke=\"#173349\" stroke-width=\"3\"/><text x=\"340\" y=\"337\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"25\" fill=\"#173349\">AB = 8 cm</text><line id=\"perpendicular\" x1=\"180\" y1=\"300\" x2=\"180\" y2=\"35\" stroke=\"#3175ba\" stroke-width=\"3\"/><path id=\"right\" d=\"M 180 278 L 202 278 L 202 300\" fill=\"none\" stroke=\"#3175ba\" stroke-width=\"2\"/><path id=\"hyp-arc\" d=\"M 140.48238148033317 124.65154128436907 A 400 400 0 0 1 202.74206980904233 32.347757456456634\" fill=\"none\" stroke=\"#087f75\" stroke-width=\"2\"/><text x=\"480\" y=\"148\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"24\" fill=\"#087f75\">BC = 10 cm</text><circle id=\"c\" cx=\"180\" cy=\"60\" r=\"5\" fill=\"#087f75\" stroke=\"#087f75\" stroke-width=\"2\"/><line id=\"hypotenuse\" x1=\"500\" y1=\"300\" x2=\"180\" y2=\"60\" stroke=\"#7650a0\" stroke-width=\"3\"/><text x=\"154\" y=\"60\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"24\" fill=\"#7650a0\">C</text><text x=\"125\" y=\"185\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"23\" fill=\"#3175ba\">6 cm</text><text id=\"caption\" x=\"380\" y=\"383\" text-anchor=\"middle\" font-family=\"Segoe UI,Arial,sans-serif\" font-size=\"19\" fill=\"#8ca1af\">Leave construction arcs visible: they show how the result was obtained.</text></svg>"
           }
         ],

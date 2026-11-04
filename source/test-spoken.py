@@ -60,6 +60,28 @@ cases = {
     '2 h 35 min; 31/12 h': '2 hours 35 minutes; 31 over 12 hours',
     'Mixed ratio 12:23; 27:45=3:5.': 'Mixed ratio 12 to 23; 27 to 45 equals 3 to 5.',
     'On a 1:25,000 map': 'On a 1 to 25,000 map',
+    'Rate 5 L/min; speed 4 cm/s; flow 0.5 cm³/s': 'Rate 5 litres per minute; speed 4 centimetres per second; flow 0.5 cubic centimetres per second',
+    'A 150 L tank fills in 700 s': 'A 150 litres tank fills in 700 seconds',
+    'Area 1068 in²; mass 50 g at €2/kg; 18 kg/m²': 'Area 1068 square inches; mass 50 grams at 2 euros per kilogram; 18 kilograms per square metre',
+    'C = 3h + 6 for 3 h; 10°C': 'C equals 3 times h plus 6 for 3 hours; 10 degrees Celsius',
+    'Scale 1:25,000 and 27:45 = 3:5': 'Scale 1 to 25,000 and 27 to 45 equals 3 to 5',
+    '16^(1/2) = 4 and 2^(x+1)': '16 to the power open bracket 1 over 2 close bracket equals 4 and 2 to the power open bracket x plus 1 close bracket',
+    'n(A ∩ B) = 4, #(A ∪ B) = 9, #A = 4': 'number of elements in A intersection B equals 4, number of elements in A union B equals 9, number of elements in A equals 4',
+    'Tₙ₊₁ − Tₙ = d; rᵏ; AB ⟂ CD': 'T subscript n plus 1 minus T subscript n equals d; r to the power k; AB is perpendicular to CD',
+    'Adjacent = 15cos40°; 8tan35°; sinθ = O/h': 'Adjacent equals 15 cosine 40 degrees; 8 tan 35 degrees; sine theta equals O over h',
+    'Line AB; segment [AB]; [CD]; 1 ≤ |a| < 10': 'Line AB; segment A B; segment C D; 1 is less than or equal to the absolute value of a is less than 10',
+    'b² − 4ac and 18xy²': 'b squared minus 4 times ac and 18 times xy squared',
+    'The key 2 | 3 means 23; intervals [0,10), [10,20)': 'The key 2 bar 3 means 23; intervals from 0 up to 10, from 10 up to 20',
+    '1 m = 100 cm; 1 h = 60 min — always': '1 metre equals 100 centimetres; 1 hour equals 60 minutes, always',
+    'C=3h+5 and T = 18 − 0.006h; (x,y)↦(2h−x,2k−y)': 'C equals 3 times h plus 5 and T equals 18 minus 0.006 times h; open bracket x,y close bracket maps to open bracket 2 times h minus x,2 times k minus y close bracket',
+    'sin 30° = 6/h, so h = 12 cm; r = €12/h': 'sine 30 degrees equals 6 over h, so h equals 12 centimetres; r equals 12 euros per hour',
+    '240 L at 12 L/min; 0.09π L/s; 16π cm³/min; 2L + 2W = 50': '240 litres at 12 litres per minute; 0.09 pi litres per second; 16 pi cubic centimetres per minute; 2 times L plus 2 times W equals 50',
+    '4x m², x² cm², 1 m³ = 10⁶ cm³, V = 160π cm³, (80 + 20π) m': '4 times x square metres, x squared square centimetres, 1 cubic metres equals 10 to the power 6 cubic centimetres, V equals 160 pi cubic centimetres, open bracket 80 plus 20 pi close bracket metres',
+    '2s² = 100 and 6r + 2s = 108 in 15 s': '2 times s squared equals 100 and 6 times r plus 2 times s equals 108 in 15 seconds',
+    'Spending €6, €18 remains; €80, so €1 and $1.08': 'Spending 6 euros, 18 euros remains; 80 euros, so 1 euro and 1.08 dollars',
+    'U \\ A = A′ and n(B′) = 2': 'U set difference A equals A complement and number of elements in B complement equals 2',
+    'Reflect P(3,−2); the image is P′(3,2)': 'Reflect P 3 comma minus 2; the image is P prime 3 comma 2',
+    'Parallel lines → equal corresponding angles; f: x → 2x; 3 → 7': 'Parallel lines so equal corresponding angles; f: x maps to 2 times x; 3 gives 7',
 }
 failed = 0
 for source, expected in cases.items():
@@ -82,6 +104,7 @@ clock_cases = {
     '12:23': 'twelve twenty-three',
     'A 1:25,000 map at 09:00': 'A 1 to 25,000 map at zero nine hundred hours',
     'Ratio 2:3:4': 'Ratio 2 to 3 to 4',
+    'Leaves 23:42 and arrives 01:17 next day.': 'Leaves twenty-three forty-two and arrives zero one seventeen next day.',
 }
 for source, expected in clock_cases.items():
     actual = spoken(source, clock_times=True)

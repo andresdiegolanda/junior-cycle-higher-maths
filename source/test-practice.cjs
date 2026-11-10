@@ -19,7 +19,7 @@ c.reducedMotion=()=>true;
 c.boxAttributes=(key,text)=>'data-narration-box="'+c.E(key)+'" data-narration-text="'+c.E(text)+'"';
 c.boxStatus=()=>'';c.boxAudio=()=>'';c.bindBoxAudio=()=>{};
 c.DATA=JSON.parse(fs.readFileSync(__dirname+'/../site/index.html','utf8').match(/<script>const DATA=(.*?);<\/script>/s)[1]);
-vm.createContext(c);vm.runInContext(fs.readFileSync(__dirname+'/rule-help-view.js','utf8'),c);vm.runInContext(fs.readFileSync(__dirname+'/practice.js','utf8'),c);
+vm.createContext(c);vm.runInContext(fs.readFileSync(__dirname+'/rule-help-view.js','utf8'),c);vm.runInContext(fs.readFileSync(__dirname+'/learning-view.js','utf8'),c);vm.runInContext(fs.readFileSync(__dirname+'/practice.js','utf8'),c);
 // Render every content path; written results must stay hidden until requested.
 for(const chapter of chapters)for(const lesson of chapter.lessons){
  c.currentLesson=lesson;

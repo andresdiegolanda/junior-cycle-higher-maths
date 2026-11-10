@@ -1,0 +1,64 @@
+/* Reading width and hierarchy are part of the teaching, not optional decoration. */
+.concept-bridge,.concept-explorer{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:clamp(18px,2.5vw,30px);margin:20px 0 25px;min-width:0}
+.concept-bridge{border-left:5px solid var(--teal)}
+.concept-bridge h3{font-size:clamp(20px,2.1vw,27px);line-height:1.4;max-width:45ch;margin:0 0 16px}
+.concept-answer summary,.practice-plan summary{cursor:pointer;font-weight:700;color:var(--teal);padding:12px 0;min-height:44px}
+.concept-answer p,.practice-plan p{max-width:65ch;line-height:1.8;font-size:18px;margin:12px 0 8px}
+.concept-top{display:flex;gap:16px;align-items:start;justify-content:space-between}
+.concept-top h3{font-size:clamp(22px,2.4vw,30px);max-width:32ch;line-height:1.25}
+.concept-badge{font-size:12px;white-space:nowrap;padding:5px 10px;background:var(--soft);border-radius:20px;color:var(--teal)}
+.concept-prediction{border:0;border-bottom:1px solid var(--line);margin:4px 0 20px;padding:0 0 14px;min-width:0}
+.concept-prediction legend{font-size:18px;line-height:1.5;font-weight:600;margin-bottom:12px;max-width:60ch}
+.concept-prediction button{margin:0 8px 8px 0;text-align:left;min-height:44px}
+.concept-prediction button[aria-pressed=true]{border:2px solid var(--teal);background:var(--soft)}
+.concept-prediction p{font-size:14px;line-height:1.6;margin:7px 0 0;color:var(--muted)}
+.concept-controls{display:flex;gap:20px;align-items:center;flex-wrap:wrap;margin:10px 0 20px}
+.concept-controls label{display:block;flex:1;min-width:min(250px,100%);font-size:16px;font-weight:650}
+.concept-controls output{display:inline-block;float:right;font-variant-numeric:tabular-nums;color:var(--teal);margin-left:10px}
+.concept-controls input{display:block;width:100%;margin:14px 0 4px;accent-color:var(--teal);height:26px;cursor:pointer}
+.concept-controls select{display:block;width:100%;padding:10px;border:1px solid var(--line);border-radius:9px;background:var(--surface);color:var(--ink);margin-top:8px}
+#concept-model{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(230px,1fr);gap:22px;align-items:center}
+.concept-drawing{background:#fff;border:1px solid #d5e2e7;border-radius:13px;overflow:hidden;min-width:0}
+.concept-drawing svg{display:block;width:100%;height:auto;font-family:"Segoe UI",Arial,sans-serif}
+.concept-explanation{min-width:0}
+.concept-explanation p{font-size:18px;line-height:1.75;max-width:55ch;margin-bottom:0}
+.concept-explanation .readable-working{margin:12px 0 18px;background:var(--soft);border-radius:10px;padding:14px}
+.concept-explanation .working-line{font-size:21px}
+.concept-navigation{display:flex;gap:10px;align-items:center;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:18px;margin-top:20px}
+.concept-navigation button{min-height:44px}
+#concept-stage-count{font-size:14px;color:var(--muted);min-width:48px;text-align:center}
+.concept-explorer>.small-note{margin:17px 0 0;max-width:75ch;line-height:1.6}
+.chapter-experiment>summary{cursor:pointer;font-weight:700;padding:12px 0;color:var(--teal)}
+.practice-plan{margin:20px 0;border:1px solid var(--line);border-radius:12px;padding:0 18px;background:var(--surface)}
+.practice-plan section{padding:8px 0 14px}
+.plan-reason{padding-left:14px;border-left:3px solid var(--teal)}
+.readable-working{display:grid;gap:14px;max-width:100%;min-width:0;margin:14px 0 20px}
+.working-line{font-family:"Cambria Math",Cambria,"Segoe UI",serif;font-size:clamp(21px,2.05vw,27px);font-weight:500;line-height:1.8;white-space:pre-wrap;overflow-wrap:anywhere;max-width:62ch;letter-spacing:.015em}
+.working-line+.working-line{padding-top:12px;border-top:1px dashed var(--line)}
+.working-reason{max-width:65ch;font-size:17px;line-height:1.75;margin:18px 0}
+.working-reason b{display:block;margin-bottom:6px;color:var(--teal);font-size:14px}
+.practice-solution>li .audio-box{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--teal);padding:clamp(18px,2.4vw,30px);border-radius:0 14px 14px 0}
+.practice-solution{gap:22px}
+.practice-solution .box-heading strong{font-size:16px;color:var(--teal)}
+.practice-solution .step-rule-button{margin-top:6px;font-size:14px}
+.practice-hints p,.challenge-hints p{font-size:18px;line-height:1.8;max-width:65ch}
+.question-box .quiz-question{font-size:clamp(21px,2vw,26px);line-height:1.65;max-width:65ch;margin:0 0 13px}
+.feedback p,.solution-step p,.step-card .explain p,.why p{max-width:65ch;line-height:1.8}
+.feedback p{font-size:19px}
+.step-card .explain p{font-size:18px;margin:0 0 14px}
+.step-card .explain p:last-child,.why p:last-child{margin-bottom:0}
+.why p{font-size:16px}
+.solution-step .solution-math{background:var(--soft);border:1px solid var(--line);border-radius:10px;padding:14px 18px;margin:12px 0 18px;min-width:0}
+.solution-step p{font-size:18px}
+.written-question-box .challenge-question{line-height:1.85;max-width:70ch}
+html[data-theme=contrast] :is(.concept-bridge,.concept-explorer,.practice-plan,.practice-solution>li .audio-box){background:#000;border-color:#fff}
+html[data-theme=contrast] :is(.concept-answer summary,.practice-plan summary,.concept-badge,.concept-controls output,.working-reason b,.practice-solution .box-heading strong){color:#ffeb3b}
+html[data-theme=contrast] .concept-explanation .readable-working,html[data-theme=contrast] .solution-math{background:#121212;color:#fff}
+html[data-theme=contrast] .concept-drawing{border:3px solid #fff;background:#fff}
+html[data-theme=contrast] .concept-drawing svg{filter:none}
+html[data-theme=projector] :is(.concept-answer p,.concept-explanation p,.practice-plan p,.practice-hints p,.solution-step p,.step-card .explain p){font-size:24px}
+html[data-theme=projector] .working-line{font-size:30px}
+@media(max-width:1000px){#concept-model{grid-template-columns:1fr}.concept-drawing{max-width:700px;width:100%;margin:auto}.concept-explanation .readable-working{margin-bottom:12px}.concept-top{flex-wrap:wrap}.concept-badge{display:none}}
+@media(max-width:550px){.concept-bridge,.concept-explorer{padding:16px}.concept-prediction button{width:100%;margin-right:0}.concept-navigation{gap:7px}.concept-navigation button{padding:9px 11px;font-size:14px}.concept-explanation p,.concept-answer p,.practice-plan p{font-size:17px}.working-line{font-size:21px}.concept-explanation .working-line{font-size:20px}.practice-solution>li .audio-box{padding:16px}.practice-plan{padding:0 13px}.box-heading{flex-wrap:wrap}.step-card .explain p{font-size:18px}}
+@media(prefers-reduced-motion:reduce){.concept-explorer *{animation:none!important;transition:none!important}}
+@media print{.concept-explorer,.concept-bridge,.practice-plan{display:none}}

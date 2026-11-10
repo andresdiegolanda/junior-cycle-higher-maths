@@ -4,6 +4,13 @@ Open index.html for all 24 chapters, or open an individual chapter page.
 Each HTML page contains its own styles, diagrams, scripts and glossary.
 Keep the toolkits folder beside the HTML pages for the A3 printable cards.
 
+Each topic opens with a question to think about and a short explanation of the idea.
+The first lesson in every chapter has a three-stage interactive model. Predict,
+change a value and explain what stays the same. Use Next for one move at a time,
+Watch the change for playback, or Enlarge this model for a closer look. Controls
+work with the keyboard. Reduced-motion preferences are respected. Starting audio
+or leaving the lesson stops model playback.
+
 Use Next step to reveal a method. Each teaching box has its own Listen button.
 Play whole lesson reads the boxes in order and advances the diagrams when each
 part ends. The current box has a reading marker. Pause keeps your place;

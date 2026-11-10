@@ -9,6 +9,7 @@ from diagram_marks import prepare_grid, prepare_marks
 from practice_bank import load_practice
 from rule_help import attach_rule_help
 from formula_catalog import load_formula_library
+from learning_design import add_learning_design
 ROOT=Path(__file__).resolve().parent
 OUT=ROOT.parent/'site'
 OUT.mkdir(parents=True,exist_ok=True)
@@ -95,6 +96,7 @@ glossary=json.loads((ROOT/'data/glossary.json').read_text(encoding='utf-8')) if 
 for g in glossary:g['speech']=spoken(g['term']+'. '+g['definition']+' Example. '+g['example']+' Watch for. '+g['watch'])
 labs=json.loads((ROOT/'data/lab-narration.json').read_text(encoding='utf-8'))
 rule_library,rule_help_count=attach_rule_help(chapters)
+add_learning_design(chapters,narrator,rule_library)
 formulas=load_formula_library(chapters)
 catalog={'lessons':{},'exercises':{}}
 for c in chapters:
@@ -126,8 +128,10 @@ stats['lessonExercises']=sum(len(l['exercises']) for c in chapters for l in c['l
 stats['writtenLessonExercises']=sum(len(practice[l['id']]) for c in chapters for l in c['lessons'])
 stats['stepRuleHelpers']=rule_help_count
 stats['formulaCards']=len(formulas)
-css='\n'.join((ROOT/f).read_text(encoding='utf-8') for f in ['guide.css','enhancements.css','display.css','visual-learning.css','practice.css','rule-help.css','formulas.css','accounts.css'])
-js='\n'.join((ROOT/f).read_text(encoding='utf-8') for f in ['speech.js','accounts.js','guide.js','reading.js','rule-help-view.js','rule-help.js','lesson-view.js','practice.js','enhancements.js','toolkit-view.js','discovery.js','diagram-marks.js','formula-view.js','formula-library.js','activity-view.js','account-view.js'])
+stats['conceptModels']=len(chapters)
+stats['conceptualBridges']=sum(len(c['lessons']) for c in chapters)
+css='\n'.join((ROOT/f).read_text(encoding='utf-8') for f in ['guide.css','enhancements.css','display.css','visual-learning.css','practice.css','rule-help.css','formulas.css','accounts.css','learning.css'])
+js='\n'.join((ROOT/f).read_text(encoding='utf-8') for f in ['speech.js','accounts.js','guide.js','reading.js','rule-help-view.js','rule-help.js','learning-view.js','concept-explorers.js','lesson-view.js','practice.js','enhancements.js','toolkit-view.js','discovery.js','diagram-marks.js','formula-view.js','formula-library.js','activity-view.js','account-view.js'])
 favicon='data:image/svg+xml,'+quote('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="#173349"/><rect x="2" y="2" width="60" height="60" rx="14" fill="none" stroke="#6bb5ab" stroke-width="2"/><text x="32" y="45" text-anchor="middle" font-family="Georgia,serif" font-size="52" font-weight="700" fill="#85dfcc">x</text></svg>',safe='')
 def page(items,initial=0,standalone=False):
     data={'chapters':items,'initialChapter':initial,'standalone':standalone,'stats':stats,'glossary':glossary,'searchIndex':search,'labNarration':labs,'ruleLibrary':rule_library,'formulas':formulas,'contentVersion':content_version}
@@ -145,6 +149,13 @@ for c in chapters:
 Open index.html for all 24 chapters, or open an individual chapter page.
 Each HTML page contains its own styles, diagrams, scripts and glossary.
 Keep the toolkits folder beside the HTML pages for the A3 printable cards.
+
+Each topic opens with a question to think about and a short explanation of the idea.
+The first lesson in every chapter has a three-stage interactive model. Predict,
+change a value and explain what stays the same. Use Next for one move at a time,
+Watch the change for playback, or Enlarge this model for a closer look. Controls
+work with the keyboard. Reduced-motion preferences are respected. Starting audio
+or leaving the lesson stops model playback.
 
 Use Next step to reveal a method. Each teaching box has its own Listen button.
 Play whole lesson reads the boxes in order and advances the diagrams when each

@@ -27,3 +27,10 @@ for(let i=0;i<9;i++)engine.finish();assert.equal(read('autoLesson'),false);asser
 run('playLesson();setStep(1)');assert.equal(read('autoLesson'),false);assert.equal(read('clipContext'),null);assert.equal(read('player.ended'),true,'Manual navigation stops narration');
 run('playLesson()');engine.current.onerror({error:'synthesis-failed'});assert.equal(read('autoLesson'),false);assert.equal(read('lessonQueue.length'),0);assert.ok(read('player.error'));
 console.log('Guided-reading checks passed: box order, end-driven step changes, pause/resume, stale completions, follow toggle, manual selection, completion, restart and failure.');
+// An authored introduction is read first and its answer is opened, while a
+// lesson without the new content retains the old queue contract.
+run(`stopAudio();currentLesson.coach={};let conceptOpen=false;
+nodes['[data-narration-box="lesson-concept"]']={...createNode('lesson-concept','Imagine eight boxes.'),querySelector(){return {set open(v){conceptOpen=v}}}};
+playLesson();`);
+assert.equal(read('lessonQueue.length'),10);assert.equal(engine.current.text,'Imagine eight boxes.');assert.equal(read('conceptOpen'),true);
+console.log('Concept introduction opens before narration and is included in whole-lesson playback.');

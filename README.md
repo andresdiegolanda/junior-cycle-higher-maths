@@ -3,6 +3,17 @@
 A visual preparation guide with step-by-step explanations, browser narration,
 interactive diagrams, practice questions and printable Chapter Toolkits.
 
+Every topic starts with a question to think about and a plain-language explanation.
+The first lesson in each of the 24 chapters includes an interactive model: make a
+prediction, change a value, and reveal why the rule works. Models have three stages,
+manual controls, optional playback, narration and an enlarged view. They respect
+reduced-motion settings and stop when the student changes lessons or starts audio.
+
+Worked solutions separate the calculation from its explanation, with shorter lines
+and more space. Ratio and proportion practice explicitly explains equal parts,
+unit values, fixed quantities and what the question asks for. A lesson-wide reminder
+is kept separate from a question-specific clue so the guidance fits the problem.
+
 Contact: [andresdiegolanda@gmail.com](mailto:andresdiegolanda@gmail.com)
 
 ## Use the guide
@@ -137,6 +148,14 @@ Content lives in `source/data/chapters.json`, `source/data/visual-cards-*.json`,
 speech files live directly in `source/`. Every narration is derived from the written
 content at build time by `source/spoken.py`, so editing a question, step, method or
 glossary entry needs no separate speech text.
+
+Conceptual bridges and starting strategies live in `source/data/learning-coaches.txt`
+(one authored entry for each of the 158 topics). Tailored worked-step explanations
+live in `source/data/worked-coaching.json`; entries must match the exact number of
+solution steps. The interactive chapter models are in `source/concept-explorers.js`.
+`source/learning_design.py` adds reading structure without changing the mathematical
+strings. After rebuilding, run `node source/test-learning.cjs`,
+`node source/test-practice.cjs` and `node source/test-guided-reading.cjs`.
 
 Formula cards live in `source/formula_catalog.py`; their safe formula trees are
 rendered by `source/formula-view.js`. `source/formula-library.js` and `source/formulas.css`

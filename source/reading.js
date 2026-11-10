@@ -8,7 +8,7 @@ function boxAttributes(key,text,label){return `data-narration-box="${E(key)}" da
 function boxAudio(key,label){return `<button class="box-audio" data-read-box="${E(key)}" aria-label="Listen: ${E(label)}" title="Listen to this box">${speakerIcon}<span>Listen</span></button>`}
 function boxStatus(){return '<span class="box-reading-status"><i aria-hidden="true"></i><span></span></span>'}
 function activeBox(){return clipContext?.box?document.querySelector(`[data-narration-box="${clipContext.box}"]`):null}
-function stopAudio(){player.error='';autoLesson=false;lessonFinished=false;lessonQueue=[];lessonCursor=-1;clearTimeout(autoTimer);clipContext=null;player.cancel();updateAudio()}
+function stopAudio(){if(typeof stopConceptAnimation==='function')stopConceptAnimation();player.error='';autoLesson=false;lessonFinished=false;lessonQueue=[];lessonCursor=-1;clearTimeout(autoTimer);clipContext=null;player.cancel();updateAudio()}
 function playNarration(text,context){
  clearTimeout(autoTimer);
  if(!context.whole){autoLesson=false;lessonQueue=[];lessonCursor=-1;lessonFinished=false}
@@ -16,6 +16,8 @@ function playNarration(text,context){
 }
 function readBox(key,whole=false){
  const el=document.querySelector(`[data-narration-box="${key}"]`);if(!el)return false;
+ if(typeof stopConceptAnimation==='function')stopConceptAnimation();
+ if(key==='lesson-concept')el.querySelector('details').open=true;
  if(!whole&&clipContext?.box===key&&!player.ended){if(player.paused)player.play();else player.pause();updateAudio();return true}
  playNarration(el.dataset.narrationText,{kind:'box',box:key,label:el.dataset.narrationLabel,lesson:currentLesson?.id,step:currentStep,whole});return true;
 }
@@ -28,7 +30,7 @@ function followCurrentBox(){
 }
 function setFollowNarration(value){followNarration=!!value;try{localStorage.setItem('jc-maths-follow',String(followNarration))}catch(e){}if(followNarration&&clipContext)followCurrentBox()}
 function buildLessonQueue(lesson){
- return [{step:0,box:'lesson-goal'},...lesson.steps.flatMap((s,i)=>[{step:i,box:'step-diagram'},{step:i,box:'step-explanation'},{step:i,box:'step-why'}]),{step:lesson.steps.length-1,box:'lesson-takeaway'},{step:lesson.steps.length-1,box:'lesson-mistake'}];
+ return [...(lesson.coach?[{step:0,box:'lesson-concept'}]:[]),{step:0,box:'lesson-goal'},...lesson.steps.flatMap((s,i)=>[{step:i,box:'step-diagram'},{step:i,box:'step-explanation'},{step:i,box:'step-why'}]),{step:lesson.steps.length-1,box:'lesson-takeaway'},{step:lesson.steps.length-1,box:'lesson-mistake'}];
 }
 function playQueuedPart(){
  const part=lessonQueue[lessonCursor];if(!part)return;

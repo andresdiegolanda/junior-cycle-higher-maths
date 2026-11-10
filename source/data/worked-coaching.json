@@ -1,0 +1,55 @@
+{
+  "12-01-w1": [
+    "The whole amount fills all eight boxes. That is why we divide by 3 + 5, not by 3 or 5 alone.",
+    "The first person gets three identical €10 boxes. Keep the full calculation visible so you can see where the €10 came from.",
+    "The other person gets five of the same boxes. The two shares use all eight boxes without changing their size."
+  ],
+  "12-01-w2": [
+    "Here the amount given belongs to one group, not the whole. Seven blue parts contain 28 counters, so each part contains four.",
+    "The ratio gives four red parts. Each has the same size as a blue part.",
+    "The question also asks for the whole collection. Add both colours, not the two ratio numbers."
+  ],
+  "12-01-w3": [
+    "Two parts contain 1.4 litres of concentrate. Divide by two to find 0.7 litres per part, then use five parts for water. Add the two liquids for the original drink.",
+    "The concentrate stays at 1.4 litres. In the new 1:4 ratio, the water must be four times that amount.",
+    "The question asks what to ADD, not the final amount of water. Remove the 3.5 litres already present from the 5.6 litres needed."
+  ],
+  "12-01-w4": [
+    "The numerator counts unfinished work: all worker-days minus those already completed. The denominator counts the four workers left to do it.",
+    "There are 60 daily worker-shifts left. Four workers complete four shifts each day, so they need 15 more days.",
+    "These 15 days start after the first five. Add them only when finding the total duration."
+  ],
+  "12-03-w1": [
+    "Average speed asks how far you travel per hour. Share the total distance equally across the three hours."
+  ],
+  "12-03-w2": [
+    "The speed is per HOUR, so express the time in hours too. Twenty-five minutes is 25/60 of an hour; travel that fraction of 72 kilometres."
+  ],
+  "12-03-w3": [
+    "Find time from distance ÷ speed for each section. The two times belong to the same journey, so add them.",
+    "Now use the whole trip: all five kilometres divided by the whole half-hour. Do not average the speeds unless the times are equal."
+  ],
+  "12-03-w4": [
+    "Moving time counts only the outward and return journeys. Each time is its distance divided by its speed.",
+    "Overall time includes the half-hour rest. The distance stays 120 km, but the larger time makes the overall average speed smaller."
+  ],
+  "20-02-w1": [
+    "Every notebook adds the same €3. With no starting charge, multiply the number of notebooks by three.",
+    "Put seven into the quantity slot. The rule stays the same; only the input changes."
+  ],
+  "20-02-w2": [
+    "Divide each output by its matching input. The same result each time means one input unit is always worth 3.5 output units.",
+    "Use that same value per unit for ten units. This uses the directly proportional model described by the table."
+  ],
+  "20-02-w3": [
+    "Split the bill into a fixed €5 and a distance part. Only the distance part grows when you travel farther.",
+    "Compare a journey with double the distance. Keep the fixed fee once in each bill.",
+    "Twice €11 would be €22, but the second bill is €17. A straight line with a starting fee is not direct proportion."
+  ],
+  "20-02-w4": [
+    "At the meeting point both rules give the same cost, so set them equal using the same input n.",
+    "Subtract 2.5n from both sides, then divide by 1.5. Substitute the meeting input into either cost rule.",
+    "To find when B wins, make its full cost less than A’s. Keep both sides of the inequality as you rearrange.",
+    "The question needs whole numbers, so start at the next integer above eight. Only A has no starting fee."
+  ]
+}

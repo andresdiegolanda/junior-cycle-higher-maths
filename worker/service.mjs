@@ -88,10 +88,10 @@ async function activity(db,id,url,now){
  const detailStart=day?.start||lower,detailEnd=day?.end||window.days.at(-1).end;
  const cursor=Number(url.searchParams.get('cursor')||Number.MAX_SAFE_INTEGER);
  if(!Number.isSafeInteger(cursor)||cursor<1)fail(400,'Invalid activity cursor.');
- const items=await rows(db,"SELECT rowid AS cursor,* FROM events WHERE user_id=? AND occurred_at>=? AND occurred_at<? AND (occurred_at<? OR (occurred_at=? AND rowid<?)) AND kind!='active_interval' ORDER BY occurred_at DESC,rowid DESC LIMIT 101",id,detailStart,detailEnd,upper,upper,cursor);
+ const items=await rows(db,"SELECT rowid AS cursor,* FROM events WHERE user_id=? AND occurred_at>=? AND occurred_at<? AND (occurred_at<? OR (occurred_at=? AND rowid<?)) AND kind NOT IN ('active_interval','drill_day_logged') ORDER BY occurred_at DESC,rowid DESC LIMIT 101",id,detailStart,detailEnd,upper,upper,cursor);
  const totals=await first(db,"SELECT COALESCE(SUM(kind='exercise_started'),0) attempts,COALESCE(SUM(kind='clue_revealed'),0) clues FROM events WHERE user_id=? AND occurred_at>=? AND occurred_at<=?",id,lower,now);
  const daily=await dailyActivity(db,id,window,now);
- return {events:items.slice(0,100).map(e=>({...e,payload:JSON.parse(e.payload)})),more:items.length>100,activeSeconds:Math.round(daily.reduce((total,day)=>total+day.activeSeconds,0)),...totals,daily,timeZone:window.timeZone,range:{from:window.from,to:window.to},selectedDay:window.selectedDay,sessions:await rows(db,'SELECT * FROM sessions WHERE user_id=? AND last_at>=? ORDER BY started_at DESC LIMIT 100',id,lower)};
+ return {events:items.slice(0,100).map(e=>({...e,payload:JSON.parse(e.payload)})),more:items.length>100,activeSeconds:Math.round(daily.reduce((total,day)=>total+day.activeSeconds,0)),...totals,daily,timeZone:window.timeZone,range:{from:window.from,to:window.to},selectedDay:window.selectedDay,skills:(await rows(db,"SELECT item_id,state,updated_at FROM progress WHERE user_id=? AND scope='skill' ORDER BY item_id",id)).map(r=>({skill:r.item_id,updatedAt:r.updated_at,...JSON.parse(r.state)})),sessions:await rows(db,'SELECT * FROM sessions WHERE user_id=? AND last_at>=? ORDER BY started_at DESC LIMIT 100',id,lower)};
 }
 export async function retainSixMonths(db,now=new Date().toISOString()){
  const cutoff=monthsAgo(now);

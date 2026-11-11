@@ -9,6 +9,13 @@ prediction, change a value, and reveal why the rule works. Models have three sta
 manual controls, optional playback, narration and an enlarged view. They respect
 reduced-motion settings and stop when the student changes lessons or starts audio.
 
+**Skill drills** give unlimited practice on 40 core skills in algebra, number,
+ratio and proportion, and statistics. Each skill has three levels. Questions are
+generated with new numbers every time, typed answers are marked at once, and a wrong
+answer gets a reason for the likely slip, a hint and, after a second try, the full
+working. Rounds have five questions and earn up to three stars; a test warm-up mixes
+ten questions from the topics chosen for a class test, weakest skills first.
+
 Worked solutions separate the calculation from its explanation, with shorter lines
 and more space. Ratio and proportion practice explicitly explains equal parts,
 unit values, fixed quantities and what the question asks for. A lesson-wide reminder
@@ -23,7 +30,9 @@ then open `Junior-Cycle-Higher-Maths/index.html` in a browser. The 24 chapter
 HTML files can also be opened individually. Keep the `toolkits` folder beside them.
 
 The guide contains 158 lessons, 646 teaching steps, 948 graded topic exercises (six per lesson), 96 chapter
-challenges, 222 visual reference cards and a glossary of 140 terms. The printable
+challenges, 222 visual reference cards, a glossary of 140 terms and 40 skill drills
+with three levels each. Every written exercise has a note beside each worked step
+that says why the move works. The printable
 PDF has 60 A3 landscape sheets across the 24 chapters, with extra room for dense cards.
 
 Open **Formulas** from any page for 64 essential formula cards. Search by name,
@@ -32,6 +41,19 @@ when to use the rule, its symbols and conditions, and a worked example; many inc
 a labelled diagram. Fractions and square roots are typeset with native MathML.
 Listen to a card or follow its link to the complete Toolkit method. Closing the
 library returns to the current lesson. Every chapter file includes the full library.
+
+Open **Skill drills** from the top bar, from the home page or from the link under a
+lesson. Type an expression with the letter and symbol keys under the answer box:
+`x2` or `x^2` for a square, `(2x + 5)/6` for a fraction, factors side by side. The
+box shows how the answer is read before it is checked. An answer with the right
+value in the wrong form (not simplified, not fully factorised, not in lowest terms)
+gets a nudge and does not use up a try. Stars, the daily count and the streak are
+saved with the rest of the progress.
+
+**Comfortable reading**, in the display settings, gives larger text, more line
+spacing and shorter lines. The top bar is compact on a phone, every control is at
+least 44 px high, and right and wrong answers are marked with a symbol as well as
+a colour.
 
 Use a box's **Listen** button for its explanation, or **Play whole lesson** to
 follow the complete sequence. The current box is marked; diagrams advance after
@@ -61,12 +83,12 @@ keep progress locally and cannot provide authenticated activity tracking.
 
 ## Repository layout
 
-- `site/` — complete prebuilt website, including the printable PDF.
-- `source/` — editable content, diagrams, interface, build scripts and checks.
-- `downloads/` — the complete ready-to-use guide ZIP.
-- `docs/` — implementation instructions, verification notes and a preview.
-- `worker/`, `migrations/` — authenticated API and Cloudflare D1 schema.
-- `dev/`, `tests/` — local-only account harness and automated account tests.
+- `site/`: complete prebuilt website, including the printable PDF.
+- `source/`: editable content, diagrams, interface, build scripts and checks.
+- `downloads/`: the complete ready-to-use guide ZIP.
+- `docs/`: implementation instructions, verification notes and a preview.
+- `worker/`, `migrations/`: authenticated API and Cloudflare D1 schema.
+- `dev/`, `tests/`: local-only account harness and automated account tests.
 
 Every distributed HTML file embeds its CSS, JavaScript, content and diagrams.
 Browser code has no external script dependencies. The hosted account version uses a
@@ -157,6 +179,18 @@ solution steps. The interactive chapter models are in `source/concept-explorers.
 strings. After rebuilding, run `node source/test-learning.cjs`,
 `node source/test-practice.cjs` and `node source/test-guided-reading.cjs`.
 
+Skill drills live in `source/skills-*.js`. `source/skills-core.js` holds the question
+kit: seeded random numbers, exact fractions, the reader for typed expressions and the
+answer checks. Each other file registers skills with `K.define({id, title, strand,
+lesson, blurb, levels})`; a level's `make(rng)` returns one question with its prompt,
+answer, hint, worked steps, the wrong answers it can explain and a `verify` claim.
+`source/trainer.js` and `source/trainer.css` are the screens. `node source/test-skills.cjs`
+builds 150 questions for every level and checks structure, notation, variety and that
+each answer passes its own check while each listed slip does not. `python
+source/test-skills.py` recomputes the answers with `sympy` from the `verify` claims.
+The build copies the skill ids into `worker/catalog.json`, which the account service
+uses to validate drill results.
+
 Formula cards live in `source/formula_catalog.py`; their safe formula trees are
 rendered by `source/formula-view.js`. `source/formula-library.js` and `source/formulas.css`
 provide the searchable dialog. Run `node source/test-formulas.cjs` and
@@ -211,6 +245,12 @@ node source/test-practice.cjs
 node source/test-rule-help.cjs
 python source/test-rule-help.py
 node source/test-progress.cjs
+node source/test-formulas.cjs
+node source/test-learning.cjs
+node source/test-skills.cjs
+python source/test-skills.py
+python source/test-formulas.py
+python source/test-working-lines.py
 python source/test-spoken.py
 python source/test-narration-content.py
 python source/test-practice.py

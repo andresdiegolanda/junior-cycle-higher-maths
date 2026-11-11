@@ -1,4 +1,4 @@
-JUNIOR CYCLE HIGHER MATHS — VISUAL LEARNING, READABILITY AND DIAGRAM MARKS
+JUNIOR CYCLE HIGHER MATHS: VISUAL LEARNING, READABILITY AND DIAGRAM MARKS
 21 October 2026
 
 Scope
@@ -64,7 +64,7 @@ and speech events were checked; this is not an auditory pronunciation audit.
 No iOS or Android hardware was tested. Responsive checks used desktop viewport
 sizes. No public deployment or cross-browser certification is included.
 
-Diagram-mark review — 21 October 2026
+Diagram-mark review, 21 October 2026
 - Scanned all 971 SVG diagrams. Reviewed a browser gallery of 332 distinct
   coloured diagrams plus the homepage. Checked 203 brown line/path elements
   against rendered label bounds, excluding intentional cancellation strokes.
@@ -91,7 +91,7 @@ Diagram-mark review — 21 October 2026
 - Structural checks, typography preservation, speech, guided reading, search
   and complete distribution validation passed after the changes.
 
-Topic-practice expansion — 4 November 2026
+Topic-practice expansion, 4 November 2026
 - Every one of the 158 topics now has six exercises, ordered from easier to
   harder: 948 in total. The 316 existing checks retain their original questions,
   options, answers and stable storage keys. Added 632 original written problems.
@@ -132,7 +132,7 @@ Topic-practice expansion — 4 November 2026
   change. The preview is docs/topic-practice-preview.jpg.
 
 
-Content review and Irish-convention pass — 4 November 2026
+Content review and Irish-convention pass, 4 November 2026
 Scope
 Every chapter was read in full and checked item by item: 646 teaching steps
 with their diagram labels, 316 quick checks, 632 written exercises, 96 chapter
@@ -205,7 +205,7 @@ functions, the discriminant and some algebraic-fraction work exceed the Junior
 Cycle course and are best presented as extension material.
 
 
-Exam guidance and narration corrections — 4 November 2026
+Exam guidance and narration corrections, 4 November 2026
 - Corrected the chapter 8 introduction: students need to understand proofs and
   geometric reasoning, but full formal proofs are not examinable at Junior
   Cycle. Chapter 16 remains a reference for step-by-step proof explanations.
@@ -226,7 +226,7 @@ Exam guidance and narration corrections — 4 November 2026
   and layout were unaffected. This was a targeted correction, not a new full
   curriculum review or an audible cross-device voice audit.
 
-Step-level formula and method help — 4 November 2026
+Step-level formula and method help, 4 November 2026
 - Added 2,367 contextual helpers: 646 teaching steps, 316 quick-check
   explanations, 960 written-practice steps and 445 chapter-challenge steps.
   The shared library contains 43 rules/properties and 222 Toolkit methods.
@@ -257,7 +257,7 @@ Step-level formula and method help — 4 November 2026
   updated usage instructions and refreshed the complete distribution ZIP.
   Printable PDF content is unaffected by these interactive controls.
 
-Searchable formula library — 4 November 2026
+Searchable formula library, 4 November 2026
 - Added a Formulas button on the full guide and every standalone chapter.
   The 64 essential cards cover five subject groups, with uses, symbol meanings,
   worked examples, conditions and direct links to the relevant Toolkit method.
@@ -288,7 +288,7 @@ Searchable formula library — 4 November 2026
   No physical touchscreen, screen-reader announcement or cross-device audible
   voice-quality audit was performed. Native MathML needs a modern browser.
 
-Complete working lines — 4 November 2026
+Complete working lines, 4 November 2026
 - Reviewed all 948 topic exercises and 96 chapter challenges across 24 chapters.
   Relative to the preceding commit, rewrote 476 written solutions, 57 quick-check
   explanations and 61 steps across 33 chapter challenges. Suitable complete
@@ -369,6 +369,63 @@ bold, and Appendix B). Detailed findings are in reviews/.
   08-05), grid lines drawn black in the high-contrast skin and a few narration
   readings ("2 L" read as litres in a perimeter formula, plural units after
   "per"); all were corrected and rechecked.
+
+Skill drills, plain-language pass and accessibility, 11 November 2026
+- Skill drills: 40 skills with three levels each (18 algebra, 8 number, 7 ratio
+  and proportion, 7 statistics). Questions are generated from a seed, so the same
+  seed always gives the same question. Typed answers are checked exactly:
+  expressions are compared as polynomials with exact fractions, and the required
+  form (simplified, fully factorised, a single fraction in lowest terms) is checked
+  separately, so a right value in the wrong form gets a nudge and keeps the try.
+  A wrong answer that matches a known slip gets the reason for that slip.
+- Drill verification: 18,000 generated questions (150 per level) pass the checks
+  on structure, notation, variety, own answer accepted and listed slips refused.
+  4,800 of them (40 per level) were recomputed with sympy from an independent
+  claim: 2,677 values, 736 identities, 581 equations, 455 factorisations, 423
+  statistics, 120 systems, 91 inequalities; 63 choice questions carry no
+  machine-checkable claim. Every level was also played in a headless browser at
+  390 px: correct answers accepted, wrong answers handled, no script errors.
+- Drill review by three separate readers who had not written the questions: no
+  wrong answer key and no false working line were found. What they did find was
+  corrected: algebraic fractions accepted the question typed back; a frequency
+  table at levels 1 and 2 could be answered by averaging the first column; one
+  average question had two defensible answers; a bank fee could be read two ways;
+  several feedback messages blamed the wrong slip (fraction equations, like terms,
+  common factor, ratios of fractions, the inequality sign); negative speeds, ages
+  of parents under 18, prices and class sizes that could not be real; missing
+  lines in simultaneous-equation solutions; "=" where the value was rounded.
+- Content: the prose of all 24 chapters was rewritten in plainer words (goals,
+  steps, reasons, hints, explanations, clues, traps), keeping every id, count and
+  answer index. All 632 written exercises now have a note beside each worked step.
+  Every number and algebra line was recomputed in the same pass. Chapters 1, 2,
+  4, 5, 7, 10, 12, 13, 15 and 21 (algebra, applied arithmetic, statistics, ratio)
+  were then read again by a separate checker, whose 38 corrections of wording and
+  reasons were applied. The other fourteen chapters had no second reader.
+- Errors corrected in passing: diagrams that did not match their labels (cylinder
+  3 by 8 drawn wider than tall, parallelogram 9 by 4, sequence diagrams in 18-03,
+  construction diagrams in chapter 24 without the points named in the text), a
+  rounded answer that differed between working and answer (22-06), missing units
+  in working lines, a card whose warning never showed (chapter 22).
+- Narration: asides in brackets are read as pauses; "Part (b)" as "Part b"; a
+  single unit after each, every or one; 3f(2) as "3 times f of 2"; F(2) and C(7)
+  as function values; a point followed by working is no longer read as a ratio;
+  "a 6 km journey" as "a 6 kilometre journey". 105 spoken-form cases pass.
+- Accessibility: contrast of the Formulas button; a compact top bar on phones
+  (231 px down to 70 px); navigation marked with aria-current; a main landmark;
+  focus moves to the heading on navigation; 44 px targets; right and wrong marked
+  with a symbol as well as a colour; a "Comfortable reading" setting.
+- Accounts: drill answers, finished rounds and study days sync through three new
+  validated event kinds; the study dashboard lists drill results by skill. The 22
+  account tests pass, and a browser run against the local account server covered
+  drill rounds, sync, reload, the dashboard and the administrator view.
+- Verification passed: build, speech, guided reading, search, saved progress,
+  practice UI for 948 exercises, 99 independent answer checks, 320 working lines,
+  105 spoken-form cases, 44 checks against the generated pages, typography,
+  diagram marks, formula cards, the 60-sheet toolkit PDF and distribution
+  validation.
+- Not verified: the drills on a real phone keyboard; the narration by ear; the
+  hosted deployment itself, which is built by Cloudflare after publication. No
+  student has used the drills yet.
 
 Limits and recommendations
 The SEC Formulae and Tables booklet and exam archive could not be fetched, so

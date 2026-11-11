@@ -10,13 +10,13 @@
     "The question also asks for the whole collection. Add both colours, not the two ratio numbers."
   ],
   "12-01-w3": [
-    "Two parts contain 1.4 litres of concentrate. Divide by two to find 0.7 litres per part, then use five parts for water. Add the two liquids for the original drink.",
+    "The 1.4 litres is only the concentrate, so it fills 2 parts, not all 7. Find one part from it, then give water 5 of those parts.",
     "The concentrate stays at 1.4 litres. In the new 1:4 ratio, the water must be four times that amount.",
     "The question asks what to ADD, not the final amount of water. Remove the 3.5 litres already present from the 5.6 litres needed."
   ],
   "12-01-w4": [
-    "The numerator counts unfinished work: all worker-days minus those already completed. The denominator counts the four workers left to do it.",
-    "There are 60 daily worker-shifts left. Four workers complete four shifts each day, so they need 15 more days.",
+    "The top counts unfinished work: all the worker-days minus those already done. The bottom counts the four workers left to do it.",
+    "There are 60 worker-days of work left. Four workers do 4 worker-days each day, so they need 60 ÷ 4 = 15 more days.",
     "These 15 days start after the first five. Add them only when finding the total duration."
   ],
   "12-03-w1": [
@@ -38,8 +38,8 @@
     "Put seven into the quantity slot. The rule stays the same; only the input changes."
   ],
   "20-02-w2": [
-    "Divide each output by its matching input. The same result each time means one input unit is always worth 3.5 output units.",
-    "Use that same value per unit for ten units. This uses the directly proportional model described by the table."
+    "Divide each y by its matching x. The same result each time means every 1 of x is worth 3.5 of y.",
+    "Use that same value for 10 units. This works because the table shows direct proportion."
   ],
   "20-02-w3": [
     "Split the bill into a fixed €5 and a distance part. Only the distance part grows when you travel farther.",
@@ -47,9 +47,2847 @@
     "Twice €11 would be €22, but the second bill is €17. A straight line with a starting fee is not direct proportion."
   ],
   "20-02-w4": [
-    "At the meeting point both rules give the same cost, so set them equal using the same input n.",
-    "Subtract 2.5n from both sides, then divide by 1.5. Substitute the meeting input into either cost rule.",
-    "To find when B wins, make its full cost less than A’s. Keep both sides of the inequality as you rearrange.",
-    "The question needs whole numbers, so start at the next integer above eight. Only A has no starting fee."
+    "At the meeting point both rules give the same cost, so set them equal using the same n.",
+    "Take 2.5n from both sides, then divide by 1.5. Put n = 8 into either rule to find the cost.",
+    "To find when B wins, make its full cost less than A’s. Rearrange the inequality just as you did the equation.",
+    "The question needs whole numbers, so start at the next whole number above eight. Only A has no starting fee."
+  ],
+  "11-01-w1": [
+    "A midpoint is halfway along in both directions. That is why you average the x-values and the y-values separately.",
+    "5 is halfway between 2 and 8, and 7 is halfway between 4 and 10. Write the answer as a point, in brackets."
+  ],
+  "11-01-w2": [
+    "Subtracting the coordinates gives the two short sides of a right-angled triangle. Keep the bracket around −1 so that the subtraction becomes 5 + 1.",
+    "The direct distance is the longest side, so Pythagoras applies. Square first, then add, then take the square root."
+  ],
+  "11-01-w3": [
+    "This is the midpoint formula run backwards. You know the average and one of the two numbers, so write an equation for each coordinate.",
+    "Multiply both sides by 2 to undo the halving. Now each equation says what the two coordinates add up to.",
+    "Take A’s coordinate away from each total to get B’s. Watch the sign when you take 4 away from −4."
+  ],
+  "11-01-w4": [
+    "Each sloping side is the long side of a right-angled triangle, 6 across and 8 up or down. Squaring removes any minus sign, so both lengths come to 10.",
+    "A and C have the same y, so AC is flat and its length is just the difference in x. The perimeter adds all three sides.",
+    "A median joins a corner to the midpoint of the opposite side. So you need the midpoint of AC first.",
+    "M has the same x as B, so BM is a vertical line. Its length is just the difference in y."
+  ],
+  "11-02-w1": [
+    "Start from the same point on top and underneath. The line climbs 8 while it goes 4 across, so it climbs 2 for every 1 across."
+  ],
+  "11-02-w2": [
+    "Subtracting −3 underneath becomes adding 3. The top is negative because y falls, so the slope is negative."
+  ],
+  "11-02-w3": [
+    "Both points have y = 3, so the line is flat. Zero divided by 5 is 0, and 0 is a perfectly good slope.",
+    "Both points have x = 4, so the line goes straight up. You would have to divide by 0, which has no answer, so the slope is undefined."
+  ],
+  "11-02-w4": [
+    "Three points are in one line only if the steepness never changes. So compare the slope from A to B with the slope from B to C.",
+    "The same slope and a shared point B mean one straight line runs through all three.",
+    "From C, x goes up by 2. With slope −2, y drops by 2 for each 1 across, so it drops by 4."
+  ],
+  "11-03-w1": [
+    "The point has x = 0, so it sits on the y-axis. That means you already know c, and y = mx + c is the quickest form.",
+    "Put the slope in front of x and the intercept at the end. Keep the minus sign of −2."
+  ],
+  "11-03-w2": [
+    "This point is not on the y-axis, so you do not know c yet. The point-slope formula works from any point.",
+    "The −2 multiplies both terms in the bracket. A minus times a minus gives +8.",
+    "Add 1 to both sides to leave y on its own. Now the slope and the intercept are easy to read."
+  ],
+  "11-03-w3": [
+    "Two points give you a slope. You need it before you can write any equation of the line.",
+    "Use either point with the slope. Here x − (−2) becomes x + 2.",
+    "Multiply both sides by 2 to clear the fraction. The final form needs whole numbers.",
+    "Move every term to one side so the other side is 0. Keeping x positive gives the tidy form."
+  ],
+  "11-03-w4": [
+    "The given line has slope 2. A line at right angles to it has the flipped fraction with the opposite sign.",
+    "The point has y = −1, so y − (−1) becomes y + 1. Writing the slope as a division by 2 keeps the next move simple.",
+    "Multiply both sides by 2 to clear the fraction. The minus sign applies to both x and −3, giving −x + 3.",
+    "Bring every term to the left so that the right side is 0.",
+    "Every point on the x-axis has y = 0. Putting y = 0 into the equation leaves only x to find."
+  ],
+  "11-04-w1": [
+    "The equation already starts with y =, so just read it. The number in front of x is the slope. The number on its own, with its sign, is c."
+  ],
+  "11-04-w2": [
+    "You can read the slope only when y is on its own. Start from the equation as given.",
+    "Take 3x from both sides so that the y term is alone on the left.",
+    "Divide every term by 2, not just the first one. Now the number in front of x is the slope."
+  ],
+  "11-04-w3": [
+    "The y-intercept gives c = 6 straight away. The point must fit the equation, so putting its x and y in makes an equation with only m.",
+    "Take 6 from both sides, then divide by 4. This is an ordinary equation with one unknown.",
+    "Put the slope you found back into y = mx + 6 to finish the equation."
+  ],
+  "11-04-w4": [
+    "A flat line does not rise, so the number in front of x must be 0. That number is k − 2.",
+    "A line through (0, 0) has y = 0 when x = 0. So the number on its own, 3k, must be 0."
+  ],
+  "11-05-w1": [
+    "Parallel lines have the same slope. These are two different lines because they cross the y-axis at different heights, 1 and −5."
+  ],
+  "11-05-w2": [
+    "Perpendicular slopes multiply to −1. Flipping 3/4 and changing the sign is the quick way to make that happen."
+  ],
+  "11-05-w3": [
+    "A parallel line has the same slope. Getting y on its own in 2x + 3y = 6 shows that the slope is −2/3.",
+    "Use the point-slope formula with the point (3, 4). Writing the 3 underneath keeps the fraction in one place.",
+    "Multiply both sides by 3 to clear the fraction. −2 times −3 gives +6.",
+    "Add 2x and 12 to both sides. The left side now matches the original line, which shows the slope is the same."
+  ],
+  "11-05-w4": [
+    "A right angle shows up as two sides whose slopes multiply to −1. So find the slopes of the sides first.",
+    "AB and BC meet at B, and their slopes multiply to −1. So the right angle is at B.",
+    "Comparing squared lengths avoids square roots. If two of them were equal, the triangle would be isosceles.",
+    "20, 5 and 25 are all different, so no two sides are equal. Scalene means all three sides have different lengths."
+  ],
+  "11-06-w1": [
+    "Any x-value works, so choose easy ones. x = 0 is the easiest and gives the point on the y-axis.",
+    "A second point is enough to fix a straight line. Choose it a little away from the first so the line is easier to draw accurately."
+  ],
+  "11-06-w2": [
+    "The line crosses the x-axis where y is 0. Putting y = 0 in leaves an equation with only x.",
+    "The line crosses the y-axis where x is 0. Putting x = 0 in leaves only y.",
+    "Two points fix one straight line. Use a ruler and carry the line on past both points."
+  ],
+  "11-06-w3": [
+    "The crossing point must obey both equations at once. One fixes x and the other fixes y, so there is nothing to solve.",
+    "The form y = mx + c needs a slope m. A vertical line has run zero, so it has no slope value to use."
+  ],
+  "11-06-w4": [
+    "A point is on the line only if it makes the equation true. The second point gives −12, so it is not on the line.",
+    "Dividing 12 by −2 gives −6. The student lost the minus sign.",
+    "A third point guards against a slip. If all three points line up on the page, the drawing is right."
+  ],
+  "11-07-w1": [
+    "The crossing point lies on both lines, so its x and y must fit both equations.",
+    "Both lines have the same y at the crossing. The second line says that y is 6, so 2x must equal 6.",
+    "Divide by 2 to find x. An intersection is a point, so give both coordinates."
+  ],
+  "11-07-w2": [
+    "The crossing point fits both equations at once. Write them side by side.",
+    "Both right-hand sides equal the same y, so they equal each other. That leaves one equation with only x.",
+    "Take x from both sides and add 2 to both sides. Each move keeps the two sides balanced.",
+    "Divide by 2 to find x, then put x into the simpler equation to find y. Finish with a coordinate pair."
+  ],
+  "11-07-w3": [
+    "Neither equation starts with y =, so look for another way in. One has +y and the other has −y.",
+    "Adding the equations makes +y and −y cancel. That leaves only x to solve.",
+    "Divide by 3 to find x. Then put x = 3 into an original equation to bring y back.",
+    "Take 6 from both sides to find y. Write the answer as a point."
+  ],
+  "11-07-w4": [
+    "You need the first line’s equation before you can find a crossing. The point (0, 6) gives c = 6, and the slope is −6/4 = −1.5.",
+    "At the crossing both lines have the same y, so set the two expressions equal.",
+    "Add 1.5x to both sides and take 1 from both sides. This gathers the x terms on one side.",
+    "Divide 5 by 2.5 to find x. Then y = x + 1 gives the height of the crossing.",
+    "A line goes on for ever, but a segment stops at its endpoints. x = 2 is between 0 and 4, so the point is on the segment."
+  ],
+  "11-08-w1": [
+    "Slope is the change up divided by the change across. Up is kilometres and across is hours, so the slope is a speed in km/h."
+  ],
+  "11-08-w2": [
+    "Take final minus starting value for both volume and time. The volume change is negative because the tank is losing water.",
+    "Put the slope into words with its units. The sign gives the direction: down by 9 litres every minute."
+  ],
+  "11-08-w3": [
+    "The number multiplied by d is charged for every kilometre. The number on its own is charged once, however far you go.",
+    "Put 7 in place of d. Multiply before you add, so that the fixed €4 is added only once."
+  ],
+  "11-08-w4": [
+    "One kilometre is 1000 metres, so the drop per kilometre is 1000 times the drop per metre. Both models describe the same cooling.",
+    "This model wants the height in metres, so use 1500.",
+    "This model wants kilometres, so use 1.5. Getting 9°C again shows that the two models agree."
+  ],
+  "20-01-w1": [
+    "The steepness of the line is the speed. Thirty minutes is half an hour, so dividing by 0.5 gives kilometres per hour."
+  ],
+  "20-01-w2": [
+    "The graph is flat between 20 and 30 minutes. A flat part means the distance from home is not changing.",
+    "The traveller goes 2 km out, then 2 km back. The graph ends at 0, but both parts were travelled."
+  ],
+  "20-01-w3": [
+    "Average speed is total distance over total time. Here the time includes the 10 minute rest, and the minutes are turned into hours.",
+    "For the moving speed, leave the rest out of the time. The distance is still 4 km, so the answer is larger."
+  ],
+  "20-01-w4": [
+    "They meet when they are at the same place at the same time. So make the two position rules equal.",
+    "Add 2t to both sides and take 2 from both sides. Then divide by 6.",
+    "Put t = 2 into A’s rule to find the place. B’s rule gives the same answer, which confirms it."
+  ],
+  "20-03-w1": [
+    "A flat graph means the quantity on the vertical axis is not changing. Here that quantity is the height of the water.",
+    "The same height in a fixed tank means the same volume. That does not prove the tap is off: water could enter and leave at equal rates."
+  ],
+  "20-03-w2": [
+    "Every layer of the tank is the same size, so each minute’s water raises the level by the same amount. Equal rises in equal times make a straight line."
+  ],
+  "20-03-w3": [
+    "The water arrives at the same rate, but a wide layer takes more water to fill. So the level climbs more slowly and the graph gets flatter."
+  ],
+  "20-03-w4": [
+    "Height rises at flow divided by area. In the lower section that is 5 cm each minute, and it lasts until the 10 cm mark at 2 minutes.",
+    "After 2 minutes the level starts from 10 cm and climbs more slowly, because the area is bigger. Count only the time since the 2 minute mark."
+  ],
+  "01-01-w1": [
+    "Spot two kinds of term: x terms and plain numbers. The minus sign belongs to the 5x.",
+    "Put like terms side by side. Each term keeps its own sign when it moves.",
+    "Eight x take away five x leaves three x. An x term and a plain number are different kinds, so they cannot be joined."
+  ],
+  "01-01-w2": [
+    "There are three kinds here: a terms, b terms and a plain number. Different letters never combine.",
+    "Move matching letters together. The 2b keeps its minus sign.",
+    "Count each kind on its own. Seven b take away two b leaves five b. The last number has no partner."
+  ],
+  "01-01-w3": [
+    "Look for three kinds: x² terms, x terms and plain numbers. The lone −x² is one x² taken away.",
+    "Group by power, highest first. Every term carries the sign in front of it.",
+    "Work through one group at a time. Seven take away twelve goes below zero, so the number part is negative."
+  ],
+  "01-01-w4": [
+    "The two sides must be equal for every value of x, not just one. That is a strong condition.",
+    "Collect the x terms and the plain numbers on the left. Now both sides have the same shape.",
+    "If two expressions agree for every x, the numbers in front of x must match. The plain numbers must match too.",
+    "Each small equation has one unknown. Undo the subtraction in one and the addition in the other."
+  ],
+  "01-02-w1": [
+    "Two terms times two terms means four products. A grid gives each one a box.",
+    "The x multiplies both terms of the second bracket. Then the 2 multiplies both. That makes four products.",
+    "Only the two x terms are the same kind. The x² term and the plain number stay as they are."
+  ],
+  "01-02-w2": [
+    "Read the first bracket as 3x and −2. The minus sign travels with the 2.",
+    "The −2 row gives two negative products, because a negative times a positive is negative.",
+    "Only the two x terms combine. The other two terms have no partners."
+  ],
+  "01-02-w3": [
+    "Both brackets hold a negative term. Keep each minus sign with its number.",
+    "Two products are negative. The last one is a negative times a negative, which is positive.",
+    "Both x terms are negative, so together they make a bigger negative."
+  ],
+  "01-02-w4": [
+    "Area of a rectangle is length times width. Each side is a bracket here, so multiply the brackets.",
+    "Four products again. The −2 makes two of them negative.",
+    "The two x terms are like terms. Together they leave one x taken away, written −x.",
+    "Now x has a value, so replace every x with 5. Square before you multiply by 2."
+  ],
+  "01-03-w1": [
+    "Two terms times three terms means six products. Use a grid with two rows and three columns.",
+    "The first three products come from x, the last three from 2. Multiplying by x raises each power by one.",
+    "Match the powers: two x² terms and two x terms. The x³ term and the plain number stand alone."
+  ],
+  "01-03-w2": [
+    "The first bracket is x and −3. The −3 must multiply all three terms of the second bracket.",
+    "Multiplying by −3 flips every sign in that row. A negative times a negative gives the positive number at the end.",
+    "Collect each power separately. Two x² take away three x² leaves one x² taken away."
+  ],
+  "01-03-w3": [
+    "Plan two rows: one for 2x and one for −1. Each row has three products.",
+    "In the 2x row, multiply the numbers and raise each power by one. The −1 row just changes every sign.",
+    "Collect matching powers. The two x² terms are both negative, so they make a bigger negative."
+  ],
+  "01-03-w4": [
+    "Volume of a box is length times width times height. Multiply three things, two at a time.",
+    "Do the two brackets first. That leaves one term outside one bracket, which is easier.",
+    "The x outside multiplies every term inside. Each power goes up by one.",
+    "Put 2 in for every x. Work out the powers first, then multiply, then add."
+  ],
+  "01-04-w1": [
+    "Brackets go around −2 each time it replaces x. They keep the minus sign with the 2.",
+    "Powers come first, and a negative squared is positive. Taking away a negative product is the same as adding.",
+    "Multiplying comes before adding.",
+    "Both parts are positive, so the answer is positive. A negative answer here would point to a sign slip."
+  ],
+  "01-04-w2": [
+    "Every a becomes (−1) and every b becomes 3. Do not calculate yet, just replace.",
+    "Take one term at a time. The middle term multiplies two negatives, so it turns positive.",
+    "All three parts are positive, so simply add them."
+  ],
+  "01-04-w3": [
+    "Replace x and y on the top and on the bottom. Brackets keep the negative quarter together.",
+    "Taking away a negative quarter adds a quarter. Adding a negative quarter takes a quarter away.",
+    "Write each line in quarters so that the top and the bottom are single fractions.",
+    "How many quarters fit into five quarters? Dividing by a quarter is the same as multiplying by 4."
+  ],
+  "01-04-w4": [
+    "With no brackets, the power is done first. Only a is squared, and the minus is put on afterwards.",
+    "Here the bracket comes first. The opposite of −2 is 2, and then 2 is squared.",
+    "The two values are opposites, so they cancel. The brackets made the only difference."
+  ],
+  "01-05-w1": [
+    "x was multiplied by 5, then 7 was added. To get back to x, undo these in reverse order.",
+    "Take 7 from both sides. The scale stays balanced and the added 7 is gone.",
+    "Five lots of x make 25, so share both sides into five equal parts."
+  ],
+  "01-05-w2": [
+    "x appears on both sides. The aim is to gather the x terms on one side and the numbers on the other.",
+    "The 4 multiplies both terms in the bracket, the x and the −2.",
+    "Take 2x from both sides. Now x appears on the left only.",
+    "Add 8 to both sides to undo the subtraction of 8.",
+    "Two lots of x make 18. Halve both sides to find one x."
+  ],
+  "01-05-w3": [
+    "There are two brackets to multiply out. Treat the second multiplier as −2, not 2.",
+    "The −2 multiplies both x and 1, so both come out negative. This is where most slips happen.",
+    "Collect the x terms, then the numbers. Two negative numbers together make a bigger negative.",
+    "Add 17 to both sides to undo the subtraction of 17.",
+    "Four lots of x make 28, so divide both sides by 4."
+  ],
+  "01-05-w4": [
+    "Fractions make this look hard. Clear them first by multiplying by a number that 3 and 4 both divide into.",
+    "Every term is multiplied by 12, including the 2 on the right. Brackets keep each top line together.",
+    "The −3 multiplies both x and 2. Forgetting the second one is the usual mistake.",
+    "Collect the x terms and the numbers on the left. Now it is an ordinary two-step equation.",
+    "Add 10 to both sides to undo the subtraction of 10.",
+    "34 does not divide evenly by 5. A fraction answer is fine, so leave it exact."
+  ],
+  "01-06-w1": [
+    "Give the unknown number a name. Then follow the words in order: five times it, then minus 3.",
+    "Add 3 to both sides to undo the subtraction of 3.",
+    "Five lots of the number make 30, so divide both sides by 5."
+  ],
+  "01-06-w2": [
+    "Consecutive integers are one apart. If the smaller is n, the next is n + 1, so one letter covers both.",
+    "Collect the two n terms. Now it is a two-step equation.",
+    "Take 1 from both sides.",
+    "Halve both sides to find the smaller integer.",
+    "The question asks for both numbers. The second is one more than the first."
+  ],
+  "01-06-w3": [
+    "One letter is enough. The length is described using the width, so the width and the length both use w.",
+    "Multiply out the bracket, then collect the w terms.",
+    "Take 10 from both sides.",
+    "Four lots of the width make 36, so divide both sides by 4.",
+    "The width is not the final answer. Find the length, then multiply to get the area in square centimetres."
+  ],
+  "01-06-w4": [
+    "In 6 years both ages go up by 6. The parent's new age equals 2.5 times the child's new age.",
+    "The 2.5 multiplies both terms in the bracket, the x and the 6.",
+    "Take 2.5x from both sides and take 6 from both sides. The x terms end up on the left, the numbers on the right.",
+    "Divide both sides by 1.5. Nine holds six lots of 1.5.",
+    "x is the child's age. The parent is four times that, so give both ages."
+  ],
+  "01-07-w1": [
+    "Dividing asks what multiplies x + 3 to make the top line. The bottom cannot be zero, so x cannot be −3.",
+    "The missing bracket must start with x. Its number must give 15 when multiplied by 3.",
+    "The same bracket multiplies the top and the bottom, so it cancels. A bracket cancels only as a whole, never one term from inside it."
+  ],
+  "01-07-w2": [
+    "Find the answer one term at a time, starting with the highest power.",
+    "x times 2x gives the 2x² you need. That product also uses up 8x, one more than you have, so one x must be taken away.",
+    "The first part divides exactly. What is left still has to be divided.",
+    "What is left is exactly −1 lot of the divisor. So the last term is −1 and nothing remains."
+  ],
+  "01-07-w3": [
+    "An x³ expression divided by a bracket with x gives an x² expression. Expect three terms in the answer: an x² term, an x term and a number.",
+    "x times x² makes the x³ you need. Taking away x² lots of the divisor leaves a shorter top line.",
+    "Now match the −x² at the front, so the next term is −x. Watch the signs when you take the product away.",
+    "What is left is exactly −6 lots of the divisor. Nothing remains, so the division is exact."
+  ],
+  "01-07-w4": [
+    "Work from the highest power down. Each term of the answer removes the first term of what is left.",
+    "x times 2x² makes the 2x³ you need. That also uses 4x², one more than you have, so one x² is left to take away.",
+    "The next term is −x. Take away the whole product, both of its terms.",
+    "What is left is exactly −6 lots of the divisor. Nothing remains.",
+    "An exact division means the cubic equals the divisor times the answer. That product is the factorised form asked for."
+  ],
+  "01-08-w1": [
+    "Write every number as a decimal so they are easy to compare. Further left on the number line means smaller, so −3 comes before −1.5."
+  ],
+  "01-08-w2": [
+    "A number is rational if you can write it as one whole number over another. Any integer can be written over 1.",
+    "2 is not a square number (1, 4, 9 and so on), so its square root never ends or repeats as a decimal. An integer has no fraction part."
+  ],
+  "01-08-w3": [
+    "Any fraction between 2 and 3 will do. Halfway is the easiest one to find.",
+    "Square the two ends to get 4 and 9. A whole number between them that is not a square number has an irrational square root."
+  ],
+  "01-08-w4": [
+    "One example that breaks the rule is enough to answer no. Opposite numbers cancel to zero.",
+    "Here the irrational parts add up instead of cancelling, so the sum stays irrational."
+  ],
+  "01-09-w1": [
+    "Solve it like an equation. The only difference is the sign in the middle.",
+    "Taking 4 from both sides does not change which side is smaller, so the sign stays.",
+    "5 itself is not allowed, so the circle is open. Smaller numbers are to the left."
+  ],
+  "01-09-w2": [
+    "The sign here means greater than or equal to. Solve it the way you would solve an equation.",
+    "Adding 2 to both sides never changes the direction of the sign.",
+    "You divide by positive 3, so the sign stays the same. Only a negative divisor turns it.",
+    "4 is allowed because of the or equal to part, so the circle is filled. Bigger numbers are to the right."
+  ],
+  "01-09-w3": [
+    "The x term is −2x. Its minus sign matters later, so keep it attached.",
+    "Subtracting 7 from both sides does not turn the sign. Subtracting never does.",
+    "Now you divide by a negative number, so the sign turns around. Test x = −5: the left side is 17, which is greater than 15."
+  ],
+  "01-09-w4": [
+    "The fare is the €4 start plus €2.50 for every kilometre. At most €22 means the fare can equal €22 or be less.",
+    "Take the €4 start charge from both sides. What is left pays for distance.",
+    "You divide by positive 2.5, so the sign stays the same.",
+    "A distance cannot be negative, so d starts at 0. For whole kilometres round down, because 8 kilometres would cost €24."
+  ],
+  "02-01-w1": [
+    "Look at the numbers first. Both 12 and 18 are in the 6 times table, and 6 is the biggest number that divides both.",
+    "Each term is divided by 6, and what is left goes inside the bracket. Multiplying back should return 12x + 18."
+  ],
+  "02-01-w2": [
+    "Check numbers and letters separately. 5 divides both 15 and 10, and each term has at least one letter a.",
+    "Taking out 5a leaves 3a from the first term and 2 from the second. The minus sign between them stays."
+  ],
+  "02-01-w3": [
+    "There are three terms, so the factor must divide all three. The smallest number is 6, and it divides 18 and 24 as well.",
+    "The last term is exactly 6xy, so dividing it leaves 1. Leaving that place empty would lose a term when you multiply back."
+  ],
+  "02-01-w4": [
+    "The first term is negative. The question wants a positive first term inside the bracket, so the factor you take out must be negative.",
+    "Dividing by a negative changes each sign. The first term becomes +2x and the second becomes −3.",
+    "Square −2 first to get +4. The bracket is −7, and a negative times a negative gives a positive answer."
+  ],
+  "02-02-w1": [
+    "No single factor divides all four terms. Pairs are the next thing to try: the first two share the letter a and the last two share the letter b.",
+    "Both pairs leave the same bracket, x + y. Matching brackets tell you the grouping has worked.",
+    "The bracket is multiplied by a and then by b. Altogether it is multiplied by (a + b), just as 2k + 3k is 5k."
+  ],
+  "02-02-w2": [
+    "The four terms come in two natural pairs. The first pair shares 3x and the second pair shares 2.",
+    "Both brackets are x + 2. If they did not match, you would try a different factor or a different pairing.",
+    "The repeated bracket comes out as one factor. What was in front of it, 3x and 2, forms the other bracket."
+  ],
+  "02-02-w3": [
+    "The third term is negative. That is a signal to take a negative number out of the second pair.",
+    "Taking out −3 turns +12 into −4 inside the bracket, because −3 × −4 = +12. Now both brackets read y − 4.",
+    "The shared bracket y − 4 comes out. The parts left in front, x and −3, make the other bracket."
+  ],
+  "02-02-w4": [
+    "There are four terms and no factor shared by all of them. Pair the first two and the last two.",
+    "The first pair shares x². Taking −9 out of the second pair makes its bracket x − 2 as well.",
+    "The bracket x − 2 comes out, leaving x² − 9. Do not stop yet: check each bracket for another pattern.",
+    "x² − 9 is a square minus a square, so it splits again. Factorising fully means no bracket can be factorised further."
+  ],
+  "02-03-w1": [
+    "There are two terms with a minus between them. Check whether each one is a square.",
+    "Writing 25 as 5² makes the pattern easy to see: something squared minus something squared.",
+    "The two things that were squared, x and 5, go in both brackets. One bracket gets minus and the other gets plus."
+  ],
+  "02-03-w2": [
+    "Both numbers, 9 and 16, are squares, and so are a² and b². That is the sign to use this pattern.",
+    "The whole of 3a is squared, not just the a. 3a × 3a gives 9a².",
+    "3a and 4b go in both brackets, with opposite signs so the middle terms cancel."
+  ],
+  "02-03-w3": [
+    "2 and 50 are not squares, so the pattern does not fit yet. Look for a common factor first.",
+    "Taking out 2 leaves x² − 25, which is a square minus a square.",
+    "The 2 stays in front for the rest of the question. Only the bracket changes."
+  ],
+  "02-03-w4": [
+    "A fourth power is the square of a square: x⁴ = (x²)². And 81 = 9².",
+    "Here x² and 9 are the things being squared, so they go in both brackets.",
+    "x² − 9 is another square minus a square, so it splits again. x² + 9 has a plus, so it stays as it is."
+  ],
+  "02-04-w1": [
+    "The number in front of x² is 1. So you need two numbers that multiply to 20 and add to 9.",
+    "4 and 5 fit both conditions. Splitting 9x into 4x + 5x lets you see where the brackets come from.",
+    "Each pair has a common factor, and both leave the bracket x + 4.",
+    "The shared bracket comes out. The numbers in the two brackets are the 4 and 5 you found."
+  ],
+  "02-04-w2": [
+    "The last number is negative, so the two numbers have different signs. They must add to −1.",
+    "−4 and +3 multiply to −12 and add to −1. The bigger number takes the minus because the sum is negative.",
+    "Both pairs leave x − 4. Taking +3 out of the second pair keeps the −12 correct.",
+    "Read the signs straight from your pair: −4 gives (x − 4) and +3 gives (x + 3)."
+  ],
+  "02-04-w3": [
+    "The product is +20 but the sum is −9. Only two negative numbers can do both.",
+    "−4 and −5 multiply to +20 and add to −9.",
+    "Take −5 out of the second pair, not +5. That turns +20 into −4 inside the bracket, so the brackets match.",
+    "Both brackets have a minus. A plus last number with a minus middle term always gives two minus brackets."
+  ],
+  "02-04-w4": [
+    "Multiplying out (x + p)(x + q) gives x² + (p + q)x + pq. Matching this with x² + kx + 12 gives the two conditions.",
+    "Work through the pairs in order, starting with 1, so none is missed.",
+    "The next number that divides 12 is 2, and its partner is 6.",
+    "3 and 4 is the last pair. After that the pairs repeat in the other order.",
+    "Listing every pair is what proves the answer is complete. Three pairs give three values of k."
+  ],
+  "02-05-w1": [
+    "The number in front of x² is 2, not 1. So the pair must multiply to 2 × 3 = 6 and add to 5.",
+    "2 and 3 fit. Splitting 5x into 2x + 3x keeps the expression the same but gives four terms to group.",
+    "The first pair shares 2x and the second shares 3. Both leave x + 1, so the split worked.",
+    "The repeated bracket x + 1 comes out. What stood in front, 2x and 3, makes the other bracket."
+  ],
+  "02-05-w2": [
+    "First times last is 3 × (−2) = −6. You need two numbers that multiply to −6 and add to −5.",
+    "−6 and +1 fit. Write +1x simply as x.",
+    "The second pair, x − 2, has no common factor. Think of it as 1(x − 2) so the 1 is not forgotten.",
+    "The bracket x − 2 comes out. The 3x and the hidden 1 in front make the bracket 3x + 1."
+  ],
+  "02-05-w3": [
+    "First times last is 6 × (−3) = −18. The pair must multiply to −18 and add to −7.",
+    "−9 and +2 fit. Put −9x next to 6x² because they share the factor 3x.",
+    "Taking 3x from the first pair leaves 2x − 3. The second pair is already 2x − 3, with a hidden 1 in front.",
+    "The shared bracket comes out, and 3x with the hidden 1 gives 3x + 1."
+  ],
+  "02-05-w4": [
+    "Always look for a common factor first. All three numbers are even, so 2 comes out and the numbers get smaller.",
+    "Inside the bracket, −7x has been split into −9x + 2x and each pair factorised. The 2 waits outside.",
+    "The matching bracket 2x − 3 comes out. Keep the 2 in the final answer or it will not multiply back.",
+    "Now use the factors to solve. A product can only be zero if one of its factors is zero.",
+    "The 2 can never be zero, so only the two brackets give solutions.",
+    "Each bracket is a small equation. Subtract 1 or add 3 on both sides, then divide by the number in front of x."
+  ],
+  "02-06-w1": [
+    "Before you simplify, ask what x cannot be. The bottom, 9x, is zero when x is 0.",
+    "Both top and bottom are written as 3x times something. Now the shared factor is easy to see.",
+    "3x divided by 3x is 1, so it cancels. The note x ≠ 0 stays with the answer."
+  ],
+  "02-06-w2": [
+    "The bottom is zero when x = 4, so write x ≠ 4 before doing anything else.",
+    "The top is a square minus a square. Factorising it shows a bracket that matches the bottom.",
+    "The bracket x − 4 is a factor of the whole top and the whole bottom, so it cancels. Keep x ≠ 4."
+  ],
+  "02-06-w3": [
+    "The bottom is x² − 4, which is zero when x is 2 or −2. Note both before you cancel.",
+    "Factorise the top and the bottom completely. Only then can you see which whole brackets match.",
+    "Only x − 2 appears on both top and bottom. The x in x + 3 and x + 2 is part of a sum, so it cannot be cancelled."
+  ],
+  "02-06-w4": [
+    "Factorise the bottom to find where it is zero: (x − 2)(x + 1). So x cannot be 2 or −1.",
+    "On top, x comes out first and leaves x² − 4, a square minus a square.",
+    "The bracket x − 2 is on top and bottom, so it cancels. Both restrictions stay.",
+    "The factor x + 1 was not cancelled. It is still on the bottom, so x = −1 would still mean dividing by zero."
+  ],
+  "15-01-w1": [
+    "One side is already zero, so you can go straight to factorising.",
+    "−2 and −3 multiply to +6 and add to −5. A plus last number with a minus middle term means both numbers are negative.",
+    "A product is zero only when one of its factors is zero. That turns one quadratic into two small equations.",
+    "Add 2, or add 3, to both sides. Each root has the opposite sign to the number in its bracket."
+  ],
+  "15-01-w2": [
+    "The number in front of x² is 2, so the pair must multiply to 2 × (−3) = −6 and add to 1.",
+    "+3 and −2 fit. Splitting x into 3x − 2x gives four terms that group.",
+    "Grouping gives x(2x + 3) − 1(2x + 3), and the shared bracket 2x + 3 comes out.",
+    "The product is zero, so one of the brackets must be zero.",
+    "For 2x + 3 = 0, subtract 3 and then divide by 2. Roots can be fractions, and that is fine."
+  ],
+  "15-01-w3": [
+    "The right side is 10, not zero. You cannot say x = 10 or x + 3 = 10, because many pairs of numbers multiply to 10.",
+    "Multiply out and subtract 10 from both sides. Now one side is zero and the method can start.",
+    "+5 and −2 multiply to −10 and add to 3.",
+    "With zero on the right, each bracket can be set equal to zero.",
+    "Both answers are kept. Nothing in the question rules out a negative value of x."
+  ],
+  "15-01-w4": [
+    "x + 4 appears on both sides. It is tempting to divide by it, but it might be zero, and you cannot divide by zero.",
+    "Subtract 2(x + 4) from both sides instead. This keeps every solution and puts zero on the right.",
+    "x + 4 is a common factor. Taking it out leaves (x − 1) − 2, which is x − 3.",
+    "The product is now zero, so one bracket or the other must be zero.",
+    "x = −4 is the root that dividing would have thrown away. At x = −4 both sides of the original equation are zero."
+  ],
+  "15-02-w1": [
+    "This quadratic does not factorise with whole numbers, so use the formula. Here a = 1, b = −2 and c = −1.",
+    "−b is −(−2), which is +2. Under the root, subtracting a negative product adds: 4 + 4.",
+    "The number under the root is 8. It is positive, so there are two roots.",
+    "√8 = 2√2, because 8 = 4 × 2. Then both parts of the top are divided by 2."
+  ],
+  "15-02-w2": [
+    "Read off a = 2, b = 3 and c = −1. Only c is negative.",
+    "The bottom is 2a = 4. Under the root, −4(2)(−1) is +8, so you get 9 + 8.",
+    "17 is not a square number, so the roots are not neat. Leave √17 exact until the last step.",
+    "Do the calculation twice, once with plus and once with minus. Round only at the end."
+  ],
+  "15-02-w3": [
+    "You only need the number under the square root. When it is zero, plus and minus give the same answer, so there is one repeated root.",
+    "Here the number under the root is negative. No real number squares to give a negative, so there are no real roots."
+  ],
+  "15-02-w4": [
+    "Treat k like a number. With a = 1, b = −4 and c = k, the number under the root is 16 − 4k.",
+    "Two different roots need a positive number under the root. Solve the inequality as you would an equation: 16 must be bigger than 4k.",
+    "One repeated root needs exactly zero under the root.",
+    "No real roots needs a negative number under the root, which happens when k is bigger than 4."
+  ],
+  "15-03-w1": [
+    "Area is width times length. Say at the start that x must be positive, because it is a width.",
+    "Multiply out and subtract 84 from both sides, so one side is zero.",
+    "+12 and −7 multiply to −84 and add to 5.",
+    "The equation gives two values, but a width cannot be −12. The story decides which root to keep.",
+    "The question asks for both dimensions, so use x = 7 to find the length as well."
+  ],
+  "15-03-w2": [
+    "Consecutive whole numbers differ by 1, so call them n and n + 1. Their product is 72.",
+    "Multiply out and subtract 72 so one side is zero.",
+    "+9 and −8 multiply to −72 and add to 1.",
+    "The question says positive, so n = −9 is rejected.",
+    "n is only the first number. The second one is n + 1."
+  ],
+  "15-03-w3": [
+    "The border adds x at both ends of each side. So each side grows by 2x, not x.",
+    "Multiply out the brackets to get four products, then collect the two x terms.",
+    "Subtract 96 from both sides to get zero on the right.",
+    "Every term divides by 4. Smaller numbers are easier to factorise, and the roots stay the same.",
+    "+9 and −1 multiply to −9 and add to 8.",
+    "A border cannot have a negative width, so only x = 1 fits the garden."
+  ],
+  "15-03-w4": [
+    "The question gives the height, so put 9 in place of h. The time must be between 0 and 4 seconds.",
+    "Move every term to one side so that the t² term is positive. That makes factorising easier.",
+    "Every term divides by 3, which makes the numbers smaller.",
+    "−1 and −3 multiply to +3 and add to −4.",
+    "This time both roots are allowed. The ball passes 9 m once on the way up and once on the way down."
+  ],
+  "15-04-w1": [
+    "Each root needs a bracket that is zero at that root. Root 2 gives x − 2 and root 5 gives x − 5.",
+    "Multiply each term in the first bracket by each term in the second. That gives four products.",
+    "Collect the two x terms. Notice that −7 is minus the sum of the roots, and +10 is their product."
+  ],
+  "15-04-w2": [
+    "The sign in each bracket is the opposite of its root. Root −3 gives x + 3, and root 4 gives x − 4.",
+    "There are four products again. Watch the signs: +3 times −4 is −12.",
+    "−4x + 3x is −x. The number in front of x² is 1, so the quadratic is monic."
+  ],
+  "15-04-w3": [
+    "Root 1/2 gives the bracket x − 1/2. Doubling it gives 2x − 1, which is zero at the same x and has no fraction.",
+    "Multiply out the four products as usual.",
+    "6x − x is 5x. Every coefficient is a whole number, as the question asked."
+  ],
+  "15-04-w4": [
+    "The roots give the brackets, but any number k in front keeps the same roots. Keep k as a letter for now.",
+    "The point (0, −6) is on the curve, so x = 0 and y = −6 must fit the equation. That fixes k.",
+    "Put k = 3 back into the root form.",
+    "Multiply out the two brackets first. Leave the 3 outside until the brackets are done.",
+    "Multiply every term by 3. This matches the form y = ax² + bx + c that the question asked for."
+  ],
+  "10-01-w1": [
+    "The y terms are +y and −y. They are already opposites, so nothing needs to be multiplied.",
+    "Adding the equations makes the y terms cancel. One equation is kept so you can find y later.",
+    "Divide by 2 to get x. Then put 9 in place of x in the equation you kept.",
+    "Ask what you take from 9 to leave 5. Then check the pair in both equations, not just one."
+  ],
+  "10-01-w2": [
+    "No letter cancels yet. The y terms have opposite signs, so aim to make them +6y and −6y.",
+    "6 is the smallest number that both 2 and 3 divide into. Every term is multiplied, including the right sides.",
+    "+6y and −6y cancel when you add. An original equation is kept for finding y.",
+    "Divide by 13 to get x. Then put 4 in place of x in the equation you kept.",
+    "Subtract 8 from both sides to get −3y = −6. Dividing by −3 gives a positive y."
+  ],
+  "10-01-w3": [
+    "Fractions make elimination harder, so clear them first.",
+    "Multiplying every term by 6 clears both fractions. The second equation is easy to rearrange, because x has 1 in front.",
+    "Since x equals y + 5, write y + 5 in place of x. Now the equation has only y in it.",
+    "Multiply out the bracket and collect the y terms.",
+    "Subtract 15 and divide by 5 to get y. Then x is 5 more than y."
+  ],
+  "10-01-w4": [
+    "There are two unknown prices, so use two letters. Each purchase gives one equation.",
+    "Multiplying by 2 and by 3 gives 6a in both equations. Matching terms can be removed by subtracting.",
+    "Subtract the first new equation from the second. 6a − 6a is zero, and 15c − 4c is 11c.",
+    "Divide by 11 to get c. Then put 7 in place of c in an original equation.",
+    "Subtract 14 and divide by 3 to get a. Give both answers in euro, since they are prices."
+  ],
+  "10-02-w1": [
+    "At the crossing point, both equations are true for the same x and y.",
+    "The second equation says y is 5. So put 5 in place of y in the first one.",
+    "Subtract 1 to find x. Write the answer as a point, x first and then y."
+  ],
+  "10-02-w2": [
+    "Both equations start with y =. At the crossing point their y values are the same.",
+    "If both expressions equal y, they equal each other. This leaves an equation with only x.",
+    "Add x to both sides and add 3 to both sides. That collects x on the left and numbers on the right.",
+    "Divide by 3 to get x. Then use either line to find y, and write the point."
+  ],
+  "10-02-w3": [
+    "To compare two lines, write both in the form y = mx + c.",
+    "Dividing every term of the second equation by 2 shows its slope is 3 as well.",
+    "Setting the two expressions equal removes x and leaves 2 = −2. That can never be true, so no x works.",
+    "Same slope and different y-intercepts means parallel lines. They never cross, so there are no common points."
+  ],
+  "10-02-w4": [
+    "Halving the second equation of A gives exactly the first equation. They are the same equation written twice.",
+    "Every point on that one line fits both equations, so there are infinitely many solutions.",
+    "Halving the second equation of B gives the same left side but a different number on the right.",
+    "x + 2y cannot be 6 and 7.5 at the same time. The lines are parallel, so there is no solution."
+  ],
+  "07-01-w1": [
+    "Ordering puts the middle value in the middle. Now you can see that 2 appears twice and that the third of the five values is 3."
+  ],
+  "07-01-w2": [
+    "The median depends on position, so the list must be in order before you look for the middle.",
+    "Six values have no single middle one. The median sits halfway between the third and fourth, so add them and halve."
+  ],
+  "07-01-w3": [
+    "Each frequency says how many places a value fills. The two 1s fill places 1 and 2, so the five 2s fill places 3 to 7.",
+    "Twelve values have their middle between places 6 and 7, and both hold a 2. The mode is also 2 because its frequency, 5, is the largest."
+  ],
+  "07-01-w4": [
+    "Five ordered values have the third one as the middle. That place holds x, so x must equal the median.",
+    "20 is bigger than every value in the list, so it joins at the end. Nothing else moves.",
+    "Six values have two in the middle, the third and fourth. The median is halfway between them."
+  ],
+  "07-02-w1": [
+    "Write the whole sum over the count first. The mean is the total shared equally among the four values.",
+    "The four values add to 32. Sharing 32 equally among four gives 8 each."
+  ],
+  "07-02-w2": [
+    "Mean × count gives the total that all five scores must reach. The missing score is what is left after the four known scores.",
+    "Add the known scores first, then subtract once. A score of 13 is close to the others, so it is believable."
+  ],
+  "07-02-w3": [
+    "You cannot just average 6 and 8, because the groups are different sizes. Go back to totals: students × mean for each group, shared among all 25.",
+    "The two totals are 60 and 120. The larger group has more say, so the answer is nearer 8 than 6."
+  ],
+  "07-02-w4": [
+    "A mean hides a total. Rebuild the total, take out the wrong 23, put in the correct 7, then share among the same eight values.",
+    "Removing a value changes two things. The total drops by 20 and the count drops to seven. Change both before dividing."
+  ],
+  "07-03-w1": [
+    "Every value goes into the mean, so the 20 is included and pulls the mean up to 7.",
+    "The median only needs the middle of the ordered list. The 20 could be 200 and the median would still be 4."
+  ],
+  "07-03-w2": [
+    "Most popular means bought most often, and that is exactly what the mode counts. A mean or median could give a size nobody makes."
+  ],
+  "07-03-w3": [
+    "Add all five salaries and share equally. The one very large salary is part of the total, so it lifts the mean.",
+    "The salaries are already in order, so the third is the middle. It does not matter how large the fifth one is.",
+    "Four of the five people earn less than the mean. That is the sign that the median describes a typical salary better here."
+  ],
+  "07-03-w4": [
+    "Call the class size n, so the old total is 60n. Take out the 40, put in the 80, and share the new total among n students to get 64.",
+    "Multiply both sides by n to clear the fraction. The −40 and +80 combine to +40.",
+    "Subtract 60n from both sides. The extra 40 marks give each student 4 more, so there are 10 students.",
+    "The median only looks at the middle scores. One score jumping from the low end to the high end need not change them."
+  ],
+  "07-04-w1": [
+    "Each score counts as many times as its frequency says. The top line is the total of all the scores. The bottom line is how many scores there are.",
+    "Six scores share a total of 11. It does not divide evenly, so round the answer and say it is approximate."
+  ],
+  "07-04-w2": [
+    "Value × frequency gives what each row adds to the total. Four 5s add 20, two 10s add 20 and four 15s add 60.",
+    "Divide by the ten values, not by the three rows. Keeping the full fraction shows the total on top and the count underneath."
+  ],
+  "07-04-w3": [
+    "The exact values are hidden inside the intervals. The midpoint is the fairest single value to stand in for each group.",
+    "From here it is an ordinary frequency table: midpoint × frequency on top, total frequency underneath.",
+    "The products add to 140 and there are 10 values. Call the answer an estimate, because the midpoints are stand-ins."
+  ],
+  "07-04-w4": [
+    "Build the mean exactly as usual, with k left as a letter. The top is the total of the values and the bottom is how many there are.",
+    "Tidy the numbers you can: 6 + 30 = 36 on top and 3 + 5 = 8 underneath.",
+    "Multiply both sides by 8 + k to clear the fraction. The 4.4 multiplies both the 8 and the k.",
+    "Collect the k terms on one side and the numbers on the other, then divide by 0.4. A frequency must be a whole number, and 2 is."
+  ],
+  "07-05-w1": [
+    "The range is the distance between the two ends of the data. Pick the largest and smallest by size, not by where they are written."
+  ],
+  "07-05-w2": [
+    "Range is largest minus smallest. For A the two ends are 6 and 4.",
+    "B has the same middle value, but its ends are much further apart.",
+    "The means are equal, so the mean cannot separate the sets. The smaller range shows that A’s values stay closer together."
+  ],
+  "07-05-w3": [
+    "A range of 10 means the largest score is 10 more than the smallest, so 0 and 10 is a simple choice. The other three scores must add to 20 and lie between the ends.",
+    "Check both conditions, not just one. The total gives the mean, and the ends give the range."
+  ],
+  "07-05-w4": [
+    "Mean 3 for four numbers fixes the total at 12. One number can be at most the whole total, 12, so a range of 15 cannot happen.",
+    "To make the range as large as possible, push three numbers down to 0 and give the whole total to the fourth."
+  ],
+  "13-01-w1": [
+    "The height of each bar is a count, so adding the three heights gives the number of observations.",
+    "The most frequent day is the one with the tallest bar. Compare the counts, not the order of the days."
+  ],
+  "13-01-w2": [
+    "A change is later minus earlier. The temperature went up, so the change is positive.",
+    "Keep the same order, later minus earlier. The answer is negative because the temperature fell."
+  ],
+  "13-01-w3": [
+    "A percentage needs the whole group underneath, so find the total number of students first.",
+    "Each count over 60 is that sport’s fraction of the group. Multiply by 100% to turn the fraction into a percentage.",
+    "Use the same method for the other two sports. The four percentages should add to 100%.",
+    "Sports are categories, so they go along the bottom and the counts go up the side. Equal steps on the count scale keep the bar heights fair."
+  ],
+  "13-01-w4": [
+    "A statement you can trust compares two plotted values. February’s point is 50 and January’s is 20.",
+    "Each point is a full month of sales, so adding the three points gives a real total. Nothing was measured between two points."
+  ],
+  "13-02-w1": [
+    "10 of the 30 students is one third of the class, so the sector takes one third of the full turn of 360°."
+  ],
+  "13-02-w2": [
+    "This time go from angle to count. 72° is one fifth of the circle, so the sector stands for one fifth of the 150 people."
+  ],
+  "13-02-w3": [
+    "A percentage of the budget is the same percentage of the circle. Write each percentage as a decimal and multiply by 360°.",
+    "Use the same method for the last two sectors. The four angles must add to 360°.",
+    "For money, the whole is €24,000 instead of 360°. The transport share is still 15%."
+  ],
+  "13-02-w4": [
+    "A pie chart shows shares, not counts. To compare people, turn each percentage into a number using its own total.",
+    "The second group is nearly twice as big, so its smaller share is still more students."
+  ],
+  "13-03-w1": [
+    "The area of the bar is the frequency. Area = width × height, so the height is the frequency divided by the width."
+  ],
+  "13-03-w2": [
+    "Find each width first: upper end minus lower end. The first interval is 10 wide.",
+    "The second interval is 20 wide, so its 20 values are spread over a wider bar. That is why it is lower than the first."
+  ],
+  "13-03-w3": [
+    "Going from height to frequency is the reverse step. Multiply the width, 15 minutes, by the density.",
+    "Going from frequency to height, divide by the width. This interval is 10 minutes wide."
+  ],
+  "13-03-w4": [
+    "Each height is frequency ÷ width. The first two intervals are 10 wide, so their frequencies are divided by 10. The last interval is 20 wide, so its frequency is divided by 20.",
+    "Drawn with height 20 and double width, the last bar would have twice the area it should have next to the other two bars. It would look like 40 values, not 20.",
+    "For the mean, each midpoint stands in for the values in its interval. The last midpoint is 30, halfway between 20 and 40.",
+    "The products add to 820 and there are 40 values. The answer is an estimate because the midpoints are stand-ins."
+  ],
+  "13-04-w1": [
+    "The key shows that the stem is the tens digit and the leaf is the units digit. Each leaf makes one value with its stem."
+  ],
+  "13-04-w2": [
+    "Group the values by their tens digit and write the units in order. 25 appears twice, so its leaf appears twice.",
+    "Without a key nobody can tell whether stem 2, leaf 1 means 21 or 2.1. Always write one."
+  ],
+  "13-04-w3": [
+    "The key says the leaf is the first decimal place. Rebuild every value before you calculate anything.",
+    "There are five leaves, so five values. Add them and divide by 5.",
+    "The plot is already in order. The third value is the median, and the first and last give the range."
+  ],
+  "13-04-w4": [
+    "Five ordered values have the third as the middle. Both groups happen to have 18 there.",
+    "The medians match, so look at the spread. Subtract the smallest from the largest in each group.",
+    "Say which measure you used and what it shows. Five values per group is too few to claim more than that."
+  ],
+  "13-05-w1": [
+    "Starting the axis at 90 hides the first 90 units of each bar. What is left is 10 and 20, so one bar looks double the other."
+  ],
+  "13-05-w2": [
+    "The eye judges the space a picture covers. Doubling the side gives 4 × 4 = 16 instead of 2 × 2 = 4, four times the area for twice the data."
+  ],
+  "13-05-w3": [
+    "A percentage increase compares the rise with the starting value. The rise is 50 and the start is 50.",
+    "This line compares the final value with the start. Rising to 200% of the start and rising by 100% describe the same change."
+  ],
+  "13-05-w4": [
+    "Counts alone are unfair when one town has many more trips. Dividing by the trips and scaling to 100,000 trips puts both towns on the same footing.",
+    "The second town has more accidents but three times as many trips, so its rate is lower."
+  ],
+  "05-01-w1": [
+    "Different students have different heights, so one answer is not enough. That need for many answers is what makes the question statistical."
+  ],
+  "05-01-w2": [
+    "The word brilliant tells people what to think. Asking them to compare the two menus leaves the judgement to them.",
+    "The choices must allow every honest answer, including worse and have not tried it. Otherwise people are pushed towards better."
+  ],
+  "05-01-w3": [
+    "Record two things for each student. The time is what you compare. The way of travelling splits the students into two groups.",
+    "A fair comparison changes only one thing. With the same week and the same start and end points, the times differ because of travel, not because of how they were measured."
+  ],
+  "05-01-w4": [
+    "Something else could cause both. A student with good study habits or more support might train more and also score higher.",
+    "A survey can only show that two things go together. A better question asks about that link and does not claim a cause."
+  ],
+  "05-02-w1": [
+    "Shoe sizes are numbers in fixed steps, such as 5, 5.5 and 6, so they are discrete. You can put them in order and count how many of each.",
+    "Eye colour is a word, not a number. You can count how many people have each colour, but you cannot add or average colours."
+  ],
+  "05-02-w2": [
+    "Go through the list once, one tally for each number. The four frequencies add to 10, so every value has been counted exactly once."
+  ],
+  "05-02-w3": [
+    "Exactly 10 minutes fitted two of the old bands. Including the lower end only gives every time exactly one band, and the last band catches long journeys."
+  ],
+  "05-02-w4": [
+    "Five people gave no answer, so nothing is known about how they travel. The 15 walkers are compared with the 75 who did answer.",
+    "If the five who left it blank mostly travel one way, the true figure could be a little different. An honest report says so."
+  ],
+  "05-03-w1": [
+    "The survey is about the whole school, but only one team was asked. Team members may be similar ages and travel at similar times, so other students are missed."
+  ],
+  "05-03-w2": [
+    "A number for each student means every name can be picked. Nobody is left out of the draw.",
+    "Letting chance choose stops you picking friends or keen volunteers. Different numbers mean no student is chosen twice."
+  ],
+  "05-03-w3": [
+    "Juniors are 120 of the 300 students, which is two fifths. They get two fifths of the 40 places.",
+    "Seniors get the other three fifths. The two parts must add back to 40.",
+    "The numbers are now fair, but the choice inside each group must be fair too. Pick from the full list by chance."
+  ],
+  "05-03-w4": [
+    "In the web poll people chose to answer, so keen students are over-counted. In the random sample, chance did the choosing.",
+    "72 of the 80 replied, which is 90%. The 8 who did not reply could still differ, so check before trusting the estimate."
+  ],
+  "12-02-w1": [
+    "Counting up in chunks avoids subtracting 35 minutes from 10 minutes. Each chunk starts or ends on a whole hour, so the three pieces are easy to add."
+  ],
+  "12-02-w2": [
+    "A finish time is the start time plus the duration. Write that down before you add anything.",
+    "Add the whole hours first, because they do not change the minutes. The 45 minutes then carries you past the next whole hour."
+  ],
+  "12-02-w3": [
+    "The clock resets at midnight, so split the journey there. Count the minutes up to midnight, then the minutes after it.",
+    "There are 60 minutes in an hour, so divide the minutes by 60. Keep the fraction: 35 minutes is not 0.35 of an hour."
+  ],
+  "12-02-w4": [
+    "Work on one clock first. The flight lasts the same length of time whatever the clocks at each end say.",
+    "The destination clock is 2 hours ahead, so move the reading on by 2 hours. The flight itself is not 2 hours longer."
+  ],
+  "04-01-w1": [
+    "The new price is the whole €80 plus 15% of it, which is 115%. One multiplication by 1.15 does both jobs."
+  ],
+  "04-01-w2": [
+    "A 20% discount leaves 80% of the original. So the original times 0.8 is the €72 you are given.",
+    "Dividing undoes multiplying. Adding 20% of €72 would be wrong, because the discount was 20% of the original."
+  ],
+  "04-01-w3": [
+    "Each change has its own multiplier, used in order. The fall is 10% of €220, so it takes off more than the rise added.",
+    "Percentage change compares the change with where you started. That is €200, so €200 goes on the bottom."
+  ],
+  "04-01-w4": [
+    "Write the story forwards first. The unknown original goes through both multipliers and comes out as €168.",
+    "To go back, divide by everything you multiplied by. The two multipliers together make 0.84.",
+    "A combined multiplier of 0.84 means 84% is left. That is a 16% decrease. Taking 25 from 12 would wrongly give 13%."
+  ],
+  "04-02-w1": [
+    "Profit is what the shop gains: what it sells for minus what it paid.",
+    "Markup compares the profit with the cost, so the €40 cost goes on the bottom."
+  ],
+  "04-02-w2": [
+    "Margin compares the profit with the selling price. So the €80 goes on the bottom, not the €60 cost."
+  ],
+  "04-02-w3": [
+    "A 25% margin means the profit is a quarter of the selling price S. Profit is also S minus the €90 cost. Set the two equal.",
+    "Take 0.25S from both sides and add 90 to both sides. The result says the cost is 75% of the selling price.",
+    "Dividing by 0.75 undoes the multiplying. Multiplying €90 by 1.25 would give a 25% markup, not a 25% margin."
+  ],
+  "04-02-w4": [
+    "Do the changes in order, one multiplier each: up 50%, then down 20%. Together they make 1.2 times the cost.",
+    "Profit is what is left after taking the cost from the final selling price.",
+    "Margin puts the final selling price on the bottom. That is €86.40, not the €72 cost."
+  ],
+  "04-03-w1": [
+    "Write the shape of the bill before using numbers. One part is fixed and one part depends on the units used.",
+    "Multiply before adding. Only the 120 units are charged at €0.30. The €15 is paid once."
+  ],
+  "04-03-w2": [
+    "The tax applies to both charges, so add them inside brackets first. Then one multiplier, 1.10, adds the 10%."
+  ],
+  "04-03-w3": [
+    "The 240 units are split at 100. Each slice has its own rate, and the fixed charge is added once.",
+    "Work out each part in euro before adding. The 140 comes from 240 − 100."
+  ],
+  "04-03-w4": [
+    "Break-even means both plans cost the same. Setting the two bills equal turns that sentence into an equation.",
+    "Take 0.25u and 12 from both sides. Plan A costs 10 cents more per unit, and that must cover Plan B's extra €18 fixed charge.",
+    "Above 180 units, the plan with the cheaper unit price should win. Put 250 into both bills to see.",
+    "The question asks which plan is cheaper and by how much. Subtract the smaller bill from the larger one."
+  ],
+  "04-04-w1": [
+    "Tax is 20% of the gross pay. Net pay is what is left after the tax is taken away, which is 80% of €600."
+  ],
+  "04-04-w2": [
+    "Each slice has its own rate. Only the €300 above €500 is taxed at 40%, not the whole €800.",
+    "Work out each slice in euro, then add the two amounts of tax."
+  ],
+  "04-04-w3": [
+    "The credit comes off the tax, so the brackets hold the tax actually paid. The 4% deduction is separate and uses the gross pay.",
+    "Both deductions are now in euro. Take them from the gross pay one after the other."
+  ],
+  "04-04-w4": [
+    "Gross pay G is unknown, so write every deduction using G. The brackets keep the credit attached to the tax.",
+    "Subtracting a bracket changes both signs inside it, so the credit ends up added. The G terms combine to 0.75G.",
+    "Take 30 from both sides to leave the G term on its own.",
+    "Divide both sides by 0.75. Then check the tax, 160 − 30, is above zero, as the question promised."
+  ],
+  "04-05-w1": [
+    "The rate says each €1 becomes £0.85. You are going the same way as the rate, so multiply."
+  ],
+  "04-05-w2": [
+    "The rate goes from euro to dollars, but you are going back from dollars to euro. So divide by the rate."
+  ],
+  "04-05-w3": [
+    "Convert first, because the fee is a percentage of the pounds. Keeping 98% is the same as losing 2%.",
+    "€500 becomes £420. The fee takes 2% of that, so 98% is paid out."
+  ],
+  "04-05-w4": [
+    "At Desk A the fee is in euro and comes first. Subtract it before converting.",
+    "Desk B has no fee, so all €300 is converted, but at the lower rate.",
+    "Both amounts are now in pounds, so they can be compared. Subtract to find how much more Desk A gives."
+  ],
+  "04-06-w1": [
+    "After one year you have the whole €500 plus 4% of it. That is 104%, so multiply by 1.04."
+  ],
+  "04-06-w2": [
+    "Interest is added three times, each time to the new balance. That is why 1.05 is used three times, as a power.",
+    "Money is paid in whole cents. Keep the exact value while working and round only at the end."
+  ],
+  "04-06-w3": [
+    "The rate changes, so each year has its own multiplier. Use them in order on the growing balance.",
+    "The balance includes the €2000 you started with. Interest is only the extra."
+  ],
+  "04-06-w4": [
+    "Follow the time order: grow, withdraw, then grow again. In year 2 you keep only 80% of the 5% interest.",
+    "The first bracket is the €840 left after the withdrawal. Keeping 80% of 5% is 4%, so the year 2 multiplier is 1.04."
+  ],
+  "04-07-w1": [
+    "Losing 20% means keeping 80%. Multiplying by 0.80 gives the new value in one move."
+  ],
+  "04-07-w2": [
+    "The car keeps 85% of its value each year. Two years means using 0.85 twice, so it is squared."
+  ],
+  "04-07-w3": [
+    "Write the forward story first. The unknown original was multiplied by 1.10 twice to reach €1,210.",
+    "Divide by the whole two-year multiplier. Dividing by 1.10 only once would take you back just one year."
+  ],
+  "04-07-w4": [
+    "The same multiplier x was used twice, so x² links €8000 to €5120. It is below 1 because the value fell.",
+    "The square root undoes the squaring. A multiplier of 0.8 means 80% is kept, so 20% is lost each year.",
+    "A third year means a third multiplication by 0.8, starting from the original €8000."
+  ],
+  "21-01-w1": [
+    "Thirds and sixths are different-sized pieces. You need one size before you can add.",
+    "One third is the same as two sixths. Multiply the top and bottom of x/3 by 2 so that both fractions are sixths.",
+    "The pieces are now the same size, so add the tops. The 6 underneath stays.",
+    "2x and x are like terms, so they combine. Remember that x on its own means 1x.",
+    "3 divides into both 3 and 6. Dividing top and bottom by 3 gives the simplest form."
+  ],
+  "21-01-w2": [
+    "The bottoms are 4 and 2. Halves can be turned into quarters, so 4 is the common denominator.",
+    "The first fraction is already in quarters. The second needs its top and bottom doubled. The bracket makes the 2 multiply both x and −3.",
+    "Multiply out the bracket: 2 times x and 2 times −3. Now every term on top is visible.",
+    "Collect like terms: the x terms together and the plain numbers together. The 4 underneath does not change."
+  ],
+  "21-01-w3": [
+    "5 and 3 share no factor, so the smallest number that both divide into is 15.",
+    "Each top is multiplied by what its bottom needed to reach 15: 3 for the first, 5 for the second. The brackets keep each top whole.",
+    "The minus sign in front of the 5 applies to both terms in its bracket. That is why you get −5x and −20, not +20.",
+    "Collect the x terms, then the numbers. Take care with −6 − 20: both are negative, so the total is −26."
+  ],
+  "21-01-w4": [
+    "There are three fractions, with bottoms 2, 3 and 6. All three divide into 6, so sixths work for every one.",
+    "Each top is multiplied by what its bottom needed to reach 6. The last fraction is already in sixths, but its top still goes in a bracket after the minus.",
+    "Multiply out one bracket at a time. The minus before the last bracket changes both signs inside it: −x and −5.",
+    "Collect the x terms: 3x + 4x − x. Then collect the numbers: −3 + 6 − 5. Keep the 6 underneath.",
+    "Divide each term on top by 6. Six x over 6 is x, and 2 over 6 simplifies to one third.",
+    "The expression is zero when x and the one third cancel each other out. So x must equal one third."
+  ],
+  "21-02-w1": [
+    "Look at the bottom before anything else. 12x is zero when x is 0, so that value is banned.",
+    "Find the biggest thing that divides into both the top and the bottom. Here it is 4x, so write each as 4x times something.",
+    "4x over 4x is 1, so it cancels. The rule x ≠ 0 stays, because the question had x on the bottom."
+  ],
+  "21-02-w2": [
+    "The bottom x − 4 is zero when x is 4. Ban that value first.",
+    "16 is 4 squared, so the top is a difference of two squares. It splits into two brackets, one with −4 and one with +4.",
+    "The bracket x − 4 multiplies the whole top and is the whole bottom, so it cancels. Keep x ≠ 4, because the original has no value there."
+  ],
+  "21-02-w3": [
+    "Solve 2x + 1 = 0 to find the banned value. That gives x equal to minus one half.",
+    "The bottom is a hint: try 2x + 1 as one of the brackets. The other bracket must then be x + 3, since 1 times 3 gives the last number.",
+    "The same bracket is on top and underneath, so it divides out to 1. The banned value stays beside the answer."
+  ],
+  "21-02-w4": [
+    "The top is a sum, x plus 6. The x is not multiplying the whole top, so it cannot be cancelled.",
+    "What you can do is share the bottom between both terms. Each term on top is divided by x.",
+    "x over x is 1. The 6 over x cannot be simplified, so it stays.",
+    "One number is enough to show that a rule is wrong. With x equal to 2 the fraction is 4, so the answer 6 cannot be right."
+  ],
+  "21-08-w1": [
+    "Two brackets side by side mean multiply. No letter is on a bottom, so no value of x is banned.",
+    "Multiply top by top and bottom by bottom. You do not need a common denominator when you multiply.",
+    "3 divides into both 6 and 15. Divide top and bottom by 3 for the simplest form."
+  ],
+  "21-08-w2": [
+    "The bottom x + 2 is zero when x is −2, so ban that value. The 9 can never be zero.",
+    "Write one fraction with all the top factors above and all the bottom factors below. Now the matching bracket is easy to see.",
+    "The bracket x + 2 cancels, and 3 over 9 is one third. The banned value stays, even though the bracket has gone."
+  ],
+  "21-08-w3": [
+    "There are two bottoms, so there are two banned values. x + 1 is zero at −1 and x − 3 is zero at 3.",
+    "x² − 9 is a difference of two squares, so it becomes two brackets. Everything is now multiplied, which is what cancelling needs.",
+    "Two brackets appear on top and underneath, so both cancel. Only x + 3 is left, with both banned values kept."
+  ],
+  "21-08-w4": [
+    "x² − 4 is zero at 2 and at −2, and 2x + 1 is zero at minus one half. That gives three banned values.",
+    "Factorise every part that can be factorised. The quadratic on top becomes two brackets, and x² − 4 is a difference of two squares.",
+    "Every bracket on top has a partner underneath, so everything cancels to 1. The answer is 1, not 0, and the banned values still apply."
+  ],
+  "21-09-w1": [
+    "This is a division by a fraction. The fraction you divide by, 3 over 2, is the one that will be turned over.",
+    "Dividing by 3 over 2 is the same as multiplying by 2 over 3. The first fraction does not change.",
+    "Now it is an ordinary multiplication: top by top and bottom by bottom.",
+    "2 divides into both 2 and 12. Divide top and bottom by 2 to finish."
+  ],
+  "21-09-w2": [
+    "The fraction you divide by is 3x over 10. It is zero when x is 0, and you cannot divide by zero, so ban x equal to 0.",
+    "Turn only the second fraction upside down and change the sign to times. The 3x moves to the bottom.",
+    "Multiply top by top and bottom by bottom. Keep the x on both so that you can see it cancel.",
+    "x over x is 1, and 60 divided by 15 is 4. The answer has no x, but x equal to 0 is still not allowed."
+  ],
+  "21-09-w3": [
+    "Two values are banned. The bottom x + 1 is zero at −1. The fraction you divide by is zero at 3, because its top is x − 3.",
+    "Keep the first fraction. Turn the second upside down, so x − 3 goes to the bottom and 2 goes to the top.",
+    "Factorise x² − 9 into two brackets and write everything as one fraction. Now you can look for matching factors.",
+    "Only x − 3 appears on both top and bottom, so only it cancels. x + 3 and x + 1 are different brackets, and both stay."
+  ],
+  "21-09-w4": [
+    "Check three places for zero. The bottoms x − 1 and x² − 1 ban 1 and −1. The top x + 2 bans −2, because you divide by that fraction.",
+    "Turn the second fraction upside down and multiply. Its bottom, x² − 1, moves up to the top.",
+    "Both x² − 4 and x² − 1 are differences of two squares. Each one splits into a minus bracket and a plus bracket.",
+    "x − 1 and x + 2 each appear on top and underneath, so they cancel. The two brackets left are multiplied, and all three banned values stay."
+  ],
+  "21-10-w1": [
+    "Both bottoms are x, so x cannot be 0. The pieces are already the same size.",
+    "With the same bottom, you add only the tops. The bottom stays as x. It does not become 2x.",
+    "Two of something plus three of the same thing makes five of them. The rule x ≠ 0 stays."
+  ],
+  "21-10-w2": [
+    "The bottoms are x and x + 1. Each one must not be zero, so x cannot be 0 or −1.",
+    "The bottoms share no factor, so the common denominator is their product. Each top is multiplied by the factor its own bottom was missing.",
+    "Add the like terms on top: x and x make 2x. Leave the bottom in brackets, because nothing on top cancels with it."
+  ],
+  "21-10-w3": [
+    "x − 2 is zero at 2 and x + 2 is zero at −2. Ban both before you start.",
+    "The common denominator is the two bottoms multiplied. Each top gets the other fraction's bottom, in brackets, with the minus sign kept between them.",
+    "Take care with the second bracket: −2 times −2 is +4. On the bottom, the two brackets multiply to a difference of two squares.",
+    "Collect like terms: 3x − 2x is x, and 6 + 4 is 10. The top does not factorise, so nothing cancels."
+  ],
+  "21-10-w4": [
+    "x² − 1 factorises into x − 1 times x + 1. So the banned values are 1 and −1.",
+    "The second bottom already contains x − 1. Only the first fraction needs changing: multiply its top and bottom by x + 1.",
+    "Multiply out and collect: 2x + 2 − x − 3. The minus sign changes both signs in the second top.",
+    "The whole top is now x − 1, which is also a factor underneath. A whole top can cancel, and it leaves 1 on top, not 0.",
+    "A fraction is zero only when its top is zero. The top here is 1, which is never zero, so the expression is never zero."
+  ],
+  "21-03-w1": [
+    "Here x has been divided by 3, then 2 was added. You undo these in reverse order.",
+    "Take 2 from both sides first. That leaves the fraction on its own.",
+    "x divided by 3 is 5, so multiply both sides by 3 to undo the division."
+  ],
+  "21-03-w2": [
+    "The bottoms are 3 and 5. Both divide into 15, so multiplying both sides by 15 will clear the fractions.",
+    "On the left, 15 divided by 3 leaves 5. On the right, 15 divided by 5 leaves 3. Brackets keep each top whole.",
+    "Multiply out both brackets. Each number outside multiplies both terms inside.",
+    "Take 3x from both sides and add 10 to both sides. The x terms are now on one side and the numbers on the other.",
+    "2x means 2 times x, so divide both sides by 2."
+  ],
+  "21-03-w3": [
+    "The bottoms are 4 and 3. The smallest number that both divide into is 12.",
+    "Multiply every term by 12, including the 1 on the right. 12 over 4 leaves 3, and 12 over 3 leaves 4.",
+    "The minus sign belongs to the whole second bracket. So −4 times +2 gives −8.",
+    "Collect like terms on the left: 6x − 4x, and −3 − 8.",
+    "Add 11 to both sides to leave the x term on its own.",
+    "Divide both sides by 2. The answer is a fraction, and that is fine. Leave it as 23 over 2."
+  ],
+  "21-03-w4": [
+    "Here x is on the bottom. x − 1 is zero at 1 and x + 2 is zero at −2, so neither value can be an answer.",
+    "Multiply both sides by both bottoms. Each bottom cancels on its own side, and the other bottom multiplies the top.",
+    "Multiply out both brackets so that the x terms and the numbers can be collected.",
+    "Take 2x from both sides and add 3 to both sides. Then compare 7 with the banned values. It is neither 1 nor −2, so it is allowed."
+  ],
+  "21-04-w1": [
+    "Give the unknown number a name, x. One-third of it is x over 3, and plus 5 means add 5.",
+    "Take 5 from both sides. This tells you what one-third of the number is.",
+    "If one-third is 12, the whole number is three times as big. Multiply both sides by 3."
+  ],
+  "21-04-w2": [
+    "The €45 is what is left, not what was spent. Spending one-quarter leaves three-quarters, so three-quarters of x is 45.",
+    "To undo multiplying by 3 over 4, multiply by 4 over 3. Or think: three quarters are 45, so one quarter is 15.",
+    "Four quarters of 15 make 60. Give the answer in euro, because the question is about money."
+  ],
+  "21-04-w3": [
+    "Name one unknown, the bottom number d. The top is 3 less, so it is d − 3. The fraction is top over bottom.",
+    "Multiply both sides by 4 and by d to clear both bottoms. The bracket keeps d − 3 together.",
+    "Multiply out the bracket: 4 times d and 4 times −3.",
+    "Take 3d from both sides and add 12 to both sides. That leaves d on its own.",
+    "The question asks for both numbers. Go back to the top, d − 3, and work it out."
+  ],
+  "21-04-w4": [
+    "After spending one-third, two-thirds are left. After spending a quarter of that, three-quarters of it are left. So multiply the two fractions that are kept.",
+    "Two-thirds times three-quarters is six-twelfths, which is one half. Half of the starting money is €30.",
+    "If half is 30, the whole is double that. Multiply both sides by 2.",
+    "Now replay the story. The first spend is one-third of the full €60.",
+    "The second spend is a quarter of what remains, €40, not a quarter of €60. The final €30 matches the story."
+  ],
+  "21-05-w1": [
+    "Here x was multiplied by 2, then 7 was taken away. You undo these in reverse order.",
+    "Add 7 to both sides to undo the minus 7. The 2x is now on its own.",
+    "Divide both sides by 2. The bracket shows that all of y + 7 is halved, not just the 7."
+  ],
+  "21-05-w2": [
+    "The letter h is inside a sum that has been divided by 2. The division was done last, so undo it first.",
+    "Multiply both sides by 2 to clear the fraction. Now h is only added to b.",
+    "Take b from both sides. Now h is on its own, and you can write it on the left."
+  ],
+  "21-05-w3": [
+    "The radius r is squared, then multiplied by π and by h. Lengths and volumes are positive here, which will matter at the square root.",
+    "Divide both sides by π and by h together. That leaves r squared on its own.",
+    "The opposite of squaring is taking the square root. A radius is a length, so you keep only the positive root."
+  ],
+  "21-05-w4": [
+    "Here x was multiplied by 3, then 2 was subtracted, then everything was divided by 5. Undo the last step first.",
+    "Multiply both sides by 5 to remove the fraction.",
+    "Add 2 to both sides so that the x term is alone.",
+    "Divide both sides by 3. The bracket keeps all of 5y + 2 on top.",
+    "Put the value in brackets so that the minus sign is not lost. Work out the top first, in quarters, then divide by 3."
+  ],
+  "21-06-w1": [
+    "The letter x appears in two terms. You cannot get it alone until it appears only once.",
+    "Both terms contain x, so take x outside a bracket. Multiplying the bracket back out gives the line above.",
+    "Here x is multiplied by the whole bracket, so divide both sides by the whole bracket. This is allowed because a + b is not zero."
+  ],
+  "21-06-w2": [
+    "The letter x is in both terms on the right. Treat k as an ordinary number that you do not know.",
+    "Take x out as a common factor. Keep the minus sign inside the bracket.",
+    "Divide both sides by the bracket. If k were 4 the bracket would be zero, which is why that value is ruled out."
+  ],
+  "21-06-w3": [
+    "The letter x is on the top and on the bottom. The bottom is zero when x is 3, so that value is banned.",
+    "Multiply both sides by the whole bottom, x − 3, to clear the fraction. Keep it in a bracket.",
+    "Multiply out, then move every term with x to the left and everything else to the right. The −3y becomes +3y when you add 3y to both sides.",
+    "Both terms on the left contain x, so take x out as a common factor. Remember that x on its own is 1 times x, so the bracket is y − 1.",
+    "Divide both sides by the bracket y − 1. That bracket must not be zero, so y cannot be 1."
+  ],
+  "21-06-w4": [
+    "This follows the same plan as a question with numbers. The letter x is on the top and on the bottom, and the bottom must not be zero.",
+    "Multiply both sides by the whole bottom to clear the fraction. Keep the bottom in a bracket.",
+    "Multiply out, then gather the two terms with x on the left. The term dy has no x, so it moves to the right.",
+    "Both terms on the left contain x. Take x out as a common factor so that it appears only once.",
+    "Divide both sides by the bracket. You can only do this when the bracket is not zero, so that case is set aside and checked on its own."
+  ],
+  "21-07-w1": [
+    "A rectangle has two lengths and two widths. Walking all the way round, you count each one twice.",
+    "Replace each letter with its number and do the bracket first. A perimeter is a length, so the units are centimetres."
+  ],
+  "21-07-w2": [
+    "The €15 is paid once, whatever the time. The €6 is paid again for every hour, so it is multiplied by h.",
+    "Put 2.5 in place of h and multiply before you add. Two and a half hours at €6 an hour is €15."
+  ],
+  "21-07-w3": [
+    "Start from what you know. Two lengths and two widths add up to the perimeter of 30.",
+    "Halve everything: one length plus one width is 15. So the length is whatever is left of 15 after the width.",
+    "Area is width times length. Use the length you just found, in a bracket, then multiply out.",
+    "A side of a rectangle cannot be zero or negative. That limits x to more than 0 and less than 15."
+  ],
+  "21-07-w4": [
+    "Start with the whole garden, 12 by 9. Then take away the piece that was removed, which is x wide and 4 deep.",
+    "Walk round the edge and add each side in turn. The two new inside edges, x and 4, replace exactly what was cut off, so the x terms cancel.",
+    "Put 3 in place of x in the area formula. The boundary has no x in it, so it stays at 42 metres."
+  ],
+  "14-01-w1": [
+    "Write the question down unchanged first. Both powers have the same letter, a, and they are multiplied.",
+    "Two copies of a followed by five more copies are all multiplied together. Counting copies is adding, so the indices add.",
+    "There are seven copies of a in total. The letter stays a. Only the count of copies changes."
+  ],
+  "14-01-w2": [
+    "The square belongs to everything inside the bracket. The 2 becomes 2 × 2 = 4, and x³ twice over makes six copies of x.",
+    "Write the division as a fraction so you can see what cancels. The condition x ≠ 0 is there because you may never divide by zero.",
+    "Two of the six copies of x cancel with the two underneath, leaving four. The 4 in front has nothing to cancel with, so it stays."
+  ],
+  "14-01-w3": [
+    "Note the restrictions first. The bottom of the fraction contains a and b, so neither can be zero.",
+    "Treat it as three small divisions: the numbers, the a powers and the b powers. Dividing powers of the same letter subtracts the indices.",
+    "The b index came out as −2. A negative index means one over, so b² goes underneath. There were more copies of b on the bottom to begin with."
+  ],
+  "14-01-w4": [
+    "One number is enough to show a rule is false. With x = 2 the two sides give 12 and 32, so they cannot be equal.",
+    "Adding does not combine the powers. What you can do is take out the common factor x², which sits inside both terms."
+  ],
+  "14-02-w1": [
+    "Read the index before doing anything. The bottom number 2 tells you this is a square root.",
+    "Writing it with the root sign turns the question into one you already know how to answer.",
+    "5 × 5 = 25. The half power means the positive root only, so the answer is 5 and not −5."
+  ],
+  "14-02-w2": [
+    "Read the index in two parts. The bottom 3 means cube root and the top 2 means square.",
+    "Take the root first. It makes the number smaller, so the squaring afterwards is easy.",
+    "3 × 3 × 3 = 27, so the cube root of 27 is 3. Only the squaring is left.",
+    "Both parts of the index have now been used, first the root and then the power."
+  ],
+  "14-02-w3": [
+    "Three things are packed into this index: a minus sign, a top number 3 and a bottom number 4. Take them one at a time.",
+    "Deal with the minus sign first. It means one over the same power, now with a positive index.",
+    "The bottom number 4 means fourth root, and the top number 3 means cube. Taking the root first keeps the numbers small.",
+    "2 × 2 × 2 × 2 = 16, so the fourth root of 16 is 2.",
+    "2 cubed is 8, and it stays underneath. The answer is a small positive fraction, not a negative number."
+  ],
+  "14-02-w4": [
+    "The condition x ≥ 0 matters because the index 3/2 contains a square root. You cannot take the square root of a negative number.",
+    "Rewrite the index 3/2 as square root, then cube. Now you can undo one operation at a time.",
+    "Undo the cube first. The number whose cube is 27 is 3, so the square root of x is 3.",
+    "Undo the square root by squaring both sides.",
+    "A negative number has no real square root. So −9 cannot go into the left side at all, and 9 is the only solution."
+  ],
+  "14-03-w1": [
+    "The unknown is in the index, so ordinary dividing will not free it. Plan to write 32 as a power of 2.",
+    "Doubling from 2 gives 2, 4, 8, 16, 32. That is five steps, so both sides now have the same base.",
+    "Two powers of 2 are equal only when their indices are equal. So x must be 5."
+  ],
+  "14-03-w2": [
+    "The left side is a power of 3, so try to write 81 as a power of 3 as well.",
+    "3 × 3 × 3 × 3 = 81. Now both sides are 3 to some power.",
+    "The bases match, so the indices must match. This leaves a simple equation with no powers in it.",
+    "Subtract 1 from both sides to leave x on its own."
+  ],
+  "14-03-w3": [
+    "The bases are different, 4 and 2. You cannot compare the indices until the bases are the same.",
+    "4 is 2², so 4 to the power x is 2 to the power 2x. A power of a power multiplies the indices.",
+    "The same base is on both sides, so set the indices equal. The powers have gone and an ordinary equation is left.",
+    "Subtract x from both sides. Two x take away one x leaves one x."
+  ],
+  "14-03-w4": [
+    "Neither 9 nor 27 is a power of the other, but both are powers of 3. That is the base to use.",
+    "9 is 3² and 27 is 3³. Multiply the whole of each index by 2 or by 3. Both terms inside each bracket get multiplied, not just the first.",
+    "The bases match, so the indices are equal. Now it is a linear equation with x on both sides.",
+    "Add 3x to both sides and add 2 to both sides. This gathers the x terms on the left and the numbers on the right.",
+    "Divide both sides by 5. A fraction is a fine answer here, because x is an index and not a count of objects."
+  ],
+  "14-04-w1": [
+    "72 is not a square number, so look for a square number hidden inside it as a factor.",
+    "36 is the largest square number that divides 72. Using the largest one finishes the job in a single move.",
+    "The root of 36 is exactly 6, so it comes out in front. The 2 has no square factor, so it stays under the root."
+  ],
+  "14-04-w2": [
+    "√8 and √18 look different, so you cannot subtract yet. Simplify each one first.",
+    "8 is 4 × 2 and 18 is 9 × 2. Taking out the square numbers 4 and 9 shows that both are lots of √2.",
+    "Multiply the 3 by the 2 in the first term. Now both terms are a number of √2, like 6x and 3x.",
+    "The root parts match, so subtract the numbers in front. Six lots take away three lots leaves three lots."
+  ],
+  "14-04-w3": [
+    "The brackets match except for the sign in the middle. That pattern gives first squared minus second squared, and the root disappears because √5 × √5 = 5.",
+    "Multiply the top and bottom by √5. That is multiplying by 1, so the value is unchanged, and the bottom becomes the whole number 5."
+  ],
+  "14-04-w4": [
+    "Three different roots cannot be combined as they stand. Check whether each one hides a square factor.",
+    "50 is 25 × 2, 8 is 4 × 2 and 18 is 9 × 2. Each root becomes a number of √2.",
+    "All three are lots of √2, so work with the numbers in front: 5 + 2 − 3 = 4.",
+    "To compare without a calculator, square everything. For positive numbers the larger number has the larger square, and 32 sits between 25 and 36."
+  ],
+  "14-05-w1": [
+    "The front number must be at least 1 and below 10, so the point goes after the 4. It moved five places, and 10⁵ puts those five places back."
+  ],
+  "14-05-w2": [
+    "The front number is 7.2. The point moved five places to make a tiny number bigger, so the power of ten is negative to make it small again."
+  ],
+  "14-05-w3": [
+    "Everything here is multiplied, so you are free to change the order and group the parts as you like.",
+    "Pair the front numbers and pair the powers of ten. Multiplying powers of ten adds the indices, and adding −3 is the same as subtracting 3.",
+    "The value is right, but 12 is not below 10. So this is not yet standard form.",
+    "Make the front number ten times smaller and the power of ten ten times bigger. The two changes cancel, so the value stays the same."
+  ],
+  "14-05-w4": [
+    "Time is distance divided by speed. Keep both numbers in standard form so the front numbers and the powers of ten can be handled separately.",
+    "Divide the front numbers and subtract the indices: 11 − 8 = 3. Then 10³ is 1000, which gives an ordinary number of seconds.",
+    "There are 60 seconds in a minute, so divide the seconds by 60. A number of minutes is easier to picture."
+  ],
+  "14-06-w1": [
+    "Two decimal places means stopping at the 8. The next digit, 6, is 5 or more, so the number is past halfway and the 8 goes up to 9."
+  ],
+  "14-06-w2": [
+    "The zeros at the front only place the decimal point. Counting starts at the 4, and the fourth digit counted, 6, decides that the 8 rounds up."
+  ],
+  "14-06-w3": [
+    "Rounding to the nearest tenth collects every length within half a tenth of 8.4. Half of 0.1 is 0.05, so step that far down and up."
+  ],
+  "14-06-w4": [
+    "The smallest area comes from the shortest possible length and the shortest possible width together.",
+    "The largest area uses both upper limits. The sides never quite reach 12.5 and 8.5, so the area stays just below this value."
+  ],
+  "14-07-w1": [
+    "Before working left to right, look for multiplying or dividing. Those are done before adding and subtracting.",
+    "3 × 4 is done first and replaced by 12. The 18 waits its turn.",
+    "Only the subtraction is left. Working left to right would give 15 × 4 = 60, which breaks the order of operations."
+  ],
+  "14-07-w2": [
+    "The fraction line groups the whole top and the whole bottom. On a calculator each group needs its own brackets.",
+    "Work out the top bracket first. The bottom is left untouched for now, so each line stays equal to the one before.",
+    "Now work out the bottom bracket. The fraction has become one number over another.",
+    "The division is the last thing done. 12 shared into groups of 6 makes 2 groups."
+  ],
+  "14-07-w3": [
+    "Here the root sign covers the whole sum, so add 36 and 64 before taking the root.",
+    "Here each root covers one square only. A root undoes its square, giving 6 and 8, and adding them gives a different answer from the first."
+  ],
+  "14-07-w4": [
+    "Swap each number for an easy one nearby. Dividing by 0.1 is the same as multiplying by 10, so the estimate is quick.",
+    "Now use the real numbers and keep all the digits the calculator shows. Rounding comes at the very end.",
+    "Three significant figures keeps 1, 0 and 1. The next digit is 6, so round up. The result is close to the estimate, which is a good sign."
+  ],
+  "18-01-w1": [
+    "Count along the list from position 1. The term is the number you land on. The position is how far you counted."
+  ],
+  "18-01-w2": [
+    "Position 1 goes in place of n. Multiply by 4 before subtracting 1.",
+    "The same rule works for any position. You go straight to the fifth term without listing the ones in between."
+  ],
+  "18-01-w3": [
+    "Here the position, 4, is known. It goes in for n and the term comes out.",
+    "Now the term, 20, is known and the position is not. So the rule becomes an equation with n as the unknown.",
+    "Undo the rule in reverse order. Subtract 2 from both sides, then divide both sides by 3."
+  ],
+  "18-01-w4": [
+    "The new position k is always 1 more than the old position n. So n is k − 1, and that goes into the old rule.",
+    "Multiply out the bracket: 2 times k and 2 times −1. Then −2 + 5 = 3.",
+    "The tenth term in the new labelling uses k = 10. It is the same number as the old term with n = 9."
+  ],
+  "18-02-w1": [
+    "The cycle has three items, so split 8 into full cycles of 3. Two cycles use 6 items and 2 are left.",
+    "Full cycles bring you back to the start. Only the 2 left over matter, and the second item of A, B, C is B."
+  ],
+  "18-02-w2": [
+    "100 divides by 4 with nothing left over. Remainder 0 means you stop right at the end of a cycle, on the last colour."
+  ],
+  "18-02-w3": [
+    "The cycle has five digits. 200 items make 40 full cycles, and 2 more items land on the second digit.",
+    "205 is an exact number of cycles. With nothing left over you are on the last digit of the cycle, not the first."
+  ],
+  "18-02-w4": [
+    "Split 103 into full cycles of 4 and a leftover part. The 3 leftover items are the start of a new cycle: R, R, B.",
+    "Every full cycle holds two R items, and the leftover part holds two more.",
+    "The last item is the third one in the leftover part. Counting R, R, B, that is B."
+  ],
+  "18-03-w1": [
+    "The jump between terms is 5 every time, so the same jump carries the pattern on. Add 5 twice."
+  ],
+  "18-03-w2": [
+    "A linear sequence must have the same jump every time. These jumps change, so this one test is enough to say no."
+  ],
+  "18-03-w3": [
+    "The sixth term is five jumps after the first, not six. Each jump is −3, so the sequence is going down.",
+    "Five jumps of −3 make −15. Adding a negative number is the same as subtracting.",
+    "12 take away 15 goes below zero. Terms of a sequence can be negative."
+  ],
+  "18-03-w4": [
+    "From position 3 to position 8 is five jumps. The terms rise by 20 over those jumps, so each jump is 20 shared among 5.",
+    "Position 1 is two jumps before position 3. Go back two jumps of 4 from 11.",
+    "Position 20 is 19 jumps after position 1. Start at 3 and add 19 jumps of 4."
+  ],
+  "18-04-w1": [
+    "Start at the first term, 7. Position n is n − 1 jumps further on, and each jump is 3.",
+    "Multiply out the bracket. The 3 multiplies both n and −1.",
+    "Collect the plain numbers: 7 − 3 = 4. The number in front of n is the jump, 3."
+  ],
+  "18-04-w2": [
+    "You know the term and want its position, so set the rule equal to 73. Now n is the unknown.",
+    "Add 2 to both sides to undo the −2. The n term is now alone on the left.",
+    "Divide both sides by 5. A whole number means 73 really is in the sequence."
+  ],
+  "18-04-w3": [
+    "If 100 is a term, some position n must give it. Set the rule equal to 100 and see what n has to be.",
+    "Subtract 1 from both sides to leave the n term alone.",
+    "Divide both sides by 6. The answer is not a whole number.",
+    "Positions are 1, 2, 3 and so on. There is no position 16.5, so the sequence skips over 100."
+  ],
+  "18-04-w4": [
+    "The terms match when both rules give the same number for the same n. Set the two rules equal.",
+    "Subtract 4n from both sides and add 12 to both sides. Then put n = 5 back into a rule to get the shared term.",
+    "Exceeds means is greater than, so write an inequality with B on the bigger side.",
+    "Solve it like an equation. n must be more than 5, and the first whole number after 5 is 6."
+  ],
+  "18-05-w1": [
+    "The first square needs all four sides. Each square after that shares one side with its neighbour, so it adds only three sticks."
+  ],
+  "18-05-w2": [
+    "Four sticks make the first square. The other n − 1 squares each add 3 sticks.",
+    "Multiply out the bracket. The 3 multiplies both n and −1.",
+    "Collect the plain numbers: 4 − 3 = 1. The rule says 3 sticks for every square, plus 1 stick to close the end.",
+    "Put 20 in for n. The rule saves you drawing and counting twenty squares."
+  ],
+  "18-05-w3": [
+    "You know the number of sticks and want the number of squares. Set the rule equal to 100 and solve for n.",
+    "Try the same with 99. This time n is not a whole number, and you cannot build part of a square.",
+    "A row is only possible when n is a whole number. That happens for 100 sticks and not for 99."
+  ],
+  "18-05-w4": [
+    "Horizontal sticks lie on n + 1 lines with n sticks on each. The vertical sticks are counted the same way, so double it.",
+    "Test whole numbers near the limit. 8 fits inside 150 and 9 goes over, so 8 is the largest."
+  ],
+  "18-06-w1": [
+    "Subtract each term from the one after it. These jumps are not equal, so the sequence is not linear.",
+    "Now find the jumps between the jumps. They are equal, which is the sign of a quadratic sequence."
+  ],
+  "18-06-w2": [
+    "Put n = 1 and then n = 2 into the rule. Each known term gives one equation in b and c.",
+    "Move the plain numbers to the right: 3 − 1 = 2 and 8 − 4 = 4. Now you have two simpler simultaneous equations.",
+    "Both equations have a single c. Subtracting one from the other removes c and leaves b on its own.",
+    "Put b = 2 back into b + c = 2 to find c. With c = 0 the rule has no plain number at the end."
+  ],
+  "18-06-w3": [
+    "Find the jumps, then the jumps between them. Half of the second difference is the number in front of n².",
+    "With a = 2 known, put n = 1 and n = 2 into 2n² + bn + c. Each known term gives one equation.",
+    "Move the plain numbers to the right: 5 − 2 = 3 and 12 − 8 = 4.",
+    "Subtract the first equation from the second to get b = 1. Then b + c = 3 gives c = 2.",
+    "Put 10 in for n. Square first, then multiply by 2, then add the rest."
+  ],
+  "18-06-w4": [
+    "Choose a = 1, then find b and c that give 3 and 7. Check both positions in the rule.",
+    "Choose a different a, here 2, and fit b and c again. This rule also gives 3 and 7.",
+    "Two different rules fit the same two terms. So two terms are not enough to pin down one quadratic rule."
+  ],
+  "18-07-w1": [
+    "Put each position into the rule to get its value. Each point is then written with the position first and the value second."
+  ],
+  "18-07-w2": [
+    "Put n = 1, 2, 3 and 4 into the rule. At n = 1 the power is 2⁰, which is 1, so the first value is 3.",
+    "Points on a straight line go up by the same amount each step. These jumps double, so the points curve upwards."
+  ],
+  "18-07-w3": [
+    "Read the term values from the points: 10, 7, 4, 1. They fall by 3 each time, so −3 is the number in front of n.",
+    "The rule must give 10 when n = 1. Put those in and solve for the missing number c.",
+    "Put the two parts together. The rule holds for positions 1, 2, 3 and so on.",
+    "Positions are whole numbers. There is nothing halfway between the second and third terms, even though a ruler line would pass through there."
+  ],
+  "18-07-w4": [
+    "Start at 200 when n = 0 and multiply by 1.5 for each year. Stop when the value first passes 1000.",
+    "The values only go up, so once one is above 1000 all the later ones are too. Year 4 is the first."
+  ],
+  "09-01-w1": [
+    "Keep H fixed and run through 1, 2, 3. Then do the same for T. A fixed order means nothing is missed and nothing is listed twice."
+  ],
+  "09-01-w2": [
+    "Each of the 4 starters can go with all 5 mains. That is 4 rows of 5, so you multiply. Adding 4 + 5 would only count the dishes, not the meals."
+  ],
+  "09-01-w3": [
+    "Change the last toss first, then the middle, then the first. This order gives all 2 × 2 × 2 = 8 outcomes without a gap.",
+    "Exactly two heads means exactly one tail. The tail can be third, second or first, so there are three outcomes."
+  ],
+  "09-01-w4": [
+    "The first digit has 4 choices. The second must be different, so only 3 are left. The letter has 2 choices whatever the digits are.",
+    "Starting with 2 fixes the first digit, so that stage has just 1 choice. The other two stages are unchanged."
+  ],
+  "09-02-w1": [
+    "The event either happens or it does not, so the two chances make 1 between them. Whatever 0.28 does not use belongs to “does not happen”."
+  ],
+  "09-02-w2": [
+    "Decimals are easy to compare on the scale from 0 to 1. 3/4 is 0.75 and 1/2 is 0.5. Further right on the scale means more likely."
+  ],
+  "09-02-w3": [
+    "The events cannot happen together, so there is no overlap to subtract. A or B takes up 0.75 of the whole. What is left from 1 is neither."
+  ],
+  "09-02-w4": [
+    "The three outcomes cover everything and never overlap. So their chances must add to exactly 1.",
+    "p + 2p is 3p. Take 0.4 from both sides, then divide both sides by 3.",
+    "The first two outcomes cannot happen together, so add their chances. 0.6 and the remaining 0.4 make 1, as they should."
+  ],
+  "09-03-w1": [
+    "The die is fair, so all six faces are equally likely and you can count. The even faces are 2, 4 and 6."
+  ],
+  "09-03-w2": [
+    "Not blue means red or green, so 5 + 2 go on top. The bottom counts every counter in the bag, including the blue ones."
+  ],
+  "09-03-w3": [
+    "The sectors are different sizes, so the angle decides the chance. Blue and green together cover 270° of the full 360° turn."
+  ],
+  "09-03-w4": [
+    "Adding x red counters raises the red count and the total by the same x. Blue stays at 6.",
+    "Multiply both sides by 2 and by 10 + x. This clears both fractions in one move.",
+    "Multiply out the bracket: 2 times 4 and 2 times x.",
+    "Take x from both sides, then take 8 from both sides. The answer is a whole number, which it must be for counters."
+  ],
+  "09-04-w1": [
+    "Order matters: HT and TH are different outcomes. Listing all four gives outcomes that are equally likely.",
+    "Exactly one head leaves out HH and TT. Two of the four outcomes are left."
+  ],
+  "09-04-w2": [
+    "Go through the first die from 1 to 6. Each value has exactly one partner that makes 7. 3 then 4 and 4 then 3 are different pairs.",
+    "All 36 ordered pairs are equally likely, so put the number you want over 36."
+  ],
+  "09-04-w3": [
+    "At least one six covers many cases. Its opposite, no six at all, is one simple case. Find that and subtract from 1.",
+    "Each die misses six with chance 5/6. Both must miss, so multiply. Then take the result from 1."
+  ],
+  "09-04-w4": [
+    "Count sectors, not labels. Each spin has 4 equally likely sectors, so two spins give 16 equally likely pairs.",
+    "A total of 4 is 1 then 3, 3 then 1, or 2 then 2. The label 1 sits on two sectors, so the first two cases count twice each."
+  ],
+  "09-05-w1": [
+    "Relative frequency is how often it happened out of all the trials. It is your best estimate from the data you have."
+  ],
+  "09-05-w2": [
+    "48 out of 200 is the estimated chance of red. Keep the same proportion for 500 spins. 500 is 2.5 times 200, so expect 2.5 times 48."
+  ],
+  "09-05-w3": [
+    "A fair die gives six with chance 1/6. Over 300 rolls that predicts 50 sixes.",
+    "Compare what happened with what was expected. The minus sign shows there were fewer sixes than predicted.",
+    "Random results wobble around the expected count. A gap of 8 in 300 rolls is not large enough to prove anything by itself."
+  ],
+  "09-05-w4": [
+    "Put all the trials together: 57 successes in 140 trials. The bigger experiment then counts for more, as it should.",
+    "280 is exactly twice 140. So expect twice 57 successes if nothing changes."
+  ],
+  "09-06-w1": [
+    "A is the whole circle, so it includes the overlap of 4 as well as A-only. The bottom is everyone: all four regions."
+  ],
+  "09-06-w2": [
+    "A or B means inside at least one circle. That is three regions. The 5 outside are left out of the top but stay in the total.",
+    "A and B means in both, so only the overlap of 3 counts."
+  ],
+  "09-06-w3": [
+    "The 8 who study both are inside the 22 and inside the 18. Take them out of each to leave the two “only” regions, then add those.",
+    "22 + 18 counts the 8 twice, so subtract 8 once to get 32 inside the circles. The other 8 of the 40 study neither."
+  ],
+  "09-06-w4": [
+    "Exactly two means the three pair-only regions. The all-three region is left out because those people are in three sets, not two.",
+    "A but not C keeps the parts of A that lie outside C. That is A-only and AB-only. AC-only and the centre are inside C."
+  ],
+  "09-07-w1": [
+    "The first counter goes back, so the bag is the same for the second draw. Both draws use 3/5. Multiply because you need red and then red."
+  ],
+  "09-07-w2": [
+    "One red has left the bag. Now 2 of the 4 counters are red, so the second fraction changes to 2/4."
+  ],
+  "09-07-w3": [
+    "One of each colour can happen in two orders. Both orders count, and they cannot happen together.",
+    "On each path the second fraction is out of 6, because one counter is gone. After a red, 3 blue remain. After a blue, 4 red remain.",
+    "Both paths give 12/42. Add them because either order is a success, then simplify 24/42."
+  ],
+  "09-07-w4": [
+    "Tails has chance 0.4. Each path with two heads and one tail has chance 0.6 × 0.6 × 0.4, and there are three such paths.",
+    "The only way to get no heads is TTT, with chance 0.4 × 0.4 × 0.4. Every other result has at least one head."
+  ],
+  "03-01-w1": [
+    "The first symbol asks whether one thing is a member. 4 is listed inside the brackets of A, so it is a member.",
+    "The second symbol asks about a whole set. {4} has one member, 4, and it is in A. So {4} sits inside A."
+  ],
+  "03-01-w2": [
+    "Go by size so nothing is missed: no elements, then one, then two. The empty set and the whole set both count as subsets."
+  ],
+  "03-01-w3": [
+    "Test 1, 2, 3 and so on. Divisors come in pairs: 1 and 12, 2 and 6, 3 and 4. That is how you know the list is complete.",
+    "Subset needs every element of B to be in A. Proper needs A to have something more, such as 1."
+  ],
+  "03-01-w4": [
+    "Only numbers in U are allowed. Non-negative includes 0. The divisors of 6 are 1, 2, 3 and 6, but 6 is not in U.",
+    "2 must be in every subset. For 1 there are two choices, in or out, and the same for 3. That makes 2 × 2 = 4 subsets."
+  ],
+  "03-02-w1": [
+    "Union gathers everything from both sets. 3 is in both, but a set lists each element once.",
+    "Intersection keeps only what both sets share. Go through A and ask of each element: is it also in B?"
+  ],
+  "03-02-w2": [
+    "The complement of A is what is left in U when A is removed. For the second part the union comes first, because the complement applies to the whole bracket."
+  ],
+  "03-02-w3": [
+    "18 + 15 counts the 7 who do both twice. Subtract 7 once so that each person in at least one activity is counted exactly once.",
+    "Everyone is either in at least one activity or in neither. Take the 26 from the whole group of 30."
+  ],
+  "03-02-w4": [
+    "Everyone studies at least one, so the union is all 50. 28 + 31 = 59 is 9 too many, and those 9 are the students counted twice.",
+    "Each language total includes the 9 who study both. Take them out to leave the “only” regions.",
+    "Exactly one means French only or Spanish only. Those regions do not overlap, so add them and put the sum over all 50 students."
+  ],
+  "03-03-w1": [
+    "A ∖ B starts with A. 3 and 5 are also in B, so they go. The 4 in B does not matter because it was never in A."
+  ],
+  "03-03-w2": [
+    "Start with A and cross out what is also in B. Only 1 is left.",
+    "Now start with B and cross out what is also in A. Only 4 is left. A different starting set gives a different answer."
+  ],
+  "03-03-w3": [
+    "Brackets first. A ∖ B keeps the elements of A that are not in B, which are 6 and 8. The complement is then everything else in U.",
+    "Go through U from 1 to 8 and leave out 6 and 8. Six elements remain."
+  ],
+  "03-03-w4": [
+    "Exactly one means A only or B only. The 8 in both are inside each total, so take them out of both before adding.",
+    "The union counts everyone in at least one set. Remove the 8 in both and only those in exactly one are left. The two answers match."
+  ],
+  "03-04-w1": [
+    "The 7 in A ∩ B includes the 2 who are also in C. Take them out to leave those in A and B but not C."
+  ],
+  "03-04-w2": [
+    "The 9 in A ∩ B includes the 3 in the centre. Take them out to leave A and B only.",
+    "The same move works for A and C. The centre is inside every pair total.",
+    "And again for B and C. Each pair-only region is its pair total minus the centre."
+  ],
+  "03-04-w3": [
+    "Work from the centre outwards. Each pair total includes the 2 in the centre, so take 2 from each.",
+    "Circle A has four regions. Three are now known: AB-only 4, AC-only 3 and the centre 2. The rest of the 15 is A only.",
+    "Circle B touches AB-only 4, BC-only 2 and the centre 2. Take those from 14.",
+    "Circle C touches AC-only 3, BC-only 2 and the centre 2. Take those from 12."
+  ],
+  "03-04-w4": [
+    "Centre first. Each pair total includes the 3 in the centre, so take 3 from each.",
+    "For each circle, take away its two pair-only regions and the centre. What is left of the set total is the single-only region.",
+    "Exactly one means the three single-only regions.",
+    "Exactly two means the three pair-only regions. The centre is not included, because those elements are in three sets.",
+    "The seven regions do not overlap, so adding them counts everyone inside the circles once. The rest of the 45 are outside."
+  ],
+  "03-05-w1": [
+    "24 + 18 counts the 8 in both twice. Subtract 8 once to get everyone in at least one club. Neither is the rest of the 40.",
+    "34 are in at least one club. The other 6 are in neither."
+  ],
+  "03-05-w2": [
+    "30 + 28 = 58 memberships, but only 50 people. The number doing at least one is 58 minus both, and that cannot be more than 50.",
+    "A smallest value must be possible. With 8 in both, 22 only swim and 20 only run, which uses all 50 people."
+  ],
+  "03-05-w3": [
+    "The three percentages are separate regions, so they add to 80%. Neither is the remaining 20% of 60.",
+    "A is the whole circle: A only plus both. That is 40% + 15% = 55% of 60."
+  ],
+  "03-05-w4": [
+    "Take both and neither from 80 to leave 50 in exactly one set. The ratio 3 : 2 has 5 parts, so A-only is 3/5 of 50 and B-only is 2/5.",
+    "Each set total is its “only” region plus the 10 in both.",
+    "A ∪ B is everyone in at least one set: the two “only” regions and the overlap. Divide by all 80."
+  ],
+  "08-01-w1": [
+    "The two angles sit side by side on a straight line, so together they make 180°. Take away the one you know."
+  ],
+  "08-01-w2": [
+    "The three angles fill the whole turn around the point, with no gaps. A full turn is 360°, so that is the total.",
+    "All three angles are counted in x, so they add like boxes of the same size. Dividing by 9 gives the size of one box.",
+    "x is not the answer yet. Put 40 back into each expression to get the three angles the question asked for."
+  ],
+  "08-01-w3": [
+    "Vertically opposite angles are equal, so the two expressions must have the same value. That gives you an equation to solve.",
+    "Gather the x terms on the side that has more of them, so the number in front of x stays positive. Then divide by that number.",
+    "Put x = 20 into either expression. Both should give the same angle, which also checks your equation.",
+    "The other two angles each sit on a straight line beside a 70° angle. A straight line totals 180°."
+  ],
+  "08-01-w4": [
+    "These two angles lie between the parallel lines, on the same side of the transversal. That pair adds to 180°. They are not equal.",
+    "Collect like terms: the x terms together and the plain numbers together. One x term is easier to solve.",
+    "Undo the + 30 first, then undo the multiplying by 5. Do the same thing to both sides each time.",
+    "The question asks for the angles, not x. Substitute 30 into each expression, and see that the two angles add to 180°."
+  ],
+  "08-02-w1": [
+    "The three angles of any triangle add to 180°. Take away the two you know and what is left is the third."
+  ],
+  "08-02-w2": [
+    "The exterior angle equals the two inside angles that do not touch it, added together. One of those is 55° and the other is the unknown.",
+    "The 55 is added to x, so subtract 55 from both sides to leave x on its own."
+  ],
+  "08-02-w3": [
+    "An isosceles triangle has two equal base angles, so the base expression is counted twice. All three angles add to 180°.",
+    "When you multiply out the bracket, the + 20 and the − 20 cancel. Only the x terms are left, eight of them.",
+    "Substitute x into both expressions. A decimal angle is fine, as long as the three angles total 180°."
+  ],
+  "08-02-w4": [
+    "The exterior angle and the inside angle at C lie on one straight line, so they add to 180°. Equal sides AB and AC then make angle B equal to angle C.",
+    "Two angles are now known. The triangle total of 180° gives the third."
+  ],
+  "08-03-w1": [
+    "A quadrilateral splits into two triangles, so its four angles add to 360°. Take away the three you know."
+  ],
+  "08-03-w2": [
+    "In a parallelogram, the angle directly across is always equal. So one of the missing angles is already known.",
+    "Angles next to each other lie between parallel sides, so they add to 180°. Both remaining angles are found this way."
+  ],
+  "08-03-w3": [
+    "The diagonals of a rhombus cut each other in half at right angles. So each side is the hypotenuse of a small right-angled triangle with sides 5 and 12.",
+    "Square the two half-diagonals and add them. The square root then brings you back to a length.",
+    "A rhombus has four equal sides, so the perimeter is four times one side."
+  ],
+  "08-03-w4": [
+    "Diagonals that cut each other in half only prove the shape is a parallelogram. A slanted parallelogram has no right angles, so the claim fails.",
+    "A rectangle needs something extra. If the two diagonals are also equal in length, the parallelogram must be a rectangle."
+  ],
+  "08-04-w1": [
+    "Three sides fix a triangle completely: you cannot change an angle without changing a side. That is why SSS needs no angle at all."
+  ],
+  "08-04-w2": [
+    "The 40° angle sits between the two known sides, so it locks them in place. Two sides with the angle between them is the SAS test."
+  ],
+  "08-04-w3": [
+    "The 13 cm side is the hypotenuse, so the missing side is shorter. Subtract the squares, then take the square root.",
+    "A right angle, the hypotenuse and one other side all match. That is exactly what the RHS test asks for."
+  ],
+  "08-04-w4": [
+    "Find where the equal angle sits. Sides AB and BC meet at B, so the angle at A is not between them.",
+    "SAS needs the angle between the two sides. With a different angle, two different triangles can fit the same facts, so congruence is not certain."
+  ],
+  "08-05-w1": [
+    "The two given sides meet at the right angle, so the missing side is the hypotenuse. Add the squares, then take the square root."
+  ],
+  "08-05-w2": [
+    "The hypotenuse is given, so the missing side is one of the shorter ones. Subtract the square of the known shorter side from the hypotenuse squared, then take the square root."
+  ],
+  "08-05-w3": [
+    "The ladder is the sloping side, opposite the right angle between wall and ground. So it is the hypotenuse, and the height is a shorter side: subtract.",
+    "Work out the squares before the square root. The answer must be less than the 10 m ladder."
+  ],
+  "08-05-w4": [
+    "The base is a rectangle, so its two edges meet at a right angle. The diagonal across the base is the hypotenuse of that triangle.",
+    "The base diagonal and the upright edge meet at a right angle. They form a second right-angled triangle, with the space diagonal as its hypotenuse.",
+    "All three squares go under one square root, because the base diagonal squared is the same as 3² + 4²."
+  ],
+  "08-06-w1": [
+    "The hypothesis is the part after “if”. It is what you are told. Here “isosceles” means two sides are equal.",
+    "The conclusion is the part that follows. It is what must be shown, never something to assume."
+  ],
+  "08-06-w2": [
+    "To write a converse, swap the two halves of the sentence. The same words are used, but a different half now follows “if”.",
+    "One example that breaks a rule is enough to show it is false. A 2 by 3 rectangle has four right angles but unequal sides."
+  ],
+  "08-06-w3": [
+    "A rule about every even number must work for all of them. One even number that fails, such as 2, is enough to show the rule is false."
+  ],
+  "08-06-w4": [
+    "Any odd number is one more than an even number, so write it as 2m + 1. Two different letters let the two odd numbers be different.",
+    "The sum is 2 times a whole number, which is what even means. The letters stand for any whole numbers, negative ones included."
+  ],
+  "08-07-w1": [
+    "The two angles face each other across the crossing point. Vertically opposite angles are always equal, so no calculation is needed."
+  ],
+  "08-07-w2": [
+    "Each pair lies on a straight line, so each pair adds to 180°. Notice that B is in both equations.",
+    "Rearrange both equations to get A and C on their own. Each one is 180° with the same B taken away.",
+    "Two things equal to the same amount are equal to each other. That finishes the proof without measuring anything."
+  ],
+  "08-07-w3": [
+    "Vertically opposite angles are equal, so the two expressions have the same value. Write them as an equation.",
+    "Take 2x from both sides and add 7 to both sides. That leaves the x terms on one side and the numbers on the other.",
+    "Substitute x = 19 into one expression to get the angle. The other expression should give the same value.",
+    "An adjacent angle shares a straight line with the 69° angle. The two together make 180°."
+  ],
+  "08-07-w4": [
+    "The proof depends on two totals of 180°. Those totals are true only when each pair of angles lies on a straight line.",
+    "If the rays are not straight lines, you do not know either total. Then there is nothing equal to subtract from."
+  ],
+  "08-08-w1": [
+    "AB and AC are the equal sides. The angles opposite them are C and B, so those two angles are equal.",
+    "With both base angles known, the triangle total of 180° gives the angle at A."
+  ],
+  "08-08-w2": [
+    "Equal angles face equal sides. The side facing P is QR and the side facing R is PQ.",
+    "Two angles are known, so take both from 180° to get the third."
+  ],
+  "08-08-w3": [
+    "AD cuts angle A into two equal parts, AB = AC is given and AD is in both triangles. The equal angles sit between the equal sides, so SAS applies.",
+    "Congruent triangles match in every part. Angle B in one triangle matches angle C in the other."
+  ],
+  "08-08-w4": [
+    "Each small triangle has an equal angle at A and an equal angle at B or C. Two angles fix the third, because all three add to 180°.",
+    "AD is in both triangles, with an equal angle at each end. That is ASA, and the matching sides AB and AC come out equal."
+  ],
+  "08-09-w1": [
+    "Corresponding angles sit in the same corner at each crossing. Because the lines are parallel, they are equal."
+  ],
+  "08-09-w2": [
+    "This runs the rule backwards. Equal alternate angles are the test that proves two lines are parallel."
+  ],
+  "08-09-w3": [
+    "For parallel lines, co-interior angles add to 180°. So ask what value of x makes these two add to 180°.",
+    "Collect like terms: the x terms together and the numbers together.",
+    "Subtract 55 from both sides, then divide both sides by 5.",
+    "Substitute x = 25 into both expressions. They should add to 180°, and here each one is 90°."
+  ],
+  "08-09-w4": [
+    "The alternate angle is on the opposite side of the transversal, in the Z shape. Alternate angles on parallel lines are equal.",
+    "The other interior angle at Q is on the same side as the 112° angle. Co-interior angles add to 180°."
+  ],
+  "08-10-w1": [
+    "The diagonals of a parallelogram cut each other in half. AO is one half of AC, so double it."
+  ],
+  "08-10-w2": [
+    "AO and OC are the two halves of the same diagonal. The halves are equal, so the two expressions are equal.",
+    "Take 2x from both sides and add 4 to both sides. That leaves x on its own.",
+    "The question asks for the whole diagonal. Find one half using x = 5, then double it."
+  ],
+  "08-10-w3": [
+    "AB is parallel to CD, and each diagonal crosses both. That makes two pairs of equal alternate angles.",
+    "Opposite sides of a parallelogram are equal, and this side lies between the two matched angles. ASA makes the triangles congruent, so their matching sides are equal."
+  ],
+  "08-10-w4": [
+    "A midpoint is the average of the two end points. If both diagonals have the same midpoint, they cut each other in half, and that makes a parallelogram.",
+    "A rectangle needs a right angle at A. AB runs straight across, but AD leans to the right, so they do not meet at 90°."
+  ],
+  "08-11-w1": [
+    "The scale factor is the number that turns the small side into the large side. Divide the larger by the smaller."
+  ],
+  "08-11-w2": [
+    "Equal angles mean the triangles are similar, so every side grows by the same factor. That factor comes from the pair you know, 5 and 8."
+  ],
+  "08-11-w3": [
+    "Area grows by the scale factor squared, because both length and width are stretched. So take the square root of the area ratio to get the length factor.",
+    "Now use the length factor on the side. Lengths are multiplied by 5/3, not by the area ratio."
+  ],
+  "08-11-w4": [
+    "The three angles of a triangle fix its shape completely. So triangles with the same angles must be scale copies of each other.",
+    "The angles of a rectangle are always 90°, whatever its shape. A long thin one and a nearly square one have the same angles but different side ratios."
+  ],
+  "08-12-w1": [
+    "Only the longest side can be the hypotenuse. Square the two shorter sides, add them and compare with the longest side squared.",
+    "The two totals are equal. The converse of Pythagoras then says the angle opposite the longest side is 90°."
+  ],
+  "08-12-w2": [
+    "The longest side, 11, is the only possible hypotenuse. Compare its square with the other two squares added.",
+    "100 is not 121, so the test fails. Close is not enough. The two values must be exactly equal."
+  ],
+  "08-12-w3": [
+    "Doubling every side keeps the shape and the angles, and removes the decimals. Then test the longest side against the other two."
+  ],
+  "08-12-w4": [
+    "Build a second triangle that you know has a right angle, with the same two shorter sides. Pythagoras gives its hypotenuse the same length as c.",
+    "Three equal sides make the triangles congruent. So the given triangle has the same angles, including the 90°."
+  ],
+  "16-01-w1": [
+    "Go from the small triangle to the large one. The pair 3 and 12 gives the scale factor, and every other side uses the same factor."
+  ],
+  "16-01-w2": [
+    "The sun hits the pole and the tree at the same angle, so the two right-angled triangles are similar. Height over shadow is the same for both.",
+    "The unknown h is divided by 8, so multiply both sides by 8 to leave h on its own."
+  ],
+  "16-01-w3": [
+    "The hypotenuses are matching sides, so they give the scale factor from the smaller triangle to the larger.",
+    "Every side of the larger triangle is twice its matching side. So the 5 cm side doubles.",
+    "The smaller triangle is right-angled, so Pythagoras gives its other side. Then double it, like every other length."
+  ],
+  "16-01-w4": [
+    "A perimeter is a length, so the perimeters give the length scale factor. Area grows by that factor squared, because two directions are stretched.",
+    "A side is a length, so it uses the scale factor itself, not its square."
+  ],
+  "16-02-w1": [
+    "DE is parallel to BC, so triangle ADE is a small copy of triangle ABC. Compare small side with whole side on both sides of the triangle.",
+    "AE is divided by 12, so multiply both sides by 12 to leave AE on its own."
+  ],
+  "16-02-w2": [
+    "The whole side AB is AD and DB joined together. Use small over whole on both sides, so the 4 goes over 10, not over 6.",
+    "Cross-multiply to clear the fractions, then divide by 4. This gives the whole side AC, not the piece asked for.",
+    "EC is what is left of AC after AE. Take AE away from the whole side."
+  ],
+  "16-02-w3": [
+    "The ratio 2:3 compares the two pieces of AB. The small triangle needs AD over the whole of AB, which is 2 parts out of 5.",
+    "Area grows by the scale factor squared. Square both numbers in the side ratio 2:5."
+  ],
+  "16-02-w4": [
+    "Compare each top piece with its whole side. Add the two pieces first to get the whole sides AB and AC.",
+    "Equal ratios mean the line cuts both sides in the same proportion. That is the test for DE being parallel to BC.",
+    "The small triangle has 3/5 of each length, so its area is 9/25 of the whole. The trapezium is what is left of the whole triangle."
+  ],
+  "16-03-w1": [
+    "Both angles stand on the same arc. The angle at the centre is twice the angle at the circumference, so halve it."
+  ],
+  "16-03-w2": [
+    "A diameter is a straight line through the centre, so it makes 180° there. The angle at the circumference on the same arc is half of that."
+  ],
+  "16-03-w3": [
+    "All four corners are on the circle, so opposite angles add to 180°. They are not equal, so add the expressions instead of setting them equal.",
+    "Collect like terms: the x terms together and the numbers together.",
+    "Subtract 5 from both sides, then divide both sides by 5.",
+    "Substitute x = 35 into each expression. The two angles should add to 180°."
+  ],
+  "16-03-w4": [
+    "A radius meets a tangent at 90°. That right angle at T is what allows you to use Pythagoras in triangle OTP.",
+    "OP is opposite the right angle, so it is the hypotenuse. PT is a shorter side, so subtract the squares."
+  ],
+  "16-04-w1": [
+    "The three angles of a triangle add to 180°. Take away the two you know. Naming the theorem is part of the answer."
+  ],
+  "16-04-w2": [
+    "The three angles add to 180°, whatever they are. Writing them in x turns that fact into an equation.",
+    "One x, two x and three x make six x altogether. Divide both sides by 6 to find one.",
+    "Substitute x = 30 into each angle. A 90° angle tells you the triangle is right-angled."
+  ],
+  "16-04-w3": [
+    "The new line is parallel to BC, so alternate angles copy angle B and angle C up to the point A. They sit on either side of angle A.",
+    "Three angles side by side on a straight line make 180°. These three are the same sizes as the angles of the triangle."
+  ],
+  "16-04-w4": [
+    "A proof may only use facts that are already known. The straight-line total of 180° does not depend on triangles, so it is safe to use.",
+    "Alternate angles then show the three angles on the line equal the three angles of the triangle. The 180° passes to the triangle, not the other way round."
+  ],
+  "16-05-w1": [
+    "The exterior angle and the inside angle beside it lie on one straight line. Together they make 180°."
+  ],
+  "16-05-w2": [
+    "The exterior angle equals the two inside angles that do not touch it, added together. One is 63° and the other is the unknown.",
+    "The 63 is added to x, so subtract 63 from both sides."
+  ],
+  "16-05-w3": [
+    "Write two totals of 180°: one for the triangle and one for the straight line at C. Both contain the angle C.",
+    "Take C away in each equation. Both A + B and the exterior angle are now 180° minus the same angle.",
+    "Two things equal to the same amount are equal to each other."
+  ],
+  "16-05-w4": [
+    "The exterior angle equals the sum of the two inside angles that do not touch it. That turns the three expressions into one equation.",
+    "Collect like terms on the right: the x terms together and the numbers together.",
+    "Take 3x from both sides and add 8 to both sides. Then divide by 2.",
+    "Substitute x = 15 into each of the two expressions to get the angles.",
+    "The third inside angle sits on a straight line with the exterior angle. Find the exterior angle from x, then take it from 180°.",
+    "Check that the three inside angles add to 180°. This is a second route to the same total, so it would catch a slip."
+  ],
+  "16-06-w1": [
+    "In a parallelogram, each side is equal to the side across from it. So AB gives CD and BC gives DA.",
+    "The perimeter goes once around the shape. There are two sides of each length."
+  ],
+  "16-06-w2": [
+    "Angles next to each other in a parallelogram lie between parallel sides. They add to 180°. They are not equal.",
+    "Collect like terms: the x terms together and the numbers together.",
+    "Subtract 30 from both sides, then divide both sides by 6.",
+    "Substitute x = 25 into each expression. The two angles should add to 180°.",
+    "The angle across from each one is equal to it. That gives all four angles, in order around the shape."
+  ],
+  "16-06-w3": [
+    "The diagonal AC crosses each pair of parallel sides. Each pair gives one pair of equal alternate angles.",
+    "AC is in both triangles and lies between the two matched angles. ASA makes the triangles congruent, so their matching sides are equal."
+  ],
+  "16-06-w4": [
+    "The diagonal is a side of both triangles, and the two pairs of opposite sides are given equal. That is three matching sides, SSS.",
+    "Congruent triangles have equal matching angles. Here those are alternate angles, and equal alternate angles prove the sides are parallel."
+  ],
+  "16-07-w1": [
+    "The two given sides meet at the right angle, so the missing side is the hypotenuse. Add the squares, then take the square root."
+  ],
+  "16-07-w2": [
+    "The perpendicular CD makes a small triangle similar to the whole one. Matching sides give AC squared as the whole hypotenuse times the piece next to A."
+  ],
+  "16-07-w3": [
+    "Add the two equations and take out the common factor c. The two pieces p and q make the whole hypotenuse, so p + q is c."
+  ],
+  "16-07-w4": [
+    "D lies on AB, so the two pieces add to the whole hypotenuse. You need that whole length for the next two steps.",
+    "AC squared equals the whole hypotenuse times the piece next to A. Leave the answer as a surd, because the question asks for exact values.",
+    "BC uses the same rule with the piece next to B.",
+    "The height CD squared equals the two pieces multiplied together. This also comes from the similar triangles on either side of CD."
+  ],
+  "16-08-w1": [
+    "Both angles stand on the same arc. The angle at the centre is twice the angle at the circumference, so double it."
+  ],
+  "16-08-w2": [
+    "The centre angle and the circumference angle must stand on the same arc. For this large arc the centre angle is the reflex one, and you halve it."
+  ],
+  "16-08-w3": [
+    "The three angles at O make a full turn of 360°. Two of them belong to the isosceles triangles AOC and BOC.",
+    "Each isosceles triangle has two equal base angles, so its angle at O is 180° minus twice the base angle. Taking both from 360° leaves the centre angle on arc AB."
+  ],
+  "16-08-w4": [
+    "The angle at the centre is twice the angle at the circumference on the same arc. Start from the angle at C.",
+    "The two arcs AB together make the whole circle. So their two centre angles add to 360°.",
+    "D stands on the other arc, so halve the other centre angle. Notice that the two circumference angles add to 180°."
+  ],
+  "19-01-w1": [
+    "The machine multiplies first and adds second. The rule is written in that order, with 5 in place of the input.",
+    "Do the multiplication before the addition. That matches the order of the boxes in the machine.",
+    "Both boxes have now been used, so this is the output."
+  ],
+  "19-01-w2": [
+    "This machine subtracts first. The subtraction goes inside brackets so that the square acts on the whole result.",
+    "The bracket gives −3. Squaring a negative gives a positive, so two different inputs can share one output."
+  ],
+  "19-01-w3": [
+    "Doubling comes first here, so only x is doubled. The 7 is taken away afterwards.",
+    "Here the subtraction comes first, so the doubling acts on all of x − 7. The brackets show that, and they double the 7 as well."
+  ],
+  "19-01-w4": [
+    "Work from the inside out. A acts on 2 first, and its output, 8, becomes the input for B.",
+    "Now B goes first, so 2 is squared before A is used. Swapping the order changes the answer."
+  ],
+  "19-09-w1": [
+    "The machine adds 8, so going back means taking 8 away. Rearranging for x says exactly that.",
+    "The inverse is written with x as its input letter. The letter is only a label; the rule is still subtract 8.",
+    "Put the known output into the inverse rule. It hands back the input that produced it."
+  ],
+  "19-09-w2": [
+    "Write y for the output. The aim is to rearrange until x, the input, is on its own.",
+    "Subtracting 3 was the last thing the rule did, so it is the first thing to undo. Add 3 to both sides.",
+    "Now undo the multiplication. Divide the whole of y + 3 by 4, which is why the brackets are needed.",
+    "Swap the letter to x so the inverse is written like any other function rule.",
+    "Feed 17 into the inverse. Add first, then divide: the reverse of the original order."
+  ],
+  "19-09-w3": [
+    "Read the rule in order: double, add 5, then divide everything by 3. You will undo these from the last one back.",
+    "Dividing by 3 was the last operation, so undo it first. Multiply both sides by 3.",
+    "Next undo the adding of 5. Subtract 5 from both sides.",
+    "Finally undo the doubling. Divide the whole left side by 2, so keep it in brackets.",
+    "Rename the input x. The reverse steps are now multiply by 3, subtract 5, divide by 2.",
+    "Keep −1 in brackets when you substitute, so that the 3 multiplies a negative number correctly."
+  ],
+  "19-09-w4": [
+    "One example is enough to show the problem. Going back from 9, you could not tell whether the input was −3 or 3.",
+    "Leave out the negative inputs and the clash disappears. Each output now comes from only one input."
+  ],
+  "19-02-w1": [
+    "The domain has only three inputs, so the rule is used exactly three times, once for each.",
+    "The range is the set of outputs you actually got. List each one once."
+  ],
+  "19-02-w2": [
+    "The test looks at each input, not each output. Inputs 1 and 2 both go to 4, and that is allowed.",
+    "The domain is every first number. The range is every second number that appears, so the unused 6 is left out."
+  ],
+  "19-02-w3": [
+    "The same input, −1, is sent to two different outputs. That is the one thing a function may not do.",
+    "Removing one of the two clashing pairs leaves −1 with a single output, so the rule is satisfied."
+  ],
+  "19-02-w4": [
+    "Square each input and subtract 1. Outputs that repeat are listed only once in the range.",
+    "Going backwards, 3 would have to return to two different inputs. One input with two outputs is not a function."
+  ],
+  "19-03-w1": [
+    "The brackets keep the minus sign attached to the 2, so the 3 multiplies the whole input.",
+    "A positive times a negative is negative. The −5 has not been used yet, so it stays.",
+    "Starting at −6 and going down 5 more lands on −11."
+  ],
+  "19-03-w2": [
+    "Brackets make the square act on the whole of −3, which gives a positive 9. The second term is −4 times −3, also positive.",
+    "A fraction goes in the same way as a whole number. Square it, then take away 4 halves."
+  ],
+  "19-03-w3": [
+    "Every x becomes the whole of k + 1, so it goes in inside brackets.",
+    "Expand the square before doubling. Remember the middle term 2k: the square of a sum is more than the two squares.",
+    "The 2 multiplies every term inside the bracket. The + 1 at the end is outside, so it is untouched.",
+    "Only the plain numbers are like terms here, so they are the only ones to combine."
+  ],
+  "19-03-w4": [
+    "Substitute into each function value separately. The square brackets keep each result together until you subtract.",
+    "Expand inside the first bracket only. Watch −3 times −1: it gives + 3.",
+    "Tidy the first bracket, then remove the second. The minus in front changes the sign of every term inside it.",
+    "Collect like terms: the k² terms, the k terms and the plain numbers."
+  ],
+  "19-06-w1": [
+    "f(x) = 21 says the output is 21. Replace f(x) with its rule to get an equation you can solve.",
+    "Take 1 from both sides to undo the adding. The two sides stay balanced.",
+    "Divide both sides by 4 to undo the multiplying. This leaves the input on its own."
+  ],
+  "19-06-w2": [
+    "The output is −8, so the rule is set equal to −8. The x term has a minus sign that must stay with it.",
+    "Take 7 from both sides. The minus sign stays in front of 3x.",
+    "Divide both sides by −3. A negative divided by a negative is positive."
+  ],
+  "19-06-w3": [
+    "The question gives the output, 8, so set the rule equal to 8.",
+    "Add 1 to both sides so the squared term is on its own.",
+    "Two numbers have a square of 9, one positive and one negative. The question asks for all inputs, so give both."
+  ],
+  "19-06-w4": [
+    "For output 0 the equation already has zero on one side, which is what factorising needs.",
+    "If two brackets multiply to zero, one of them must be zero. Each bracket gives one input.",
+    "A new target output means a new equation. Set the same rule equal to −3.",
+    "Add 3 to both sides so that one side is zero again. Factorising works only with zero on one side.",
+    "This is a different quadratic from the first one, so it has different factors and different inputs."
+  ],
+  "19-07-w1": [
+    "The functions agree where their outputs are equal. g always gives 7, so f must give 7 too.",
+    "Take 1 from both sides to start getting x on its own.",
+    "Divide both sides by 2. This is the input where the two rules agree.",
+    "Put the input back into f. It should give 7, the same as g."
+  ],
+  "19-07-w2": [
+    "The same x goes into both rules, so write one rule on each side of the equals sign.",
+    "Add x to both sides and add 4 to both sides. Now the x terms are together and positive.",
+    "Divide both sides by 3 to find the shared input.",
+    "Test the input in both rules. Each must give the same output."
+  ],
+  "19-07-w3": [
+    "The graphs meet where the two outputs are equal for the same x.",
+    "Move everything to one side. A quadratic can be factorised only when the other side is zero.",
+    "You need two numbers that multiply to −6 and add to −1. They are −3 and 2.",
+    "A product is zero only when one factor is zero, so each bracket gives a solution.",
+    "An intersection is a point, so each x needs its y. The rule of the line is the quicker one to use.",
+    "Write each answer as a pair, x first and y second."
+  ],
+  "19-07-w4": [
+    "g(−3) has a fixed input, so it is just a number. Work it out before you solve anything.",
+    "With 2 on the right, this is an ordinary equation in x.",
+    "This time x goes into both rules, so the right side is a rule and not a number.",
+    "Collect the x terms on one side and the numbers on the other, then divide by 2."
+  ],
+  "19-08-w1": [
+    "The 3 is outside the brackets, so the machine gets 2 as its input. Its output, 7, is then tripled.",
+    "Here 6 is the input itself. Tripling the input is not the same as tripling the output."
+  ],
+  "19-08-w2": [
+    "Both inputs are known numbers. Work out each function value in its own bracket before combining them.",
+    "The 2 multiplies only the first function value. The second is subtracted once.",
+    "With both values known, only arithmetic is left."
+  ],
+  "19-08-w3": [
+    "k stands outside the function, so it multiplies the output of f(3). The inputs 3 and 10 go in unchanged.",
+    "Both function values are now plain numbers, so the equation is short.",
+    "Divide both sides by 7 to leave k on its own."
+  ],
+  "19-08-w4": [
+    "g(2) and f(5) have fixed inputs, so they turn into numbers. Only f(x) keeps the unknown, and the 2 multiplies the whole of it.",
+    "Multiply out the bracket. The 2 must multiply both 2x and −3.",
+    "Combine the two plain numbers on the left.",
+    "Add 1 to both sides to undo the subtraction.",
+    "Divide both sides by 4 to find the input."
+  ],
+  "19-04-w1": [
+    "Each known value gives one equation. Put the input in for x and set the result equal to the output.",
+    "Input zero wipes out the a term, so b appears at once. Put that value into the other equation.",
+    "Take 3 from both sides, then halve. With a and b both known, write the full rule."
+  ],
+  "19-04-w2": [
+    "Maps −1 to 5 means the input −1 gives the output 5. Each pair gives one equation in a and b.",
+    "Both equations have a single b, so subtracting removes it. Subtracting −a is the same as adding a, which is why 4a appears.",
+    "Put a = −2 into the first equation. Minus a negative becomes plus 2.",
+    "Take 2 from both sides to find b, then write the rule."
+  ],
+  "19-04-w3": [
+    "You cannot find f(−3) until you know the rule. Start with one equation for each known value.",
+    "Subtracting the first equation from the second removes b and leaves only a.",
+    "Divide by 3 for a. Then put a into 2a + b = 1 to find b.",
+    "Now use the rule forwards. Keep −3 in brackets so the sign is handled correctly.",
+    "Output 0 means setting the rule equal to zero and solving. The answer is a fraction, and that is fine."
+  ],
+  "19-04-w4": [
+    "Going from 4 items to 10 adds 6 items and €24. The fixed charge is in both costs, so it cancels in the difference.",
+    "Four items at €4 account for €16 of the €26. The rest is the fixed charge.",
+    "Affordable means the cost is at most €75, so this is an inequality and not an equation.",
+    "Solve it like an equation: take away 10, then divide by 4. Dividing by a positive number keeps the sign the same way round.",
+    "You cannot buy a quarter of an item. Round down, because rounding up would go over budget."
+  ],
+  "19-05-w1": [
+    "Each known value gives an equation. Put the input in for every x in the rule.",
+    "At x = 0 the terms with x vanish, so c is found straight away. Use it in the second equation.",
+    "Take 3 from both sides to find b, then write the finished rule."
+  ],
+  "19-05-w2": [
+    "Substitute each input. Note that −1 squared, in brackets, is 1, and b times −1 is −b.",
+    "Move the plain numbers to the right so both equations have the same layout.",
+    "Both equations have one c, so subtracting the first from the second removes it. Subtracting −b is the same as adding b, which is why 3b appears.",
+    "Divide by 3 for b. Put b into −b + c = −1 to get c."
+  ],
+  "19-05-w3": [
+    "Three unknown numbers need three facts. The value at x = 0 gives c immediately.",
+    "Put c = 1 into the other two equations. That leaves two equations with only a and b.",
+    "Use the first equation to write b in terms of a, then substitute it into the second. Now only a is left.",
+    "Solving gives a. Go back to b = −1 − a for b, then write the whole rule.",
+    "A root is an input that gives output zero, so set the rule equal to zero.",
+    "Each bracket equal to zero gives one root. From 2x − 1 = 0 you get a half."
+  ],
+  "19-05-w4": [
+    "A root makes a bracket zero. Root −1 gives the factor x + 1 and root 3 gives x − 3. The number a in front is still unknown.",
+    "The extra fact f(0) = 6 fixes a. It comes out negative, which fits a curve that opens downwards.",
+    "Put the value of a back into the factor form.",
+    "Multiply the brackets first, then multiply every term by −2.",
+    "Completing the square shows the turning point. Halfway between the roots −1 and 3 is x = 1.",
+    "The squared part is zero or more, and it is multiplied by −2. So it can only lower the output from 8."
+  ],
+  "23-01-w1": [
+    "Each input goes into the rule on its own. Keep −1 in brackets so that doubling it gives −2.",
+    "The same rule is used for the other inputs. Notice that y goes up by 2 each time x goes up by 1.",
+    "Each pair is written input first, output second. These are the points you plot."
+  ],
+  "23-01-w2": [
+    "Every point on the y-axis has x = 0, so put x = 0 into the rule.",
+    "Every point on the x-axis has y = 0, so set the rule equal to zero and solve.",
+    "The number in front of x is the slope. Negative means y gets smaller as x gets bigger."
+  ],
+  "23-01-w3": [
+    "Slope is the change in y divided by the change in x. Subtract in the same order top and bottom, and remember that subtracting −2 is the same as adding 2.",
+    "The line passes through this point, so its coordinates must fit the rule. That gives the intercept c.",
+    "With slope and intercept known, the rule is complete.",
+    "Now use the rule forwards for each input asked. Brackets keep the negative input safe."
+  ],
+  "23-01-w4": [
+    "Four extra hours cost €24 extra. The fixed charge is in both prices, so it does not affect the difference.",
+    "Two hours at €6 make €12 of the €19. What is left is charged whatever the time.",
+    "The slope is the hourly rate and the intercept is the fixed charge. The domain stops at 8 hours because the question says so."
+  ],
+  "23-02-w1": [
+    "Squaring removes the sign, so −2 and 2 give the same output, and so do −1 and 1. The lowest value, 0, is in the middle."
+  ],
+  "23-02-w2": [
+    "A square is never negative, so the smallest it can be is zero. That happens when x = 2, and then only the −3 is left."
+  ],
+  "23-02-w3": [
+    "Roots are where the graph meets the x-axis, so y = 0. Find two numbers that multiply to 3 and add to −4.",
+    "On the y-axis, x is zero. Only the constant term is left.",
+    "Completing the square rewrites the rule so the turning point can be read off. Half of −4 is −2, which goes in the bracket.",
+    "The x² term is positive, so the curve opens upwards. The bracket is zero at x = 2, where y is −1."
+  ],
+  "23-02-w4": [
+    "The square is zero or more and it is multiplied by −2. So that part can only pull y down from 8.",
+    "Roots have y = 0. Move the 8 across and divide by −2 to get the square on its own.",
+    "Two numbers square to 4, namely 2 and −2. Each gives a root.",
+    "For the y-intercept put x = 0. Square the bracket first, then multiply by −2.",
+    "The curve opens downwards from its highest value, 8. It keeps going down without end, so every y up to 8 is reached."
+  ],
+  "23-03-w1": [
+    "Meeting y = 7 means the output is 7. Set the rule equal to 7.",
+    "Take 1 from both sides to undo the adding. The sides stay balanced.",
+    "Divide both sides by 2. This x is where the two graphs meet."
+  ],
+  "23-03-w2": [
+    "The curve meets the line where its output equals 9.",
+    "A positive and a negative number both square to 9. A horizontal line above the lowest point cuts a parabola twice.",
+    "Each intersection is a point. Both have height 9 because they lie on the line y = 9."
+  ],
+  "23-03-w3": [
+    "Start from the equation as given. On a graph, the left side is the curve and the right side is the line y = 5.",
+    "Take 5 from both sides so that one side is zero, ready to factorise.",
+    "You need two numbers that multiply to −8 and add to −2. They are −4 and 2.",
+    "Each bracket equal to zero gives one solution. These are the x-values where the curve crosses the line."
+  ],
+  "23-03-w4": [
+    "A square cannot be negative, so this equation has no solution. The line y = 0 lies below the lowest point of the curve.",
+    "The square equals zero in only one way. The line just touches the curve at its turning point.",
+    "Two numbers square to 4, so x − 2 is 2 or −2. A line above the turning point cuts the curve twice."
+  ],
+  "23-04-w1": [
+    "Write both rules. At the meeting point, the same x and y fit both.",
+    "Both rules equal y, so they equal each other. That gives one equation in x.",
+    "Take 2 from both sides. The y-value is already known, so the point is complete."
+  ],
+  "23-04-w2": [
+    "At an intersection both rules give the same y for the same x.",
+    "Set the rules equal and move everything to one side. The rule of the line is kept for finding y later.",
+    "You need two numbers that multiply to −3 and add to −2. They are −3 and 1.",
+    "Each bracket gives an x. Put each x into the rule of the line to get its y.",
+    "The question asks for intersections, so give full points, not only x-values."
+  ],
+  "23-04-w3": [
+    "f(x) < g(x) asks where the parabola is lower than the line y = 4.",
+    "The graphs cross at x = −2 and x = 2. Test a value between them, such as 0: its square is 0, which is less than 4.",
+    "At the crossings the outputs are equal, not less. So the end values are left out."
+  ],
+  "23-04-w4": [
+    "Break-even is where both plans cost the same, so set the two rules equal.",
+    "Take 2n and 8 from both sides to find n. Then use either plan to find the shared cost.",
+    "A is cheaper when its cost is the smaller one. Solve the inequality the same way as the equation.",
+    "After the crossing the lines swap places. B rises more slowly, by €2 an item, so it becomes the lower line."
+  ],
+  "23-05-w1": [
+    "Replace every t with 1. Square the time before multiplying by 5, then subtract."
+  ],
+  "23-05-w2": [
+    "On the ground the height is zero, so set the rule equal to zero.",
+    "Both terms contain 5t. Taking it out leaves a product equal to zero.",
+    "Either 5t is zero or 4 − t is zero. The first is the launch and the second is the landing.",
+    "The ball is in the air only between launch and landing, so time runs from 0 to 4."
+  ],
+  "23-05-w3": [
+    "Start from the rule. The aim is to rewrite it so the greatest value can be seen.",
+    "Take out −5, then complete the square inside. Adding 4 inside the bracket really subtracts 20, so 20 is added back outside.",
+    "The bracket is now a perfect square.",
+    "The squared part is zero or more and is multiplied by −5. It can only lower the height from 20, and it is zero at t = 2."
+  ],
+  "23-05-w4": [
+    "Height 15 means the output is 15, so set the rule equal to 15.",
+    "Move everything to one side and divide every term by 5. Smaller numbers are easier to factorise.",
+    "Two numbers that multiply to 3 and add to −4 are −1 and −3. The ball passes 15 metres going up and coming down.",
+    "Dividing by −5 turns the inequality around. That is why at least 15 becomes less than or equal to zero.",
+    "Between 1 and 3 seconds one bracket is positive and the other is negative, so the product is negative. That is when the ball is at 15 metres or higher."
+  ],
+  "23-06-w1": [
+    "Two to the power 0 is 1, which gives the starting value. Each step of 1 in x then doubles the output."
+  ],
+  "23-06-w2": [
+    "At t = 0 the power equals 1, so the value starts at 80. Each step in t multiplies by a half, so the value keeps halving. That is decay."
+  ],
+  "23-06-w3": [
+    "The point lies on the curve, so its x and y must fit the rule. Put x = 3 and y = 40.",
+    "Two cubed is 8. Divide both sides by 8 to find a.",
+    "With a known, the model is complete and can be used for any input.",
+    "At x = 0 the power equals 1, so the intercept is a itself. For x = 5, work out the power first, then multiply."
+  ],
+  "23-06-w4": [
+    "Each year the value is multiplied by 0.8. After four years it is still a little above 200.",
+    "One more year takes it below 200. Showing both years proves where the change happens.",
+    "The value only goes down, so it cannot dip below 200 earlier and come back. Year 5 is the first."
+  ],
+  "23-07-w1": [
+    "The 3 is added after squaring, so every output is 3 bigger. Each point moves straight up and its x stays the same."
+  ],
+  "23-07-w2": [
+    "The lowest point is where the bracket is zero, and that is now at x = 4. The whole curve has slid 4 to the right."
+  ],
+  "23-07-w3": [
+    "The bracket x + 3 must equal the old input 2, so the new x is 3 smaller. The −2 outside lowers the output by 2."
+  ],
+  "23-07-w4": [
+    "Right 2 means x is replaced by x − 2. Up 8 means 8 is added outside. The turning point moves from the origin in the same way.",
+    "Roots are where y = 0, so set the new rule equal to zero.",
+    "Move the square to the other side so it is positive and on its own.",
+    "Both the positive and the negative square root count. The root of 8 simplifies because 8 is 4 times 2."
+  ],
+  "06-01-w1": [
+    "Perimeter is one trip around the edge. You pass a length and a width, then the same again, so add them and double.",
+    "Area counts the 1 cm squares inside: 5 rows of 8. The unit is cm² because you are counting squares, not walking a distance."
+  ],
+  "06-01-w2": [
+    "A square's area is side times side. So ask which number multiplied by itself gives 81.",
+    "All four sides of a square are equal. Once you know one side, go along it four times."
+  ],
+  "06-01-w3": [
+    "Start with the whole rectangle, then take away the piece that was cut out. The removed corner no longer counts as area.",
+    "Look at the cut corner. A 4 m edge and a 3 m edge went, and a 4 m edge and a 3 m edge appeared inside.",
+    "The new edges match the lost ones. So the distance around is the same as for the full rectangle."
+  ],
+  "06-01-w4": [
+    "The path is what is left when you remove the inner rectangle. Each side loses 1 m at both ends, so take off 2, not 1.",
+    "Work out each area before subtracting. The difference is the strip of path all the way round.",
+    "The price is for each square metre. Multiply the number of square metres of path by €18."
+  ],
+  "06-02-w1": [
+    "Slide the end triangle across and the parallelogram becomes a rectangle. That is why the rule is base times perpendicular height.",
+    "Use the 4 cm that meets the base at a right angle. A sloping side, if one were given, would not be used."
+  ],
+  "06-02-w2": [
+    "Two copies of the triangle fit together into a parallelogram. One triangle is half of base times height.",
+    "Halve once only. You can halve the 12 first to make the multiplying easier: 6 × 7."
+  ],
+  "06-02-w3": [
+    "A trapezium has two different parallel sides. Adding them and halving gives the average width, which you multiply by the distance between them.",
+    "Add inside the bracket first. Sixteen times five is 80, and half of that is the area."
+  ],
+  "06-02-w4": [
+    "Area is base times height, so height is area divided by base. Division undoes the multiplication.",
+    "The 8 cm side leans over, so it is longer than the true height of 6 cm. Using it would make the area too big."
+  ],
+  "06-03-w1": [
+    "Circumference is the distance around. The rule uses the radius, which is given here, so nothing needs halving.",
+    "Square the radius before multiplying by π. Leave π as a symbol because the question asks for the answer in terms of π."
+  ],
+  "06-03-w2": [
+    "Sixty degrees is one sixth of a full turn of 360. So the arc is one sixth of the whole circumference.",
+    "The same fraction works for area. The sector is one sixth of the whole circle's area."
+  ],
+  "06-03-w3": [
+    "Circle rules need the radius. The question gives the diameter, so halve it before anything else.",
+    "Walk around the shape: half a circumference, then straight back along the 14 cm diameter. Do not leave out the straight edge.",
+    "A semicircle is half a circle, so take half of πr². Exactly means leave π in the answer."
+  ],
+  "06-03-w4": [
+    "The two curved ends fit together into one full circle of radius 10. Add its circumference to the two straight sides.",
+    "Split the shape into a 40 by 20 rectangle and one full circle. The pieces do not overlap, so their areas add."
+  ],
+  "06-04-w1": [
+    "One layer holds 6 × 4 = 24 cubes and there are 3 layers. The unit is cm³ because you are counting cubes."
+  ],
+  "06-04-w2": [
+    "A closed box has three pairs of matching faces: top and bottom, front and back, and two ends. Find one of each, then double.",
+    "Add the three different face areas inside the bracket first, then double. The unit is cm² because faces are flat."
+  ],
+  "06-04-w3": [
+    "Capacity is the space inside, so multiply the three lengths. Each cubic metre holds 1000 litres, so multiply 0.48 by 1000.",
+    "The tank has no lid. Count the base and the four sides, which come in two matching pairs, and leave the top out.",
+    "Work out each part before adding. All three are in square metres, so they can be added."
+  ],
+  "06-04-w4": [
+    "Gluing does not squash anything, so the two volumes just add. Each cube is 3 × 3 × 3.",
+    "Each cube has six faces of 9 cm². The glued face on each cube is hidden, so take away two faces, not one."
+  ],
+  "06-05-w1": [
+    "A prism is the same slice repeated all along its length. So volume is the area of one slice times the length.",
+    "Area times length gives cubic units: cm² × cm = cm³."
+  ],
+  "06-05-w2": [
+    "The end face is a triangle, so halve 6 × 8 to get its area. Then multiply by the length of the prism.",
+    "The triangle's area is 24 cm². Ten centimetres of that slice gives the volume."
+  ],
+  "06-05-w3": [
+    "Volume is area times length. You know the volume, so divide by the area to get the length.",
+    "First you need the area of the trapezium end. Average the parallel sides, 5 and 7, then multiply by the 4 cm between them.",
+    "Now divide the volume by that area. Dividing undoes the multiplying that made the volume."
+  ],
+  "06-05-w4": [
+    "You need the third side of the triangle for the sloping face. The triangle is right-angled, so Pythagoras gives it.",
+    "The volume is the triangle's area times the length. Remember to halve 3 × 4 for the triangle.",
+    "There are two triangle ends and three rectangles. Together the rectangles are as wide as the triangle's perimeter and 12 cm long."
+  ],
+  "06-06-w1": [
+    "Every 1 cm on the drawing stands for 100 cm in real life, so multiply by 100. Then change centimetres to metres."
+  ],
+  "06-06-w2": [
+    "Put the real distance in centimetres first, so both lengths use the same unit. The map is 50,000 times smaller, so divide."
+  ],
+  "06-06-w3": [
+    "Change each drawn length to a real length before finding the area. Multiply each by 200, then write it in metres.",
+    "Now it is an ordinary rectangle with real sides. Multiply length by width."
+  ],
+  "06-06-w4": [
+    "Go through the real distance. Multiply the map length by 25,000, then change centimetres to kilometres.",
+    "The second map is 60,000 times smaller than real life. Divide the real distance in centimetres by 60,000.",
+    "Time is distance divided by speed. The answer is in hours, so multiply 0.45 by 60 to get minutes."
+  ],
+  "17-01-w1": [
+    "A cylinder is a stack of equal circles. Find one circle's area, π × 3², then multiply by the 7 cm height."
+  ],
+  "17-01-w2": [
+    "The formula needs the radius, and you were given the diameter. Halve 10 to get 5 before squaring."
+  ],
+  "17-01-w3": [
+    "Write the volume formula with the numbers you know. The only letter left is h, the height you want.",
+    "h is multiplied by 16π, so divide both sides by 16π. The π on top and bottom cancels."
+  ],
+  "17-01-w4": [
+    "The radius is in centimetres, so the volume must be in cubic centimetres. One litre is 1000 cm³.",
+    "Volume is base area times height. Divide the volume by the base area, π × 5², to get the height."
+  ],
+  "17-02-w1": [
+    "Peel the curved side off like a label and it lies flat as a rectangle. Its width is the circumference, 2πr, and its height is h."
+  ],
+  "17-02-w2": [
+    "Closed means a top and a bottom. So add two circles to the curved side.",
+    "Both parts are areas in cm² with π in them, so add the numbers in front of π."
+  ],
+  "17-02-w3": [
+    "No lid means only one circle, the base. Add it to the curved side.",
+    "Work out each part, then add. A closed cylinder would have a second 25π."
+  ],
+  "17-02-w4": [
+    "The outside is the cylinder's curved side plus two half spheres, which make one whole sphere. The flat circles at the joins are hidden inside.",
+    "For volume, nothing is hidden. Add the cylinder to the one whole sphere made by the two ends."
+  ],
+  "17-03-w1": [
+    "Volume needs the radius cubed, because a solid has three directions. Work out 3³ = 27 first, then multiply by 4/3."
+  ],
+  "17-03-w2": [
+    "A hemisphere's curved part is half of a sphere's surface. Half of 4πr² is 2πr².",
+    "A solid hemisphere also has a flat circular face. Add πr² for that face to get the total."
+  ],
+  "17-03-w3": [
+    "Melting changes the shape but not the amount of metal. So divide the large volume by the volume of one small sphere.",
+    "The π cancels. Dividing by 32/3 is the same as multiplying by 3/32."
+  ],
+  "17-03-w4": [
+    "The empty space is what is left of the cylinder after the sphere takes its share. Subtract the two volumes.",
+    "Write 250π as 750π/3 so both parts are thirds. Then subtract the tops.",
+    "To find a fraction, divide the part by the whole. The π cancels and leaves 500/3 divided by 250."
+  ],
+  "17-04-w1": [
+    "Every minute adds 12 litres. Ask how many lots of 12 fit into 180."
+  ],
+  "17-04-w2": [
+    "The flow is in litres, so the volume must be in litres too. Find it in cm³, then divide by 1000.",
+    "Now divide the litres needed by the litres arriving each minute. Use the π key and round only at the end."
+  ],
+  "17-04-w3": [
+    "Only the empty part needs filling, and the leak takes some water back out. Use the volume still needed and the amount gained each minute.",
+    "The tank gains 18 − 3 = 15 litres each minute. It still needs 240 − 60 = 180 litres."
+  ],
+  "17-04-w4": [
+    "In one second the water moves 50 cm along the pipe, so it fills a cylinder 50 cm long. Multiply by 60 for a minute and divide by 1000 for litres.",
+    "The flow is steady, so three minutes gives three times as much.",
+    "Only full containers count. The 0.62 left over does not fill another one, so go down to 22."
+  ],
+  "22-01-w1": [
+    "The hypotenuse is the longest side, so add the two smaller squares. Do not forget the square root at the end."
+  ],
+  "22-01-w2": [
+    "The 25 m side is the hypotenuse. A shorter side is missing, so take the known square away from the biggest square, then take the square root."
+  ],
+  "22-01-w3": [
+    "The diagonal and two sides make a right-angled triangle, so s² + s² = 10². That makes the diagonal √2 times the side, so divide 10 by √2.",
+    "Area of a square is side times side. Squaring 5√2 gives 25 × 2."
+  ],
+  "22-01-w4": [
+    "The cable is the sloping side, so it is the hypotenuse. The mast is a shorter side, so subtract the squares.",
+    "The mast height stays at 12 m. The new cable is the hypotenuse of a new triangle with base 9 m, so add the squares."
+  ],
+  "22-02-w1": [
+    "Start with the right angle at C. The side facing it, AB, is the hypotenuse. BC is across from A, and AC is the other side touching A."
+  ],
+  "22-02-w2": [
+    "You know the opposite and the hypotenuse. SOH says sine uses exactly those two sides.",
+    "You have the ratio and want the angle, so use the inverse sine button. Check the calculator shows DEG."
+  ],
+  "22-02-w3": [
+    "From A, the side across is BC = 6 and the side beside it is AC = 8. Tangent is opposite over adjacent.",
+    "From B, the same two sides swap jobs. So the fraction turns upside down."
+  ],
+  "22-02-w4": [
+    "The three ratios need all three sides. Find the missing shorter side with Pythagoras, subtracting because 13 is the hypotenuse.",
+    "The angle faces the side 5, so 5 is opposite and 12 is adjacent. Now read each ratio from SOH CAH TOA."
+  ],
+  "22-03-w1": [
+    "You know the angle and want the ratio, so use the ordinary sin button. Look for DEG on the screen first."
+  ],
+  "22-03-w2": [
+    "Write down what you know. The ratio is given and the angle is missing. In a right-angled triangle it must be an acute angle.",
+    "To go from a ratio back to an angle, use the inverse cosine button. It does not mean 1 divided by cos."
+  ],
+  "22-03-w3": [
+    "Write down the ratio first. Tangent is opposite over adjacent, so here the opposite is 7 and the adjacent is 4.",
+    "You want the angle, so use the inverse tangent button on 7 ÷ 4.",
+    "Sine and cosine divide by the longest side, so they stay below 1. Tangent divides one shorter side by the other, and either can be the bigger."
+  ],
+  "22-03-w4": [
+    "Sine puts the opposite side on top and the hypotenuse underneath. The hypotenuse is the longest side, so the fraction must be less than 1.",
+    "With the fraction the right way up, the inverse sine button gives an angle. For 12/9 the calculator would show an error."
+  ],
+  "22-04-w1": [
+    "You have the hypotenuse and want the opposite, so use sine: sin 30° = x/14. The unknown is on top, so multiply both sides by 14."
+  ],
+  "22-04-w2": [
+    "You have the hypotenuse and want the adjacent, so use cosine: cos 40° = x/15. Multiply both sides by 15."
+  ],
+  "22-04-w3": [
+    "No hypotenuse is involved, so use tangent: tan 35° = x/8. Multiply both sides by 8."
+  ],
+  "22-04-w4": [
+    "The ramp is the sloping side, so it is the hypotenuse. The rise is opposite the 18° angle, so use sine.",
+    "The run lies along the ground beside the angle, so it is the adjacent side. Use cosine with the same 12 m."
+  ],
+  "22-05-w1": [
+    "You know the opposite and want the hypotenuse, so use sine. Write the equation first: the unknown h lands on the bottom.",
+    "Multiply both sides by h, then divide both sides by sin 30°. Dividing by a half doubles the 8."
+  ],
+  "22-05-w2": [
+    "You know the adjacent and want the hypotenuse, so use cosine. The unknown h is underneath.",
+    "Multiply by h, then divide by cos 50°. You divide here, and the hypotenuse comes out longer than 9 m, as it must."
+  ],
+  "22-05-w3": [
+    "At the boat, the cliff height is opposite the 32° angle and the distance along the sea is adjacent. That pair needs tangent, with d underneath.",
+    "Multiply both sides by d, then divide by tan 32°. The distance comes out longer than the cliff height, which fits an angle below 45°."
+  ],
+  "22-05-w4": [
+    "The 4 m height is opposite the angle and the ladder is the hypotenuse. So sin θ = 4/L, which gives L = 4 ÷ sin θ.",
+    "A steeper ladder is shorter. So the largest angle, 75°, gives the shortest ladder and 65° gives the longest.",
+    "Work out both ends on the calculator. Any ladder length between these two values is allowed."
+  ],
+  "22-06-w1": [
+    "The tree is opposite the angle and the 10 m along the ground is adjacent, so use tangent. At 45° the two sides are equal."
+  ],
+  "22-06-w2": [
+    "The triangle starts at the observer's eyes, not at the ground. So its upright side is only the part of the tower above eye level.",
+    "Find the rise with tangent, 25 tan 38°, then add the 1.6 m from the ground up to the eyes."
+  ],
+  "22-06-w3": [
+    "The wire reaches the edge of the circle, so the distance along the ground is the radius. Get it from the circumference, 2πr.",
+    "The mast is opposite the 40° angle and the radius is adjacent. Use tangent, with the unknown on top.",
+    "The wire is the hypotenuse. Cosine links it to the 30 m, and the unknown is underneath, so divide."
+  ],
+  "22-06-w4": [
+    "The same tower is seen from two places. Write its height twice, once from each triangle, using tangent each time.",
+    "Use the exact values tan 60° = √3 and tan 30° = 1/√3. Both expressions equal h, so they equal each other.",
+    "Multiply both sides by √3 to clear the fraction. On the left, √3 × √3 = 3.",
+    "Take d from both sides to get 2d = 20. Then put d = 10 back into h = d√3."
+  ],
+  "24-01-w1": [
+    "The vector tells you how far to move across and how far up. Add its first number to x and its second number to y."
+  ],
+  "24-01-w2": [
+    "A negative first number in the vector means move left, so x goes down by 2. The second number moves the point up 3.",
+    "B gets exactly the same move as A. That is what makes it a slide.",
+    "C moves the same way too. All three corners have now moved by the same vector, so the shape is unchanged."
+  ],
+  "24-01-w3": [
+    "The vector is the change from A to its image. Subtracting a negative adds, so 4 − (−3) is 7.",
+    "A translation moves every point by the same vector. So B gets the move that A got."
+  ],
+  "24-01-w4": [
+    "Moving 4 right and then 7 left is the same as moving 3 left. Combine the across moves and the up moves separately.",
+    "One combined move reaches the same end point as the two moves done in turn.",
+    "To undo a move, reverse both parts. Adding in either order gives the same total, so the order of the two slides does not matter."
+  ],
+  "24-02-w1": [
+    "The mirror is horizontal, so only the height changes. P is 2 below the axis, so its image is 2 above."
+  ],
+  "24-02-w2": [
+    "The line y = x treats across and up alike. Reflecting in it swaps the two coordinates, and no signs change."
+  ],
+  "24-02-w3": [
+    "P is 3 units left of the mirror, so the image is 3 units right of it. Doubling the mirror value and taking away x does this in one step.",
+    "The mirror is always halfway between a point and its image. So average the two x-coordinates.",
+    "The mirror must cross the line from Q to Q′ at a right angle. That line is horizontal, so the mirror is vertical."
+  ],
+  "24-02-w4": [
+    "Write the rule first. Then you can test each corner the same way instead of guessing.",
+    "Test every corner, not only the one that looks wrong. These two pass.",
+    "C is 1 unit left of the mirror, so its image is 1 unit right of it. The answer (−1, 3) comes from the y-axis rule, which is the wrong mirror."
+  ],
+  "24-03-w1": [
+    "A fold along either of these lines lands each corner on another corner. A fold along a diagonal does not.",
+    "After a half-turn each corner sits where the opposite corner was. The shape looks unchanged."
+  ],
+  "24-03-w2": [
+    "All three sides and angles are equal, so each corner gives a mirror line. A full turn splits into three equal turns of 120°, which is why the order is 3."
+  ],
+  "24-03-w3": [
+    "Opposite corners swap in a half-turn, so the centre is halfway between them. That is the midpoint of a diagonal.",
+    "For a mirror line, every corner must land on a corner. One failure is enough to rule the line out."
+  ],
+  "24-03-w4": [
+    "Both diagonals have the same midpoint, so that point is the centre. Reflecting in either diagonal swaps the other two corners, so each diagonal is an axis.",
+    "A reflection never changes a length. A mirror that swapped a diagonal of length 6 with one of length 4 cannot exist."
+  ],
+  "24-04-w1": [
+    "P is 4 across and 2 up. After a quarter-turn anticlockwise, the 4 across becomes 4 up and the 2 up becomes 2 to the left."
+  ],
+  "24-04-w2": [
+    "A half-turn puts each point the same distance from the origin, on the opposite side. That changes both signs."
+  ],
+  "24-04-w3": [
+    "The rules you know only work about the origin. Measuring from C treats C as if it were the origin.",
+    "The clockwise rule turns the move from C to P. Right becomes down and up becomes right.",
+    "The turned move still starts at C. Add it to C to get back to ordinary coordinates."
+  ],
+  "24-04-w4": [
+    "Measured from (1,1), both points follow the anticlockwise quarter-turn rule. One point alone fits many different turns, so the second point is what settles the centre."
+  ],
+  "24-05-w1": [
+    "Each crossing point is the same distance from A as from B. The opening must be more than half of AB, or the arcs never meet.",
+    "Two points equally far from A and B fix the line of all such points. That line is the perpendicular bisector."
+  ],
+  "24-05-w2": [
+    "The bisector passes through the midpoint. AB is horizontal, so the line at right angles to it is vertical.",
+    "The distance between two points is the hypotenuse of a triangle with sides 4 across and 3 up.",
+    "From B the change across is −4, but squaring removes the sign. So P is 5 from both ends, as a point on the bisector must be."
+  ],
+  "24-05-w3": [
+    "The compass opening is the distance from the centre to every point on the arc. Two different openings give two different distances.",
+    "The bisector is made of points equally far from both ends. A point that is nearer to A cannot be on it."
+  ],
+  "24-05-w4": [
+    "Every point on the first bisector is equally far from A and B. Every point on the second is equally far from B and C. O is on both.",
+    "OA and OC both equal OB, so they equal each other. The third bisector must pass through O, so it adds nothing new."
+  ],
+  "24-06-w1": [
+    "The construction makes two triangles with three pairs of equal sides. So the two angles at the vertex are equal, and each is half of 70°."
+  ],
+  "24-06-w2": [
+    "Three equal sides force three equal angles of 60°, so no protractor is needed. Bisecting then halves it."
+  ],
+  "24-06-w3": [
+    "Each equal pair comes from one unchanged compass opening. The shared side counts as the third pair.",
+    "Three matching sides make the triangles identical. Matching angles of identical triangles are equal, and these two are the halves of the angle."
+  ],
+  "24-06-w4": [
+    "You need a starting angle that a compass can make exactly. Equal sides give 60° without measuring.",
+    "Each bisection halves the angle. Two halvings take 60° down to 15°."
+  ],
+  "24-07-w1": [
+    "Equal marks on both sides make P the midpoint of AB. Now the perpendicular bisector of AB is the line you want.",
+    "Q is equally far from A and B, so it is on that bisector. The opening must be wider than PA, or the arcs only meet at P."
+  ],
+  "24-07-w2": [
+    "The line y = 2 is flat, so a line at right angles to it goes straight up. Straight up means x stays the same."
+  ],
+  "24-07-w3": [
+    "A perpendicular bisector always passes through the midpoint. Here the midpoint is not P, because B is farther away than A.",
+    "One unchanged opening puts A and B the same distance from P. Then P is the midpoint and the bisector passes through it."
+  ],
+  "24-07-w4": [
+    "The perpendicular construction is what guarantees the right angles at A and B. Drawing them by eye does not.",
+    "The compass carries the length of AB to the two upright sides. The fourth side then matches because the two heights are equal."
+  ],
+  "24-15-w1": [
+    "Both cuts are on one arc, so they are the same distance from P. That is why P is on the perpendicular bisector of AB.",
+    "Q is a second point equally far from A and B. Two such points fix the bisector, and it already passes through P."
+  ],
+  "24-15-w2": [
+    "A line at right angles to a flat line goes straight down. So the foot is directly below P, with the same x.",
+    "On a vertical line only y changes. The length is just the difference of the two y-values."
+  ],
+  "24-15-w3": [
+    "The nearest point of the line is the foot of the perpendicular. An arc must reach farther than that to cross the line twice.",
+    "The perpendicular you want is the perpendicular bisector of AB. You cannot bisect a segment without two end points."
+  ],
+  "24-15-w4": [
+    "Perpendicular slopes multiply to −1. The line y = x has slope 1, so the perpendicular has slope −1 and must pass through P.",
+    "The foot is on both lines, so both equations are true there. Putting x in place of y leaves one unknown.",
+    "On the line y = x the two coordinates are equal. So y is 5/2 as well.",
+    "The length of the perpendicular is the distance from P to the foot. The changes across and up are both 3/2 in size.",
+    "The compass and the algebra describe the same line through P at right angles to y = x. They must agree on the foot."
+  ],
+  "24-08-w1": [
+    "You cannot copy a direction by eye. The helper line m gives a right angle to work from.",
+    "The line n is at right angles to m, and so is l. Two lines at right angles to the same line are parallel, and n passes through P."
+  ],
+  "24-08-w2": [
+    "Parallel lines climb at the same rate. So the new line copies the slope 3 from y = 3x − 1.",
+    "A slope and one point fix a line. This form puts in the slope 3 and the point (2,7) directly.",
+    "Multiply the bracket out so that the right side has no brackets. Remember 3 × (−2) is −6.",
+    "Add 7 to both sides to leave y on its own. The slope is still 3, so the line is parallel."
+  ],
+  "24-08-w3": [
+    "The crossing line gives you an angle to copy. The same compass opening and the same gap between the arms make the copy exact.",
+    "If a line crosses two lines at equal corresponding angles, the two lines are parallel. That is the theorem behind this method."
+  ],
+  "24-08-w4": [
+    "Parallel lines make equal corresponding angles at D and B, and at E and C. Equal angles mean the triangles are the same shape.",
+    "In similar triangles every pair of matching sides has the same ratio. Half of AC leaves the other half, so AE and EC are equal."
+  ],
+  "24-09-w1": [
+    "Thirds are hard to measure on AB but easy to step on a new line. Joining the third mark to B ties the whole helper length to the whole of AB.",
+    "A parallel line cuts both sides of the triangle in the same ratio. One step out of three becomes one-third of AB."
+  ],
+  "24-09-w2": [
+    "The parallels copy the five equal steps onto AB. You never need to measure AB.",
+    "Five equal parts share the 10 cm equally. The ruler now checks what the compass built."
+  ],
+  "24-09-w3": [
+    "The ratio counts parts of the whole segment. Three parts and two parts make five, so five steps are needed, not three.",
+    "Three steps lie before the third mark and two after it. The parallel carries that split onto AB."
+  ],
+  "24-09-w4": [
+    "The 11 cm is shared among 7 equal parts. The first piece takes 2 of them and the second takes 5.",
+    "A length of 22/7 cm cannot be measured exactly with a ruler. Seven compass steps and a parallel find the point without any decimals."
+  ],
+  "24-10-w1": [
+    "The base fixes A and B. Each arc holds every point at one of the other two distances, so their crossing point fits both.",
+    "C is 4 cm from A and 5 cm from B. Joining it to the ends gives sides of exactly those lengths."
+  ],
+  "24-10-w2": [
+    "The two shorter sides together must be longer than the longest side. Here they fall 1 cm short, so they cannot close the triangle."
+  ],
+  "24-10-w3": [
+    "Both arcs use the same 5 cm opening, so the top vertex is equally far from both ends. It sits above the midpoint of the base.",
+    "The height meets the base at its midpoint, at a right angle. That gives a right-angled triangle with hypotenuse 5 and one side 3."
+  ],
+  "24-10-w4": [
+    "If x is the longest side, 4 + 7 must beat it. If 7 is the longest, x + 4 must beat 7. Together these trap x between two values.",
+    "At the end values the two shorter sides only just reach, lying flat on the longest. A triangle needs them to reach with room to rise.",
+    "Any whole number from 4 to 10 would do. Three sides are known, so use the two-arc construction."
+  ],
+  "24-11-w1": [
+    "The angle is at A, between the two given sides. So both sides are drawn out from A, one along the base and one along the angle line.",
+    "Once B and C are fixed there is only one way to close the triangle. The third side needs no measuring."
+  ],
+  "24-11-w2": [
+    "The included angle is a right angle, so the second side lies along a perpendicular at A.",
+    "BC faces the right angle, so it is the hypotenuse. √50 is √25 × √2, which is 5√2."
+  ],
+  "24-11-w3": [
+    "With the angle between the sides, each side has one fixed direction and one fixed length. Nothing is left to choose.",
+    "An arc can cut a straight line in two places. Each crossing gives a different triangle with the same three measurements."
+  ],
+  "24-11-w4": [
+    "Two sides and the angle between them fix triangle ABD, as in SAS. The parallels then copy the two directions for the other two sides.",
+    "C must lie on both parallels, so it is where they cross. That makes both pairs of opposite sides parallel."
+  ],
+  "24-12-w1": [
+    "The angles of a triangle add to 180°, which leaves 60° for the third angle. Three equal angles mean three equal sides."
+  ],
+  "24-12-w2": [
+    "Two equal base angles mean two equal sides, so C sits above the middle of AB. The angle sum gives the angle at C.",
+    "A right-angled triangle with one 45° angle has another 45° angle. Equal angles face equal sides, so the height equals half the base."
+  ],
+  "24-12-w3": [
+    "Two angles already use more than the 180° a triangle has. Nothing is left for a third angle, so the two lines never meet."
+  ],
+  "24-12-w4": [
+    "Each line holds one of the given angles. Only their crossing point has both, so that is C.",
+    "The angle sum leaves 90° at C. The hypotenuse is always the side facing the right angle."
+  ],
+  "24-13-w1": [
+    "The perpendicular gives the right angle at A. The arc from B holds every point 5 cm from B, so C is the hypotenuse length away.",
+    "The hypotenuse squared equals the sum of the other two squares. So take 3² away from 5² to find the missing side squared."
+  ],
+  "24-13-w2": [
+    "The hypotenuse faces the largest angle, so it is the longest side. A side of 8 cm cannot sit beside a hypotenuse of only 6 cm."
+  ],
+  "24-13-w3": [
+    "The hypotenuse is 13, so take the square of the known side away from 13². Adding the squares would treat 13 as a shorter side.",
+    "The perimeter is the distance all the way round. Add all three sides, including the one just found.",
+    "The two sides at the right angle are the base and the height. Half their product is the area."
+  ],
+  "24-13-w4": [
+    "Pythagoras only works because of the right angle. It turns two known sides into the third, with no choice left.",
+    "Three fixed sides give one triangle, apart from its mirror image. Without the right angle the third side is not forced, so two triangles can fit."
+  ],
+  "24-14-w1": [
+    "The perpendiculars give the right angles at A and B. Equal heights of 4 cm put D and C level with each other.",
+    "D and C are the same height above AB, so DC is parallel to AB. That closes the rectangle."
+  ],
+  "24-14-w2": [
+    "The diagonal is the hypotenuse of a right-angled triangle whose other sides are the length and the width.",
+    "The diagonals of a rectangle cut each other in half. So the centre is half a diagonal from every corner."
+  ],
+  "24-14-w3": [
+    "The diagonal faces the right angle, so it is the hypotenuse. Take the known side squared away from the diagonal squared.",
+    "The side, the right angle and the diagonal arc fix three corners. The fourth comes from keeping opposite sides parallel.",
+    "The area of a rectangle is length times width. The diagonal is not used in the area."
+  ],
+  "24-14-w4": [
+    "Opposite sides are equal and parallel, which makes a parallelogram. A rectangle also needs right angles, and a side that leans is not at right angles to a flat base.",
+    "A side at right angles to the horizontal base must be vertical. So D is straight above A and C is straight above B."
   ]
 }

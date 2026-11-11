@@ -678,14 +678,14 @@
       {
         "index": 0,
         "formulaFont": 15.5,
-        "diagramScale": 0.9662583843686211,
-        "bottomClearance": 15.0
+        "diagramScale": 1.50909886264217,
+        "bottomClearance": 271.56
       },
       {
         "index": 1,
         "formulaFont": 15.5,
-        "diagramScale": 0.9727325750947798,
-        "bottomClearance": 65.73
+        "diagramScale": 1.50909886264217,
+        "bottomClearance": 385.86
       },
       {
         "index": 2,
@@ -714,8 +714,8 @@
       {
         "index": 6,
         "formulaFont": 15.5,
-        "diagramScale": 1.50909886264217,
-        "bottomClearance": 385.86
+        "diagramScale": 0.9727325750947798,
+        "bottomClearance": 65.73
       }
     ]
   },
@@ -779,7 +779,7 @@
         "index": 0,
         "formulaFont": 15.5,
         "diagramScale": 1.50909886264217,
-        "bottomClearance": 271.56
+        "bottomClearance": 256.16
       },
       {
         "index": 1,
@@ -970,7 +970,7 @@
       {
         "index": 1,
         "formulaFont": 15.5,
-        "diagramScale": 1.1869991251093617,
+        "diagramScale": 1.0729250510352877,
         "bottomClearance": 15.0
       },
       {
@@ -1027,19 +1027,19 @@
         "index": 0,
         "formulaFont": 15.5,
         "diagramScale": 0.9727325750947798,
-        "bottomClearance": 75.13
+        "bottomClearance": 59.73
       },
       {
         "index": 1,
         "formulaFont": 15.5,
         "diagramScale": 0.9727325750947798,
-        "bottomClearance": 71.63
+        "bottomClearance": 56.23
       },
       {
         "index": 2,
         "formulaFont": 15.5,
         "diagramScale": 0.9727325750947798,
-        "bottomClearance": 54.83
+        "bottomClearance": 39.43
       },
       {
         "index": 3,
@@ -1057,7 +1057,7 @@
         "index": 5,
         "formulaFont": 15.5,
         "diagramScale": 0.9727325750947798,
-        "bottomClearance": 71.63
+        "bottomClearance": 56.23
       },
       {
         "index": 6,
@@ -1068,13 +1068,13 @@
       {
         "index": 7,
         "formulaFont": 15.5,
-        "diagramScale": 1.1610731991834358,
+        "diagramScale": 1.0469991251093618,
         "bottomClearance": 15.0
       },
       {
         "index": 8,
         "formulaFont": 15.5,
-        "diagramScale": 1.418110236220473,
+        "diagramScale": 1.304036162146399,
         "bottomClearance": 15.0
       }
     ]
@@ -1213,7 +1213,7 @@
         "index": 1,
         "formulaFont": 15.5,
         "diagramScale": 0.9727325750947798,
-        "bottomClearance": 71.63
+        "bottomClearance": 56.23
       },
       {
         "index": 2,
@@ -1231,7 +1231,7 @@
         "index": 4,
         "formulaFont": 15.5,
         "diagramScale": 0.9727325750947798,
-        "bottomClearance": 56.93
+        "bottomClearance": 41.53
       },
       {
         "index": 5,
@@ -1255,7 +1255,7 @@
         "index": 8,
         "formulaFont": 15.5,
         "diagramScale": 0.9727325750947798,
-        "bottomClearance": 53.43
+        "bottomClearance": 38.03
       },
       {
         "index": 9,
@@ -1347,7 +1347,7 @@
         "index": 10,
         "formulaFont": 15.5,
         "diagramScale": 1.50909886264217,
-        "bottomClearance": 367.66
+        "bottomClearance": 352.26
       }
     ]
   },
@@ -1489,7 +1489,7 @@
         "index": 10,
         "formulaFont": 15.5,
         "diagramScale": 0.9727325750947798,
-        "bottomClearance": 56.93
+        "bottomClearance": 41.53
       },
       {
         "index": 11,
@@ -1512,7 +1512,7 @@
       {
         "index": 14,
         "formulaFont": 15.5,
-        "diagramScale": 1.418110236220473,
+        "diagramScale": 1.304036162146399,
         "bottomClearance": 15.0
       },
       {

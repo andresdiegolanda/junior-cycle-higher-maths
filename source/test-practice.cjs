@@ -41,7 +41,7 @@ for(const chapter of chapters)for(const lesson of chapter.lessons){
    assert.equal(c.practiceSaved(q).review,'supported');
   }else{
    c.nodes['practice-hint'].onclick();c.nodes['practice-answer-'+q.answer].onclick();
-   assert.match(c.html,/Clue 1/);assert.match(c.html,/Correct — here is why/);
+   assert.match(c.html,/Clue 1/);assert.match(c.html,/Correct\. Here is why/);
    assert.equal(c.progress.answers[q.id],q.answer);
   }
  }

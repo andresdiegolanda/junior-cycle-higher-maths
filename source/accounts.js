@@ -14,15 +14,17 @@ const MathsAccount=(()=>{
  }
  function status(text){if(text!==undefined)message=text;const n=document.getElementById('account-sync');if(n)n.textContent=message||(queue().length?'Waiting to sync':'Saved');}
  function apply(rows,initial=false){
-  if(initial){const notes={};try{Object.assign(notes,JSON.parse(localStorage.getItem(storeKey)||'{}'))}catch{}progress={lessons:{},answers:{},practice:{},challenges:{},last:null};for(const scope of ['practice','challenges'])for(const [id,v]of Object.entries(notes?.[scope]&&typeof notes[scope]==='object'?notes[scope]:{}))if(v&&typeof v.notes==='string')progress[scope][id]={notes:v.notes};}
+  if(initial){const notes={};try{Object.assign(notes,JSON.parse(localStorage.getItem(storeKey)||'{}'))}catch{}progress={lessons:{},answers:{},practice:{},challenges:{},skills:{},drills:{},last:null};for(const scope of ['practice','challenges'])for(const [id,v]of Object.entries(notes?.[scope]&&typeof notes[scope]==='object'?notes[scope]:{}))if(v&&typeof v.notes==='string')progress[scope][id]={notes:v.notes};}
   for(const row of rows){const k=row.scope+':'+row.item_id;revision[k]=row.revision;if(!initial&&queue().some(e=>scopeOf(e)===k))continue;const s=JSON.parse(row.state);
    if(row.scope==='lesson')progress.lessons[row.item_id]={seen:[],done:false,...s};
    if(row.scope==='position')progress.last=s;
+   if(row.scope==='skill')(progress.skills||={})[row.item_id]=s;
+   if(row.scope==='drills'&&row.item_id==='days')progress.drills={days:s.days&&typeof s.days==='object'?s.days:{}};
    if(row.scope==='exercise'){if(Number.isInteger(s.option))progress.answers[row.item_id]=s.option;else delete progress.answers[row.item_id];const target=row.item_id.includes('-c')?progress.challenges:progress.practice;target[row.item_id]={notes:target[row.item_id]?.notes,...s}}
   }
   save();
  }
- function scopeOf(e){return e.kind==='lesson_opened'?'position:last':['teaching_step_viewed','confidence_changed'].includes(e.kind)?'lesson:'+e.lessonId:['exercise_started','choice_submitted','clue_revealed','solution_step_revealed','self_assessment_changed'].includes(e.kind)?'exercise:'+e.exerciseId:null}
+ function scopeOf(e){return e.kind==='drill_day_logged'?'drills:days':['drill_answered','drill_round_finished'].includes(e.kind)?'skill:'+e.payload.skill:e.kind==='lesson_opened'?'position:last':['teaching_step_viewed','confidence_changed'].includes(e.kind)?'lesson:'+e.lessonId:['exercise_started','choice_submitted','clue_revealed','solution_step_revealed','self_assessment_changed'].includes(e.kind)?'exercise:'+e.exerciseId:null}
  function session(){if(!sessionId||Date.now()-lastEvent>1800000){sessionId=crypto.randomUUID();attempts={}}lastEvent=Date.now();return sessionId}
  let order=0;
  function emit(kind,payload={},context={}){
@@ -59,7 +61,7 @@ const MathsAccount=(()=>{
   finally{if(queue().length&&!locked)timer=setTimeout(flush,5000)}
  }
  function showLock(text,canDiscard=false){stopAudio();document.getElementById('app').innerHTML=`<section class="account-gate"><p class="eyebrow">Your account</p><h1>Reconnect to continue</h1><p>${E(text)}</p><button id="account-reconnect" class="primary">Reconnect</button>${canDiscard?'<p>If these pending records are outdated, you can discard them and reload. Saved server progress and local notes are kept.</p><button id="account-discard">Discard pending records</button>':''}<p>Your saved work stays with your account.</p></section>`;document.getElementById('account-reconnect').onclick=()=>location.reload();if(canDiscard)document.getElementById('account-discard').onclick=()=>{if(!confirm('Discard only this account’s unsaved activity on this device?'))return;for(const e of queue())drop(e.id);location.reload()};}
- function clearLocal(){if(!user)return;try{for(const k of Object.keys(localStorage))if(k===storeKey||k.startsWith('jc-event:'+user.id+':'))localStorage.removeItem(k)}catch{}memory.clear();progress={lessons:{},answers:{},last:null};}
+ function clearLocal(){if(!user)return;try{for(const k of Object.keys(localStorage))if(k===storeKey||k==='jc-drill-test:'+user.id||k.startsWith('jc-event:'+user.id+':'))localStorage.removeItem(k)}catch{}memory.clear();progress={lessons:{},answers:{},last:null};}
  async function logout(){await flush();if(queue().length&&!confirm('Some activity has not synced. Sign out and discard the pending activity and local notes on this device?'))return;locked=true;stopAudio();channel?.postMessage({type:'logout',user:user.id});clearLocal();location.assign('/cdn-cgi/access/logout')}
  async function start(){
   if(location.protocol==='file:'){startOffline();return}
@@ -71,7 +73,7 @@ const MathsAccount=(()=>{
    document.addEventListener('pointerdown',()=>{lastAction=Date.now()},{passive:true});document.addEventListener('keydown',()=>{lastAction=Date.now()});
    setInterval(()=>{
     const end=Date.now(),active=ready&&!locked&&document.visibilityState==='visible'&&document.hasFocus()&&(end-lastAction<120000||(!player.paused&&!player.ended));
-    if(active&&end-tickAt<=35000&&currentChapter)emit('active_interval',{start:tickAt,end});tickAt=end;
+    if(active&&end-tickAt<=35000&&(currentChapter||typeof Drills!=='undefined'&&Drills.studying))emit('active_interval',{start:tickAt,end});tickAt=end;
    },30000);
    window.addEventListener('online',flush);document.addEventListener('visibilitychange',()=>{tickAt=Date.now();if(document.visibilityState==='hidden')flush()});flush();
   }catch(e){if(local&&e.status===404){startOffline();return}locked=true;showLock(e.message)}

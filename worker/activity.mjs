@@ -47,10 +47,10 @@ export async function dailyActivity(db,id,window,now){
   SELECT json_extract(value,'$.date') date,json_extract(value,'$.start') start_at,json_extract(value,'$.end') end_at,
   json_extract(value,'$.startMs') start_ms,json_extract(value,'$.endMs') end_ms FROM json_each(?)
  ), event_totals AS (SELECT c.date,
-  COUNT(DISTINCT CASE WHEN e.kind IN ('choice_submitted','self_assessment_changed') THEN e.exercise_id END) questions,
+  COUNT(DISTINCT CASE WHEN e.kind IN ('choice_submitted','self_assessment_changed') THEN e.exercise_id END)+COALESCE(SUM(e.kind='drill_answered'),0) questions,
   COUNT(DISTINCT e.lesson_id) sections,
   COALESCE(SUM(e.kind='clue_revealed'),0) clues
- FROM calendar c LEFT JOIN events e ON e.user_id=? AND e.occurred_at>=c.start_at AND e.occurred_at<c.end_at AND e.occurred_at<=? AND e.kind!='active_interval'
+ FROM calendar c LEFT JOIN events e ON e.user_id=? AND e.occurred_at>=c.start_at AND e.occurred_at<c.end_at AND e.occurred_at<=? AND e.kind NOT IN ('active_interval','drill_day_logged')
  GROUP BY c.date), pieces AS (
   SELECT c.date,MAX(i.start_ms,c.start_ms) start_ms,MIN(i.end_ms,c.end_ms,?) end_ms
   FROM calendar c JOIN active_intervals i ON i.user_id=? AND i.end_ms>c.start_ms AND i.start_ms<c.end_ms AND i.start_ms<?

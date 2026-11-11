@@ -123,6 +123,8 @@ def _clock_time(m):
     minutes = 'hundred hours' if minute == 0 else ('oh ' if minute < 10 else '') + number(minute)
     return hours + ' ' + minutes
 
+_ADJECTIVE_UNITS = 'kilometres|centimetres|millimetres|metres|millilitres|litres|kilograms|grams'
+
 def _rate(m):
     unit, denominator = m.group(1), m.group(2)
     return f'{unit} per {RATE_DENOMINATORS[denominator]}'
@@ -155,11 +157,20 @@ def spoken(t, *, clock_times=False):
     t = re.sub(r'\bcos\b', 'cosine', t)
     t = re.sub(r'Δ(?=[A-Z]{3})', ' triangle ', t)
     t = re.sub(r'Δ(?=[a-z])', ' change in ', t).replace('Δ', ' delta ')
+    t = re.sub(r'\b([Pp])art \(([a-e])\)', r'\1art \2', t)       # Part (b) is already named
     t = re.sub(r'(?<![\w])\(([a-e])\)(?=\s)', r'Part \1.', t)  # (a) Expand … → Part a. Expand …
+    # A gloss in brackets after a word is an aside, not algebra: "the top (the numerator)".
+    t = re.sub(r"(?<=[A-Za-z]) \(((?:[A-Za-z]{4,}|[A-Z]{3,5}|[A-Za-z]+(?:[ '’-]+[A-Za-z]+)+))\)(?=[\s.,;:!?]|$)", r', \1,', t)
+    t = re.sub(r',(?=[.;:!?,])|,$', '', t)
     if re.search(r'[∩∪∖{}]|\\|\bsets?\b|\bcomplement\b|universal|Venn|elements?\b', t):
         t = re.sub(r'([A-Z])′', r'\1 complement', t)   # A′ in set work; P′ stays an image point in geometry
+    # 3f(2) and kf(3): a number or letter in front of a function value multiplies it.
+    t = re.sub(r'(?<![A-Za-z])(\d+|[a-z])([fgh])\(([^()]+)\)', r'\1 times \2 of \3', t)
     t = re.sub(r'\b([fgh])\(([^()]+)\)', r'\1 of \2', t)
+    t = re.sub(r'\b([fgh])\(([^()]+)\)', r'\1 of \2', t)   # g(f(2)): the outer call, once the inner one is words
     t = re.sub(r'\b([PQ])\(([^()]+)\)', _named_call, t)
+    # F(2), C(7), T(n): any other capital with one number or letter in brackets is a function value.
+    t = re.sub(r'(?<![A-Za-z])([A-HJ-OR-Z])\(([−-]?\d+(?:\.\d+)?|[a-z])\)', r'\1 of \2', t)
     t = re.sub(r'(?<![A-Za-z])n\(([A-Z][^()]*)\)', r'number of elements in \1', t)   # n(A ∩ B)
     t = re.sub(r'#\s*\(([^()]+)\)', r'number of elements in \1', t)
     t = re.sub(r'#\s*([A-Z])', r'number of elements in \1', t)
@@ -186,12 +197,16 @@ def spoken(t, *, clock_times=False):
     t = t.replace('€x', 'x euros').replace('€', ' euros ')
     t = re.sub(r'\b(' + UNIT_WORDS + r')\s*/\s*(' + '|'.join(sorted(map(re.escape, RATE_DENOMINATORS), key=len, reverse=True)) + r')(?![\w²³/])', _rate, t)
     # 1 euro, per kilometre, to the nearest centimetre: a single unit is singular.
-    t = re.sub(r'((?<![\d.])1|\bper|\bnearest) (' + _SINGULAR_PATTERN + r')\b', lambda m: m.group(1) + ' ' + SINGULAR[m.group(2)], t)
+    t = re.sub(r'((?<![\d.])1|\bper|\bnearest|\b[Ee]ach|\b[Ee]very|\bone) (' + _SINGULAR_PATTERN + r')\b', lambda m: m.group(1) + ' ' + SINGULAR[m.group(2)], t)
+    # A 6 km journey, an 8 cm by 5 cm rectangle: a measurement used as a describing word is singular.
+    t = re.sub(r'\b[Aa]n? \d+(?:\.\d+)? (?:' + _ADJECTIVE_UNITS + r')(?: by \d+(?:\.\d+)? (?:' + _ADJECTIVE_UNITS + r'))*(?= [a-z])',
+               lambda m: re.sub(r'(' + _ADJECTIVE_UNITS + r')', lambda u: u.group(1)[:-1], m.group(0)), t)
     t = re.sub(r'ⁿ√', ' nth root of ', t)
     t = t.replace('⁴√', ' fourth root of ')
     t = re.sub(f'([{SUPER}]+)⁄([{SUPER}]+)', _fraction_power, t)
     t = re.sub(f'[{SUPER}]+', _power, t)
     t = re.sub(f'[{SUB}]+', _subscript, t)
+    t = re.sub(r'\((−?\d+(?:\.\d+)?),\s*(−?\d+(?:\.\d+)?)\)\s*:', r' \1 comma \2,', t)   # (4, 6): 4 − 12 is a point, then working
     t = re.sub(r'\((−?\d+(?:\.\d+)?),\s*(−?\d+(?:\.\d+)?)\)', r' \1 comma \2 ', t)   # the point (3,1)
     t = re.sub(r'(?<=\d):(?=\d)', ' to ', t)          # 2:3
     t = re.sub(r'(?<=\d) : (?=\d)', ' to ', t)        # 2 : 3, but not "x = 2: 25"
@@ -202,6 +217,7 @@ def spoken(t, *, clock_times=False):
     t = re.sub(r'(\d)([a-zA-Z]{2,3})\b', _product, t)   # 3ab, 18xy, 4ac
     t = re.sub(r'(\d)s\b(?=\s*(?:[=+\-×÷/)]|is |equals|plus|minus|times|squared|cubed|$))', r'\1 times s', t)  # 2s = 108, not "both 3s"
     t = re.sub(r'(\d)\s*\(', r'\1 times (', t)
+    t = re.sub(r'(\d)\[', r'\1 times [', t)
     t = re.sub(r'\)\s*\(', ') times (', t)
     t = re.sub(r'\)(?=[a-z]\b)', ') times ', t)
     t = re.sub(r'(?<![A-Za-z])([a-z])\(', r'\1 times (', t)

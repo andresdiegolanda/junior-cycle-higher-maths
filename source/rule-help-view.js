@@ -5,13 +5,13 @@ function ruleFormula(text) {
 function ruleHelpButton(help) {
  const rule=help&&DATA.ruleLibrary?.[help.id];if(!rule)return '';
  const label=rule.kind==='method'||help.reminder?'Method reminder':'Rule applied';
- return `<button type="button" class="step-rule-button" data-step-rule="${E(JSON.stringify(help))}" aria-label="${label}: ${E(rule.title)}" aria-expanded="false" aria-haspopup="dialog" aria-controls="step-rule-popover"><span class="step-rule-icon" aria-hidden="true">ƒ</span><span>${label}</span></button>`;
+ return `<button type="button" class="step-rule-button" data-step-rule="${E(JSON.stringify(help))}" aria-expanded="false" aria-haspopup="dialog" aria-controls="step-rule-popover"><span class="step-rule-icon" aria-hidden="true">ƒ</span><span>${label}</span><span class="screen-reader">: ${E(rule.title)}</span></button>`;
 }
 function ruleHelpMarkup(help) {
  const r=DATA.ruleLibrary[help.id];
  const base=DATA.standalone&&r.chapter!==DATA.chapters[0].id?'index.html':'';
  const href=`${base}#chapter=${r.chapter}&lesson=${encodeURIComponent(r.lesson)}&mode=reference&method=${r.method}`;
- return `<header class="step-rule-head"><div><p class="step-rule-kicker">${r.kind==='method'||help.reminder?'METHOD REMINDER':'WHY THIS STEP WORKS'}</p><h2 id="step-rule-title">${E(r.title)}</h2></div><button type="button" data-close-step-rule aria-label="Close rule explanation">×</button></header>
+ return `<div class="step-rule-head"><div><p class="step-rule-kicker">${r.kind==='method'||help.reminder?'METHOD REMINDER':'WHY THIS STEP WORKS'}</p><h2 id="step-rule-title">${E(r.title)}</h2></div><button type="button" data-close-step-rule aria-label="Close rule explanation">×</button></div>
  <div class="step-rule-formula">${ruleFormula(r.formula)}</div>
  ${help.bindings?`<div class="step-rule-bindings" aria-label="Values in this step">${help.bindings.map(b=>`<span class="rule-binding rule-symbol-${E(b.symbol)}"><b>${E(b.symbol)}</b><span>=</span><strong>${E(b.value)}</strong></span>`).join('')}</div><p class="step-rule-caption">Replace the matching letters with these values.</p>`:''}
  ${help.application?`<div class="step-rule-application"><b>In this step</b><p>${E(help.application)}</p></div>`:''}

@@ -1,4 +1,4 @@
-JUNIOR CYCLE HIGHER MATHS — PREPARATION GUIDE
+JUNIOR CYCLE HIGHER MATHS: PREPARATION GUIDE
 
 Open index.html for all 24 chapters, or open an individual chapter page.
 Each HTML page contains its own styles, diagrams, scripts and glossary.
@@ -20,6 +20,12 @@ Choose an available English voice and speaking speed with Voice.
 Local voices can work offline; online voices need an internet connection and may
 send the narration text to the voice provider. No microphone is needed.
 If speech is unavailable, use the written explanations and transcripts.
+
+Skill drills: rounds of five generated questions for the core skills of algebra,
+number, ratio and statistics. Type your answer and it is marked at once. A wrong
+answer shows the likely slip and a worked solution. Each skill has three levels;
+stars record your best round. "Get ready for a test" builds a ten-question
+warm-up from the topics you tick, then lists the skills to fix first.
 
 Formulas: search by name or expression, such as quadratic or ax2+bx+c.
 Browse subjects for clearly typeset rules, symbol meanings, diagrams and worked

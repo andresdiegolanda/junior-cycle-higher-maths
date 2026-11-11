@@ -11,6 +11,10 @@ const broken=clean({lessons:{'01-02':{seen:'x',done:1},'01-03':null,'01-04':{see
 assert.deepEqual(broken.lessons['01-02'],{seen:[],done:false});assert.ok(!('01-03' in broken.lessons));assert.deepEqual(broken.lessons['01-04'],{seen:[1,3],done:false});
 assert.deepEqual(broken.answers,{'01-02-q1':2});assert.equal(broken.last,null);assert.ok(!('practice' in broken));
 assert.deepEqual(broken.practicePosition,{'01-02':99});assert.deepEqual(broken.challenges,{'01-c02':{done:true}});
+// Skill-drill records: counts and stars are clamped; malformed entries are dropped.
+const drills=clean({lessons:{},answers:{},skills:{a:{asked:7,right:5,rounds:2,stars:[3,2,0]},b:{asked:-1,right:'x',stars:[9,'y']},c:null,d:'text'},drills:{days:{'2026-11-11':2,'bad':1,'2026-11-12':0,'2026-11-13':'3'}}});
+assert.deepEqual(drills.skills,{a:{asked:7,right:5,rounds:2,stars:[3,2,0]},b:{asked:0,right:0,rounds:0,stars:[3,0,0]}});assert.deepEqual(drills.drills,{days:{'2026-11-11':2}});
+assert.ok(!('skills' in clean({lessons:{},answers:{},skills:[]})));assert.ok(!('drills' in clean({lessons:{},answers:{},drills:{days:[]}})));
 // The lesson helper repairs a record that lost its seen list but keeps a confident mark.
 const helper=guide.slice(guide.indexOf('function lessonState'),guide.indexOf('function announce'));
 const ctx2={progress:{lessons:{a:{seen:null,done:true},b:{seen:[1],done:false}}}};vm.createContext(ctx2);vm.runInContext(helper+'\nglobalThis.state=lessonState;',ctx2);

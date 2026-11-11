@@ -124,3 +124,37 @@ test('day drill-down and timeline pagination do not change daily totals or leak 
  assert.equal((await f.call('b',`/api/admin/users/${a.id}/activity?days=7`)).status,403);
  assert.equal((await f.call('a','/api/my-activity?days=7&day=2026-01-01')).status,400);
 });
+
+test('skill drills record answers, best stars and practice days, count as questions, and reject invalid events',async t=>{
+ const f=fixture(t);await f.invite('a@example.test');await f.session('a');
+ const [skill,info]=Object.entries(catalog.skills)[0],context={lessonId:info.lesson};
+ const answered=(outcome,baseRevision,level=0)=>f.event('drill_answered',{skill,level,outcome,extra:'ignored'},{...context,baseRevision});
+ assert.equal((await f.events('a',answered('first',0),answered('helped',1),answered('missed',2))).status,200);
+ const finished=await f.events('a',f.event('drill_round_finished',{skill,level:0,stars:2},{...context,baseRevision:3}),f.event('drill_round_finished',{skill,level:0,stars:1},{...context,baseRevision:4}),f.event('drill_round_finished',{skill,level:2,stars:3},{...context,baseRevision:5}));
+ assert.equal(finished.status,200);assert.ok(finished.data.accepted.every(a=>a.applied));
+ const row=finished.data.progress.find(p=>p.scope==='skill'&&p.item_id===skill),state=JSON.parse(row.state);
+ assert.deepEqual(state,{asked:3,right:1,stars:[2,0,3],rounds:3});
+ const day=await f.events('a',f.event('drill_day_logged',{day:'2026-11-04'},{...context,baseRevision:0}),f.event('drill_day_logged',{day:'2026-11-04'},{...context,baseRevision:1}),f.event('drill_day_logged',{day:'2026-11-05'},{...context,baseRevision:2}));
+ assert.equal(day.status,200);assert.deepEqual(JSON.parse(day.data.progress.find(p=>p.scope==='drills').state),{days:{'2026-11-04':2,'2026-11-05':1}});
+ const activity=(await f.call('a','/api/my-activity?days=7')).data,today=activity.daily.at(-1);
+ assert.equal(today.questions,3);assert.equal(today.sections,1);
+ assert.ok(activity.events.every(e=>e.kind!=='drill_day_logged'));assert.equal(activity.events.filter(e=>e.kind==='drill_answered').length,3);
+ assert.ok(!JSON.stringify(activity).includes('ignored'));
+ for(const bad of [f.event('drill_answered',{skill:'no-such-skill',level:0,outcome:'first'},{...context,baseRevision:9}),
+  f.event('drill_answered',{skill:'__proto__',level:0,outcome:'first'},{...context,baseRevision:9}),
+  f.event('drill_answered',{skill,level:3,outcome:'first'},{...context,baseRevision:9}),
+  f.event('drill_answered',{skill,level:0,outcome:'perfect'},{...context,baseRevision:9}),
+  f.event('drill_answered',{skill,level:0,outcome:'first'},{lessonId:Object.keys(catalog.lessons).find(id=>id!==info.lesson),baseRevision:9}),
+  f.event('drill_answered',{skill,level:0,outcome:'first'},{baseRevision:9}),
+  f.event('drill_answered',{skill,level:0,outcome:'first'},context),
+  f.event('drill_round_finished',{skill,level:0,stars:4},{...context,baseRevision:9}),
+  f.event('drill_day_logged',{day:'2026-10-01'},{...context,baseRevision:3}),
+  f.event('drill_day_logged',{day:'tomorrow'},{...context,baseRevision:3})])assert.equal((await f.events('a',bad)).status,400);
+ const stale=await f.events('a',f.event('drill_round_finished',{skill,level:1,stars:3},{...context,baseRevision:1}));
+ assert.equal(stale.data.accepted[0].applied,false);
+ const mine=(await f.call('a','/api/my-activity?days=7')).data.skills;
+ assert.equal(mine.length,1);assert.equal(mine[0].skill,skill);assert.deepEqual(mine[0].stars,[2,0,3]);assert.equal(mine[0].asked,3);assert.equal(mine[0].right,1);
+ const a=f.db.sqlite.prepare("SELECT id FROM users WHERE email='a@example.test'").get();
+ assert.deepEqual((await f.call('admin',`/api/admin/users/${a.id}/activity?days=7`)).data.skills,mine);
+ assert.deepEqual((await f.call('admin','/api/my-activity?days=7')).data.skills,[]);
+});

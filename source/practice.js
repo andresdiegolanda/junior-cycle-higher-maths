@@ -31,7 +31,7 @@ function renderPractice(focusId) {
  const complete=!choice && state.steps===q.solution.length;
  const reviewed=qs.filter(t=>t.type==='choice'?progress.answers[t.id]===t.answer:!!practiceSaved(t).review).length;
  $('#lesson-content').innerHTML=`<header class="practice-intro"><p class="eyebrow">Six steps to stronger problem solving</p><h2>Make the method yours</h2><p>${E(l.title)}</p><p class="small-note">Work from easier to harder. Try on paper, take a clue if needed, then compare your reasoning. Written answers are self-checked.</p></header>
- <nav class="exercise-path" aria-label="Exercises, easier to harder">${qs.map((item,i)=>`<button data-exercise="${i}" ${index===i?'aria-current="step"':''} class="${index===i?'active':''}" aria-label="Exercise ${i+1}: ${practiceLevels[i]}. ${exerciseStatus(item)}"><span class="exercise-number">${i+1}</span><strong>${practiceLevels[i]}</strong><small>${E(exerciseStatus(item))}</small></button>`).join('')}</nav>
+ <nav class="exercise-path" aria-label="Exercises, easier to harder">${qs.map((item,i)=>`<button data-exercise="${i}" ${index===i?'aria-current="step"':''} class="${index===i?'active':''}"><span class="screen-reader">Exercise </span><span class="exercise-number">${i+1}</span><span class="screen-reader">: </span><strong>${practiceLevels[i]}</strong><span class="screen-reader">. </span><small>${E(exerciseStatus(item))}</small></button>`).join('')}</nav>
  <button id="practice-new-attempt" class="practice-new-attempt">Start a new attempt</button><p class="practice-progress" role="status">${reviewed} of ${qs.length} checked or reviewed <span>· Written reviews are your own assessment.</span></p>
  <article class="quiz-card exercise-card" id="exercise-${E(q.id)}">
  <div class="exercise-meta"><span>EXERCISE ${index+1} OF ${qs.length} · ${practiceLevels[index]}</span><span>${choice?'Choose an answer':'Work it out on paper'}</span></div>
@@ -40,7 +40,7 @@ function renderPractice(focusId) {
  ${!choice?`<details class="working-pad" id="practice-notes-panel" ${state.notesOpen?'open':''}><summary>Your working and notes</summary><label for="practice-notes">Use paper or jot notes here. Saved in this browser.</label><textarea id="practice-notes" rows="4" placeholder="What is given? Which method fits?">${E(saved.notes||'')}</textarea></details>`:''}
  <div class="quiz-footer"><button id="practice-hint" ${state.hints>=q.hints.length?'disabled':''}>${state.hints===0?'Give me a clue':state.hints>=q.hints.length?'All clues shown':'Give me the next clue'}</button><button id="practice-method">Revisit the method</button></div>
  <div class="practice-hints">${q.hints.slice(0,state.hints).map((h,i)=>practiceAudio('practice-hint-'+i,q.speechHints[i],'Clue '+(i+1),`<p>${E(h)}</p>`,'hint')).join('')}</div>
- ${choice&&answered?practiceAudio('practice-feedback',q.speechExplanation,correct?'Correct — here is why':'Not yet — compare the reasoning',`${readingMarkup(q.explanationParts||[q.explanation])}${ruleHelpButton(q.explanationHelp)}`,'feedback '+(correct?'':'not-yet')):''}
+ ${choice&&answered?practiceAudio('practice-feedback',q.speechExplanation,correct?'Correct. Here is why':'Not yet. Compare the reasoning',`${readingMarkup(q.explanationParts||[q.explanation])}${ruleHelpButton(q.explanationHelp)}`,'feedback '+(correct?'':'not-yet')):''}
  ${!choice?`<section class="practice-working"><div class="working-header"><h3>Compare your working</h3><span>${state.steps} / ${q.solution.length} steps revealed</span></div><p class="small-note">Try the problem before uncovering the solution.</p>
  <ol class="practice-solution">${q.solution.slice(0,state.steps).map((s,i)=>`<li>${practiceAudio('practice-step-'+i,q.speechSolution[i],'Step '+(i+1),practiceWorkingMarkup(q,i))}</li>`).join('')}</ol>
  <div class="solution-controls"><button id="practice-next-step" class="primary" ${complete?'disabled':''}>${state.steps?'Reveal next step':'Reveal the first step'}</button><button id="practice-all" ${complete?'disabled':''}>Show full solution</button><button id="practice-cover">Cover clues & solution</button></div>
@@ -72,7 +72,7 @@ function renderPractice(focusId) {
  $('#practice-previous').onclick=()=>movePractice(index-1);
  $('#practice-next').onclick=()=>index===qs.length-1?$('#mode-learn').click():movePractice(index+1);
  $('#practice-new-attempt').onclick=()=>{state.hints=0;state.steps=0;if(typeof MathsAccount!=='undefined')MathsAccount.retry(q);renderPractice('practice-new-attempt')};
- bindBoxAudio();
+ bindBoxAudio();if(typeof Drills!=='undefined')Drills.lessonLinks();
  if(typeof focusId==='string')document.getElementById(focusId)?.focus({preventScroll:true});
 }
 function movePractice(index){

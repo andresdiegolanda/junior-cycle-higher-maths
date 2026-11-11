@@ -22,7 +22,7 @@ const conceptSpecs={
  17:['Peel the label from the can','Cylinder height',2,6,1,4,'Which length becomes the width of the unrolled label?',['The diameter','The circumference'],1],
  18:['What does one more square really cost?','Number of squares',1,6,1,3,'Does each extra square need four new matchsticks?',['No, it shares one side','Yes, every square has four sides'],0],
  19:['Follow the number, then reverse the story','Input',-3,6,1,2,'To undo “multiply by 2, then add 3”, what comes first?',['Divide by 2','Subtract 3'],1],
- 20:['Same unit price — but is it proportion?','Number of items',1,6,1,2,'If there is a fixed delivery fee, must twice the items cost twice as much?',['Yes, because the graph is straight','No, the fixed fee is not doubled'],1],
+ 20:['Same unit price, but is it proportion?','Number of items',1,6,1,2,'If there is a fixed delivery fee, must twice the items cost twice as much?',['Yes, because the graph is straight','No, the fixed fee is not doubled'],1],
  21:['Make the pieces the same size',null,0,2,1,0,'Can halves and thirds be added by adding their denominators?',['No, first use equal-sized pieces','Yes, 1/2 + 1/3 = 2/5'],0],
  22:['An angle controls a side ratio','Angle in degrees',20,70,5,30,'As this angle grows with hypotenuse fixed, what happens to the opposite side?',['It grows','It stays fixed'],0],
  23:['One height, two moments','Time in seconds',0,4,0.25,1,'Can this ball be 15 metres high at two different times?',['Yes, once up and once down','No, a function allows only one time'],0],

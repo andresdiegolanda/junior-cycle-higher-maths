@@ -22,6 +22,17 @@ export function validateEvent(e,catalog,now){
   case 'clue_revealed':if(!q||!integer(p.index,0,q.hints-1))fail(400,'Invalid clue.');clean={index:p.index};scope='exercise';item=e.exerciseId;break;
   case 'solution_step_revealed':if(!q||!integer(p.index,0,q.steps-1))fail(400,'Invalid solution step.');clean={index:p.index};scope='exercise';item=e.exerciseId;break;
   case 'self_assessment_changed':if(!q||q.type==='choice'||!['independent','supported','revisit'].includes(p.review))fail(400,'Invalid self-assessment.');clean={review:p.review};scope='exercise';item=e.exerciseId;break;
+  case 'drill_answered':case 'drill_round_finished':{
+   const skill=typeof p.skill==='string'&&Object.hasOwn(catalog.skills||{},p.skill)?catalog.skills[p.skill]:null;
+   if(!skill||!l||skill.lesson!==e.lessonId||!integer(p.level,0,2))fail(400,'Invalid skill drill.');
+   if(e.kind==='drill_answered'){if(!['first','helped','missed'].includes(p.outcome))fail(400,'Invalid drill answer.');clean={skill:p.skill,level:p.level,outcome:p.outcome}}
+   else{if(!integer(p.stars,0,3))fail(400,'Invalid drill round.');clean={skill:p.skill,level:p.level,stars:p.stars}}
+   scope='skill';item=p.skill;break;
+  }
+  case 'drill_day_logged':
+   // The student's own calendar day; it must be within a day and a half of the event.
+   if(!l||typeof p.day!=='string'||!/^\d{4}-\d{2}-\d{2}$/.test(p.day)||!(Math.abs(Date.parse(p.day+'T12:00:00Z')-at)<=129600000))fail(400,'Invalid practice day.');
+   clean={day:p.day};scope='drills';item='days';break;
   case 'active_interval':{
    const start=Number(p.start),end=Number(p.end);
    if(!Number.isSafeInteger(start)||!Number.isSafeInteger(end)||end<=start||end-start>35000||end>time+60000||start<time-7*86400000)fail(400,'Invalid active-time interval.');
@@ -44,6 +55,9 @@ export function project(row,e){
  case 'clue_revealed':return {...s,usedClue:true};
  case 'solution_step_revealed':return {...s,viewedSolution:true};
  case 'self_assessment_changed':return {...s,review:e.payload.review,done:e.payload.review==='independent'};
+ case 'drill_answered':return {...s,asked:(s.asked||0)+1,right:(s.right||0)+(e.payload.outcome==='first'?1:0)};
+ case 'drill_round_finished':{const stars=[0,1,2].map(i=>Number.isInteger(s.stars?.[i])?s.stars[i]:0);stars[e.payload.level]=Math.max(stars[e.payload.level],e.payload.stars);return {...s,stars,rounds:(s.rounds||0)+1}}
+ case 'drill_day_logged':{const days={...(s.days||{})};days[e.payload.day]=(days[e.payload.day]||0)+1;return {days:Object.fromEntries(Object.keys(days).sort().slice(-120).map(k=>[k,days[k]]))}}
  default:return s;
  }
 }

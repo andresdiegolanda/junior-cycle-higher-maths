@@ -1,5 +1,6 @@
 /* A quiet reference desk: search on the left, one readable card on the right. */
-#formulas-button{border-color:var(--teal);color:var(--link)}
+/* The featured tool sits on the dark bar: a pale accent border, never dark text on dark. */
+#formulas-button{border-color:#85dfcc;color:#fff}
 .formula-mobile-tools{display:none}
 .formula-dialog{width:min(1220px,96vw);padding:25px 28px;max-height:94vh;overscroll-behavior:contain}
 .formula-dialog[open]{display:flex;flex-direction:column;height:min(1040px,94vh);overflow:hidden}

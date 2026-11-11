@@ -98,7 +98,19 @@ labs=json.loads((ROOT/'data/lab-narration.json').read_text(encoding='utf-8'))
 rule_library,rule_help_count=attach_rule_help(chapters)
 add_learning_design(chapters,narrator,rule_library)
 formulas=load_formula_library(chapters)
-catalog={'lessons':{},'exercises':{}}
+# Skill drills are defined in JavaScript. The account service only needs each
+# skill's id and lesson, so they are read from the source without running it.
+skill_files=sorted(f.name for f in ROOT.glob('skills-*.js') if f.name!='skills-core.js')
+skills={}
+for name in skill_files:
+    for block in re.split(r'\bK\.define\(\{',(ROOT/name).read_text(encoding='utf-8'))[1:]:
+        found=re.search(r"\bid:'([a-z0-9-]+)'",block),re.search(r"\blesson:'(\d\d-\d\d)'",block)
+        assert all(found),('Skill needs a literal id and lesson',name)
+        assert found[0][1] not in skills,('Duplicate skill',found[0][1])
+        skills[found[0][1]]={'lesson':found[1][1]}
+lesson_ids={l['id'] for c in chapters for l in c['lessons']}
+assert all(s['lesson'] in lesson_ids for s in skills.values()),'A skill points to an unknown lesson'
+catalog={'lessons':{},'exercises':{},'skills':skills}
 for c in chapters:
     for l in c['lessons']:
         catalog['lessons'][l['id']]={'chapter':c['id'],'title':l['title'],'steps':len(l['steps'])}
@@ -130,21 +142,23 @@ stats['stepRuleHelpers']=rule_help_count
 stats['formulaCards']=len(formulas)
 stats['conceptModels']=len(chapters)
 stats['conceptualBridges']=sum(len(c['lessons']) for c in chapters)
-css='\n'.join((ROOT/f).read_text(encoding='utf-8') for f in ['guide.css','enhancements.css','display.css','visual-learning.css','practice.css','rule-help.css','formulas.css','accounts.css','learning.css'])
-js='\n'.join((ROOT/f).read_text(encoding='utf-8') for f in ['speech.js','accounts.js','guide.js','reading.js','rule-help-view.js','rule-help.js','learning-view.js','concept-explorers.js','lesson-view.js','practice.js','enhancements.js','toolkit-view.js','discovery.js','diagram-marks.js','formula-view.js','formula-library.js','activity-view.js','account-view.js'])
+stats['drillSkills']=len(skills)
+stats['drillLevels']=3*len(skills)
+css='\n'.join((ROOT/f).read_text(encoding='utf-8') for f in ['guide.css','enhancements.css','display.css','visual-learning.css','practice.css','rule-help.css','formulas.css','accounts.css','learning.css','trainer.css'])
+js='\n'.join((ROOT/f).read_text(encoding='utf-8') for f in ['speech.js','accounts.js','guide.js','reading.js','rule-help-view.js','rule-help.js','learning-view.js','concept-explorers.js','lesson-view.js','practice.js','enhancements.js','toolkit-view.js','discovery.js','diagram-marks.js','formula-view.js','formula-library.js','skills-core.js',*skill_files,'trainer.js','activity-view.js','account-view.js'])
 favicon='data:image/svg+xml,'+quote('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="#173349"/><rect x="2" y="2" width="60" height="60" rx="14" fill="none" stroke="#6bb5ab" stroke-width="2"/><text x="32" y="45" text-anchor="middle" font-family="Georgia,serif" font-size="52" font-weight="700" fill="#85dfcc">x</text></svg>',safe='')
 def page(items,initial=0,standalone=False):
     data={'chapters':items,'initialChapter':initial,'standalone':standalone,'stats':stats,'glossary':glossary,'searchIndex':search,'labNarration':labs,'ruleLibrary':rule_library,'formulas':formulas,'contentVersion':content_version}
     payload=json.dumps(data,ensure_ascii=False,separators=(',',':')).replace('</',r'<\/')
     home='index.html#home' if standalone else '#home'
-    return f'''<!doctype html><html lang="en-IE"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Junior Cycle Higher Level Mathematics preparation: visual lessons, browser narration, written practice, a visual glossary and chapter toolkits."><meta name="color-scheme" content="light dark"><title>Junior Cycle Higher Maths — Preparation Guide</title><link rel="icon" type="image/svg+xml" sizes="any" href="{favicon}"><style>{css}</style></head><body><a class="skip" href="#app">Skip to the guide</a><header class="topbar"><a class="brand" href="{home}"><span class="brand-mark" aria-hidden="true">x</span><span><strong>Junior Cycle Higher Maths</strong><small>PREPARATION GUIDE · SEE · UNDERSTAND · PRACTISE</small></span></a><nav class="toplinks" aria-label="Guide tools"><button id="formulas-button">Formulas</button><button id="glossary-button">Glossary</button><button id="term-search-button">Search by term</button><button id="display-button">Display</button><button data-voice-settings>Voice</button><button id="about-button">How to use</button></nav></header><div class="container" id="app" tabindex="-1"></div><div class="print-sheet" id="print-sheet"></div><div class="screen-reader" id="status-live" aria-live="polite" aria-atomic="true"></div><script>const DATA={payload};</script><script>{js}</script></body></html>'''
+    return f'''<!doctype html><html lang="en-IE"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Junior Cycle Higher Level Mathematics preparation: visual lessons, browser narration, written practice, a visual glossary and chapter toolkits."><meta name="color-scheme" content="light dark"><title>Junior Cycle Higher Maths: Preparation Guide</title><link rel="icon" type="image/svg+xml" sizes="any" href="{favicon}"><style>{css}</style></head><body><a class="skip" href="#app">Skip to the guide</a><header class="topbar"><a class="brand" href="{home}"><span class="brand-mark" aria-hidden="true">x</span><span><strong>Junior Cycle Higher Maths</strong><small>PREPARATION GUIDE · SEE · UNDERSTAND · PRACTISE</small></span></a><nav class="toplinks" aria-label="Guide tools"><button id="drills-button">Skill drills</button><button id="formulas-button">Formulas</button><button id="glossary-button">Glossary</button><button id="term-search-button">Search by term</button><button id="display-button">Display</button><button data-voice-settings>Voice</button><button id="about-button">How to use</button></nav></header><div class="container" id="app" tabindex="-1"></div><div class="print-sheet" id="print-sheet"></div><div class="screen-reader" id="status-live" aria-live="polite" aria-atomic="true"></div><script>const DATA={payload};</script><script>{js}</script></body></html>'''
 (OUT/'index.html').write_text(page(chapters),encoding='utf-8')
 for c in chapters:
     slug=re.sub('[^a-z0-9]+','-',c['title'].lower()).strip('-')
     (OUT/f'{c["id"]:02}-{slug}.html').write_text(page([c],c['id'],True),encoding='utf-8')
 (ROOT/'compiled-data.json').write_text(json.dumps(chapters,ensure_ascii=False,indent=2),encoding='utf-8')
 (ROOT/'build-report.json').write_text(json.dumps(stats,indent=2),encoding='utf-8')
-(OUT/'START-HERE.txt').write_text('''JUNIOR CYCLE HIGHER MATHS — PREPARATION GUIDE
+(OUT/'START-HERE.txt').write_text('''JUNIOR CYCLE HIGHER MATHS: PREPARATION GUIDE
 
 Open index.html for all 24 chapters, or open an individual chapter page.
 Each HTML page contains its own styles, diagrams, scripts and glossary.
@@ -166,6 +180,12 @@ Choose an available English voice and speaking speed with Voice.
 Local voices can work offline; online voices need an internet connection and may
 send the narration text to the voice provider. No microphone is needed.
 If speech is unavailable, use the written explanations and transcripts.
+
+Skill drills: rounds of five generated questions for the core skills of algebra,
+number, ratio and statistics. Type your answer and it is marked at once. A wrong
+answer shows the likely slip and a worked solution. Each skill has three levels;
+stars record your best round. "Get ready for a test" builds a ten-question
+warm-up from the topics you tick, then lists the skills to fix first.
 
 Formulas: search by name or expression, such as quadratic or ax2+bx+c.
 Browse subjects for clearly typeset rules, symbol meanings, diagrams and worked

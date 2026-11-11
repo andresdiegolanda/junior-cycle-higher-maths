@@ -6,13 +6,13 @@
 .audio-dock[hidden]{display:none}
 .audio-dock button{white-space:nowrap;background:var(--surface);color:#173349}
 .audio-dock span{font-size:12px;white-space:nowrap}
-.diagram-dialog{padding:22px;border:0;border-radius:20px;width:min(1100px,94vw);max-height:92vh;box-shadow:0 15px 80px #17334955;color:#173349}
+.diagram-dialog{padding:22px;border:0;border-radius:20px;width:min(1100px,94vw);max-height:92vh;box-shadow:0 15px 80px #17334955;color:var(--ink);background:var(--surface)}
 .diagram-dialog::backdrop{background:#173349b0}
 .diagram-dialog header{display:flex;align-items:center;justify-content:space-between;gap:15px}
 .diagram-dialog h2{margin:0;font-size:24px}
 .zoom-tools{display:flex;align-items:center;gap:12px;margin:18px 0;font-size:13px}
 .zoom-tools input{max-width:170px}
-.zoom-tools span{color:#5f7382}
+.zoom-tools span{color:var(--muted)}
 .zoom-scroll{overflow:auto;max-height:69vh;background:#f6f9fa;border-radius:12px}
 .zoom-scene{margin:auto;width:760px;max-width:none}
 .zoom-scene svg{width:100%;display:block}

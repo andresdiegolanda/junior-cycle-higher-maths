@@ -14,7 +14,7 @@ const MathsAccount=(()=>{
  }
  function status(text){if(text!==undefined)message=text;const n=document.getElementById('account-sync');if(n)n.textContent=message||(queue().length?'Waiting to sync':'Saved');}
  function apply(rows,initial=false){
-  if(initial){const notes={};try{Object.assign(notes,JSON.parse(localStorage.getItem(storeKey)||'{}'))}catch{}progress={lessons:{},answers:{},practice:{},challenges:{},last:null};for(const scope of ['practice','challenges'])for(const [id,v]of Object.entries(notes[scope]||{}))if(typeof v.notes==='string')progress[scope][id]={notes:v.notes};}
+  if(initial){const notes={};try{Object.assign(notes,JSON.parse(localStorage.getItem(storeKey)||'{}'))}catch{}progress={lessons:{},answers:{},practice:{},challenges:{},last:null};for(const scope of ['practice','challenges'])for(const [id,v]of Object.entries(notes?.[scope]&&typeof notes[scope]==='object'?notes[scope]:{}))if(v&&typeof v.notes==='string')progress[scope][id]={notes:v.notes};}
   for(const row of rows){const k=row.scope+':'+row.item_id;revision[k]=row.revision;if(!initial&&queue().some(e=>scopeOf(e)===k))continue;const s=JSON.parse(row.state);
    if(row.scope==='lesson')progress.lessons[row.item_id]={seen:[],done:false,...s};
    if(row.scope==='position')progress.last=s;
@@ -76,7 +76,7 @@ const MathsAccount=(()=>{
    window.addEventListener('online',flush);document.addEventListener('visibilitychange',()=>{tickAt=Date.now();if(document.visibilityState==='hidden')flush()});flush();
   }catch(e){if(local&&e.status===404){startOffline();return}locked=true;showLock(e.message)}
  }
- function startOffline(){offline=true;ready=true;try{const saved=JSON.parse(localStorage.getItem(storeKey)||'null');if(saved?.lessons&&saved?.answers)progress=saved}catch{}renderAccountBar();route()}
+ function startOffline(){offline=true;ready=true;try{const saved=cleanProgress(JSON.parse(localStorage.getItem(storeKey)||'null'));if(saved)progress=saved}catch{}renderAccountBar();route()}
  return {start,emit,exercise,retry,viewed,flush,request,logout,apply,queue,status,navigation(){lastRoute='';lastStep=''},get user(){return user},get ready(){return ready&&!locked},get offline(){return offline}};
 })();
 function trackActivity(kind,payload,context){MathsAccount.emit(kind,payload,context)}

@@ -176,32 +176,32 @@
   {
     "chapter": 4,
     "firstPage": 8,
-    "lastPage": 10,
-    "pages": 3,
+    "lastPage": 9,
+    "pages": 2,
     "cards": [
       {
         "index": 0,
         "formulaFont": 15.5,
-        "diagramScale": 1.3662583843686211,
-        "bottomClearance": 15.0
+        "diagramScale": 0.9727325750947798,
+        "bottomClearance": 46.43
       },
       {
         "index": 1,
         "formulaFont": 15.5,
-        "diagramScale": 0.9558880139982507,
+        "diagramScale": 0.8521843102945472,
         "bottomClearance": 15.0
       },
       {
         "index": 2,
         "formulaFont": 15.5,
-        "diagramScale": 1.50909886264217,
-        "bottomClearance": 26.92
+        "diagramScale": 0.9727325750947798,
+        "bottomClearance": 65.73
       },
       {
         "index": 3,
         "formulaFont": 15.5,
-        "diagramScale": 1.50909886264217,
-        "bottomClearance": 26.92
+        "diagramScale": 0.9727325750947798,
+        "bottomClearance": 65.73
       },
       {
         "index": 4,
@@ -213,7 +213,7 @@
         "index": 5,
         "formulaFont": 15.5,
         "diagramScale": 0.9727325750947798,
-        "bottomClearance": 38.03
+        "bottomClearance": 61.13
       },
       {
         "index": 6,
@@ -225,13 +225,13 @@
         "index": 7,
         "formulaFont": 15.5,
         "diagramScale": 0.9727325750947798,
-        "bottomClearance": 31.03
+        "bottomClearance": 54.13
       },
       {
         "index": 8,
         "formulaFont": 15.5,
         "diagramScale": 0.9727325750947798,
-        "bottomClearance": 58.73
+        "bottomClearance": 61.53
       },
       {
         "index": 9,
@@ -242,15 +242,15 @@
       {
         "index": 10,
         "formulaFont": 15.5,
-        "diagramScale": 1.50909886264217,
-        "bottomClearance": 385.86
+        "diagramScale": 0.9727325750947798,
+        "bottomClearance": 65.73
       }
     ]
   },
   {
     "chapter": 5,
-    "firstPage": 11,
-    "lastPage": 12,
+    "firstPage": 10,
+    "lastPage": 11,
     "pages": 2,
     "cards": [
       {
@@ -293,8 +293,8 @@
   },
   {
     "chapter": 6,
-    "firstPage": 13,
-    "lastPage": 15,
+    "firstPage": 12,
+    "lastPage": 14,
     "pages": 3,
     "cards": [
       {
@@ -325,19 +325,19 @@
         "index": 4,
         "formulaFont": 15.5,
         "diagramScale": 0.9727325750947798,
-        "bottomClearance": 49.93
+        "bottomClearance": 76.53
       },
       {
         "index": 5,
         "formulaFont": 15.5,
         "diagramScale": 0.9727325750947798,
-        "bottomClearance": 52.73
+        "bottomClearance": 56.23
       },
       {
         "index": 6,
         "formulaFont": 15.5,
         "diagramScale": 0.9727325750947798,
-        "bottomClearance": 80.43
+        "bottomClearance": 65.73
       },
       {
         "index": 7,
@@ -355,8 +355,8 @@
   },
   {
     "chapter": 7,
-    "firstPage": 16,
-    "lastPage": 17,
+    "firstPage": 15,
+    "lastPage": 16,
     "pages": 2,
     "cards": [
       {
@@ -411,8 +411,8 @@
   },
   {
     "chapter": 8,
-    "firstPage": 18,
-    "lastPage": 21,
+    "firstPage": 17,
+    "lastPage": 20,
     "pages": 4,
     "cards": [
       {
@@ -491,8 +491,8 @@
   },
   {
     "chapter": 9,
-    "firstPage": 22,
-    "lastPage": 24,
+    "firstPage": 21,
+    "lastPage": 23,
     "pages": 3,
     "cards": [
       {
@@ -559,8 +559,8 @@
   },
   {
     "chapter": 10,
-    "firstPage": 25,
-    "lastPage": 26,
+    "firstPage": 24,
+    "lastPage": 25,
     "pages": 2,
     "cards": [
       {
@@ -609,8 +609,8 @@
   },
   {
     "chapter": 11,
-    "firstPage": 27,
-    "lastPage": 28,
+    "firstPage": 26,
+    "lastPage": 27,
     "pages": 2,
     "cards": [
       {
@@ -671,58 +671,58 @@
   },
   {
     "chapter": 12,
-    "firstPage": 29,
-    "lastPage": 30,
+    "firstPage": 28,
+    "lastPage": 29,
     "pages": 2,
     "cards": [
       {
         "index": 0,
         "formulaFont": 15.5,
-        "diagramScale": 0.9558880139982507,
+        "diagramScale": 0.9662583843686211,
         "bottomClearance": 15.0
       },
       {
         "index": 1,
         "formulaFont": 15.5,
-        "diagramScale": 1.50909886264217,
-        "bottomClearance": 26.92
+        "diagramScale": 0.9727325750947798,
+        "bottomClearance": 65.73
       },
       {
         "index": 2,
         "formulaFont": 15.5,
-        "diagramScale": 1.1869991251093617,
-        "bottomClearance": 15.0
+        "diagramScale": 0.9727325750947798,
+        "bottomClearance": 29.93
       },
       {
         "index": 3,
         "formulaFont": 15.5,
-        "diagramScale": 1.50909886264217,
-        "bottomClearance": 26.92
+        "diagramScale": 0.9727325750947798,
+        "bottomClearance": 65.73
       },
       {
         "index": 4,
         "formulaFont": 15.5,
-        "diagramScale": 1.1869991251093617,
-        "bottomClearance": 15.0
+        "diagramScale": 0.9727325750947798,
+        "bottomClearance": 25.73
       },
       {
         "index": 5,
         "formulaFont": 15.5,
-        "diagramScale": 0.9558880139982507,
+        "diagramScale": 0.8158880139982508,
         "bottomClearance": 15.0
       },
       {
         "index": 6,
         "formulaFont": 15.5,
         "diagramScale": 1.50909886264217,
-        "bottomClearance": 26.92
+        "bottomClearance": 385.86
       }
     ]
   },
   {
     "chapter": 13,
-    "firstPage": 31,
-    "lastPage": 32,
+    "firstPage": 30,
+    "lastPage": 31,
     "pages": 2,
     "cards": [
       {
@@ -771,8 +771,8 @@
   },
   {
     "chapter": 14,
-    "firstPage": 33,
-    "lastPage": 35,
+    "firstPage": 32,
+    "lastPage": 34,
     "pages": 3,
     "cards": [
       {
@@ -790,51 +790,51 @@
       {
         "index": 2,
         "formulaFont": 15.5,
-        "diagramScale": 1.50909886264217,
-        "bottomClearance": 23.42
+        "diagramScale": 0.9727325750947798,
+        "bottomClearance": 80.43
       },
       {
         "index": 3,
         "formulaFont": 15.5,
-        "diagramScale": 1.3662583843686211,
-        "bottomClearance": 15.0
+        "diagramScale": 0.9727325750947798,
+        "bottomClearance": 52.73
       },
       {
         "index": 4,
         "formulaFont": 15.5,
-        "diagramScale": 0.9558880139982507,
+        "diagramScale": 0.8521843102945472,
         "bottomClearance": 15.0
       },
       {
         "index": 5,
         "formulaFont": 15.5,
-        "diagramScale": 1.3662583843686211,
-        "bottomClearance": 15.0
+        "diagramScale": 0.9727325750947798,
+        "bottomClearance": 54.13
       },
       {
         "index": 6,
         "formulaFont": 15.5,
-        "diagramScale": 1.418110236220473,
-        "bottomClearance": 15.0
+        "diagramScale": 0.9727325750947798,
+        "bottomClearance": 59.73
       },
       {
         "index": 7,
         "formulaFont": 15.5,
-        "diagramScale": 1.418110236220473,
-        "bottomClearance": 15.0
+        "diagramScale": 0.9727325750947798,
+        "bottomClearance": 59.73
       },
       {
         "index": 8,
         "formulaFont": 15.5,
-        "diagramScale": 1.418110236220473,
-        "bottomClearance": 15.0
+        "diagramScale": 1.50909886264217,
+        "bottomClearance": 361.66
       }
     ]
   },
   {
     "chapter": 15,
-    "firstPage": 36,
-    "lastPage": 37,
+    "firstPage": 35,
+    "lastPage": 36,
     "pages": 2,
     "cards": [
       {
@@ -883,32 +883,32 @@
   },
   {
     "chapter": 16,
-    "firstPage": 38,
-    "lastPage": 40,
-    "pages": 3,
+    "firstPage": 37,
+    "lastPage": 38,
+    "pages": 2,
     "cards": [
       {
         "index": 0,
         "formulaFont": 15.5,
-        "diagramScale": 1.50909886264217,
-        "bottomClearance": 26.92
+        "diagramScale": 0.9727325750947798,
+        "bottomClearance": 65.73
       },
       {
         "index": 1,
         "formulaFont": 15.5,
-        "diagramScale": 1.3662583843686211,
-        "bottomClearance": 15.0
+        "diagramScale": 0.9727325750947798,
+        "bottomClearance": 52.73
       },
       {
         "index": 2,
         "formulaFont": 15.5,
-        "diagramScale": 1.50909886264217,
-        "bottomClearance": 26.92
+        "diagramScale": 0.9727325750947798,
+        "bottomClearance": 65.73
       },
       {
         "index": 3,
         "formulaFont": 15.5,
-        "diagramScale": 0.9558880139982507,
+        "diagramScale": 0.8521843102945472,
         "bottomClearance": 15.0
       },
       {
@@ -933,7 +933,7 @@
         "index": 7,
         "formulaFont": 15.5,
         "diagramScale": 0.9727325750947798,
-        "bottomClearance": 38.03
+        "bottomClearance": 61.13
       },
       {
         "index": 8,
@@ -950,15 +950,15 @@
       {
         "index": 10,
         "formulaFont": 15.5,
-        "diagramScale": 1.50909886264217,
-        "bottomClearance": 337.46
+        "diagramScale": 0.9727325750947798,
+        "bottomClearance": 17.33
       }
     ]
   },
   {
     "chapter": 17,
-    "firstPage": 41,
-    "lastPage": 44,
+    "firstPage": 39,
+    "lastPage": 42,
     "pages": 4,
     "cards": [
       {
@@ -1019,8 +1019,8 @@
   },
   {
     "chapter": 18,
-    "firstPage": 45,
-    "lastPage": 46,
+    "firstPage": 43,
+    "lastPage": 44,
     "pages": 2,
     "cards": [
       {
@@ -1039,7 +1039,7 @@
         "index": 2,
         "formulaFont": 15.5,
         "diagramScale": 0.9727325750947798,
-        "bottomClearance": 31.73
+        "bottomClearance": 54.83
       },
       {
         "index": 3,
@@ -1081,8 +1081,8 @@
   },
   {
     "chapter": 19,
-    "firstPage": 47,
-    "lastPage": 48,
+    "firstPage": 45,
+    "lastPage": 46,
     "pages": 2,
     "cards": [
       {
@@ -1101,7 +1101,7 @@
         "index": 2,
         "formulaFont": 15.5,
         "diagramScale": 0.9727325750947798,
-        "bottomClearance": 53.43
+        "bottomClearance": 56.23
       },
       {
         "index": 3,
@@ -1143,15 +1143,15 @@
   },
   {
     "chapter": 20,
-    "firstPage": 49,
-    "lastPage": 50,
+    "firstPage": 47,
+    "lastPage": 48,
     "pages": 2,
     "cards": [
       {
         "index": 0,
         "formulaFont": 15.5,
         "diagramScale": 0.9727325750947798,
-        "bottomClearance": 19.83
+        "bottomClearance": 22.63
       },
       {
         "index": 1,
@@ -1199,8 +1199,8 @@
   },
   {
     "chapter": 21,
-    "firstPage": 51,
-    "lastPage": 52,
+    "firstPage": 49,
+    "lastPage": 50,
     "pages": 2,
     "cards": [
       {
@@ -1225,7 +1225,7 @@
         "index": 3,
         "formulaFont": 15.5,
         "diagramScale": 0.9727325750947798,
-        "bottomClearance": 53.43
+        "bottomClearance": 76.53
       },
       {
         "index": 4,
@@ -1243,7 +1243,7 @@
         "index": 6,
         "formulaFont": 15.5,
         "diagramScale": 0.9727325750947798,
-        "bottomClearance": 19.83
+        "bottomClearance": 42.93
       },
       {
         "index": 7,
@@ -1272,15 +1272,15 @@
       {
         "index": 11,
         "formulaFont": 15.5,
-        "diagramScale": 0.829221347331584,
+        "diagramScale": 0.8499620880723249,
         "bottomClearance": 15.0
       }
     ]
   },
   {
     "chapter": 22,
-    "firstPage": 53,
-    "lastPage": 56,
+    "firstPage": 51,
+    "lastPage": 54,
     "pages": 4,
     "cards": [
       {
@@ -1353,57 +1353,57 @@
   },
   {
     "chapter": 23,
-    "firstPage": 57,
-    "lastPage": 59,
+    "firstPage": 55,
+    "lastPage": 57,
     "pages": 3,
     "cards": [
       {
         "index": 0,
         "formulaFont": 15.5,
-        "diagramScale": 1.1610731991834358,
-        "bottomClearance": 15.0
+        "diagramScale": 0.9727325750947798,
+        "bottomClearance": 40.43
       },
       {
         "index": 1,
         "formulaFont": 15.5,
-        "diagramScale": 1.392184310294547,
-        "bottomClearance": 15.0
+        "diagramScale": 0.9727325750947798,
+        "bottomClearance": 56.23
       },
       {
         "index": 2,
         "formulaFont": 15.5,
-        "diagramScale": 0.9558880139982507,
+        "diagramScale": 0.8521843102945472,
         "bottomClearance": 15.0
       },
       {
         "index": 3,
         "formulaFont": 15.5,
-        "diagramScale": 1.257369495479732,
-        "bottomClearance": 15.0
+        "diagramScale": 0.9727325750947798,
+        "bottomClearance": 53.43
       },
       {
         "index": 4,
         "formulaFont": 15.5,
-        "diagramScale": 1.418110236220473,
-        "bottomClearance": 15.0
+        "diagramScale": 0.9727325750947798,
+        "bottomClearance": 75.13
       },
       {
         "index": 5,
         "formulaFont": 15.5,
-        "diagramScale": 1.392184310294547,
-        "bottomClearance": 15.0
+        "diagramScale": 0.9727325750947798,
+        "bottomClearance": 38.03
       },
       {
         "index": 6,
         "formulaFont": 15.5,
-        "diagramScale": 1.392184310294547,
-        "bottomClearance": 15.0
+        "diagramScale": 1.50909886264217,
+        "bottomClearance": 358.16
       },
       {
         "index": 7,
         "formulaFont": 15.5,
-        "diagramScale": 1.2129250510352876,
-        "bottomClearance": 15.0
+        "diagramScale": 1.50909886264217,
+        "bottomClearance": 333.96
       },
       {
         "index": 8,
@@ -1421,15 +1421,15 @@
   },
   {
     "chapter": 24,
-    "firstPage": 60,
-    "lastPage": 62,
+    "firstPage": 58,
+    "lastPage": 60,
     "pages": 3,
     "cards": [
       {
         "index": 0,
         "formulaFont": 15.5,
         "diagramScale": 0.9727325750947798,
-        "bottomClearance": 38.03
+        "bottomClearance": 61.13
       },
       {
         "index": 1,

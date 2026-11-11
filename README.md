@@ -165,6 +165,10 @@ Python 3 builds the HTML using its standard library. From the repository root:
 python source/build.py
 ```
 
+The foot of the home page shows when the copy was built and from which commit. A
+copy built before its changes were committed says "plus later changes"; the hosted
+build names the exact commit. Set `SOURCE_DATE_EPOCH` to fix the build time.
+
 Content lives in `source/data/chapters.json`, `source/data/visual-cards-*.json`,
 `source/data/glossary.json`, `source/data/practice-*.txt` and `source/data/lab-narration.json`. Interface and
 speech files live directly in `source/`. Every narration is derived from the written

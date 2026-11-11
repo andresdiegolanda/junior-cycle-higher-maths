@@ -427,7 +427,16 @@ Skill drills, plain-language pass and accessibility, 11 November 2026
   proved unclear in use. It now shows 4x + 8 as unit squares drawn to scale, asks
   a question that does not depend on the picture, and shows the factorised form
   only at the last step, with a numeric check that follows the slider. The frame
-  around all 24 models has fewer words and plain button names.
+  around all 24 models has fewer words and plain button names. Seven other
+  models (chapters 6, 7, 8, 11, 13, 18 and 20) showed their result at the first
+  step; each now reaches it at the step that explains it.
+- Steady page when the step changes: in the first lesson of every chapter the
+  model used to close when leaving step 1 and reopen on return, which threw the
+  step area about a screen up or down. Sections now stay as the reader left
+  them, the step area is held at the same place on screen, and it takes the
+  height of its longest step. Measured in a browser at 1280, 1500 and 1920 px:
+  the step area and the Next step button move 0 px in all 158 lessons, and the
+  buttons under a model do not move between its three steps.
 - Not verified: the drills on a real phone keyboard; the narration by ear; the
   hosted deployment itself, which is built by Cloudflare after publication. No
   student has used the drills yet.

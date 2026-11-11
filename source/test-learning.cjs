@@ -28,6 +28,13 @@ for(const n of [1,3,6]){
  assert.match(scene(2,n,2).math,new RegExp(`4\\(${n}\\) \\+ 8 = ${4*n+8} and 4\\(${n} \\+ 2\\) = ${4*n+8}$`));
  assert.ok(scene(2,n,0).say.length>40&&!/\d/.test(scene(2,n,2).say.replace(String(n),'')));
 }
+// A model does not show its result before the step that explains it.
+for(const [id,n,early] of [[6,3,/Area = base/],[7,2,/Mean/],[8,50,/Third angle/],[11,5,/Slope/],[13,3,/°/],[18,3,/Tₙ/],[20,2,/C\(4\)|C\(0\)/]]){
+ assert.doesNotMatch(scene(id,n,0).math,early,`model ${id} gives its result at the first step`);
+ assert.match(scene(id,n,2).math,early,`model ${id} never reaches its result`);
+}
+assert.match(scene(7,2,2).math,/= 12 ÷ 3 = 4$/);assert.match(scene(11,5,2).math,/Rise = 5 − 1 = 4; Slope = \(5 − 1\)\/\(5 − 1\) = 1$/);
+assert.match(scene(13,3,2).math,/3\/12 × 360° = 90°/);assert.match(scene(18,3,1).math,/1 \+ 3 × 3 = 10/);assert.match(scene(6,3,2).math,/6 × 3 = 18 cm²/);
 // Similar triangles must really scale their drawn lengths by k, not just labels.
 for(const k of [1,1.5,2,3]){
  const polygons=[...scene(16,k,2).svg.matchAll(/<polygon[^>]*points="([^"]+)"/g)].map(m=>m[1].split(' ').map(p=>p.split(',').map(Number)));

@@ -77,8 +77,14 @@ player.addEventListener('error',()=>{autoLesson=false;lessonQueue=[];lessonCurso
 function setStep(n,continueAudio=false){
  if(n<0||n>=currentLesson.steps.length)return;
  const old=sceneSnapshot(),focusId=document.activeElement?.id;
+ /* The page must not jump when the step changes. Remember which optional sections are open
+    and where the step area sits on the screen, then put both back after the redraw. */
+ const sections=()=>[...document.querySelectorAll('#lesson-content details')],opened=sections().map(d=>d.open);
+ const stageTop=()=>document.querySelector('.stage-layout')?.getBoundingClientRect().top,before=stageTop();
  if(!continueAudio)stopAudio();
  currentStep=n;renderLesson(old);
+ sections().forEach((d,i)=>{if(i<opened.length&&d.open!==opened[i])d.open=opened[i]});
+ const moved=stageTop()-before;if(Number.isFinite(moved)&&Math.abs(moved)>=1)window.scrollBy({top:moved,left:0,behavior:'instant'});
  if(typeof refreshOpenDiagram==='function')refreshOpenDiagram();
  if(!continueAudio&&focusId&&document.getElementById(focusId))document.getElementById(focusId).focus({preventScroll:true});
  if(!continueAudio)announce('Step '+(n+1)+': '+currentLesson.steps[n].title);

@@ -1,4 +1,29 @@
 let transcriptOpen=false;
+/* The diagram and its two reasoning boxes for step i of a lesson. */
+function stageMarkup(l,i){
+ const s=l.steps[i],say=s.boxSpeech;
+ return `<div class="stage-layout"><section class="visual-card audio-box" ${boxAttributes('step-diagram',say.diagram,'Read the diagram')}><div class="visual-top box-heading"><span>Read the diagram</span>${boxStatus()}${boxAudio('step-diagram','Read the diagram')}</div><div class="diagram" id="diagram"></div><div class="math-strip">${E(s.math)}<div class="step-rule-anchor">${ruleHelpButton(s.stepHelp)}</div></div><button id="enlarge-diagram" class="enlarge">Enlarge diagram ↗</button></section>
+ <div class="reasoning-stack"><section class="step-card audio-box" ${boxAttributes('step-explanation',say.explanation,s.title)}><div class="box-heading"><p class="step-kicker">Step ${i+1} · ${i===l.steps.length-1?'Bring it together':'One move at a time'}</p>${boxStatus()}${boxAudio('step-explanation',s.title)}</div><h3 id="step-title">${E(s.title)}</h3><div class="explain">${readingMarkup(s.textParts||[s.text])}</div></section>
+ <section class="why audio-box" ${boxAttributes('step-why',say.why,'Why it works')}><div class="box-heading"><strong>Why it works</strong>${boxStatus()}${boxAudio('step-why','Why it works')}</div>${readingMarkup(s.whyParts||[s.why])}</section></div></div>`;
+}
+/* Steps differ in length. Give the step area the height of its longest step, so the page
+   below it, and the Next step button, stay where they are from one step to the next.
+   Each step is laid out once, unseen, at the real width; the result is kept per lesson. */
+const stageHeights={};
+function steadyStage(l){
+ const stage=document.querySelector('.stage-layout');if(!stage)return;
+ const width=Math.round(stage.getBoundingClientRect().width);if(width<50)return;
+ const root=document.documentElement,key=[l.id,width,root.dataset.theme||'',root.dataset.reading||''].join('|');
+ if(!(key in stageHeights)){
+  const probe=document.createElement('div');probe.setAttribute('aria-hidden','true');
+  probe.style.cssText=`position:absolute;left:0;top:0;width:${width}px;visibility:hidden;pointer-events:none`;
+  stage.parentNode.appendChild(probe);let tallest=0;
+  const anonymous=html=>html.replace(/\s(id|data-narration-box)="/g,' data-probe-$1="');
+  l.steps.forEach((step,i)=>{probe.innerHTML=anonymous(stageMarkup(l,i));probe.querySelector('.diagram').innerHTML=anonymous(step.svg);tallest=Math.max(tallest,probe.firstElementChild.getBoundingClientRect().height)});
+  probe.remove();stageHeights[key]=Math.ceil(tallest);
+ }
+ stage.style.minHeight=stageHeights[key]+'px';
+}
 function renderLesson(old=null){
  const l=currentLesson,s=l.steps[currentStep],ls=lessonState(l),say=s.boxSpeech;
  if(!ls.seen.includes(currentStep))ls.seen.push(currentStep);save();
@@ -10,14 +35,12 @@ function renderLesson(old=null){
  ${currentChapter.explorerLesson===l.id?`<details class="chapter-experiment" ${currentStep===0?'open':''}><summary>Explore this chapter’s idea</summary><div id="concept-explorer-host">${conceptExplorerHTML(currentChapter.id)}</div></details>`:''}
  <section class="lesson-goal audio-box" ${boxAttributes('lesson-goal',l.boxSpeech.goal,'Your goal')}><div class="box-heading"><strong>Your goal</strong>${boxStatus()}${boxAudio('lesson-goal','Your goal')}</div><p>${E(l.goal)}</p></section>
  <nav class="step-nav" aria-label="Lesson steps">${l.steps.map((t,i)=>`<button id="step-button-${i}" title="${E(t.title)}" aria-label="Step ${i+1}: ${E(t.title)}" ${i===currentStep?'aria-current="step"':''} data-step="${i}" class="${i===currentStep?'active':ls.seen.includes(i)?'seen':''}">${i+1}</button>`).join('')}<span>Step ${currentStep+1} of ${l.steps.length}</span></nav>
- <div class="stage-layout"><section class="visual-card audio-box" ${boxAttributes('step-diagram',say.diagram,'Read the diagram')}><div class="visual-top box-heading"><span>Read the diagram</span>${boxStatus()}${boxAudio('step-diagram','Read the diagram')}</div><div class="diagram" id="diagram"></div><div class="math-strip">${E(s.math)}<div class="step-rule-anchor">${ruleHelpButton(s.stepHelp)}</div></div><button id="enlarge-diagram" class="enlarge">Enlarge diagram ↗</button></section>
- <div class="reasoning-stack"><section class="step-card audio-box" ${boxAttributes('step-explanation',say.explanation,s.title)}><div class="box-heading"><p class="step-kicker">Step ${currentStep+1} · ${currentStep===l.steps.length-1?'Bring it together':'One move at a time'}</p>${boxStatus()}${boxAudio('step-explanation',s.title)}</div><h3 id="step-title">${E(s.title)}</h3><div class="explain">${readingMarkup(s.textParts||[s.text])}</div></section>
- <section class="why audio-box" ${boxAttributes('step-why',say.why,'Why it works')}><div class="box-heading"><strong>Why it works</strong>${boxStatus()}${boxAudio('step-why','Why it works')}</div>${readingMarkup(s.whyParts||[s.why])}</section></div></div>
+ ${stageMarkup(l,currentStep)}
  <div class="step-controls"><button id="previous-step" ${currentStep===0?'disabled':''}>← Previous step</button><span class="middle">Predict the next move before you reveal it.</span><button id="next-step" class="primary">${currentStep===l.steps.length-1?'Try the practice →':'Next step →'}</button></div>
  <details class="transcript" id="transcript" ${transcriptOpen?'open':''}><summary>Read the full step narration</summary><p>${E(s.say)}</p></details>
  <div class="lesson-bottom"><section class="tip audio-box" ${boxAttributes('lesson-takeaway',l.boxSpeech.takeaway,'Keep this idea')}><div class="box-heading"><strong>Keep this idea</strong>${boxStatus()}${boxAudio('lesson-takeaway','Keep this idea')}</div><p>${E(l.takeaway)}</p></section><section class="tip mistake audio-box" ${boxAttributes('lesson-mistake',l.boxSpeech.mistake,'Watch out for')}><div class="box-heading"><strong>Watch out for</strong>${boxStatus()}${boxAudio('lesson-mistake','Watch out for')}</div><p>${E(l.mistake)}</p></section></div>
  <div class="complete-row"><span>Ready means you can explain the method and try it on your own.</span><button id="mark-done" ${ls.done?'class="primary"':''}>${ls.done?'✓ Marked confident':'I can explain this method'}</button></div>${currentChapter.id===1&&l.section==='1.2'?'<div id="polynomial-lab"></div>':''}`;
- showScene(s.svg,old);$('#enlarge-diagram').onclick=openDiagram;
+ showScene(s.svg,old);steadyStage(l);$('#enlarge-diagram').onclick=openDiagram;
  bindConceptExplorer(currentChapter.id);
  document.querySelectorAll('[data-step]').forEach(b=>b.onclick=()=>setStep(Number(b.dataset.step)));
  $('#previous-step').onclick=()=>setStep(currentStep-1);

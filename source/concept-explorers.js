@@ -4,7 +4,8 @@ const conceptMemory={};
 let conceptTimer=null;
 const conceptSpecs={
  1:['Why every term meets every term','Length x',1,6,1,3,'Would (x + 2)(x + 3) contain just x² + 6?',['Yes, multiply the first and last terms','No, the two cross-products also count'],1],
- 2:['Factorising is rebuilding a rectangle','Length x',1,6,1,3,'What do 4x and 8 have in common?',['A height of 4','A height of x'],0],
+ 2:['Factorise 4x + 8 by building one rectangle','Value of x',1,6,1,3,'To factorise 4x + 8, which number can come out of both terms?',['4, because 4 × x = 4x and 4 × 2 = 8','8, because it is the biggest number'],0,
+    ['Yes. 4 goes into both terms. Step through the model to see it as a shared height.','Not quite. 8 does not go into 4x. The number outside the bracket must divide both terms. Step through the model to find it.']],
  3:['Who belongs in the answer?',null,0,2,1,0,'Does “A or B” include people in both?',['Yes, count them once','No, leave out the overlap'],0],
  4:['Can a rise and fall undo each other?','Percentage change',10,40,5,20,'After a 20% rise and then a 20% fall, is €100 restored?',['Yes, the changes cancel','No, the second percentage uses a new base'],1],
  5:['Who gets a chance to be heard?',null,0,2,1,0,'Would surveying one team represent a whole school fairly?',['A larger team always fixes it','Some school groups would still be excluded'],1],
@@ -47,7 +48,7 @@ function cxSector(cx,cy,r,start,angle,fill){
  return `<path d="M${cx},${cy} L${a} A${r},${r} 0 ${angle>180?1:0} 0 ${b} Z" fill="${fill}" stroke="#173349" stroke-width="2"/>`;
 }
 function conceptScene(ch,n,step,variant='share'){
- let svg='',math='',explain='',title=['Picture it','Make one change','Connect it to the rule'][step];
+ let svg='',math='',explain='',say='',width=700,title=['Picture it','Make one change','Connect it to the rule'][step];
  const green='#087f75',blue='#3175ba',gold='#b96a12';
  if(ch===1){
   const x=30*n,w=x+90,h=x+60,ox=110,oy=55;
@@ -56,8 +57,28 @@ function conceptScene(ch,n,step,variant='share'){
   math=step===2?'(x + 2)(x + 3) = x² + 3x + 2x + 6 = x² + 5x + 6':`Whole area = (${n} + 2) × (${n} + 3) = ${(n+2)*(n+3)}`;
   explain=step===0?'Think of each bracket as a side length. Predict how many smaller rectangles appear when both sides are split.':step===1?'There are four pieces, not two. The blue strips are the two cross-products that are easy to miss.':'Add all four areas. The two blue strips contain three x plus two x, so together they make five x.';
  }else if(ch===2){
-  const w=35*n;svg=cxRect('a',100,100,w,140)+cxRect('b',step===0?150+w:100+w,100,70,140,'#fff0cf')+cxText(100+w/2,180,'4x')+cxText((step===0?150:100)+w+35,180,'8')+cxText(70,180,'4')+cxText(100+w/2,275,'x')+cxText((step===0?150:100)+w+35,275,'2');
-  math='4x + 8 = 4(x + 2)';explain=step===0?'Both rectangles have height four. The second has area eight, so its width must be two.':step===1?'Slide the pieces together. Their widths add, while their shared height stays four.':'The same area can be written as four x plus eight, or as four times the whole width x plus two. Multiply back to check.';
+  /* 4x + 8 as unit squares, drawn to scale: 4 rows of x and 4 rows of 2, apart and then joined.
+     The factorised form appears only at the last step, once the picture has earned it. */
+  width=540;   /* a narrower canvas, so the picture is larger on a phone */
+  const u=50,h=4*u,wa=n*u,wb=2*u,gap=step===0?56:0,ox=Math.round((width-wa-gap-wb)/2)+20,oy=66,bx=ox+wa+gap;
+  const piece=(id,x,cols,fill,rule)=>{let g=`<g id="${id}"><rect x="${x}" y="${oy}" width="${cols*u}" height="${h}" rx="4" fill="${fill}" stroke="#173349" stroke-width="2"/>`;for(let i=1;i<cols;i++)g+=`<line x1="${x+i*u}" y1="${oy}" x2="${x+i*u}" y2="${oy+h}" stroke="${rule}" stroke-width="1.5"/>`;for(let j=1;j<4;j++)g+=`<line x1="${x}" y1="${oy+j*u}" x2="${x+cols*u}" y2="${oy+j*u}" stroke="${rule}" stroke-width="1.5"/>`;return g+'</g>'};
+  const tag=(x,y,text)=>`<rect x="${x-23}" y="${y-25}" width="46" height="38" rx="8" fill="#fff" stroke="#173349" stroke-width="1"/>`+cxText(x,y+3,text,26);
+  const across=(x1,x2,y,text)=>`<path d="M${x1} ${y-7}v14M${x1} ${y}H${x2}M${x2} ${y-7}v14" fill="none" stroke="#173349" stroke-width="2"/>`+cxText((x1+x2)/2,y+28,text,24);
+  svg=piece('piece-4x',ox,n,'#dff1eb','#9ccdbf')+piece('piece-8',bx,2,'#fff0cf','#e2c27a')+tag(ox+wa/2,oy+h/2,'4x')+tag(bx+wb/2,oy+h/2,'8')
+   +`<path d="M${ox-31} ${oy}h14M${ox-24} ${oy}V${oy+h}M${ox-31} ${oy+h}h14" fill="none" stroke="#173349" stroke-width="2"/>`+cxText(ox-50,oy+h/2+9,'4',26)
+   +across(ox,ox+wa,oy+h+22,'x')+across(bx,bx+wb,oy+h+22,'2');
+  if(step===0)svg+=cxText(ox+wa/2,oy-18,'4 rows of x',20)+cxText(bx+wb/2,oy-18,'4 rows of 2',20);
+  else svg+=cxText(ox+(wa+wb)/2,oy-18,'4 rows of x + 2',22)+across(ox,ox+wa+wb,oy+h+70,'x + 2');
+  [title,math,explain,say]=[
+   ['Two areas','4x = 4 × x; 8 = 4 × 2',
+    `Think of 4x and 8 as areas. The rectangle marked 4x is 4 rows of x squares. The rectangle marked 8 is 4 rows of 2 squares. Both are 4 rows high: that is what 4x and 8 share. The slider changes x, which is ${n} now.`,
+    `Think of four x and eight as areas. The rectangle marked four x is four rows of x squares. The rectangle marked eight is four rows of two squares. Both are four rows high: that is what four x and eight share. The slider changes x, which is ${n} now.`],
+   ['Join them','Area = 4 × (x + 2)',
+    'Slide the two rectangles together. They fit because they are the same height. The new rectangle is 4 rows high and x + 2 squares long.',
+    'Slide the two rectangles together. They fit because they are the same height. The new rectangle is four rows high and x plus two squares long.'],
+   ['Same area, written two ways',`4x + 8 = 4(x + 2); Check with x = ${n}: 4(${n}) + 8 = ${4*n+8} and 4(${n} + 2) = ${4*(n+2)}`,
+    'No squares were added or taken away, so the area is the same. That is factorising: 4x + 8 = 4(x + 2). The 4 outside the bracket is the shared height. Move the slider: both sides always give the same number.',
+    'No squares were added or taken away, so the area is the same. That is factorising: four x plus eight equals four times the bracket x plus two. The four outside the bracket is the shared height. Move the slider: both sides always give the same number.']][step];
  }else if(ch===3){
   svg=`<ellipse cx="270" cy="180" rx="140" ry="120" fill="#e3edfb" stroke="${blue}" stroke-width="3"/><ellipse cx="430" cy="180" rx="140" ry="120" fill="#dff1eb" fill-opacity=".7" stroke="${green}" stroke-width="3"/>`+cxText(195,70,'A')+cxText(505,70,'B');
   [[210,145,'1','a'],[225,225,'2','a'],[350,175,'3','both'],[470,145,'4','b'],[475,225,'5','b']].forEach(([x,y,t,part])=>{const on=step===0||step===1&&part==='both'||step===2&&part==='a';svg+=cxCircle('member'+t,x,y,24,on?green:'#edf1f4')+cxText(x,y+7,t,21,on?'#fff':'#607080')});
@@ -162,15 +183,17 @@ function conceptScene(ch,n,step,variant='share'){
   if(step===2)svg+=`<polygon id="translated" points="${coords(p.map(([x,y])=>[x+n,y+2]))}" fill="#dff1eb" fill-opacity=".5" stroke="${green}" stroke-width="3"/>`;
   math=`(x, y) → (x ${n<0?'−':'+'} ${Math.abs(n)}, y + 2)`;explain=['Move the first vertex by the chosen horizontal amount and two units up.','Give the second vertex exactly the same movement. The joining segments must stay parallel and equally long.','Move the final vertex and join the images. The triangle has slid without turning, stretching or changing its angles.'][step];
  }
- return {svg:`<svg viewBox="0 0 700 385" role="img" aria-label="${E(explain)}" xmlns="http://www.w3.org/2000/svg"><title>${E(title)}</title>${svg}</svg>`,math,explain,title};
+ return {svg:`<svg viewBox="0 0 ${width} 385" role="img" aria-label="${E(explain)}" xmlns="http://www.w3.org/2000/svg"><title>${E(title)}</title>${svg}</svg>`,math,explain,title,say:say||explain};
 }
-function stopConceptAnimation(){clearTimeout(conceptTimer);conceptTimer=null;const b=document.getElementById('concept-play');if(b){b.textContent='Watch the change';b.setAttribute('aria-pressed','false')}}
+function stopConceptAnimation(){clearTimeout(conceptTimer);conceptTimer=null;const b=document.getElementById('concept-play');if(b){b.textContent='Play the steps';b.setAttribute('aria-pressed','false')}}
 function conceptState(ch){return conceptMemory[ch]||(conceptMemory[ch]={step:0,value:conceptSpecs[ch][5],variant:ch===20?'no-fee':'share',prediction:null})}
+/* What the guess gets back: the model's own reason when it has one, a plain verdict otherwise. */
+function conceptFeedback(ch,choice){const spec=conceptSpecs[ch],own=spec[9]||[];return choice===null?'Pick the answer you expect, then check it with the model. This is not marked.':choice===spec[8]?own[0]||'Yes, that is the key idea. Step through the model to see why.':own[1]||'Not quite. Step through the model to see what really happens.'}
 function conceptExplorerHTML(ch){
  const spec=conceptSpecs[ch],state=conceptState(ch);
- return `<section class="concept-explorer" aria-labelledby="concept-title"><div class="concept-top"><div><p class="eyebrow">Try it. Notice it. Explain it.</p><h3 id="concept-title">${E(spec[0])}</h3></div><span class="concept-badge">Interactive model</span></div><fieldset class="concept-prediction"><legend>${E(spec[6])}</legend>${spec[7].map((v,i)=>`<button type="button" data-concept-predict="${i}" aria-pressed="${state.prediction===i}">${E(v)}</button>`).join('')}<p id="concept-prediction-feedback" role="status">${state.prediction===null?'Make a prediction, then explore. This is not marked.':state.prediction===spec[8]?'That is the key idea. Use the model to explain why.':'A useful guess to test. Watch the model and compare what actually stays the same.'}</p></fieldset>
- <div class="concept-controls">${ch===12?'<label>Compare <select id="concept-variant"><option value="share">Sharing in a ratio</option><option value="direct">Direct proportion: tickets</option><option value="inverse">Inverse proportion: journey</option></select></label>':ch===20?'<label>Pricing rule <select id="concept-variant"><option value="no-fee">No starting fee</option><option value="fee">Add a €2 fixed fee</option></select></label>':''}${spec[1]?`<label for="concept-value"><span id="concept-value-label">${E(spec[1])}</span> <output id="concept-value-output">${state.value}</output><input id="concept-value" type="range" min="${spec[2]}" max="${spec[3]}" step="${spec[4]}" value="${state.value}"></label>`:''}</div>
- <div id="concept-model"></div><nav class="concept-navigation" aria-label="Model stages"><button id="concept-back">← Back</button><span id="concept-stage-count"></span><button id="concept-next" class="primary">Next: see why →</button><button id="concept-play" aria-pressed="false">Watch the change</button><button id="concept-reset">Restart model</button></nav><p class="small-note">Change a value, predict what will happen, then explain the change in your own words. Drawings show the idea; labels give the measurements.</p></section>`;
+ return `<section class="concept-explorer" aria-labelledby="concept-title"><div class="concept-top"><div><p class="eyebrow">Interactive model</p><h3 id="concept-title">${E(spec[0])}</h3></div></div><fieldset class="concept-prediction"><legend><span class="concept-guess">Quick guess first.</span> ${E(spec[6])}</legend>${spec[7].map((v,i)=>`<button type="button" data-concept-predict="${i}" aria-pressed="${state.prediction===i}">${E(v)}</button>`).join('')}<p id="concept-prediction-feedback" role="status">${E(conceptFeedback(ch,state.prediction))}</p></fieldset>
+ <div class="concept-controls">${ch===12?'<label>Compare <select id="concept-variant"><option value="share">Sharing in a ratio</option><option value="direct">Direct proportion: tickets</option><option value="inverse">Inverse proportion: journey</option></select></label>':ch===20?'<label>Pricing rule <select id="concept-variant"><option value="no-fee">No starting fee</option><option value="fee">Add a €2 fixed fee</option></select></label>':''}${spec[1]?`<label for="concept-value"><span id="concept-value-label">${E(spec[1])}</span>: <output id="concept-value-output">${state.value}</output><input id="concept-value" type="range" min="${spec[2]}" max="${spec[3]}" step="${spec[4]}" value="${state.value}"></label>`:''}</div>
+ <div id="concept-model"></div><nav class="concept-navigation" aria-label="Model steps"><button id="concept-back">← Back</button><button id="concept-next" class="primary">Next step →</button><button id="concept-play" aria-pressed="false">Play the steps</button><button id="concept-reset">Start again</button></nav><p class="small-note">Drawings show the idea. Use the labels for the measurements.</p></section>`;
 }
 function bindConceptExplorer(ch){
  const host=$('#concept-explorer-host');if(!host)return;
@@ -180,20 +203,20 @@ function bindConceptExplorer(ch){
   const area=$('#concept-model');if(!area)return;
   const previous=new Map([...area.querySelectorAll('svg [id]')].map(el=>[el.id,el.getBoundingClientRect()]));
   const scene=conceptScene(ch,state.value,state.step,state.variant);
-  area.innerHTML=`<div class="concept-drawing">${scene.svg}<button id="concept-enlarge" class="enlarge">Enlarge this model ↗</button></div><section class="concept-explanation audio-box" ${boxAttributes('concept-experiment',scene.explain,'Explore the idea')}><div class="box-heading"><strong>${E(scene.title)}</strong>${boxStatus()}${boxAudio('concept-experiment','Explore the idea')}</div><div class="readable-working">${workingMarkup(scene.math)}</div><p>${E(scene.explain)}</p></section>`;
+  area.innerHTML=`<div class="concept-drawing">${scene.svg}<button id="concept-enlarge" class="enlarge">Enlarge this model ↗</button></div><section class="concept-explanation audio-box" ${boxAttributes('concept-experiment',scene.say,'Explore the idea')}><div class="box-heading"><strong><span class="concept-step">Step ${state.step+1} of 3</span>${E(scene.title)}</strong>${boxStatus()}${boxAudio('concept-experiment','Explore the idea')}</div><div class="readable-working">${workingMarkup(scene.math)}</div><p>${E(scene.explain)}</p></section>`;
   $('#concept-enlarge').onclick=()=>{stopAudio();$('#zoom-title').textContent=spec[0]+' · '+scene.title;$('#zoom-scene').innerHTML=scene.svg;$('#zoom-scale').value='100';$('#zoom-scene').style.width='760px';$('#diagram-dialog').showModal()};
-  $('#concept-stage-count').textContent=`${state.step+1} of 3`;$('#concept-back').disabled=state.step===0;$('#concept-next').disabled=state.step===2;
+  $('#concept-back').disabled=state.step===0;$('#concept-next').disabled=state.step===2;
   if($('#concept-value-output')){const value=ch===12&&state.variant==='share'?'€'+8*state.value+' total':String(state.value);$('#concept-value-output').textContent=value;$('#concept-value').setAttribute('aria-valuetext',value)}
   if($('#concept-value-label'))$('#concept-value-label').textContent=ch===12?(state.variant==='share'?'Total to share':state.variant==='direct'?'Number of tickets':'Speed (km/h)'):spec[1];
-  if(motion&&!reducedMotion())area.querySelectorAll('svg [id]').forEach(el=>{const before=previous.get(el.id),after=el.getBoundingClientRect();if(before&&before.width&&before.height&&after.width&&after.height){const scale=area.querySelector('svg').getBoundingClientRect().width/700;el.animate([{transform:`translate(${(before.x-after.x)/scale}px,${(before.y-after.y)/scale}px) scale(${before.width/after.width},${before.height/after.height})`,transformOrigin:'0 0',transformBox:'fill-box'},{transform:'none',transformOrigin:'0 0',transformBox:'fill-box'}],{duration:650,easing:'ease-in-out'})}});
+  if(motion&&!reducedMotion())area.querySelectorAll('svg [id]').forEach(el=>{const before=previous.get(el.id),after=el.getBoundingClientRect();if(before&&before.width&&before.height&&after.width&&after.height){const view=area.querySelector('svg'),scale=view.getBoundingClientRect().width/view.viewBox.baseVal.width;el.animate([{transform:`translate(${(before.x-after.x)/scale}px,${(before.y-after.y)/scale}px) scale(${before.width/after.width},${before.height/after.height})`,transformOrigin:'0 0',transformBox:'fill-box'},{transform:'none',transformOrigin:'0 0',transformBox:'fill-box'}],{duration:650,easing:'ease-in-out'})}});
   bindBoxAudio(area);
  };
- const move=step=>{stopAudio();state.step=Math.max(0,Math.min(2,step));redraw();announce(`Model stage ${state.step+1}. ${conceptScene(ch,state.value,state.step,state.variant).explain}`)};
- host.querySelectorAll('[data-concept-predict]').forEach(b=>b.onclick=()=>{state.prediction=Number(b.dataset.conceptPredict);host.querySelectorAll('[data-concept-predict]').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));$('#concept-prediction-feedback').textContent=state.prediction===spec[8]?'That is the key idea. Use the model to explain why.':'A useful guess to test. Watch the model and compare what actually stays the same.'});
+ const move=step=>{stopAudio();state.step=Math.max(0,Math.min(2,step));redraw();announce(`Model step ${state.step+1} of 3. ${conceptScene(ch,state.value,state.step,state.variant).say}`)};
+ host.querySelectorAll('[data-concept-predict]').forEach(b=>b.onclick=()=>{state.prediction=Number(b.dataset.conceptPredict);host.querySelectorAll('[data-concept-predict]').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));$('#concept-prediction-feedback').textContent=conceptFeedback(ch,state.prediction)});
  $('#concept-back').onclick=()=>move(state.step-1);$('#concept-next').onclick=()=>move(state.step+1);
  $('#concept-reset').onclick=()=>{state.value=spec[5];state.variant=ch===20?'no-fee':'share';state.prediction=null;state.step=0;stopAudio();host.innerHTML=conceptExplorerHTML(ch);bindConceptExplorer(ch)};
  if($('#concept-value'))$('#concept-value').oninput=e=>{stopAudio();state.value=Number(e.target.value);redraw()};
  if($('#concept-variant')){$('#concept-variant').value=state.variant;$('#concept-variant').onchange=e=>{stopAudio();state.variant=e.target.value;state.step=0;redraw()}};
- $('#concept-play').onclick=()=>{if(conceptTimer){stopConceptAnimation();return}stopAudio();state.step=0;redraw();const button=$('#concept-play');button.textContent='Pause model';button.setAttribute('aria-pressed','true');const tick=()=>{if(!document.getElementById('concept-model')||currentChapter?.id!==ch||currentMode!=='learn'){stopConceptAnimation();return}state.step++;redraw();if(state.step<2)conceptTimer=setTimeout(tick,2400);else stopConceptAnimation()};conceptTimer=setTimeout(tick,2400)};
+ $('#concept-play').onclick=()=>{if(conceptTimer){stopConceptAnimation();return}stopAudio();state.step=0;redraw();const button=$('#concept-play');button.textContent='Pause';button.setAttribute('aria-pressed','true');const tick=()=>{if(!document.getElementById('concept-model')||currentChapter?.id!==ch||currentMode!=='learn'){stopConceptAnimation();return}state.step++;redraw();if(state.step<2)conceptTimer=setTimeout(tick,2400);else stopConceptAnimation()};conceptTimer=setTimeout(tick,2400)};
  redraw(false);
 }

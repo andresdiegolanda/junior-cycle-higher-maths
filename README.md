@@ -4,8 +4,8 @@ A visual preparation guide with step-by-step explanations, browser narration,
 interactive diagrams, practice questions and printable Chapter Toolkits.
 
 Every topic starts with a question to think about and a plain-language explanation.
-The first lesson in each of the 24 chapters includes an interactive model: make a
-prediction, change a value, and reveal why the rule works. Models have three stages,
+The first lesson in each of the 24 chapters includes an interactive model: have a
+guess, step through the model, and change a value to see why the rule works. Models have three steps,
 manual controls, optional playback, narration and an enlarged view. They respect
 reduced-motion settings and stop when the student changes lessons or starts audio.
 

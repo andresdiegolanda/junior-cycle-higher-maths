@@ -14,7 +14,10 @@
 .concept-prediction p{font-size:14px;line-height:1.6;margin:7px 0 0;color:var(--muted)}
 .concept-controls{display:flex;gap:20px;align-items:center;flex-wrap:wrap;margin:10px 0 20px}
 .concept-controls label{display:block;flex:1;min-width:min(250px,100%);font-size:16px;font-weight:650}
-.concept-controls output{display:inline-block;float:right;font-variant-numeric:tabular-nums;color:var(--teal);margin-left:10px}
+.concept-controls output{display:inline-block;font-variant-numeric:tabular-nums;color:var(--teal);font-weight:800;font-size:19px}
+.concept-controls label:has(input[type=range]){max-width:440px}
+.concept-guess{color:var(--teal)}
+.concept-step{display:block;font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--teal);margin-bottom:2px}
 .concept-controls input{display:block;width:100%;margin:14px 0 4px;accent-color:var(--teal);height:26px;cursor:pointer}
 .concept-controls select{display:block;width:100%;padding:10px;border:1px solid var(--line);border-radius:9px;background:var(--surface);color:var(--ink);margin-top:8px}
 #concept-model{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(230px,1fr);gap:22px;align-items:center}

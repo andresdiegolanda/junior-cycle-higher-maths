@@ -16,6 +16,18 @@ for(const [id,s] of Object.entries(specs))for(let n=s[2];n<=s[3];n+=s[4])for(let
   checked++;
  }
 }
+// Factorising: both pieces are drawn to one scale, they meet when joined, the factorised
+// form is not on screen before the last step, and the numeric check agrees on both sides.
+for(const n of [1,3,6]){
+ const pieces=step=>[...scene(2,n,step).svg.matchAll(/<g id="piece-[^"]+"><rect x="([\d.]+)" y="([\d.]+)" width="([\d.]+)" height="([\d.]+)"/g)].map(m=>m.slice(1).map(Number));
+ for(const step of [0,1,2]){
+  const [a,b]=pieces(step);assert.equal(a[2]/n,b[2]/2);assert.equal(a[3],b[3]);assert.equal(a[3]/4,a[2]/n);
+  if(step)assert.equal(a[0]+a[2],b[0]);else assert.ok(b[0]>a[0]+a[2]);
+ }
+ assert.doesNotMatch(scene(2,n,0).math+scene(2,n,1).math,/4\(x \+ 2\)/);
+ assert.match(scene(2,n,2).math,new RegExp(`4\\(${n}\\) \\+ 8 = ${4*n+8} and 4\\(${n} \\+ 2\\) = ${4*n+8}$`));
+ assert.ok(scene(2,n,0).say.length>40&&!/\d/.test(scene(2,n,2).say.replace(String(n),'')));
+}
 // Similar triangles must really scale their drawn lengths by k, not just labels.
 for(const k of [1,1.5,2,3]){
  const polygons=[...scene(16,k,2).svg.matchAll(/<polygon[^>]*points="([^"]+)"/g)].map(m=>m[1].split(' ').map(p=>p.split(',').map(Number)));

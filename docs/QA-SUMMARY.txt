@@ -423,6 +423,11 @@ Skill drills, plain-language pass and accessibility, 11 November 2026
   105 spoken-form cases, 44 checks against the generated pages, typography,
   diagram marks, formula cards, the 60-sheet toolkit PDF and distribution
   validation.
+- Interactive models: the factorising model in chapter 2 was rebuilt after it
+  proved unclear in use. It now shows 4x + 8 as unit squares drawn to scale, asks
+  a question that does not depend on the picture, and shows the factorised form
+  only at the last step, with a numeric check that follows the slider. The frame
+  around all 24 models has fewer words and plain button names.
 - Not verified: the drills on a real phone keyboard; the narration by ear; the
   hosted deployment itself, which is built by Cloudflare after publication. No
   student has used the drills yet.

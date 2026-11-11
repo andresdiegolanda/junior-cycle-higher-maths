@@ -5,9 +5,9 @@ Each HTML page contains its own styles, diagrams, scripts and glossary.
 Keep the toolkits folder beside the HTML pages for the A3 printable cards.
 
 Each topic opens with a question to think about and a short explanation of the idea.
-The first lesson in every chapter has a three-stage interactive model. Predict,
-change a value and explain what stays the same. Use Next for one move at a time,
-Watch the change for playback, or Enlarge this model for a closer look. Controls
+The first lesson in every chapter has an interactive model in three steps. Have a
+guess, then check it with the model. Use Next step for one move at a time,
+Play the steps for playback, or Enlarge this model for a closer look. Controls
 work with the keyboard. Reduced-motion preferences are respected. Starting audio
 or leaving the lesson stops model playback.
 

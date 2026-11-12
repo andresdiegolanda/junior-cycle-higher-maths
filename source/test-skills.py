@@ -61,6 +61,15 @@ def fill(text, sample):
         return '(' + answer + ')'
     return re.sub(r'ANSWER(\d?)', one, str(text))
 
+def answer_parts(text):
+    """The top and the bottom of an answer written as frac(top, bottom); a bottom of 1 otherwise."""
+    s = str(text).strip()
+    if s.startswith('frac('):
+        parts, end = call_parts(s, 4)
+        if end == len(s):
+            return parts[0], parts[1]
+    return s, '1'
+
 def uses_answer(claim):
     return 'ANSWER' in json.dumps(claim)
 
@@ -74,6 +83,11 @@ def check(claim, sample):
         assert uses_answer(claim), where + ': the claim must mention ANSWER'
     if op == 'identity':
         assert sp.simplify(expr(f(claim['a'])) - expr(f(claim['b']))) == 0, where
+        if claim.get('lowest'):
+            # The stated answer must have nothing left to cancel between its top and its bottom.
+            # The two are read from the answer as written: sympy would cancel a parsed fraction by itself.
+            top, bottom = answer_parts(sample['answerText'])
+            assert sp.gcd(sp.expand(expr(top)), sp.expand(expr(bottom))) == 1, where + ': the stated answer is not in its lowest terms'
     elif op == 'factorised':
         target = sp.expand(expr(claim['expr']))
         assert sp.expand(expr(f('ANSWER')) - target) == 0, where

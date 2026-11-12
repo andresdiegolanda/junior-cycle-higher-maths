@@ -77,6 +77,18 @@ assert.ok(K.check({answer:{type:'inequality',op:'<',value:'4'}},{op:'<',value:'4
 assert.equal(K.expand('(2x+3)(x-4)'),'2x^2 - 5x - 12');assert.equal(K.terms([[1,'x^2'],[-1,'x'],[0,'y'],['1/2','']]),'x^2 - x + frac(1, 2)');
 assert.match(K.mathHTML('frac(x, 2)^2 <= sqrt(9)'),/sk-frac.*<sup>2<\/sup> ≤ .*sk-sqrt/);assert.ok(!K.richHTML('<img> `x<y`').includes('<img>'));
 assert.equal(K.mathSpeech('3x^2 - 2(x + 1)'),'3 x squared minus 2 times open bracket x plus 1 close bracket');
+/* An answer with letters below the line: equal in value, one fraction, nothing left to cancel. */
+const rat=(value,input)=>ex(value,'rational',input);
+for(const ok of ['(5x+2)/(x(x+1))','(5x + 2)/(x² + x)','(5x+2)/((x)(x+1))'])assert.ok(rat('frac(5x + 2, x(x + 1))',ok).correct,ok);
+assert.match(rat('frac(5x + 2, x(x + 1))','2/x+3/(x+1)').feedback,/not one fraction/);assert.match(rat('frac(5x + 2, x(x + 1))','(2(x+1)+3x)/(x(x+1))').feedback,/collect the like terms/);
+assert.match(rat('frac(5x + 2, x(x + 1))','(10x+4)/(2x(x+1))').feedback,/divide the top and the bottom by 2/);assert.ok(!rat('frac(5x + 2, x(x + 1))','(5x+3)/(x(x+1))').correct&&!rat('frac(5x + 2, x(x + 1))','(5x+3)/(x(x+1))').close);
+for(const slip of ['(5x+2)/x(x+1)','5x+2/(x(x+1))','5x+2/x(x+1)','(5x+2)/x^2+x'])assert.match(rat('frac(5x + 2, x(x + 1))',slip).feedback||'',/Check your brackets/,slip);
+assert.ok(rat('frac(5x + 2, x(x + 1))','5x+2/x(x+1)').close,'a missing bracket does not use up a try');assert.match(rat('frac(11, 2x)','11/2x').feedback,/Check your brackets/);
+assert.ok(rat('frac(x - 3, x + 2)','(3-x)/(-x-2)').correct);assert.match(rat('frac(x - 3, x + 2)','(x^2-9)/(x^2+5x+6)').feedback,/cancel the factor/);assert.match(rat('x - 3','(x^2-9)/(x+3)').feedback,/cancel the factor/);assert.ok(rat('x - 3','x-3').correct);
+assert.ok(rat('frac(2(x - 2), x)','(2x-4)/x').correct&&rat('frac(2(x - 2), x)','2(x-2)/x').correct);assert.ok(rat('frac(x, 0 + 1)','x').correct);assert.ok(rat('frac(1, x)','1/0').invalid);
+/* With only a number below the line, the answer is one fraction over that number. */
+assert.ok(rat('frac(2x + 3, 4)','(2x+3)/4').correct);assert.match(rat('frac(2x + 3, 4)','(4x+6)/8').feedback,/divide the top and the bottom by 2/);assert.match(rat('frac(2x + 3, 4)','2x+3/4').feedback,/Check your brackets/);assert.ok(rat('frac(3x, 2)','3x/2').correct&&rat('frac(3x, 2)','1.5x').correct);
+assert.throws(()=>K.define({id:'bad-also',title:'t',strand:'Algebra',lesson:'01-01',also:['01-01'],blurb:'b',levels:[1,2,3]}),/also/);
 /* The account service's list of skills must match the skills that exist. */
 const catalogFile=path.join(dir,'../worker/catalog.json');
 if(fs.existsSync(catalogFile)){

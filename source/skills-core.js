@@ -261,8 +261,15 @@ const FORM_HELP={
  factorised:'That has the right value, but it is not fully factorised. Write it as a product of brackets, with any common factor taken out.',
  unfactored:'That is equal to the expression, but the question asks you to factorise it. Write it as factors multiplied together.',
  oneFraction:'That has the right value, but it is not one fraction yet. Write one top over one bottom.',
- tidyTop:'That has the right value. Now tidy the top: multiply out any brackets and collect the like terms.'
+ tidyTop:'That has the right value. Now tidy the top: multiply out any brackets and collect the like terms.',
+ brackets:'Check your brackets. Put the whole top in brackets and the whole bottom in brackets, like (top)/(bottom). The line under the box shows how your answer was read.'
 };
+/* Where the only / outside brackets is in a typed answer, or -1 when there is none or more than one. */
+function topSlash(text){
+ let depth=0,at=-1;
+ for(let i=0;i<text.length;i++){const c=text[i];if(c==='(')depth++;else if(c===')')depth--;else if(c==='/'&&depth===0){if(at>=0)return -1;at=i}}
+ return at;
+}
 /* The top and bottom of a typed single fraction, or null when it is more than one fraction. */
 function singleFraction(tree){
  let n=unwrap(tree),divisions=0;
@@ -283,11 +290,17 @@ function checkRational(answer,input){
  try{tree=parseExpr(input);typed=toRational(tree)}catch(e){return {correct:false,invalid:true,feedback:e.message}}
  const target=rational(answer.value);
  if(typed.d.size===0)return {correct:false,invalid:true,feedback:'You cannot divide by zero.'};
- if(!rEq(typed,target))return {correct:false};
- /* When nothing is left below the line, the answer is an ordinary simplified expression. */
+ if(!rEq(typed,target)){
+  /* The right fraction typed without brackets round its top or its bottom is read as something else: say so, without using up a try. */
+  const at=topSlash(input);
+  if(at>0){try{if(rEq(rational(`(${input.slice(0,at)})/(${input.slice(at+1)})`),target))return {correct:false,close:true,feedback:FORM_HELP.brackets}}catch{}}
+  return {correct:false};
+ }
+ /* When no letter is left below the line, the answer is an ordinary expression: a simplified one, or one fraction over a number. */
  if(pIsConst(target.d)){
   try{toPoly(tree)}catch{return {correct:false,close:true,feedback:'Right value. Now cancel the factor that the top and the bottom share.'}}
-  return checkExpr({...answer,form:'simplified'},input);
+  const whole=target.d.get('');
+  return checkExpr({...answer,form:whole.n===1&&whole.d===1?'simplified':'fraction'},input);
  }
  const parts=singleFraction(tree);
  if(!parts)return {correct:false,close:true,feedback:FORM_HELP.oneFraction};
@@ -526,6 +539,8 @@ function define(skill){
  if(!STRANDS.includes(skill.strand))throw new Error(skill.id+': unknown strand');
  if(!Array.isArray(skill.levels)||skill.levels.length!==3)throw new Error(skill.id+': a skill needs exactly three levels');
  for(const key of ['title','blurb','lesson'])if(typeof skill[key]!=='string'||!skill[key])throw new Error(skill.id+': missing '+key);
+ /* Other lessons the skill also practises: its drill is offered under those lessons too. */
+ if(skill.also!==undefined&&!(Array.isArray(skill.also)&&skill.also.every(id=>/^\d\d-\d\d$/.test(id)&&id!==skill.lesson)))throw new Error(skill.id+': "also" must list other lesson ids');
  skills.push(skill);byId.set(skill.id,skill);return skill;
 }
 /* True when two answers would look the same to a student: equal numbers or equal expressions. */

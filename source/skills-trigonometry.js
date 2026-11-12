@@ -116,7 +116,7 @@ function findAngle(fn,topLength,bottomLength,frame){
 }
 const goodAngle=a=>a>12&&a<78&&Math.abs(a-Math.round(a))<.42;   /* not so close to a half that rounding is in doubt */
 K.define({
- id:'trig-ratios',title:'Sin, cos and tan',strand:STRAND,lesson:'22-02',
+ id:'trig-ratios',title:'Sin, cos and tan',strand:STRAND,lesson:'22-02',also:['22-03','22-06'],
  blurb:'Name the sides from an angle, write sin, cos or tan as a fraction, and find an angle from two sides.',
  levels:[
   {name:'Write the ratio',make(rng){
@@ -200,7 +200,7 @@ function drawnSide(rng,where){
  }
 }
 K.define({
- id:'trig-sides',title:'Find a side with sin, cos or tan',strand:STRAND,lesson:'22-04',
+ id:'trig-sides',title:'Find a side with sin, cos or tan',strand:STRAND,lesson:'22-04',also:['22-05','22-06'],
  blurb:'Use an angle and one side of a right-angled triangle to find another side.',
  levels:[
   {name:'x on the top',make(rng){return drawnSide(rng,'top')}},

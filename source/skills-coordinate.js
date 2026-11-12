@@ -121,7 +121,7 @@ function slope(a,b){
  };
 }
 K.define({
- id:'slope',title:'Slope of a line',strand:STRAND,lesson:'11-02',
+ id:'slope',title:'Slope of a line',strand:STRAND,lesson:'11-02',also:['11-05'],
  blurb:'Find how steep a line is from two points, and the slope of a parallel or perpendicular line.',
  levels:[
   {name:'Rise over run',make(rng){
@@ -169,7 +169,7 @@ K.define({
 
 /* ---------- The equation of a line ---------- */
 K.define({
- id:'equation-of-a-line',title:'Equation of a line',strand:STRAND,lesson:'11-03',
+ id:'equation-of-a-line',title:'Equation of a line',strand:STRAND,lesson:'11-03',also:['11-04'],
  blurb:'Read the slope and y-intercept from y = mx + c, and build the equation from a point and a slope or from two points.',
  levels:[
   {name:'Read y = mx + c',make(rng){
@@ -259,7 +259,7 @@ K.define({
 
 /* ---------- Points on a line, and where lines meet ---------- */
 K.define({
- id:'points-and-lines',title:'Points on a line',strand:STRAND,lesson:'11-06',
+ id:'points-and-lines',title:'Points on a line',strand:STRAND,lesson:'11-06',also:['11-07'],
  blurb:'Use the equation of a line to find a missing coordinate, where the line cuts the axes and where two lines meet.',
  levels:[
   {name:'A missing coordinate',make(rng){

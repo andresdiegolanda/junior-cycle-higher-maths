@@ -102,14 +102,18 @@ formulas=load_formula_library(chapters)
 # skill's id and lesson, so they are read from the source without running it.
 skill_files=sorted(f.name for f in ROOT.glob('skills-*.js') if f.name!='skills-core.js')
 skills={}
+skill_also={}
 for name in skill_files:
     for block in re.split(r'\bK\.define\(\{',(ROOT/name).read_text(encoding='utf-8'))[1:]:
         found=re.search(r"\bid:'([a-z0-9-]+)'",block),re.search(r"\blesson:'(\d\d-\d\d)'",block)
         assert all(found),('Skill needs a literal id and lesson',name)
         assert found[0][1] not in skills,('Duplicate skill',found[0][1])
         skills[found[0][1]]={'lesson':found[1][1]}
+        also=re.search(r"\balso:\[([^\]]*)\]",block)
+        skill_also[found[0][1]]=re.findall(r"'([^']*)'",also[1]) if also else []
 lesson_ids={l['id'] for c in chapters for l in c['lessons']}
 assert all(s['lesson'] in lesson_ids for s in skills.values()),'A skill points to an unknown lesson'
+assert all(l in lesson_ids for ls in skill_also.values() for l in ls),'A skill is also offered under an unknown lesson'
 catalog={'lessons':{},'exercises':{},'skills':skills}
 for c in chapters:
     for l in c['lessons']:

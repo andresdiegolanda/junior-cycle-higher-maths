@@ -39,7 +39,7 @@ function outputQuestion(name,coefs,k){
  };
 }
 K.define({
- id:'function-values',title:'Find f(x) for an input',strand:STRAND,lesson:'19-03',
+ id:'function-values',title:'Find f(x) for an input',strand:STRAND,lesson:'19-03',also:['19-01','19-08'],
  blurb:'Put an input into a function and work out the output, without losing a sign.',
  levels:[
   {name:'Linear rules',make(rng){
@@ -82,7 +82,7 @@ K.define({
 
 /* ---------- Inputs from outputs, and the rule from two values ---------- */
 K.define({
- id:'function-inputs',title:'Work back to the input',strand:STRAND,lesson:'19-06',
+ id:'function-inputs',title:'Work back to the input',strand:STRAND,lesson:'19-06',also:['19-07','19-04'],
  blurb:'Find the input that gives a stated output, where two functions agree, and the rule from two values.',
  levels:[
   {name:'Solve f(x) = k',make(rng){

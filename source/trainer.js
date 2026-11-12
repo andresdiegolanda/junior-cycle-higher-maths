@@ -7,7 +7,10 @@ const K=SkillKit,ROUND=5,WARMUP=10,DAILY_GOAL=3;
 const esc=K.esc,rich=K.richHTML,maths=K.mathHTML;
 let session=null,studying=false;
 /* The order a student meets the skills: each one leans on the ones before it. */
-const ORDER=['like-terms','expand-one-bracket','expand-two-brackets','substitution','common-factor','difference-of-squares','factorise-quadratics','factorise-grouping','algebraic-fractions','linear-equations','equations-with-fractions','words-to-equations','inequalities','simultaneous-equations','quadratics-factorising','quadratic-formula','change-the-subject','nth-term',
+const ORDER=['like-terms','expand-one-bracket','expand-two-brackets','substitution','common-factor','difference-of-squares','factorise-quadratics','factorise-grouping','algebraic-fractions','simplify-algebraic-fractions','multiply-divide-algebraic-fractions','fractions-letters-below','linear-equations','equations-with-fractions','words-to-equations','inequalities','simultaneous-equations','quadratics-factorising','quadratic-formula','change-the-subject','repeating-patterns','nth-term','quadratic-sequences',
+ 'midpoint-and-distance','slope','equation-of-a-line','points-and-lines',
+ 'function-values','function-inputs','journey-graphs',
+ 'pythagoras','trig-ratios','trig-sides',
  'negative-numbers','order-of-operations','fractions','percentages','index-laws','standard-form','rounding','compound-interest',
  'simplify-ratios','share-in-a-ratio','direct-proportion','inverse-proportion','speed-distance-time','time-calculations','currency-exchange',
  'mean','median-mode-range','frequency-table-mean','choose-the-average','pie-charts','stem-and-leaf','probability'];
@@ -29,11 +32,14 @@ function streak(){
 }
 function track(kind,payload,skill){if(typeof trackActivity==='function')trackActivity(kind,payload,{lessonId:skill.lesson})}
 /* What is on the test, and the last warm-up result, stay on this device. */
-const testKey=()=>'jc-drill-test:'+(typeof MathsAccount!=='undefined'&&MathsAccount.user?MathsAccount.user.id:'local');
-function testState(){try{const v=JSON.parse(localStorage.getItem(testKey())||'null');if(v&&typeof v==='object')return {picked:Array.isArray(v.picked)?v.picked.filter(id=>K.byId.has(id)):null,last:v.last&&typeof v.last==='object'?v.last:null}}catch(e){}return {picked:null,last:null}}
+const testKey=()=>'jc-drill-test-2:'+(typeof MathsAccount!=='undefined'&&MathsAccount.user?MathsAccount.user.id:'local');
+function testState(){try{const v=JSON.parse(localStorage.getItem(testKey())||'null');if(v&&typeof v==='object')return {picked:Array.isArray(v.picked)?v.picked.filter(id=>K.byId.has(id)):null,last:v.last&&typeof v.last==='object'?v.last:null,all:v.all===true}}catch(e){}return {picked:null,last:null,all:false}}
 function saveTestState(state){try{localStorage.setItem(testKey(),JSON.stringify(state))}catch(e){}}
-const DEFAULT_TEST_STRANDS=['Algebra','Ratio and proportion','Statistics'];
-function pickedSkills(){const p=testState().picked;return p&&p.length?p:K.skills.filter(s=>DEFAULT_TEST_STRANDS.includes(s.strand)).map(s=>s.id)}
+/* The chapters of the next class test. Until a student ticks their own list, these are what "on my test" means. */
+const TEST_CHAPTERS=[11,12,18,19,20,21,22];
+const chapterOf=skill=>Number(skill.lesson.slice(0,2));
+const chapterTitle=number=>(DATA.searchIndex||[]).find(c=>c.id===number)?.title||'';
+function pickedSkills(){const p=testState().picked;return p&&p.length?p:K.skills.filter(s=>TEST_CHAPTERS.includes(chapterOf(s))).map(s=>s.id)}
 
 /* ---------- Small pieces of markup ---------- */
 function starRow(count,label){return `<span class="drill-stars" role="img" aria-label="${esc(label||count+' of 3 stars')}">${[0,1,2].map(i=>`<span class="${i<count?'on':''}" aria-hidden="true">★</span>`).join('')}</span>`}
@@ -71,14 +77,16 @@ function fixList(){
  return `<div class="drill-fix"><strong>From your last warm-up, fix these first:</strong><div>${missed.map(s=>`<button data-drill="${esc(s.id)}" data-level="${nextLevel(s.id)}">${esc(s.title)}</button>`).join('')}</div></div>`;
 }
 function renderHub(){
- session=null;const next=suggestion(),level=nextLevel(next.id);
+ session=null;const next=suggestion(),level=nextLevel(next.id),onTest=new Set(pickedSkills()),all=testState().all,shown=K.skills.filter(s=>all||onTest.has(s.id));
  setPage('Skill drills',`${crumbs(['Skill drills'])}
  <header class="drill-head"><div><p class="eyebrow">Skill drills</p><h1>Practise until it sticks.</h1><p class="intro">Rounds of five questions, marked as you go. When you slip, you see where, and how to fix it.</p><div class="hero-actions"><button class="primary" data-drill="${esc(next.id)}" data-level="${level}">${totalStars(K.skills)?'Next up':'Start with'}: ${esc(next.title)} →</button><button id="drill-test">Get ready for a test</button></div></div>${todayPanel()}</header>
  ${fixList()}
- <nav class="drill-jump" aria-label="Jump to a strand">${K.STRANDS.filter(strand=>K.skills.some(s=>s.strand===strand)).map(strand=>`<a href="#strand-${esc(strand.replace(/\W+/g,'-'))}" data-jump="strand-${esc(strand.replace(/\W+/g,'-'))}">${esc(strand)}</a>`).join('')}</nav>
- ${K.STRANDS.map(strand=>{const list=K.skills.filter(s=>s.strand===strand);if(!list.length)return '';const got=totalStars(list),max=list.length*9;return `<section class="drill-strand" aria-labelledby="strand-${esc(strand.replace(/\W+/g,'-'))}"><div class="drill-strand-head"><h2 id="strand-${esc(strand.replace(/\W+/g,'-'))}">${esc(strand)}</h2><span>${got} of ${max} stars</span><progress max="${max}" value="${got}" aria-label="${esc(strand)} stars"></progress></div><div class="drill-grid">${list.map(skillCard).join('')}</div></section>`}).join('')}
+ <div class="drill-scope" role="group" aria-label="Which skills to show"><button type="button" data-scope="test" aria-pressed="${!all}">On my test (${onTest.size})</button><button type="button" data-scope="all" aria-pressed="${all}">Every skill (${K.skills.length})</button><a href="#drills=test">Change what is on my test</a></div>
+ <nav class="drill-jump" aria-label="Jump to a strand">${K.STRANDS.filter(strand=>shown.some(s=>s.strand===strand)).map(strand=>`<a href="#strand-${esc(strand.replace(/\W+/g,'-'))}" data-jump="strand-${esc(strand.replace(/\W+/g,'-'))}">${esc(strand)}</a>`).join('')}</nav>
+ ${K.STRANDS.map(strand=>{const list=shown.filter(s=>s.strand===strand);if(!list.length)return '';const got=totalStars(list),max=list.length*9;return `<section class="drill-strand" aria-labelledby="strand-${esc(strand.replace(/\W+/g,'-'))}"><div class="drill-strand-head"><h2 id="strand-${esc(strand.replace(/\W+/g,'-'))}">${esc(strand)}</h2><span>${got} of ${max} stars</span><progress max="${max}" value="${got}" aria-label="${esc(strand)} stars"></progress></div><div class="drill-grid">${list.map(skillCard).join('')}</div></section>`}).join('')}
  <p class="footnote">Three stars means five right first time. Two stars means four. Your best round at each level is kept.</p>`);
  bindStarts();$('#drill-test').onclick=()=>go('test');
+ document.querySelectorAll('[data-scope]').forEach(b=>b.onclick=()=>{const state=testState();state.all=b.dataset.scope==='all';saveTestState(state);const top=window.scrollY;renderHub();window.scrollTo({top,behavior:'instant'});document.querySelector(`[data-scope="${b.dataset.scope}"]`).focus({preventScroll:true})});
  document.querySelectorAll('[data-jump]').forEach(a=>a.onclick=e=>{e.preventDefault();const target=document.getElementById(a.dataset.jump);target.scrollIntoView({block:'start',behavior:reducedMotion()?'instant':'smooth'});target.setAttribute('tabindex','-1');target.focus({preventScroll:true})});
 }
 function bindStarts(root=document){root.querySelectorAll('[data-drill]').forEach(b=>b.onclick=()=>go('round&skill='+encodeURIComponent(b.dataset.drill)+'&level='+b.dataset.level))}
@@ -94,8 +102,12 @@ function startRound(skillId,level){
 const freshItem=q=>({q,tries:0,hint:false,outcome:null,struck:[]});
 function startWarmup(){
  const picked=pickedSkills().map(id=>K.byId.get(id)).filter(Boolean);if(!picked.length){renderTest();return}
- /* Weakest skills first, then fill up; a skill never practised starts at level 1. */
- const order=[...picked].map(s=>({s,weight:starsOf(s.id).reduce((a,b)=>a+b,0)+Math.random()})).sort((a,b)=>a.weight-b.weight).map(x=>x.s);
+ /* Every chapter on the test gets a question before any chapter gets a second one. Within a chapter the weakest
+    skill comes first, and the weakest chapter leads. A skill never practised starts at level 1. */
+ const groups=new Map();
+ for(const s of picked){const c=chapterOf(s);if(!groups.has(c))groups.set(c,[]);groups.get(c).push({s,weight:starsOf(s.id).reduce((a,b)=>a+b,0)+Math.random()})}
+ const lists=[...groups.values()].map(list=>list.sort((a,b)=>a.weight-b.weight)).sort((a,b)=>a[0].weight-b[0].weight);
+ const order=[];for(let i=0;order.length<picked.length;i++)for(const list of lists)if(list[i])order.push(list[i].s);
  const chosen=[];for(let i=0;chosen.length<Math.min(WARMUP,Math.max(order.length,5));i++)chosen.push(order[i%order.length]);
  const shuffled=K.makeRng(newSeed()).shuffle(chosen.slice(0,WARMUP));
  session={kind:'test',items:shuffled.map(s=>freshItem(K.make(s.id,starsOf(s.id)[0]>=2?1:0,newSeed()))),index:0};renderQuestion();
@@ -118,7 +130,7 @@ function answerMarkup(q){
  if(a.type==='fields')return `<div class="drill-inputs">${a.fields.map((f,i)=>box(i,f.label||(i===0&&!a.ratio?'Answer':''),f.unit)).join('')}</div>${keys(numberKeys)}`;
  if(a.type==='inequality')return `<div class="drill-inputs"><span class="drill-field-label">${maths(a.variable||'x')}</span><label class="screen-reader" for="drill-sign">Inequality sign</label><select id="drill-sign"><option value="">sign</option><option value="<">&lt;</option><option value="<=">≤</option><option value=">">&gt;</option><option value=">=">≥</option></select>${box(0,'','')}</div>${keys(numberKeys)}`;
  const letters=[...new Set(a.value.replace(/frac|sqrt/g,'').match(/[a-z]/gi)||['x'])].slice(0,4);
- return `<div class="drill-inputs">${box(0,a.label||'Answer','',true)}</div>${keys([...letters.map(l=>[l,l,'letter '+l]),['x²','^2','squared'],...(a.value.includes('^3')?[['x³','^3','cubed']]:[]),['(','(','open bracket'],[')',')','close bracket'],['+','+','plus'],['−','-','minus'],['/','/','divided by']])}<p class="small-note drill-tip">${a.value.includes('frac(')?'Type a fraction as (top)/(bottom), for example (5x + 3)/6.':a.form==='factorised'?'Type the factors side by side, for example 2(x + 3)(x − 3).':'Type a power with the x² key, or as x^2.'}</p><p class="drill-preview" id="drill-preview" aria-hidden="true"></p>`;
+ return `<div class="drill-inputs">${box(0,a.label||'Answer','',true)}</div>${keys([...letters.map(l=>[l,l,'letter '+l]),['x²','^2','squared'],...(a.value.includes('^3')?[['x³','^3','cubed']]:[]),['(','(','open bracket'],[')',')','close bracket'],['+','+','plus'],['−','-','minus'],['/','/','divided by']])}<p class="small-note drill-tip">${a.form==='rational'?'Type a fraction as (top)/(bottom), with brackets round each, for example (x + 3)/(2x).':a.value.includes('frac(')?'Type a fraction as (top)/(bottom), for example (5x + 3)/6.':a.form==='factorised'?'Type the factors side by side, for example 2(x + 3)(x − 3).':'Type a power with the x² key, or as x^2.'}</p><p class="drill-preview" id="drill-preview" aria-hidden="true"></p>`;
 }
 function dots(){
  const names={first:'right first time',helped:'right with help',missed:'missed'};
@@ -242,15 +254,16 @@ function finishWarmup(){
 function renderTest(){
  session=null;const picked=new Set(pickedSkills());
  setPage('Get ready for a test',`${crumbs(['Skill drills','#drills=hub'],['Get ready for a test'])}
- <header class="drill-head"><div><p class="eyebrow">Test coming up</p><h1>Find the gaps before the test does.</h1><p class="intro">Tick what is on your test. The warm-up asks ten mixed questions, then tells you which skills to fix first.</p></div></header>
- <form id="test-form" class="test-form">${K.STRANDS.map((strand,n)=>{const list=K.skills.filter(s=>s.strand===strand);return list.length?`<fieldset><legend>${esc(strand)}</legend><p><button type="button" data-all="${n}">Tick all</button><button type="button" data-none="${n}">Clear</button></p><div class="test-skills" data-strand="${n}">${list.map(s=>`<label><input type="checkbox" name="skill" value="${esc(s.id)}" ${picked.has(s.id)?'checked':''}><span>${esc(s.title)}</span>${starRow(Math.max(...starsOf(s.id)),'best: '+Math.max(...starsOf(s.id))+' of 3 stars')}</label>`).join('')}</div></fieldset>`:''}).join('')}
+ <header class="drill-head"><div><p class="eyebrow">Test coming up</p><h1>Find the gaps before the test does.</h1><p class="intro">Tick the chapters and skills on your test. The warm-up asks ten mixed questions, at least one from each chapter you ticked when there is room, then tells you which skills to fix first.</p></div></header>
+ <form id="test-form" class="test-form"><p class="test-tools"><button class="primary" type="submit">Start the warm-up: ten questions →</button><span>Ticked: <strong id="test-count">${picked.size}</strong> of ${K.skills.length} skills</span><button type="button" id="test-clear">Clear every tick</button></p>${[...new Set(K.skills.map(chapterOf))].sort((a,b)=>a-b).map(n=>{const list=K.skills.filter(s=>chapterOf(s)===n);return `<fieldset><legend><span class="test-chapter">Chapter ${n}</span> ${esc(chapterTitle(n))}</legend><p><button type="button" data-all="${n}">Tick all</button><button type="button" data-none="${n}">Clear</button></p><div class="test-skills" data-chapter="${n}">${list.map(s=>`<label><input type="checkbox" name="skill" value="${esc(s.id)}" ${picked.has(s.id)?'checked':''}><span>${esc(s.title)}</span>${starRow(Math.max(...starsOf(s.id)),'best: '+Math.max(...starsOf(s.id))+' of 3 stars')}</label>`).join('')}</div></fieldset>`}).join('')}
  <p id="test-error" class="account-error" role="alert"></p>
  <div class="hero-actions"><button class="primary" type="submit">Start the warm-up: ten questions →</button><button type="button" id="test-back">Back to all skills</button></div></form>
  <section class="test-after"><h2>After the warm-up</h2><ol><li>Do one round on each skill in your "fix first" list.</li><li>Read the lesson for any skill that still feels shaky.</li><li>Finish with one long question on paper from the chapter's Exam practice.</li></ol></section>`);
  const boxes=()=>[...document.querySelectorAll('#test-form input[name=skill]')];
- const store=()=>{const state=testState();state.picked=boxes().filter(b=>b.checked).map(b=>b.value);saveTestState(state)};
+ const store=()=>{const state=testState();state.picked=boxes().filter(b=>b.checked).map(b=>b.value);saveTestState(state);$('#test-count').textContent=state.picked.length};
  boxes().forEach(b=>b.onchange=store);
- document.querySelectorAll('[data-all],[data-none]').forEach(b=>b.onclick=()=>{const on='all' in b.dataset;document.querySelectorAll(`[data-strand="${on?b.dataset.all:b.dataset.none}"] input`).forEach(i=>{i.checked=on});store()});
+ document.querySelectorAll('[data-all],[data-none]').forEach(b=>b.onclick=()=>{const on='all' in b.dataset;document.querySelectorAll(`[data-chapter="${on?b.dataset.all:b.dataset.none}"] input`).forEach(i=>{i.checked=on});store()});
+ $('#test-clear').onclick=()=>{boxes().forEach(b=>{b.checked=false});store()};
  $('#test-form').onsubmit=e=>{e.preventDefault();if(!boxes().some(b=>b.checked)){$('#test-error').textContent='Tick at least one skill first.';return}store();go('warmup')};
  $('#test-back').onclick=()=>go('hub');
 }
@@ -259,7 +272,7 @@ function renderTest(){
 /* Shown under a lesson and its topic practice when a drill exists for it. */
 function lessonLinks(){
  const host=$('#lesson-content');if(!host||!currentLesson||!['learn','practice'].includes(currentMode))return;
- const list=K.skills.filter(s=>s.lesson===currentLesson.id);if(!list.length)return;
+ const list=K.skills.filter(s=>s.lesson===currentLesson.id||(s.also||[]).includes(currentLesson.id));if(!list.length)return;
  host.insertAdjacentHTML('beforeend',`<aside class="drill-callout" aria-label="Skill drills for this lesson"><div><p class="eyebrow">Quick practice, marked as you go</p><p>Drill this skill in rounds of five questions.</p></div><div class="drill-callout-actions">${list.map(s=>`<button data-drill="${esc(s.id)}" data-level="${nextLevel(s.id)}">${esc(s.title)} ${starRow(Math.max(...starsOf(s.id)))}</button>`).join('')}</div></aside>`);
  bindStarts(host.querySelector('.drill-callout'));
 }

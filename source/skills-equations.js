@@ -1083,7 +1083,7 @@ K.define({
  id:'nth-term',
  title:'Find the nth term',
  strand:'Algebra',
- lesson:'18-04',
+ lesson:'18-04',also:['18-03'],
  blurb:'Use the common difference to build a rule for any term of a linear sequence.',
  levels:[
   {name:'Next and later terms',make(rng){

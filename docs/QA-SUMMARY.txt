@@ -441,6 +441,48 @@ Skill drills, plain-language pass and accessibility, 11 November 2026
   hosted deployment itself, which is built by Cloudflare after publication. No
   student has used the drills yet.
 
+Drills for the chapters of a class test, 12 November 2026
+- Scope: a class test on chapters 11, 12, 18, 19, 20, 21 and 22. Chapter 12 had
+  six drills already; chapters 11, 19, 20 and 22 had none, and chapters 18 and
+  21 had gaps. Fifteen skills were added, three levels each, which brings the
+  total to 55 skills (23 algebra, 4 coordinate geometry, 3 functions and graphs,
+  3 trigonometry, 8 number, 7 ratio and proportion, 7 statistics).
+- New skills. Chapter 11: midpoint and distance; slope, with parallel and
+  perpendicular lines; equation of a line; points on a line, with the axes and
+  the meeting point of two lines. Chapter 18: repeating patterns; quadratic
+  sequences. Chapter 19: find f(x) for an input; work back to the input, with
+  two functions that agree and a rule found from two values. Chapter 20: read a
+  journey graph. Chapter 21: simplify algebraic fractions; multiply and divide
+  them; add fractions with a letter on the bottom. Chapter 22: the theorem of
+  Pythagoras; sin, cos and tan, with finding an angle; find a side.
+- Engine: a question can carry a drawing with a text description that is also
+  read aloud (a distance-time graph, a right-angled triangle). An answer can have
+  letters below the line: it is compared exactly, by cross-multiplying, and must
+  be one fraction with nothing left to cancel. The right fraction typed without
+  brackets round its top or bottom is recognised and explained, and keeps the
+  try. With only a number below the line the answer is checked as one fraction in
+  lowest terms.
+- Test screen: skills are listed by chapter, with the seven chapters above ticked
+  until a student ticks a list of their own. The warm-up takes one question from
+  each ticked chapter before a second from any. The drills page opens on the
+  ticked skills and has one button to show all 55. Nine drills are also offered
+  under further lessons that they practise (for example lesson 21-09 offers the
+  multiply and divide drill).
+- Verification: 24,750 generated questions (150 per level) pass the checks on
+  structure, notation, variety, own answer accepted and listed slips refused.
+  6,600 of them (40 per level) were recomputed with sympy from an independent
+  claim: 4,104 values, 1,160 identities, 759 equations, 455 factorisations, 423
+  statistics, 200 systems, 91 inequalities; 63 choice questions carry no
+  machine-checkable claim. For the 360 sampled fraction answers the check also
+  confirms that top and bottom share no factor; it was shown to refuse an
+  unreduced answer. All 165 levels were played in a headless browser at 1440 px
+  and at 390 px: correct answers accepted, wrong answers handled, no script
+  errors, nothing wider than the page. Four warm-ups were played: each drew from
+  all seven chapters. The signed-in run against the local account server passed.
+- Not verified: the fifteen new skills were read in samples by their author only,
+  with no second reader; no drawing was checked with a screen reader; nothing
+  was tried on a real device, and no student has used the new drills yet.
+
 Limits and recommendations
 The SEC Formulae and Tables booklet and exam archive could not be fetched, so
 claims about the booklet remain unverified. No audible reading audit or student

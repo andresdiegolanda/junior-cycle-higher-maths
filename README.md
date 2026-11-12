@@ -9,12 +9,17 @@ guess, step through the model, and change a value to see why the rule works. Mod
 manual controls, optional playback, narration and an enlarged view. They respect
 reduced-motion settings and stop when the student changes lessons or starts audio.
 
-**Skill drills** give unlimited practice on 40 core skills in algebra, number,
-ratio and proportion, and statistics. Each skill has three levels. Questions are
-generated with new numbers every time, typed answers are marked at once, and a wrong
-answer gets a reason for the likely slip, a hint and, after a second try, the full
-working. Rounds have five questions and earn up to three stars; a test warm-up mixes
-ten questions from the topics chosen for a class test, weakest skills first.
+**Skill drills** give unlimited practice on 55 core skills in algebra, coordinate
+geometry, functions and graphs, trigonometry, number, ratio and proportion, and
+statistics. Each skill has three levels. Questions are generated with new numbers
+every time, some with a drawing (a journey graph, a right-angled triangle), typed
+answers are marked at once, and a wrong answer gets a reason for the likely slip, a
+hint and, after a second try, the full working. Rounds have five questions and earn
+up to three stars. **Get ready for a test** lists the skills by chapter: tick the
+chapters on the test and the warm-up asks ten mixed questions, one from each ticked
+chapter before a second from any, weakest skills first. Until a student ticks a list
+of their own, chapters 11, 12, 18, 19, 20, 21 and 22 are ticked. The drills page
+opens on the ticked skills, with one button to show every skill.
 
 Worked solutions separate the calculation from its explanation, with shorter lines
 and more space. Ratio and proportion practice explicitly explains equal parts,
@@ -30,7 +35,7 @@ then open `Junior-Cycle-Higher-Maths/index.html` in a browser. The 24 chapter
 HTML files can also be opened individually. Keep the `toolkits` folder beside them.
 
 The guide contains 158 lessons, 646 teaching steps, 948 graded topic exercises (six per lesson), 96 chapter
-challenges, 222 visual reference cards, a glossary of 140 terms and 40 skill drills
+challenges, 222 visual reference cards, a glossary of 140 terms and 55 skill drills
 with three levels each. Every written exercise has a note beside each worked step
 that says why the move works. The printable
 PDF has 60 A3 landscape sheets across the 24 chapters, with extra room for dense cards.
@@ -44,10 +49,13 @@ library returns to the current lesson. Every chapter file includes the full libr
 
 Open **Skill drills** from the top bar, from the home page or from the link under a
 lesson. Type an expression with the letter and symbol keys under the answer box:
-`x2` or `x^2` for a square, `(2x + 5)/6` for a fraction, factors side by side. The
-box shows how the answer is read before it is checked. An answer with the right
-value in the wrong form (not simplified, not fully factorised, not in lowest terms)
-gets a nudge and does not use up a try. Stars, the daily count and the streak are
+`x2` or `x^2` for a square, `(2x + 5)/6` for a fraction, factors side by side. A
+fraction with a letter below the line is typed the same way, with brackets round the
+top and round the bottom: `(5x + 2)/(x(x + 1))`. The box shows how the answer is read
+before it is checked. An answer with the right value in the wrong form (not
+simplified, not fully factorised, not in lowest terms, a factor left to cancel, or
+the right fraction typed without its brackets) gets a nudge and does not use up a
+try. Stars, the daily count and the streak are
 saved with the rest of the progress.
 
 **Comfortable reading**, in the display settings, gives larger text, more line
@@ -188,10 +196,16 @@ kit: seeded random numbers, exact fractions, the reader for typed expressions an
 answer checks. Each other file registers skills with `K.define({id, title, strand,
 lesson, blurb, levels})`; a level's `make(rng)` returns one question with its prompt,
 answer, hint, worked steps, the wrong answers it can explain and a `verify` claim.
+A question may carry a `figure` (`K.journeyFigure`, `K.triangleFigure`) with its text
+description. An answer of form `rational` may have letters below the line. A skill
+may name other lessons it practises in `also`; its drill is then offered under those
+lessons too.
 `source/trainer.js` and `source/trainer.css` are the screens. `node source/test-skills.cjs`
 builds 150 questions for every level and checks structure, notation, variety and that
 each answer passes its own check while each listed slip does not. `python
-source/test-skills.py` recomputes the answers with `sympy` from the `verify` claims.
+source/test-skills.py` recomputes the answers with `sympy` from the `verify` claims;
+an identity marked `lowest` also checks that the stated fraction has nothing left to
+cancel.
 The build copies the skill ids into `worker/catalog.json`, which the account service
 uses to validate drill results.
 

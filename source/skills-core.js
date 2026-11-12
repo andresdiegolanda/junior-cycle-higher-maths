@@ -388,6 +388,8 @@ function check(question,input){
  const answer=question.answer;let result;
  /* A phone keyboard often starts with a capital: X + 3 is read as x + 3 unless the answer itself uses capitals. */
  if(answer.type==='expr'&&typeof input==='string'&&!/[A-Z]/.test(answer.value))input=input.toLowerCase();
+ /* "y = 3x - 1" typed into a box that already says "y =": read what follows the equals sign. */
+ if(answer.type==='expr'&&typeof input==='string'&&answer.label)input=input.replace(/^\s*([a-z])\s*=\s*/i,(all,letter)=>answer.label.trim().toLowerCase().startsWith(letter.toLowerCase())?'':all);
  if(answer.type==='choice'){const option=answer.options[input];if(!option)return {correct:false,invalid:true,feedback:'Choose an answer.'};return {correct:!!option.correct,feedback:option.correct?null:option.why||null}}
  if(answer.type==='expr')result=checkExpr(answer,input);
  else if(answer.type==='number')result=checkNumber(answer,input);

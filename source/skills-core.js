@@ -157,6 +157,26 @@ function toPoly(node){
  }
  throw new Error('Unknown expression');
 }
+/* An expression with letters below the line, as one fraction of two polynomials. */
+function toRational(node){
+ const one=pConst(Q(1));
+ switch(node.t){
+  case 'num':return {n:pConst(node.q),d:one};
+  case 'var':return {n:pAddTerm(new Map(),node.name,Q(1)),d:one};
+  case 'group':return toRational(node.a);
+  case 'neg':{const r=toRational(node.a);return {n:pMul(pConst(Q(-1)),r.n),d:r.d}}
+  case 'add':return node.items.reduce((sum,item)=>{const r=toRational(item.node);return {n:pAdd(pMul(sum.n,r.d),pMul(r.n,sum.d),item.sign),d:pMul(sum.d,r.d)}},{n:new Map(),d:one});
+  case 'mul':return node.items.reduce((product,item)=>{const r=toRational(item);return {n:pMul(product.n,r.n),d:pMul(product.d,r.d)}},{n:one,d:one});
+  case 'pow':{let out={n:one,d:one};const base=toRational(node.base);for(let i=0;i<node.exp;i++)out={n:pMul(out.n,base.n),d:pMul(out.d,base.d)};return out}
+  case 'div':{const a=toRational(node.a),b=toRational(node.b);if(b.n.size===0)throw new Error('You cannot divide by zero.');return {n:pMul(a.n,b.d),d:pMul(a.d,b.n)}}
+ }
+ throw new Error('Unknown expression');
+}
+const rational=text=>toRational(parseExpr(text));
+const rEq=(a,b)=>pEq(pMul(a.n,b.d),pMul(b.n,a.d));
+const pDegree=p=>Math.max(0,...[...p.keys()].map(monoDegree));
+/* Equal as expressions, with or without letters below the line. */
+function sameExpr(a,b){try{return pEq(poly(a),poly(b))}catch{try{return rEq(rational(a),rational(b))}catch{return false}}}
 /* Terms in a fixed order: highest total power first, then alphabetical. */
 function sortedTerms(poly){return [...poly.entries()].sort((a,b)=>monoDegree(b[0])-monoDegree(a[0])||a[0].localeCompare(b[0]))}
 function polyStr(poly){
@@ -257,7 +277,32 @@ function singleFraction(tree){
  if(isSum(n)||divisions>1)return null;
  return n.t==='div'?{top:n.a,bottom:n.b}:{top:n,bottom:null};
 }
+/* An answer with letters below the line: equal in value, one fraction, nothing left to cancel. */
+function checkRational(answer,input){
+ let tree,typed;
+ try{tree=parseExpr(input);typed=toRational(tree)}catch(e){return {correct:false,invalid:true,feedback:e.message}}
+ const target=rational(answer.value);
+ if(typed.d.size===0)return {correct:false,invalid:true,feedback:'You cannot divide by zero.'};
+ if(!rEq(typed,target))return {correct:false};
+ /* When nothing is left below the line, the answer is an ordinary simplified expression. */
+ if(pIsConst(target.d)){
+  try{toPoly(tree)}catch{return {correct:false,close:true,feedback:'Right value. Now cancel the factor that the top and the bottom share.'}}
+  return checkExpr({...answer,form:'simplified'},input);
+ }
+ const parts=singleFraction(tree);
+ if(!parts)return {correct:false,close:true,feedback:FORM_HELP.oneFraction};
+ let top,bottom;
+ try{top=toPoly(parts.top);bottom=parts.bottom?toPoly(parts.bottom):pConst(Q(1))}catch{return {correct:false,close:true,feedback:FORM_HELP.oneFraction}}
+ /* A sum on the top or the bottom must be collected; a product of brackets is fine as it is. */
+ const collected=(node,p)=>{if(!isSum(node))return true;const list=topTerms(node);return list.length===p.size&&list.every(termIsTidy)&&!hasBracketedSum(node)};
+ if(!collected(parts.top,top)||parts.bottom&&!collected(parts.bottom,bottom))return {correct:false,close:true,feedback:'That has the right value. Now collect the like terms on the top and on the bottom.'};
+ if(pDegree(top)>pDegree(target.n)||pDegree(bottom)>pDegree(target.d))return {correct:false,close:true,feedback:'Right value. Now cancel the factor that the top and the bottom share.'};
+ const key=[...target.n.keys()][0];
+ if(key!==undefined&&top.has(key)){const scale=qDiv(top.get(key),target.n.get(key));if(scale.d===1&&Math.abs(scale.n)>1)return {correct:false,close:true,feedback:'Right value. Now divide the top and the bottom by '+Math.abs(scale.n)+'.'}}
+ return {correct:true};
+}
 function checkExpr(answer,input){
+ if(answer.form==='rational')return checkRational(answer,input);
  let tree,typed;
  try{tree=parseExpr(input);typed=toPoly(tree)}catch(e){return {correct:false,invalid:true,feedback:e.message}}
  const target=poly(answer.value);
@@ -304,7 +349,7 @@ function checkNumber(answer,input){
  if(Number.isInteger(answer.round)){
   const wanted=roundTo(qNum(target),answer.round),typed=qNum(parsed.q);
   if(Math.abs(typed-wanted)<1e-9)return {correct:true};
-  if(Math.abs(typed-qNum(target))<=10**-answer.round)return {correct:false,close:true,near:true,feedback:'Very close. Check the rounding: the answer should be correct to '+answer.round+' decimal place'+(answer.round===1?'':'s')+'.'};
+  if(Math.abs(typed-qNum(target))<=10**-answer.round)return {correct:false,close:true,near:true,feedback:'Very close. Check the rounding: the answer should be '+(answer.round===0?'correct to the nearest whole number':'correct to '+answer.round+' decimal place'+(answer.round===1?'':'s'))+'.'};
   return {correct:false};
  }
  if(!qEq(parsed.q,target))return {correct:false};
@@ -353,7 +398,7 @@ function check(question,input){
   for(const mistake of question.mistakes||[]){
    let hit=false;
    try{
-    if(answer.type==='expr')hit=pEq(poly(input),poly(mistake.value));
+    if(answer.type==='expr')hit=sameExpr(input,mistake.value);
     else if(answer.type==='number'){
      const read=parseNumber(input,{units:answer.unit?[answer.unit,...(answer.units||[])]:answer.units||[]}),typed=read.q,slip=parseNumber(String(mistake.value)).q;
      /* A slip is also recognised from its rounded value: to the places asked for, or to the places typed. */
@@ -438,9 +483,38 @@ const signed=n=>(Number(n)<0?'- ':'+ ')+Math.abs(Number(n));
 const fmt=value=>{const q=typeof value==='object'?value:parseNumber(String(value)).q;return q.d===1?String(q.n):`frac(${q.n}, ${q.d})`};
 const decimal=(value,places)=>String(roundTo(Number(value),places));
 
+/* ---------- Figures: small drawings that go with a question ---------- */
+/* Each returns {svg, alt}. The colours come from the page (classes fig-*), and alt says in
+   words what the drawing shows, for the narration and for readers who cannot see it. */
+function journeyFigure({points,xLabel='Time (hours)',yLabel='Distance from home (km)',xStep=1,yStep=10}){
+ const W=440,H=300,left=58,right=18,top=16,bottom=48;
+ const xMax=Math.ceil(Math.max(...points.map(p=>p[0]))/xStep)*xStep,yMax=Math.ceil(Math.max(...points.map(p=>p[1]))/yStep)*yStep||yStep;
+ const X=x=>left+(W-left-right)*x/xMax,Y=y=>H-bottom-(H-top-bottom)*y/yMax,r=v=>Math.round(v*10)/10;
+ let g='';
+ for(let x=0;x<=xMax+1e-9;x+=xStep)g+=`<line class="fig-grid" x1="${r(X(x))}" y1="${top}" x2="${r(X(x))}" y2="${H-bottom}"/><text class="fig-text" x="${r(X(x))}" y="${H-bottom+18}" text-anchor="middle">${roundTo(x,2)}</text>`;
+ for(let y=0;y<=yMax+1e-9;y+=yStep)g+=`<line class="fig-grid" x1="${left}" y1="${r(Y(y))}" x2="${W-right}" y2="${r(Y(y))}"/><text class="fig-text" x="${left-8}" y="${r(Y(y)+4)}" text-anchor="end">${roundTo(y,2)}</text>`;
+ g+=`<path class="fig-axis" d="M${left} ${top}V${H-bottom}H${W-right}"/><polyline class="fig-line" points="${points.map(p=>r(X(p[0]))+','+r(Y(p[1]))).join(' ')}"/>`;
+ g+=points.map(p=>`<circle class="fig-point" cx="${r(X(p[0]))}" cy="${r(Y(p[1]))}" r="4"/>`).join('');
+ g+=`<text class="fig-text" x="${(left+W-right)/2}" y="${H-8}" text-anchor="middle">${esc(xLabel)}</text><text class="fig-text" transform="rotate(-90 14 ${(top+H-bottom)/2})" x="14" y="${(top+H-bottom)/2}" text-anchor="middle">${esc(yLabel)}</text>`;
+ return {svg:`<svg viewBox="0 0 ${W} ${H}" xmlns="http://www.w3.org/2000/svg">${g}</svg>`,alt:`A graph of ${yLabel.toLowerCase()} against ${xLabel.toLowerCase()}. Straight lines join the points ${points.map(p=>`(${roundTo(p[0],2)}, ${roundTo(p[1],2)})`).join(', ')}.`};
+}
+/* A right-angled triangle: the angle sits at the bottom left, the right angle at the bottom right.
+   Give the labels to show; leave one out to hide it. The drawing is not to scale. */
+function triangleFigure({angle,opposite,adjacent,hypotenuse,topAngle}){
+ const A=[40,186],C=[270,186],B=[270,52];
+ let g=`<path class="fig-shape" d="M${A}L${C}L${B}Z"/><path class="fig-axis" d="M${C[0]-16} ${C[1]}v-16h16"/>`;
+ if(angle!==undefined)g+=`<path class="fig-axis" d="M${A[0]+44} ${A[1]}A44 44 0 0 0 ${A[0]+38} ${A[1]-22}"/><text class="fig-text" x="${A[0]+52}" y="${A[1]-8}">${esc(angle)}</text>`;
+ if(topAngle!==undefined)g+=`<text class="fig-text" x="${B[0]-14}" y="${B[1]+44}" text-anchor="end">${esc(topAngle)}</text>`;
+ if(adjacent!==undefined)g+=`<text class="fig-text" x="${(A[0]+C[0])/2}" y="${A[1]+24}" text-anchor="middle">${esc(adjacent)}</text>`;
+ if(opposite!==undefined)g+=`<text class="fig-text" x="${C[0]+10}" y="${(B[1]+C[1])/2+5}">${esc(opposite)}</text>`;
+ if(hypotenuse!==undefined)g+=`<text class="fig-text" x="${(A[0]+B[0])/2-12}" y="${(A[1]+B[1])/2-12}" text-anchor="end">${esc(hypotenuse)}</text>`;
+ const said=[angle!==undefined?`the marked angle is ${angle}`:'',opposite!==undefined?`the side opposite the marked angle is ${opposite}`:'',adjacent!==undefined?`the side next to the marked angle is ${adjacent}`:'',hypotenuse!==undefined?`the hypotenuse is ${hypotenuse}`:''].filter(Boolean);
+ return {svg:`<svg viewBox="0 0 340 222" xmlns="http://www.w3.org/2000/svg">${g}</svg>`,alt:`A right-angled triangle, not to scale: ${said.join(', ')}.`};
+}
+
 /* ---------- The skill register ---------- */
 const skills=[],byId=new Map();
-const STRANDS=['Algebra','Number','Ratio and proportion','Statistics'];
+const STRANDS=['Algebra','Coordinate geometry','Functions and graphs','Trigonometry','Number','Ratio and proportion','Statistics'];
 function define(skill){
  if(!/^[a-z0-9-]{3,40}$/.test(skill.id||''))throw new Error('Bad skill id '+skill.id);
  if(byId.has(skill.id))throw new Error('Duplicate skill '+skill.id);
@@ -454,7 +528,7 @@ function sameValue(a,b){
  if(clean(a).replace(/\s+/g,'')===clean(b).replace(/\s+/g,''))return true;
  const x=parseNumber(String(a)),y=parseNumber(String(b));if(x&&y)return qEq(x.q,y.q);
  if(/sqrt|[=<>≤≥]/.test(String(a)+String(b)))return false;
- try{return pEq(poly(String(a)),poly(String(b)))}catch{return false}
+ return sameExpr(String(a),String(b));
 }
 const optionValue=o=>String(o.value??o.math??o.text??'');
 /* Checks the shape of a question and that its own answer passes its own check. Throws on any fault. */
@@ -533,6 +607,7 @@ return {define,make,build,validate,check,sameValue,skills,byId,STRANDS,makeRng,
  Q,qAdd,qSub,qMul,qDiv,qEq,qNum,qStr,gcd,parseNumber,
  parseExpr,poly,polyStr,expand,evalAt,pEq,factorList,
  mathHTML,mathSpeech,richHTML,richSpeech,esc,
- terms,linear,quadratic,bracket,signed,fmt,decimal,roundTo,answerText};
+ terms,linear,quadratic,bracket,signed,fmt,decimal,roundTo,answerText,
+ rational,sameExpr,journeyFigure,triangleFigure};
 })();
 if(typeof module!=='undefined')module.exports=SkillKit;

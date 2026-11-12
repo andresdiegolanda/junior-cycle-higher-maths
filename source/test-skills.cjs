@@ -19,7 +19,8 @@ for(const skill of K.skills){
    const again=K.build(skill.id,index,seed);
    assert.deepEqual(JSON.parse(JSON.stringify(q)),JSON.parse(JSON.stringify(again)),`${skill.id} level ${index+1}: the same seed must give the same question`);
    const where=`${skill.id} level ${index+1} seed ${seed}`,a=q.answer;types.add(a.type);
-   seen.add(q.prompt+'|'+(q.math||'')+'|'+JSON.stringify(q.table||''));
+   seen.add(q.prompt+'|'+(q.math||'')+'|'+JSON.stringify(q.table||'')+'|'+(q.figure?.alt||''));
+   if(q.figure){assert.ok(q.figure.svg.startsWith('<svg')&&q.figure.alt.length>20,`${where}: a figure needs a drawing and a description`);assert.ok(!/NaN|undefined|Infinity/.test(q.figure.svg+q.figure.alt),`${where}: broken figure`)}
    /* Every text must render and be speakable without leftover notation. */
    for(const text of [q.prompt,q.hint,...q.steps.map(s=>s.note||''),...(q.mistakes||[]).map(m=>m.why),...(a.options||[]).map(o=>(o.why||'')+' '+(o.text||''))]){
     assert.equal((String(text).match(/`/g)||[]).length%2,0,`${where}: unbalanced backticks in "${text}"`);

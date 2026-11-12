@@ -88,7 +88,7 @@ const newSeed=()=>Math.floor(Math.random()*2147483646)+1;
 function startRound(skillId,level){
  const skill=K.byId.get(skillId);if(!skill||!(level>=0&&level<=2)){renderHub();return}
  const seen=new Set(),items=[];
- for(let guard=0;items.length<ROUND&&guard<60;guard++){const q=K.make(skillId,level,newSeed()),key=q.prompt+'|'+(q.math||'')+'|'+JSON.stringify(q.table||'');if(seen.has(key)&&guard<50)continue;seen.add(key);items.push(freshItem(q))}
+ for(let guard=0;items.length<ROUND&&guard<60;guard++){const q=K.make(skillId,level,newSeed()),key=q.prompt+'|'+(q.math||'')+'|'+JSON.stringify(q.table||'')+'|'+(q.figure?.alt||'');if(seen.has(key)&&guard<50)continue;seen.add(key);items.push(freshItem(q))}
  session={kind:'round',skill:skillId,level,items,index:0};renderQuestion();
 }
 const freshItem=q=>({q,tries:0,hint:false,outcome:null,struck:[]});
@@ -103,6 +103,7 @@ function startWarmup(){
 function questionSpeech(q){
  const parts=[K.richSpeech(q.prompt)];
  if(q.math)parts.push(K.mathSpeech(q.math));
+ if(q.figure)parts.push(q.figure.alt);
  if(q.table)parts.push(q.table.rows.map(row=>row.map((cell,i)=>`${q.table.head[i]}: ${K.richSpeech(cell)}`).join(', ')).join('. '));
  if(q.answer.type==='choice')parts.push(q.answer.options.map((o,i)=>`Option ${'ABCDE'[i]}. ${o.math?K.mathSpeech(o.math):K.richSpeech(o.text)}`).join('. '));
  return parts.join('. ').replace(/\.\s*\./g,'.');
@@ -130,7 +131,7 @@ function renderQuestion(){
  <article class="quiz-card drill-question audio-box" ${boxAttributes('drill-question',questionSpeech(q),'Question '+(session.index+1))}>
   <div class="exercise-meta"><span>QUESTION ${session.index+1} OF ${session.items.length}</span>${boxStatus()}${boxAudio('drill-question','Question '+(session.index+1))}</div>
   <div class="drill-prompt" id="drill-prompt" tabindex="-1">${rich(q.prompt)}</div>
-  ${q.math?`<div class="drill-maths">${maths(q.math,true)}</div>`:''}${q.table?tableMarkup(q.table):''}
+  ${q.math?`<div class="drill-maths">${maths(q.math,true)}</div>`:''}${q.figure?`<figure class="drill-figure" role="img" aria-label="${esc(q.figure.alt)}">${q.figure.svg}</figure>`:''}${q.table?tableMarkup(q.table):''}
   <form id="drill-form" novalidate>${answerMarkup(q)}
    <div class="drill-actions">${q.answer.type==='choice'?'':'<button class="primary" type="submit" id="drill-check">Check</button>'}<button type="button" id="drill-hint">Give me a hint</button><button type="button" id="drill-reveal">Show me how</button></div>
   </form>

@@ -159,3 +159,11 @@
 .activity-skills td{font-variant-numeric:tabular-nums}
 .activity-skills th small{font-weight:500;color:var(--muted)}
 .activity-skills .drill-stars{font-size:15px}
+.drill-figure{margin:14px 0 4px;max-width:470px}
+.drill-figure svg{display:block;width:100%;height:auto;background:var(--surface);border:1px solid var(--line);border-radius:12px}
+.drill-figure .fig-grid{stroke:var(--line);stroke-width:1}
+.drill-figure .fig-axis{fill:none;stroke:var(--ink);stroke-width:2}
+.drill-figure .fig-line{fill:none;stroke:var(--teal);stroke-width:3;stroke-linejoin:round}
+.drill-figure .fig-point{fill:var(--teal)}
+.drill-figure .fig-shape{fill:var(--soft);stroke:var(--ink);stroke-width:2;stroke-linejoin:round}
+.drill-figure .fig-text{fill:var(--ink);font:600 14px Inter,system-ui,sans-serif}
